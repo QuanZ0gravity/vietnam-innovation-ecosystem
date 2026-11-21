@@ -13,3 +13,5 @@ sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 legacy_id: d76
+description:
+  vi: API dạng nhãn trắng cho doanh nghiệp tích hợp dịch vụ chuyển tiền, nạp rút và thương mại.

@@ -9,4 +9,7 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Website chính thức
 legacy_id: s1
+description:
+  vi: Phòng thí nghiệm vật liệu vận hành bằng tác tử AI cho bài toán quy trình công nghiệp.

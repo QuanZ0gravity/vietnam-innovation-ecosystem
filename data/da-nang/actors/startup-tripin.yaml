@@ -9,4 +9,7 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Website chính thức
 legacy_id: s53
+description:
+  vi: Ứng dụng du lịch trò chơi hóa với nhiệm vụ AR và quà tặng.

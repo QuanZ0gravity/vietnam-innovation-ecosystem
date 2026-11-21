@@ -107,3 +107,10 @@ Quét 28 trang của indanang.vn: danh bạ tổ chức, đối tác Swiss EP, c
 - 256 hồ sơ có thêm mô tả tiếng Việt, viết lại ngắn gọn từ thông tin công khai trên danh bạ DAVAS 2026, cẩm nang InnoEx 2026 và trang JDI TFOAI4. Không sao chép nguyên văn, để phần mô tả có thể cấp phép CC BY 4.0. Nguồn ghi ở `source_url`.
 - 76 hồ sơ có thêm trang LinkedIn công ty, lấy từ liên kết trên website chính thức của chính tổ chức (mỗi website được truy cập một lần). Chỉ nhận khi website dẫn tới đúng một trang LinkedIn khớp với tên hoặc tên miền.
 - Không thu thập dữ liệu bằng cách quét tự động LinkedIn.
+
+## Mô tả từ website chính thức (21/11/2026)
+
+- Đọc website chính thức của 150 tổ chức chưa có mô tả (mỗi trang một lần, từ máy chủ). 94 hồ sơ có thêm mô tả tiếng Việt viết lại từ phần tự giới thiệu của chính tổ chức; nguồn ghi "Website chính thức".
+- Reforged Labs: website thông báo đã ngừng hoạt động. FUNDGO: tên miền hết hạn.
+- Không dùng vì website không khớp tổ chức: XomAI (dẫn sang Xometry), Resin, BSSC (dẫn sang SIHUB), TRON DAO Ventures, Hanoi Venture Chartered Fund.
+- 37 website không đọc được từ máy chủ (chặn truy cập, lỗi chứng chỉ hoặc không phản hồi); cần mở bằng trình duyệt: Adapter, AUTOWORK, BeStaff, Carus, Công ty Cổ phần Digital Marketing DMG, Công ty Cổ phần TOP Sinh viên, Công ty TNHH MTV Công nghệ du lịch Số, Công Ty TNHH Ngọc Oanh Foods, Dehype, Golden Phoenix, H2O Farm, I do Stem, Naki, Nano Đồng AGOIN - Siêu Diệt Nấm, PMX, TMZ, VHFresh, Enouvo Space, IOT Space, Trung tâm Ươm tạo Khởi nghiệp Sông Hàn (SHi – Songhan Incubator), UST Tower, 1Matrix, Aptos, Aus4Innovation, BambuUP, ETH Philippines, Moca Network, NAPA Global, Nvidia Nvaitc, Rabo Foundation, HSC, SCEX, Viettel Digital, An App, Tooliki, YBA Da Nang, YBA HCMC.
