@@ -60,7 +60,7 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id and r.get("type") != "part_of":
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by"):
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
@@ -317,6 +317,7 @@ dir_body = f"""
 <fieldset id="f-type"><legend data-i18n="f_type">Loại</legend></fieldset>
 <fieldset id="f-region"><legend data-i18n="f_region">Khu vực</legend></fieldset>
 <fieldset id="f-ver"><legend data-i18n="f_ver">Mức xác minh</legend></fieldset>
+<fieldset id="f-status"><legend data-i18n="f_status">Tình trạng</legend></fieldset>
 <button class="btn ghost" id="clear" type="button" data-i18n="f_clear">Xoá bộ lọc</button>
 </details></aside>
 <section aria-live="polite">
@@ -352,6 +353,13 @@ for a in actors:
         facts.append(("LinkedIn", "LinkedIn", f'<a href="{e(a["linkedin"])}" rel="noopener">{e(a["linkedin"])}</a>'))
     if a.get("founded"):
         facts.append(("Năm thành lập", "Founded", e(a["founded"])))
+    if a.get("status") in ("active", "inactive"):
+        sv = {"active": ("Đang hoạt động", "Active"), "inactive": ("Đã ngừng hoạt động", "No longer active")}[a["status"]]
+        facts.append(("Tình trạng", "Status", f'<span data-vi="{sv[0]}" data-en="{sv[1]}">{sv[0]}</span>'))
+    if a.get("contact_email"):
+        facts.append(("Email", "Email", f'<a href="mailto:{e(a["contact_email"])}">{e(a["contact_email"])}</a>'))
+    if a.get("contact_phone"):
+        facts.append(("Điện thoại", "Phone", e(a["contact_phone"])))
     facts_html = "".join(f'<dt data-vi="{vi}" data-en="{en}">{vi}</dt><dd>{val}</dd>' for vi, en, val in facts)
     desc = a.get("description", {})
     desc_html = (f'<p class="desc" data-vi="{e(desc.get("vi"))}" data-en="{e(desc.get("en") or desc.get("vi"))}">{e(desc.get("vi"))}</p>'
@@ -381,6 +389,18 @@ for a in actors:
     parents = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "part_of" and r["to"] in by_id]
     children = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "part_of" and r["from"] in by_id]
     lvl = a["verification"]["level"]
+    incubators = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "incubated_by" and r["to"] in by_id]
+    alumni = sorted({r["from"] for r in relations if r["to"] == aid and r.get("type") == "incubated_by" and r["from"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    if incubators:
+        items = "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a> {type_tag(by_id[x]["type"])}</li>' for x in dict.fromkeys(incubators))
+        rel_html = f'<div class="section"><h2 data-vi="Được ươm tạo, hỗ trợ bởi" data-en="Supported by">Được ươm tạo, hỗ trợ bởi</h2><ul class="list-plain">{items}</ul></div>' + rel_html
+    if alumni:
+        act = [x for x in alumni if by_id[x].get("status") != "inactive"]
+        ina = [x for x in alumni if by_id[x].get("status") == "inactive"]
+        items = "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a></li>' for x in act)
+        items += "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a> <span class="muted small" data-vi="(đã ngừng hoạt động)" data-en="(no longer active)">(đã ngừng hoạt động)</span></li>' for x in ina)
+        rel_html += (f'<div class="section"><h2 data-vi="Startup đã ươm tạo, hỗ trợ ({len(alumni)})" data-en="Startups supported ({len(alumni)})">Startup đã ươm tạo, hỗ trợ ({len(alumni)})</h2>'
+                     f'<ul class="list-plain alumni">{items}</ul></div>')
     if parents or children:
         items = "".join(f'<li><span class="muted small" data-vi="Thuộc" data-en="Part of">Thuộc</span> <a href="{SITE_ROOT}a/{p_}/">{e(by_id[p_]["name"]["vi"])}</a></li>' for p_ in parents)
         items += "".join(f'<li><a href="{SITE_ROOT}a/{c_}/">{e(by_id[c_]["name"]["vi"])}</a> {type_tag(by_id[c_]["type"])}</li>' for c_ in sorted(children))

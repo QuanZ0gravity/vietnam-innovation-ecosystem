@@ -171,6 +171,23 @@
         "type": "string"
       },
       "description": "Tên khác, tên cũ hoặc cách viết khác; dùng để phát hiện trùng"
+    },
+    "status": {
+      "enum": [
+        "active",
+        "inactive",
+        "unknown"
+      ],
+      "description": "Còn hoạt động hay không"
+    },
+    "contact_email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email chung của tổ chức (info@, contact@), không dùng email cá nhân"
+    },
+    "contact_phone": {
+      "type": "string",
+      "description": "Số tổng đài hoặc số chung của tổ chức, không dùng số di động cá nhân"
     }
   }
 }

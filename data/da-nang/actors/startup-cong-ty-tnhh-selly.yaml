@@ -2,6 +2,7 @@ id: startup-cong-ty-tnhh-selly
 name:
   vi: Công ty TNHH SELLY
 type: startup
+status: active
 website: https://selly.vn/
 region: da-nang
 website_status: Không truy cập được, cần kiểm tra
@@ -9,4 +10,5 @@ verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s39

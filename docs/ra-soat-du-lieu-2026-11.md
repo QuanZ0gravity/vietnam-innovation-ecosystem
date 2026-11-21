@@ -72,3 +72,11 @@ Thêm 14 quan hệ `part_of`: các trường thành viên thuộc Đại học �
 - Hai hồ sơ Trường Cao đẳng Phương Đông (Đà Nẵng và Tam Kỳ): cần xác nhận là hai cơ sở hay một.
 - `fund-davas`: DAVAS là diễn đàn đầu tư, không phải quỹ; cần thống nhất cách phân loại.
 - 261 hồ sơ chưa xác minh.
+
+## Bổ sung từ dữ liệu mạng lưới Swiss EP (21/11/2026)
+
+- 200 startup do 5 tổ chức tại Đà Nẵng ươm tạo, hỗ trợ: DNES 83, Song Han Incubator 59 (bỏ 1 bản ghi đánh dấu trùng), Ecomdy 38, Trung tâm Công nghệ sinh học Đà Nẵng 11, Decentralab 9.
+- 16 startup đã có trong danh bạ được bổ sung thông tin và gắn tên khác (ví dụ Delta X VNM, Copin, Botstar, Selly, VR360); 184 startup mới được thêm, mức xác minh `partner_verified`.
+- 200 quan hệ `incubated_by`, kèm ngày vào chương trình khi có.
+- Website, năm thành lập và tình trạng hoạt động của 5 tổ chức hỗ trợ.
+- Không đưa vào: email và số điện thoại của cá nhân phụ trách; thông tin nhà sáng lập nữ; số tiền đầu tư theo từng startup.

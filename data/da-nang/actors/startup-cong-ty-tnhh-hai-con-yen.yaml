@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-hai-con-yen
 name:
   vi: Công ty TNHH HAI CON YẾN
 type: startup
+founded: 2025
+status: active
 website: https://haiconyen.com/
 region: da-nang
 website_status: Hoạt động
@@ -9,4 +11,5 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s13

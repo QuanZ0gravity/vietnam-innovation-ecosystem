@@ -1,12 +1,18 @@
 id: startup-cong-ty-co-phan-cong-nghe-sinh-hoc-minh-hong
 name:
   vi: Công ty Cổ phần Công nghệ sinh học Minh Hồng
+alt_names:
+- Minh Hong
 type: startup
+status: active
 website: https://minhhongbiotech.com/
 region: da-nang
 website_status: Chặn truy cập tự động, cần kiểm tra tay
 verification:
-  level: unverified
+  level: partner_verified
+  date: '2026-11-07'
+  by: DNES
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s48

@@ -1,12 +1,18 @@
 id: startup-cong-ty-tnhh-enzy-food
 name:
   vi: Công ty TNHH Enzy food
+alt_names:
+- Enzy
 type: startup
+status: active
 website: https://enzy.vn/
 region: da-nang
 website_status: Hoạt động
 verification:
-  level: source_checked
+  level: partner_verified
+  date: '2026-11-07'
+  by: DNES
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s35

@@ -12,7 +12,7 @@ Bắt đầu từ **TP Đà Nẵng** (gồm khu vực Quảng Nam cũ). Các t�
 
 | Tỉnh, thành | Tác nhân | Cơ hội | Chính sách | Cập nhật |
 | --- | --- | --- | --- | --- |
-| Đà Nẵng | 308 (205 khu vực Đà Nẵng cũ, 103 khu vực Quảng Nam cũ) | 16 | 123 | 11/2026 |
+| Đà Nẵng | 493, trong đó 243 startup | 16 | 123 | 11/2026 |
 
 Phần lớn hồ sơ đang ở mức **chưa xác minh**. Đây là việc cộng đồng có thể giúp nhiều nhất: xem [Cách đóng góp](CONTRIBUTING.md).
 
@@ -96,7 +96,9 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [GOVERNANCE.md](GOVERNANCE.md).
 
 ## Nguồn dữ liệu ban đầu
 
-Dữ liệu Đà Nẵng được chuyển từ bản thử nghiệm *Bản đồ hệ sinh thái khởi nghiệp ĐMST Đà Nẵng 2026*, tổng hợp từ startupdanang.vn, Sở KH&CN Đà Nẵng, Bản lĩnh xứ Quảng, thuvienphapluat.vn, DAVAS và SURF. Khi chuyển sang kho mở:
+Danh sách startup được ươm tạo, hỗ trợ bởi 5 tổ chức tại Đà Nẵng (DNES, Ecomdy, Decentralab, Trung tâm Công nghệ sinh học Đà Nẵng, Song Han Incubator) lấy từ dữ liệu mạng lưới của Swiss Entrepreneurship Program, cập nhật 11/2026.
+
+Dữ liệu Đà Nẵng ban đầu được chuyển từ bản thử nghiệm *Bản đồ hệ sinh thái khởi nghiệp ĐMST Đà Nẵng 2026*, tổng hợp từ startupdanang.vn, Sở KH&CN Đà Nẵng, Bản lĩnh xứ Quảng, thuvienphapluat.vn, DAVAS và SURF. Khi chuyển sang kho mở:
 
 - **Không đưa vào** hồ sơ cá nhân (mentor, chuyên gia). Hồ sơ người chỉ được thêm khi chính người đó đồng ý.
 - **Không đưa vào** đoạn mô tả sao chép từ website khác. Chỉ giữ tên, phân loại, liên kết và mô tả do người đóng góp tự viết.

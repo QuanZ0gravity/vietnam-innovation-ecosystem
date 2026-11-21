@@ -46,7 +46,7 @@ Trung tâm, viện, không gian của một trường hay tập đoàn là một
 
 - Chỉ thông tin công khai, hoặc đã được tổ chức đồng ý công bố.
 - **Tự viết mô tả**, tối đa 400 ký tự. Không sao chép từ website, báo hay tài liệu khác.
-- Không thêm số điện thoại, email cá nhân hay thông tin cá nhân.
+- Thông tin liên hệ chỉ dùng kênh chung của tổ chức (info@, contact@, tổng đài). Không thêm email hay số di động của cá nhân, kể cả nhân viên của tổ chức, trừ khi người đó đồng ý.
 - Không thêm hồ sơ cá nhân (mentor, chuyên gia) nếu người đó chưa đồng ý bằng văn bản hoặc email.
 - Không quảng cáo, không đánh giá, không xếp hạng tổ chức.
 - Nhiều hồ sơ cùng sửa: mỗi Pull Request nên gom các thay đổi cùng một nguồn hoặc cùng một chủ đề.

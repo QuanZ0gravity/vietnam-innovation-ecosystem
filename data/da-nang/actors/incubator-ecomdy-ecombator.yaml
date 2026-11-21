@@ -4,10 +4,15 @@ name:
 alt_names:
 - Ecomdy / Ecombator
 - The Ecombator (Ecomdy)
+- Ecomdy
 type: incubator
 categories:
 - Vườn ươm tư nhân
 - Tổ chức hỗ trợ
+- Đối tác của Swiss EP (PO)
+founded: 2020
+status: active
+website: https://ecomdymedia.com
 description:
   vi: Thương mại điện tử xuyên biên giới, AI venture building; đợt ươm tạo 9 startup AI (6/2026).
 region: da-nang
@@ -16,5 +21,6 @@ verification:
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 source_url: https://startupdanang.vn/the-ecombator-ecomdy-a012t3tncc
 legacy_id: d13;o3

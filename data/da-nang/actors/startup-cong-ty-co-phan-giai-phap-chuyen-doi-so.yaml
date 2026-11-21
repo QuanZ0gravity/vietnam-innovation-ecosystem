@@ -1,7 +1,10 @@
 id: startup-cong-ty-co-phan-giai-phap-chuyen-doi-so
 name:
   vi: Công ty Cổ phần Giải pháp Chuyển đổi số
+alt_names:
+- VR360
 type: startup
+status: active
 website: https://vr360.com.vn/
 region: da-nang
 website_status: Hoạt động
@@ -9,4 +12,5 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s32

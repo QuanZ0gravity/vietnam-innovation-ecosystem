@@ -2,9 +2,12 @@ id: startup-cong-ty-tnhh-thinh-minh-an
 name:
   vi: CÔNG TY TNHH THỊNH MINH AN
 type: startup
+founded: 2022
+status: active
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s24

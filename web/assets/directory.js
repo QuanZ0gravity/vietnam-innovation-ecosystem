@@ -1,22 +1,23 @@
 /* Danh bạ: lọc, tìm, sắp xếp, phân trang; trạng thái lưu trên đường dẫn */
 (function () {
-  var PER = 30, all = [], st = { q: "", type: [], region: [], ver: [], sort: "az", view: "list", page: 1 };
+  var PER = 30, all = [], st = { q: "", type: [], region: [], ver: [], status: [], sort: "az", view: "list", page: 1 };
   var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator"];
   var REGIONS = ["da-nang", "former-quang-nam"];
   var VERS = ["partner_verified", "org_confirmed", "source_checked", "unverified"];
+  var STATUSES = ["active", "inactive", "unknown"];
   var $ = function (id) { return document.getElementById(id); };
   var norm = function (s) { return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase(); };
 
   function readURL() {
     var p = new URLSearchParams(location.search);
     st.q = p.get("q") || "";
-    ["type", "region", "ver"].forEach(function (k) { st[k] = (p.get(k) || "").split(",").filter(Boolean); });
+    ["type", "region", "ver", "status"].forEach(function (k) { st[k] = (p.get(k) || "").split(",").filter(Boolean); });
     st.sort = p.get("sort") || "az"; st.view = p.get("view") || "list"; st.page = +p.get("page") || 1;
   }
   function writeURL() {
     var p = new URLSearchParams();
     if (st.q) p.set("q", st.q);
-    ["type", "region", "ver"].forEach(function (k) { if (st[k].length) p.set(k, st[k].join(",")); });
+    ["type", "region", "ver", "status"].forEach(function (k) { if (st[k].length) p.set(k, st[k].join(",")); });
     if (st.sort !== "az") p.set("sort", st.sort);
     if (st.view !== "list") p.set("view", st.view);
     if (st.page > 1) p.set("page", st.page);
@@ -27,13 +28,14 @@
     if (skip !== "type" && st.type.length && st.type.indexOf(a.type) < 0) return false;
     if (skip !== "region" && st.region.length && st.region.indexOf(a.region) < 0) return false;
     if (skip !== "ver" && st.ver.length && st.ver.indexOf(a.verification.level) < 0) return false;
+    if (skip !== "status" && st.status.length && st.status.indexOf(a.status || "unknown") < 0) return false;
     return true;
   }
   function facet(id, key, values, label) {
     var fs = $(id); fs.querySelectorAll(".check").forEach(function (n) { n.remove(); });
     var base = all.filter(function (a) { return matches(a, key); });
     values.forEach(function (v) {
-      var n = base.filter(function (a) { return (key === "ver" ? a.verification.level : a[key]) === v; }).length;
+      var n = base.filter(function (a) { return (key === "ver" ? a.verification.level : key === "status" ? (a.status || "unknown") : a[key]) === v; }).length;
       if (!n && st[key].indexOf(v) < 0) return;
       var lb = VIE.el("label", "check"), cb = document.createElement("input");
       cb.type = "checkbox"; cb.checked = st[key].indexOf(v) >= 0;
@@ -54,6 +56,7 @@
     facet("f-type", "type", TYPES, VIE.typeLabel);
     facet("f-region", "region", REGIONS, VIE.regionLabel);
     facet("f-ver", "ver", VERS, VIE.verLabel);
+    facet("f-status", "status", STATUSES, function (x) { return VIE.t("s_" + x); });
     var list = all.filter(function (a) { return matches(a); });
     var collator = new Intl.Collator(VIE.lang() === "en" ? "en" : "vi");
     list.sort(function (a, b) {
@@ -97,7 +100,7 @@
     $("sort").addEventListener("change", function () { st.sort = $("sort").value; render(); });
     $("v-list").addEventListener("click", function () { st.view = "list"; render(); });
     $("v-cards").addEventListener("click", function () { st.view = "cards"; render(); });
-    $("clear").addEventListener("click", function () { st.type = []; st.region = []; st.ver = []; st.q = ""; $("q").value = ""; st.page = 1; render(); });
+    $("clear").addEventListener("click", function () { st.type = []; st.region = []; st.ver = []; st.status = []; st.q = ""; $("q").value = ""; st.page = 1; render(); });
     if (window.matchMedia("(max-width:860px)").matches) document.querySelector(".filters details").removeAttribute("open");
     VIE.load("actors.json").then(function (d) { all = d; render(); document.addEventListener("vie:lang", render); })
       .catch(function () { $("count").textContent = ""; });

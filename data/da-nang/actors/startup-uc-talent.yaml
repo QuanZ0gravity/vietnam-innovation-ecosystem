@@ -1,7 +1,11 @@
 id: startup-uc-talent
 name:
   vi: UC TALENT
+alt_names:
+- UCtalent
 type: startup
+founded: 2023
+status: active
 website: https://www.uctalent.io/
 region: da-nang
 website_status: Hoạt động
@@ -9,4 +13,5 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s22

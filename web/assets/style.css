@@ -184,3 +184,4 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .opp-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .gap{margin-top:6px;padding:8px 12px;border-left:3px solid var(--sun);background:var(--surface);color:var(--ink-2)}
 .opp.closed h3{color:var(--ink-2)}
+.alumni{columns:2 220px;column-gap:32px}.alumni li{break-inside:avoid}

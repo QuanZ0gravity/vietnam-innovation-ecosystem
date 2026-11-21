@@ -1,12 +1,18 @@
 id: startup-cong-ty-thot-kinh-cuong-luc-sala
 name:
   vi: Công ty Thớt kính Cường lực SALA
+alt_names:
+- Sala
 type: startup
+status: active
 website: https://thotkinhcuonglucsala.com/
 region: da-nang
 website_status: Hoạt động
 verification:
-  level: source_checked
+  level: partner_verified
+  date: '2026-11-07'
+  by: DNES
 sources:
 - startupdanang.vn
+- Swiss EP – Map of ecosystem (11/2026)
 legacy_id: s44

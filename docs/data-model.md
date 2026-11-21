@@ -13,6 +13,8 @@ Quy tắc chính xác nằm trong [`schema/actor.schema.json`](../schema/actor.s
 | `categories` | | Lĩnh vực hoặc phân loại chi tiết |
 | `stage` | | Giai đoạn startup: `idea` … `mature` |
 | `founded` | | Năm thành lập |
+| `status` | | `active`, `inactive`, `unknown` |
+| `contact_email`, `contact_phone` | | Email và số điện thoại chung của tổ chức. Không dùng email hay số di động của cá nhân |
 | `website`, `linkedin` | | Trang chính thức |
 | `address`, `coordinates` | | Địa chỉ; tọa độ `[kinh độ, vĩ độ]` để hiện trên bản đồ |
 | `coordinates_source` | | Nguồn và độ chính xác của tọa độ, ví dụ `OpenStreetMap 11/2026, số nhà` |
@@ -28,7 +30,7 @@ Quy tắc chính xác nằm trong [`schema/actor.schema.json`](../schema/actor.s
 
 ## Quan hệ (`relations.csv`)
 
-`from, type, to, since, source`. Loại quan hệ: `incubated_by`, `accelerated_by`, `invested_by`, `mentored_by`, `co_organized`, `referred`, `funded_by`, `member_of`, `part_of` (đơn vị trực thuộc, ví dụ trung tâm khởi nghiệp của một trường), `related` (chưa phân loại).
+`from, type, to, since, source`. Loại quan hệ: `incubated_by`, `accelerated_by`, `invested_by`, `mentored_by`, `co_organized`, `referred`, `funded_by`, `member_of`, `incubated_by` (startup được tổ chức đó ươm tạo, hỗ trợ; `since` là ngày vào chương trình), `part_of` (đơn vị trực thuộc, ví dụ trung tâm khởi nghiệp của một trường), `related` (chưa phân loại).
 
 ## Tham chiếu (`references.csv`, `mentions.csv`)
 
