@@ -1,0 +1,13 @@
+id: startup-mpos
+name:
+  vi: MPOS
+type: startup
+categories:
+- Software & Data
+- Apps
+region: da-nang
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/da-nang-vn

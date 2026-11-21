@@ -1,0 +1,127 @@
+# Số liệu công khai trên trang StartupBlink, Global Startup Ecosystem Index 2026.
+# Truy cập 21/11/2026. Số liệu thuộc StartupBlink; trích dẫn kèm nguồn, không thay thế báo cáo gốc.
+# Một số trang hiện hai con số khác nhau cho cùng chỉ số (ví dụ số startup); ở đây ghi số trong phần mô tả cơ sở dữ liệu.
+source: StartupBlink, Global Startup Ecosystem Index 2026
+accessed: '2026-11-21'
+country:
+  id: viet-nam
+  url: https://www.startupblink.com/startup-ecosystem/vietnam
+  global_rank: 50
+  rank_change: 5
+  regional_rank: 5
+  region: Đông Nam Á
+  business_environment_rank: 52
+  startups: 974
+  unicorns_and_exits: 6
+  ecosystem_value_usd: 48930000000
+  cities_ranked: 4
+  funding_2017_2025_usd: 3490000000
+  funding_2025_usd: 271780000
+  deals_2025: 25
+  industries:
+    - {name: Transportation, rank: 22, startups: 36}
+    - {name: Fintech, rank: 39, startups: 135}
+    - {name: Ecommerce & Retail, rank: 47, startups: 127}
+    - {name: Healthtech, rank: 54, startups: 48}
+    - {name: Hardware & IoT, rank: 57, startups: 48}
+    - {name: Social & Leisure, rank: 59, startups: 70}
+    - {name: Edtech, rank: 59, startups: 40}
+  corporations: [FPT Corporation, Coin98, SSI Securities Corporation]
+cities:
+  - id: ho-chi-minh
+    name: TP. Hồ Chí Minh
+    url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn
+    national_rank: 1
+    global_rank: 98
+    rank_change: 12
+    regional_rank: 5
+    regional_change: 0
+    total_score: 10.020
+    national_share: 52.5
+    startups: 545
+    unicorns_and_exits: 4
+    ecosystem_value_usd: 14520000000
+    startups_per_100k: 16
+    growth_2026_pct: 25.1
+    funding_2017_2025_usd: 2250000000
+    funding_2025_usd: 234890000
+    deals_2025: 18
+    industries:
+      - {name: Fintech, rank: 61, startups: 77}
+      - {name: Ecommerce & Retail, rank: 69, startups: 78}
+      - {name: Social & Leisure, rank: 98, startups: 34}
+      - {name: Edtech, rank: 112, startups: 20}
+      - {name: Marketing & Sales, rank: 128, startups: 55}
+      - {name: Transportation, rank: 142, startups: 20}
+      - {name: Healthtech, rank: 146, startups: 34}
+    corporations: [Coin98, SSI Securities Corporation, VNG Corporation]
+  - id: ha-noi
+    name: Hà Nội
+    url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
+    national_rank: 2
+    global_rank: 118
+    rank_change: 30
+    regional_rank: 6
+    regional_change: 1
+    total_score: 8.142
+    national_share: 42.7
+    startups: 345
+    unicorns_and_exits: 1
+    ecosystem_value_usd: 10690000000
+    startups_per_100k: 10
+    growth_2026_pct: 48.6
+    funding_2017_2025_usd: 1180000000
+    funding_2025_usd: 14860000
+    deals_2025: 4
+    coworking_spaces: 18
+    accelerators: 9
+    industries:
+      - {name: Fintech, rank: 57, startups: 48}
+      - {name: Edtech, rank: 96, startups: 17}
+      - {name: Ecommerce & Retail, rank: 110, startups: 46}
+      - {name: Social & Leisure, rank: 121, startups: 33}
+      - {name: Transportation, rank: 127, startups: 11}
+      - {name: Software & Data, rank: 153, startups: 137}
+      - {name: Foodtech, rank: 203, startups: 8}
+    corporations: [FPT Corporation, Vingroup]
+  - id: da-nang
+    name: Đà Nẵng
+    url: https://www.startupblink.com/startup-ecosystem/da-nang-vn
+    national_rank: 3
+    global_rank: 554
+    rank_change: 212
+    regional_rank: 15
+    regional_change: 7
+    total_score: 0.596
+    national_share: 3.1
+    startups: 39
+    unicorns_and_exits: 1
+    ecosystem_value_usd: 275170000
+    startups_per_100k: 6
+    growth_2026_pct: 153.8
+    funding_2017_2025_usd: 55150000
+    funding_2025_usd: 22030000
+    deals_2025: 3
+    coworking_spaces: 12
+    accelerators: 9
+    industries:
+      - {name: Fintech, rank: 432, startups: 7}
+      - {name: Software & Data, rank: 619, startups: 18}
+      - {name: Hardware & IoT, rank: 627, startups: 5}
+    corporations: []
+  - id: hai-phong
+    name: Hải Phòng
+    url: https://www.startupblink.com/startup-ecosystem/hai-phong-vn
+    national_rank: 4
+    global_rank: 765
+    rank_change: null
+    regional_rank: 23
+    total_score: 0.311
+    national_share: 1.6
+    startups: 7
+    unicorns_and_exits: 1
+    ecosystem_value_usd: 23000000000
+    funding_2017_2025_usd: 0
+    industries:
+      - {name: Software & Data, rank: 1489, startups: 4}
+    corporations: []

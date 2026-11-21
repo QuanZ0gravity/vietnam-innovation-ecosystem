@@ -98,7 +98,7 @@ policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
 # ---------- khung trang ----------
 NAV = [("home", "", "nav_home"), ("dir", "danh-ba/", "nav_dir"), ("map", "ban-do/", "nav_map"),
-       ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy")]
+       ("cities", "thanh-pho/", "nav_cities"), ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy")]
 CUR = ' aria-current="page"'
 LOGO = ('<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="8" cy="9" r="4" fill="var(--sea)"/>'
         '<circle cx="22" cy="8" r="3" fill="var(--ink)"/><circle cx="15" cy="22" r="5" fill="var(--sun)"/>'
@@ -490,6 +490,123 @@ write("co-hoi/index.html", page("Cơ hội", f"""
 <div class="wrap" style="padding-bottom:72px">{blocks}{ch_html}</div>{opp_script}""", "opps"))
 write("su-kien/index.html", page("Cơ hội", f'<div class="wrap page-head"><h1>Trang đã chuyển</h1><p class="lead">Mục sự kiện nay là <a href="{SITE_ROOT}co-hoi/">Cơ hội</a>.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}co-hoi/">'))
 
+
+# ---------- thành phố ----------
+BENCH = {}
+_bp = os.path.join(ROOT, "data", "benchmarks", "startupblink-2026.yaml")
+if os.path.exists(_bp):
+    BENCH = yaml.safe_load(open(_bp, encoding="utf-8"))
+CITY_REGIONS = {"ho-chi-minh": ["ho-chi-minh"], "ha-noi": ["ha-noi"], "da-nang": ["da-nang", "former-quang-nam"], "hai-phong": ["hai-phong"]}
+
+def money(v):
+    if v is None: return "–"
+    v = float(v)
+    if v >= 1e9: return f"{v/1e9:.2f} tỷ USD".replace(".", ",")
+    if v >= 1e6: return f"{v/1e6:.1f} triệu USD".replace(".", ",")
+    return f"{int(v):,} USD".replace(",", ".")
+
+def chg(v):
+    if v is None: return '<span class="muted small">mới</span>'
+    if v == 0: return '<span class="muted small">giữ nguyên</span>'
+    return f'<span class="up small">{"+" if v > 0 else ""}{v}</span>'
+
+def kpi(label_vi, label_en, value, note=""):
+    return (f'<div class="kpi"><p class="kv">{value}</p><p class="kl" data-vi="{label_vi}" data-en="{label_en}">{label_vi}</p>'
+            + (f'<p class="kn small muted">{note}</p>' if note else "") + "</div>")
+
+def city_table(active=None):
+    rows = ""
+    for c in BENCH.get("cities", []):
+        cur = ' class="cur"' if c["id"] == active else ""
+        rows += (f'<tr{cur}><td>{c["national_rank"]}</td><td><a href="{SITE_ROOT}thanh-pho/{c["id"]}/">{e(c["name"])}</a></td>'
+                 f'<td>#{c["global_rank"]} {chg(c.get("rank_change"))}</td><td>#{c.get("regional_rank","–")}</td>'
+                 f'<td>{c["total_score"]:.3f}'.replace(".", ",") + f'</td><td>{str(c["national_share"]).replace(".", ",")}%</td>'
+                 f'<td>{sum(1 for a in actors if a["region"] in CITY_REGIONS.get(c["id"], [c["id"]]))}</td></tr>')
+    return ('<div class="tbl-wrap"><table class="tbl"><thead><tr><th data-vi="Hạng QG" data-en="National">Hạng QG</th><th data-vi="Thành phố" data-en="City">Thành phố</th>'
+            '<th data-vi="Hạng thế giới" data-en="Global rank">Hạng thế giới</th><th data-vi="Hạng Đông Nam Á" data-en="SEA rank">Hạng Đông Nam Á</th>'
+            '<th data-vi="Điểm" data-en="Score">Điểm</th><th data-vi="Tỷ trọng QG" data-en="National share">Tỷ trọng QG</th>'
+            '<th data-vi="Tác nhân trong danh bạ" data-en="Actors in this directory">Tác nhân trong danh bạ</th></tr></thead><tbody>' + rows + '</tbody></table></div>')
+
+def ind_table(inds):
+    if not inds: return '<p class="muted">Chưa có dữ liệu.</p>'
+    rows = "".join(f'<tr><td>{e(i["name"])}</td><td>#{i["rank"]}</td><td>{i["startups"]}</td></tr>' for i in inds)
+    return ('<div class="tbl-wrap"><table class="tbl"><thead><tr><th data-vi="Ngành" data-en="Industry">Ngành</th><th data-vi="Hạng thế giới" data-en="Global rank">Hạng thế giới</th>'
+            '<th data-vi="Số startup" data-en="Startups">Số startup</th></tr></thead><tbody>' + rows + '</tbody></table></div>')
+
+SB_NOTE = ('<p class="small muted src-note" data-vi="Số liệu xếp hạng, startup, vốn và ngành: StartupBlink, Global Startup Ecosystem Index 2026 (trang công khai, truy cập 21/11/2026). Số tác nhân, cơ hội: danh bạ mở này." '
+           'data-en="Rankings, startups, funding and industries: StartupBlink Global Startup Ecosystem Index 2026 (public pages, accessed 21 Nov 2026). Actors and opportunities: this open directory.">'
+           'Số liệu xếp hạng, startup, vốn và ngành: StartupBlink, Global Startup Ecosystem Index 2026 (trang công khai, truy cập 21/11/2026). Số tác nhân, cơ hội: danh bạ mở này.</p>')
+
+if BENCH:
+    co = BENCH["country"]
+    kp = "".join([kpi("Hạng thế giới", "Global rank", f'#{co["global_rank"]} {chg(co["rank_change"])}'),
+                  kpi("Hạng Đông Nam Á", "SEA rank", f'#{co["regional_rank"]}'),
+                  kpi("Startup (StartupBlink)", "Startups (StartupBlink)", f'{co["startups"]:,}'.replace(",", ".")),
+                  kpi("Giá trị hệ sinh thái", "Ecosystem value", money(co["ecosystem_value_usd"])),
+                  kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(co["funding_2017_2025_usd"])),
+                  kpi("Vốn năm 2025", "Funding 2025", money(co["funding_2025_usd"]), f'{co["deals_2025"]} thương vụ'),
+                  kpi("Tác nhân trong danh bạ", "Actors in this directory", f'{len(actors)}'),
+                  kpi("Cơ hội đang theo dõi", "Opportunities tracked", f'{len(opps)}')])
+    write("thanh-pho/index.html", page("Thành phố", f"""
+<div class="wrap page-head"><p class="crumb small"><span data-vi="Việt Nam" data-en="Vietnam">Việt Nam</span></p>
+<h1 data-vi="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố" data-en="Vietnam's startup ecosystem by city">Hệ sinh thái khởi nghiệp Việt Nam theo thành phố</h1>
+<p class="lead" data-vi="Tổng quan quốc gia, bảng xếp hạng các thành phố và trang riêng cho từng thành phố." data-en="Country overview, city ranking and a page for each city.">Tổng quan quốc gia, bảng xếp hạng các thành phố và trang riêng cho từng thành phố.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
+<section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div></section>
+<section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
+<section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật của Việt Nam" data-en="Vietnam's top industries">Ngành nổi bật của Việt Nam</h2>{ind_table(co.get("industries"))}</section>
+{SB_NOTE}</div>""", "cities"))
+
+    for c in BENCH["cities"]:
+        regs = CITY_REGIONS.get(c["id"], [c["id"]])
+        acts = [a for a in actors if a["region"] in regs]
+        tc = collections.Counter(a["type"] for a in acts)
+        kp = [kpi("Hạng trong nước", "National rank", f'#{c["national_rank"]}'),
+              kpi("Hạng thế giới", "Global rank", f'#{c["global_rank"]} {chg(c.get("rank_change"))}'),
+              kpi("Hạng Đông Nam Á", "SEA rank", f'#{c.get("regional_rank","–")} {chg(c.get("regional_change")) if "regional_change" in c else ""}'),
+              kpi("Startup (StartupBlink)", "Startups (StartupBlink)", f'{c["startups"]}'),
+              kpi("Giá trị hệ sinh thái", "Ecosystem value", money(c["ecosystem_value_usd"])),
+              kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(c.get("funding_2017_2025_usd")))]
+        if c.get("funding_2025_usd") is not None:
+            kp.append(kpi("Vốn năm 2025", "Funding 2025", money(c["funding_2025_usd"]), f'{c.get("deals_2025", 0)} thương vụ'))
+        if c.get("coworking_spaces") or c.get("accelerators"):
+            kp.append(kpi("Không gian làm việc chung, tăng tốc", "Coworking, accelerators", f'{c.get("coworking_spaces","–")} / {c.get("accelerators","–")}'))
+        ours = [kpi("Tác nhân trong danh bạ", "Actors here", str(len(acts))), kpi("Startup", "Startups", str(tc["startup"])),
+                kpi("Quỹ, nhà đầu tư", "Funds, investors", str(tc["fund"])),
+                kpi("Tổ chức hỗ trợ, vườn ươm", "Support orgs, incubators", str(tc["support_org"] + tc["incubator"] + tc["accelerator"] + tc["space"])),
+                kpi("Trường, viện", "Universities", str(tc["university"])), kpi("Cơ quan nhà nước", "Government", str(tc["government"]))]
+        def lst(t, n=24):
+            xs = sorted([a for a in acts if a["type"] == t], key=lambda a: (VER_ORDER.get(a["verification"]["level"], 9), not a.get("description"), a["name"]["vi"].lower()))
+            if not xs: return '<p class="muted small" data-vi="Chưa có trong danh bạ." data-en="None listed yet.">Chưa có trong danh bạ.</p>'
+            items = "".join(f'<li><a href="{SITE_ROOT}a/{a["id"]}/">{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
+            more = f'<p class="small"><a href="{dir_link(type=t, region=",".join(regs))}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p>' if len(xs) > n else ""
+            return f'<ul class="list-plain alumni">{items}</ul>{more}'
+        copps = sorted([o for o in opps if o["_region"] in regs], key=lambda o: opp_key_date(o), reverse=True)
+        opp_html = "".join(opp_card(o, compact=True) for o in copps[:6]) or '<p class="muted small" data-vi="Chưa có cơ hội nào." data-en="No opportunities yet.">Chưa có cơ hội nào.</p>'
+        corp = ", ".join(e(x) for x in c.get("corporations") or []) or "–"
+        body = f"""
+<div class="wrap page-head"><p class="crumb small"><a href="{SITE_ROOT}thanh-pho/" data-vi="Việt Nam" data-en="Vietnam">Việt Nam</a> / {e(c["name"])}</p>
+<h1>{e(c["name"])}</h1>
+<p class="lead" data-vi="Hệ sinh thái khởi nghiệp {e(c['name'])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội." data-en="The {e(c['name'])} startup ecosystem: ranking, industries, funding, actors and opportunities.">Hệ sinh thái khởi nghiệp {e(c["name"])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
+<section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
+<h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
+<section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật" data-en="Top industries">Ngành nổi bật</h2>{ind_table(c.get("industries"))}
+<p class="small" style="margin-top:12px"><span class="muted" data-vi="Doanh nghiệp lớn tích cực làm việc với startup:" data-en="Corporations active with startups:">Doanh nghiệp lớn tích cực làm việc với startup:</span> {corp}</p></section>
+<section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>
+<div class="cols2"><div><h3 data-vi="Startup" data-en="Startups">Startup</h3>{lst("startup")}</div>
+<div><h3 data-vi="Quỹ, nhà đầu tư" data-en="Funds, investors">Quỹ, nhà đầu tư</h3>{lst("fund", 12)}
+<h3 style="margin-top:20px" data-vi="Tổ chức hỗ trợ" data-en="Support organisations">Tổ chức hỗ trợ</h3>{lst("support_org", 12)}{lst("incubator", 12) if tc["incubator"] else ""}
+<h3 style="margin-top:20px" data-vi="Trường, viện" data-en="Universities">Trường, viện</h3>{lst("university", 12)}</div></div></section>
+<section id="co-hoi" class="sec"><h2 data-vi="Cơ hội" data-en="Opportunities">Cơ hội</h2><div class="opp-list">{opp_html}</div>
+<p class="small" style="margin-top:12px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></section>
+<section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
+<p class="small" style="margin-top:10px"><a href="{e(c["url"])}" rel="noopener" data-vi="Trang {e(c['name'])} trên StartupBlink" data-en="{e(c['name'])} on StartupBlink">Trang {e(c["name"])} trên StartupBlink</a></p></section>
+{SB_NOTE}</div>"""
+        write(f"thanh-pho/{c['id']}/index.html", page(c["name"], body, "cities"))
+
 # ---------- chính sách ----------
 by_year = collections.OrderedDict()
 for x in policies:
@@ -514,7 +631,7 @@ write("chinh-sach/index.html", page("Chính sách", f"""
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
 <p style="margin-top:20px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a></p></div>"""))
-urls = [""] + [p for _, p, _ in NAV[1:]] + [f"a/{a['id']}/" for a in actors]
+urls = [""] + [p for _, p, _ in NAV[1:]] + [f"thanh-pho/{c['id']}/" for c in (BENCH.get("cities", []) if "BENCH" in globals() else [])] + [f"a/{a['id']}/" for a in actors]
 open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls) + "</urlset>\n")

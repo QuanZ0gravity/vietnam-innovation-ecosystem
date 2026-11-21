@@ -1,0 +1,12 @@
+id: startup-kiotviet
+name:
+  vi: KiotViet
+type: startup
+categories:
+- Ecommerce & Retail
+region: ha-noi
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/hanoi-vn

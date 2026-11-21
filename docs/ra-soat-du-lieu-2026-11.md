@@ -111,6 +111,13 @@ Quét 28 trang của indanang.vn: danh bạ tổ chức, đối tác Swiss EP, c
 ## Mô tả từ website chính thức (21/11/2026)
 
 - Đọc website chính thức của 150 tổ chức chưa có mô tả (mỗi trang một lần, từ máy chủ). 94 hồ sơ có thêm mô tả tiếng Việt viết lại từ phần tự giới thiệu của chính tổ chức; nguồn ghi "Website chính thức".
-- Reforged Labs: website thông báo đã ngừng hoạt động. FUNDGO: tên miền hết hạn.
+- Reforged Labs: website thông báo đã ngừng hoạt động. FUNDGO: tên miền hết hạn, đã xoá khỏi danh bạ.
 - Không dùng vì website không khớp tổ chức: XomAI (dẫn sang Xometry), Resin, BSSC (dẫn sang SIHUB), TRON DAO Ventures, Hanoi Venture Chartered Fund.
 - 37 website không đọc được từ máy chủ (chặn truy cập, lỗi chứng chỉ hoặc không phản hồi); cần mở bằng trình duyệt: Adapter, AUTOWORK, BeStaff, Carus, Công ty Cổ phần Digital Marketing DMG, Công ty Cổ phần TOP Sinh viên, Công ty TNHH MTV Công nghệ du lịch Số, Công Ty TNHH Ngọc Oanh Foods, Dehype, Golden Phoenix, H2O Farm, I do Stem, Naki, Nano Đồng AGOIN - Siêu Diệt Nấm, PMX, TMZ, VHFresh, Enouvo Space, IOT Space, Trung tâm Ươm tạo Khởi nghiệp Sông Hàn (SHi – Songhan Incubator), UST Tower, 1Matrix, Aptos, Aus4Innovation, BambuUP, ETH Philippines, Moca Network, NAPA Global, Nvidia Nvaitc, Rabo Foundation, HSC, SCEX, Viettel Digital, An App, Tooliki, YBA Da Nang, YBA HCMC.
+
+## Trang thành phố theo cấu trúc StartupBlink (21/11/2026)
+
+- Đọc trang công khai của StartupBlink cho Việt Nam, TP.HCM, Hà Nội, Đà Nẵng và Hải Phòng (qua trình duyệt). Số liệu xếp hạng, số startup, giá trị hệ sinh thái, vốn và ngành nổi bật lưu ở `data/benchmarks/startupblink-2026.yaml`, ghi nguồn và ngày truy cập. Không sao chép phần văn bản phân tích của StartupBlink và không lấy dữ liệu thuộc gói trả phí.
+- 37 doanh nghiệp được StartupBlink hiển thị công khai cho bốn thành phố được thêm vào danh bạ, 7 hồ sơ đã có được gắn thêm nguồn và ngành. Thư mục mới `data/hai-phong`.
+- Trang mới: `/thanh-pho/` (tổng quan quốc gia, bảng xếp hạng thành phố, ngành) và `/thanh-pho/<thành phố>/` (tổng quan, ngành, danh bạ, cơ hội, so sánh).
+- Lưu ý: trang StartupBlink đôi chỗ hiện hai số khác nhau cho cùng chỉ số (ví dụ Đà Nẵng 39 và 23 startup); dữ liệu ở đây dùng số trong phần mô tả cơ sở dữ liệu.

@@ -1,0 +1,13 @@
+id: startup-giaohangtietkiem-vn
+name:
+  vi: Giaohangtietkiem.vn
+type: startup
+categories:
+- Transportation
+- Logistics
+region: ha-noi
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/hanoi-vn

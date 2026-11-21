@@ -5,6 +5,8 @@ type: startup
 categories:
 - Drone, kết nối UAV
 - Robotics, drone
+- Software & Data
+- Apps
 website: https://xbstation.com
 linkedin: https://www.linkedin.com/company/xbstation
 description:
@@ -14,3 +16,4 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- StartupBlink (trang công khai, 11/2026)

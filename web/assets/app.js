@@ -2,7 +2,7 @@
 (function () {
   var D = {
     vi: {
-      nav_home: "Trang chủ", nav_dir: "Danh bạ", nav_map: "Bản đồ", nav_opps: "Cơ hội", nav_events: "Sự kiện", nav_policy: "Chính sách", nav_contribute: "Đóng góp",
+      nav_home: "Trang chủ", nav_dir: "Danh bạ", nav_map: "Bản đồ", nav_opps: "Cơ hội", nav_cities: "Thành phố", r_hai_phong: "Hải Phòng", nav_events: "Sự kiện", nav_policy: "Chính sách", nav_contribute: "Đóng góp",
       theme: "Đổi giao diện sáng, tối", lang: "English",
       foot_data: "Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.", foot_src: "Mã nguồn và dữ liệu trên GitHub",
       search_ph: "Tìm tổ chức, startup, quỹ…", search_btn: "Tìm",
@@ -19,7 +19,7 @@
       no_place: "Chưa có vị trí", by_ward: "Vị trí theo phường, xã", by_addr: "Vị trí theo địa chỉ"
     },
     en: {
-      nav_home: "Home", nav_dir: "Directory", nav_map: "Map", nav_opps: "Opportunities", nav_events: "Events", nav_policy: "Policies", nav_contribute: "Contribute",
+      nav_home: "Home", nav_dir: "Directory", nav_map: "Map", nav_opps: "Opportunities", nav_cities: "Cities", r_hai_phong: "Hai Phong", nav_events: "Events", nav_policy: "Policies", nav_contribute: "Contribute",
       theme: "Switch light or dark theme", lang: "Tiếng Việt",
       foot_data: "Open data under CC BY 4.0, code under MIT.", foot_src: "Code and data on GitHub",
       search_ph: "Search organisations, startups, funds…", search_btn: "Search",

@@ -1,0 +1,13 @@
+id: startup-hello-bacsi
+name:
+  vi: Hello Bacsi
+type: startup
+categories:
+- Healthtech
+- Health Care
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn

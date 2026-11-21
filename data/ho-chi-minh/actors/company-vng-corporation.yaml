@@ -1,0 +1,12 @@
+id: company-vng-corporation
+name:
+  vi: VNG Corporation
+type: company
+categories:
+- Social & Leisure
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn

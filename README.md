@@ -15,6 +15,7 @@ Bắt đầu từ **TP Đà Nẵng** (gồm khu vực Quảng Nam cũ). Các t�
 | Đà Nẵng | 532 | 271 | 17 |
 | Hà Nội | 8 | 0 | 1 |
 | TP. Hồ Chí Minh | 7 | 0 | 6 |
+| Hải Phòng | 7 | 6 | 0 |
 | Việt Nam, chưa rõ tỉnh | 254 | 121 | 0 |
 | Quốc tế | 87 | 30 | 0 |
 

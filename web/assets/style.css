@@ -185,3 +185,22 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .gap{margin-top:6px;padding:8px 12px;border-left:3px solid var(--sun);background:var(--surface);color:var(--ink-2)}
 .opp.closed h3{color:var(--ink-2)}
 .alumni{columns:2 220px;column-gap:32px}.alumni li{break-inside:avoid}
+
+/* Thành phố */
+.onpage{display:flex;gap:6px 18px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid var(--line);position:sticky;top:64px;background:var(--bg);z-index:5}
+.sec{margin-top:44px;scroll-margin-top:120px}
+.sec h2{font-size:1.4rem;padding-bottom:10px;border-bottom:1.5px solid var(--ink);margin-bottom:18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.kpi .kv{font-size:1.5rem;font-weight:800;line-height:1.15}
+.kpi .kl{color:var(--ink-2);margin-top:4px;font-size:.9rem}
+.up{color:var(--sea);font-weight:700}
+.tbl-wrap{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse;font-size:.95rem}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl th{font-size:.82rem;color:var(--ink-2);font-weight:700}
+.tbl tr.cur td{background:var(--surface);font-weight:700}
+.cols2{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:32px}
+@media (max-width:760px){.cols2{grid-template-columns:1fr}.onpage{top:56px}}
+.src-note{margin-top:40px;padding-top:16px;border-top:1px solid var(--line)}
+.crumb a{color:inherit}

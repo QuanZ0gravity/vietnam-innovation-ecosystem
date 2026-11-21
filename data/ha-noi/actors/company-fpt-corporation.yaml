@@ -1,0 +1,13 @@
+id: company-fpt-corporation
+name:
+  vi: FPT Corporation
+type: company
+categories:
+- Hardware & IoT
+- Hardware
+region: ha-noi
+verification:
+  level: unverified
+sources:
+- StartupBlink (trang công khai, 11/2026)
+source_url: https://www.startupblink.com/startup-ecosystem/hanoi-vn

@@ -4,10 +4,13 @@ name:
 type: company
 categories:
 - Xe máy điện
+- Transportation
+- Automotive
 region: da-nang
 verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
+- StartupBlink (trang công khai, 11/2026)
 legacy_id: d86
