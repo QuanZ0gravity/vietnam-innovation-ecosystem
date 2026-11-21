@@ -3,9 +3,12 @@ name:
   vi: Vouchify
 type: startup
 website: https://usevouchify.com/
+linkedin: https://www.linkedin.com/company/use-vouchify
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Hạ tầng B2B giúp cửa hàng địa phương chuyển dịch vụ một lần thành gói thuê bao, có doanh thu đều đặn.

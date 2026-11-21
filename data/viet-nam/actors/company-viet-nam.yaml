@@ -1,6 +1,6 @@
 id: company-viet-nam
 name:
-  vi: Việt Nam
+  vi: cacaFly
 type: company
 region: viet-nam
 verification:
@@ -10,3 +10,5 @@ sources:
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
 alt_names:
 - CÔNG TY TNHH CACAFLY (VIỆT NAM) CACAFLY
+description:
+  vi: 'cacaFly: agency marketing số khu vực châu Á – Thái Bình Dương, đối tác của Zalo, Meta, Google và TikTok.'

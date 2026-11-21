@@ -3,9 +3,12 @@ name:
   vi: Stellar foundation
 type: fund
 website: https://stellar.org/
+linkedin: https://www.linkedin.com/company/stellar-development-foundation
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Tài trợ và cấp vốn cho dự án xây dựng trên mạng Stellar và Soroban.

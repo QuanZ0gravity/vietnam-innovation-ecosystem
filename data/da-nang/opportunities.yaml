@@ -6,11 +6,16 @@
   type: demo_day
   organizer: SUCI, Lisk
   event_date: '2026-01-24'
-  focus: [Web3, DeFi, AI, thanh toán]
+  focus:
+  - Web3
+  - DeFi
+  - AI
+  - thanh toán
   outcome:
     note: Hơn 30 doanh nghiệp công nghệ, tổ chức quốc tế, nhà đầu tư và chuyên gia tham dự.
     source: https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026
-  secondary_sources: [https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026]
+  secondary_sources:
+  - https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026
   legacy_id: v2
 - id: opp-pre-davas-2026
   title: Pre-DAVAS 2026
@@ -18,21 +23,26 @@
   organizer: Thành phố Đà Nẵng
   event_date: '2026-04-24'
   eligibility: Tham gia có chọn lọc theo hồ sơ đăng ký.
-  secondary_sources: [https://startupdanang.vn/pre-davas-nen-tang-ket-noi-kinh-doanh-quoc-te-tai-da-nang]
+  secondary_sources:
+  - https://startupdanang.vn/pre-davas-nen-tang-ket-noi-kinh-doanh-quoc-te-tai-da-nang
   legacy_id: v7
 - id: opp-empower-founders-residency-2026
   title: EMpower Founders Residency
   type: accelerator_program
   organizer: sqrDAO / Da Nang Blockchain Hub
-  organizer_ids: [support-org-sqrdao-da-nang-blockchain-hub]
+  organizer_ids:
+  - support-org-sqrdao-da-nang-blockchain-hub
   event_date: '2026-05-04'
-  focus: [Web3, AI]
+  focus:
+  - Web3
+  - AI
   legacy_id: v8
 - id: opp-bk-shark-2026
   title: Cuộc thi Khởi nghiệp trong sinh viên BK SHARK 2026
   type: competition
   organizer: Trường Đại học Bách khoa – Đại học Đà Nẵng
-  organizer_ids: [university-truong-dai-hoc-bach-khoa]
+  organizer_ids:
+  - university-truong-dai-hoc-bach-khoa
   opens: '2026-03-19'
   event_date: '2026-05-16'
   eligibility: Sinh viên.
@@ -40,52 +50,143 @@
   outcome:
     finalists: 7
     source: https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026
-  secondary_sources: [https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026]
+  secondary_sources:
+  - https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026
   legacy_id: v10
 - id: opp-ai-builder-hackathon-2026
   title: AI Builder Hackathon
   type: competition
   organizer: Ecomdy, DNES
-  organizer_ids: [incubator-ecomdy-ecombator, incubator-dnes]
+  organizer_ids:
+  - incubator-ecomdy-ecombator
+  - incubator-dnes
   event_date: '2026-05-20'
-  focus: [AI]
+  focus:
+  - AI
   benefits: Đầu vào cho đợt ươm tạo AI.
   legacy_id: v11
 - id: opp-davas-2026
   title: DAVAS 2026 và Web3 Builders’ Summit
   type: investor_matching
   organizer: UBND thành phố Đà Nẵng, Sở KH&CN, DISSC
-  organizer_ids: [government-so-khoa-hoc-va-cong-nghe, government-dissc]
+  organizer_ids:
+  - government-so-khoa-hoc-va-cong-nghe
+  - government-dissc
   event_date: '2026-05-25'
   primary_source: https://davas.vc/
   outcome:
     finalists: 62
     note: 62 dự án, 31 quỹ tham gia; quy mô đầu tư công bố hơn 5 tỷ USD. Số liệu từ bản thử nghiệm, chưa đối chiếu nguồn gốc.
-  participants: [startup-uc-talent, startup-risegate, startup-nghe-sanh, startup-aquax-smart-aiot-shrimp-farming-solution, startup-enosta, startup-atm-academy, startup-lead-on-ghg, startup-alicorn-ai-to-operate-real-world-spaces, startup-dx3s, startup-gaian, startup-blaze-ai, startup-cyreneai, startup-spacewavy-wavyroom, startup-reasonary-ai, startup-binks-green-product-joint-stock-company, company-biva, startup-veevox, startup-biowraps, startup-knotwork, startup-cong-ty-co-phan-5rtech, startup-ecothread, startup-brain-life, startup-tooliki, startup-vbrain-ai-powered-r-d-as-a-service, startup-lazorkit, startup-cs-etelecom, startup-cong-ty-tnhh-cho-ca-phe, startup-hirenow, startup-ai-enterprise-platform, startup-aipad, startup-dev-plus, startup-firewatcher-ai, startup-an-app, startup-roboi-special-purpose-industrial-robots, startup-edu-time, startup-speak-flow, startup-resin, startup-my-feed-aimbe-lab, startup-transformer-robot-ai-platform, startup-money-god-one-inc-elysia-ai, startup-defai-sensor, startup-vouchify, startup-ticketdaddy, startup-jamit, startup-quantum3labs-polypay, startup-fystack, startup-koki-o, startup-aimsoo, startup-valsea, fund-quest-ventures, fund-do-ventures, fund-thinkzone-ventures, fund-daiwa-corporate-investment, fund-founders-launchpad, fund-one-tree-hill-fund, fund-antler, fund-sunwah-innovation-center, fund-genai-fund, fund-mexc-ventures, fund-lotte-ventures-vietnam, fund-aiviet-venture, fund-weangels-capital-ventures, fund-kilsa-global, fund-alliance-mount, fund-totm-labs, fund-bin-corporation-group, fund-scg-korea-fund, fund-zone-ventures, fund-universal-materials-incubator-co-ltd-umi, fund-wavemaker-partners, fund-wavemaker-ventures, fund-bestb-capital, fund-sakura-dream-viet-nam, fund-singapore-fintech-association, fund-animoca-brands, fund-stellar-foundation, fund-tron-dao-ventures]
-  secondary_sources: [https://indanang.vn/ecosystem-activities/davas-2026]
+  participants:
+  - startup-uc-talent
+  - startup-risegate
+  - startup-nghe-sanh
+  - startup-aquax-smart-aiot-shrimp-farming-solution
+  - startup-enosta
+  - startup-atm-academy
+  - startup-lead-on-ghg
+  - startup-alicorn-ai-to-operate-real-world-spaces
+  - startup-dx3s
+  - startup-gaian
+  - startup-blaze-ai
+  - startup-cyreneai
+  - startup-spacewavy-wavyroom
+  - startup-reasonary-ai
+  - startup-binks-green-product-joint-stock-company
+  - company-biva
+  - startup-veevox
+  - startup-biowraps
+  - startup-knotwork
+  - startup-cong-ty-co-phan-5rtech
+  - startup-ecothread
+  - startup-brain-life
+  - startup-tooliki
+  - startup-vbrain-ai-powered-r-d-as-a-service
+  - startup-lazorkit
+  - startup-cs-etelecom
+  - startup-cong-ty-tnhh-cho-ca-phe
+  - startup-hirenow
+  - startup-ai-enterprise-platform
+  - startup-aipad
+  - startup-dev-plus
+  - startup-firewatcher-ai
+  - startup-an-app
+  - startup-roboi-special-purpose-industrial-robots
+  - startup-edu-time
+  - startup-speak-flow
+  - startup-resin
+  - startup-my-feed-aimbe-lab
+  - startup-transformer-robot-ai-platform
+  - startup-money-god-one-inc-elysia-ai
+  - startup-defai-sensor
+  - startup-vouchify
+  - startup-ticketdaddy
+  - startup-jamit
+  - startup-quantum3labs-polypay
+  - startup-fystack
+  - startup-koki-o
+  - startup-aimsoo
+  - startup-valsea
+  - fund-quest-ventures
+  - fund-do-ventures
+  - fund-thinkzone-ventures
+  - fund-daiwa-corporate-investment
+  - fund-founders-launchpad
+  - fund-one-tree-hill-fund
+  - fund-antler
+  - fund-sunwah-innovation-center
+  - fund-genai-fund
+  - fund-mexc-ventures
+  - fund-lotte-ventures-vietnam
+  - fund-aiviet-venture
+  - fund-weangels-capital-ventures
+  - fund-kilsa-global
+  - fund-alliance-mount
+  - fund-totm-labs
+  - fund-bin-corporation-group
+  - fund-scg-korea-fund
+  - fund-zone-ventures
+  - fund-universal-materials-incubator-co-ltd-umi
+  - fund-wavemaker-partners
+  - fund-wavemaker-ventures
+  - fund-bestb-capital
+  - fund-sakura-dream-viet-nam
+  - fund-singapore-fintech-association
+  - fund-animoca-brands
+  - fund-stellar-foundation
+  - fund-tron-dao-ventures
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/davas-2026
   legacy_id: v12
 - id: opp-ai-cross-border-hackathon-2026
   title: AI Cross-Border Hackathon 2026
   type: competition
   organizer: Đà Nẵng đăng cai
   event_date: '2026-06-06'
-  focus: [AI, thương mại điện tử xuyên biên giới]
-  secondary_sources: [https://startupdanang.vn/da-nang-thuc-day-phat-trien-cac-giai-phap-ai-cho-thuong-mai-dien-tu-xuyen-bien-gioi]
+  focus:
+  - AI
+  - thương mại điện tử xuyên biên giới
+  secondary_sources:
+  - https://startupdanang.vn/da-nang-thuc-day-phat-trien-cac-giai-phap-ai-cho-thuong-mai-dien-tu-xuyen-bien-gioi
   legacy_id: v15
 - id: opp-her-mentor-2026
   title: Her Mentor 2026, chương trình ươm tạo phụ nữ khởi nghiệp
   type: accelerator_program
   organizer: Trung tâm Ươm tạo Khởi nghiệp Sông Hàn (SHi)
-  organizer_ids: [support-org-trung-tam-uom-tao-khoi-nghiep-song-han-shi-songhan-incubator]
+  organizer_ids:
+  - support-org-trung-tam-uom-tao-khoi-nghiep-song-han-shi-songhan-incubator
   event_date: '2026-07-14'
   eligibility: Dự án do phụ nữ sáng lập hoặc đồng sáng lập.
-  secondary_sources: [https://startupdanang.vn/khai-mac-chuong-trinh-uom-tao-phu-nu-khoi-nghiep-her-mentor-2026]
+  secondary_sources:
+  - https://startupdanang.vn/khai-mac-chuong-trinh-uom-tao-phu-nu-khoi-nghiep-her-mentor-2026
   legacy_id: v20
 - id: opp-surf-2026
   title: SURF 2026, chung kết khởi nghiệp đổi mới sáng tạo
   type: competition
   organizer: UBND thành phố Đà Nẵng, Sở KH&CN, DISSC
-  organizer_ids: [government-so-khoa-hoc-va-cong-nghe, government-dissc]
+  organizer_ids:
+  - government-so-khoa-hoc-va-cong-nghe
+  - government-dissc
   event_date: '2026-08-18'
   primary_source: https://surfdanang.zone/
   outcome:
@@ -96,22 +197,34 @@
   title: Startup Runway 2026 và Tuần lễ Khởi nghiệp học sinh, sinh viên
   type: competition
   organizer: Trường Đại học Kinh tế – Đại học Đà Nẵng
-  organizer_ids: [university-truong-dai-hoc-kinh-te]
+  organizer_ids:
+  - university-truong-dai-hoc-kinh-te
   event_date: '2026-08-19'
   eligibility: Học sinh, sinh viên.
-  secondary_sources: [https://startupdanang.vn/khoi-dong-tuan-le-khoi-nghiep-doi-moi-sang-tao-va-chung-ket-startup-runway-2026]
+  secondary_sources:
+  - https://startupdanang.vn/khoi-dong-tuan-le-khoi-nghiep-doi-moi-sang-tao-va-chung-ket-startup-runway-2026
   legacy_id: v26
 - id: opp-sandbox-dot-1-2026
   title: Cơ chế thử nghiệm có kiểm soát (sandbox) Đà Nẵng, đợt công bố 2026
   type: pilot_program
   organizer: Sở KH&CN Đà Nẵng
-  organizer_ids: [government-so-khoa-hoc-va-cong-nghe]
+  organizer_ids:
+  - government-so-khoa-hoc-va-cong-nghe
   event_date: '2026-08-24'
-  focus: [thanh toán, tài sản mã hóa, tài chính xuyên biên giới]
+  focus:
+  - thanh toán
+  - tài sản mã hóa
+  - tài chính xuyên biên giới
   outcome:
     selected: 6
     note: 6 giải pháp được cho phép thử nghiệm có kiểm soát, thời hạn 18 đến 36 tháng.
-  participants: [company-cong-ty-cp-payd, company-cong-ty-cp-danova-labs, company-icetea-solution, company-money-x-border, company-cong-ty-cp-dragon-lab, company-alphatrue-solutions]
+  participants:
+  - company-cong-ty-cp-payd
+  - company-cong-ty-cp-danova-labs
+  - company-icetea-solution
+  - company-money-x-border
+  - company-cong-ty-cp-dragon-lab
+  - company-alphatrue-solutions
   legacy_id: v27
 - id: opp-founder-villages-batch-01
   title: Founder Villages, Batch 01
@@ -123,7 +236,9 @@
   title: Investment Readiness Lab
   type: accelerator_program
   organizer: Swiss EP, sqrDAO
-  organizer_ids: [international-swiss-ep, support-org-sqrdao-da-nang-blockchain-hub]
+  organizer_ids:
+  - international-swiss-ep
+  - support-org-sqrdao-da-nang-blockchain-hub
   event_date: '2026-09-28'
   benefits: Chuẩn bị gọi vốn cho founder.
   legacy_id: v34
@@ -132,7 +247,11 @@
   type: call_for_applications
   organizer: Qualcomm và đối tác
   opens: '2026-10-01'
-  focus: [5G, IoT, AI, thành phố thông minh]
+  focus:
+  - 5G
+  - IoT
+  - AI
+  - thành phố thông minh
   benefits: Ươm tạo, hỗ trợ kỹ thuật, tài trợ.
   legacy_id: v36
 - id: opp-doan-dn-nuoc-ngoai-mua-hang-2026
@@ -141,20 +260,41 @@
   organizer: Thành phố Đà Nẵng
   event_date: '2026-10-28'
   eligibility: Doanh nghiệp có sản phẩm muốn xuất khẩu.
-  secondary_sources: [https://startupdanang.vn/thong-bao-moi-doanh-nghiep-dang-ky-tham-gia-chuong-trinh-doan-doanh-nghiep-nuoc-ngoai-vao-thanh-pho-da-nang-giao-dich-de-mua-hang-nam-2026]
+  secondary_sources:
+  - https://startupdanang.vn/thong-bao-moi-doanh-nghiep-dang-ky-tham-gia-chuong-trinh-doan-doanh-nghiep-nuoc-ngoai-vao-thanh-pho-da-nang-giao-dich-de-mua-hang-nam-2026
   legacy_id: v45
 - id: opp-net-zero-challenge-2026
   title: Net Zero Challenge 2026
   type: competition
   organizer: Net Zero Challenge (toàn quốc)
   event_date: '2026-11-12'
-  focus: [công nghệ khí hậu]
+  focus:
+  - công nghệ khí hậu
   legacy_id: v47
 - id: opp-tecx-2026-da-nang
   title: TECx 2026 Đà Nẵng
   type: investor_matching
   organizer: TECx
   event_date: '2026-09-06'
-  focus: [công nghệ thể thao, sức khỏe, đầu tư]
-  participants: [company-savvi-code, company-thien-kien, company-xstar-fund-management, company-mynavi-techtus-vietnam, company-pixel-inc, company-baseline, company-golden-sunrise-senior-life, company-imt-solutions, company-mk-vision, company-reclub, company-vietnam-investments-group, company-ho-chi-minh-city-securities-corporation, company-codehq, company-sunrise-events-vietnam, company-studio-noah]
-  secondary_sources: [https://indanang.vn/ecosystem-activities/tecx-2026-danang]
+  focus:
+  - công nghệ thể thao
+  - sức khỏe
+  - đầu tư
+  participants:
+  - company-savvi-code
+  - company-thien-kien
+  - company-xstar-fund-management
+  - company-mynavi-techtus-vietnam
+  - company-pixel-inc
+  - company-baseline
+  - company-golden-sunrise-senior-life
+  - company-imt-solutions
+  - company-mk-vision
+  - company-reclub
+  - company-vietnam-investments-group
+  - company-ho-chi-minh-city-securities-corporation
+  - company-codehq
+  - company-sunrise-events-vietnam
+  - company-studio-noah
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/tecx-2026-danang

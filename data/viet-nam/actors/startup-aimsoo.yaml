@@ -1,13 +1,16 @@
 id: startup-aimsoo
 name:
   vi: Aimsoo
+alt_names:
+- AIMSOO
 type: startup
 website: https://aimsoo.ai/
+linkedin: https://www.linkedin.com/company/aimsoo
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
-alt_names:
-- AIMSOO
+description:
+  vi: Nền tảng không cần lập trình giúp doanh nghiệp nhỏ kiểm soát cách mình được các hệ thống AI giới thiệu.

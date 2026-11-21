@@ -101,3 +101,9 @@ Quét 28 trang của indanang.vn: danh bạ tổ chức, đối tác Swiss EP, c
 - 7 cơ hội mới: Startup Wheel 2026 (70 startup), QVIC 2026 (18), Green Innovation Fellowship 2026 (16), Plastics Innovation Programme 2026, InnoEx 2026 (104 doanh nghiệp), JDI TFOAI4, Ngày ĐMST Việt Nam 2026; thêm TECx 2026 Đà Nẵng.
 - Không đưa vào: hồ sơ cá nhân (diễn giả, mentor, khách mời, EIR), mô tả sao chép từ davas.vc và cẩm nang InnoEx, các nhãn chủ đề không phải tổ chức.
 - Cần rà tiếp: tỉnh, thành của 254 tác nhân trong `viet-nam`; loại tác nhân của các tổ chức quốc tế.
+
+## Mô tả và LinkedIn (21/11/2026)
+
+- 256 hồ sơ có thêm mô tả tiếng Việt, viết lại ngắn gọn từ thông tin công khai trên danh bạ DAVAS 2026, cẩm nang InnoEx 2026 và trang JDI TFOAI4. Không sao chép nguyên văn, để phần mô tả có thể cấp phép CC BY 4.0. Nguồn ghi ở `source_url`.
+- 76 hồ sơ có thêm trang LinkedIn công ty, lấy từ liên kết trên website chính thức của chính tổ chức (mỗi website được truy cập một lần). Chỉ nhận khi website dẫn tới đúng một trang LinkedIn khớp với tên hoặc tên miền.
+- Không thu thập dữ liệu bằng cách quét tự động LinkedIn.

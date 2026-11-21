@@ -3,9 +3,12 @@ name:
   vi: Blaze AI
 type: startup
 website: https://blaze.ai
+linkedin: https://www.linkedin.com/company/getblazeai
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Nền tảng AI giọng nói cho các ngôn ngữ Đông Nam Á.

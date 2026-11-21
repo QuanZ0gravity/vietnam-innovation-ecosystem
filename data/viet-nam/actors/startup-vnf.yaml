@@ -1,14 +1,17 @@
 id: startup-vnf
 name:
   vi: VNF
+alt_names:
+- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD JOINT STOCK COMPANY
+- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD (VNF)
 type: startup
+website: https://vnfoods.vn/
+linkedin: https://www.linkedin.com/company/vnf
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD JOINT STOCK COMPANY
-- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD (VNF)
-website: https://vnfoods.vn/
+description:
+  vi: Biến phụ phẩm tôm thành sản phẩm sinh học cho nông nghiệp, thực phẩm.

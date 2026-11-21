@@ -8,3 +8,5 @@ verification:
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/jdi-tfoai4
+description:
+  vi: Hệ thống truy xuất tri thức doanh nghiệp dùng mô hình ngôn ngữ lớn, trả lời chính xác bằng tiếng Việt.

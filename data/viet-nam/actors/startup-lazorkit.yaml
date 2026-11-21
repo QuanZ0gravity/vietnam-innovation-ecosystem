@@ -9,3 +9,5 @@ verification:
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Quản lý ngân quỹ trên chuỗi cho các nhóm dùng Solana, thêm lớp phân quyền, duyệt chi và hạn mức.

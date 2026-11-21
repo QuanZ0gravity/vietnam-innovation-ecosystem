@@ -3,9 +3,12 @@ name:
   vi: Fystack
 type: startup
 website: http://fystack.io/
+linkedin: https://www.linkedin.com/company/fystack
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Hạ tầng lưu ký tài sản số an toàn, cung cấp API cho nhà phát triển, ẩn đi độ phức tạp quản lý khóa.

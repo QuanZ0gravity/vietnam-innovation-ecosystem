@@ -3,9 +3,12 @@ name:
   vi: Jamit
 type: startup
 website: https://jamit.app
+linkedin: https://www.linkedin.com/company/jamithq
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
+description:
+  vi: Nền tảng AI giúp người sáng tạo chuyển ý tưởng thành truyện, podcast, kịch truyền thanh và sách nói.
