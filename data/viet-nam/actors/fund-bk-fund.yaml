@@ -1,0 +1,14 @@
+id: fund-bk-fund
+name:
+  vi: BK Fund
+alt_names: []
+type: fund
+website: https://bkfund.vn/
+contact_email: contact@bkfund.vn
+description:
+  vi: Quỹ đầu tư khởi nghiệp gắn với Đại học Bách khoa Hà Nội.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

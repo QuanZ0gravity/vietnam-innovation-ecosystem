@@ -1,0 +1,13 @@
+id: government-nssc
+name:
+  vi: Trung tâm Hỗ trợ khởi nghiệp sáng tạo quốc gia (NSSC)
+alt_names:
+- National Startup Support Center (NSSC)
+type: government
+description:
+  vi: 'Đầu mối quốc gia về hệ sinh thái khởi nghiệp thuộc Bộ KH&CN: triển khai Đề án 844, công bố báo cáo hệ sinh thái hằng năm, tổ chức Techfest.'
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)

@@ -1,10 +1,15 @@
 id: startup-cong-ty-tnhh-enso-dana
 name:
   vi: Công ty TNHH Enso Dana
+alt_names:
+- Enso Dana Company Limited
 type: startup
 sectors:
 - climate
 website: https://ensodana.vn/
+address: 100 Le Sy, Đà Nẵng
+description:
+  vi: Hạt khử mùi ENSO cho tủ giày, xe hơi, nhà vệ sinh.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -12,6 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s30
-description:
-  vi: Hạt khử mùi ENSO cho tủ giày, xe hơi, nhà vệ sinh.

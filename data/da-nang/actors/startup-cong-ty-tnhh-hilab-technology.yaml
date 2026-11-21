@@ -1,11 +1,16 @@
 id: startup-cong-ty-tnhh-hilab-technology
 name:
   vi: Công ty TNHH Hilab Technology
+alt_names:
+- Hilab Technology Company Limited
 type: startup
 sectors:
 - ai
 website: https://hilab.asia/
 linkedin: https://www.linkedin.com/company/hilab-technology
+address: 324 2/9 Street, Đà Nẵng
+description:
+  vi: Chuyển đổi số thiết kế riêng cho doanh nghiệp vừa và nhỏ.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -13,6 +18,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s33
-description:
-  vi: Chuyển đổi số thiết kế riêng cho doanh nghiệp vừa và nhỏ.

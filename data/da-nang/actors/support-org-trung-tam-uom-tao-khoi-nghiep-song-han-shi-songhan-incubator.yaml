@@ -1,11 +1,17 @@
 id: support-org-trung-tam-uom-tao-khoi-nghiep-song-han-shi-songhan-incubator
 name:
   vi: Trung tâm Ươm tạo Khởi nghiệp Sông Hàn (SHi – Songhan Incubator)
+alt_names:
+- Songhan Incubator (SHi)
 type: support_org
 categories:
 - Tổ chức hỗ trợ
 status: active
 website: https://songhan.vn/
+contact_email: info@songhan.vn
+address: 179 Trần Hưng Đạo, Đà Nẵng
+description:
+  vi: Her Mentor 2026, ươm tạo phụ nữ khởi nghiệp.
 region: da-nang
 verification:
   level: unverified
@@ -14,9 +20,6 @@ sources:
 - Thông tin tổ chức (11/2026)
 - indanang.vn
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://startupdanang.vn/trung-tam-uom-tao-khoi-nghiep-song-han-shi-songhan-incubator-8ujru5cbsg
 legacy_id: o8
-alt_names:
-- Songhan Incubator (SHi)
-description:
-  vi: Her Mentor 2026, ươm tạo phụ nữ khởi nghiệp.

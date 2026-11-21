@@ -145,3 +145,24 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Viết mới 31 mô tả, thêm 44 logo.
 - Gộp 5 cặp hồ sơ trùng phát hiện nhờ website: Cashbag, One Tree Hill, AquaX, Mệ Đoan (Công ty TNHH Hoàng Phong Dana), Umbalena (Công ty TNHH Công nghệ VOOC).
 - Sau đợt này: 916 hồ sơ, 337 có website, 460 có logo, 514 có mô tả.
+
+## Chuỗi tăng trưởng theo năm từ StartupBlink (22/11/2026)
+
+- Đọc dữ liệu của hai biểu đồ công khai trên trang Việt Nam và 4 thành phố: hạng thế giới theo năm (2017–2026, không có 2018) và vốn đầu tư, số thương vụ theo năm (2017–2025). Lưu trong `data/benchmarks/startupblink-2026.yaml` (các trường `global_rank_by_year`, `funding_by_year_usd`, `deals_by_year`).
+- Trang Địa phương và từng thành phố có mục "Tăng trưởng": biểu đồ hạng thế giới (thang log, đảo trục để lên cao là tốt) và biểu đồ vốn đầu tư theo năm kèm số thương vụ; trang tổng có bảng vốn theo năm của 4 thành phố.
+
+## Cập nhật từ hai tài liệu (22/11/2026)
+
+**Ấn phẩm "Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng" (Sở KH&CN Đà Nẵng, bản tiếng Anh, 2025)**
+- 41 startup và 19 doanh nghiệp khoa học và công nghệ: đối chiếu với danh bạ; bổ sung địa chỉ trụ sở, website, tên pháp lý tiếng Anh (vào `alt_names`), nhãn "Doanh nghiệp khoa học và công nghệ", và mô tả còn thiếu. Thêm 19 hồ sơ mới (ví dụ Green Beli, Ted Technology, ISTICK, DANAPHA, QCM, DIBANCO, Titan Data Analytics).
+- Không đưa vào: tên người đại diện theo pháp luật, số điện thoại và email cá nhân. Chỉ dùng email chung của tổ chức (info@, contact@, email cơ quan nhà nước).
+- Tổ chức hỗ trợ: bổ sung địa chỉ và kênh liên hệ chung cho DNES, Songhan Incubator, Decentralab, Ecombator, DISSC, DSAC, DBC, 199MIH, Enouvo Space, UST Tower, IoT Space, Tiktak; ghi chú DISSC, DSAC, DBC đã hợp nhất vào Trung tâm ĐMST Đà Nẵng từ 1/11/2026. Thêm Lydinc Maker Innovation Space, Không gian sáng tạo Maker VNUK.
+- Quỹ: thêm TheVentures, BK Fund, Touchstone, Draper Startup House Vietnam, ITI Fund, Quỹ Phát triển doanh nghiệp nhỏ và vừa; bổ sung kênh liên hệ chung cho DDIF, ThinkZone, Quest Ventures.
+- Gộp hồ sơ trùng Dragold.
+- Mục "Tình hình" của Đà Nẵng: PII 2024 hạng 5/63, bốn lần danh hiệu thành phố khởi nghiệp sáng tạo hấp dẫn, quy mô mạng lưới, tổ điều phối 27 thành viên.
+
+**Báo cáo Global Startup Ecosystem Index 2026 (StartupBlink, 5/2026), chương Việt Nam**
+- Mục "Tình hình" cho Việt Nam và 4 thành phố, viết lại ngắn gọn từ phần nhận định của báo cáo, ghi nguồn từng dòng.
+- Số liệu báo cáo: giá trị hệ sinh thái 75,1 tỷ USD, 3 kỳ lân (khác với số trên website StartupBlink tại thời điểm truy cập: 48,9 tỷ USD; ghi cả hai, nêu rõ nguồn).
+- Thêm MoMo, Tiki, Techcom Securities (TCBS), Startup Haiphong, NSSC, NIC, Sở KH&CN TP.HCM.
+- Sau đợt này: 949 hồ sơ.

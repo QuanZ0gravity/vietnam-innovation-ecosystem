@@ -1,6 +1,8 @@
 id: startup-cong-ty-tnhh-selly
 name:
   vi: Công ty TNHH SELLY
+alt_names:
+- SELLY Company Limited
 type: startup
 categories:
 - Thương mại xã hội
@@ -12,6 +14,7 @@ sectors:
 - commerce
 status: active
 website: https://selly.vn/
+address: 433-435 Nguyen Huu Tho, Đà Nẵng
 description:
   vi: Nền tảng kết nối nhà sản xuất với người bán cá nhân; vòng Seed 2022.
 region: da-nang
@@ -23,4 +26,5 @@ sources:
 - Danh mục ươm tạo của DNES (11/2026)
 - Bản đồ hệ sinh thái
 - StartupBlink (trang công khai, 11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s39

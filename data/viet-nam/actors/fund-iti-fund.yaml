@@ -1,0 +1,14 @@
+id: fund-iti-fund
+name:
+  vi: ITI Fund
+alt_names: []
+type: fund
+website: https://itifund.com/
+contact_email: info@itifund.com
+description:
+  vi: Quỹ đầu tư vào doanh nghiệp công nghệ.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

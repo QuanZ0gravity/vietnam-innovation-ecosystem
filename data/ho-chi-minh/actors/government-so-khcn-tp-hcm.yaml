@@ -1,0 +1,13 @@
+id: government-so-khcn-tp-hcm
+name:
+  vi: Sở Khoa học và Công nghệ TP. Hồ Chí Minh
+alt_names:
+- HCMC Department of Science and Technology (DOST)
+type: government
+description:
+  vi: Quản lý chính sách khởi nghiệp của TP.HCM, quản lý SIHUB và BSSC, đồng tổ chức InnoEx.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)

@@ -1,10 +1,15 @@
 id: startup-cong-ty-co-phan-cong-nghe-tekup
 name:
   vi: Công ty Cổ phần Công nghệ Tekup
+alt_names:
+- Tekup Technology Joint Stock Company
 type: startup
 sectors:
 - ai
 website: https://tekup.vn/en/home/
+address: 25 Xuan Tam, Đà Nẵng
+description:
+  vi: Phát triển sản phẩm số và chuyển đổi số cho doanh nghiệp, tại Đà Nẵng.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -12,6 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s27
-description:
-  vi: Phát triển sản phẩm số và chuyển đổi số cho doanh nghiệp, tại Đà Nẵng.

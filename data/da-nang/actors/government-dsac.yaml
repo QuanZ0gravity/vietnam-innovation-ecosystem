@@ -1,16 +1,20 @@
 id: government-dsac
 name:
   vi: DSAC
+alt_names:
+- Da Nang Research, Training Center for Microchip Design and Artificial Intelligence
 type: government
 categories:
 - Trung tâm vi mạch bán dẫn và AI
 website: https://dsac.danang.gov.vn
+contact_email: dsac@danang.gov.vn
 description:
   vi: Đào tạo, hạ tầng vi mạch và AI; nay thuộc Trung tâm ĐMST Đà Nẵng.
 region: da-nang
-website_status: Không truy cập được, cần kiểm tra
+website_status: Đã hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng từ 1/11/2026 (QĐ 4640/QĐ-UBND)
 verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: d4

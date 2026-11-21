@@ -1,15 +1,25 @@
 id: startup-dragold
 name:
   vi: Dragold
+alt_names:
+- Dragold Technology Education Joint Stock Company
+- Công ty Cổ phần Giáo dục công nghệ Dragold
 type: startup
 categories:
 - Software & Data
 - Enterprise Technology
 sectors:
 - ai
+website: https://dragold.net/
+address: 03 Ho Quy Ly, Đà Nẵng
+description:
+  vi: 'Giáo dục công nghệ và phát triển sản phẩm số: tư vấn, thiết kế website, UI/UX, ứng dụng di động; vận hành nền tảng Beekids.'
 region: da-nang
 verification:
   level: unverified
 sources:
 - StartupBlink (trang công khai, 11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://www.startupblink.com/startup-ecosystem/da-nang-vn

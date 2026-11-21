@@ -1,0 +1,15 @@
+id: startup-momo
+name:
+  vi: MoMo
+type: startup
+sectors:
+- fintech
+status: active
+website: https://momo.vn/
+description:
+  vi: Ví điện tử và siêu ứng dụng tài chính, kỳ lân của Việt Nam.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)

@@ -305,3 +305,10 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .prose ul{padding-left:20px}
 .prose li{margin:6px 0}
 .opp-detail .opp{border-bottom:0}
+
+.chart{margin:10px 0 0;overflow-x:auto}
+.chart svg{width:100%;min-width:560px;height:auto;display:block}
+.chart .gl{stroke:var(--line);stroke-width:1}
+.chart .ax{font-size:12px;fill:var(--ink-2)}
+.chart .lb{font-size:12.5px;font-weight:700}
+.insights{margin:10px 0 0;padding-left:20px}.insights li{margin:8px 0;line-height:1.6}

@@ -1,6 +1,8 @@
 id: startup-xbstation
 name:
   vi: XBStation
+alt_names:
+- XB Technology Company Limited
 type: startup
 categories:
 - Drone, kết nối UAV
@@ -12,6 +14,7 @@ sectors:
 - deeptech
 website: https://xbstation.com
 linkedin: https://www.linkedin.com/company/xbstation
+address: Lot B2.10 Nguyen Xien Street, Đà Nẵng
 description:
   vi: Giải pháp kết nối 4G, 5G, vệ tinh cho vận hành UAV và robot ngoài tầm nhìn (BVLOS); hợp tác với MobiFone Digital Solution.
 region: da-nang
@@ -20,3 +23,4 @@ verification:
 sources:
 - Bản đồ hệ sinh thái
 - StartupBlink (trang công khai, 11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

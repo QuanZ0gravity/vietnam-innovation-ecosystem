@@ -1,0 +1,14 @@
+id: company-titan-data-analytics
+name:
+  vi: TITAN DATA ANALYTICS Joint Stock Company
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 3rd Floor, 61B Hai Phong, Đà Nẵng
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

@@ -4,12 +4,13 @@ name:
 type: international
 website: https://www.skymavis.com/
 linkedin: https://www.linkedin.com/company/skymavis
+description:
+  vi: Công ty trò chơi blockchain (Axie Infinity, Ronin).
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
 - Website chính thức
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)
 source_url: https://indanang.vn/ecosystem-activities/conviction-2026
-description:
-  vi: Công ty trò chơi blockchain (Axie Infinity, Ronin).

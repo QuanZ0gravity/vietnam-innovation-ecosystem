@@ -1,0 +1,13 @@
+id: government-nic
+name:
+  vi: Trung tâm Đổi mới sáng tạo Quốc gia (NIC)
+alt_names:
+- National Innovation Center (NIC)
+type: government
+description:
+  vi: Trung tâm đổi mới sáng tạo quốc gia, kết nối startup, tập đoàn công nghệ toàn cầu và giới học thuật trong bán dẫn, AI, đô thị thông minh.
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)

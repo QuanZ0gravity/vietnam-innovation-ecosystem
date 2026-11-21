@@ -5,6 +5,7 @@ alt_names:
 - Công ty Cổ phần Vườn ươm Doanh nghiệp Đà Nẵng (DNES)
 - DNES – Vườn ươm Doanh nghiệp Đà Nẵng
 - DNES
+- Da Nang Business Incubator (DNES)
 type: incubator
 categories:
 - Vườn ươm
@@ -12,6 +13,8 @@ categories:
 - Vườn ươm doanh nghiệp
 status: active
 website: https://dnes.vn/
+contact_email: info@dnes.vn
+address: 179 Trần Hưng Đạo, Đà Nẵng
 description:
   vi: Vườn ươm đối tác công tư; AI Builder Hackathon cùng Ecomdy (5/2026).
 region: da-nang
@@ -23,5 +26,6 @@ sources:
 - Bản đồ hệ sinh thái
 - Thông tin tổ chức (11/2026)
 - indanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://startupdanang.vn/dnes-vuon-uom-doanh-nghiep-da-nang
 legacy_id: o17;o6;d12

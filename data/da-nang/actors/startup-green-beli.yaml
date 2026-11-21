@@ -1,0 +1,16 @@
+id: startup-green-beli
+name:
+  vi: Green Beli Joint Stock Company
+type: startup
+sectors:
+- web3
+- agrifood
+website: https://greenbeli.io/
+address: 20 Tien Son 8, Đà Nẵng
+description:
+  vi: Kết nối hoạt động thực tế với blockchain, tập trung nông nghiệp bền vững và bảo vệ môi trường.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

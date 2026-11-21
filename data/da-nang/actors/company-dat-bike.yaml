@@ -1,13 +1,20 @@
 id: company-dat-bike
 name:
   vi: Dat Bike
+alt_names:
+- DAT BIKE VIETNAM Company Limited
 type: company
 categories:
 - Xe máy điện
 - Transportation
 - Automotive
+- Doanh nghiệp khoa học và công nghệ
 sectors:
 - mobility
+website: https://dat.bike/
+address: 85 Cao Ba Quat, Đà Nẵng
+description:
+  vi: Hãng xe máy điện Việt Nam, nhà máy tại Đà Nẵng.
 region: da-nang
 verification:
   level: unverified
@@ -15,4 +22,5 @@ sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - StartupBlink (trang công khai, 11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: d86

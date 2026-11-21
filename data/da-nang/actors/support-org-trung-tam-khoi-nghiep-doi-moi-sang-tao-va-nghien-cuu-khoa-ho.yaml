@@ -4,10 +4,12 @@ name:
 type: support_org
 categories:
 - Tổ chức hỗ trợ
+contact_email: info@greenwich.edu.vn
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://startupdanang.vn/trung-tam-khoi-nghiep-doi-moi-sang-tao-va-nghien-cuu-khoa-hoc-greenwich-innovation-centre
 legacy_id: o11

@@ -1,10 +1,15 @@
 id: startup-cong-ty-co-phan-5rtech
 name:
   vi: Công ty Cổ phần 5RTECH
+alt_names:
+- 5RTECH Joint Stock Company
 type: startup
 sectors:
 - climate
 website: https://5rtech.com.vn/
+address: Workshop Area No. 1, Road No. 9, High-Tech Park, Đà Nẵng
+description:
+  vi: Tái chế tấm pin năng lượng mặt trời.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -13,6 +18,5 @@ sources:
 - startupdanang.vn
 - indanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s47
-description:
-  vi: Tái chế tấm pin năng lượng mặt trời.

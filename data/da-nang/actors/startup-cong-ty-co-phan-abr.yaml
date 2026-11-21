@@ -1,10 +1,16 @@
 id: startup-cong-ty-co-phan-abr
 name:
   vi: Công ty Cổ phần ABR
+alt_names:
+- ABR Joint Stock Company
 type: startup
+address: Lot B5, Road 9, Da Nang High-Tech Park, Đà Nẵng
+description:
+  vi: Nghiên cứu giống và quy trình nuôi vi tảo tự động hóa, phù hợp khí hậu Việt Nam.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s38

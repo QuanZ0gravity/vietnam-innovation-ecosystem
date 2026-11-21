@@ -1,0 +1,13 @@
+id: fund-theventures
+name:
+  vi: TheVentures
+alt_names: []
+type: fund
+website: https://theventures.vc/
+description:
+  vi: Quỹ đầu tư mạo hiểm giai đoạn sớm (Hàn Quốc), đầu tư vào startup Đông Nam Á.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

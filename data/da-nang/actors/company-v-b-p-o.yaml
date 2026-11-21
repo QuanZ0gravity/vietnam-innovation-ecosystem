@@ -1,0 +1,14 @@
+id: company-v-b-p-o
+name:
+  vi: V.B.P.O Joint Stock Company
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 20th Floor, Software Park Building, 02 Quang Trung, Đà Nẵng
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

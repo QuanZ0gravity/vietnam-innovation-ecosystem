@@ -597,6 +597,10 @@ def kpi(label_vi, label_en, value, note=""):
     return (f'<div class="kpi"><p class="kv">{value}</p><p class="kl" data-vi="{label_vi}" data-en="{label_en}">{label_vi}</p>'
             + (f'<p class="kn small muted">{note}</p>' if note else "") + "</div>")
 
+def insights_html(xs):
+    if not xs: return ""
+    return '<ul class="insights">' + "".join(f'<li>{e(x["text"])} <span class="muted small">({e(x["source"])})</span></li>' for x in xs) + "</ul>"
+
 def city_table(active=None):
     rows = ""
     for c in BENCH.get("cities", []):
@@ -620,6 +624,57 @@ SB_NOTE = ('<p class="small muted src-note" data-vi="Số liệu xếp hạng, s
            'data-en="Rankings, startups, funding and industries: StartupBlink Global Startup Ecosystem Index 2026 (public pages, accessed 21 Nov 2026). Actors and opportunities: this open directory.">'
            'Số liệu xếp hạng, startup, vốn và ngành: StartupBlink, Global Startup Ecosystem Index 2026 (trang công khai, truy cập 21/11/2026). Số tác nhân, cơ hội: danh bạ mở này.</p>')
 
+
+# ---------- biểu đồ SVG (dựng sẵn, không cần thư viện) ----------
+import math as _m
+SER_COL = ["var(--sea)", "var(--sun)", "#C2410C", "#6D28D9", "var(--ink-2)"]
+def _fmt_usd(v):
+    if v >= 1e9: return f"{v/1e9:.1f} tỷ".replace(".", ",")
+    if v >= 1e6: return f"{v/1e6:.0f} tr" if v >= 1e7 else f"{v/1e6:.1f} tr".replace(".", ",")
+    if v >= 1e3: return f"{v/1e3:.0f} nghìn"
+    return str(int(v))
+def rank_chart(series, years=range(2017, 2027), title=""):
+    """series: [(tên, {năm: hạng})]; trục dọc đảo ngược, thang log để nhiều thành phố cùng hiện."""
+    W, H, L, R, T, B = 760, 300, 56, 170, 16, 34
+    vals = [v for _, d in series for v in d.values() if v]
+    if not vals: return ""
+    lo, hi = max(1, min(vals) * 0.8), max(vals) * 1.15
+    ys = list(years)
+    xs = lambda y: L + (W - L - R) * (ys.index(y) / (len(ys) - 1))
+    yv = lambda v: T + (H - T - B) * ((_m.log(v) - _m.log(lo)) / (_m.log(hi) - _m.log(lo)))
+    cand = (1, 5, 10, 20, 30, 40, 50, 60, 70, 80, 100, 150, 200, 300, 500, 750, 1000, 1500)
+    ticks = [t for t in cand if lo <= t <= hi]
+    if len(ticks) > 7: ticks = [t for t in ticks if t in (10, 25, 50, 100, 200, 300, 500, 750, 1000)]
+    g = "".join(f'<line x1="{L}" x2="{W-R}" y1="{yv(t):.1f}" y2="{yv(t):.1f}" class="gl"/><text x="{L-8}" y="{yv(t)+4:.1f}" class="ax" text-anchor="end">#{t}</text>' for t in ticks)
+    g += "".join(f'<text x="{xs(y):.1f}" y="{H-12}" class="ax" text-anchor="middle">{y}</text>' for y in ys)
+    for k, (name, d) in enumerate(series):
+        pts = [(xs(y), yv(d[y])) for y in ys if d.get(y)]
+        if not pts: continue
+        col = SER_COL[k % len(SER_COL)]
+        if len(pts) > 1:
+            g += f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" stroke="{col}" stroke-width="2.5" stroke-linejoin="round"/>'
+        g += "".join(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.5" fill="{col}"/>' for x, y in pts)
+        lx, ly = pts[-1]; last = [d[y] for y in ys if d.get(y)][-1]
+        g += f'<text x="{lx+8:.1f}" y="{ly+4:.1f}" class="lb" fill="{col}">{e(name)} #{last}</text>'
+    return f'<figure class="chart"><svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(title)}">{g}</svg></figure>'
+def funding_chart(fund, deals, title=""):
+    W, H, L, R, T, B = 760, 300, 64, 16, 22, 34
+    ys = sorted(fund)
+    mx = max(fund.values()) or 1
+    step = 10 ** _m.floor(_m.log10(mx)); top = _m.ceil(mx / step) * step
+    bw = (W - L - R) / len(ys) * 0.6
+    xs = lambda i: L + (W - L - R) * (i + 0.5) / len(ys)
+    yv = lambda v: T + (H - T - B) * (1 - v / top)
+    units = round(top / step)
+    nint = next((n for n in (4, 5, 3, 2) if units % n == 0), units if units <= 6 else 4)
+    g = "".join(f'<line x1="{L}" x2="{W-R}" y1="{yv(t):.1f}" y2="{yv(t):.1f}" class="gl"/><text x="{L-8}" y="{yv(t)+4:.1f}" class="ax" text-anchor="end">{_fmt_usd(t)}</text>' for t in [top * i / nint for i in range(nint + 1)])
+    for i, y in enumerate(ys):
+        v = fund[y]; x = xs(i)
+        g += f'<rect x="{x-bw/2:.1f}" y="{yv(v):.1f}" width="{bw:.1f}" height="{max(0, H-B-yv(v)):.1f}" rx="3" fill="var(--sea)"><title>{y}: {_fmt_usd(v)} USD, {deals.get(y, 0)} thương vụ</title></rect>'
+        g += f'<text x="{x:.1f}" y="{yv(v)-6:.1f}" class="ax" text-anchor="middle">{deals.get(y, 0)}</text>'
+        g += f'<text x="{x:.1f}" y="{H-12}" class="ax" text-anchor="middle">{y}</text>'
+    return f'<figure class="chart"><svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(title)}">{g}</svg></figure>'
+
 if BENCH:
     co = BENCH["country"]
     kp = "".join([kpi("Hạng thế giới", "Global rank", f'#{co["global_rank"]} {chg(co["rank_change"])}'),
@@ -635,9 +690,20 @@ if BENCH:
 <h1 data-vi="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố" data-en="Vietnam's startup ecosystem by city">Hệ sinh thái khởi nghiệp Việt Nam theo thành phố</h1>
 <p class="lead" data-vi="Tổng quan quốc gia, bảng xếp hạng các thành phố và trang riêng cho từng thành phố." data-en="Country overview, city ranking and a page for each city.">Tổng quan quốc gia, bảng xếp hạng các thành phố và trang riêng cho từng thành phố.</p></div>
 <div class="wrap" style="padding-bottom:72px">
-<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
-<section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div></section>
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
+<section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
+<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
+<section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
+<h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>
+{rank_chart([("Việt Nam", co.get("global_rank_by_year") or {})], title="Hạng thế giới của Việt Nam")}
+{rank_chart([(c["name"], c.get("global_rank_by_year") or {}) for c in BENCH["cities"]], title="Hạng thế giới của các thành phố")}
+<p class="small muted" data-vi="Thang logarit. Năm 2018 không có bảng xếp hạng." data-en="Log scale. No ranking was published in 2018.">Thang logarit. Năm 2018 không có bảng xếp hạng.</p>
+<h3 style="margin-top:28px" data-vi="Vốn đầu tư vào startup Việt Nam theo năm (USD; số trên cột là số thương vụ)" data-en="Startup funding in Vietnam by year (USD; number of deals above bars)">Vốn đầu tư vào startup Việt Nam theo năm (USD; số trên cột là số thương vụ)</h3>
+{funding_chart(co.get("funding_by_year_usd") or {}, co.get("deals_by_year") or {}, title="Vốn đầu tư theo năm")}
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th data-vi="Thành phố" data-en="City">Thành phố</th>{"".join(f"<th>{y}</th>" for y in range(2017, 2026))}<th data-vi="Tổng" data-en="Total">Tổng</th></tr></thead><tbody>
+{"".join("<tr><td>" + e(c["name"]) + "</td>" + "".join(f'<td>{_fmt_usd((c.get("funding_by_year_usd") or {}).get(y, 0))}</td>' for y in range(2017, 2026)) + f'<td><b>{_fmt_usd(sum((c.get("funding_by_year_usd") or {}).values()))}</b></td></tr>' for c in BENCH["cities"])}
+</tbody></table></div></section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật của Việt Nam" data-en="Vietnam's top industries">Ngành nổi bật của Việt Nam</h2>{ind_table(co.get("industries"))}</section>
 </div>""", "cities", desc="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố: xếp hạng, số startup, vốn đầu tư và ngành nổi bật của TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng."))
 
@@ -673,9 +739,17 @@ if BENCH:
 <h1>{e(c["name"])}</h1>
 <p class="lead" data-vi="Hệ sinh thái khởi nghiệp {e(c['name'])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội." data-en="The {e(c['name'])} startup ecosystem: ranking, industries, funding, actors and opportunities.">Hệ sinh thái khởi nghiệp {e(c["name"])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội.</p></div>
 <div class="wrap" style="padding-bottom:72px">
-<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
+<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(c.get("insights"))}
 <h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
+<section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
+<h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>
+{rank_chart([(c["name"], c.get("global_rank_by_year") or {})], title="Hạng thế giới theo năm")}
+{"" if len(c.get("global_rank_by_year") or {}) > 1 else '<p class="small muted" data-vi="Thành phố mới vào bảng xếp hạng năm 2026, chưa có chuỗi theo năm." data-en="Entered the ranking in 2026; no history yet.">Thành phố mới vào bảng xếp hạng năm 2026, chưa có chuỗi theo năm.</p>'}
+<h3 style="margin-top:28px" data-vi="Vốn đầu tư theo năm (USD; số trên cột là số thương vụ)" data-en="Funding by year (USD; deals above bars)">Vốn đầu tư theo năm (USD; số trên cột là số thương vụ)</h3>
+{funding_chart(c.get("funding_by_year_usd") or {}, c.get("deals_by_year") or {}, title="Vốn đầu tư theo năm") if sum((c.get("funding_by_year_usd") or {}).values()) else '<p class="muted" data-vi="Chưa ghi nhận khoản đầu tư nào giai đoạn 2017–2025." data-en="No funding recorded 2017–2025.">Chưa ghi nhận khoản đầu tư nào giai đoạn 2017–2025.</p>'}
+</section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật" data-en="Top industries">Ngành nổi bật</h2>{ind_table(c.get("industries"))}
 <p class="small" style="margin-top:12px"><span class="muted" data-vi="Doanh nghiệp lớn tích cực làm việc với startup:" data-en="Corporations active with startups:">Doanh nghiệp lớn tích cực làm việc với startup:</span> {corp}</p></section>
 <section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>

@@ -1,6 +1,8 @@
 id: startup-avoca-ai-avocaedu
 name:
   vi: Avoca AI (AvocaEdu)
+alt_names:
+- Open Lab Joint Stock Company
 type: startup
 categories:
 - EdTech, AI
@@ -8,6 +10,8 @@ categories:
 sectors:
 - ai
 - edu
+website: https://avocaapp.com/
+address: 25 Xuan Tam, Đà Nẵng
 description:
   vi: Dự án học tập ứng dụng AI.
 region: da-nang
@@ -15,3 +19,4 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

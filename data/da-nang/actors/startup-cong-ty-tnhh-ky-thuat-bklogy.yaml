@@ -1,10 +1,19 @@
 id: startup-cong-ty-tnhh-ky-thuat-bklogy
 name:
   vi: Công ty TNHH Kỹ thuật BKLOGY
+alt_names:
+- BKLOGY Technical Company Limited
+- Bklogy Technical Company Limited
 type: startup
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 217 Nguyen Sinh Sac, Đà Nẵng
+description:
+  vi: Giải pháp kiểm thử tự động cho sản phẩm điện tử, từ bo mạch đến thành phẩm.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s28

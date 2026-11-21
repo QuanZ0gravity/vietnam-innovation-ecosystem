@@ -1,6 +1,8 @@
 # Số liệu công khai trên trang StartupBlink, Global Startup Ecosystem Index 2026.
 # Truy cập 21/11/2026. Số liệu thuộc StartupBlink; trích dẫn kèm nguồn, không thay thế báo cáo gốc.
 # Một số trang hiện hai con số khác nhau cho cùng chỉ số (ví dụ số startup); ở đây ghi số trong phần mô tả cơ sở dữ liệu.
+# Chuỗi theo năm (global_rank_by_year, funding_by_year_usd, deals_by_year) đọc từ dữ liệu của biểu đồ trên trang công khai, 22/11/2026. Năm 2018 không có xếp hạng.
+# insights: tóm tắt (viết lại) từ báo cáo GSEI 2026 và ấn phẩm Sở KH&CN Đà Nẵng 2025, ghi nguồn từng dòng.
 source: StartupBlink, Global Startup Ecosystem Index 2026
 accessed: '2026-11-21'
 country:
@@ -19,109 +21,361 @@ country:
   funding_2025_usd: 271780000
   deals_2025: 25
   industries:
-    - {name: Transportation, rank: 22, startups: 36}
-    - {name: Fintech, rank: 39, startups: 135}
-    - {name: Ecommerce & Retail, rank: 47, startups: 127}
-    - {name: Healthtech, rank: 54, startups: 48}
-    - {name: Hardware & IoT, rank: 57, startups: 48}
-    - {name: Social & Leisure, rank: 59, startups: 70}
-    - {name: Edtech, rank: 59, startups: 40}
-  corporations: [FPT Corporation, Coin98, SSI Securities Corporation]
+  - name: Transportation
+    rank: 22
+    startups: 36
+  - name: Fintech
+    rank: 39
+    startups: 135
+  - name: Ecommerce & Retail
+    rank: 47
+    startups: 127
+  - name: Healthtech
+    rank: 54
+    startups: 48
+  - name: Hardware & IoT
+    rank: 57
+    startups: 48
+  - name: Social & Leisure
+    rank: 59
+    startups: 70
+  - name: Edtech
+    rank: 59
+    startups: 40
+  corporations:
+  - FPT Corporation
+  - Coin98
+  - SSI Securities Corporation
+  global_rank_by_year:
+    2017: 60
+    2019: 72
+    2020: 59
+    2021: 59
+    2022: 54
+    2023: 58
+    2024: 56
+    2025: 55
+    2026: 50
+  funding_by_year_usd:
+    2017: 19902572
+    2018: 165536193
+    2019: 625471721
+    2020: 132425153
+    2021: 1248690645
+    2022: 552909598
+    2023: 314505366
+    2024: 139741957
+    2025: 271783384
+  deals_by_year:
+    2017: 22
+    2018: 37
+    2019: 54
+    2020: 35
+    2021: 113
+    2022: 109
+    2023: 86
+    2024: 44
+    2025: 25
+  insights:
+  - text: Tăng 5 bậc lên hạng 50 thế giới, vị trí cao nhất từ khi có bảng xếp hạng; giữ hạng 5 Đông Nam Á và hạng 10 châu Á.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Hệ sinh thái tăng trưởng 67,9% trong năm, cao nhất Đông Nam Á và cao hơn nhiều mức trung bình thế giới 17,5%.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Hạng 52/125 về môi trường kinh doanh, sát với hạng hệ sinh thái; cải thiện môi trường kinh doanh có thể mở thêm dư địa tăng trưởng.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Hạng 2 Đông Nam Á về giá trị thương hiệu hệ sinh thái và hạng 6 châu Á – Thái Bình Dương về hoạt động cộng đồng khởi nghiệp, cao hơn vị trí chung.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: 'Cấu trúc hai trung tâm: điểm của TP.HCM chỉ gấp 1,2 lần Hà Nội. Có 4 thành phố trong top 1.000, thêm Hải Phòng.'
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: 'Ngành mạnh nhất là Fintech: hạng 39 thế giới, hạng 9 châu Á – Thái Bình Dương.'
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: 'Mốc chính sách: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), NIC (2019), Nghị định 264 (2025) lần đầu tạo khung pháp lý cho quỹ đầu tư mạo hiểm quốc gia và địa phương.'
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  report_metrics:
+    ecosystem_value_usd: 75100000000
+    unicorns: 3
+    brand_value_rank_sea: 2
+    community_activity_rank_apac: 6
+    fintech_rank_global: 39
+    fintech_rank_apac: 9
 cities:
-  - id: ho-chi-minh
-    name: TP. Hồ Chí Minh
-    url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn
-    national_rank: 1
-    global_rank: 98
-    rank_change: 12
-    regional_rank: 5
-    regional_change: 0
-    total_score: 10.020
-    national_share: 52.5
-    startups: 545
-    unicorns_and_exits: 4
-    ecosystem_value_usd: 14520000000
-    startups_per_100k: 16
-    growth_2026_pct: 25.1
-    funding_2017_2025_usd: 2250000000
-    funding_2025_usd: 234890000
-    deals_2025: 18
-    industries:
-      - {name: Fintech, rank: 61, startups: 77}
-      - {name: Ecommerce & Retail, rank: 69, startups: 78}
-      - {name: Social & Leisure, rank: 98, startups: 34}
-      - {name: Edtech, rank: 112, startups: 20}
-      - {name: Marketing & Sales, rank: 128, startups: 55}
-      - {name: Transportation, rank: 142, startups: 20}
-      - {name: Healthtech, rank: 146, startups: 34}
-    corporations: [Coin98, SSI Securities Corporation, VNG Corporation]
-  - id: ha-noi
-    name: Hà Nội
-    url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
-    national_rank: 2
-    global_rank: 118
-    rank_change: 30
-    regional_rank: 6
-    regional_change: 1
-    total_score: 8.142
-    national_share: 42.7
-    startups: 345
-    unicorns_and_exits: 1
-    ecosystem_value_usd: 10690000000
-    startups_per_100k: 10
-    growth_2026_pct: 48.6
-    funding_2017_2025_usd: 1180000000
-    funding_2025_usd: 14860000
-    deals_2025: 4
-    coworking_spaces: 18
-    accelerators: 9
-    industries:
-      - {name: Fintech, rank: 57, startups: 48}
-      - {name: Edtech, rank: 96, startups: 17}
-      - {name: Ecommerce & Retail, rank: 110, startups: 46}
-      - {name: Social & Leisure, rank: 121, startups: 33}
-      - {name: Transportation, rank: 127, startups: 11}
-      - {name: Software & Data, rank: 153, startups: 137}
-      - {name: Foodtech, rank: 203, startups: 8}
-    corporations: [FPT Corporation, Vingroup]
-  - id: da-nang
-    name: Đà Nẵng
-    url: https://www.startupblink.com/startup-ecosystem/da-nang-vn
-    national_rank: 3
-    global_rank: 554
-    rank_change: 212
-    regional_rank: 15
-    regional_change: 7
-    total_score: 0.596
-    national_share: 3.1
-    startups: 39
-    unicorns_and_exits: 1
-    ecosystem_value_usd: 275170000
-    startups_per_100k: 6
-    growth_2026_pct: 153.8
-    funding_2017_2025_usd: 55150000
-    funding_2025_usd: 22030000
-    deals_2025: 3
-    coworking_spaces: 12
-    accelerators: 9
-    industries:
-      - {name: Fintech, rank: 432, startups: 7}
-      - {name: Software & Data, rank: 619, startups: 18}
-      - {name: Hardware & IoT, rank: 627, startups: 5}
-    corporations: []
-  - id: hai-phong
-    name: Hải Phòng
-    url: https://www.startupblink.com/startup-ecosystem/hai-phong-vn
-    national_rank: 4
-    global_rank: 765
-    rank_change: null
-    regional_rank: 23
-    total_score: 0.311
-    national_share: 1.6
+- id: ho-chi-minh
+  name: TP. Hồ Chí Minh
+  url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn
+  national_rank: 1
+  global_rank: 98
+  rank_change: 12
+  regional_rank: 5
+  regional_change: 0
+  total_score: 10.02
+  national_share: 52.5
+  startups: 545
+  unicorns_and_exits: 4
+  ecosystem_value_usd: 14520000000
+  startups_per_100k: 16
+  growth_2026_pct: 25.1
+  funding_2017_2025_usd: 2250000000
+  funding_2025_usd: 234890000
+  deals_2025: 18
+  industries:
+  - name: Fintech
+    rank: 61
+    startups: 77
+  - name: Ecommerce & Retail
+    rank: 69
+    startups: 78
+  - name: Social & Leisure
+    rank: 98
+    startups: 34
+  - name: Edtech
+    rank: 112
+    startups: 20
+  - name: Marketing & Sales
+    rank: 128
+    startups: 55
+  - name: Transportation
+    rank: 142
+    startups: 20
+  - name: Healthtech
+    rank: 146
+    startups: 34
+  corporations:
+  - Coin98
+  - SSI Securities Corporation
+  - VNG Corporation
+  global_rank_by_year:
+    2020: 225
+    2021: 179
+    2022: 111
+    2023: 114
+    2024: 111
+    2025: 110
+    2026: 98
+  funding_by_year_usd:
+    2017: 8407572
+    2018: 92044590
+    2019: 250285366
+    2020: 92200011
+    2021: 797561918
+    2022: 421259309
+    2023: 232051279
+    2024: 110233815
+    2025: 234894422
+  deals_by_year:
+    2017: 13
+    2018: 19
+    2019: 30
+    2020: 19
+    2021: 73
+    2022: 59
+    2023: 56
+    2024: 31
+    2025: 18
+  insights:
+  - text: Tăng 12 bậc lên hạng 98, lần đầu vào top 100 thế giới; giữ hạng 5 Đông Nam Á.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Dẫn đầu Đông Nam Á về độ trưởng thành của hệ sinh thái (nhóm chỉ số Ecosystem Maturity), nhờ thành tích startup đã đạt được.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Fintech hạng 3 Đông Nam Á, hạng 60 thế giới; Blockchain hạng 5 Đông Nam Á, hạng 70 thế giới.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Nơi có MoMo, Sky Mavis và Tiki. Sở KH&CN quản lý SIHUB, BSSC và đồng tổ chức InnoEx.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+- id: ha-noi
+  name: Hà Nội
+  url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
+  national_rank: 2
+  global_rank: 118
+  rank_change: 30
+  regional_rank: 6
+  regional_change: 1
+  total_score: 8.142
+  national_share: 42.7
+  startups: 345
+  unicorns_and_exits: 1
+  ecosystem_value_usd: 10690000000
+  startups_per_100k: 10
+  growth_2026_pct: 48.6
+  funding_2017_2025_usd: 1180000000
+  funding_2025_usd: 14860000
+  deals_2025: 4
+  coworking_spaces: 18
+  accelerators: 9
+  industries:
+  - name: Fintech
+    rank: 57
+    startups: 48
+  - name: Edtech
+    rank: 96
+    startups: 17
+  - name: Ecommerce & Retail
+    rank: 110
+    startups: 46
+  - name: Social & Leisure
+    rank: 121
+    startups: 33
+  - name: Transportation
+    rank: 127
+    startups: 11
+  - name: Software & Data
+    rank: 153
+    startups: 137
+  - name: Foodtech
+    rank: 203
+    startups: 8
+  corporations:
+  - FPT Corporation
+  - Vingroup
+  global_rank_by_year:
+    2017: 173
+    2019: 229
+    2020: 196
+    2021: 191
+    2022: 222
+    2023: 174
+    2024: 157
+    2025: 148
+    2026: 118
+  funding_by_year_usd:
+    2017: 11405000
+    2018: 69052639
+    2019: 374700355
+    2020: 38875142
+    2021: 445778727
+    2022: 113750289
+    2023: 82204087
+    2024: 28998142
+    2025: 14861462
+  deals_by_year:
+    2017: 7
+    2018: 13
+    2019: 23
+    2020: 12
+    2021: 36
+    2022: 44
+    2023: 28
+    2024: 11
+    2025: 4
+  insights:
+  - text: Tăng 30 bậc lên hạng 118 thế giới, hạng 6 Đông Nam Á, tăng trưởng 48,6%.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Hạng 4 Đông Nam Á về hiệu quả đầu tư hệ sinh thái (Ecosystem Returns), cao hơn vị trí chung.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Nơi đặt NIC và NSSC, hai đầu mối quốc gia về đổi mới sáng tạo và khởi nghiệp.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+- id: da-nang
+  name: Đà Nẵng
+  url: https://www.startupblink.com/startup-ecosystem/da-nang-vn
+  national_rank: 3
+  global_rank: 554
+  rank_change: 212
+  regional_rank: 15
+  regional_change: 7
+  total_score: 0.596
+  national_share: 3.1
+  startups: 39
+  unicorns_and_exits: 1
+  ecosystem_value_usd: 275170000
+  startups_per_100k: 6
+  growth_2026_pct: 153.8
+  funding_2017_2025_usd: 55150000
+  funding_2025_usd: 22030000
+  deals_2025: 3
+  coworking_spaces: 12
+  accelerators: 9
+  industries:
+  - name: Fintech
+    rank: 432
     startups: 7
-    unicorns_and_exits: 1
-    ecosystem_value_usd: 23000000000
-    funding_2017_2025_usd: 0
-    industries:
-      - {name: Software & Data, rank: 1489, startups: 4}
-    corporations: []
+  - name: Software & Data
+    rank: 619
+    startups: 18
+  - name: Hardware & IoT
+    rank: 627
+    startups: 5
+  corporations: []
+  global_rank_by_year:
+    2024: 896
+    2025: 766
+    2026: 554
+  funding_by_year_usd:
+    2017: 90000
+    2018: 4438964
+    2019: 486000
+    2020: 1150000
+    2021: 4350000
+    2022: 17900000
+    2023: 200000
+    2024: 510000
+    2025: 22027500
+  deals_by_year:
+    2017: 2
+    2018: 5
+    2019: 1
+    2020: 3
+    2021: 3
+    2022: 6
+    2023: 1
+    2024: 2
+    2025: 3
+  insights:
+  - text: Tăng 212 bậc lên hạng 554, tăng trưởng 153,8%, nhanh nhất trong các thành phố Việt Nam.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Lần đầu vào top 1.000 thế giới năm 2024 (hạng 896).
+    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
+  - text: Hạng 5/63 tỉnh, thành về Chỉ số đổi mới sáng tạo địa phương (PII) 2024.
+    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
+  - text: Bốn lần nhận danh hiệu "Thành phố khởi nghiệp sáng tạo hấp dẫn" (2020, 2022, 2023, 2024); năm 2023 được VCCI vinh danh "Địa phương điển hình xây dựng hệ sinh thái khởi nghiệp" và lọt top 15 địa phương đóng góp nhiều nhất cho hệ sinh thái quốc gia.
+    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
+  - text: 'Mạng lưới năm 2025: 10 vườn ươm, 6 tổ chức hỗ trợ, 9 không gian làm việc chung, 3 không gian sáng tạo maker, 15 quỹ đầu tư, hơn 20 chính sách và hơn 200 startup.'
+    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
+  - text: Tổ điều phối mạng lưới khởi nghiệp thành phố có 27 thành viên, Sở KH&CN là cơ quan thường trực.
+    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
+  - text: Ngày 1/11/2026, DISSC, DSAC và Trung tâm Công nghệ sinh học hợp nhất thành Trung tâm Đổi mới sáng tạo Đà Nẵng.
+    source: QĐ 4640/QĐ-UBND
+- id: hai-phong
+  name: Hải Phòng
+  url: https://www.startupblink.com/startup-ecosystem/hai-phong-vn
+  national_rank: 4
+  global_rank: 765
+  rank_change: null
+  regional_rank: 23
+  total_score: 0.311
+  national_share: 1.6
+  startups: 7
+  unicorns_and_exits: 1
+  ecosystem_value_usd: 23000000000
+  funding_2017_2025_usd: 0
+  industries:
+  - name: Software & Data
+    rank: 1489
+    startups: 4
+  corporations: []
+  global_rank_by_year:
+    2026: 765
+  funding_by_year_usd:
+    2017: 0
+    2018: 0
+    2019: 0
+    2020: 0
+    2021: 0
+    2022: 0
+    2023: 0
+    2024: 0
+    2025: 0
+  deals_by_year:
+    2017: 0
+    2018: 0
+    2019: 0
+    2020: 0
+    2021: 0
+    2022: 0
+    2023: 0
+    2024: 0
+    2025: 0
+  insights:
+  - text: Lần đầu vào top 1.000 thế giới, hạng 765.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: Startup Haiphong là đầu mối điều phối khởi nghiệp, định vị thành phố là trung tâm bổ trợ cho Hà Nội và TP.HCM; thành phố đặt mục tiêu làm nơi thử nghiệm (sandbox) cho giải pháp công nghệ mới.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: VinFast, đặt nhà máy tại Hải Phòng, là thương vụ thoái vốn trên 1 tỷ USD của thành phố.
+    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)

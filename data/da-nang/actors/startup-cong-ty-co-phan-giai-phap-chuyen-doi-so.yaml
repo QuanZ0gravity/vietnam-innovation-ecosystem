@@ -3,6 +3,7 @@ name:
   vi: Công ty Cổ phần Giải pháp Chuyển đổi số
 alt_names:
 - VR360
+- Digital Transformation Solutions Joint Stock Company
 type: startup
 sectors:
 - ai
@@ -10,6 +11,9 @@ sectors:
 status: active
 website: https://vr360.com.vn/
 linkedin: https://www.linkedin.com/company/dts-group-vr360
+address: 123 Pham Huy Thong, Đà Nẵng
+description:
+  vi: 'VR360: giải pháp thực tế ảo, AR, 3D, 360 độ và bản đồ 3D cho cơ quan, doanh nghiệp.'
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -18,6 +22,5 @@ sources:
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s32
-description:
-  vi: 'VR360: giải pháp thực tế ảo, AR, 3D, 360 độ và bản đồ 3D cho cơ quan, doanh nghiệp.'

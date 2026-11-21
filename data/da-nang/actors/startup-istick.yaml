@@ -1,0 +1,14 @@
+id: startup-istick
+name:
+  vi: ISTICK Company Limited
+type: startup
+sectors:
+- ai
+address: 41 Bui Vien, Đà Nẵng
+description:
+  vi: Kiểm thử an toàn phần mềm cho đơn vị bên ngoài và dịch vụ tuyển dụng.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

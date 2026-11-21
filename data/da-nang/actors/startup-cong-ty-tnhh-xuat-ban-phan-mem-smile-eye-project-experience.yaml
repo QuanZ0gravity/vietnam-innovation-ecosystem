@@ -1,12 +1,18 @@
 id: startup-cong-ty-tnhh-xuat-ban-phan-mem-smile-eye-project-experience
 name:
   vi: Công ty TNHH Xuất bản phần mềm Smile Eye Project Experience
+alt_names:
+- Smile Eye Project Experience Software Company Limited
 type: startup
 sectors:
 - ai
+address: 17 Nguyen Hanh, Đà Nẵng
+description:
+  vi: Xây dựng làng sinh thái gắn nông sản, du lịch, giáo dục và chương trình sức khỏe, môi trường.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s34

@@ -3,11 +3,15 @@ name:
   vi: Công ty Cổ phần Công nghệ sinh học Minh Hồng
 alt_names:
 - Minh Hong
+- Minh Hong Biotechnology Joint Stock Company
 type: startup
 sectors:
 - health
 status: active
 website: https://minhhongbiotech.com/
+address: 41 Phu Loc 16, Đà Nẵng
+description:
+  vi: Sản xuất sản phẩm sinh học.
 region: da-nang
 website_status: Chặn truy cập tự động, cần kiểm tra tay
 verification:
@@ -18,6 +22,5 @@ sources:
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s48
-description:
-  vi: Sản xuất sản phẩm sinh học.

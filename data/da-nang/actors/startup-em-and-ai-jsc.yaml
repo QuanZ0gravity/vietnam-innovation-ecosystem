@@ -1,14 +1,18 @@
 id: startup-em-and-ai-jsc
 name:
   vi: EM AND AI JSC
+alt_names:
+- EM and AI Joint Stock Company
 type: startup
 categories:
 - Trí tuệ nhân tạo
 - AI và phần mềm
 - Software & Data
 - Artificial Intelligence
+- Doanh nghiệp khoa học và công nghệ
 sectors:
 - ai
+address: 179 Tran Hung Dao, Đà Nẵng
 description:
   vi: Công ty AI tại Đà Nẵng; vòng thiên thần 2022.
 region: da-nang
@@ -17,3 +21,4 @@ verification:
 sources:
 - Bản đồ hệ sinh thái
 - StartupBlink (trang công khai, 11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

@@ -1,12 +1,21 @@
 id: startup-cong-ty-tnhh-moi-truong-xanh-sustech
 name:
   vi: Công ty TNHH Môi trường xanh Sustech
+alt_names:
+- Sustech Green Environment Company Limited
+- SUSTECH Green Environment Company Limited
 type: startup
+categories:
+- Doanh nghiệp khoa học và công nghệ
 sectors:
 - climate
+address: 138 Le Dinh Ly, Đà Nẵng
+description:
+  vi: Doanh nghiệp khoa học công nghệ về môi trường.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s29

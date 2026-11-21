@@ -3,9 +3,13 @@ name:
   vi: Công ty Thớt kính Cường lực SALA
 alt_names:
 - Sala
+- SALA Tempered Glass Cutting Board Company
 type: startup
 status: active
 website: https://thotkinhcuonglucsala.com/
+address: K27/16 Nguyen Thanh Han, Đà Nẵng
+description:
+  vi: Thớt kính cường lực làm từ kính tái chế, sạch và an toàn.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -15,4 +19,5 @@ verification:
 sources:
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s44

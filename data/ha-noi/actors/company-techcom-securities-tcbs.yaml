@@ -1,0 +1,14 @@
+id: company-techcom-securities-tcbs
+name:
+  vi: Techcom Securities (TCBS)
+type: company
+sectors:
+- fintech
+website: https://tcbs.com.vn/
+description:
+  vi: Công ty chứng khoán số thuộc Techcombank, được StartupBlink ghi nhận là thương vụ thoái vốn trên 1 tỷ USD.
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- StartupBlink – Global Startup Ecosystem Index 2026 (báo cáo PDF)

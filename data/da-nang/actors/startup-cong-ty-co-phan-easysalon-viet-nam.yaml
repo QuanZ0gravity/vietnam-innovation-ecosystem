@@ -3,8 +3,13 @@ name:
   vi: Công ty Cổ phần EasySalon Việt Nam
 alt_names:
 - Easy Salon
+- EasySalon Vietnam Joint Stock Company
 type: startup
 status: active
+website: https://easysalon.vn/
+address: Lot 15 - B3, Floating Island Area, Đà Nẵng
+description:
+  vi: Số hóa ngành dịch vụ làm đẹp tại Việt Nam và Đông Nam Á.
 region: da-nang
 verification:
   level: partner_verified
@@ -13,4 +18,5 @@ verification:
 sources:
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s40

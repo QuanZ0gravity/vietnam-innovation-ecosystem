@@ -1,10 +1,15 @@
 id: startup-cong-ty-tnhh-yorda
 name:
   vi: Công ty TNHH Yorda
+alt_names:
+- Yorda Company Limited
 type: startup
 sectors:
 - agrifood
 website: https://yordastonemills.com/
+address: 244B Le Van Hien, Đà Nẵng
+description:
+  vi: Cối đá tự nhiên và máy nghiền hạt, dược liệu giữ màu, mùi và dưỡng chất.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -12,6 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s31
-description:
-  vi: Cối đá tự nhiên và máy nghiền hạt, dược liệu giữ màu, mùi và dưỡng chất.

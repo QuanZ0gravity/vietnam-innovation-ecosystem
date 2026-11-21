@@ -1,0 +1,14 @@
+id: company-chau-da
+name:
+  vi: Chau Da Company Limited
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: Road 2, Hoa Cam Industrial Park, Cam Le District, Đà Nẵng
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

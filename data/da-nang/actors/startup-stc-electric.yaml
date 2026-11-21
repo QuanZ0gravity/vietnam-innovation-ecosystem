@@ -1,10 +1,15 @@
 id: startup-stc-electric
 name:
   vi: STC Electric
+alt_names:
+- STC Electric Equipment Manufacturing Joint Stock Company
 type: startup
 sectors:
 - deeptech
 website: https://stcelectric.vn/
+address: 60 Do Duc Duc, Đà Nẵng
+description:
+  vi: 'Nghiên cứu, sản xuất thiết bị điện: rơ le an toàn, phao bơm.'
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -12,6 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s58
-description:
-  vi: 'Nghiên cứu, sản xuất thiết bị điện: rơ le an toàn, phao bơm.'

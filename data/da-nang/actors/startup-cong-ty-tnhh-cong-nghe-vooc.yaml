@@ -3,11 +3,15 @@ name:
   vi: Umbalena
 alt_names:
 - Công ty TNHH Công nghệ VOOC
+- VOOC Technology Company Limited
 type: startup
+categories:
+- Doanh nghiệp khoa học và công nghệ
 sectors:
 - edu
 status: active
 website: https://umbalena.vn/
+address: 119 Nai Nam, Đà Nẵng
 description:
   vi: 'Umbalena: thư viện số cho học sinh tiểu học.'
 region: da-nang
@@ -20,4 +24,5 @@ sources:
 - startupdanang.vn
 - Website chính thức
 - Danh mục ươm tạo của DNES (11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s41

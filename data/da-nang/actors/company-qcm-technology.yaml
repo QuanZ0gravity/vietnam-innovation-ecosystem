@@ -1,0 +1,14 @@
+id: company-qcm-technology
+name:
+  vi: QCM Technology Joint Stock Company
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: Lot A1, Road 2, High-Tech Park, Đà Nẵng
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)

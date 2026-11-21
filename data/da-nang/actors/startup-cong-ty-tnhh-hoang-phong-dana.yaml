@@ -4,9 +4,11 @@ name:
 alt_names:
 - Công ty TNHH Hoàng Phong Dana
 - Me Doan
+- Hoang Phong Dana Company Limited
 type: startup
 status: active
 website: https://medoan.vn/
+address: 365 29th March Street, Đà Nẵng
 description:
   vi: 'Mệ Đoan: sản phẩm nguyên chất bán trực tuyến.'
 region: da-nang
@@ -19,4 +21,5 @@ sources:
 - startupdanang.vn
 - Website chính thức
 - Danh mục ươm tạo của DNES (11/2026)
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s43

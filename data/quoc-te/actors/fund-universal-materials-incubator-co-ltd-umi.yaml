@@ -4,11 +4,12 @@ name:
 type: fund
 sectors:
 - deeptech
+description:
+  vi: Quỹ đầu tư mạo hiểm Nhật Bản (Tokyo), tập trung vào vật liệu và hóa chất.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
-description:
-  vi: Quỹ đầu tư mạo hiểm Nhật Bản (Tokyo), tập trung vào vật liệu và hóa chất.

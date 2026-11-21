@@ -1,12 +1,20 @@
 id: startup-acronics-solutions
 name:
   vi: Acronics Solutions
+alt_names:
+- ACRONICS Solutions Company Limited
 type: startup
+categories:
+- Doanh nghiệp khoa học và công nghệ
 website: https://acronicssolutions.com/
+address: 128 Thanh Thuy, Đà Nẵng
+description:
+  vi: Phân phối sản phẩm tăng tốc xử lý cảm biến, lưu trữ, mạng và tính toán dùng công nghệ FPGA (BittWare); đã phát triển thiết bị chuyển mạch SDN.
 region: da-nang
 website_status: Hoạt động
 verification:
   level: source_checked
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s57

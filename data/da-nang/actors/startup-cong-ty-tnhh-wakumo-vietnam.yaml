@@ -1,10 +1,16 @@
 id: startup-cong-ty-tnhh-wakumo-vietnam
 name:
   vi: Công ty TNHH Wakumo Vietnam
+alt_names:
+- Wakumo Vietnam Company Limited
 type: startup
+address: 132-136 Le Dinh Ly, Đà Nẵng
+description:
+  vi: Phát triển ứng dụng di động, hỗ trợ tìm thuê nhà và văn phòng.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s26

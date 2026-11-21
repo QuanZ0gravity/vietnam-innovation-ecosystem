@@ -10,6 +10,8 @@ sectors:
 - web3
 website: https://www.trive.vc/
 linkedin: https://www.linkedin.com/company/trivevc
+description:
+  vi: Quỹ đầu tư mạo hiểm Đông Nam Á, rót vốn giai đoạn sớm vào công nghệ, Web3 và AI.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -18,7 +20,6 @@ sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://startupdanang.vn/trive
 legacy_id: d55
-description:
-  vi: Quỹ đầu tư mạo hiểm Đông Nam Á, rót vốn giai đoạn sớm vào công nghệ, Web3 và AI.

@@ -1,10 +1,15 @@
 id: startup-cong-ty-co-phan-giai-phap-cong-nghe-tex
 name:
   vi: Công ty cổ phần giải pháp công nghệ TEX
+alt_names:
+- Tex Technology Solutions Joint Stock Company
 type: startup
 sectors:
 - edu
 website: https://tex.vn/
+address: 179 Tran Hung Dao, Đà Nẵng
+description:
+  vi: Công nghệ cho giáo dục và thực nghiệm.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -12,6 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s10
-description:
-  vi: Công nghệ cho giáo dục và thực nghiệm.

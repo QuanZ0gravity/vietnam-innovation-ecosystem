@@ -1,12 +1,17 @@
 id: startup-cong-ty-tnhh-cong-nghe-sinh-hoc-vinseed
 name:
   vi: Công ty TNHH Công nghệ sinh học Vinseed
+alt_names:
+- Vinseed Biotechnology Co., Ltd.
 type: startup
 sectors:
 - agrifood
 - health
 - marketing
 website: https://dongtrunghathaodrtrung.com/
+address: 256-260 Le Quang Chi, Đà Nẵng
+description:
+  vi: Sản xuất đông trùng hạ thảo và trà thảo dược (thương hiệu Dr. Trung).
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -14,6 +19,5 @@ verification:
 sources:
 - startupdanang.vn
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s50
-description:
-  vi: Sản xuất đông trùng hạ thảo và trà thảo dược (thương hiệu Dr. Trung).

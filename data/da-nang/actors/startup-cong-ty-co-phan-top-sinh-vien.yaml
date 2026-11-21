@@ -1,14 +1,20 @@
 id: startup-cong-ty-co-phan-top-sinh-vien
 name:
   vi: Công ty Cổ phần TOP Sinh viên
+alt_names:
+- TOP Student Joint Stock Company
 type: startup
 sectors:
 - edu
-website: https://greenbeli.io/
+website: https://topsinhvien.com/
+address: 20 Tien Son 8, Đà Nẵng
+description:
+  vi: Nền tảng đánh giá trường học và chia sẻ trải nghiệm đời sống sinh viên.
 region: da-nang
 website_status: Hoạt động
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s45

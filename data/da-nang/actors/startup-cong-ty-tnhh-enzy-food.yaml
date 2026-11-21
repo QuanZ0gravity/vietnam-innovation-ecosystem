@@ -3,12 +3,16 @@ name:
   vi: Công ty TNHH Enzy food
 alt_names:
 - Enzy
+- Enzy Food Company Limited
 type: startup
 sectors:
 - agrifood
 - tourism
 status: active
 website: https://enzy.vn/
+address: Road 4, Hoa Khanh Industrial Park, Đà Nẵng
+description:
+  vi: Sản phẩm thực phẩm cho bữa ăn gia đình.
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -19,6 +23,5 @@ sources:
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s35
-description:
-  vi: Sản phẩm thực phẩm cho bữa ăn gia đình.

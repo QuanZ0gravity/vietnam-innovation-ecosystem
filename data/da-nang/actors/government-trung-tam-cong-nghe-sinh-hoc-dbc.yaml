@@ -4,6 +4,7 @@ name:
 alt_names:
 - Trung tâm Công nghệ sinh học (DBC)
 - Trung tâm Công nghệ sinh học Đà Nẵng
+- Da Nang Biotechnology Center
 type: government
 categories:
 - Đơn vị sự nghiệp
@@ -11,10 +12,11 @@ categories:
 founded: 2011
 status: active
 website: https://dbc.danang.gov.vn
+contact_email: Danabiotech@danang.gov.vn
 description:
   vi: Công nghệ sinh học, GreenTech & FoodTech Lab; nay thuộc Trung tâm ĐMST Đà Nẵng.
 region: da-nang
-website_status: Hoạt động
+website_status: Đã hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng từ 1/11/2026 (QĐ 4640/QĐ-UBND)
 verification:
   level: source_checked
 sources:
@@ -22,5 +24,6 @@ sources:
 - startupdanang.vn
 - Thông tin tổ chức (11/2026)
 - indanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 source_url: https://startupdanang.vn/trung-tam-cong-nghe-sinh-hoc-da-nang
 legacy_id: d5;o14

@@ -1,10 +1,17 @@
 id: startup-cong-ty-co-phan-multi-viet-nam
 name:
   vi: Công ty Cổ phần Multi Việt Nam
+alt_names:
+- Multi Vietnam Joint Stock Company
 type: startup
+website: https://multivietnam.com/
+address: K19/18 Dien Bien Phu, Đà Nẵng
+description:
+  vi: Sản xuất thiết bị giao tiếp thông minh ứng dụng AI và IoT cho chăm sóc sức khỏe (MultiGlass).
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: s46
