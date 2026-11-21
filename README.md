@@ -10,9 +10,9 @@ Bắt đầu từ **TP Đà Nẵng** (gồm khu vực Quảng Nam cũ). Các t�
 
 ## Hiện có gì
 
-| Tỉnh, thành | Tác nhân | Sự kiện | Chính sách | Cập nhật |
+| Tỉnh, thành | Tác nhân | Cơ hội | Chính sách | Cập nhật |
 | --- | --- | --- | --- | --- |
-| Đà Nẵng | 351 (244 khu vực Đà Nẵng cũ, 107 khu vực Quảng Nam cũ) | 53 | 123 | 11/2026 |
+| Đà Nẵng | 308 (205 khu vực Đà Nẵng cũ, 103 khu vực Quảng Nam cũ) | 16 | 123 | 11/2026 |
 
 Phần lớn hồ sơ đang ở mức **chưa xác minh**. Đây là việc cộng đồng có thể giúp nhiều nhất: xem [Cách đóng góp](CONTRIBUTING.md).
 
@@ -40,14 +40,16 @@ data/
   da-nang/
     actors/<id>.yaml     # mỗi tác nhân một tệp
     relations.csv        # quan hệ giữa các tác nhân
-    events.yaml          # sự kiện
+    opportunities.yaml   # cơ hội tạo deal flow: kêu gọi hồ sơ, cuộc thi, demo day, kết nối đầu tư, khách hàng
+    not-duplicates.csv   # các cặp tên gần giống nhưng đã xác nhận là khác nhau
+    archive/             # dữ liệu cũ đã loại khỏi trang, giữ để đối chiếu
     policies.yaml        # văn bản chính sách
     places.yaml          # đơn vị hành chính
     references.csv       # bài viết, nguồn tham khảo (chỉ tiêu đề và liên kết)
     mentions.csv         # bài viết nào nhắc tới tác nhân nào
   LICENSE.md
 schema/actor.schema.json # quy tắc cho một hồ sơ
-tools/validate.py        # kiểm tra schema, trùng lặp, tham chiếu
+tools/validate.py        # kiểm tra schema, tên gần trùng, tham chiếu, nguồn của cơ hội
 tools/build.py           # dựng trang tĩnh và xuất JSON, CSV, GeoJSON vào site/
 web/assets/              # giao diện: CSS, JavaScript, biểu tượng
 site/                    # thư mục xuất bản, tạo tự động, không đưa vào Git

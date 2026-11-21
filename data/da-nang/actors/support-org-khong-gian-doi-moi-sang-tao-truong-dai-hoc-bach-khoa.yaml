@@ -1,13 +1,22 @@
 id: support-org-khong-gian-doi-moi-sang-tao-truong-dai-hoc-bach-khoa
 name:
-  vi: Không gian đổi mới sáng tạo (Trường đại học Bách khoa)
+  vi: Không gian đổi mới sáng tạo, Trường Đại học Bách khoa – ĐHĐN
+alt_names:
+- Không gian đổi mới sáng tạo (Trường đại học Bách khoa)
+- Không gian ĐMST, ĐH Bách khoa
 type: support_org
 categories:
 - Tổ chức hỗ trợ
+- Vườn ươm đại học
+website: https://dut.udn.vn
+description:
+  vi: BK SHARK 2026; hệ sinh thái số dDUT.
 region: da-nang
+website_status: Hoạt động
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/khong-gian-doi-moi-sang-tao-truong-dai-hoc-bach-khoa-plrq5cuzqy
-legacy_id: o7
+legacy_id: o7;d19

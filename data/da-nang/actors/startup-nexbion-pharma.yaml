@@ -1,14 +1,19 @@
-id: company-nexbion-pharma
+id: startup-nexbion-pharma
 name:
   vi: NEXBION Pharma
-type: company
+alt_names:
+- CTCP NEXBION Pharma
+type: startup
 categories:
 - Dược phẩm
+website: https://nexbionpharma.com/
 description:
   vi: Startup tiêu biểu trên cổng thành phố.
 region: da-nang
+website_status: Hoạt động
 verification:
   level: unverified
 sources:
+- startupdanang.vn
 - Bản đồ hệ sinh thái
-legacy_id: d83
+legacy_id: s14;d83

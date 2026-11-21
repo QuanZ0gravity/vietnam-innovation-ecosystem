@@ -1,14 +1,21 @@
 id: fund-thinkzone-ventures
 name:
   vi: ThinkZone Ventures
+alt_names:
+- ThinkZone
 type: fund
 categories:
 - Quỹ đầu tư
+- Quỹ, nhà đầu tư
+website: https://thinkzone.vn/
 description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
+website_status: Hoạt động
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
-legacy_id: d58
+- startupdanang.vn
+source_url: https://startupdanang.vn/thinkzone
+legacy_id: d58;f18

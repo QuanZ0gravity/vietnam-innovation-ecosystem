@@ -1,0 +1,148 @@
+# Cơ hội tạo deal flow: kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư, kết nối khách hàng, thử nghiệm.
+# Quy tắc: apply_url và primary_source phải là trang của đơn vị tổ chức; trang tổng hợp chỉ ghi ở secondary_sources.
+# Trường để trống = chưa có nguồn đáng tin. Không điền phỏng đoán.
+- id: opp-suci-x-lisk-final-demo-2026
+  title: SUCI x Lisk Final Demo Day 2026
+  type: demo_day
+  organizer: SUCI, Lisk
+  event_date: '2026-01-24'
+  focus: [Web3, DeFi, AI, thanh toán]
+  outcome:
+    note: Hơn 30 doanh nghiệp công nghệ, tổ chức quốc tế, nhà đầu tư và chuyên gia tham dự.
+    source: https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026
+  secondary_sources: [https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026]
+  legacy_id: v2
+- id: opp-pre-davas-2026
+  title: Pre-DAVAS 2026
+  type: investor_matching
+  organizer: Thành phố Đà Nẵng
+  event_date: '2026-04-24'
+  eligibility: Tham gia có chọn lọc theo hồ sơ đăng ký.
+  secondary_sources: [https://startupdanang.vn/pre-davas-nen-tang-ket-noi-kinh-doanh-quoc-te-tai-da-nang]
+  legacy_id: v7
+- id: opp-empower-founders-residency-2026
+  title: EMpower Founders Residency
+  type: accelerator_program
+  organizer: sqrDAO / Da Nang Blockchain Hub
+  organizer_ids: [support-org-sqrdao-da-nang-blockchain-hub]
+  event_date: '2026-05-04'
+  focus: [Web3, AI]
+  legacy_id: v8
+- id: opp-bk-shark-2026
+  title: Cuộc thi Khởi nghiệp trong sinh viên BK SHARK 2026
+  type: competition
+  organizer: Trường Đại học Bách khoa – Đại học Đà Nẵng
+  organizer_ids: [university-truong-dai-hoc-bach-khoa]
+  opens: '2026-03-19'
+  event_date: '2026-05-16'
+  eligibility: Sinh viên.
+  benefits: Giải thưởng tổng giá trị hàng chục triệu đồng và hỗ trợ phát triển dự án sau cuộc thi.
+  outcome:
+    finalists: 7
+    source: https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026
+  secondary_sources: [https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026]
+  legacy_id: v10
+- id: opp-ai-builder-hackathon-2026
+  title: AI Builder Hackathon
+  type: competition
+  organizer: Ecomdy, DNES
+  organizer_ids: [incubator-ecomdy-ecombator, incubator-dnes]
+  event_date: '2026-05-20'
+  focus: [AI]
+  benefits: Đầu vào cho đợt ươm tạo AI.
+  legacy_id: v11
+- id: opp-davas-2026
+  title: DAVAS 2026 và Web3 Builders’ Summit
+  type: investor_matching
+  organizer: UBND thành phố Đà Nẵng, Sở KH&CN, DISSC
+  organizer_ids: [government-so-khoa-hoc-va-cong-nghe, government-dissc]
+  event_date: '2026-05-25'
+  primary_source: https://davas.vc/
+  outcome:
+    finalists: 62
+    note: 62 dự án, 31 quỹ tham gia; quy mô đầu tư công bố hơn 5 tỷ USD. Số liệu từ bản thử nghiệm, chưa đối chiếu nguồn gốc.
+  legacy_id: v12
+- id: opp-ai-cross-border-hackathon-2026
+  title: AI Cross-Border Hackathon 2026
+  type: competition
+  organizer: Đà Nẵng đăng cai
+  event_date: '2026-06-06'
+  focus: [AI, thương mại điện tử xuyên biên giới]
+  secondary_sources: [https://startupdanang.vn/da-nang-thuc-day-phat-trien-cac-giai-phap-ai-cho-thuong-mai-dien-tu-xuyen-bien-gioi]
+  legacy_id: v15
+- id: opp-her-mentor-2026
+  title: Her Mentor 2026, chương trình ươm tạo phụ nữ khởi nghiệp
+  type: accelerator_program
+  organizer: Trung tâm Ươm tạo Khởi nghiệp Sông Hàn (SHi)
+  organizer_ids: [support-org-trung-tam-uom-tao-khoi-nghiep-song-han-shi-songhan-incubator]
+  event_date: '2026-07-14'
+  eligibility: Dự án do phụ nữ sáng lập hoặc đồng sáng lập.
+  secondary_sources: [https://startupdanang.vn/khai-mac-chuong-trinh-uom-tao-phu-nu-khoi-nghiep-her-mentor-2026]
+  legacy_id: v20
+- id: opp-surf-2026
+  title: SURF 2026, chung kết khởi nghiệp đổi mới sáng tạo
+  type: competition
+  organizer: UBND thành phố Đà Nẵng, Sở KH&CN, DISSC
+  organizer_ids: [government-so-khoa-hoc-va-cong-nghe, government-dissc]
+  event_date: '2026-08-18'
+  primary_source: https://surfdanang.zone/
+  outcome:
+    finalists: 20
+    note: Số liệu từ bản thử nghiệm, chưa đối chiếu nguồn gốc.
+  legacy_id: v25
+- id: opp-startup-runway-2026
+  title: Startup Runway 2026 và Tuần lễ Khởi nghiệp học sinh, sinh viên
+  type: competition
+  organizer: Trường Đại học Kinh tế – Đại học Đà Nẵng
+  organizer_ids: [university-truong-dai-hoc-kinh-te]
+  event_date: '2026-08-19'
+  eligibility: Học sinh, sinh viên.
+  secondary_sources: [https://startupdanang.vn/khoi-dong-tuan-le-khoi-nghiep-doi-moi-sang-tao-va-chung-ket-startup-runway-2026]
+  legacy_id: v26
+- id: opp-sandbox-dot-1-2026
+  title: Cơ chế thử nghiệm có kiểm soát (sandbox) Đà Nẵng, đợt công bố 2026
+  type: pilot_program
+  organizer: Sở KH&CN Đà Nẵng
+  organizer_ids: [government-so-khoa-hoc-va-cong-nghe]
+  event_date: '2026-08-24'
+  outcome:
+    selected: 6
+    note: 6 giải pháp được cho phép thử nghiệm có kiểm soát.
+  legacy_id: v27
+- id: opp-founder-villages-batch-01
+  title: Founder Villages, Batch 01
+  type: accelerator_program
+  organizer: Cộng đồng founder
+  event_date: '2026-09-25'
+  legacy_id: v33
+- id: opp-investment-readiness-lab-2026
+  title: Investment Readiness Lab
+  type: accelerator_program
+  organizer: Swiss EP, sqrDAO
+  organizer_ids: [international-swiss-ep, support-org-sqrdao-da-nang-blockchain-hub]
+  event_date: '2026-09-28'
+  benefits: Chuẩn bị gọi vốn cho founder.
+  legacy_id: v34
+- id: opp-qualcomm-vic-2027
+  title: Qualcomm Vietnam Innovation Challenge 2027
+  type: call_for_applications
+  organizer: Qualcomm và đối tác
+  opens: '2026-10-01'
+  focus: [5G, IoT, AI, thành phố thông minh]
+  benefits: Ươm tạo, hỗ trợ kỹ thuật, tài trợ.
+  legacy_id: v36
+- id: opp-doan-dn-nuoc-ngoai-mua-hang-2026
+  title: Đoàn doanh nghiệp nước ngoài vào Đà Nẵng giao dịch mua hàng 2026
+  type: buyer_matching
+  organizer: Thành phố Đà Nẵng
+  event_date: '2026-10-28'
+  eligibility: Doanh nghiệp có sản phẩm muốn xuất khẩu.
+  secondary_sources: [https://startupdanang.vn/thong-bao-moi-doanh-nghiep-dang-ky-tham-gia-chuong-trinh-doan-doanh-nghiep-nuoc-ngoai-vao-thanh-pho-da-nang-giao-dich-de-mua-hang-nam-2026]
+  legacy_id: v45
+- id: opp-net-zero-challenge-2026
+  title: Net Zero Challenge 2026
+  type: competition
+  organizer: Net Zero Challenge (toàn quốc)
+  event_date: '2026-11-12'
+  focus: [công nghệ khí hậu]
+  legacy_id: v47

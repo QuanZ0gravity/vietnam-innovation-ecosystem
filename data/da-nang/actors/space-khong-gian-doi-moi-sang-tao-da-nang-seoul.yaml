@@ -1,13 +1,20 @@
 id: space-khong-gian-doi-moi-sang-tao-da-nang-seoul
 name:
-  vi: Không gian đổi mới sáng tạo Đà Nẵng - Seoul
+  vi: Không gian đổi mới sáng tạo Đà Nẵng – Seoul
+alt_names:
+- Không gian đổi mới sáng tạo Đà Nẵng - Seoul
+- Không gian ĐMST Đà Nẵng - Seoul
 type: space
 categories:
 - Không gian ĐMST
+- Không gian quốc tế
+description:
+  vi: Hàn Quốc.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/khong-gian-doi-moi-sang-tao-da-nang-seoul
-legacy_id: o28
+legacy_id: o28;d100

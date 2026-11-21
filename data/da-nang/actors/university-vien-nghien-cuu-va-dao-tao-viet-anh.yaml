@@ -1,17 +1,24 @@
 id: university-vien-nghien-cuu-va-dao-tao-viet-anh
 name:
-  vi: Viện Nghiên cứu và Đào tạo Việt Anh
+  vi: Viện Nghiên cứu và Đào tạo Việt – Anh (VNUK), Đại học Đà Nẵng
+alt_names:
+- Viện Nghiên cứu và Đào tạo Việt Anh
+- VNUK
 type: university
 categories:
 - Viện, trường
+- Trường thành viên
 address: 158A Lê Lợi, Hải Châu 1, Hải Châu
 coordinates:
 - 108.220049
 - 16.070994
 coordinates_source: OpenStreetMap Nominatim 11/2026, số nhà
+description:
+  vi: Maker space MISUD.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
-legacy_id: u12
+- Bản đồ hệ sinh thái
+legacy_id: u12;d65

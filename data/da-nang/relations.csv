@@ -2,3 +2,17 @@ from,type,to,since,source
 government-cuc-cong-nghe-so-va-tri-tue-nhan-tao-bo-kh-cn,related,government-so-khoa-hoc-va-cong-nghe,,prototype-2026-11
 government-dissc,related,government-trung-tam-doi-moi-sang-tao-da-nang,,prototype-2026-11
 government-dsac,related,government-trung-tam-doi-moi-sang-tao-da-nang,,prototype-2026-11
+support-org-khong-gian-doi-moi-sang-tao-truong-dai-hoc-bach-khoa,part_of,university-truong-dai-hoc-bach-khoa,,rà soát dữ liệu 11/2026
+support-org-vien-sang-tao-khoi-nghiep-dh-spkt,part_of,university-truong-dai-hoc-su-pham-ky-thuat,,rà soát dữ liệu 11/2026
+support-org-trung-tam-dmst-va-ho-tro-khoi-nghiep-dh-su-pham-dhdn,part_of,university-truong-dai-hoc-su-pham,,rà soát dữ liệu 11/2026
+support-org-khong-gian-khoi-nghiep-dh-dong-a,part_of,university-truong-dai-hoc-dong-a,,rà soát dữ liệu 11/2026
+support-org-trung-tam-sang-tao-microsoft-dai-hoc-duy-tan,part_of,university-truong-dai-hoc-duy-tan,,rà soát dữ liệu 11/2026
+fund-sunwah-innovation-center,part_of,international-sunwah,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-bach-khoa,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-kinh-te,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-su-pham,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-su-pham-ky-thuat,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-ngoai-ngu,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-dai-hoc-cong-nghe-thong-tin-va-truyen-thong-viet-han,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-truong-y-duoc-dai-hoc-da-nang,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026
+university-vien-nghien-cuu-va-dao-tao-viet-anh,part_of,university-dai-hoc-da-nang,,rà soát dữ liệu 11/2026

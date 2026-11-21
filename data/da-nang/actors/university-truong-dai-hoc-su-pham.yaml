@@ -1,13 +1,20 @@
 id: university-truong-dai-hoc-su-pham
 name:
-  vi: Trường Đại học Sư phạm
+  vi: Trường Đại học Sư phạm – Đại học Đà Nẵng
+alt_names:
+- Trường Đại học Sư phạm
+- ĐH Sư phạm, ĐHĐN
 type: university
 categories:
 - Viện, trường
+- Trường thành viên
 address: 459 Tôn Đức Thắng, Đà Nẵng
+description:
+  vi: Ngày hội KH,CN và ĐMST UED 2026.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
-legacy_id: u8
+- Bản đồ hệ sinh thái
+legacy_id: u8;d64

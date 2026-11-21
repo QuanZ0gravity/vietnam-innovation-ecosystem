@@ -1,9 +1,13 @@
 id: support-org-khong-gian-khoi-nghiep-dh-dong-a
 name:
-  vi: Không gian khởi nghiệp, ĐH Đông Á
+  vi: Không gian khởi nghiệp và đổi mới sáng tạo, Trường Đại học Đông Á
+alt_names:
+- Không gian khởi nghiệp, ĐH Đông Á
+- Không gian khởi nghiệp và đổi mới sáng tạo trường đại học Đông Á
 type: support_org
 categories:
 - Vườn ươm đại học
+- Tổ chức hỗ trợ
 website: https://donga.edu.vn
 description:
   vi: UDA Startup & Innovation.
@@ -13,4 +17,6 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
-legacy_id: d21
+- startupdanang.vn
+source_url: https://startupdanang.vn/khong-gian-khoi-nghiep-va-doi-moi-sang-tao-truong-dai-hoc-dong-a-tl8ry4izlg
+legacy_id: d21;o4

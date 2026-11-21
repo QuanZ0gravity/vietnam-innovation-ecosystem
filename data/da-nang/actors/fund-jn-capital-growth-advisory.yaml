@@ -1,14 +1,21 @@
 id: fund-jn-capital-growth-advisory
 name:
   vi: JN Capital & Growth Advisory
+alt_names:
+- JN Capital & Growth Advisory Pte Ltd
 type: fund
 categories:
 - Quỹ đầu tư
+- Quỹ, nhà đầu tư
+website: https://www.jn-capital.com/advisory-consulting
 description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
+website_status: Hoạt động
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
-legacy_id: d51
+- startupdanang.vn
+source_url: https://startupdanang.vn/jn-capital-growth-advisory-pte-ltd
+legacy_id: d51;f17

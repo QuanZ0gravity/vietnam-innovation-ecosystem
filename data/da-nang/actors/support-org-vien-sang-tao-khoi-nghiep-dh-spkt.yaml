@@ -1,0 +1,22 @@
+id: support-org-vien-sang-tao-khoi-nghiep-dh-spkt
+name:
+  vi: Viện Nghiên cứu Sáng tạo và Khởi nghiệp, Trường Đại học Sư phạm Kỹ thuật – ĐHĐN
+alt_names:
+- Viện nghiên cứu sáng tạo và khởi nghiệp (Trường đại học Sư phạm Kỹ thuật)
+- Viện NC Sáng tạo và Khởi nghiệp, ĐH SPKT
+type: support_org
+categories:
+- Tổ chức hỗ trợ
+- Vườn ươm đại học
+website: https://ute.udn.vn
+description:
+  vi: Ươm tạo dự án kỹ thuật.
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+- Bản đồ hệ sinh thái
+source_url: https://startupdanang.vn/vien-nghien-cuu-sang-tao-va-khoi-nghiep-truong-dai-hoc-su-pham-ky-thuat-cx89u84p5s
+legacy_id: o9;d20

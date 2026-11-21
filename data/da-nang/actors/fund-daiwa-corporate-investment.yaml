@@ -1,14 +1,22 @@
 id: fund-daiwa-corporate-investment
 name:
-  vi: Daiwa Corporate Investment
+  vi: Daiwa Corporate Investment (DCI)
+alt_names:
+- Daiwa Corporate Investment Co., Ltd. (DCI)
+- Daiwa Corporate Investment
 type: fund
 categories:
+- Quỹ, nhà đầu tư
 - Quỹ đầu tư
+website: https://www.daiwa-inv.co.jp/en/
 description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
+website_status: Hoạt động
 verification:
-  level: unverified
+  level: source_checked
 sources:
+- startupdanang.vn
 - Bản đồ hệ sinh thái
-legacy_id: d43
+source_url: https://startupdanang.vn/daiwa-corporate-investment-co-ltd-dci
+legacy_id: f9;d43

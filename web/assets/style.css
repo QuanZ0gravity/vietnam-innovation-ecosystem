@@ -167,3 +167,20 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .maplist button:hover{color:var(--sea);text-decoration:underline}
 .legend{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:12px;font-size:.9rem;color:var(--ink-2)}
 .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;border:2px solid #102A2C;margin-right:6px;vertical-align:-1px}
+
+/* Cơ hội */
+.opp-group{margin-top:40px}
+.opp-group h2{font-size:1.4rem;padding-bottom:10px;border-bottom:1.5px solid var(--ink)}
+.opp-list{display:flex;flex-direction:column}
+.opp{padding:20px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.opp h3{font-size:1.2rem}
+.opp-meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.pill{display:inline-block;font-size:.82rem;font-weight:700;padding:3px 10px;border-radius:999px;border:1.5px solid var(--ink-2);color:var(--ink-2)}
+.pill.open{background:var(--sea);border-color:var(--sea);color:var(--sea-ink)}
+.pill.upcoming{border-color:var(--sea);color:var(--sea)}
+.opp-dates{display:flex;gap:6px 20px;flex-wrap:wrap;color:var(--ink-2)}
+.opp-dates b{color:var(--ink)}
+.opp-facts{margin-top:8px;grid-template-columns:130px minmax(0,1fr)}
+.opp-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.gap{margin-top:6px;padding:8px 12px;border-left:3px solid var(--sun);background:var(--surface);color:var(--ink-2)}
+.opp.closed h3{color:var(--ink-2)}

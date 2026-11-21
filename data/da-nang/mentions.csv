@@ -1,9 +1,8 @@
 reference,actor
-event-ai-builder-hackathon,support-org-the-ecombator-ecomdy
+event-ai-builder-hackathon,incubator-ecomdy-ecombator
 event-davas-2026-va-web3-builders-summit,fund-davas
 event-davas-2026-va-web3-builders-summit,government-dissc
 event-devday-2027,international-swiss-ep
-event-devday-2027,support-org-swiss-entrepreneurship-program-swiss-ep
 event-doan-so-kh-cn-tai-nhat-ban,international-kawasaki-umi-tech-hub-yokohama
 event-doan-thanh-pho-lam-viec-tai-nvidia,international-nvidia
 event-hoi-thao-he-sinh-thai-tai-chinh-xanh-tai-dia-phuong,government-vifc-dn
@@ -24,7 +23,6 @@ event-hoi-thao-quoc-te-sam-ngoc-linh,company-thaco-agri
 event-hop-tac-chien-luoc-voi-viettel,company-viettel
 event-hop-tac-dmst-voi-sunwah,international-sunwah
 event-investment-readiness-lab,international-swiss-ep
-event-investment-readiness-lab,support-org-swiss-entrepreneurship-program-swiss-ep
 event-ky-hop-tac-voi-futa-land-va-solana-foundation,government-dissc
 event-ky-hop-tac-voi-futa-land-va-solana-foundation,international-solana-foundation
 event-ky-ket-voi-manabu-hubs,government-dissc
@@ -36,7 +34,7 @@ event-pre-davas-2026,fund-davas
 event-ra-mat-ai-tinkerers-da-nang,support-org-ai-tinkerers-da-nang
 event-smart-city-summit-dai-bac,international-manabu-hubs
 event-smartos-ky-hop-tac-voi-dai-thang-holdings,startup-enosta
-event-so-kh-cn-ky-hop-tac-voi-dh-dong-a,university-dh-dong-a
+event-so-kh-cn-ky-hop-tac-voi-dh-dong-a,university-truong-dai-hoc-dong-a
 event-surf-2026-ky-nguyen-vuon-minh-sang-tao-tien-phong,government-dissc
 event-trao-giai-startupblink-cho-da-nang,government-dissc
 event-trien-lam-khoi-nghiep-dmst-truc-tuyen-surf-2026,government-dissc
@@ -65,7 +63,7 @@ ref-ai-coding-platform,company-viettel
 ref-basal-pay-trong-khuon-kho-sandbox-trai-nghiem-tai-chinh-so-a,company-alphatrue-solutions
 ref-bi-thu-da-nang-sau-6-thang-can-bo-khong-dap-ung-nhiem-vu-se,government-ubnd-thanh-pho-da-nang
 ref-bi-thu-thanh-uy-nguyen-van-quang-tham-va-kiem-tra-cong-tac-t,government-ubnd-thanh-pho-da-nang
-ref-bi-thu-thanh-uy-nguyen-van-quang-tham-va-kiem-tra-cong-tac-t,incubator-trung-tam-cong-nghe-sinh-hoc-da-nang
+ref-bi-thu-thanh-uy-nguyen-van-quang-tham-va-kiem-tra-cong-tac-t,government-trung-tam-cong-nghe-sinh-hoc-dbc
 ref-bi-thu-thanh-uy-nguyen-van-quang-tham-va-kiem-tra-cong-tac-t,university-dai-hoc-da-nang
 ref-bi-thu-thanh-uy-nguyen-van-quang-tham-va-kiem-tra-cong-tac-t-2,government-so-khoa-hoc-va-cong-nghe
 ref-bkdn-2026-lan-toa-tinh-than-nghien-cuu-sang-tao-va-khoi-nghi,government-so-khoa-hoc-va-cong-nghe
@@ -95,7 +93,6 @@ ref-chung-ket-cuoc-thi-rung-chuong-web3-lan-toa-tinh-than-doi-mo,university-truo
 ref-chung-ket-cuoc-thi-rung-chuong-web3-lan-toa-tinh-than-doi-mo,university-truong-dai-hoc-su-pham
 ref-chuong-trinh-ket-noi-1-1-truc-tuyen-giua-quy-dau-tu-jn-capit,fund-davas
 ref-chuong-trinh-ket-noi-1-1-truc-tuyen-giua-quy-dau-tu-jn-capit,fund-jn-capital-growth-advisory
-ref-chuong-trinh-ket-noi-1-1-truc-tuyen-giua-quy-dau-tu-jn-capit,fund-jn-capital-growth-advisory-pte-ltd
 ref-chuyen-doi-so-thuc-day-tang-truong-hai-con-so-trong-phat-tri,government-so-khoa-hoc-va-cong-nghe
 ref-chuyen-doi-so-thuc-day-tang-truong-hai-con-so-trong-phat-tri,government-ubnd-thanh-pho-da-nang
 ref-chuyen-doi-va-hien-dai-dich-vu-cong-trong-thoi-dai-4-0,government-so-khoa-hoc-va-cong-nghe
@@ -119,7 +116,6 @@ ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-davas
 ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-do-ventures
 ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-genesia-ventures
 ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-quest-ventures
-ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-thinkzone
 ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-thinkzone-ventures
 ref-da-nang-diem-den-hap-dan-cua-cac-nha-dau-tu-du-an-khoi-nghie,fund-vertex-ventures
 ref-da-nang-dinh-hinh-he-sinh-thai-kinh-te-khong-gian-tam-thap,government-ubnd-thanh-pho-da-nang
@@ -141,7 +137,6 @@ ref-da-nang-innovation-startup-support-center-and-belkin-marketi,government-diss
 ref-da-nang-ket-noi-doanh-nghiep-trung-quoc-mo-rong-hop-tac-cong,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-ket-noi-voi-tech-hub-yokohama-thuc-day-hop-tac-ho-tr,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-ket-noi-voi-tech-hub-yokohama-thuc-day-hop-tac-ho-tr,international-swiss-ep
-ref-da-nang-ket-noi-voi-tech-hub-yokohama-thuc-day-hop-tac-ho-tr,support-org-swiss-entrepreneurship-program-swiss-ep
 ref-da-nang-keu-goi-hien-tang-tai-lieu-tu-lieu-va-hien-vat-xay-d,government-ubnd-thanh-pho-da-nang
 ref-da-nang-khai-mac-hoi-thao-khoa-hoc-quoc-te-ve-vat-lieu-va-th,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-khai-mac-hoi-thao-khoa-hoc-quoc-te-ve-vat-lieu-va-th,university-dai-hoc-da-nang
@@ -170,7 +165,7 @@ ref-da-nang-quang-ninh-va-hai-phong-ban-giai-phap-khoi-thong-ngu,government-so-k
 ref-da-nang-ra-mat-mang-luoi-cau-lac-bo-sinh-vien-khoi-nghiep-so,fund-davas
 ref-da-nang-sunwah-strengthen-innovation-cooperation-explore-reg,international-sunwah
 ref-da-nang-tang-154-gsei-ghi-dau-an-tren-ban-do-khoi-nghiep-toa,government-dissc
-ref-da-nang-tang-cuong-ho-tro-khoi-nghiep-dnes-phoi-hop-galaxy-v,support-org-dnes-vuon-uom-doanh-nghiep-da-nang
+ref-da-nang-tang-cuong-ho-tro-khoi-nghiep-dnes-phoi-hop-galaxy-v,incubator-dnes
 ref-da-nang-tang-cuong-hop-tac-doi-moi-sang-tao-voi-hiep-hoi-e-f,fund-davas
 ref-da-nang-tang-cuong-hop-tac-doi-moi-sang-tao-voi-hiep-hoi-e-f,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-tang-cuong-hop-tac-quoc-te-trong-viec-ung-dung-ai-va,government-so-khoa-hoc-va-cong-nghe
@@ -192,7 +187,7 @@ ref-da-nang-tap-huan-trien-khai-tcvn-iso-18091-2020,government-so-khoa-hoc-va-co
 ref-da-nang-tham-du-trien-lam-quoc-te-fix-2025-va-ky-ket-hop-tac,government-dissc
 ref-da-nang-thanh-lap-trung-tam-doi-moi-sang-tao,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-thanh-lap-trung-tam-doi-moi-sang-tao,government-trung-tam-doi-moi-sang-tao-da-nang
-ref-da-nang-thanh-lap-trung-tam-doi-moi-sang-tao,incubator-trung-tam-cong-nghe-sinh-hoc-da-nang
+ref-da-nang-thanh-lap-trung-tam-doi-moi-sang-tao,government-trung-tam-cong-nghe-sinh-hoc-dbc
 ref-da-nang-thuc-day-ba-nha-cung-mo-duong-cho-nganh-ban-dan,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-thuc-day-he-sinh-thai-doi-moi-sang-tao-tu-gia-tri-di,government-so-khoa-hoc-va-cong-nghe
 ref-da-nang-thuc-day-he-sinh-thai-doi-moi-sang-tao-tu-gia-tri-di,government-ubnd-thanh-pho-da-nang
@@ -283,12 +278,11 @@ ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-fundgo
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-genesia-ventures
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-kilsa-global
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-quest-ventures
-ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-thinkzone
+ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-thinkzone-ventures
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-trive
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,fund-vertex-ventures
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,international-sunwah
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,international-swiss-ep
-ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang,support-org-swiss-entrepreneurship-program-swiss-ep
 ref-dien-dan-dau-tu-mao-hiem-va-thien-than-da-nang-nam-2025-co-h,fund-davas
 ref-dien-dan-sinh-vien-khoi-nghiep-doi-moi-sang-tao-2026-ket-noi,government-so-khoa-hoc-va-cong-nghe
 ref-dien-dan-sinh-vien-khoi-nghiep-doi-moi-sang-tao-2026-ket-noi,university-dai-hoc-da-nang
@@ -364,7 +358,6 @@ ref-hon-30-doi-tranh-tai-tai-cuoc-thi-sang-tao-robot-danh-cho-ho,university-truo
 ref-hon-5-ty-usd-san-sang-dau-tu-cho-62-du-an-tai-davas-2026,fund-antler
 ref-hon-5-ty-usd-san-sang-dau-tu-cho-62-du-an-tai-davas-2026,fund-davas
 ref-hon-5-ty-usd-san-sang-dau-tu-cho-62-du-an-tai-davas-2026,fund-quest-ventures
-ref-hon-5-ty-usd-san-sang-dau-tu-cho-62-du-an-tai-davas-2026,fund-thinkzone
 ref-hon-5-ty-usd-san-sang-dau-tu-cho-62-du-an-tai-davas-2026,fund-thinkzone-ventures
 ref-hon-50-doanh-nhan-quoc-te-tham-du-chuong-trinh-tim-hieu-co-h,fund-davas
 ref-hon-50-doanh-nhan-quoc-te-tham-du-chuong-trinh-tim-hieu-co-h,government-dissc
@@ -507,8 +500,7 @@ ref-sap-dien-ra-giai-bong-da-giao-huu-he-sinh-thai-khoi-nghiep-d,company-viettel
 ref-sap-dien-ra-hoi-nghi-trien-khai-chinh-sach-ho-tro-chuyen-doi,government-ubnd-thanh-pho-da-nang
 ref-sap-dien-ra-le-ra-mat-chi-nhanh-trung-tam-trong-tai-thuong-m,fund-fundgo
 ref-sap-dien-ra-ngay-hoi-blockchain-viet-nam-2025,government-ubnd-thanh-pho-da-nang
-ref-selingo-hoc-tieng-anh-bang-hinh-anh-xay-dung-tu-duy-ngon-ngu,company-selingo
-ref-selingo-hoc-tieng-anh-bang-hinh-anh-xay-dung-tu-duy-ngon-ngu,startup-selingo-hoc-tieng-anh-bang-hinh-anh-xay-dung-tu-duy-ngon-ngu
+ref-selingo-hoc-tieng-anh-bang-hinh-anh-xay-dung-tu-duy-ngon-ngu,startup-selingo
 ref-seminar-from-agentic-ai-to-responsible-impact-ai-agent-tu-na,government-dissc
 ref-seminar-from-agentic-ai-to-responsible-impact-ai-agent-tu-na,university-dai-hoc-da-nang
 ref-so-khoa-hoc-va-cong-nghe-da-nang-ky-ket-hop-tac-voi-truong-d,government-so-khoa-hoc-va-cong-nghe
@@ -557,8 +549,7 @@ ref-thong-bao-du-thao-sua-doi-tieu-chuan-quoc-gia-trung-quoc-ve,fund-davas
 ref-thong-bao-du-thao-sua-doi-tieu-chuan-quoc-gia-trung-quoc-ve,government-so-khoa-hoc-va-cong-nghe
 ref-thong-bao-du-thao-sua-doi-tieu-chuan-quoc-gia-trung-quoc-ve,government-trung-tam-doi-moi-sang-tao-da-nang
 ref-thong-bao-hoi-thao,international-swiss-ep
-ref-thong-bao-hoi-thao,support-org-swiss-entrepreneurship-program-swiss-ep
-ref-thong-bao-hoi-thao,support-org-the-ecombator-ecomdy
+ref-thong-bao-hoi-thao,incubator-ecomdy-ecombator
 ref-thong-bao-moi-cac-startup-doanh-nghiep-cong-nghe-nha-sang-la,government-dissc
 ref-thong-bao-moi-cac-startup-doanh-nghiep-cong-nghe-nha-sang-la,international-manabu-hubs
 ref-thong-bao-moi-dang-ky-chuong-trinh-dao-tao-giang-vien-khoi-n,university-truong-dai-hoc-dong-a

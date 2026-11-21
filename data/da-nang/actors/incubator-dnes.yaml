@@ -1,0 +1,24 @@
+id: incubator-dnes
+name:
+  vi: Vườn ươm Doanh nghiệp Đà Nẵng (DNES)
+alt_names:
+- Công ty Cổ phần Vườn ươm Doanh nghiệp Đà Nẵng (DNES)
+- DNES – Vườn ươm Doanh nghiệp Đà Nẵng
+- DNES
+type: incubator
+categories:
+- Vườn ươm
+- Tổ chức hỗ trợ
+- Vườn ươm doanh nghiệp
+website: https://www.dnes.vn
+description:
+  vi: Vườn ươm đối tác công tư; AI Builder Hackathon cùng Ecomdy (5/2026).
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+- Bản đồ hệ sinh thái
+source_url: https://startupdanang.vn/dnes-vuon-uom-doanh-nghiep-da-nang
+legacy_id: o17;o6;d12

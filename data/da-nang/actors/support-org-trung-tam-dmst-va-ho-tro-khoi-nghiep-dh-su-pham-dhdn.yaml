@@ -1,13 +1,22 @@
 id: support-org-trung-tam-dmst-va-ho-tro-khoi-nghiep-dh-su-pham-dhdn
 name:
-  vi: Trung tâm Đổi mới sáng tạo và Hỗ trợ khởi nghiệp, Trường Đại học Sư phạm – ĐHĐN
+  vi: Trung tâm Đổi mới sáng tạo và Hỗ trợ khởi nghiệp, Trường Đại học Sư phạm – ĐHĐN (UED Innovation & Startup Hub)
+alt_names:
+- TT ĐMST và Hỗ trợ khởi nghiệp, ĐH Sư phạm
+- Trung tâm Đổi mới sáng tạo và Hỗ trợ khởi nghiệp, Trường Đại học Sư phạm – ĐHĐN
+- Khai trương Không gian Sáng tạo UED Innovation & Startup Hub
 type: support_org
 categories:
 - Tổ chức hỗ trợ
+- Vườn ươm đại học
+- Không gian ĐMST
+description:
+  vi: Mới mở; hợp tác chẩn đoán bệnh vật nuôi sau SURF 2026.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/truong-dai-hoc-su-pham-dhdn-khai-truong-trung-tam-doi-moi-sang-tao-ho-tro-khoi-nghiep
-legacy_id: o0
+legacy_id: o0;d18;o21

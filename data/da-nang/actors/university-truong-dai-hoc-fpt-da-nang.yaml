@@ -1,13 +1,19 @@
 id: university-truong-dai-hoc-fpt-da-nang
 name:
   vi: Trường Đại học FPT Đà Nẵng
+alt_names:
+- ĐH FPT
 type: university
 categories:
 - Viện, trường
+- Đại học
 address: Khu đô thị FPT City, Hòa Hải,Ngũ Hành Sơn, Đà Nẵng
+description:
+  vi: Đào tạo công nghệ.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
-legacy_id: u7
+- Bản đồ hệ sinh thái
+legacy_id: u7;d68

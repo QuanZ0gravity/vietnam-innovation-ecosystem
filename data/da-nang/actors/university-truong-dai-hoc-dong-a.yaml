@@ -1,13 +1,19 @@
 id: university-truong-dai-hoc-dong-a
 name:
   vi: Trường Đại học Đông Á
+alt_names:
+- ĐH Đông Á
 type: university
 categories:
 - Viện, trường
+- Đại học
 address: 33 Xô Viết Nghệ Tĩnh, Hải Châu, Đà Nẵng
+description:
+  vi: Ký hợp tác với Sở KH&CN (1/2026).
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
-legacy_id: u2
+- Bản đồ hệ sinh thái
+legacy_id: u2;d67

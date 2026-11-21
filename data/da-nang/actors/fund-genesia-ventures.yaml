@@ -1,14 +1,21 @@
 id: fund-genesia-ventures
 name:
   vi: Genesia Ventures
+alt_names:
+- Genesia Ventures Vietnam Investment Fund
 type: fund
 categories:
 - Quỹ đầu tư
+- Quỹ, nhà đầu tư
+website: https://www.genesiaventures.com/en/top-en/
 description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
+website_status: Hoạt động
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
-legacy_id: d48
+- startupdanang.vn
+source_url: https://startupdanang.vn/genesia-ventures-vietnam-investment-fund
+legacy_id: d48;f8

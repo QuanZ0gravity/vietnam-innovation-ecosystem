@@ -1,6 +1,8 @@
 id: creator-kolavina-ngon-vi-saponin-tu-nhien
 name:
   vi: KOLAVINA - Ngon vị SAPONIN tự nhiên
+alt_names:
+- KOLANVINA - Ngon vị saponin tự nhiên
 type: creator
 categories:
 - Chủ thể sáng tạo
@@ -9,4 +11,4 @@ verification:
   level: unverified
 sources:
 - Bản lĩnh xứ Quảng
-legacy_id: q25
+legacy_id: q25;q33

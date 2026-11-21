@@ -1,13 +1,21 @@
 id: space-khong-gian-doi-moi-sang-tao-da-nang-vung-vinh-lon
 name:
-  vi: Không gian đổi mới sáng tạo Đà Nẵng – Vùng Vịnh Lớn
+  vi: Không gian đổi mới sáng tạo Đà Nẵng – Vùng Vịnh Lớn (Trung Quốc)
+alt_names:
+- Không gian đổi mới sáng tạo Đà Nẵng – Vùng Vịnh Lớn
+- Không gian đổi mới sáng tạo Đà Nẵng-Vùng Vịnh lớn Trung Quốc
+- Không gian ĐMST Đà Nẵng - Vùng Vịnh lớn
 type: space
 categories:
 - Không gian ĐMST
+- Không gian quốc tế
+description:
+  vi: Trung Quốc.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/ra-mat-khong-gian-doi-moi-sang-tao-da-nang-vung-vinh-lon
-legacy_id: o34
+legacy_id: o34;o22;d102

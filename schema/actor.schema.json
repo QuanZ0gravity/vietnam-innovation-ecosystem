@@ -164,6 +164,13 @@
     "coordinates_source": {
       "type": "string",
       "description": "Nguồn và độ chính xác của tọa độ"
+    },
+    "alt_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tên khác, tên cũ hoặc cách viết khác; dùng để phát hiện trùng"
     }
   }
 }

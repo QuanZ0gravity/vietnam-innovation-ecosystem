@@ -1,8 +1,12 @@
 id: support-org-199-medical-innovation-hub
 name:
-  vi: 199 Medical Innovation Hub
+  vi: 199 Medical Innovation Hub (199MIH)
+alt_names:
+- Trung tâm đổi mới sáng tạo 199 Medical Innovation Hub - 199MIH
+- 199 Medical Innovation Hub
 type: support_org
 categories:
+- Tổ chức hỗ trợ
 - Trung tâm ĐMST y tế
 website: https://199mih.vn
 description:
@@ -12,5 +16,7 @@ website_status: Hoạt động
 verification:
   level: source_checked
 sources:
+- startupdanang.vn
 - Bản đồ hệ sinh thái
-legacy_id: d17
+source_url: https://startupdanang.vn/trung-tam-doi-moi-sang-tao-199-medical-innovation-hub-199mih
+legacy_id: o10;d17

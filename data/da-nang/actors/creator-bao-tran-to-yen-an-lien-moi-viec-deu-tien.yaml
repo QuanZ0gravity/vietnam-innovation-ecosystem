@@ -1,6 +1,8 @@
 id: creator-bao-tran-to-yen-an-lien-moi-viec-deu-tien
 name:
   vi: Bảo Trân – Tổ yến ăn liền, mọi việc đều tiện
+alt_names:
+- Tổ yến ăn liền - mọi việc đều tiện
 type: creator
 categories:
 - Chủ thể sáng tạo
@@ -9,4 +11,4 @@ verification:
   level: unverified
 sources:
 - Bản lĩnh xứ Quảng
-legacy_id: q76
+legacy_id: q76;q29

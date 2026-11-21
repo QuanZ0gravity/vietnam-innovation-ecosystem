@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cơ hội tạo deal flow / Deal-flow opportunity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "type", "organizer"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^opp-[a-z0-9-]+$"},
+    "title": {"type": "string"},
+    "title_en": {"type": "string"},
+    "type": {"enum": ["call_for_applications", "competition", "demo_day", "investor_matching", "accelerator_program", "buyer_matching", "pilot_program"]},
+    "organizer": {"type": "string"},
+    "organizer_ids": {"type": "array", "items": {"type": "string"}},
+    "opens": {"type": "string", "format": "date"},
+    "deadline": {"type": "string", "format": "date"},
+    "event_date": {"type": "string", "format": "date"},
+    "focus": {"type": "array", "items": {"type": "string"}},
+    "eligibility": {"type": "string", "maxLength": 300},
+    "benefits": {"type": "string", "maxLength": 300},
+    "funding": {"type": "string", "description": "Số vốn, giải thưởng hoặc đầu tư công bố, kèm đơn vị tiền"},
+    "apply_url": {"type": "string", "pattern": "^https?://"},
+    "primary_source": {"type": "string", "pattern": "^https?://", "description": "Trang của chính đơn vị tổ chức"},
+    "secondary_sources": {"type": "array", "items": {"type": "string", "pattern": "^https?://"}},
+    "outcome": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "applicants": {"type": "integer"}, "finalists": {"type": "integer"}, "selected": {"type": "integer"},
+        "investors": {"type": "integer"}, "deals": {"type": "integer"},
+        "note": {"type": "string", "maxLength": 300}, "source": {"type": "string", "pattern": "^https?://"}
+      }
+    },
+    "legacy_id": {"type": "string"}
+  }
+}

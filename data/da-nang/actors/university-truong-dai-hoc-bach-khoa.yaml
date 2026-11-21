@@ -1,13 +1,20 @@
 id: university-truong-dai-hoc-bach-khoa
 name:
-  vi: Trường Đại học Bách Khoa
+  vi: Trường Đại học Bách khoa – Đại học Đà Nẵng
+alt_names:
+- Trường Đại học Bách Khoa
+- ĐH Bách khoa, ĐHĐN
 type: university
 categories:
 - Viện, trường
+- Trường thành viên
 address: 54 Nguyễn Lương Bằng, quận Liên Chiểu, thành phố Đà Nẵng
+description:
+  vi: BK SHARK; dDUT; Liên minh Danang Digital Twin.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
-legacy_id: u10
+- Bản đồ hệ sinh thái
+legacy_id: u10;d62

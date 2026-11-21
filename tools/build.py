@@ -26,7 +26,7 @@ VER_ORDER = {"partner_verified": 0, "org_confirmed": 1, "source_checked": 2, "un
 VER_CLASS = {"unverified": "l0", "source_checked": "l1", "org_confirmed": "l2", "partner_verified": "l3"}
 
 # ---------- đọc dữ liệu ----------
-actors, relations, events, policies, places, refs, mentions = [], [], [], [], [], {}, []
+actors, relations, events, policies, places, refs, mentions, opps = [], [], [], [], [], {}, [], []
 for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
     if not os.path.isdir(region_dir):
         continue
@@ -35,11 +35,14 @@ for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
         a = yaml.safe_load(open(path, encoding="utf-8"))
         a["_file"] = os.path.relpath(path, ROOT).replace(os.sep, "/")
         actors.append(a)
-    for name, bucket in (("events.yaml", events), ("policies.yaml", policies), ("places.yaml", places)):
+    for name, bucket in (("events.yaml", events), ("policies.yaml", policies), ("places.yaml", places), ("opportunities.yaml", opps)):
         p = os.path.join(region_dir, name)
         if os.path.exists(p):
             for item in yaml.safe_load(open(p, encoding="utf-8")) or []:
-                item["region"] = region
+                if name == "opportunities.yaml":
+                    item["_region"] = region
+                else:
+                    item["region"] = region
                 bucket.append(item)
     for name in ("relations.csv", "references.csv", "mentions.csv"):
         p = os.path.join(region_dir, name)
@@ -57,18 +60,45 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id:
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") != "part_of":
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
     if m["reference"] in refs:
         mentioned[m["actor"]].append(refs[m["reference"]])
 events.sort(key=lambda x: str(x.get("date") or ""))
+OPP_TYPES = {"call_for_applications": ("Kêu gọi hồ sơ", "Call for applications"), "competition": ("Cuộc thi", "Competition"),
+             "demo_day": ("Demo day", "Demo day"), "investor_matching": ("Kết nối nhà đầu tư", "Investor matching"),
+             "accelerator_program": ("Ươm tạo, tăng tốc", "Incubation, acceleration"), "buyer_matching": ("Kết nối khách hàng", "Buyer matching"),
+             "pilot_program": ("Thử nghiệm, sandbox", "Pilot, sandbox")}
+def opp_key_date(o):
+    return o.get("deadline") or o.get("event_date") or o.get("opens") or ""
+def opp_status(o):
+    if o.get("deadline") and o["deadline"] >= TODAY:
+        return "open"
+    if o.get("opens") and not o.get("deadline") and not o.get("event_date") and o["opens"] <= TODAY:
+        age = (datetime.date.fromisoformat(TODAY) - datetime.date.fromisoformat(o["opens"])).days
+        return "open" if age <= 120 else "closed"
+    if (o.get("event_date") or "") >= TODAY or (o.get("opens") or "") > TODAY:
+        return "upcoming"
+    return "closed"
+def opp_missing(o):
+    m = []
+    if not o.get("deadline"): m.append(("hạn nộp", "deadline"))
+    if not (o.get("benefits") or o.get("funding")): m.append(("quyền lợi", "benefits"))
+    if not o.get("eligibility"): m.append(("đối tượng", "eligibility"))
+    if not (o.get("apply_url") or o.get("primary_source")): m.append(("liên kết của đơn vị tổ chức", "organiser link"))
+    if opp_status(o) == "closed" and not o.get("outcome"): m.append(("kết quả", "outcome"))
+    return m
+opps_by_org = collections.defaultdict(list)
+for o in opps:
+    for x in o.get("organizer_ids") or []:
+        opps_by_org[x].append(o)
 policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
 # ---------- khung trang ----------
 NAV = [("home", "", "nav_home"), ("dir", "danh-ba/", "nav_dir"), ("map", "ban-do/", "nav_map"),
-       ("events", "su-kien/", "nav_events"), ("policy", "chinh-sach/", "nav_policy")]
+       ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy")]
 CUR = ' aria-current="page"'
 LOGO = ('<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="8" cy="9" r="4" fill="var(--sea)"/>'
         '<circle cx="22" cy="8" r="3" fill="var(--ink)"/><circle cx="15" cy="22" r="5" fill="var(--sun)"/>'
@@ -139,7 +169,7 @@ def dump(name, obj):
 public = [{k: v for k, v in a.items() if not k.startswith("_")} for a in actors]
 dump("actors.json", public)
 dump("relations.json", relations)
-dump("events.json", events)
+dump("opportunities.json", [{k: v for k, v in o.items() if not k.startswith("_")} | {"status": opp_status(o)} for o in opps])
 dump("policies.json", policies)
 dump("places.json", places)
 with open(os.path.join(OUT, "data", "actors.csv"), "w", newline="", encoding="utf-8") as f:
@@ -162,9 +192,55 @@ dump("actors.geojson", {"type": "FeatureCollection", "features": features})
 counts = collections.Counter(a["type"] for a in actors)
 stats = {"actors": len(actors), "by_type": counts, "by_region": collections.Counter(a["region"] for a in actors),
          "by_verification": collections.Counter(a["verification"]["level"] for a in actors),
-         "relations": len(relations), "events": len(events), "policies": len(policies), "mapped": len(features),
+         "relations": len(relations), "opportunities": len(opps), "policies": len(policies), "mapped": len(features),
          "built": TODAY}
 dump("stats.json", stats)
+
+# ---------- thẻ cơ hội ----------
+STATUS = {"open": ("Đang nhận hồ sơ", "Open for applications"), "upcoming": ("Sắp diễn ra", "Upcoming"), "closed": ("Đã kết thúc", "Closed")}
+def opp_card(o, compact=False):
+    st = opp_status(o)
+    tv, te = OPP_TYPES[o["type"]]
+    sv, se = STATUS[st]
+    if st == "open" and not o.get("deadline"):
+        sv, se = sv + " (chưa rõ hạn)", se + " (deadline unknown)"
+    dates = []
+    if o.get("opens"): dates.append(("Mở nhận hồ sơ", "Opens", o["opens"]))
+    if o.get("deadline"): dates.append(("Hạn nộp", "Deadline", o["deadline"]))
+    if o.get("event_date"): dates.append(("Ngày diễn ra", "Date", o["event_date"]))
+    date_html = "".join(f'<span><span data-vi="{a}" data-en="{b}">{a}</span>: <b>{e(fmt_date(d))}</b></span>' for a, b, d in dates)
+    org = e(o["organizer"])
+    if o.get("organizer_ids"):
+        org = ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in o["organizer_ids"] if x in by_id)
+    rows = []
+    if o.get("eligibility"): rows.append(("Đối tượng", "Who can apply", e(o["eligibility"])))
+    if o.get("benefits") or o.get("funding"): rows.append(("Quyền lợi", "Benefits", e(" ".join(filter(None, [o.get("funding"), o.get("benefits")])))))
+    if o.get("focus"): rows.append(("Lĩnh vực", "Focus", e(", ".join(o["focus"]))))
+    oc = o.get("outcome") or {}
+    if oc:
+        parts = []
+        for k, vi, en in (("applicants", "hồ sơ", "applications"), ("finalists", "vào chung kết", "finalists"), ("selected", "được chọn", "selected"),
+                          ("investors", "nhà đầu tư", "investors"), ("deals", "thỏa thuận đầu tư, hợp tác", "deals")):
+            if oc.get(k) is not None: parts.append(f"{oc[k]} {vi}")
+        txt = "; ".join(parts) + (". " if parts else "") + (oc.get("note") or "")
+        if oc.get("source"): txt = txt + f' <a href="{e(oc["source"])}" rel="noopener" class="small">nguồn</a>'
+        rows.append(("Kết quả", "Outcome", txt))
+    rows_html = "" if compact else "".join(f'<dt data-vi="{a}" data-en="{b}">{a}</dt><dd>{c}</dd>' for a, b, c in rows)
+    links = []
+    if o.get("apply_url"): links.append(f'<a class="btn primary" href="{e(o["apply_url"])}" rel="noopener" data-vi="Đăng ký" data-en="Apply">Đăng ký</a>')
+    if o.get("primary_source"): links.append(f'<a class="btn ghost" href="{e(o["primary_source"])}" rel="noopener" data-vi="Trang đơn vị tổ chức" data-en="Organiser page">Trang đơn vị tổ chức</a>')
+    elif o.get("secondary_sources"): links.append(f'<a class="btn ghost" href="{e(o["secondary_sources"][0])}" rel="noopener" data-vi="Bài viết liên quan" data-en="Related article">Bài viết liên quan</a>')
+    miss = opp_missing(o)
+    miss_html = ""
+    if miss and not compact:
+        mv = ", ".join(a for a, _ in miss); me = ", ".join(b for _, b in miss)
+        miss_html = (f'<p class="gap small"><span data-vi="Còn thiếu: {mv}." data-en="Missing: {me}.">Còn thiếu: {mv}.</span> '
+                     f'<a href="https://github.com/{REPO}/edit/main/data/{o["_region"]}/opportunities.yaml" data-vi="Bổ sung" data-en="Add it">Bổ sung</a></p>')
+    return (f'<article class="opp {st}" data-type="{o["type"]}" data-status="{st}">'
+            f'<p class="opp-meta"><span class="pill {st}" data-vi="{sv}" data-en="{se}">{sv}</span><span class="tag" data-vi="{tv}" data-en="{te}">{tv}</span></p>'
+            f'<h3>{e(o["title"])}</h3><p class="small muted">{org}</p><p class="opp-dates small">{date_html}</p>'
+            + (f'<dl class="facts opp-facts">{rows_html}</dl>' if rows_html else "")
+            + (f'<p class="opp-links">{"".join(links)}</p>' if links and not compact else "") + miss_html + '</article>')
 
 # ---------- trang chủ ----------
 def n_of(types):
@@ -192,12 +268,9 @@ needs_html = "".join(
     f'<a class="need" href="{dir_link(type=",".join(ts))}"><span class="q" data-vi="{e(q)}" data-en="{e(qe)}">{e(q)}</span>'
     f'<span class="a" data-vi="{e(d)}" data-en="{e(de)}">{e(d)}</span><span class="n">{n_of(ts)}</span></a>'
     for q, qe, d, de, ts in NEEDS)
-up = [x for x in events if str(x.get("date") or "") >= TODAY][:4] or events[-4:]
-ev_html = "".join(
-    f'<li data-date="{e(x.get("date"))}"><span class="date">{e(fmt_date(x.get("date")))}</span><br>'
-    + (f'<a href="{e(x["url"])}">{e(x["name"])}</a>' if x.get("url") else e(x["name"]))
-    + (f'<br><span class="muted small">{e(x.get("organizer"))}</span>' if x.get("organizer") else "") + "</li>"
-    for x in up)
+ranked = sorted(opps, key=lambda o: ({"open": 0, "upcoming": 1, "closed": 2}[opp_status(o)], opp_key_date(o) if opp_status(o) != "closed" else "~" + "".join(chr(255 - ord(c)) for c in opp_key_date(o))))
+home_opps = "".join(opp_card(o, compact=True) for o in ranked[:4])
+n_open = sum(1 for o in opps if opp_status(o) == "open")
 po_html = "".join(
     f'<li><b>{e(x["document"])}</b><br><span class="muted">{e(x.get("summary"))}</span></li>' for x in policies[:5])
 verified = sum(1 for a in actors if a["verification"]["level"] != "unverified")
@@ -210,15 +283,16 @@ home = f"""
 <input id="hq" name="q" type="search" data-i18n-ph="search_ph" placeholder="Tìm tổ chức, startup, quỹ…">
 <button class="btn primary" type="submit" data-i18n="search_btn">Tìm</button>
 </form>
-<p class="census" data-vi="Hiện có {len(actors)} tổ chức và dự án, {len(policies)} văn bản chính sách và {len(events)} sự kiện. {verified} hồ sơ đã được đối chiếu với nguồn; phần còn lại đang chờ cộng đồng xác minh." data-en="The directory holds {len(actors)} organisations and projects, {len(policies)} policy documents and {len(events)} events. {verified} profiles have been checked against a source; the rest are waiting for the community to verify them.">Hiện có <b>{len(actors)}</b> tổ chức và dự án, <b>{len(policies)}</b> văn bản chính sách và <b>{len(events)}</b> sự kiện.</p>
+<p class="census" data-vi="Hiện có {len(actors)} tổ chức và dự án, {len(policies)} văn bản chính sách và {len(opps)} cơ hội gọi vốn, thi đấu, ươm tạo. {verified} hồ sơ đã được đối chiếu với nguồn; phần còn lại đang chờ cộng đồng xác minh." data-en="The directory holds {len(actors)} organisations and projects, {len(policies)} policy documents and {len(opps)} funding, competition and programme opportunities. {verified} profiles have been checked against a source; the rest are waiting for the community to verify them.">Hiện có <b>{len(actors)}</b> tổ chức và dự án, <b>{len(policies)}</b> văn bản chính sách và <b>{len(opps)}</b> cơ hội.</p>
 </div></section>
 <section class="needs"><div class="wrap">
 <h2 class="sr">Bắt đầu từ việc bạn cần</h2>
 {needs_html}
 </div></section>
 <section class="band"><div class="wrap split">
-<div><h2 data-i18n="upcoming">Sắp diễn ra</h2><ul class="list-plain">{ev_html}</ul>
-<p style="margin-top:16px"><a href="{SITE_ROOT}su-kien/" data-i18n="all_events">Tất cả sự kiện</a></p></div>
+<div><h2 data-vi="Cơ hội gọi vốn, thi đấu, ươm tạo" data-en="Funding, competitions, programmes">Cơ hội gọi vốn, thi đấu, ươm tạo</h2>
+<div class="opp-list" style="margin-top:16px">{home_opps}</div>
+<p style="margin-top:16px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></div>
 <div><h2 data-vi="Chính sách mới ban hành" data-en="Recently issued policies">Chính sách mới ban hành</h2><ul class="list-plain">{po_html}</ul>
 <p style="margin-top:16px"><a href="{SITE_ROOT}chinh-sach/" data-i18n="all_policies">Tất cả chính sách</a></p></div>
 </div></section>
@@ -284,6 +358,9 @@ for a in actors:
                  if desc.get("vi") else
                  '<p class="desc muted" data-vi="Hồ sơ này chưa có mô tả. Bạn biết về tổ chức này? Đề xuất một đoạn mô tả ngắn." data-en="No description yet. Know this organisation? Suggest a short description.">Hồ sơ này chưa có mô tả.</p>')
     rel_html = ""
+    if a.get("alt_names"):
+        facts.append(("Tên khác", "Other names", e("; ".join(a["alt_names"]))))
+        facts_html = "".join(f'<dt data-vi="{vi}" data-en="{en}">{vi}</dt><dd>{val}</dd>' for vi, en, val in facts)
     if related.get(aid):
         items = "".join(f'<li><a href="{SITE_ROOT}a/{r}/">{e(by_id[r]["name"]["vi"])}</a> {type_tag(by_id[r]["type"])}</li>'
                         for r in sorted(related[aid]))
@@ -296,7 +373,18 @@ for a in actors:
             + (f'<a href="{e(r["url"])}" rel="noopener">{e(r["title"])}</a>' if r.get("url") else e(r["title"]))
             + f' <span class="muted small">{e(r.get("source"))}</span></li>' for r in men)
         men_html = f'<div class="section"><h2 data-vi="Được nhắc tới trong" data-en="Mentioned in">Được nhắc tới trong</h2><ul class="list-plain">{items}</ul></div>'
+    org_opps = opps_by_org.get(aid, [])
+    opp_html = ""
+    if org_opps:
+        opp_html = ('<div class="section"><h2 data-vi="Cơ hội do đơn vị này tổ chức" data-en="Opportunities run by this organisation">Cơ hội do đơn vị này tổ chức</h2><div class="opp-list" style="margin-top:12px">'
+                    + "".join(opp_card(o, compact=True) for o in sorted(org_opps, key=opp_key_date, reverse=True)) + "</div></div>")
+    parents = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "part_of" and r["to"] in by_id]
+    children = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "part_of" and r["from"] in by_id]
     lvl = a["verification"]["level"]
+    if parents or children:
+        items = "".join(f'<li><span class="muted small" data-vi="Thuộc" data-en="Part of">Thuộc</span> <a href="{SITE_ROOT}a/{p_}/">{e(by_id[p_]["name"]["vi"])}</a></li>' for p_ in parents)
+        items += "".join(f'<li><a href="{SITE_ROOT}a/{c_}/">{e(by_id[c_]["name"]["vi"])}</a> {type_tag(by_id[c_]["type"])}</li>' for c_ in sorted(children))
+        rel_html = f'<div class="section"><h2 data-vi="Đơn vị liên quan" data-en="Related units">Đơn vị liên quan</h2><ul class="list-plain">{items}</ul></div>' + rel_html
     vdate = a["verification"].get("date")
     src = "; ".join(a["sources"])
     src_html = e(src) + (f'<br><a href="{e(a["source_url"])}" rel="noopener" class="small">{e(a["source_url"])}</a>' if a.get("source_url") else "")
@@ -311,7 +399,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}
 <dl class="facts">{facts_html}</dl>
-{rel_html}{men_html}
+{rel_html}{opp_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>
@@ -347,29 +435,28 @@ map_body = f"""
 """
 write("ban-do/index.html", page("Bản đồ", map_body, "map", scripts=["map.js"], head=leaf))
 
-# ---------- sự kiện ----------
-def ev_month_sections(items, newest_first):
-    groups = collections.OrderedDict()
-    for x in sorted(items, key=lambda x: str(x.get("date") or ""), reverse=newest_first):
-        groups.setdefault(str(x.get("date") or "")[:7], []).append(x)
-    return "".join(
-        f'<section class="month"><h3 style="font-size:1.15rem;padding-bottom:8px;border-bottom:1.5px solid var(--ink)">{e(m[5:7])}/{e(m[:4])}</h3><ul class="timeline">' + "".join(
-            f'<li class="ev" data-date="{e(x.get("date"))}"><span class="d">{e(str(x.get("date"))[8:10])}</span><div>'
-            f'<h3>' + (f'<a href="{e(x["url"])}" rel="noopener">{e(x["name"])}</a>' if x.get("url") else e(x["name"])) + '</h3>'
-            + (f'<p class="muted">{e(x.get("summary"))}</p>' if x.get("summary") else "")
-            + (f'<p class="small muted"><span data-i18n="organizer">Đơn vị tổ chức</span>: {e(x.get("organizer"))}</p>' if x.get("organizer") else "")
-            + '</div></li>' for x in xs) + '</ul></section>'
-        for m, xs in groups.items())
-upcoming = [x for x in events if str(x.get("date") or "") >= TODAY]
-past = [x for x in events if str(x.get("date") or "") < TODAY]
-ev_body = (f'<h2 style="margin-top:8px" data-i18n="upcoming">Sắp diễn ra</h2>' + (ev_month_sections(upcoming, False) or '<p class="muted" style="margin-top:12px" data-vi="Chưa có sự kiện sắp tới trong danh sách." data-en="No upcoming events listed yet.">Chưa có sự kiện sắp tới trong danh sách.</p>')
-           + f'<h2 style="margin-top:56px" data-i18n="past">Đã diễn ra</h2>' + ev_month_sections(past, True))
-ev_script = """<script>document.addEventListener('DOMContentLoaded',function(){var t=new Date().toISOString().slice(0,10);
-document.querySelectorAll('.ev').forEach(function(li){if((li.getAttribute('data-date')||'')<t)li.classList.add('past')});});</script>"""
-write("su-kien/index.html", page("Sự kiện", f"""
-<div class="wrap page-head"><h1 data-i18n="nav_events">Sự kiện</h1>
-<p class="lead" data-vi="Sự kiện khởi nghiệp đổi mới sáng tạo tại Đà Nẵng và trong khu vực. Thiếu sự kiện của bạn? Thêm qua GitHub." data-en="Startup and innovation events in and around Da Nang. Missing yours? Add it on GitHub.">Sự kiện khởi nghiệp đổi mới sáng tạo tại Đà Nẵng và trong khu vực.</p></div>
-<div class="wrap" style="padding-bottom:72px">{ev_body}</div>{ev_script}""", "events"))
+# ---------- cơ hội ----------
+groups = [("open", "Đang nhận hồ sơ", "Open for applications"), ("upcoming", "Sắp diễn ra", "Upcoming"), ("closed", "Đã kết thúc", "Closed")]
+blocks = ""
+for key, vi, en in groups:
+    items = [o for o in opps if opp_status(o) == key]
+    items.sort(key=opp_key_date, reverse=(key == "closed"))
+    empty = {"open": ("Chưa có cơ hội nào đang mở trong danh sách. Biết một chương trình đang nhận hồ sơ? Thêm vào để mọi người cùng thấy.",
+                      "Nothing open in the list yet. Know a programme taking applications? Add it so others can see it."),
+             "upcoming": ("Chưa có cơ hội sắp diễn ra trong danh sách.", "No upcoming opportunities listed yet.")}.get(key)
+    body_items = "".join(opp_card(o) for o in items) or (f'<p class="muted" data-vi="{empty[0]}" data-en="{empty[1]}">{empty[0]}</p>' if empty else "")
+    blocks += f'<section class="opp-group" data-group="{key}"><h2 data-vi="{vi}" data-en="{en}">{vi} <span class="muted">({len(items)})</span></h2><div class="opp-list">{body_items}</div></section>'
+type_opts = "".join(f'<option value="{k}" data-vi="{v[0]}" data-en="{v[1]}">{v[0]}</option>' for k, v in OPP_TYPES.items())
+opp_script = """<script>document.addEventListener('DOMContentLoaded',function(){var s=document.getElementById('otype');
+s.addEventListener('change',function(){var v=s.value;document.querySelectorAll('.opp').forEach(function(a){a.hidden=v&&a.getAttribute('data-type')!==v});});});</script>"""
+write("co-hoi/index.html", page("Cơ hội", f"""
+<div class="wrap page-head"><h1 data-vi="Cơ hội" data-en="Opportunities">Cơ hội</h1>
+<p class="lead" data-vi="Kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư và khách hàng, chương trình ươm tạo và thử nghiệm: những hoạt động có thể dẫn tới vốn, khách hàng hoặc hợp đồng. Hội thảo và tin ký kết không nằm ở đây." data-en="Calls for applications, competitions, demo days, investor and buyer matching, incubation and pilot programmes: activities that can lead to funding, customers or contracts. Conferences and signing news are not listed here.">Kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư và khách hàng, chương trình ươm tạo và thử nghiệm.</p>
+<div class="bar" style="margin-top:20px"><label for="otype" data-vi="Loại cơ hội" data-en="Type">Loại cơ hội</label>
+<select id="otype"><option value="" data-vi="Tất cả" data-en="All">Tất cả</option>{type_opts}</select>
+<a class="btn primary" href="https://github.com/{REPO}/edit/main/data/da-nang/opportunities.yaml" data-vi="Thêm cơ hội" data-en="Add an opportunity">Thêm cơ hội</a></div></div>
+<div class="wrap" style="padding-bottom:72px">{blocks}</div>{opp_script}""", "opps"))
+write("su-kien/index.html", page("Cơ hội", f'<div class="wrap page-head"><h1>Trang đã chuyển</h1><p class="lead">Mục sự kiện nay là <a href="{SITE_ROOT}co-hoi/">Cơ hội</a>.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}co-hoi/">'))
 
 # ---------- chính sách ----------
 by_year = collections.OrderedDict()

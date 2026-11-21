@@ -1,6 +1,8 @@
 id: creator-mut-dang-sam-nui
 name:
   vi: Mứt Đẳng sâm núi
+alt_names:
+- Mứt Đảng sâm
 type: creator
 categories:
 - Chủ thể sáng tạo
@@ -9,4 +11,4 @@ verification:
   level: unverified
 sources:
 - Bản lĩnh xứ Quảng
-legacy_id: q36
+legacy_id: q36;q7

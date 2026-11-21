@@ -1,12 +1,20 @@
 id: startup-enosta
 name:
-  vi: ENOSTA
+  vi: Enosta (SmartOS)
+alt_names:
+- ENOSTA
+- Enosta / SmartOS
 type: startup
+categories:
+- Phần mềm, SaaS
 website: https://enosta.com/
+description:
+  vi: Hợp tác chiến lược với Đại Thắng Holdings (7/2026).
 region: da-nang
 website_status: Hoạt động
 verification:
   level: source_checked
 sources:
 - startupdanang.vn
-legacy_id: s61
+- Bản đồ hệ sinh thái
+legacy_id: s61;d74

@@ -28,6 +28,20 @@ Chạy kiểm tra trước khi gửi Pull Request.
 3. Bắt buộc: `id`, `name.vi`, `type`, `region`, `verification.level`, `sources`.
 4. Hồ sơ mới để `verification.level: unverified`, trừ khi bạn là người của chính tổ chức đó (`org_confirmed`, kèm `verification.date`).
 
+## Trước khi thêm, tìm xem đã có chưa
+
+Tìm theo tên đầy đủ, tên viết tắt và tên tiếng Anh trong danh bạ. Nếu tổ chức đã có, sửa hồ sơ đó và ghi tên khác vào `alt_names`. Kiểm tra tự động sẽ chặn hồ sơ có tên gần giống một hồ sơ đã có. Nếu hai tổ chức thật sự khác nhau, thêm cặp `id` vào `data/<tỉnh>/not-duplicates.csv` kèm một dòng giải thích.
+
+Trung tâm, viện, không gian của một trường hay tập đoàn là một hồ sơ riêng, nối với đơn vị mẹ bằng quan hệ `part_of` trong `relations.csv`.
+
+## Thêm một cơ hội
+
+`data/<tỉnh>/opportunities.yaml` chỉ nhận hoạt động có thể dẫn tới vốn, khách hàng hoặc hợp đồng: kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư, kết nối khách hàng, chương trình ươm tạo, tăng tốc, thử nghiệm. Không nhận hội thảo, diễn đàn chung, tin ký kết hay đoàn công tác.
+
+- `apply_url` và `primary_source` phải là trang của chính đơn vị tổ chức. Bài viết trên trang tổng hợp chỉ ghi ở `secondary_sources`.
+- Ghi rõ hạn nộp, đối tượng và quyền lợi nếu có nguồn. Không có nguồn thì để trống; trang sẽ hiện mục “Còn thiếu” để người khác bổ sung.
+- Sau khi kết thúc, cập nhật `outcome`: số hồ sơ, số dự án vào chung kết, số được chọn, số nhà đầu tư tham dự, số thỏa thuận đầu tư hoặc hợp tác, kèm nguồn.
+
 ## Quy tắc nội dung
 
 - Chỉ thông tin công khai, hoặc đã được tổ chức đồng ý công bố.

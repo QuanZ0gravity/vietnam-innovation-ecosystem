@@ -1,13 +1,22 @@
 id: support-org-trung-tam-sang-tao-microsoft-dai-hoc-duy-tan
 name:
-  vi: Trung tâm Sáng tạo Microsoft đại học Duy Tân
+  vi: Trung tâm Sáng tạo Microsoft, Trường Đại học Duy Tân
+alt_names:
+- Trung tâm Sáng tạo Microsoft đại học Duy Tân
+- Trung tâm Sáng tạo Microsoft Duy Tân
+- Microsoft Duy Tân Innovation Center
 type: support_org
 categories:
 - Tổ chức hỗ trợ
+- Vườn ươm
+- Vườn ươm đại học
+description:
+  vi: Trung tâm ĐMST tại ĐH Duy Tân.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/trung-tam-sang-tao-microsoft-dai-hoc-duy-tan
-legacy_id: o2
+legacy_id: o2;o15;d22

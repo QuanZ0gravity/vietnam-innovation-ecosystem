@@ -1,8 +1,11 @@
-id: support-org-circo
+id: space-circo
 name:
   vi: CirCO
-type: support_org
+alt_names:
+- Không gian làm việc chung CirCO
+type: space
 categories:
+- Không gian ĐMST
 - Không gian làm việc chung
 website: https://circo.co
 description:
@@ -12,5 +15,7 @@ website_status: Hoạt động
 verification:
   level: source_checked
 sources:
+- startupdanang.vn
 - Bản đồ hệ sinh thái
-legacy_id: d29
+source_url: https://startupdanang.vn/khong-gian-lam-viec-chung-circo
+legacy_id: o24;d29
