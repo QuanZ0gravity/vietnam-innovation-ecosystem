@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: 45 Dũng Sĩ Thanh Khê, Thanh Khê Tây, Đà Nẵng
+coordinates:
+- 108.169924
+- 16.076879
+coordinates_source: OpenStreetMap Nominatim 11/2026, tuyến đường
 region: da-nang
 verification:
   level: unverified

@@ -27,7 +27,7 @@ git clone https://github.com/chuongnv/vietnam-innovation-ecosystem.git
 cd vietnam-innovation-ecosystem
 pip install -r requirements.txt
 python tools/validate.py   # kiểm tra toàn bộ dữ liệu
-python tools/build.py      # tạo site/data/*.json, *.csv
+python tools/build.py      # dựng toàn bộ trang và dữ liệu vào site/
 python -m http.server -d site 8000
 ```
 
@@ -48,9 +48,12 @@ data/
   LICENSE.md
 schema/actor.schema.json # quy tắc cho một hồ sơ
 tools/validate.py        # kiểm tra schema, trùng lặp, tham chiếu
-tools/build.py           # xuất JSON, CSV, GeoJSON
-site/index.html          # trang danh bạ tĩnh
+tools/build.py           # dựng trang tĩnh và xuất JSON, CSV, GeoJSON vào site/
+web/assets/              # giao diện: CSS, JavaScript, biểu tượng
+site/                    # thư mục xuất bản, tạo tự động, không đưa vào Git
 ```
+
+Trang gồm: trang chủ theo nhu cầu, danh bạ có bộ lọc, trang riêng cho từng tác nhân, bản đồ, sự kiện và chính sách; có tiếng Việt, tiếng Anh và chế độ tối. Khi xuất bản trên Cloudflare Pages hoặc dịch vụ tương tự, đặt lệnh build là `pip install -r requirements.txt && python tools/validate.py && python tools/build.py` và thư mục xuất là `site`.
 
 Một hồ sơ trông như sau:
 

@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: 158A Lê Lợi, Hải Châu 1, Hải Châu
+coordinates:
+- 108.220049
+- 16.070994
+coordinates_source: OpenStreetMap Nominatim 11/2026, số nhà
 region: da-nang
 verification:
   level: unverified

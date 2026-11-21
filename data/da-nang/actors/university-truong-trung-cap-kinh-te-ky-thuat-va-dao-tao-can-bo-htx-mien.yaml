@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: Lô 25B Phan Bội Châu - Tam Kỳ - Quảng Nam
+coordinates:
+- 108.475329
+- 15.578751
+coordinates_source: OpenStreetMap Nominatim 11/2026, tuyến đường
 region: da-nang
 verification:
   level: unverified

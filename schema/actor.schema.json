@@ -4,39 +4,166 @@
   "title": "Tác nhân hệ sinh thái / Ecosystem actor",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "type", "region", "verification", "sources"],
+  "required": [
+    "id",
+    "name",
+    "type",
+    "region",
+    "verification",
+    "sources"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z]+(-[a-z0-9]+)+$", "maxLength": 80},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z]+(-[a-z0-9]+)+$",
+      "maxLength": 80
+    },
     "name": {
-      "type": "object", "additionalProperties": false, "required": ["vi"],
-      "properties": {"vi": {"type": "string", "minLength": 2}, "en": {"type": "string"}}
-    },
-    "type": {"enum": ["startup", "creator", "company", "fund", "incubator", "accelerator", "space", "university", "government", "support_org", "international", "community", "media"]},
-    "categories": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
-    "stage": {"enum": ["idea", "pre-seed", "seed", "series-a", "growth", "mature"]},
-    "founded": {"type": "integer", "minimum": 1900, "maximum": 2100},
-    "website": {"type": "string", "format": "uri", "pattern": "^https?://"},
-    "linkedin": {"type": "string", "pattern": "^https://([a-z]+\\.)?linkedin\\.com/"},
-    "address": {"type": "string"},
-    "coordinates": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2, "description": "[longitude, latitude]"},
-    "description": {
-      "type": "object", "additionalProperties": false,
-      "properties": {"vi": {"type": "string", "maxLength": 400}, "en": {"type": "string", "maxLength": 400}}
-    },
-    "region": {"type": "string", "pattern": "^[a-z0-9-]+$"},
-    "place": {"type": "string", "pattern": "^place-"},
-    "website_status": {"type": "string"},
-    "verification": {
-      "type": "object", "additionalProperties": false, "required": ["level"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vi"
+      ],
       "properties": {
-        "level": {"enum": ["unverified", "source_checked", "org_confirmed", "partner_verified"]},
-        "date": {"type": "string", "format": "date"},
-        "by": {"type": "string"}
+        "vi": {
+          "type": "string",
+          "minLength": 2
+        },
+        "en": {
+          "type": "string"
+        }
       }
     },
-    "maintainer": {"type": "string", "description": "id của tổ chức chịu trách nhiệm hồ sơ"},
-    "sources": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "source_url": {"type": "string", "pattern": "^https?://"},
-    "legacy_id": {"type": "string"}
+    "type": {
+      "enum": [
+        "startup",
+        "creator",
+        "company",
+        "fund",
+        "incubator",
+        "accelerator",
+        "space",
+        "university",
+        "government",
+        "support_org",
+        "international",
+        "community",
+        "media"
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "stage": {
+      "enum": [
+        "idea",
+        "pre-seed",
+        "seed",
+        "series-a",
+        "growth",
+        "mature"
+      ]
+    },
+    "founded": {
+      "type": "integer",
+      "minimum": 1900,
+      "maximum": 2100
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    },
+    "linkedin": {
+      "type": "string",
+      "pattern": "^https://([a-z]+\\.)?linkedin\\.com/"
+    },
+    "address": {
+      "type": "string"
+    },
+    "coordinates": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "[longitude, latitude]"
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vi": {
+          "type": "string",
+          "maxLength": 400
+        },
+        "en": {
+          "type": "string",
+          "maxLength": 400
+        }
+      }
+    },
+    "region": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "place": {
+      "type": "string",
+      "pattern": "^place-"
+    },
+    "website_status": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "level"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "unverified",
+            "source_checked",
+            "org_confirmed",
+            "partner_verified"
+          ]
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "by": {
+          "type": "string"
+        }
+      }
+    },
+    "maintainer": {
+      "type": "string",
+      "description": "id của tổ chức chịu trách nhiệm hồ sơ"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "source_url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "legacy_id": {
+      "type": "string"
+    },
+    "coordinates_source": {
+      "type": "string",
+      "description": "Nguồn và độ chính xác của tọa độ"
+    }
   }
 }

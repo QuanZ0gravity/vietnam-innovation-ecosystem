@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: Số 32 Phan Đăng Lưu, Hòa Cường Bắc, Hải Châu, thành phố Đà Nẵng
+coordinates:
+- 108.217727
+- 16.036924
+coordinates_source: OpenStreetMap Nominatim 11/2026, tuyến đường
 region: da-nang
 verification:
   level: unverified

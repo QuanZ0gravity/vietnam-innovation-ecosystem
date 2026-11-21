@@ -14,6 +14,7 @@ Quy tắc chính xác nằm trong [`schema/actor.schema.json`](../schema/actor.s
 | `founded` | | Năm thành lập |
 | `website`, `linkedin` | | Trang chính thức |
 | `address`, `coordinates` | | Địa chỉ; tọa độ `[kinh độ, vĩ độ]` để hiện trên bản đồ |
+| `coordinates_source` | | Nguồn và độ chính xác của tọa độ, ví dụ `OpenStreetMap 11/2026, số nhà` |
 | `description.vi`, `description.en` | | Mô tả tự viết, tối đa 400 ký tự |
 | `region` | có | Tỉnh, thành hoặc khu vực, ví dụ `da-nang`, `former-quang-nam` |
 | `place` | | Mã đơn vị hành chính trong `places.yaml` |
@@ -31,3 +32,17 @@ Quy tắc chính xác nằm trong [`schema/actor.schema.json`](../schema/actor.s
 ## Tham chiếu (`references.csv`, `mentions.csv`)
 
 Bài viết chỉ lưu tiêu đề, ngày, liên kết và nguồn. `mentions.csv` nối bài viết với tác nhân được nhắc tới.
+
+## Thêm tọa độ để hiện trên bản đồ
+
+1. Mở [openstreetmap.org](https://www.openstreetmap.org), tìm đúng tòa nhà, bấm chuột phải và chọn “Hiển thị địa chỉ”. Thanh bên trái hiện vĩ độ và kinh độ.
+2. Thêm vào hồ sơ, **kinh độ trước, vĩ độ sau**:
+
+```yaml
+coordinates:
+- 108.219734
+- 16.070912
+coordinates_source: OpenStreetMap 11/2026, số nhà
+```
+
+Tác nhân chưa có tọa độ nhưng có trường `place` sẽ hiện ở vị trí của phường, xã đó, nếu phường, xã đã có tọa độ trong `places.yaml`.

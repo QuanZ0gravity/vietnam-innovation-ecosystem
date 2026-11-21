@@ -6,6 +6,10 @@ categories:
 - Đại học vùng
 - Viện, trường
 address: 41 Lê Duẩn, Hải Châu 1, Hải Châu, Hải Châu, Đà Nẵng
+coordinates:
+- 108.219734
+- 16.070912
+coordinates_source: OpenStreetMap Nominatim 11/2026, số nhà
 region: da-nang
 verification:
   level: unverified

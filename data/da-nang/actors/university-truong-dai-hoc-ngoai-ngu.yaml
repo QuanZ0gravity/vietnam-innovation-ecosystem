@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: 131 Lương Nhữ Hộc, Đà Nẵng
+coordinates:
+- 108.21164
+- 16.034454
+coordinates_source: OpenStreetMap Nominatim 11/2026, số nhà
 region: da-nang
 verification:
   level: unverified

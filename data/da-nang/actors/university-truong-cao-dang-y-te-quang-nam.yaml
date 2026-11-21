@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: Số 49 Nguyễn Du - Tam Kỳ- Quảng Nam
+coordinates:
+- 108.477058
+- 15.572814
+coordinates_source: OpenStreetMap Nominatim 11/2026, tuyến đường
 region: da-nang
 verification:
   level: unverified

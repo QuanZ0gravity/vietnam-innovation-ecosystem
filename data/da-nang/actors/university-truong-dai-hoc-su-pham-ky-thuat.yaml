@@ -5,6 +5,10 @@ type: university
 categories:
 - Viện, trường
 address: 48 Cao Thắng, Thanh Bình, Hải Châu
+coordinates:
+- 108.213211
+- 16.077851
+coordinates_source: OpenStreetMap Nominatim 11/2026, số nhà
 region: da-nang
 verification:
   level: unverified

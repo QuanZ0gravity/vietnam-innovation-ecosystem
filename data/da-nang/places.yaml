@@ -22,6 +22,9 @@
   - Hòa Hương
   - Tam Ngọc
   legacy_id: l3
+  coordinates:
+  - 108.509749
+  - 15.559363
 - id: place-phuong-ban-thach
   name: Phường Bàn Thạch
   former_district: TP Tam Kỳ
@@ -30,6 +33,9 @@
   - Hòa Thuận
   - Tam Thăng
   legacy_id: l4
+  coordinates:
+  - 108.467209
+  - 15.585247
 - id: place-phuong-dien-ban
   name: Phường Điện Bàn
   former_district: Thị xã Điện Bàn
@@ -74,6 +80,9 @@
   - Cẩm Nam
   - Cẩm Kim
   legacy_id: l9
+  coordinates:
+  - 108.332543
+  - 15.879426
 - id: place-phuong-hoi-an-dong
   name: Phường Hội An Đông
   former_district: TP Hội An
