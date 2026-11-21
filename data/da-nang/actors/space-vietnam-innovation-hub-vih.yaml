@@ -1,14 +1,20 @@
 id: space-vietnam-innovation-hub-vih
 name:
   vi: Vietnam Innovation Hub (VIH)
+alt_names:
+- VIH
 type: space
 categories:
 - Không gian ĐMST
+- Không gian làm việc chung
+description:
+  vi: Không gian đổi mới sáng tạo và làm việc chung tại Đà Nẵng.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- Bản đồ hệ sinh thái
 source_url: https://startupdanang.vn/vietnam-innovation-hub-vih
-legacy_id: o30
+legacy_id: o30;d25
