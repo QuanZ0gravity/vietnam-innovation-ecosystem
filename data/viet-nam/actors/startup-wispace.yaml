@@ -1,16 +1,18 @@
 id: startup-wispace
 name:
   vi: Wispace
+alt_names:
+- WISPACE
 type: startup
 sectors:
 - edu
+website: https://wispace.app
+description:
+  vi: Nền tảng luyện thi chứng chỉ ngoại ngữ quốc tế với lộ trình, bài tập và chấm điểm.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- WISPACE
-description:
-  vi: Nền tảng luyện thi chứng chỉ ngoại ngữ quốc tế với lộ trình, bài tập và chấm điểm.

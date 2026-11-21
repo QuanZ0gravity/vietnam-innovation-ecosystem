@@ -1,16 +1,18 @@
 id: company-tekjoy
 name:
   vi: Tekjoy
+alt_names:
+- TEKJOY
 type: company
 sectors:
 - climate
+website: https://tekjoy.vn
+description:
+  vi: 'Đối tác năng lượng xanh: tư vấn, phát triển dự án, tổng thầu EPC và vận hành.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- TEKJOY
-description:
-  vi: 'Đối tác năng lượng xanh: tư vấn, phát triển dự án, tổng thầu EPC và vận hành.'

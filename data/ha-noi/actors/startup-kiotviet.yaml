@@ -6,9 +6,13 @@ categories:
 - Ecommerce & Retail
 sectors:
 - commerce
+website: https://www.kiotviet.vn/
 region: ha-noi
 verification:
   level: unverified
 sources:
 - StartupBlink (trang công khai, 11/2026)
+- Website chính thức
 source_url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
+description:
+  vi: Phần mềm quản lý bán hàng cho cửa hàng và chuỗi bán lẻ.

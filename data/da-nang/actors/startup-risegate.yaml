@@ -4,7 +4,7 @@ name:
 type: startup
 sectors:
 - web3
-website: https://risegate.io/
+website: https://metadap.io/
 region: da-nang
 website_status: Hoạt động
 verification:
@@ -16,3 +16,5 @@ sources:
 legacy_id: s52
 description:
   vi: 'Metadap: nền tảng mã hóa tài sản (tokenization).'
+alt_names:
+- Metadap

@@ -1,17 +1,23 @@
 id: startup-cong-ty-tnhh-cong-nghe-vooc
 name:
-  vi: Công ty TNHH Công nghệ VOOC
+  vi: Umbalena
+alt_names:
+- Công ty TNHH Công nghệ VOOC
 type: startup
 sectors:
 - edu
+status: active
 website: https://umbalena.vn/
+description:
+  vi: 'Umbalena: thư viện số cho học sinh tiểu học.'
 region: da-nang
 website_status: Chặn truy cập tự động, cần kiểm tra tay
 verification:
-  level: unverified
+  level: partner_verified
+  date: '2026-11-07'
+  by: DNES
 sources:
 - startupdanang.vn
 - Website chính thức
+- Danh mục ươm tạo của DNES (11/2026)
 legacy_id: s41
-description:
-  vi: 'Umbalena: thư viện số cho học sinh tiểu học.'

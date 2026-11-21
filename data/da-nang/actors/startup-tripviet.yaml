@@ -3,6 +3,7 @@ name:
   vi: TripViet
 type: startup
 status: active
+website: https://tripviet.com
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +11,6 @@ verification:
   by: Song Han Incubator
 sources:
 - Danh mục ươm tạo của Songhan Incubator (11/2026)
+- Website chính thức
+description:
+  vi: Kết nối thổ địa và dịch vụ chia sẻ nhà, xe, du thuyền cho khách du lịch.

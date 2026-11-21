@@ -1,16 +1,18 @@
 id: startup-ho-shan-tra
 name:
   vi: Hồ Shan Trà
+alt_names:
+- HỒ SHAN TRÀ – TÁCH TRÀ DI SẢN HO SHAN TRA – A CUP OF HERITAGE TEA
 type: startup
 sectors:
 - agrifood
+website: https://hoshantra.com
+description:
+  vi: Đưa trà Shan tuyết cổ thụ và nông sản Tây Bắc đến người tiêu dùng qua kênh bán trực tiếp.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- HỒ SHAN TRÀ – TÁCH TRÀ DI SẢN HO SHAN TRA – A CUP OF HERITAGE TEA
-description:
-  vi: Đưa trà Shan tuyết cổ thụ và nông sản Tây Bắc đến người tiêu dùng qua kênh bán trực tiếp.

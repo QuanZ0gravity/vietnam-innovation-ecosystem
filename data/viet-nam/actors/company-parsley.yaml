@@ -1,18 +1,20 @@
 id: company-parsley
 name:
   vi: Parsley
+alt_names:
+- Công ty Cổ Phần Parsley
+- CÔNG TY CỔ PHẦN PARSLEY PARSLEY COMPANY
 type: company
 sectors:
 - health
 - marketing
+website: https://www.parsley.vn/
+description:
+  vi: Chăm sóc da nam giới với thương hiệu Men Stay Simplicity.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- Công ty Cổ Phần Parsley
-- CÔNG TY CỔ PHẦN PARSLEY PARSLEY COMPANY
-description:
-  vi: Chăm sóc da nam giới với thương hiệu Men Stay Simplicity.

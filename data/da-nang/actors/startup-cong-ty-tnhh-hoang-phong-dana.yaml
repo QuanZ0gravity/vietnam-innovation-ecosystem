@@ -1,15 +1,22 @@
 id: startup-cong-ty-tnhh-hoang-phong-dana
 name:
-  vi: Công ty TNHH Hoàng Phong Dana
+  vi: Mệ Đoan
+alt_names:
+- Công ty TNHH Hoàng Phong Dana
+- Me Doan
 type: startup
+status: active
 website: https://medoan.vn/
+description:
+  vi: 'Mệ Đoan: sản phẩm nguyên chất bán trực tuyến.'
 region: da-nang
 website_status: Chặn truy cập tự động, cần kiểm tra tay
 verification:
-  level: unverified
+  level: partner_verified
+  date: '2026-11-07'
+  by: DNES
 sources:
 - startupdanang.vn
 - Website chính thức
+- Danh mục ươm tạo của DNES (11/2026)
 legacy_id: s43
-description:
-  vi: 'Mệ Đoan: sản phẩm nguyên chất bán trực tuyến.'

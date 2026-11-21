@@ -1,17 +1,19 @@
 id: company-creative-point
 name:
   vi: Creative Point
+alt_names:
+- Công ty CP Sáng Tạo Điểm Creative Point
+- CÔNG TY CP SÁNG TẠO ĐIỂM CREATIVE POINT
 type: company
 sectors:
 - marketing
+website: https://creativepoint.vn
+description:
+  vi: 'AMP: nền tảng quản trị tiếp thị liên kết, kết nối thương hiệu và nhà sáng tạo nội dung.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- Công ty CP Sáng Tạo Điểm Creative Point
-- CÔNG TY CP SÁNG TẠO ĐIỂM CREATIVE POINT
-description:
-  vi: 'AMP: nền tảng quản trị tiếp thị liên kết, kết nối thương hiệu và nhà sáng tạo nội dung.'

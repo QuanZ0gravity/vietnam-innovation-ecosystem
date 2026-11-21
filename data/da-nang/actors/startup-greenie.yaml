@@ -3,6 +3,7 @@ name:
   vi: Greenie
 type: startup
 status: active
+website: https://greenie.vn
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +11,6 @@ verification:
   by: Song Han Incubator
 sources:
 - Danh mục ươm tạo của Songhan Incubator (11/2026)
+- Website chính thức
+description:
+  vi: Dự án khởi nghiệp ươm tạo tại Songhan Incubator.

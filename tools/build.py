@@ -639,7 +639,7 @@ if BENCH:
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div></section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật của Việt Nam" data-en="Vietnam's top industries">Ngành nổi bật của Việt Nam</h2>{ind_table(co.get("industries"))}</section>
-{SB_NOTE}</div>""", "cities", desc="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố: xếp hạng, số startup, vốn đầu tư và ngành nổi bật của TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng."))
+</div>""", "cities", desc="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố: xếp hạng, số startup, vốn đầu tư và ngành nổi bật của TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng."))
 
     for c in BENCH["cities"]:
         regs = CITY_REGIONS.get(c["id"], [c["id"]])
@@ -689,7 +689,7 @@ if BENCH:
 <p class="small" style="margin-top:12px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></section>
 <section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
 <p class="small" style="margin-top:10px"><a href="{e(c["url"])}" rel="noopener" data-vi="Trang {e(c['name'])} trên StartupBlink" data-en="{e(c['name'])} on StartupBlink">Trang {e(c["name"])} trên StartupBlink</a></p></section>
-{SB_NOTE}</div>"""
+</div>"""
         body += """<script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("citymap");VIEMAP.render(el,el.dataset.ids.split(","),document.getElementById("citymapnote"));});</script>"""
         write(f"thanh-pho/{c['id']}/index.html", page(f"Khởi nghiệp {c['name']}", body, "cities", scripts=["map.js"], head=LEAF,
             desc=f"Hệ sinh thái khởi nghiệp {c['name']}: hạng #{c['global_rank']} thế giới, {len(acts)} tác nhân, {tc['startup']} startup, {tc['fund']} quỹ, bản đồ và cơ hội."))

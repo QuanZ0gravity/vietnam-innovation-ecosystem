@@ -1,16 +1,18 @@
 id: startup-tra-hoa-viet
 name:
   vi: Trà Hoa Việt
+alt_names:
+- TRÀ HOA VIỆT
 type: startup
 sectors:
 - agrifood
+website: https://trahoaviet.vn
+description:
+  vi: Trà hoa cao cấp, tạo việc làm và thu nhập ổn định cho phụ nữ địa phương.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- TRÀ HOA VIỆT
-description:
-  vi: Trà hoa cao cấp, tạo việc làm và thu nhập ổn định cho phụ nữ địa phương.

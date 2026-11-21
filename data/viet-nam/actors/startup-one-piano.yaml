@@ -1,14 +1,16 @@
 id: startup-one-piano
 name:
   vi: One Piano
+alt_names:
+- ONE PIANO
 type: startup
+website: https://onepiano.vn
+description:
+  vi: Mô hình học piano lịch linh hoạt, ứng dụng công nghệ trong vận hành và giảng dạy.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- ONE PIANO
-description:
-  vi: Mô hình học piano lịch linh hoạt, ứng dụng công nghệ trong vận hành và giảng dạy.

@@ -1,16 +1,18 @@
 id: company-siwon-coat
 name:
   vi: Siwon Coat
+alt_names:
+- SIWON COAT. CO., LTD.
 type: company
 sectors:
 - climate
+website: https://www.siwoncoat.com/
+description:
+  vi: Sơn cách nhiệt phản xạ nhiệt từ vỏ sò tái chế.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- SIWON COAT. CO., LTD.
-description:
-  vi: Sơn cách nhiệt phản xạ nhiệt từ vỏ sò tái chế.

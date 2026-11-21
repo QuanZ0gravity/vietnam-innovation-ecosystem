@@ -1,16 +1,18 @@
 id: startup-bvarta
 name:
   vi: Bvarta
+alt_names:
+- BVARTA
 type: startup
 sectors:
 - ai
+website: https://bvarta.com
+description:
+  vi: Phân tích dữ liệu lớn và trí tuệ vị trí, kết hợp GIS, học máy và AI cho doanh nghiệp.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- BVARTA
-description:
-  vi: Phân tích dữ liệu lớn và trí tuệ vị trí, kết hợp GIS, học máy và AI cho doanh nghiệp.

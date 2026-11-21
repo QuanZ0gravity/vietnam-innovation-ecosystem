@@ -1,14 +1,16 @@
 id: company-cinec
 name:
   vi: CINEC
+alt_names:
+- TRUNG TÂM KHỞI NGHIỆP VÀ ĐỔI MỚI SÁNG TẠO CÀ MAU (CINEC) CA MAU INNOVATION AND STARTUP CENTER (CINEC)
 type: company
+website: https://cinec.com.vn
+description:
+  vi: 'Trung tâm Khởi nghiệp và Đổi mới sáng tạo tỉnh Cà Mau: hỗ trợ đổi mới, chuyển giao công nghệ, kết nối đầu tư.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- TRUNG TÂM KHỞI NGHIỆP VÀ ĐỔI MỚI SÁNG TẠO CÀ MAU (CINEC) CA MAU INNOVATION AND STARTUP CENTER (CINEC)
-description:
-  vi: 'Trung tâm Khởi nghiệp và Đổi mới sáng tạo tỉnh Cà Mau: hỗ trợ đổi mới, chuyển giao công nghệ, kết nối đầu tư.'

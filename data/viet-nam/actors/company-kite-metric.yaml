@@ -1,15 +1,17 @@
 id: company-kite-metric
 name:
   vi: Kite Metric
+alt_names:
+- Công ty Cổ Phần Kite Metric
+- CÔNG TY CỔ PHẦN KITE METRIC KITE METRIC
 type: company
+website: https://kitemetric.com
+description:
+  vi: Tư vấn công nghệ và phát triển sản phẩm số (di động, web).
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- Công ty Cổ Phần Kite Metric
-- CÔNG TY CỔ PHẦN KITE METRIC KITE METRIC
-description:
-  vi: Tư vấn công nghệ và phát triển sản phẩm số (di động, web).

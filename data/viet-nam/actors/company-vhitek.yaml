@@ -1,16 +1,18 @@
 id: company-vhitek
 name:
   vi: Vhitek
+alt_names:
+- CÔNG TY TNHH CÔNG NGHỆ CAO VIỆT NAM (VHITEK) VHITEK
 type: company
 sectors:
 - fintech
+website: https://vhitek.vn
+description:
+  vi: Thanh toán không tiền mặt và quản lý từ xa cho tiệm giặt sấy tự động.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- CÔNG TY TNHH CÔNG NGHỆ CAO VIỆT NAM (VHITEK) VHITEK
-description:
-  vi: Thanh toán không tiền mặt và quản lý từ xa cho tiệm giặt sấy tự động.

@@ -2,9 +2,13 @@ id: company-baseline
 name:
   vi: Baseline
 type: company
+website: https://baseline.vn
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang
+description:
+  vi: Nền tảng livestream, tỷ số trực tiếp và quản lý giải pickleball, tennis, cầu lông, bóng bàn.

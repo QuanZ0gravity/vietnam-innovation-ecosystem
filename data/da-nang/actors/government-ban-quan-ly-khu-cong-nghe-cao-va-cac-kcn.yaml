@@ -4,11 +4,10 @@ name:
 type: government
 categories:
 - Cơ quan quản lý
-website: https://dhpiza.danang.gov.vn
 description:
   vi: Vận hành Trung tâm Dịch vụ tổng hợp Khu công nghệ cao. Đầu mối mời doanh nghiệp Khu công nghệ cao dự hội thảo 17/11/2026.
 region: da-nang
-website_status: Không truy cập được, cần kiểm tra
+website_status: Tên miền dhpiza.danang.gov.vn không còn hoạt động (11/2026)
 verification:
   level: unverified
 sources:

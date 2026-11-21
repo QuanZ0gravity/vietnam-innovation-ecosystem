@@ -1,19 +1,21 @@
 id: company-vccorp
 name:
   vi: VCCorp
+alt_names:
+- Công ty Cổ phần VCCorp
+- Công ty CP Vccorp
+- CÔNG TY CP VCCORP VCCORP JOINT STOCK COMPANY
 type: company
 sectors:
 - ai
 - marketing
+website: https://vccorp.vn
+description:
+  vi: 'Công ty công nghệ: hạ tầng đám mây, dữ liệu lớn, nền tảng quảng cáo Admicro.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- Công ty Cổ phần VCCorp
-- Công ty CP Vccorp
-- CÔNG TY CP VCCORP VCCORP JOINT STOCK COMPANY
-description:
-  vi: 'Công ty công nghệ: hạ tầng đám mây, dữ liệu lớn, nền tảng quảng cáo Admicro.'

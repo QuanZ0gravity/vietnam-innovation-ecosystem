@@ -4,6 +4,7 @@ name:
 type: company
 categories:
 - Hàng tiêu dùng
+website: https://fuwa3e.com
 description:
   vi: Doanh nghiệp đang mở rộng quy mô, được Ecomdy hỗ trợ.
 region: da-nang
@@ -11,4 +12,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Website chính thức
 legacy_id: d87

@@ -1,6 +1,8 @@
 id: startup-cashbag-ex-zody
 name:
   vi: Cashbag (ex Zody)
+alt_names:
+- Cashbag
 type: startup
 categories:
 - Communications
@@ -10,6 +12,8 @@ sectors:
 founded: 2016
 status: active
 website: https://cashbag.vn
+description:
+  vi: Nền tảng hoàn tiền khi mua sắm trực tuyến (trước là Zody).
 region: da-nang
 verification:
   level: partner_verified
@@ -18,5 +22,4 @@ verification:
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
-description:
-  vi: Nền tảng hoàn tiền khi mua sắm trực tuyến (trước là Zody).
+- StartupBlink (trang công khai, 11/2026)

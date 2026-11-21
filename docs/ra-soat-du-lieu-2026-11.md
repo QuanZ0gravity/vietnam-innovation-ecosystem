@@ -121,3 +121,27 @@ Quét 28 trang của indanang.vn: danh bạ tổ chức, các tổ chức hỗ t
 - 37 doanh nghiệp được StartupBlink hiển thị công khai cho bốn thành phố được thêm vào danh bạ, 7 hồ sơ đã có được gắn thêm nguồn và ngành. Thư mục mới `data/hai-phong`.
 - Trang mới: `/thanh-pho/` (tổng quan quốc gia, bảng xếp hạng thành phố, ngành) và `/thanh-pho/<thành phố>/` (tổng quan, ngành, danh bạ, cơ hội, so sánh).
 - Lưu ý: trang StartupBlink đôi chỗ hiện hai số khác nhau cho cùng chỉ số (ví dụ Đà Nẵng 39 và 23 startup); dữ liệu ở đây dùng số trong phần mô tả cơ sở dữ liệu.
+
+## Rà soát website và bổ sung thông tin (22/11/2026)
+
+**Kiểm tra 251 website đang có.** 198 phản hồi bình thường; các lỗi 403, 503, 522 (thường do tường lửa hoặc máy chủ tạm lỗi) để nguyên.
+- Cập nhật địa chỉ đã chuyển: AiPad (aipad.vn), Pharos Network (pharos.xyz), RISE Labs (risechain.com), DiFlow (diflow.vn), Risegate (metadap.io, thêm tên Metadap), Songhan Incubator (songhan.vn), YBA Đà Nẵng (ybadanang.vn).
+- Bỏ website và ghi chú `website_status` cho 10 tên miền không còn tồn tại: eth63.xyz, aus4innovation.org, dehype.fun, h2ofarm.vn, carus.vn, dhpiza.danang.gov.vn, gima-group.com, iotcoworkingspace.com, ngocoanhfoods.com, pmxsol.com.
+- XomAI: bỏ website sai (xom.ai dẫn sang Xometry). DNES: dnes.vn đang bị nhà cung cấp hosting tạm ngừng. BSSC: bssc.vn chuyển hướng sang sihub.gov.vn.
+
+**Tìm website cho hồ sơ chưa có.** Với 375 hồ sơ có tên thương hiệu rõ, thử tên miền trùng tên (.vn, .com.vn, .com, .io, .ai, .app, .co) và chỉ nhận khi tiêu đề trang chứa đúng tên thương hiệu; sau đó loại thủ công các trường hợp trùng tên với công ty khác (ví dụ Minerva, Retex, Passione, Win-Win, Pixity). Kết quả: 100 hồ sơ có thêm website, 31 hồ sơ có thêm mô tả, 45 hồ sơ có thêm logo.
+
+**Gộp hồ sơ trùng phát hiện được nhờ website:** Cashbag vào Cashbag (ex Zody); One Tree Hill Fund vào Onetree Hill Ventures; AquaX - Smart AIoT Shrimp Farming Solution vào AquaX (ST Software); Mệ Đoan vào Công ty TNHH Hoàng Phong Dana (đổi tên chính thành Mệ Đoan); Umbalena vào Công ty TNHH Công nghệ VOOC (đổi tên chính thành Umbalena).
+
+Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
+
+## Rà soát trên mạng (22/11/2026)
+
+- Kiểm tra lại toàn bộ 251 website: 198 hoạt động bình thường; số còn lại bị chặn truy cập tự động hoặc tạm lỗi, giữ nguyên.
+- Cập nhật website đã chuyển: AiPad (aipad.vn), Pharos Network (pharos.xyz), RISE Labs (risechain.com), DiFlow (diflow.vn), Songhan Incubator (songhan.vn), YBA Đà Nẵng (ybadanang.vn), Risegate (đổi tên Metadap, metadap.io).
+- Ghi chú `website_status`: DNES (dnes.vn đang bị nhà cung cấp hosting tạm ngừng), BSSC (bssc.vn chuyển hướng sang sihub.gov.vn), XomAI (đường dẫn cũ dẫn sang công ty khác, đã bỏ).
+- 10 tên miền không còn tồn tại (kiểm tra qua DNS công cộng của Google), đã bỏ khỏi trường `website` và ghi lại trong `website_status`: eth63.xyz, aus4innovation.org, dehype.fun, h2ofarm.vn, carus.vn, dhpiza.danang.gov.vn, gima-group.com, iotcoworkingspace.com, ngocoanhfoods.com, pmxsol.com.
+- Tìm website cho 375 hồ sơ chưa có, bằng cách thử tên thương hiệu với các đuôi .vn, .com.vn, .com, .io, .ai, .app, .co và chỉ nhận khi tiêu đề trang chứa đúng tên thương hiệu. 176 kết quả khớp tên; sau khi xem từng kết quả, nhận 100 website (cộng VinFast), loại các trang trùng tên của công ty khác.
+- Viết mới 31 mô tả, thêm 44 logo.
+- Gộp 5 cặp hồ sơ trùng phát hiện nhờ website: Cashbag, One Tree Hill, AquaX, Mệ Đoan (Công ty TNHH Hoàng Phong Dana), Umbalena (Công ty TNHH Công nghệ VOOC).
+- Sau đợt này: 916 hồ sơ, 337 có website, 460 có logo, 514 có mô tả.

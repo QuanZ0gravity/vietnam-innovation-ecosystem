@@ -3,6 +3,7 @@ name:
   vi: Chative
 type: startup
 status: active
+website: https://chative.ai
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +11,6 @@ verification:
   by: DNES
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
+- Website chính thức
+description:
+  vi: Chatbot dạng tác tử AI cho doanh nghiệp, tự động trò chuyện, thu thập khách hàng tiềm năng.

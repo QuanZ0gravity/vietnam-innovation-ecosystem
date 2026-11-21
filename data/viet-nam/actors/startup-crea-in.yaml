@@ -1,18 +1,20 @@
 id: startup-crea-in
 name:
   vi: Crea-in
+alt_names:
+- Công ty TNHH Crea-in Việt Nam
+- CÔNG TY TNHH CREA-IN VIỆT NAM CREA-IN VIET NAM COMPANY LIMITED
 type: startup
 sectors:
 - tourism
 - marketing
+website: https://www.creain.vn/
+description:
+  vi: Mô hình kinh tế chia sẻ kết nối làng nghề, nghệ nhân và người khuyết tật sản xuất hàng thủ công; thương hiệu LilForest.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- Công ty TNHH Crea-in Việt Nam
-- CÔNG TY TNHH CREA-IN VIỆT NAM CREA-IN VIET NAM COMPANY LIMITED
-description:
-  vi: Mô hình kinh tế chia sẻ kết nối làng nghề, nghệ nhân và người khuyết tật sản xuất hàng thủ công; thương hiệu LilForest.

@@ -1,16 +1,18 @@
 id: company-dayladau
 name:
   vi: Dayladau
+alt_names:
+- DAYLADAU
 type: company
 sectors:
 - tourism
+website: https://dayladau.com
+description:
+  vi: Đặt phòng homestay, căn hộ theo giờ.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- DAYLADAU
-description:
-  vi: Đặt phòng homestay, căn hộ theo giờ.

@@ -2,9 +2,13 @@ id: company-reclub
 name:
   vi: Reclub
 type: company
+website: https://reclub.co
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang
+description:
+  vi: Nền tảng cho cộng đồng thể thao tổ chức trận đấu và giải.

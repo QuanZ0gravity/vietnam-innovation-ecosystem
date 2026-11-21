@@ -7,13 +7,15 @@ categories:
 - Quỹ, nhà đầu tư
 sectors:
 - ai
+website: https://summitcapital.vn
+description:
+  vi: Quỹ đầu tư định hướng đổi mới, phát triển bền vững và chuyển đổi số.
 region: da-nang
 verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
+- Website chính thức
 source_url: https://startupdanang.vn/summit-capital
 legacy_id: d54
-description:
-  vi: Quỹ đầu tư định hướng đổi mới, phát triển bền vững và chuyển đổi số.

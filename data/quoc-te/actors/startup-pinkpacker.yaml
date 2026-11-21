@@ -1,16 +1,18 @@
 id: startup-pinkpacker
 name:
   vi: Pinkpacker
+alt_names:
+- PINKPACKER INC
 type: startup
 sectors:
 - ai
+website: https://pinkpacker.com
+description:
+  vi: 'Hệ điều hành giao dịch thịt toàn cầu: phòng giao dịch, chứng từ và ghép nối bằng AI.'
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- PINKPACKER INC
-description:
-  vi: 'Hệ điều hành giao dịch thịt toàn cầu: phòng giao dịch, chứng từ và ghép nối bằng AI.'

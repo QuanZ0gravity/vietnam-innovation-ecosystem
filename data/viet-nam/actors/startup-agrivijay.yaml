@@ -1,18 +1,20 @@
 id: startup-agrivijay
 name:
   vi: Agrivijay
+alt_names:
+- CÔNG TY TNHH TƯ NHÂN THƯƠNG MẠI ĐIỆN TỬ RENEWAGRI OM (AGRIVIJAY) AGRIVIJAY
 type: startup
 sectors:
 - commerce
 - agrifood
 - climate
+website: https://agrivijay.com
+description:
+  vi: Nền tảng xã hội và thương mại điện tử đưa giải pháp năng lượng tái tạo đến nông dân Ấn Độ.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/green-innovation-2026
-alt_names:
-- CÔNG TY TNHH TƯ NHÂN THƯƠNG MẠI ĐIỆN TỬ RENEWAGRI OM (AGRIVIJAY) AGRIVIJAY
-description:
-  vi: Nền tảng xã hội và thương mại điện tử đưa giải pháp năng lượng tái tạo đến nông dân Ấn Độ.

@@ -1,17 +1,19 @@
 id: startup-jaisworks
 name:
   vi: Jaisworks
+alt_names:
+- JAISWORKS INC.
 type: startup
 sectors:
 - ai
 - deeptech
+website: https://www.jaisworks.com/
+description:
+  vi: 'MimicForge: AI vật lý nâng cấp robot công nghiệp thành hệ tự hành bằng học bắt chước.'
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- JAISWORKS INC.
-description:
-  vi: 'MimicForge: AI vật lý nâng cấp robot công nghiệp thành hệ tự hành bằng học bắt chước.'

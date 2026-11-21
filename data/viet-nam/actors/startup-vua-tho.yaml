@@ -1,17 +1,19 @@
 id: startup-vua-tho
 name:
   vi: Vua Thợ
+alt_names:
+- Công ty TNHH Công Nghệ Vua Thợ
+- CÔNG TY TNHH CÔNG NGHỆ VUA THỢ VUA THO TECHNOLOGY LIMITED
 type: startup
 sectors:
 - ai
+website: https://vuatho.com/
+description:
+  vi: Ứng dụng dùng AI kết nối khách hàng cần dịch vụ sửa chữa, bảo trì tại nhà với thợ kỹ thuật.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- Công ty TNHH Công Nghệ Vua Thợ
-- CÔNG TY TNHH CÔNG NGHỆ VUA THỢ VUA THO TECHNOLOGY LIMITED
-description:
-  vi: Ứng dụng dùng AI kết nối khách hàng cần dịch vụ sửa chữa, bảo trì tại nhà với thợ kỹ thuật.

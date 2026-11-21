@@ -1,17 +1,19 @@
 id: company-vinergy
 name:
   vi: Vinergy
+alt_names:
+- VINERGY
 type: company
 sectors:
 - climate
 - deeptech
+website: https://vinergy.vn
+description:
+  vi: 'IoT, AIoT: hệ thống quản lý năng lượng và kiểm tra nhiệt bằng drone.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- VINERGY
-description:
-  vi: 'IoT, AIoT: hệ thống quản lý năng lượng và kiểm tra nhiệt bằng drone.'

@@ -1,17 +1,19 @@
 id: startup-punart
 name:
   vi: Punart
+alt_names:
+- Công ty TNHH Nghệ Thuật Độc Nhất Punart
+- CÔNG TY TNHH NGHỆ THUẬT ĐỘC NHẤT PUNART
 type: startup
 sectors:
 - tourism
+website: https://punart.vn
+description:
+  vi: Phát triển đồ chơi nghệ thuật sưu tầm và nhân vật gốc mang văn hóa Việt.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- Công ty TNHH Nghệ Thuật Độc Nhất Punart
-- CÔNG TY TNHH NGHỆ THUẬT ĐỘC NHẤT PUNART
-description:
-  vi: Phát triển đồ chơi nghệ thuật sưu tầm và nhân vật gốc mang văn hóa Việt.

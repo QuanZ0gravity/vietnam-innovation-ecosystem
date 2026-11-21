@@ -1,17 +1,19 @@
 id: company-marinachain
 name:
   vi: Marinachain
+alt_names:
+- MARINACHAIN CO.,LTD.
 type: company
 sectors:
 - ai
 - climate
+website: https://www.marinachain.io/
+description:
+  vi: AI hàng hải biến dữ liệu phát thải carbon thành hiệu quả kinh doanh.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- MARINACHAIN CO.,LTD.
-description:
-  vi: AI hàng hải biến dữ liệu phát thải carbon thành hiệu quả kinh doanh.

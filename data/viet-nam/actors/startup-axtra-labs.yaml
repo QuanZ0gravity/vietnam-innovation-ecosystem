@@ -1,14 +1,16 @@
 id: startup-axtra-labs
 name:
   vi: Axtra Labs
+alt_names:
+- AXTRA LABS
 type: startup
+website: https://www.axtralabs.com/
+description:
+  vi: 'XEye: nhóm nghiên cứu chuyển kết quả học thuật thành công nghệ ứng dụng.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/qvic-2026
-alt_names:
-- AXTRA LABS
-description:
-  vi: 'XEye: nhóm nghiên cứu chuyển kết quả học thuật thành công nghệ ứng dụng.'

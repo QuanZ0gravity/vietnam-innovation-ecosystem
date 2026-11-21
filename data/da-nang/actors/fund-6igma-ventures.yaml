@@ -4,6 +4,7 @@ name:
 type: fund
 categories:
 - Quỹ đầu tư
+website: https://6igmaventures.com
 description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
@@ -12,5 +13,6 @@ verification:
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
+- Website chính thức
 source_url: https://startupdanang.vn/6igmaventures
 legacy_id: d35;f1

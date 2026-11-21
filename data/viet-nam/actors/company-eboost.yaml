@@ -1,16 +1,18 @@
 id: company-eboost
 name:
   vi: Eboost
+alt_names:
+- CÔNG TY TNHH EVIDA (EBOOST) EBOOST
 type: company
 sectors:
 - mobility
+website: https://eboost.vn/
+description:
+  vi: Hệ thống sạc xe điện thông minh, hơn 2.500 cổng sạc trên cả nước.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- CÔNG TY TNHH EVIDA (EBOOST) EBOOST
-description:
-  vi: Hệ thống sạc xe điện thông minh, hơn 2.500 cổng sạc trên cả nước.

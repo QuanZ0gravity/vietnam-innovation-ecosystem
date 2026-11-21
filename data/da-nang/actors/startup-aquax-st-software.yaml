@@ -1,6 +1,8 @@
 id: startup-aquax-st-software
 name:
   vi: AquaX (ST Software)
+alt_names:
+- AquaX - Smart AIoT Shrimp Farming Solution
 type: startup
 categories:
 - Nông nghiệp thông minh
@@ -9,6 +11,7 @@ sectors:
 - ai
 - agrifood
 - climate
+website: https://aquax.vn
 description:
   vi: Công nghệ nuôi tôm thông minh kết hợp phần mềm và IoT.
 region: da-nang
@@ -16,3 +19,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Website chính thức
+- indanang.vn

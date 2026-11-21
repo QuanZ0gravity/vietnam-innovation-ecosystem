@@ -1,18 +1,20 @@
 id: startup-videnvaren
 name:
   vi: Videnvaren+
+alt_names:
+- VIDENVAREN+
 type: startup
 sectors:
 - climate
 - deeptech
 - property
+website: https://www.videnvaren.com/
+description:
+  vi: Thiết kế công trình thụ động và vật liệu xây dựng tiết kiệm năng lượng.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- VIDENVAREN+
-description:
-  vi: Thiết kế công trình thụ động và vật liệu xây dựng tiết kiệm năng lượng.

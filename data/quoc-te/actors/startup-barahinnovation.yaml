@@ -1,17 +1,19 @@
 id: startup-barahinnovation
 name:
   vi: Barahinnovation
+alt_names:
+- BARAHINNOVATION CO., LTD
 type: startup
 sectors:
 - climate
 - deeptech
+website: https://barahinnovation.com
+description:
+  vi: In 3D khuôn tan trong nước để ép phun chi tiết phức tạp bằng gốm, kim loại và nhựa kỹ thuật.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- BARAHINNOVATION CO., LTD
-description:
-  vi: In 3D khuôn tan trong nước để ép phun chi tiết phức tạp bằng gốm, kim loại và nhựa kỹ thuật.

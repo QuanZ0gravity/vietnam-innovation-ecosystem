@@ -1,16 +1,18 @@
 id: startup-udata
 name:
   vi: Udata
+alt_names:
+- UDATA JSC
 type: startup
 sectors:
 - ai
+website: https://udata.ai
+description:
+  vi: Nền tảng AI hỗ trợ kỹ thuật, xử lý sự cố và tối ưu vận hành nhà máy.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/qvic-2026
-alt_names:
-- UDATA JSC
-description:
-  vi: Nền tảng AI hỗ trợ kỹ thuật, xử lý sự cố và tối ưu vận hành nhà máy.

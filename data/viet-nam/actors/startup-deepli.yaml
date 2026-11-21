@@ -2,11 +2,13 @@ id: startup-deepli
 name:
   vi: Deepli
 type: startup
+website: https://www.deepli.io/
+description:
+  vi: Hệ thống truy xuất tri thức doanh nghiệp dùng mô hình ngôn ngữ lớn, trả lời chính xác bằng tiếng Việt.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/jdi-tfoai4
-description:
-  vi: Hệ thống truy xuất tri thức doanh nghiệp dùng mô hình ngôn ngữ lớn, trả lời chính xác bằng tiếng Việt.

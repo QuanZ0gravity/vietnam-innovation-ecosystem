@@ -1,17 +1,19 @@
 id: startup-fizibox
 name:
   vi: Fizibox
+alt_names:
+- FIZIBOX CORP
 type: startup
 sectors:
 - ai
 - deeptech
+website: https://fizibox.vn
+description:
+  vi: Cảm biến cháy dùng AI tại biên và mô hình thị giác để phát hiện sớm.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/qvic-2026
-alt_names:
-- FIZIBOX CORP
-description:
-  vi: Cảm biến cháy dùng AI tại biên và mô hình thị giác để phát hiện sớm.

@@ -3,6 +3,7 @@ name:
   vi: Instalent
 type: startup
 status: active
+website: https://instalent.io
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +11,6 @@ verification:
   by: DNES
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
+- Website chính thức
+description:
+  vi: 'Nền tảng tuyển dụng ứng dụng AI: tìm ứng viên, đánh giá mức phù hợp và liên hệ đa kênh.'

@@ -1,17 +1,19 @@
 id: company-bnv-solutions
 name:
   vi: Bnv Solutions
+alt_names:
+- BNV SOLUTIONS
 type: company
 sectors:
 - ai
 - edu
+website: https://bnvsolutions.com
+description:
+  vi: Chuyển đổi số bằng AI cho giáo dục và doanh nghiệp, Hàn Quốc.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- BNV SOLUTIONS
-description:
-  vi: Chuyển đổi số bằng AI cho giáo dục và doanh nghiệp, Hàn Quốc.

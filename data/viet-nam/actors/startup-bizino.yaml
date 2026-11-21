@@ -1,18 +1,20 @@
 id: startup-bizino
 name:
   vi: Bizino
+alt_names:
+- Công ty Cổ Phần Bizino
+- CÔNG TY CỔ PHẦN BIZINO BIZINO
 type: startup
 sectors:
 - ai
 - health
+website: https://bizino.com.vn
+description:
+  vi: 'Nhân sự số bằng AI: CRM, CDP và chăm sóc đa kênh hoạt động 24/7.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- Công ty Cổ Phần Bizino
-- CÔNG TY CỔ PHẦN BIZINO BIZINO
-description:
-  vi: 'Nhân sự số bằng AI: CRM, CDP và chăm sóc đa kênh hoạt động 24/7.'

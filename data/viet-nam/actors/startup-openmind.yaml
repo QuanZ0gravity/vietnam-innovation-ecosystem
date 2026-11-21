@@ -1,18 +1,20 @@
 id: startup-openmind
 name:
   vi: Openmind
+alt_names:
+- Openmind Robotics
+- OPENMIND ROBOTICS OPENMIND EYE
 type: startup
 sectors:
 - deeptech
 - mobility
+website: https://openmind.vn
+description:
+  vi: 'OPENMIND EYE: robot thông minh tự động hóa chuỗi cung ứng.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/qvic-2026
-alt_names:
-- Openmind Robotics
-- OPENMIND ROBOTICS OPENMIND EYE
-description:
-  vi: 'OPENMIND EYE: robot thông minh tự động hóa chuỗi cung ứng.'

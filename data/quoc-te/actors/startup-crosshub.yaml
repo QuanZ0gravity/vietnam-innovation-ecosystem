@@ -1,18 +1,20 @@
 id: startup-crosshub
 name:
   vi: Crosshub
+alt_names:
+- CROSSHUB., INC
 type: startup
 sectors:
 - ai
 - fintech
 - web3
+website: https://crosshub.ai
+description:
+  vi: Định danh số và thanh toán dựa trên AI và chuỗi khối (Smart ID).
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- CROSSHUB., INC
-description:
-  vi: Định danh số và thanh toán dựa trên AI và chuỗi khối (Smart ID).

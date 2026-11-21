@@ -1,12 +1,16 @@
 id: company-alterno
 name:
   vi: Alternō
+alt_names:
+- ALTERNŌ
 type: company
+website: https://alterno.energy/
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- ALTERNŌ
+description:
+  vi: 'Pin cát: lưu trữ năng lượng nhiệt cho nhiệt công nghiệp và sấy nông sản.'

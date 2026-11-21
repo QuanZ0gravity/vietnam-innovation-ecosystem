@@ -1,18 +1,20 @@
 id: startup-dong-nguyen-food
 name:
   vi: Dong Nguyen Food
+alt_names:
+- Đông Nguyên Food
+- ĐÔNG NGUYÊN FOOD DONG NGUYEN FOOD
 type: startup
 sectors:
 - agrifood
 - marketing
+website: https://dongnguyenfood.vn
+description:
+  vi: Món súp hầm Sài Gòn truyền thống dạng ăn liền, áp dụng công nghệ cấp đông nhanh và tiệt trùng.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- Đông Nguyên Food
-- ĐÔNG NGUYÊN FOOD DONG NGUYEN FOOD
-description:
-  vi: Món súp hầm Sài Gòn truyền thống dạng ăn liền, áp dụng công nghệ cấp đông nhanh và tiệt trùng.

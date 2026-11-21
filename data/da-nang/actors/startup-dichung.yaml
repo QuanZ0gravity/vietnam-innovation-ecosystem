@@ -3,6 +3,7 @@ name:
   vi: DICHUNG
 type: startup
 status: active
+website: https://dichung.vn
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +11,6 @@ verification:
   by: DNES
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
+- Website chính thức
+description:
+  vi: Dịch vụ đi chung, xe đưa đón sân bay, vận chuyển đường dài và thuê xe tự lái.

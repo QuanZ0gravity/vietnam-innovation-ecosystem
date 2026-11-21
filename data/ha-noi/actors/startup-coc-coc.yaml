@@ -7,9 +7,13 @@ categories:
 - Software
 sectors:
 - ai
+website: https://coccoc.com/
 region: ha-noi
 verification:
   level: unverified
 sources:
 - StartupBlink (trang công khai, 11/2026)
+- Website chính thức
 source_url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
+description:
+  vi: Trình duyệt web và công cụ tìm kiếm dành cho người Việt.

@@ -3,7 +3,6 @@ name:
   vi: Carus
 type: startup
 status: active
-website: https://carus.vn
 region: da-nang
 verification:
   level: partner_verified
@@ -11,3 +10,4 @@ verification:
   by: DNES
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
+website_status: Tên miền carus.vn không còn hoạt động (11/2026)

@@ -1,18 +1,20 @@
 id: startup-demeter
 name:
   vi: Demeter
+alt_names:
+- CÔNG TY TNHH CÔNG NGHỆ VÀ DỊCH VỤ DTRACK (DEMETER) DEMETER
 type: startup
 sectors:
 - ai
 - fintech
 - agrifood
+website: https://demeter.vn
+description:
+  vi: AgriTech, AgriFinTech dùng AI, IoT, dữ liệu cho nông nghiệp thông minh, thích ứng khí hậu.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/green-innovation-2026
-alt_names:
-- CÔNG TY TNHH CÔNG NGHỆ VÀ DỊCH VỤ DTRACK (DEMETER) DEMETER
-description:
-  vi: AgriTech, AgriFinTech dùng AI, IoT, dữ liệu cho nông nghiệp thông minh, thích ứng khí hậu.

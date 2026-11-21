@@ -4,7 +4,6 @@ name:
 type: startup
 founded: 2016
 status: active
-website: https://h2ofarm.vn
 region: da-nang
 verification:
   level: partner_verified
@@ -12,3 +11,4 @@ verification:
   by: DNES
 sources:
 - Danh mục ươm tạo của DNES (11/2026)
+website_status: Tên miền h2ofarm.vn không còn hoạt động (11/2026)

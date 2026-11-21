@@ -1,16 +1,18 @@
 id: startup-hapbio
 name:
   vi: Hapbio
+alt_names:
+- HAPBIO
 type: startup
 sectors:
 - climate
+website: https://hapbio.com.vn
+description:
+  vi: Bao bì phân hủy sinh học hoàn toàn từ tinh bột thực vật, thay thế nhựa dùng một lần.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- HAPBIO
-description:
-  vi: Bao bì phân hủy sinh học hoàn toàn từ tinh bột thực vật, thay thế nhựa dùng một lần.

@@ -1,16 +1,18 @@
 id: startup-priyoshop
 name:
   vi: Priyoshop
+alt_names:
+- PRIYOSHOP
 type: startup
 sectors:
 - fintech
+website: https://priyoshop.com
+description:
+  vi: Nền tảng fintech cấp vốn lưu động và dịch vụ tài chính cho doanh nghiệp siêu nhỏ ở Bangladesh.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- PRIYOSHOP
-description:
-  vi: Nền tảng fintech cấp vốn lưu động và dịch vụ tài chính cho doanh nghiệp siêu nhỏ ở Bangladesh.

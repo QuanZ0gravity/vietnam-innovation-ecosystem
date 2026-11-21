@@ -2,9 +2,13 @@ id: company-mk-vision
 name:
   vi: MK Vision
 type: company
+website: https://mkvision.com
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang
+description:
+  vi: Doanh nghiệp tham gia TECx 2026 Đà Nẵng.

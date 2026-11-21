@@ -7,9 +7,13 @@ categories:
 - Enterprise Technology
 sectors:
 - ai
+website: https://katalon.com
 region: ho-chi-minh
 verification:
   level: unverified
 sources:
 - StartupBlink (trang công khai, 11/2026)
+- Website chính thức
 source_url: https://www.startupblink.com/startup-ecosystem/ho-chi-minh-city-vn
+description:
+  vi: Nền tảng kiểm thử phần mềm ứng dụng AI cho web, di động, API và máy tính.

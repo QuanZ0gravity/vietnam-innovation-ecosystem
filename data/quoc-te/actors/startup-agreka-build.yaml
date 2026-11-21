@@ -1,18 +1,20 @@
 id: startup-agreka-build
 name:
   vi: Agreka Build
+alt_names:
+- AGREKA BUILD
 type: startup
 sectors:
 - agrifood
 - deeptech
 - property
+website: https://www.agrekabuild.com/
+description:
+  vi: Vật liệu xây dựng xanh từ phụ phẩm nông nghiệp cho công trình phát thải ròng bằng không.
 region: quoc-te
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- AGREKA BUILD
-description:
-  vi: Vật liệu xây dựng xanh từ phụ phẩm nông nghiệp cho công trình phát thải ròng bằng không.

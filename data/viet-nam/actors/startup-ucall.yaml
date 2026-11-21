@@ -1,16 +1,18 @@
 id: startup-ucall
 name:
   vi: Ucall
+alt_names:
+- UCALL
 type: startup
 sectors:
 - ai
+website: https://ucall.vn
+description:
+  vi: Tổng đài viên AI tự động gọi đi và nghe gọi đến bằng giọng tiếng Việt tự nhiên.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- UCALL
-description:
-  vi: Tổng đài viên AI tự động gọi đi và nghe gọi đến bằng giọng tiếng Việt tự nhiên.

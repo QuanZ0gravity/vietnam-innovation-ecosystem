@@ -1,17 +1,19 @@
 id: company-cong-ty-tnhh-san-ha
 name:
   vi: Công ty TNHH San Hà
+alt_names:
+- CÔNG TY TNHH SAN HÀ
 type: company
 sectors:
 - agrifood
 - deeptech
+website: https://sanha.vn
+description:
+  vi: Sản xuất, chế biến thực phẩm và vật liệu sinh học.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- Website chính thức
 source_url: https://indanang.vn/ecosystem-activities/innoex-2026
-alt_names:
-- CÔNG TY TNHH SAN HÀ
-description:
-  vi: Sản xuất, chế biến thực phẩm và vật liệu sinh học.
