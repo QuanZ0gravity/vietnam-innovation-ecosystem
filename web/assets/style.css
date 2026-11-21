@@ -292,3 +292,16 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .fs .nm{font-weight:700;line-height:1.2}
 .fs:hover{border-color:var(--ink-2)}
 .pager[hidden],#results[hidden],#mapwrap[hidden]{display:none}
+/* Đợt 2 */
+.foot-nav{display:flex;gap:6px 18px;flex-wrap:wrap}
+.secgrid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.dist td{white-space:normal}
+.dist td:last-child{width:45%}
+.bar-in{display:block;height:8px;border-radius:4px;background:var(--sea)}
+.opp-t{color:inherit;text-decoration:none}
+.opp-t:hover{text-decoration:underline}
+.prose h2{font-size:1.3rem;margin-top:32px}
+.prose p,.prose li{line-height:1.7}
+.prose ul{padding-left:20px}
+.prose li{margin:6px 0}
+.opp-detail .opp{border-bottom:0}

@@ -53,3 +53,14 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - Mô tả trang riêng cho từng trang; hồ sơ chưa có mô tả hoặc mô tả quá ngắn được ghép câu tự sinh (loại, địa phương, lĩnh vực).
 - Hồ sơ có hai khối "Cùng lĩnh vực" và "Cùng địa phương" (mỗi khối 6 hồ sơ, ưu tiên có logo và mô tả). Mỗi khối gồm 4 hồ sơ đầy đủ thông tin nhất và 2 hồ sơ kế cận theo tên, để cả hồ sơ ít thông tin cũng được liên kết tới. Trung bình mỗi hồ sơ giờ có 10.8 liên kết trỏ tới; hồ sơ chỉ có tối đa một liên kết giảm từ 538 xuống 2.
 - Sitemap chia thành tệp chỉ mục `sitemap.xml` và các tệp con `sitemap-trang.xml`, `sitemap-thanh-pho.xml`, `sitemap-to-chuc-N.xml` (tối đa 500 trang mỗi tệp). `lastmod` của hồ sơ lấy theo lần sửa gần nhất của tệp dữ liệu trong git.
+
+## Đợt 2 (21/11/2026): đã thực hiện
+
+- Thanh điều hướng mới: Danh bạ · Địa phương · Lĩnh vực · Cơ hội · Chính sách · Dữ liệu (logo dẫn về trang chủ). Chân trang: Giới thiệu, Phương pháp, Đóng góp, Dữ liệu, GitHub.
+- 8 trang đích theo loại trong `/danh-ba/`: `startup/`, `quy-dau-tu/`, `ho-tro-khoi-nghiep/`, `truong-vien/`, `co-quan-nha-nuoc/`, `doanh-nghiep/`, `doi-tac-quoc-te/`, `du-an-sang-tao/`. Mỗi trang: giới thiệu, chỉ số, 24 hồ sơ nổi bật, phân bố theo địa phương và lĩnh vực, nút lọc và tải CSV, nút xem bản đồ.
+- `/linh-vuc/` và 13 trang lĩnh vực, cùng cấu trúc, kèm cơ hội liên quan.
+- 24 trang chi tiết cơ hội `/co-hoi/<mã>/`: thông tin đầy đủ, đơn vị tổ chức, toàn bộ đơn vị tham gia có logo, cơ hội cùng loại, dữ liệu có cấu trúc `Event`.
+- 123 trang chi tiết văn bản `/chinh-sach/<mã>/`: số hiệu, loại văn bản, cơ quan ban hành, ngày, tóm tắt, đường dẫn toàn văn, văn bản cùng loại cùng năm, dữ liệu có cấu trúc `Legislation`.
+- `/du-lieu/`: tải CSV toàn bộ (`data/actors.csv`), JSON, GeoJSON; bảng chất lượng dữ liệu theo địa phương (tỷ lệ có logo, mô tả, website, LinkedIn, lĩnh vực, vị trí, đã xác minh); đường dẫn mô hình dữ liệu, schema, giấy phép, lịch sử thay đổi.
+- `/gioi-thieu/`, `/gioi-thieu/phuong-phap/`, `/gioi-thieu/dong-gop/`.
+- Sitemap thêm các tệp `sitemap-linh-vuc.xml`, `sitemap-co-hoi.xml`, `sitemap-chinh-sach.xml`.

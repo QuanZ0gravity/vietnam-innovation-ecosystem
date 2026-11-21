@@ -97,8 +97,8 @@ for o in opps:
 policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
 # ---------- khung trang ----------
-NAV = [("home", "", "nav_home"), ("dir", "danh-ba/", "nav_dir"),
-       ("cities", "thanh-pho/", "nav_cities"), ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy")]
+NAV = [("dir", "danh-ba/", "nav_dir"),
+       ("cities", "thanh-pho/", "nav_cities"), ("sectors", "linh-vuc/", "nav_sectors"), ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy"), ("data", "du-lieu/", "nav_data")]
 CUR = ' aria-current="page"'
 LEAF = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
         '<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>')
@@ -139,7 +139,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></div></footer>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav></div></footer>
 </body>
 </html>
 """
@@ -315,7 +315,7 @@ def opp_card(o, compact=False):
                      f'<a href="https://github.com/{REPO}/edit/main/data/{o["_region"]}/opportunities.yaml" data-vi="Bổ sung" data-en="Add it">Bổ sung</a></p>')
     return (f'<article class="opp {st}" data-type="{o["type"]}" data-status="{st}">'
             f'<p class="opp-meta"><span class="pill {st}" data-vi="{sv}" data-en="{se}">{sv}</span><span class="tag" data-vi="{tv}" data-en="{te}">{tv}</span><span class="tag" data-i18n="r_{o["_region"].replace("-", "_")}">{o["_region"]}</span></p>'
-            f'<h3>{e(o["title"])}</h3><p class="small muted">{org}</p><p class="opp-dates small">{date_html}</p>'
+            f'<h3><a class="opp-t" href="{SITE_ROOT}co-hoi/{o["id"].removeprefix("opp-")}/">{e(o["title"])}</a></h3><p class="small muted">{org}</p><p class="opp-dates small">{date_html}</p>'
             + (f'<dl class="facts opp-facts">{rows_html}</dl>' if rows_html else "")
             + (f'<p class="opp-links">{"".join(links)}</p>' if links and not compact else "") + miss_html + '</article>')
 
@@ -772,7 +772,7 @@ for x in policies:
 po_body = "".join(
     f'<section class="month" data-year="{e(y)}"><h2>{e(y)}</h2><ul class="list-plain">' + "".join(
         f'<li class="po" data-text="{e((x["document"] + " " + str(x.get("summary") or "")).lower())}">'
-        + (f'<a href="{e(x["url"])}" rel="noopener"><b>{e(x["document"])}</b></a>' if x.get("url") else f'<b>{e(x["document"])}</b>')
+        + f'<a href="{SITE_ROOT}chinh-sach/{x["id"].removeprefix("policy-")}/"><b>{e(x["document"])}</b></a>'
         + (f' <span class="muted small">{e(fmt_date(x.get("issued")))}</span>' if x.get("issued") else "")
         + (f'<br>{e(x.get("summary"))}' if x.get("summary") else "") + '</li>' for x in xs) + '</ul></section>'
     for y, xs in by_year.items())
@@ -785,6 +785,269 @@ write("chinh-sach/index.html", page("Chính sách", f"""
 <div class="bar" style="margin-top:20px"><label class="sr" for="pq" data-i18n="policy_search">Tìm</label><input id="pq" type="search" data-i18n-ph="policy_search" placeholder="Tìm văn bản, nội dung…"></div></div>
 <div class="wrap" style="padding-bottom:72px">{po_body}</div>{po_script}""", "policy", desc=f"{len(policies)} văn bản chính sách về khởi nghiệp, đổi mới sáng tạo, khoa học công nghệ và chuyển đổi số, tra cứu theo loại và năm."))
 
+
+# ================= ĐỢT 2: trang đích, trang chi tiết, dữ liệu, giới thiệu =================
+def kp(label_vi, label_en, value, note=""):
+    return kpi(label_vi, label_en, value, note)
+
+def rich_sorted(xs):
+    return sorted(xs, key=lambda x: (-richness(x), VER_ORDER.get(x["verification"]["level"], 9), x["name"]["vi"].lower()))
+
+def dist_rows(counter, label):
+    total = sum(counter.values()) or 1
+    rows = "".join(f'<tr><td>{label(k)}</td><td>{v}</td><td><span class="bar-in" style="width:{max(2, round(100 * v / total))}%"></span></td></tr>'
+                   for k, v in counter.most_common(8))
+    return f'<div class="tbl-wrap"><table class="tbl dist"><tbody>{rows}</tbody></table></div>'
+
+REG_L = lambda k: f'<span data-i18n="r_{k.replace("-", "_")}">{e(REGION_VI.get(k, k))}</span>'
+TYPE_L = lambda k: f'<span data-i18n="t_{k}">{e(VIE_TYPE.get(k, k))}</span>'
+SEC_L = lambda k: e(SECT_VI.get(k, "Chưa phân loại"))
+
+def landing(path, title, title_en, intro, intro_en, xs, dir_params, extra="", desc=""):
+    rc = collections.Counter(x["region"] for x in xs)
+    sc = collections.Counter(s for x in xs for s in (x.get("sectors") or ["_none"]))
+    tc = collections.Counter(x["type"] for x in xs)
+    k = [kp("Hồ sơ", "Profiles", str(len(xs))),
+         kp("Có logo", "With logo", f'{sum(1 for x in xs if x.get("logo"))}'),
+         kp("Có mô tả", "With description", f'{sum(1 for x in xs if (x.get("description") or {}).get("vi"))}'),
+         kp("Đã xác minh", "Verified", f'{sum(1 for x in xs if x["verification"]["level"] != "unverified")}')]
+    top = rich_sorted(xs)[:24]
+    dist = (f'<div class="cols2"><div><h3 data-vi="Theo địa phương" data-en="By place">Theo địa phương</h3>{dist_rows(rc, REG_L)}</div>'
+            + (f'<div><h3 data-vi="Theo lĩnh vực" data-en="By sector">Theo lĩnh vực</h3>{dist_rows(sc, SEC_L)}</div>' if "sector" not in dir_params
+               else f'<div><h3 data-vi="Theo loại" data-en="By type">Theo loại</h3>{dist_rows(tc, TYPE_L)}</div>') + "</div>")
+    body = f"""
+<div class="wrap page-head"><p class="crumb small">{extra and ""}</p>
+<h1 data-vi="{e(title)}" data-en="{e(title_en)}">{e(title)}</h1>
+<p class="lead" data-vi="{e(intro)}" data-en="{e(intro_en)}">{e(intro)}</p>
+<p style="margin-top:18px"><a class="btn primary" href="{dir_link(**dir_params)}" data-vi="Lọc và tải CSV trong danh bạ" data-en="Filter and download CSV in the directory">Lọc và tải CSV trong danh bạ</a>
+<a class="btn ghost" href="{dir_link(view="map", **dir_params)}" data-vi="Xem trên bản đồ" data-en="View on map">Xem trên bản đồ</a></p></div>
+<div class="wrap" style="padding-bottom:72px">
+<section class="sec"><div class="kpis">{"".join(k)}</div></section>
+<section class="sec"><h2 data-vi="Hồ sơ nổi bật" data-en="Featured profiles">Hồ sơ nổi bật</h2>{mini_cards(top)}
+<p class="small" style="margin-top:12px"><a href="{dir_link(**dir_params)}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p></section>
+<section class="sec"><h2 data-vi="Phân bố" data-en="Distribution">Phân bố</h2>{dist}</section>
+{extra}
+</div>"""
+    write(path, page(title, body, "dir" if path.startswith("danh-ba") else "sectors", desc=desc or intro))
+
+# ---- trang đích theo loại ----
+TYPE_PAGES = [
+    ("startup", ["startup"], "Startup", "Startups", "Startup đổi mới sáng tạo tại Việt Nam, từ dự án sinh viên đến doanh nghiệp đã gọi vốn.", "Innovative startups in Vietnam, from student projects to funded companies."),
+    ("quy-dau-tu", ["fund"], "Quỹ đầu tư, nhà đầu tư", "Funds and investors", "Quỹ đầu tư mạo hiểm, quỹ đầu tư thiên thần, quỹ nhà nước và quỹ doanh nghiệp đầu tư vào startup Việt Nam.", "Venture, angel, public and corporate funds investing in Vietnamese startups."),
+    ("ho-tro-khoi-nghiep", ["incubator", "accelerator", "space", "support_org", "community"], "Tổ chức hỗ trợ khởi nghiệp", "Startup support organisations", "Vườn ươm, chương trình tăng tốc, không gian đổi mới sáng tạo, cộng đồng và tổ chức hỗ trợ khởi nghiệp.", "Incubators, accelerators, innovation spaces, communities and support organisations."),
+    ("truong-vien", ["university"], "Trường, viện", "Universities and institutes", "Trường đại học, cao đẳng, viện nghiên cứu và trung tâm khởi nghiệp trong trường.", "Universities, colleges, research institutes and campus startup centres."),
+    ("co-quan-nha-nuoc", ["government"], "Cơ quan nhà nước", "Government bodies", "Cơ quan quản lý, đơn vị sự nghiệp và trung tâm đổi mới sáng tạo của nhà nước.", "Public agencies, public service units and state innovation centres."),
+    ("doanh-nghiep", ["company"], "Doanh nghiệp", "Companies", "Doanh nghiệp công nghệ, doanh nghiệp lớn và đối tác thương mại làm việc với startup.", "Technology firms, corporates and commercial partners working with startups."),
+    ("doi-tac-quoc-te", ["international"], "Đối tác quốc tế", "International partners", "Tổ chức quốc tế, cơ quan phát triển và đối tác nước ngoài hoạt động trong hệ sinh thái Việt Nam.", "International organisations, development agencies and foreign partners active in Vietnam."),
+    ("du-an-sang-tao", ["creator"], "Dự án sáng tạo", "Creative projects", "Dự án sáng tạo cộng đồng, chủ yếu từ chương trình Bản lĩnh xứ Quảng.", "Community creative projects, mostly from the Ban linh xu Quang programme."),
+]
+for slug, ts, t, te, i, ie in TYPE_PAGES:
+    xs = [a for a in actors if a["type"] in ts]
+    if xs:
+        landing(f"danh-ba/{slug}/index.html", t, te, i, ie, xs, {"type": ",".join(ts)},
+                desc=f"{len(xs)} {t.lower()} trong danh bạ mở hệ sinh thái khởi nghiệp Việt Nam. {i}")
+
+# ---- lĩnh vực ----
+SECT_INTRO = {
+    "ai": ("Trí tuệ nhân tạo, phần mềm, dữ liệu và chuyển đổi số.", "AI, software, data and digital transformation."),
+    "fintech": ("Thanh toán, ví điện tử, ngân hàng số, bảo hiểm và kế toán.", "Payments, wallets, digital banking, insurance and accounting."),
+    "web3": ("Blockchain, tài sản số, stablecoin và hạ tầng Web3.", "Blockchain, digital assets, stablecoins and Web3 infrastructure."),
+    "commerce": ("Thương mại điện tử, bán lẻ, công cụ cho người bán.", "E-commerce, retail and seller tools."),
+    "agrifood": ("Nông nghiệp, thủy sản, thực phẩm, dược liệu, sản phẩm OCOP.", "Agriculture, aquaculture, food, medicinal plants, OCOP products."),
+    "health": ("Y tế, công nghệ sinh học, chăm sóc sức khỏe, mỹ phẩm.", "Health, biotech, care and cosmetics."),
+    "edu": ("Giáo dục, đào tạo, học ngoại ngữ, STEM.", "Education, training, language learning, STEM."),
+    "tourism": ("Du lịch, lưu trú, văn hóa, di sản, làng nghề.", "Tourism, hospitality, culture, heritage, craft villages."),
+    "climate": ("Năng lượng tái tạo, pin, kinh tế tuần hoàn, xử lý chất thải, giảm phát thải.", "Renewables, batteries, circular economy, waste, decarbonisation."),
+    "deeptech": ("Bán dẫn, robot, drone, IoT, vật liệu mới và phần cứng.", "Semiconductors, robotics, drones, IoT, new materials and hardware."),
+    "mobility": ("Logistics, vận tải, giao hàng, xe điện, chuỗi cung ứng.", "Logistics, transport, delivery, EVs, supply chain."),
+    "marketing": ("Truyền thông, quảng cáo, nội dung, giải trí, game.", "Media, advertising, content, entertainment, games."),
+    "property": ("Bất động sản, xây dựng, kiến trúc, nội thất.", "Property, construction, architecture, interiors."),
+}
+sec_cards = ""
+for k, vi, en, _ in SECTORS:
+    xs = by_sector.get(k, [])
+    iv, ie = SECT_INTRO.get(k, ("", ""))
+    sec_cards += (f'<a class="city" href="{SITE_ROOT}linh-vuc/{k}/"><span class="cn" data-vi="{e(vi)}" data-en="{e(en)}">{e(vi)}</span>'
+                  f'<span class="cm">{len(xs)} <span data-vi="hồ sơ" data-en="profiles">hồ sơ</span></span><span class="cr" data-vi="{e(iv)}" data-en="{e(ie)}">{e(iv)}</span></a>')
+    if xs:
+        sopps = [o for o in opps if any(_fold(f) and _fold(vi.split(",")[0]) in _fold(f) for f in (o.get("focus") or []))]
+        extra = ""
+        if sopps:
+            extra = ('<section class="sec"><h2 data-vi="Cơ hội liên quan" data-en="Related opportunities">Cơ hội liên quan</h2><div class="opp-list">'
+                     + "".join(opp_card(o, compact=True) for o in sopps[:6]) + "</div></section>")
+        landing(f"linh-vuc/{k}/index.html", vi, en, iv, ie, xs, {"sector": k}, extra=extra,
+                desc=f"{len(xs)} startup, doanh nghiệp, quỹ lĩnh vực {vi.lower()} tại Việt Nam: {iv}")
+unclassified = sum(1 for a in actors if a["type"] in ("startup", "company", "fund", "creator") and not a.get("sectors"))
+write("linh-vuc/index.html", page("Lĩnh vực", f"""
+<div class="wrap page-head"><h1 data-vi="Lĩnh vực" data-en="Sectors">Lĩnh vực</h1>
+<p class="lead" data-vi="13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ. Lĩnh vực do tổ chức tự chọn; một số hồ sơ đang mang gợi ý tự động chờ xác nhận." data-en="13 sectors across startups, companies and funds. Organisations choose their own sectors; some profiles still carry automatic suggestions awaiting confirmation.">13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ.</p></div>
+<div class="wrap" style="padding-bottom:72px"><div class="cities secgrid">{sec_cards}</div>
+<p class="small muted" style="margin-top:20px" data-vi="{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu." data-en="{unclassified} profiles have no sector yet.">{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu.</p></div>""", "sectors",
+      desc="Startup, doanh nghiệp và quỹ đầu tư Việt Nam theo 13 lĩnh vực: AI, tài chính số, Web3, nông nghiệp, y tế, giáo dục, du lịch, năng lượng, bán dẫn, logistics và hơn nữa."))
+
+# ---- chi tiết cơ hội ----
+for o in opps:
+    slug = o["id"].removeprefix("opp-")
+    parts = [by_id[x] for x in dict.fromkeys(o.get("participants") or []) if x in by_id]
+    orgs = [by_id[x] for x in o.get("organizer_ids") or [] if x in by_id]
+    same = [x for x in opps if x is not o and x["type"] == o["type"]][:4]
+    body = f"""
+<div class="wrap crumbs" style="max-width:920px"><a href="{SITE_ROOT}co-hoi/" data-i18n="nav_opps">Cơ hội</a> / {e(o["title"])}</div>
+<div class="wrap" style="padding-bottom:72px;max-width:920px">
+<div class="opp-list opp-detail">{opp_card(o)}</div>
+{('<section class="sec"><h2 data-vi="Đơn vị tổ chức" data-en="Organisers">Đơn vị tổ chức</h2>' + mini_cards(orgs) + '</section>') if orgs else ""}
+{(f'<section class="sec"><h2 data-vi="Tham gia, được chọn ({len(parts)})" data-en="Participants ({len(parts)})">Tham gia, được chọn ({len(parts)})</h2>' + mini_cards(rich_sorted(parts)) + '</section>') if parts else ""}
+{('<section class="sec"><h2 data-vi="Cơ hội cùng loại" data-en="Similar opportunities">Cơ hội cùng loại</h2><div class="opp-list">' + "".join(opp_card(x, compact=True) for x in same) + '</div></section>') if same else ""}
+</div>"""
+    ev = {"@context": "https://schema.org", "@type": "Event", "name": o["title"], "url": f"{SITE_URL}/co-hoi/{slug}/",
+          "eventStatus": "https://schema.org/EventScheduled", "organizer": {"@type": "Organization", "name": o["organizer"]}}
+    if o.get("event_date"): ev["startDate"] = o["event_date"]
+    elif o.get("deadline"): ev["startDate"] = o["deadline"]
+    ev["location"] = {"@type": "Place", "name": REGION_VI.get(o["_region"], "Việt Nam"), "address": {"@type": "PostalAddress", "addressRegion": REGION_VI.get(o["_region"], ""), "addressCountry": "VN"}}
+    if o.get("primary_source") or o.get("apply_url"): ev["sameAs"] = o.get("primary_source") or o.get("apply_url")
+    tv = OPP_TYPES[o["type"]][0]
+    d = f'{o["title"]}: {tv.lower()} tại {REGION_VI.get(o["_region"], "Việt Nam")}' + (f', ngày {fmt_date(o["event_date"])}' if o.get("event_date") else "") + (f', hạn nộp {fmt_date(o["deadline"])}' if o.get("deadline") else "") + (f". {len(parts)} đơn vị tham gia, được chọn." if parts else ".")
+    write(f"co-hoi/{slug}/index.html", page(o["title"], body, "opps", desc=d,
+          head='<script type="application/ld+json">' + json.dumps(ev, ensure_ascii=False) + "</script>"), lastmod=GIT_DATES.get(f"data/{o['_region']}/opportunities.yaml", TODAY))
+
+# ---- chi tiết chính sách ----
+DOC_KIND = [("NQ", "Nghị quyết"), ("QĐ", "Quyết định"), ("KH", "Kế hoạch"), ("CT", "Chỉ thị"), ("TT", "Thông tư"), ("NĐ", "Nghị định"), ("Luật", "Luật"), ("CV", "Công văn"), ("ĐA", "Đề án")]
+def doc_kind(d):
+    for k, v in DOC_KIND:
+        if d.startswith(k): return v
+    return "Văn bản"
+def doc_issuer(d):
+    for k, v in (("HĐND", "Hội đồng nhân dân thành phố"), ("UBND", "Ủy ban nhân dân thành phố"), ("TTg", "Thủ tướng Chính phủ"), ("BKHCN", "Bộ Khoa học và Công nghệ"), ("CP", "Chính phủ"), ("QH", "Quốc hội")):
+        if k in d: return v
+    return ""
+for x in policies:
+    slug = x["id"].removeprefix("policy-")
+    kind, issuer = doc_kind(x["document"]), doc_issuer(x["document"])
+    yr = str(x.get("issued") or "")[:4]
+    near = [y for y in policies if y is not x and str(y.get("issued") or "")[:4] == yr and doc_kind(y["document"]) == kind][:8]
+    facts = [("Số hiệu", "Number", e(x["document"])), ("Loại văn bản", "Type", e(kind))]
+    if issuer: facts.append(("Cơ quan ban hành", "Issued by", e(issuer)))
+    if x.get("issued"): facts.append(("Ngày ban hành", "Issued", e(fmt_date(x["issued"]))))
+    facts.append(("Địa phương", "Place", "Đà Nẵng"))
+    if x.get("source"): facts.append(("Nguồn", "Source", e(x["source"])))
+    fh = "".join(f'<dt data-vi="{a}" data-en="{b}">{a}</dt><dd>{c}</dd>' for a, b, c in facts)
+    body = f"""
+<div class="wrap crumbs"><a href="{SITE_ROOT}chinh-sach/" data-i18n="nav_policy">Chính sách</a> / {e(x["document"])}</div>
+<div class="wrap actor"><article>
+<p><span class="tag">{e(kind)}</span></p>
+<h1 style="margin-top:8px">{e(x["document"])}</h1>
+<p class="desc">{e(x.get("summary") or "")}</p>
+<dl class="facts">{fh}</dl>
+{f'<p style="margin-top:18px"><a class="btn primary" href="{e(x["url"])}" rel="noopener" data-vi="Đọc toàn văn" data-en="Read the full text">Đọc toàn văn</a></p>' if x.get("url") else '<p class="small muted" style="margin-top:14px" data-vi="Chưa có đường dẫn toàn văn. Biết nguồn chính thức? Bổ sung vào dữ liệu." data-en="No link to the full text yet.">Chưa có đường dẫn toàn văn. Biết nguồn chính thức? Bổ sung vào dữ liệu.</p>'}
+{('<div class="section"><h2 data-vi="Cùng loại, cùng năm" data-en="Same type, same year">Cùng loại, cùng năm</h2><ul class="list-plain">' + "".join(f'<li><a href="{SITE_ROOT}chinh-sach/{y["id"].removeprefix("policy-")}/">{e(y["document"])}</a> <span class="muted small">{e(y.get("summary") or "")}</span></li>' for y in near) + '</ul></div>') if near else ""}
+</article>
+<aside class="side"><div class="box"><h2 data-vi="Thông tin chưa đúng?" data-en="Something wrong?">Thông tin chưa đúng?</h2>
+<p style="margin-top:12px"><a class="btn ghost" href="https://github.com/{REPO}/edit/main/data/da-nang/policies.yaml" data-vi="Sửa trên GitHub" data-en="Edit on GitHub">Sửa trên GitHub</a></p></div></aside></div>"""
+    ld = {"@context": "https://schema.org", "@type": "Legislation", "name": x["document"], "legislationIdentifier": x["document"],
+          "legislationType": kind, "url": f"{SITE_URL}/chinh-sach/{slug}/", "spatialCoverage": "Đà Nẵng, Việt Nam"}
+    if x.get("issued"): ld["legislationDate"] = x["issued"]
+    if x.get("summary"): ld["description"] = x["summary"]
+    if issuer: ld["legislationPassedBy"] = {"@type": "GovernmentOrganization", "name": issuer}
+    write(f"chinh-sach/{slug}/index.html", page(f'{x["document"]}: {x.get("summary") or kind}', body, "policy",
+          desc=f'{kind} {x["document"]}' + (f' ngày {fmt_date(x["issued"])}' if x.get("issued") else "") + (f': {x["summary"]}' if x.get("summary") else "") + ". Đà Nẵng.",
+          head='<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"), lastmod=GIT_DATES.get("data/da-nang/policies.yaml", TODAY))
+
+# ---- dữ liệu ----
+csv_cols = ["id", "name", "type", "sectors", "region", "status", "founded", "website", "linkedin", "description", "verification", "sources"]
+import io
+buf = io.StringIO(); w = csv.writer(buf)
+w.writerow(csv_cols)
+for a in actors:
+    w.writerow([a["id"], a["name"]["vi"], a["type"], "; ".join(a.get("sectors") or []), a["region"], a.get("status", ""), a.get("founded", ""),
+                a.get("website", ""), a.get("linkedin", ""), (a.get("description") or {}).get("vi", ""), a["verification"]["level"], "; ".join(a["sources"])])
+open(os.path.join(OUT, "data", "actors.csv"), "w", encoding="utf-8-sig", newline="").write(buf.getvalue())
+def pct(n, d): return f"{round(100 * n / d) if d else 0}%"
+q_rows = ""
+for r in ["da-nang", "former-quang-nam", "ho-chi-minh", "ha-noi", "hai-phong", "viet-nam", "quoc-te"]:
+    xs = [a for a in actors if a["region"] == r]
+    if not xs: continue
+    n = len(xs)
+    q_rows += (f'<tr><td>{REG_L(r)}</td><td>{n}</td><td>{pct(sum(1 for a in xs if a.get("logo")), n)}</td><td>{pct(sum(1 for a in xs if (a.get("description") or {}).get("vi")), n)}</td>'
+               f'<td>{pct(sum(1 for a in xs if a.get("website")), n)}</td><td>{pct(sum(1 for a in xs if a.get("linkedin")), n)}</td><td>{pct(sum(1 for a in xs if a.get("sectors")), n)}</td>'
+               f'<td>{pct(sum(1 for a in xs if a.get("coordinates") or a.get("place")), n)}</td><td>{pct(sum(1 for a in xs if a["verification"]["level"] != "unverified"), n)}</td></tr>')
+N = len(actors)
+q_rows += (f'<tr class="cur"><td data-vi="Tổng" data-en="Total">Tổng</td><td>{N}</td><td>{pct(sum(1 for a in actors if a.get("logo")), N)}</td><td>{pct(sum(1 for a in actors if (a.get("description") or {}).get("vi")), N)}</td>'
+           f'<td>{pct(sum(1 for a in actors if a.get("website")), N)}</td><td>{pct(sum(1 for a in actors if a.get("linkedin")), N)}</td><td>{pct(sum(1 for a in actors if a.get("sectors")), N)}</td>'
+           f'<td>{pct(sum(1 for a in actors if a.get("coordinates") or a.get("place")), N)}</td><td>{pct(sum(1 for a in actors if a["verification"]["level"] != "unverified"), N)}</td></tr>')
+files = [("actors.csv", "Toàn bộ tác nhân, CSV (mở bằng Excel)", "All actors, CSV"), ("actors.json", "Toàn bộ tác nhân, JSON", "All actors, JSON"),
+         ("actors.geojson", "Tác nhân có tọa độ, GeoJSON", "Actors with coordinates, GeoJSON"), ("opportunities.json", "Cơ hội, JSON", "Opportunities, JSON"),
+         ("relations.json", "Quan hệ giữa tác nhân, JSON", "Relations, JSON"), ("sectors.json", "Danh mục lĩnh vực, JSON", "Sector list, JSON"), ("stats.json", "Số liệu tổng hợp, JSON", "Summary statistics, JSON")]
+f_rows = "".join(f'<li><a href="{SITE_ROOT}data/{f}" download><b>{f}</b></a> <span class="muted" data-vi="{vi}" data-en="{en}">{vi}</span></li>' for f, vi, en in files)
+write("du-lieu/index.html", page("Dữ liệu", f"""
+<div class="wrap page-head"><h1 data-vi="Dữ liệu mở" data-en="Open data">Dữ liệu mở</h1>
+<p class="lead" data-vi="Toàn bộ dữ liệu của bản đồ được tải về miễn phí, không cần tài khoản, theo giấy phép CC BY 4.0: được dùng, chỉnh sửa, thương mại hóa, chỉ cần ghi nguồn." data-en="All map data is free to download, no account needed, under CC BY 4.0: use, adapt and commercialise with attribution.">Toàn bộ dữ liệu của bản đồ được tải về miễn phí, không cần tài khoản, theo giấy phép CC BY 4.0.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<section class="sec"><h2 data-vi="Tải về" data-en="Download">Tải về</h2><ul class="list-plain">{f_rows}</ul>
+<p class="small muted" style="margin-top:10px" data-vi="Muốn một phần dữ liệu? Lọc trong Danh bạ rồi bấm Tải CSV. Các tệp JSON được cập nhật mỗi lần dữ liệu thay đổi và có thể đọc trực tiếp từ ứng dụng khác." data-en="Need a subset? Filter the directory and press Download CSV. JSON files update with every data change and can be read directly by other apps.">Muốn một phần dữ liệu? Lọc trong Danh bạ rồi bấm Tải CSV.</p></section>
+<section class="sec"><h2 data-vi="Chất lượng dữ liệu" data-en="Data quality">Chất lượng dữ liệu</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th data-vi="Địa phương" data-en="Place">Địa phương</th><th data-vi="Hồ sơ" data-en="Profiles">Hồ sơ</th><th>Logo</th><th data-vi="Mô tả" data-en="Description">Mô tả</th><th>Website</th><th>LinkedIn</th><th data-vi="Lĩnh vực" data-en="Sector">Lĩnh vực</th><th data-vi="Vị trí" data-en="Location">Vị trí</th><th data-vi="Đã xác minh" data-en="Verified">Đã xác minh</th></tr></thead><tbody>{q_rows}</tbody></table></div>
+<p class="small muted" style="margin-top:10px" data-vi="Cập nhật {TODAY}. Cách tính mức xác minh xem ở trang Phương pháp." data-en="Updated {TODAY}. See Methodology for verification levels.">Cập nhật {TODAY}. Cách tính mức xác minh xem ở trang <a href="{SITE_ROOT}gioi-thieu/phuong-phap/">Phương pháp</a>.</p></section>
+<section class="sec"><h2 data-vi="Cấu trúc và giấy phép" data-en="Structure and licence">Cấu trúc và giấy phép</h2>
+<ul class="list-plain"><li><a href="https://github.com/{REPO}/blob/main/docs/data-model.md" data-vi="Mô hình dữ liệu: các trường và ý nghĩa" data-en="Data model: fields and meaning">Mô hình dữ liệu: các trường và ý nghĩa</a></li>
+<li><a href="https://github.com/{REPO}/tree/main/schema" data-vi="Schema JSON dùng để kiểm tra tự động" data-en="JSON schemas used for validation">Schema JSON dùng để kiểm tra tự động</a></li>
+<li><a href="https://github.com/{REPO}/blob/main/data/LICENSE.md" data-vi="Giấy phép dữ liệu CC BY 4.0 và cách ghi nguồn" data-en="CC BY 4.0 data licence and attribution">Giấy phép dữ liệu CC BY 4.0 và cách ghi nguồn</a></li>
+<li><a href="https://github.com/{REPO}/blob/main/logos/README.md" data-vi="Logo là nhãn hiệu của tổ chức, không thuộc CC BY" data-en="Logos are trademarks, not CC BY">Logo là nhãn hiệu của tổ chức, không thuộc CC BY</a></li>
+<li><a href="https://github.com/{REPO}/commits/main/data" data-vi="Lịch sử thay đổi dữ liệu" data-en="Data change history">Lịch sử thay đổi dữ liệu</a></li></ul></section>
+</div>""", "data", desc=f"Tải miễn phí dữ liệu {len(actors)} tác nhân, {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp Việt Nam: CSV, JSON, GeoJSON, giấy phép CC BY 4.0, kèm số liệu chất lượng dữ liệu."))
+
+# ---- giới thiệu ----
+def info_page(path, title, title_en, html_body, desc):
+    write(path, page(title, f'<div class="wrap page-head"><h1 data-vi="{e(title)}" data-en="{e(title_en)}">{e(title)}</h1></div><div class="wrap prose" style="padding-bottom:72px;max-width:820px">{html_body}</div>', "", desc=desc))
+src_counts = collections.Counter(s.split(" (")[0] for a in actors for s in a["sources"])
+src_list = "".join(f"<li>{e(s)} <span class='muted small'>({n} hồ sơ)</span></li>" for s, n in src_counts.most_common(12))
+info_page("gioi-thieu/index.html", "Giới thiệu", "About", f"""
+<p class="lead">Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam là danh bạ mở, do cộng đồng cùng cập nhật: ai đang làm gì, ở đâu, và cơ hội nào đang mở cho startup.</p>
+<h2>Vì sao có bản đồ này</h2>
+<p>Thông tin về hệ sinh thái nằm rải rác ở trang của từng tổ chức, bài báo, danh sách sự kiện và báo cáo trả phí. Bản đồ gom lại thành một chỗ, ghi rõ nguồn từng dòng, và cho phép tải về miễn phí để ai cũng dùng được: founder tìm nơi hỗ trợ và vốn, nhà đầu tư tìm dự án, cơ quan nhà nước và nhà nghiên cứu nhìn toàn cảnh.</p>
+<h2>Hiện có gì</h2>
+<p>{len(actors)} tác nhân (startup, quỹ, vườn ươm, trường, cơ quan, doanh nghiệp, đối tác quốc tế), {len(opps)} cơ hội và {len(policies)} văn bản chính sách. Dữ liệu bắt đầu từ Đà Nẵng và đang mở rộng ra TP.HCM, Hà Nội, Hải Phòng.</p>
+<h2>Nguồn dữ liệu chính</h2><ul>{src_list}</ul>
+<p>Mỗi hồ sơ ghi nguồn riêng. Cách chọn và kiểm tra nguồn xem ở trang <a href="{SITE_ROOT}gioi-thieu/phuong-phap/">Phương pháp</a>.</p>
+<h2>Ai vận hành</h2>
+<p>Dự án mã nguồn mở trên GitHub. Mọi thay đổi đi qua Pull Request và được kiểm tra tự động trước khi lên trang. Vai trò điều phối, duyệt và quy trình gỡ thông tin được mô tả trong <a href="https://github.com/{REPO}/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>.</p>
+<h2>Giấy phép</h2>
+<p>Dữ liệu theo CC BY 4.0, mã nguồn theo MIT. Logo thuộc chủ sở hữu tương ứng.</p>
+""", "Giới thiệu bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: mục tiêu, nguồn dữ liệu, cách vận hành và giấy phép.")
+info_page("gioi-thieu/phuong-phap/index.html", "Phương pháp", "Methodology", f"""
+<h2>Mức xác minh</h2>
+<ul><li>{ver_badge("unverified")}: thông tin lấy từ nguồn công khai hoặc cộng đồng gửi, chưa ai đối chiếu.</li>
+<li>{ver_badge("source_checked")}: đã đối chiếu với ít nhất một nguồn đáng tin (website chính thức, văn bản, bài báo).</li>
+<li>{ver_badge("org_confirmed")}: chính tổ chức đã xác nhận hoặc tự cập nhật hồ sơ.</li>
+<li>{ver_badge("partner_verified")}: một tổ chức hỗ trợ đã làm việc trực tiếp với đơn vị này xác nhận (ví dụ vườn ươm xác nhận startup đã ươm tạo).</li></ul>
+<h2>Nguồn</h2>
+<p>Mỗi hồ sơ ghi nguồn trong trường <code>sources</code>. Mô tả được viết lại ngắn gọn từ phần tự giới thiệu của tổ chức, không sao chép nguyên văn. Không thu thập dữ liệu bằng cách quét tự động các nền tảng cấm việc này (như LinkedIn); liên kết LinkedIn chỉ lấy khi tổ chức tự đặt trên website của mình.</p>
+<h2>Thông tin cá nhân</h2>
+<p>Không đăng hồ sơ cá nhân khi người đó chưa đồng ý. Thông tin liên hệ chỉ dùng kênh chung của tổ chức, không dùng email hay số di động cá nhân.</p>
+<h2>Lĩnh vực</h2>
+<p>13 lĩnh vực trong <code>schema/sectors.yaml</code>. Tổ chức tự chọn tối đa 3. Hồ sơ chưa chọn có thể mang gợi ý tự động theo từ khóa, cần tổ chức xác nhận.</p>
+<h2>Cơ hội</h2>
+<p>Chỉ ghi các hoạt động có thể dẫn tới vốn, khách hàng hoặc hợp đồng: kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư, kết nối khách hàng, ươm tạo, thử nghiệm. Đường dẫn đăng ký phải là trang của đơn vị tổ chức. Trạng thái (đang mở, sắp diễn ra, đã kết thúc) tính tự động theo ngày.</p>
+<h2>Số liệu xếp hạng thành phố</h2>
+<p>Lấy từ trang công khai của StartupBlink Global Startup Ecosystem Index 2026, ghi nguồn và ngày truy cập; không dùng dữ liệu thuộc gói trả phí.</p>
+<h2>Trùng lặp</h2>
+<p>Kiểm tra tự động so tên gần đúng (kể cả viết tắt) và chặn hồ sơ trùng. Tên cũ, tên pháp lý giữ trong <code>alt_names</code> để tìm được.</p>
+""", "Phương pháp của bản đồ hệ sinh thái khởi nghiệp Việt Nam: mức xác minh, nguồn dữ liệu, thông tin cá nhân, lĩnh vực, cơ hội và kiểm tra trùng lặp.")
+info_page("gioi-thieu/dong-gop/index.html", "Đóng góp", "Contribute", f"""
+<p class="lead">Không cần biết lập trình. Có ba cách, chọn cách bạn thấy tiện.</p>
+<h2>1. Gửi biểu mẫu</h2>
+<p>Thêm tổ chức mới, sửa thông tin, chọn lĩnh vực, gửi logo hoặc yêu cầu gỡ thông tin qua biểu mẫu trên GitHub. Người duyệt sẽ cập nhật giúp.</p>
+<p><a class="btn primary" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml">Mở biểu mẫu</a></p>
+<h2>2. Sửa trực tiếp hồ sơ</h2>
+<p>Mỗi trang hồ sơ có nút <b>Sửa trên GitHub</b>. Bạn sửa tệp, GitHub tự tạo đề xuất thay đổi; kiểm tra tự động báo ngay nếu có lỗi.</p>
+<h2>3. Thêm cơ hội</h2>
+<p>Chương trình đang nhận hồ sơ, cuộc thi, demo day: thêm vào tệp <code>opportunities.yaml</code> của địa phương, ghi hạn nộp, quyền lợi và đường dẫn đăng ký của đơn vị tổ chức.</p>
+<h2>Logo</h2>
+<p>Tệp vuông 128 × 128 px, nền trong suốt, định dạng WebP hoặc PNG, đặt tên trùng mã hồ sơ.</p>
+<h2>Gỡ thông tin</h2>
+<p>Tổ chức hoặc cá nhân muốn gỡ thông tin về mình: gửi biểu mẫu, ghi rõ hồ sơ và lý do. Yêu cầu được xử lý theo quy trình trong <a href="https://github.com/{REPO}/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>.</p>
+<p>Hướng dẫn kỹ thuật đầy đủ: <a href="https://github.com/{REPO}/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+""", "Cách đóng góp cho bản đồ hệ sinh thái khởi nghiệp Việt Nam: gửi biểu mẫu, sửa hồ sơ, thêm cơ hội, gửi logo, yêu cầu gỡ thông tin.")
+
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
@@ -793,9 +1056,10 @@ urls = [""] + [p for _, p, _ in NAV[1:]] + [f"thanh-pho/{c['id']}/" for c in (BE
 def _urlset(items):
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in items) + "</urlset>\n")
-groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("to-chuc", [])])
+groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("linh-vuc", []), ("co-hoi", []), ("chinh-sach", []), ("to-chuc", [])])
 for u, d in PAGES:
-    (groups["to-chuc"] if u.startswith("a/") else groups["thanh-pho"] if u.startswith("thanh-pho/") else groups["trang"]).append((u, d))
+    g = "to-chuc" if u.startswith("a/") else next((k for k in ("thanh-pho", "linh-vuc", "co-hoi", "chinh-sach") if u.startswith(k + "/") and u != k + "/"), "trang")
+    groups[g].append((u, d))
 files = []
 for g, items in groups.items():
     items.sort()
