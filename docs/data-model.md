@@ -70,3 +70,11 @@ Trạng thái (đang nhận hồ sơ, sắp diễn ra, đã kết thúc) đượ
 ## Bài toán (`challenges.yaml`)
 
 Hướng có nhu cầu thật mà thành phố hoặc doanh nghiệp đặt ra, để startup cân nhắc. Mỗi mục gồm `id`, `title` (vi, en), `summary` (vi, en), `source`. Đây không phải kêu gọi hồ sơ; khi có chương trình cụ thể, thêm vào `opportunities.yaml`.
+
+## Logo
+
+Tệp `logos/<id>.webp`, 128 × 128 px, nền trong suốt. Logo là nhãn hiệu của chủ sở hữu, không thuộc giấy phép CC BY 4.0 (xem `logos/README.md`). Website tự hiện logo nếu có tệp trùng `id`.
+
+## Lĩnh vực
+
+Website gán tối đa 3 lĩnh vực cho startup, doanh nghiệp, quỹ và dự án, dựa trên phân loại và mô tả (danh sách trong `tools/build.py`, biến `SECTORS`).

@@ -2,7 +2,7 @@
 (function () {
   var D = {
     vi: {
-      nav_home: "Trang chủ", nav_dir: "Danh bạ", nav_map: "Bản đồ", nav_opps: "Cơ hội", nav_cities: "Thành phố", r_hai_phong: "Hải Phòng", nav_events: "Sự kiện", nav_policy: "Chính sách", nav_contribute: "Đóng góp",
+      nav_home: "Trang chủ", nav_dir: "Danh bạ", nav_map: "Bản đồ", nav_opps: "Cơ hội", nav_cities: "Thành phố", search_ph2: "Tìm theo tên, lĩnh vực, mô tả…", r_hai_phong: "Hải Phòng", nav_events: "Sự kiện", nav_policy: "Chính sách", nav_contribute: "Đóng góp",
       theme: "Đổi giao diện sáng, tối", lang: "English",
       foot_data: "Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.", foot_src: "Mã nguồn và dữ liệu trên GitHub",
       search_ph: "Tìm tổ chức, startup, quỹ…", search_btn: "Tìm",
@@ -19,7 +19,7 @@
       no_place: "Chưa có vị trí", by_ward: "Vị trí theo phường, xã", by_addr: "Vị trí theo địa chỉ"
     },
     en: {
-      nav_home: "Home", nav_dir: "Directory", nav_map: "Map", nav_opps: "Opportunities", nav_cities: "Cities", r_hai_phong: "Hai Phong", nav_events: "Events", nav_policy: "Policies", nav_contribute: "Contribute",
+      nav_home: "Home", nav_dir: "Directory", nav_map: "Map", nav_opps: "Opportunities", nav_cities: "Cities", search_ph2: "Search by name, sector, description…", r_hai_phong: "Hai Phong", nav_events: "Events", nav_policy: "Policies", nav_contribute: "Contribute",
       theme: "Switch light or dark theme", lang: "Tiếng Việt",
       foot_data: "Open data under CC BY 4.0, code under MIT.", foot_src: "Code and data on GitHub",
       search_ph: "Search organisations, startups, funds…", search_btn: "Search",
@@ -79,5 +79,47 @@
       document.documentElement.setAttribute("data-theme", next); store.set("vie-theme", next);
     });
     apply();
+  });
+
+  /* Tìm nhanh toàn trang: nút trên thanh điều hướng, phím "/" */
+  document.addEventListener("DOMContentLoaded", function () {
+    var acts = document.querySelector("header.top .tools");
+    if (!acts || !window.ICON) return;
+    var btn = document.createElement("button"); btn.type = "button"; btn.className = "btn ghost qs-btn"; btn.innerHTML = ICON("search", 16);
+    btn.setAttribute("aria-label", VIE.lang() === "en" ? "Search" : "Tìm nhanh"); btn.title = (VIE.lang() === "en" ? "Search" : "Tìm nhanh") + " ( / )";
+    acts.insertBefore(btn, acts.firstChild);
+    var ov = document.createElement("div"); ov.className = "qs"; ov.hidden = true;
+    ov.innerHTML = '<div class="qs-box" role="dialog" aria-modal="true"><div class="bigsearch"><span class="bs-ico">' + ICON("search", 20) + '</span><input type="search" autocomplete="off"></div><ul class="sugg"></ul></div>';
+    document.body.append(ov);
+    var inp = ov.querySelector("input"), ul = ov.querySelector("ul"), data = null, sel = -1;
+    var norm = function (s) { return (s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase(); };
+    function open() { ov.hidden = false; inp.value = ""; ul.replaceChildren(); inp.placeholder = VIE.t("search_ph2"); inp.focus(); if (!data) VIE.load("actors.json").then(function (d) { data = d; if (inp.value) inp.dispatchEvent(new Event("input")); }); }
+    function close() { ov.hidden = true; }
+    btn.onclick = open;
+    ov.addEventListener("click", function (ev) { if (ev.target === ov) close(); });
+    document.addEventListener("keydown", function (ev) {
+      if (ev.key === "/" && !/input|textarea|select/i.test(document.activeElement.tagName)) { ev.preventDefault(); open(); }
+      else if (ev.key === "Escape" && !ov.hidden) close();
+    });
+    inp.addEventListener("input", function () {
+      ul.replaceChildren(); sel = -1; if (!data) return;
+      var q = norm(inp.value.trim()); if (q.length < 2) return; var ws = q.split(/\s+/);
+      var hits = data.filter(function (a) { var h = norm([a.name.vi, a.name.en, (a.alt_names || []).join(" "), (a.categories || []).join(" ")].join(" ")); return ws.every(function (w) { return h.indexOf(w) >= 0; }); })
+        .sort(function (a, b) { return (norm(a.name.vi).indexOf(q) === 0 ? 0 : 1) - (norm(b.name.vi).indexOf(q) === 0 ? 0 : 1) || (b.logo ? 1 : 0) - (a.logo ? 1 : 0); }).slice(0, 8);
+      hits.forEach(function (x) {
+        var li = document.createElement("li"); li.setAttribute("role", "option"); var a = document.createElement("a"); a.href = VIE.root + "a/" + x.id + "/";
+        var im;
+        if (x.logo) { im = document.createElement("img"); im.src = VIE.root + x.logo; im.alt = ""; } else { im = VIE.el("span", "ini", (x.name.vi[0] || "?").toUpperCase()); }
+        im.className = "sg-logo" + (x.logo ? "" : " ini"); a.append(im);
+        var t = VIE.el("span", "sg-t"); t.append(VIE.el("span", "nm", VIE.name(x)), VIE.el("span", "muted small", VIE.typeLabel(x.type) + " · " + VIE.regionLabel(x.region))); a.append(t); li.append(a); ul.append(li);
+      });
+      var all = VIE.el("li", "sg-all"); all.innerHTML = ICON("search", 16) + "<span></span>"; all.querySelector("span").textContent = (VIE.lang() === "en" ? "Search the directory for “" : "Tìm trong danh bạ “") + inp.value.trim() + "”";
+      all.onclick = function () { location.href = VIE.root + "danh-ba/?q=" + encodeURIComponent(inp.value.trim()); }; ul.append(all);
+    });
+    inp.addEventListener("keydown", function (ev) {
+      var items = ul.querySelectorAll("li[role=option]");
+      if (ev.key === "ArrowDown" || ev.key === "ArrowUp") { ev.preventDefault(); if (!items.length) return; sel = (sel + (ev.key === "ArrowDown" ? 1 : -1) + items.length) % items.length; items.forEach(function (n, k) { n.classList.toggle("act", k === sel); }); }
+      else if (ev.key === "Enter") { location.href = sel >= 0 && items[sel] ? items[sel].querySelector("a").href : VIE.root + "danh-ba/?q=" + encodeURIComponent(inp.value.trim()); }
+    });
   });
 })();

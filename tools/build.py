@@ -123,7 +123,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 <link rel="stylesheet" href="{SITE_ROOT}assets/style.css">
 <link rel="icon" href="{SITE_ROOT}assets/favicon.svg" type="image/svg+xml">
 {head}
-<script src="{SITE_ROOT}assets/app.js"></script>{sc}
+<script src="{SITE_ROOT}assets/icons.js"></script><script src="{SITE_ROOT}assets/app.js"></script>{sc}
 </head>
 <body>
 <a class="sr" href="#main">Bỏ qua thanh điều hướng</a>
@@ -156,10 +156,52 @@ def type_tag(t):
 def dir_link(**params):
     return f"{SITE_ROOT}danh-ba/?" + urllib.parse.urlencode(params)
 
+
+# ---------- lĩnh vực (tính khi dựng trang, không sửa dữ liệu gốc) ----------
+import unicodedata as _ud, re as _re
+def _fold(s):
+    s = (s or "").replace("đ", "d").replace("Đ", "D")
+    return "".join(c for c in _ud.normalize("NFKD", s) if not _ud.combining(c)).lower()
+SECTORS = [
+    ("ai", "AI, phần mềm", "AI, software", r"\bai\b|tri tue nhan tao|machine learning|\bhoc may\b|phan mem|software|\bsaas\b|\bapps?\b|chatbot|voicebot|\bdu lieu\b|\bdata\b|\bcloud\b|dam may|\berp\b|\bcrm\b|chuyen doi so|digital transformation|computer vision|thi giac may|\bllm\b|tac tu|\bagents?\b|nen tang so|platform"),
+    ("fintech", "Tài chính số", "Fintech", r"fintech|tai chinh|thanh toan|payment|ngan hang|\bbank|vi dien tu|\bwallet|bao hiem|insur|ke toan|accounting|chung khoan|securities|cho vay|\bloan|remittance|chuyen tien|hoan tien|cashback"),
+    ("web3", "Web3, blockchain", "Web3, blockchain", r"web3|blockchain|chuoi khoi|crypto|\btokens?\b|tokeni|\bdefi\b|\bnft|stablecoin|on-chain|tren chuoi|solana|ethereum|\bdao\b"),
+    ("commerce", "Thương mại, bán lẻ", "Commerce, retail", r"thuong mai dien tu|ecommerce|e-commerce|\bban le\b|retail|\bban hang\b|mua sam|\bshop\b|marketplace|tiktok shop|amazon|print on demand|in theo yeu cau|dac san"),
+    ("agrifood", "Nông nghiệp, thực phẩm", "Agri, food", r"nong nghiep|agri|thuc pham|\bfoods?\b|nong san|ca phe|coffee|\btra (thao|hoa|shan|xanh|viet|co thu)|\btea\b|\bnam (an|linh chi|dong trung)|mushroom|thuy san|aquacult|nuoi tom|shrimp|chan nuoi|livestock|duoc lieu|sam ngoc linh|ginseng|\bocop\b|to yen|chim yen|mat ong|honey|\bbanh\b|nuoc mam|hop tac xa|cooperative|dong trung ha thao|rau cu|trai cay|gia vi|bot nem|\bmut\b"),
+    ("health", "Y tế, sinh học", "Health, bio", r"\by te\b|healthcare|health|suc khoe|benh nhan|medical|y khoa|duoc pham|pharma|cong nghe sinh hoc|biotech|che pham sinh hoc|clinic|phong kham|nha khoa|rang mieng|my pham|cosmetic|lam dep|beauty|cham soc (da|suc khoe|tre|me)"),
+    ("edu", "Giáo dục", "Education", r"giao duc|edtech|education|hoc tap|hoc sinh|sinh vien|e-learning|learning|dao tao|training|tieng anh|english|ngoai ngu|\bstem\b|tutor|thu vien|library|luyen thi|khoa hoc truc tuyen"),
+    ("tourism", "Du lịch, văn hóa", "Tourism, culture", r"du lich|travel|\btours?\b|tourism|homestay|khach san|\bhotels?\b|van hoa|culture|di san|heritage|lang nghe|thu cong|handcraft|nghe thuat|\bart\b|am thuc|farmstay|luu tru"),
+    ("climate", "Năng lượng, môi trường", "Energy, climate", r"nang luong|energy|solar|mat troi|\bpin\b|battery|hydro|carbon|khi nha kinh|\bghg\b|net zero|moi truong|environment|tai che|recycl|\brac\b|waste|chat thai|tuan hoan|circular|climate|khi hau|sinh khoi|biomass|\bnhua\b|plastic|phan huy|bioplastic|khu mui"),
+    ("deeptech", "Bán dẫn, robot, phần cứng", "Chips, robotics, hardware", r"ban dan|semiconductor|\bchips?\b|vi mach|robot|drone|\buav\b|\biot\b|aiot|phan cung|hardware|cam bien|sensor|tu dong hoa (cong nghiep|san xuat|nha may)|industrial automation|lidar|vat lieu|materials?\b|\bnano|graphene|\b3d\b|thiet bi"),
+    ("mobility", "Logistics, di chuyển", "Logistics, mobility", r"logistics|van tai|transport|giao hang|delivery|\bxe (may|dien|o to|tai)|vehicle|\bo to\b|automotive|\bev\b|\bcang\b|\bport\b|\bkho (bai|hang)|warehouse|chuoi cung ung|supply chain|goi xe|ride-hailing|chuoi lanh"),
+    ("marketing", "Truyền thông, marketing", "Media, marketing", r"marketing|quang cao|advertis|truyen thong|\bmedia\b|noi dung so|\bcontent\b|thuong hieu|\bbrand|agency|\bvideo\b|\bgames?\b|giai tri|entertain|martech|affiliate"),
+    ("property", "Bất động sản, xây dựng", "Property, construction", r"bat dong san|proptech|real estate|xay dung|construction|kien truc|architect|noi that|interior|toa nha|\bbuilding\b|nha o|housing|contech|nha mo-dun|modular"),
+]
+_SEC_RX = [(k, _re.compile(rx)) for k, _, _, rx in SECTORS]
+def sectors_of(a):
+    if a["type"] not in ("startup", "company", "creator", "fund"):
+        return []
+    txt = " " + _fold(" ".join((a.get("categories") or []) + [a.get("description", {}).get("vi", "") or "", a["name"]["vi"]])) + " "
+    found = [k for k, rx in _SEC_RX if rx.search(txt)]
+    return found[:3]
+LOGO_DIR = os.path.join(ROOT, "logos")
+for a in actors:
+    a["sectors"] = sectors_of(a)
+    if os.path.exists(os.path.join(LOGO_DIR, a["id"] + ".webp")):
+        a["logo"] = f"logos/{a['id']}.webp"
+
+def logo_img(a, size=40, cls="lg"):
+    if a.get("logo"):
+        return f'<img class="{cls}" src="{SITE_ROOT}{a["logo"]}" alt="" width="{size}" height="{size}" loading="lazy">'
+    ini = "".join(w[0] for w in _re.sub(r"[^\w\s]", " ", a["name"]["vi"]).split()[:2]).upper() or "?"
+    return f'<span class="{cls} ini" aria-hidden="true" style="width:{size}px;height:{size}px">{e(ini)}</span>'
+
 # ---------- làm sạch thư mục xuất ----------
 if os.path.isdir(OUT):
     shutil.rmtree(OUT)
 shutil.copytree(os.path.join(WEB, "assets"), os.path.join(OUT, "assets"))
+if os.path.isdir(LOGO_DIR):
+    shutil.copytree(LOGO_DIR, os.path.join(OUT, "logos"), ignore=shutil.ignore_patterns("*.md"))
 os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
 
 # ---------- dữ liệu xuất bản ----------
@@ -168,6 +210,7 @@ def dump(name, obj):
 
 public = [{k: v for k, v in a.items() if not k.startswith("_")} for a in actors]
 dump("actors.json", public)
+dump("sectors.json", [{"id": k, "vi": vi, "en": en} for k, vi, en, _ in SECTORS])
 dump("relations.json", relations)
 dump("opportunities.json", [{k: v for k, v in o.items() if not k.startswith("_")} | {"status": opp_status(o)} for o in opps])
 dump("policies.json", policies)
@@ -315,28 +358,34 @@ static_rows = "".join(
     f'{type_tag(a["type"])}{ver_badge(a["verification"]["level"])}</a></li>'
     for a in sorted(actors, key=lambda x: x["name"]["vi"].lower()))
 dir_body = f"""
-<div class="wrap page-head"><h1 data-i18n="nav_dir">Danh bạ</h1>
-<p class="lead" data-vi="Lọc theo loại, khu vực và mức xác minh. Đường dẫn trên thanh địa chỉ giữ nguyên bộ lọc, gửi cho người khác là họ thấy đúng kết quả này." data-en="Filter by type, area and verification. The address bar keeps your filters, so a shared link shows the same results.">Lọc theo loại, khu vực và mức xác minh.</p></div>
-<div class="wrap dir">
-<aside class="filters" aria-label="Bộ lọc"><details open><summary data-i18n="f_filters">Bộ lọc</summary>
-<fieldset id="f-type"><legend data-i18n="f_type">Loại</legend></fieldset>
-<fieldset id="f-region"><legend data-i18n="f_region">Khu vực</legend></fieldset>
-<fieldset id="f-ver"><legend data-i18n="f_ver">Mức xác minh</legend></fieldset>
-<fieldset id="f-status"><legend data-i18n="f_status">Tình trạng</legend></fieldset>
-<button class="btn ghost" id="clear" type="button" data-i18n="f_clear">Xoá bộ lọc</button>
-</details></aside>
-<section aria-live="polite">
-<div class="bar">
+<div class="wrap page-head dir-head"><h1 data-i18n="nav_dir">Danh bạ</h1>
+<p class="lead" data-vi="{len(actors)} tổ chức, startup, quỹ, trường và cơ quan trong hệ sinh thái. Gõ để tìm, chọn biểu tượng để lọc; đường dẫn giữ nguyên bộ lọc để gửi cho người khác." data-en="{len(actors)} organisations, startups, funds, universities and agencies. Type to search, tap an icon to filter; the link keeps your filters.">{len(actors)} tổ chức, startup, quỹ, trường và cơ quan trong hệ sinh thái.</p>
+<div class="bigsearch" role="search"><span class="bs-ico" id="bs-ico"></span>
 <label class="sr" for="q" data-i18n="search_ph">Tìm</label>
-<input id="q" type="search" data-i18n-ph="search_ph" placeholder="Tìm tổ chức, startup, quỹ…">
+<input id="q" type="search" autocomplete="off" data-i18n-ph="search_ph2" placeholder="Tìm theo tên, lĩnh vực, mô tả…" aria-controls="sugg" aria-expanded="false">
+<ul id="sugg" class="sugg" role="listbox" hidden></ul></div></div>
+<div class="wrap">
+<div class="chiprow" id="c-type" role="group" aria-label="Loại tác nhân"></div>
+<div class="chiprow sm" id="c-sector" role="group" aria-label="Lĩnh vực"></div>
+<div class="dir-tools">
+<button type="button" class="btn ghost" id="more" aria-expanded="false" aria-controls="morepanel"><span id="more-ico"></span> <span data-vi="Bộ lọc khác" data-en="More filters">Bộ lọc khác</span> <span class="badge" id="more-n" hidden></span></button>
+<div class="pills" id="pills"></div>
+<span class="spacer"></span>
 <label class="sr" for="sort">Sắp xếp</label>
-<select id="sort"><option value="az" data-i18n="sort_az">Tên A–Z</option><option value="ver" data-i18n="sort_ver">Đã xác minh trước</option></select>
-<div class="seg" role="group" aria-label="Kiểu hiển thị"><button type="button" id="v-list" aria-pressed="true" data-i18n="view_list">Danh sách</button><button type="button" id="v-cards" aria-pressed="false" data-i18n="view_cards">Thẻ</button></div>
+<select id="sort"><option value="rich" data-vi="Thông tin đầy đủ trước" data-en="Most complete first">Thông tin đầy đủ trước</option><option value="az" data-i18n="sort_az">Tên A–Z</option><option value="ver" data-i18n="sort_ver">Đã xác minh trước</option></select>
+<div class="seg" role="group" aria-label="Kiểu hiển thị"><button type="button" id="v-cards" aria-pressed="true" data-i18n="view_cards">Thẻ</button><button type="button" id="v-list" aria-pressed="false" data-i18n="view_list">Danh sách</button></div>
 </div>
-<p class="count" id="count"></p>
+<div class="morepanel" id="morepanel" hidden>
+<fieldset id="f-region"><legend data-i18n="f_region">Khu vực</legend></fieldset>
+<fieldset id="f-status"><legend data-i18n="f_status">Tình trạng</legend></fieldset>
+<fieldset id="f-ver"><legend data-i18n="f_ver">Mức xác minh</legend></fieldset>
+<fieldset id="f-has"><legend data-vi="Có thông tin" data-en="Has">Có thông tin</legend></fieldset>
+<button class="btn ghost" id="clear" type="button" data-i18n="f_clear">Xoá bộ lọc</button>
+</div>
+<p class="count" id="count" aria-live="polite"></p>
 <div id="results"><ul class="rows">{static_rows}</ul></div>
 <nav class="pager" id="pager" aria-label="Phân trang"></nav>
-</section></div>
+</div>
 """
 write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["directory.js"]))
 
@@ -420,7 +469,7 @@ for a in actors:
 <div class="wrap actor">
 <article>
 <p>{type_tag(a["type"])}</p>
-<h1 style="margin-top:8px">{e(name)}</h1>
+{logo_img(a, 72, "lg alogo")}<h1 style="margin-top:8px">{e(name)}</h1>
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}
 <dl class="facts">{facts_html}</dl>
@@ -577,9 +626,9 @@ if BENCH:
                 kpi("Tổ chức hỗ trợ, vườn ươm", "Support orgs, incubators", str(tc["support_org"] + tc["incubator"] + tc["accelerator"] + tc["space"])),
                 kpi("Trường, viện", "Universities", str(tc["university"])), kpi("Cơ quan nhà nước", "Government", str(tc["government"]))]
         def lst(t, n=24):
-            xs = sorted([a for a in acts if a["type"] == t], key=lambda a: (VER_ORDER.get(a["verification"]["level"], 9), not a.get("description"), a["name"]["vi"].lower()))
+            xs = sorted([a for a in acts if a["type"] == t], key=lambda a: (not a.get("logo"), not a.get("description"), VER_ORDER.get(a["verification"]["level"], 9), a["name"]["vi"].lower()))
             if not xs: return '<p class="muted small" data-vi="Chưa có trong danh bạ." data-en="None listed yet.">Chưa có trong danh bạ.</p>'
-            items = "".join(f'<li><a href="{SITE_ROOT}a/{a["id"]}/">{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
+            items = "".join(f'<li><a href="{SITE_ROOT}a/{a["id"]}/">{logo_img(a, 22)}{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
             more = f'<p class="small"><a href="{dir_link(type=t, region=",".join(regs))}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p>' if len(xs) > n else ""
             return f'<ul class="list-plain alumni">{items}</ul>{more}'
         copps = sorted([o for o in opps if o["_region"] in regs], key=lambda o: opp_key_date(o), reverse=True)
