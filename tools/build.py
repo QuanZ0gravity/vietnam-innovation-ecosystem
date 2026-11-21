@@ -620,9 +620,6 @@ def ind_table(inds):
     return ('<div class="tbl-wrap"><table class="tbl"><thead><tr><th data-vi="Ngành" data-en="Industry">Ngành</th><th data-vi="Hạng thế giới" data-en="Global rank">Hạng thế giới</th>'
             '<th data-vi="Số startup" data-en="Startups">Số startup</th></tr></thead><tbody>' + rows + '</tbody></table></div>')
 
-SB_NOTE = ('<p class="small muted src-note" data-vi="Số liệu xếp hạng, startup, vốn và ngành: StartupBlink, Global Startup Ecosystem Index 2026 (trang công khai, truy cập 21/11/2026). Số tác nhân, cơ hội: danh bạ mở này." '
-           'data-en="Rankings, startups, funding and industries: StartupBlink Global Startup Ecosystem Index 2026 (public pages, accessed 21 Nov 2026). Actors and opportunities: this open directory.">'
-           'Số liệu xếp hạng, startup, vốn và ngành: StartupBlink, Global Startup Ecosystem Index 2026 (trang công khai, truy cập 21/11/2026). Số tác nhân, cơ hội: danh bạ mở này.</p>')
 
 
 # ---------- biểu đồ SVG (dựng sẵn, không cần thư viện) ----------
@@ -762,7 +759,6 @@ if BENCH:
 <section id="co-hoi" class="sec"><h2 data-vi="Cơ hội" data-en="Opportunities">Cơ hội</h2><div class="opp-list">{opp_html}</div>
 <p class="small" style="margin-top:12px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></section>
 <section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
-<p class="small" style="margin-top:10px"><a href="{e(c["url"])}" rel="noopener" data-vi="Trang {e(c['name'])} trên StartupBlink" data-en="{e(c['name'])} on StartupBlink">Trang {e(c["name"])} trên StartupBlink</a></p></section>
 </div>"""
         body += """<script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("citymap");VIEMAP.render(el,el.dataset.ids.split(","),document.getElementById("citymapnote"));});</script>"""
         write(f"thanh-pho/{c['id']}/index.html", page(f"Khởi nghiệp {c['name']}", body, "cities", scripts=["map.js"], head=LEAF,
