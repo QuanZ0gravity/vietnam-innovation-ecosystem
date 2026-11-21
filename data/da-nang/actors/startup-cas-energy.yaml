@@ -1,0 +1,15 @@
+id: startup-cas-energy
+name:
+  vi: CAS Energy
+type: startup
+categories:
+- Nông nghiệp đô thị, AIoT
+- Nông nghiệp, khí hậu
+website: https://cas-energy.com
+description:
+  vi: Hệ thống nông nghiệp đô thị thông minh thích ứng biến đổi khí hậu.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

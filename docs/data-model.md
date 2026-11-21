@@ -30,7 +30,7 @@ Quy tắc chính xác nằm trong [`schema/actor.schema.json`](../schema/actor.s
 
 ## Quan hệ (`relations.csv`)
 
-`from, type, to, since, source`. Loại quan hệ: `incubated_by`, `accelerated_by`, `invested_by`, `mentored_by`, `co_organized`, `referred`, `funded_by`, `member_of`, `incubated_by` (startup được tổ chức đó ươm tạo, hỗ trợ; `since` là ngày vào chương trình), `part_of` (đơn vị trực thuộc, ví dụ trung tâm khởi nghiệp của một trường), `related` (chưa phân loại).
+`from, type, to, since, source`. Loại quan hệ: `incubated_by`, `accelerated_by`, `invested_by`, `mentored_by`, `co_organized`, `referred`, `funded_by`, `member_of`, `partner` (đối tác công nghệ, thương mại), `incubated_by` (startup được tổ chức đó ươm tạo, hỗ trợ; `since` là ngày vào chương trình), `part_of` (đơn vị trực thuộc, ví dụ trung tâm khởi nghiệp của một trường), `related` (chưa phân loại).
 
 ## Tham chiếu (`references.csv`, `mentions.csv`)
 
@@ -62,6 +62,11 @@ Quy tắc chính xác: [`schema/opportunity.schema.json`](../schema/opportunity.
 | `eligibility`, `benefits`, `funding` | Đối tượng, quyền lợi, số vốn hoặc giải thưởng công bố |
 | `apply_url`, `primary_source` | Trang đăng ký và trang của đơn vị tổ chức; không dùng trang tổng hợp |
 | `secondary_sources` | Bài viết liên quan trên trang tổng hợp, báo chí |
+| `participants` | `id` các tác nhân được chọn, tham gia hoặc đoạt giải |
 | `outcome` | Kết quả sau khi kết thúc: `applicants`, `finalists`, `selected`, `investors`, `deals`, `note`, `source` |
 
 Trạng thái (đang nhận hồ sơ, sắp diễn ra, đã kết thúc) được tính tự động từ ngày khi dựng trang.
+
+## Bài toán (`challenges.yaml`)
+
+Hướng có nhu cầu thật mà thành phố hoặc doanh nghiệp đặt ra, để startup cân nhắc. Mỗi mục gồm `id`, `title` (vi, en), `summary` (vi, en), `source`. Đây không phải kêu gọi hồ sơ; khi có chương trình cụ thể, thêm vào `opportunities.yaml`.

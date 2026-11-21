@@ -1,0 +1,15 @@
+id: startup-naiscorp-robotics
+name:
+  vi: Naiscorp Robotics
+type: startup
+categories:
+- Robot dịch vụ
+- Robotics, drone
+website: https://naiscorp.com
+description:
+  vi: Robot cho ngân hàng, bán lẻ, y tế, giáo dục, chăm sóc người cao tuổi; đối tác thương mại hóa là SPT.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

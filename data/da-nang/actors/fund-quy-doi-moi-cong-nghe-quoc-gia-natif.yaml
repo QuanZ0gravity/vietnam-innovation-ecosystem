@@ -4,9 +4,12 @@ name:
 type: fund
 categories:
 - Quỹ nhà nước
+description:
+  vi: Trình bày hỗ trợ tài chính cho doanh nghiệp tại hội thảo 17/11/2026; điều kiện và mức hỗ trợ chưa cập nhật.
 region: da-nang
 verification:
   level: unverified
 sources:
 - Tài liệu Hội thảo phổ biến pháp luật công nghiệp công nghệ số 17/11/2026
+- Bản đồ hệ sinh thái
 legacy_id: d116

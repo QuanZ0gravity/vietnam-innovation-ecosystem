@@ -5,9 +5,12 @@ type: company
 categories:
 - Tập đoàn công nghệ
 website: https://www.cmcai.vn
+description:
+  vi: Nền tảng CLEX hỗ trợ công vụ pháp lý; theo CMC đang thí điểm tại 17 bộ, 34 tỉnh thành. Nhà cung cấp cho khu vực công, trình bày tại hội thảo 17/11/2026.
 region: da-nang
 verification:
   level: unverified
 sources:
 - Tài liệu Hội thảo phổ biến pháp luật công nghiệp công nghệ số 17/11/2026
+- Bản đồ hệ sinh thái
 legacy_id: d118

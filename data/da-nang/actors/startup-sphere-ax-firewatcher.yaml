@@ -1,0 +1,14 @@
+id: startup-sphere-ax-firewatcher
+name:
+  vi: Sphere AX (FireWatcher)
+type: startup
+categories:
+- ClimateTech, AI
+- Nông nghiệp, khí hậu
+description:
+  vi: Giám sát, cảnh báo sớm cháy rừng thông minh.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

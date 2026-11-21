@@ -1,0 +1,14 @@
+id: startup-sokucom
+name:
+  vi: Sokucom
+type: startup
+categories:
+- Phần mềm
+- AI và phần mềm
+description:
+  vi: Dự án phần mềm trong danh sách khởi nghiệp ĐMST của thành phố.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

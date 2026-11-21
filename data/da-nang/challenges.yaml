@@ -1,0 +1,81 @@
+# Bài toán thành phố đang cần giải pháp. Mỗi bài toán nên dẫn tới văn bản chính sách hoặc phát biểu có nguồn.
+- id: challenge-01
+  title:
+    vi: AI và vi mạch cho doanh nghiệp địa phương
+    en: AI and semiconductors for local businesses
+  summary:
+    vi: 'Thành phố ưu tiên nhân lực vi mạch, AI và công nghiệp công nghệ số, đồng thời hợp tác với các tập đoàn công nghệ toàn cầu. Cơ hội cho startup: công cụ AI giúp doanh nghiệp nhỏ tự động hóa, thiết kế chip cho thiết bị chuyên dụng, dịch vụ dữ liệu cho chính quyền số.'
+    en: 'The city prioritises semiconductor, AI and digital-industry talent and partners with global tech firms. Openings: AI tools that automate small businesses, chip design for specialised devices, data services for digital government.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-02
+  title:
+    vi: Tài chính số trong sandbox và VIFC-DN
+    en: Digital finance in the sandbox and VIFC-DN
+  summary:
+    vi: Cơ chế thử nghiệm có kiểm soát và Trung tâm tài chính quốc tế mở chỗ cho thanh toán, tài sản số và tài chính xuyên biên giới được thử nghiệm hợp pháp trước khi mở rộng.
+    en: The regulatory sandbox and international financial centre let payments, digital assets and cross-border finance be piloted legally before scaling.
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-03
+  title:
+    vi: 'Kinh tế tầm thấp: drone và UAV'
+    en: 'Low-altitude economy: drones and UAVs'
+  summary:
+    vi: 'Thành phố đã đưa kinh tế không gian tầm thấp vào nghị trình. Bài toán: giao hàng, kiểm tra hạ tầng, nông nghiệp chính xác, cứu hộ ven biển và miền núi.'
+    en: 'The city has put the low-altitude economy on its agenda. Problems: delivery, infrastructure inspection, precision farming, coastal and mountain rescue.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-04
+  title:
+    vi: Chuyển đổi số cho doanh nghiệp nhỏ và hộ kinh doanh
+    en: Digital transformation for SMEs and household businesses
+  summary:
+    vi: Kế hoạch của thành phố hướng tới doanh nghiệp nhỏ và hộ kinh doanh bán lẻ. Cần giải pháp rẻ, dễ dùng cho bán hàng, kế toán, hóa đơn điện tử và quản lý tồn kho.
+    en: 'City plans target SMEs and retail households. Needed: cheap, simple tools for sales, accounting, e-invoicing and inventory.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-05
+  title:
+    vi: Chuỗi giá trị dược liệu và Sâm Ngọc Linh
+    en: Medicinal plants and Ngoc Linh ginseng value chain
+  summary:
+    vi: Đề án dược liệu 2026-2035 và vùng trồng tại Trà Linh mở cơ hội cho truy xuất nguồn gốc, chế biến sâu, kiểm định chất lượng và thương mại hóa sản phẩm sức khỏe.
+    en: The 2026-2035 medicinal plants programme and growing areas in Tra Linh open room for traceability, deep processing, quality testing and health products.
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-06
+  title:
+    vi: Đưa OCOP và nông sản xứ Quảng ra thị trường
+    en: Taking Quang Nam OCOP and farm products to market
+  summary:
+    vi: 'Lãnh đạo các phường khu vực phía Nam nêu rõ: khách đến tham quan rồi đi, chưa có chỗ mua sắm sản phẩm địa phương. Cần kênh bán hàng, bao bì, logistics và câu chuyện thương hiệu cho sản phẩm OCOP.'
+    en: 'Southern ward leaders say visitors come and go without places to buy local products. Needed: sales channels, packaging, logistics and brand stories for OCOP products.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-07
+  title:
+    vi: Du lịch cộng đồng và di sản số
+    en: Community tourism and digital heritage
+  summary:
+    vi: Hợp tác xã du lịch cộng đồng, làng sinh thái và đô thị di sản cần đặt chỗ trực tuyến, trải nghiệm số hóa di sản và kết nối tour giữa các phường.
+    en: Community tourism cooperatives, eco-villages and heritage towns need online booking, digitised heritage experiences and tours linking wards.
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-08
+  title:
+    vi: Dịch vụ cho người lao động ở khu công nghệ và khu công nghiệp
+    en: Services for workers in tech parks and industrial zones
+  summary:
+    vi: Khu công nghệ số tập trung và các khu công nghiệp thu hút đông lao động. Cần nhà ở, bán lẻ, y tế, giáo dục mầm non và tiện ích số cho công nhân.
+    en: 'Digital tech parks and industrial zones draw many workers. Needed: housing, retail, healthcare, preschool and digital services for workers.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-09
+  title:
+    vi: Năng lượng sạch, kinh tế tuần hoàn và Net Zero
+    en: Clean energy, circular economy and net zero
+  summary:
+    vi: Doanh nghiệp năng lượng mặt trời địa phương và các cuộc thi Net Zero cho thấy nhu cầu về điện mặt trời phân tán, tiết kiệm năng lượng, tái chế và đo đếm carbon.
+    en: Local solar firms and net-zero competitions point to demand for distributed solar, energy efficiency, recycling and carbon accounting.
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)
+- id: challenge-10
+  title:
+    vi: Logistics và thương mại xuyên biên giới
+    en: Logistics and cross-border trade
+  summary:
+    vi: 'Khu thương mại tự do và cảng biển đặt Đà Nẵng làm cửa ngõ miền Trung. Cơ hội: thương mại điện tử xuyên biên giới, kho vận thông minh, thủ tục số cho xuất khẩu của doanh nghiệp nhỏ.'
+    en: 'The free trade zone and seaport make Da Nang a central gateway. Openings: cross-border e-commerce, smart warehousing, digital export paperwork for small firms.'
+  source: Bản đồ hệ sinh thái (tổng hợp từ chính sách và ý kiến lãnh đạo địa phương)

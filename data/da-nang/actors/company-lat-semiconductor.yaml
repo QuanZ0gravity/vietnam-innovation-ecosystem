@@ -1,0 +1,14 @@
+id: company-lat-semiconductor
+name:
+  vi: LAT Semiconductor
+type: company
+categories:
+- Bán dẫn
+website: https://latsemi.com
+description:
+  vi: Đào tạo nhân lực và nghiên cứu chip bán dẫn.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

@@ -1,0 +1,14 @@
+id: startup-svn-software
+name:
+  vi: SVN Software
+type: startup
+categories:
+- AI hàng hải
+- AI và phần mềm
+description:
+  vi: Giải pháp AI cho vận hành hàng hải.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

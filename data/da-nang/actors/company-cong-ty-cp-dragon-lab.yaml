@@ -1,9 +1,13 @@
 id: company-cong-ty-cp-dragon-lab
 name:
   vi: Công ty CP Dragon Lab
+alt_names:
+- MIMO
 type: company
 categories:
 - Tài sản số
+- Thử nghiệm có kiểm soát (sandbox)
+- Thương mại, fintech
 description:
   vi: Giải pháp MIMO trong sandbox, 36 tháng.
 region: da-nang
@@ -11,4 +15,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng (công bố sandbox 2026)
 legacy_id: d92

@@ -2,7 +2,13 @@ id: startup-hekate
 name:
   vi: Hekate
 type: startup
+categories:
+- AI thị giác máy tính
+- AI và phần mềm
 status: active
+website: https://hekate.ai
+description:
+  vi: Phát hiện vi phạm tự động bằng AI cho giám sát, tuân thủ.
 region: da-nang
 verification:
   level: partner_verified
@@ -10,3 +16,4 @@ verification:
   by: DNES
 sources:
 - Swiss EP – Map of ecosystem (11/2026)
+- Bản đồ hệ sinh thái

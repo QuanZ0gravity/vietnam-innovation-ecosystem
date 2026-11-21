@@ -1,0 +1,14 @@
+id: startup-vsemtek
+name:
+  vi: VSEMTEK
+type: startup
+categories:
+- Bán dẫn, năng lượng sạch
+- Bán dẫn
+description:
+  vi: Chip bán dẫn tối ưu cho ứng dụng năng lượng mặt trời.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

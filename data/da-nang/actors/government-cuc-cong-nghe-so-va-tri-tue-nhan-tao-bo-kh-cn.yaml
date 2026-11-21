@@ -4,9 +4,12 @@ name:
 type: government
 categories:
 - Cơ quan trung ương
+description:
+  vi: Chủ trì chính sách công nghiệp công nghệ số và trí tuệ nhân tạo; đồng tổ chức hội thảo 17/11/2026 tại Đà Nẵng. Các thông tư năm 2025 ghi đầu mối là Cục Công nghiệp công nghệ thông tin.
 region: da-nang
 verification:
   level: unverified
 sources:
 - Tài liệu Hội thảo phổ biến pháp luật công nghiệp công nghệ số 17/11/2026
+- Bản đồ hệ sinh thái
 legacy_id: d115

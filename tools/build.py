@@ -26,7 +26,7 @@ VER_ORDER = {"partner_verified": 0, "org_confirmed": 1, "source_checked": 2, "un
 VER_CLASS = {"unverified": "l0", "source_checked": "l1", "org_confirmed": "l2", "partner_verified": "l3"}
 
 # ---------- đọc dữ liệu ----------
-actors, relations, events, policies, places, refs, mentions, opps = [], [], [], [], [], {}, [], []
+actors, relations, events, policies, places, refs, mentions, opps, challenges = [], [], [], [], [], {}, [], [], []
 for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
     if not os.path.isdir(region_dir):
         continue
@@ -35,7 +35,7 @@ for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
         a = yaml.safe_load(open(path, encoding="utf-8"))
         a["_file"] = os.path.relpath(path, ROOT).replace(os.sep, "/")
         actors.append(a)
-    for name, bucket in (("events.yaml", events), ("policies.yaml", policies), ("places.yaml", places), ("opportunities.yaml", opps)):
+    for name, bucket in (("events.yaml", events), ("policies.yaml", policies), ("places.yaml", places), ("opportunities.yaml", opps), ("challenges.yaml", challenges)):
         p = os.path.join(region_dir, name)
         if os.path.exists(p):
             for item in yaml.safe_load(open(p, encoding="utf-8")) or []:
@@ -92,7 +92,7 @@ def opp_missing(o):
     return m
 opps_by_org = collections.defaultdict(list)
 for o in opps:
-    for x in o.get("organizer_ids") or []:
+    for x in (o.get("organizer_ids") or []) + (o.get("participants") or []):
         opps_by_org[x].append(o)
 policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
@@ -225,6 +225,8 @@ def opp_card(o, compact=False):
         txt = "; ".join(parts) + (". " if parts else "") + (oc.get("note") or "")
         if oc.get("source"): txt = txt + f' <a href="{e(oc["source"])}" rel="noopener" class="small">nguồn</a>'
         rows.append(("Kết quả", "Outcome", txt))
+    if o.get("participants"):
+        rows.append(("Tham gia, được chọn", "Participants", ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in o["participants"] if x in by_id)))
     rows_html = "" if compact else "".join(f'<dt data-vi="{a}" data-en="{b}">{a}</dt><dd>{c}</dd>' for a, b, c in rows)
     links = []
     if o.get("apply_url"): links.append(f'<a class="btn primary" href="{e(o["apply_url"])}" rel="noopener" data-vi="Đăng ký" data-en="Apply">Đăng ký</a>')
@@ -384,7 +386,7 @@ for a in actors:
     org_opps = opps_by_org.get(aid, [])
     opp_html = ""
     if org_opps:
-        opp_html = ('<div class="section"><h2 data-vi="Cơ hội do đơn vị này tổ chức" data-en="Opportunities run by this organisation">Cơ hội do đơn vị này tổ chức</h2><div class="opp-list" style="margin-top:12px">'
+        opp_html = ('<div class="section"><h2 data-vi="Cơ hội liên quan" data-en="Related opportunities">Cơ hội liên quan</h2><div class="opp-list" style="margin-top:12px">'
                     + "".join(opp_card(o, compact=True) for o in sorted(org_opps, key=opp_key_date, reverse=True)) + "</div></div>")
     parents = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "part_of" and r["to"] in by_id]
     children = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "part_of" and r["from"] in by_id]
@@ -466,6 +468,13 @@ for key, vi, en in groups:
              "upcoming": ("Chưa có cơ hội sắp diễn ra trong danh sách.", "No upcoming opportunities listed yet.")}.get(key)
     body_items = "".join(opp_card(o) for o in items) or (f'<p class="muted" data-vi="{empty[0]}" data-en="{empty[1]}">{empty[0]}</p>' if empty else "")
     blocks += f'<section class="opp-group" data-group="{key}"><h2 data-vi="{vi}" data-en="{en}">{vi} <span class="muted">({len(items)})</span></h2><div class="opp-list">{body_items}</div></section>'
+ch_html = ""
+if challenges:
+    ch_html = ('<section class="opp-group"><h2 data-vi="Bài toán thành phố đang cần giải pháp" data-en="Problems the city needs solved">Bài toán thành phố đang cần giải pháp</h2>'
+               '<p class="muted" style="margin-top:10px" data-vi="Không phải kêu gọi hồ sơ, mà là các hướng có nhu cầu thật để startup cân nhắc." data-en="Not calls for applications, but areas of real demand for startups to consider.">Không phải kêu gọi hồ sơ, mà là các hướng có nhu cầu thật để startup cân nhắc.</p>'
+               '<div class="cards" style="margin-top:16px">' + "".join(
+                   f'<article class="card"><p class="nm" data-vi="{e(c["title"]["vi"])}" data-en="{e(c["title"].get("en") or c["title"]["vi"])}">{e(c["title"]["vi"])}</p>'
+                   f'<p class="small muted" data-vi="{e(c["summary"]["vi"])}" data-en="{e(c["summary"].get("en") or c["summary"]["vi"])}">{e(c["summary"]["vi"])}</p></article>' for c in challenges) + '</div></section>')
 type_opts = "".join(f'<option value="{k}" data-vi="{v[0]}" data-en="{v[1]}">{v[0]}</option>' for k, v in OPP_TYPES.items())
 opp_script = """<script>document.addEventListener('DOMContentLoaded',function(){var s=document.getElementById('otype');
 s.addEventListener('change',function(){var v=s.value;document.querySelectorAll('.opp').forEach(function(a){a.hidden=v&&a.getAttribute('data-type')!==v});});});</script>"""
@@ -475,7 +484,7 @@ write("co-hoi/index.html", page("Cơ hội", f"""
 <div class="bar" style="margin-top:20px"><label for="otype" data-vi="Loại cơ hội" data-en="Type">Loại cơ hội</label>
 <select id="otype"><option value="" data-vi="Tất cả" data-en="All">Tất cả</option>{type_opts}</select>
 <a class="btn primary" href="https://github.com/{REPO}/edit/main/data/da-nang/opportunities.yaml" data-vi="Thêm cơ hội" data-en="Add an opportunity">Thêm cơ hội</a></div></div>
-<div class="wrap" style="padding-bottom:72px">{blocks}</div>{opp_script}""", "opps"))
+<div class="wrap" style="padding-bottom:72px">{blocks}{ch_html}</div>{opp_script}""", "opps"))
 write("su-kien/index.html", page("Cơ hội", f'<div class="wrap page-head"><h1>Trang đã chuyển</h1><p class="lead">Mục sự kiện nay là <a href="{SITE_ROOT}co-hoi/">Cơ hội</a>.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}co-hoi/">'))
 
 # ---------- chính sách ----------

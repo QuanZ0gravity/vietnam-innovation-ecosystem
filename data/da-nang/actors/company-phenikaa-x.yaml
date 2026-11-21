@@ -1,0 +1,14 @@
+id: company-phenikaa-x
+name:
+  vi: Phenikaa-X
+type: company
+categories:
+- Robot, xe tự hành
+website: https://phenikaa-x.com
+description:
+  vi: Đối tác công nghệ sáng lập của Alpha Asimov Robotics.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

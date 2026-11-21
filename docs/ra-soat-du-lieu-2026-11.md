@@ -80,3 +80,13 @@ Thêm 14 quan hệ `part_of`: các trường thành viên thuộc Đại học �
 - 200 quan hệ `incubated_by`, kèm ngày vào chương trình khi có.
 - Website, năm thành lập và tình trạng hoạt động của 5 tổ chức hỗ trợ.
 - Không đưa vào: email và số điện thoại của cá nhân phụ trách; thông tin nhà sáng lập nữ; số tiền đầu tư theo từng startup.
+
+## Bổ sung từ bản thử nghiệm (21/11/2026)
+
+- 36 tổ chức, startup mới từ danh sách doanh nghiệp công nghệ, đối tác và nhà cung cấp cho khu vực công (ví dụ XBStation, Naiscorp Robotics, SkyeChip, LAT Semiconductor, Qualcomm, VKU), kèm mô tả và lĩnh vực.
+- 13 hồ sơ đã có được bổ sung mô tả, lĩnh vực, website hoặc tên khác.
+- 6 doanh nghiệp được thử nghiệm có kiểm soát (sandbox) gắn vào cơ hội sandbox 2026, kèm tên sản phẩm và thời hạn.
+- 5 quan hệ đối tác `partner` (ví dụ Phenikaa-X và Alpha Asimov Robotics).
+- 10 bài toán thành phố đang cần giải pháp, trong `challenges.yaml`.
+- Không đưa vào: 105 hồ sơ mentor, diễn giả (dữ liệu cá nhân, cần sự đồng ý); các bài báo đã có đủ trong `references.csv`.
+- Tổng: 529 tác nhân, 271 startup.

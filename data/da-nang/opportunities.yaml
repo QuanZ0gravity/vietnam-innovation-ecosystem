@@ -105,9 +105,11 @@
   organizer: Sở KH&CN Đà Nẵng
   organizer_ids: [government-so-khoa-hoc-va-cong-nghe]
   event_date: '2026-08-24'
+  focus: [thanh toán, tài sản mã hóa, tài chính xuyên biên giới]
   outcome:
     selected: 6
-    note: 6 giải pháp được cho phép thử nghiệm có kiểm soát.
+    note: 6 giải pháp được cho phép thử nghiệm có kiểm soát, thời hạn 18 đến 36 tháng.
+  participants: [company-cong-ty-cp-payd, company-cong-ty-cp-danova-labs, company-icetea-solution, company-money-x-border, company-cong-ty-cp-dragon-lab, company-alphatrue-solutions]
   legacy_id: v27
 - id: opp-founder-villages-batch-01
   title: Founder Villages, Batch 01

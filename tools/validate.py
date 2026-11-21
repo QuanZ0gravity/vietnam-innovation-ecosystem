@@ -103,9 +103,9 @@ for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
         for k in ("apply_url", "primary_source"):
             if any(a in (item.get(k) or "") for a in AGGREGATORS):
                 errors.append(f"{rel} [{oid}]: {k} phải là trang của đơn vị tổ chức, không phải trang tổng hợp; chuyển liên kết này sang secondary_sources")
-        for x in item.get("organizer_ids") or []:
+        for x in (item.get("organizer_ids") or []) + (item.get("participants") or []):
             if x not in ids:
-                errors.append(f"{rel} [{oid}]: organizer_ids '{x}' không có trong danh bạ")
+                errors.append(f"{rel} [{oid}]: '{x}' không có trong danh bạ")
 
 if errors:
     print(f"Có {len(errors)} lỗi:\n" + "\n".join(errors))

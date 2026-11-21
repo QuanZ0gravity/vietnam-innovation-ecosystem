@@ -1,9 +1,13 @@
 id: company-money-x-border
 name:
   vi: Money X-Border
+alt_names:
+- Quyết toán ngoại biên
 type: company
 categories:
 - Thanh toán xuyên biên giới
+- Thử nghiệm có kiểm soát (sandbox)
+- Thương mại, fintech
 description:
   vi: Hạ tầng quyết toán ngoại biên trong sandbox, 24 tháng.
 region: da-nang
@@ -11,4 +15,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng (công bố sandbox 2026)
 legacy_id: d91

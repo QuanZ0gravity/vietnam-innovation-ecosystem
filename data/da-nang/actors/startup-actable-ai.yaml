@@ -1,0 +1,15 @@
+id: startup-actable-ai
+name:
+  vi: Actable AI
+type: startup
+categories:
+- GenAI tiếng Việt
+- AI và phần mềm
+website: https://actable.ai
+description:
+  vi: Mô hình AI tạo sinh chuyên biệt cho tiếng Việt.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

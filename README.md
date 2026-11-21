@@ -12,7 +12,7 @@ Bắt đầu từ **TP Đà Nẵng** (gồm khu vực Quảng Nam cũ). Các t�
 
 | Tỉnh, thành | Tác nhân | Cơ hội | Chính sách | Cập nhật |
 | --- | --- | --- | --- | --- |
-| Đà Nẵng | 493, trong đó 243 startup | 16 | 123 | 11/2026 |
+| Đà Nẵng | 529, trong đó 271 startup | 16 | 123 | 11/2026 |
 
 Phần lớn hồ sơ đang ở mức **chưa xác minh**. Đây là việc cộng đồng có thể giúp nhiều nhất: xem [Cách đóng góp](CONTRIBUTING.md).
 
@@ -41,6 +41,7 @@ data/
     actors/<id>.yaml     # mỗi tác nhân một tệp
     relations.csv        # quan hệ giữa các tác nhân
     opportunities.yaml   # cơ hội tạo deal flow: kêu gọi hồ sơ, cuộc thi, demo day, kết nối đầu tư, khách hàng
+    challenges.yaml      # bài toán thành phố đang cần giải pháp
     not-duplicates.csv   # các cặp tên gần giống nhưng đã xác nhận là khác nhau
     archive/             # dữ liệu cũ đã loại khỏi trang, giữ để đối chiếu
     policies.yaml        # văn bản chính sách

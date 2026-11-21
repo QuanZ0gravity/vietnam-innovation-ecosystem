@@ -1,0 +1,14 @@
+id: startup-makeai
+name:
+  vi: MakeAI
+type: startup
+categories:
+- Phần mềm AI
+- AI và phần mềm
+description:
+  vi: Dự án phần mềm AI trong hệ sinh thái khởi nghiệp thành phố.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái

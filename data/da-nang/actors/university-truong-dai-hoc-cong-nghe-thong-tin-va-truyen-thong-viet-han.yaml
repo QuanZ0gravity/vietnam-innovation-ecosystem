@@ -6,10 +6,15 @@ alt_names:
 type: university
 categories:
 - Viện, trường
+- Trường thành viên ĐHĐN
+website: https://vku.udn.vn
 address: 470 Trần Đại Nghĩa, quận Ngũ Hành Sơn, Đà Nẵng
+description:
+  vi: Đào tạo bán dẫn, AI, công nghệ số, thương mại điện tử, giáo dục khởi nghiệp.
 region: da-nang
 verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Bản đồ hệ sinh thái
 legacy_id: u3

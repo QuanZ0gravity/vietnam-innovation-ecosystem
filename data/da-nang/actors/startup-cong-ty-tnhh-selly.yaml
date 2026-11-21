@@ -2,8 +2,13 @@ id: startup-cong-ty-tnhh-selly
 name:
   vi: Công ty TNHH SELLY
 type: startup
+categories:
+- Thương mại xã hội
+- Thương mại, fintech
 status: active
 website: https://selly.vn/
+description:
+  vi: Nền tảng kết nối nhà sản xuất với người bán cá nhân; vòng Seed 2022.
 region: da-nang
 website_status: Không truy cập được, cần kiểm tra
 verification:
@@ -11,4 +16,5 @@ verification:
 sources:
 - startupdanang.vn
 - Swiss EP – Map of ecosystem (11/2026)
+- Bản đồ hệ sinh thái
 legacy_id: s39

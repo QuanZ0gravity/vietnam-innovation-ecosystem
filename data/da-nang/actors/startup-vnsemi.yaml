@@ -1,0 +1,13 @@
+id: startup-vnsemi
+name:
+  vi: VNSEMI
+type: startup
+categories:
+- Bán dẫn
+description:
+  vi: Phần mềm, máy móc, kiểm thử và đóng gói vi mạch.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
