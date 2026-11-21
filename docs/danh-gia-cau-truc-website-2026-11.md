@@ -44,3 +44,12 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - Bản đồ gộp vào Danh bạ (chế độ xem thứ ba, theo đúng bộ lọc đang chọn) và vào trang từng thành phố. Mục "Bản đồ" bỏ khỏi thanh điều hướng; đường dẫn `/ban-do/` tự chuyển sang Danh bạ.
 - Trường `sectors` trong schema (13 mã), biểu mẫu Issue có ô chọn lĩnh vực, 468 hồ sơ được gán gợi ý ban đầu.
 - Nút **Tải CSV** trong Danh bạ, xuất đúng các hồ sơ theo bộ lọc hiện tại.
+
+## Đợt 1 sau audit (21/11/2026): đã thực hiện
+
+- Mọi trang có `canonical`, Open Graph (`og:url`, `og:title`, `og:description`, `og:image`, `og:locale`) và thẻ Twitter. Ảnh chia sẻ mặc định `assets/og-default.png` (1200 × 630).
+- Trang chuyển hướng (`/ban-do/`, `/su-kien/`) và 404 có `noindex`, không vào sitemap.
+- Hồ sơ tổ chức có dữ liệu có cấu trúc schema.org (`Organization`, `EducationalOrganization`, `GovernmentOrganization`): tên, logo, mô tả, website và LinkedIn (`sameAs`), năm thành lập, địa phương, lĩnh vực. Trang chủ có `WebSite` kèm ô tìm kiếm (`SearchAction`).
+- Mô tả trang riêng cho từng trang; hồ sơ chưa có mô tả hoặc mô tả quá ngắn được ghép câu tự sinh (loại, địa phương, lĩnh vực).
+- Hồ sơ có hai khối "Cùng lĩnh vực" và "Cùng địa phương" (mỗi khối 6 hồ sơ, ưu tiên có logo và mô tả). Mỗi khối gồm 4 hồ sơ đầy đủ thông tin nhất và 2 hồ sơ kế cận theo tên, để cả hồ sơ ít thông tin cũng được liên kết tới. Trung bình mỗi hồ sơ giờ có 10.8 liên kết trỏ tới; hồ sơ chỉ có tối đa một liên kết giảm từ 538 xuống 2.
+- Sitemap chia thành tệp chỉ mục `sitemap.xml` và các tệp con `sitemap-trang.xml`, `sitemap-thanh-pho.xml`, `sitemap-to-chuc-N.xml` (tối đa 500 trang mỗi tệp). `lastmod` của hồ sơ lấy theo lần sửa gần nhất của tệp dữ liệu trong git.

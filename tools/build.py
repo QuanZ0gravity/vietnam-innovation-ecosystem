@@ -4,7 +4,7 @@ Biến môi trường:
   SITE_ROOT  đường dẫn gốc của trang (mặc định "/")
   SITE_URL   địa chỉ đầy đủ để tạo sitemap (mặc định https://innovation.invietnam.vn)
 """
-import collections, csv, datetime, glob, html, json, os, shutil, urllib.parse
+import collections, csv, datetime, glob, html, json, os, re as _re, shutil, urllib.parse
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -118,7 +118,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(full_title)}</title>
-<meta name="description" content="{e(desc or 'Danh bạ mở về startup, vườn ươm, quỹ, không gian sáng tạo và chính sách khởi nghiệp đổi mới sáng tạo Việt Nam, bắt đầu từ Đà Nẵng.')}">
+<meta name="description" content="{e(desc or 'Danh bạ mở về startup, vườn ươm, quỹ, không gian sáng tạo và chính sách khởi nghiệp đổi mới sáng tạo Việt Nam.')}">
 <meta property="og:title" content="{e(full_title)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap">
@@ -144,9 +144,49 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </html>
 """
 
-def write(rel, content):
+PAGES = []   # (đường dẫn, lastmod) của các trang được lập chỉ mục
+def _git_dates():
+    """Ngày sửa gần nhất của từng tệp dữ liệu theo git; không có git thì trả về rỗng."""
+    import subprocess
+    try:
+        out = subprocess.run(["git", "-C", ROOT, "log", "--format=@%cs", "--name-only", "--", "data"],
+                             capture_output=True, text=True, timeout=60).stdout
+    except Exception:
+        return {}
+    dates, cur = {}, None
+    for line in out.splitlines():
+        if line.startswith("@"):
+            cur = line[1:]
+        elif line.strip() and cur:
+            dates.setdefault(line.strip(), cur)
+    return dates
+GIT_DATES = _git_dates()
+
+def write(rel, content, lastmod=None):
     path = os.path.join(OUT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
+    if rel.endswith(".html") and "</head>" in content:
+        url_path = "" if rel == "index.html" else rel[:-len("index.html")] if rel.endswith("index.html") else rel
+        full = f"{SITE_URL}/{url_path}"
+        redirect = 'http-equiv="refresh"' in content
+        m = _re.search(r'<meta name="description" content="([^"]*)"', content)
+        d = m.group(1) if m else ""
+        t = _re.search(r"<title>(.*?)</title>", content, _re.S)
+        tags = [f'<link rel="canonical" href="{full}">', f'<meta property="og:url" content="{full}">',
+                '<meta property="og:site_name" content="Hệ sinh thái khởi nghiệp ĐMST Việt Nam">', '<meta property="og:locale" content="vi_VN">',
+                f'<meta property="og:description" content="{d}">']
+        if 'property="og:type"' not in content:
+            tags.append('<meta property="og:type" content="website">')
+        if 'property="og:image"' not in content:
+            tags += [f'<meta property="og:image" content="{SITE_URL}/assets/og-default.png">', '<meta property="og:image:width" content="1200">',
+                     '<meta property="og:image:height" content="630">', '<meta name="twitter:card" content="summary_large_image">']
+        if t:
+            tags.append(f'<meta name="twitter:title" content="{t.group(1).strip()}">')
+        if redirect or rel == "404.html":
+            tags = ['<meta name="robots" content="noindex">'] + tags[1:]
+        else:
+            PAGES.append((url_path, lastmod or TODAY))
+        content = content.replace("</head>", "\n".join(tags) + "\n</head>", 1)
     open(path, "w", encoding="utf-8").write(content)
 
 def ver_badge(level):
@@ -319,9 +359,42 @@ dir_body = f"""
 <nav class="pager" id="pager" aria-label="Phân trang"></nav>
 </div>
 """
-write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["map.js", "directory.js"], head=LEAF))
+write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["map.js", "directory.js"], head=LEAF, desc=f"Danh bạ {len(actors)} startup, quỹ đầu tư, vườn ươm, trường, cơ quan trong hệ sinh thái khởi nghiệp Việt Nam. Lọc theo loại, lĩnh vực, địa phương; xem bản đồ; tải CSV miễn phí."))
 
 # ---------- trang từng tác nhân ----------
+VIE_TYPE = {"startup": "Startup", "fund": "Quỹ đầu tư", "incubator": "Vườn ươm", "accelerator": "Chương trình tăng tốc", "space": "Không gian đổi mới sáng tạo", "support_org": "Tổ chức hỗ trợ khởi nghiệp", "university": "Trường, viện", "government": "Cơ quan nhà nước", "company": "Doanh nghiệp", "international": "Đối tác quốc tế", "community": "Cộng đồng", "media": "Truyền thông", "creator": "Dự án sáng tạo"}
+REGION_VI = {"da-nang": "Đà Nẵng", "former-quang-nam": "Khu vực Quảng Nam cũ", "ha-noi": "Hà Nội", "ho-chi-minh": "TP. Hồ Chí Minh",
+             "hai-phong": "Hải Phòng", "viet-nam": "Việt Nam", "quoc-te": "Quốc tế"}
+SECT_VI = {k: vi for k, vi, _, _ in SECTORS}
+def richness(x):
+    return (2 if x.get("logo") else 0) + (2 if (x.get("description") or {}).get("vi") else 0) + (1 if x.get("website") else 0) - (5 if x.get("status") == "inactive" else 0)
+by_sector = collections.defaultdict(list)
+by_region_type = collections.defaultdict(list)
+for x in actors:
+    for s in x.get("sectors") or []:
+        by_sector[s].append(x)
+    by_region_type[(x["region"], x["type"])].append(x)
+def similar(a, pool, n=6, exclude=()):
+    seen = {a["id"], *exclude}
+    out = []
+    ranked = sorted(pool, key=lambda x: (-(x["region"] == a["region"]), -richness(x), x["name"]["vi"].lower()))
+    for x in ranked:
+        if x["id"] not in seen:
+            seen.add(x["id"]); out.append(x)
+        if len(out) >= n - 2: break
+    # thêm hàng xóm theo thứ tự tên để hồ sơ ít thông tin cũng được liên kết tới
+    alpha = sorted(pool, key=lambda x: x["name"]["vi"].lower())
+    i = next((k for k, x in enumerate(alpha) if x["id"] == a["id"]), 0)
+    for x in alpha[i + 1:] + alpha[:i]:
+        if len(out) >= n: break
+        if x["id"] not in seen:
+            seen.add(x["id"]); out.append(x)
+    return out
+def mini_cards(xs):
+    return '<div class="fsgrid">' + "".join(
+        f'<a class="fs" href="{SITE_ROOT}a/{x["id"]}/">{logo_img(x, 44)}<span class="nm">{e(x["name"]["vi"])}</span>'
+        f'<span class="muted small" data-i18n="t_{x["type"]}">{x["type"]}</span></a>' for x in xs) + "</div>"
+
 issue_base = f"https://github.com/{REPO}/issues/new?"
 for a in actors:
     aid, name = a["id"], a["name"]["vi"]
@@ -395,7 +468,35 @@ for a in actors:
     src = "; ".join(a["sources"])
     src_html = e(src) + (f'<br><a href="{e(a["source_url"])}" rel="noopener" class="small">{e(a["source_url"])}</a>' if a.get("source_url") else "")
     issue_q = urllib.parse.urlencode({"template": "them-hoac-sua-ho-so.yml", "title": f"[Hồ sơ] {name}",
-                                      "name": name, "website": a.get("website", ""), "region": "Đà Nẵng"})
+                                      "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
+    linked = set(related.get(aid, [])) | {r["to"] for r in relations if r["from"] == aid} | {r["from"] for r in relations if r["to"] == aid}
+    sim_html = ""
+    sec0 = (a.get("sectors") or [None])[0]
+    if sec0:
+        xs = similar(a, by_sector[sec0], exclude=linked)
+        if xs:
+            sim_html += (f'<div class="section"><h2 data-vi="Cùng lĩnh vực: {e(SECT_VI.get(sec0, sec0))}" data-en="Same sector">Cùng lĩnh vực: {e(SECT_VI.get(sec0, sec0))}</h2>'
+                         f'{mini_cards(xs)}<p class="small" style="margin-top:10px"><a href="{dir_link(sector=sec0)}" data-vi="Xem tất cả" data-en="See all">Xem tất cả</a></p></div>')
+            linked |= {x["id"] for x in xs}
+    xs = similar(a, by_region_type[(a["region"], a["type"])], exclude=linked)
+    if xs:
+        rv = REGION_VI.get(a["region"], a["region"])
+        sim_html += (f'<div class="section"><h2 data-vi="Cùng địa phương: {e(rv)}" data-en="Same area: {e(rv)}">Cùng địa phương: {e(rv)}</h2>'
+                     f'{mini_cards(xs)}<p class="small" style="margin-top:10px"><a href="{dir_link(type=a["type"], region=a["region"])}" data-vi="Xem tất cả" data-en="See all">Xem tất cả</a></p></div>')
+    ld = {"@context": "https://schema.org", "@type": "EducationalOrganization" if a["type"] == "university" else "GovernmentOrganization" if a["type"] == "government" else "Organization",
+          "name": name, "url": f"{SITE_URL}/a/{aid}/"}
+    if (a.get("description") or {}).get("vi"): ld["description"] = a["description"]["vi"]
+    if a.get("logo"): ld["logo"] = f"{SITE_URL}/{a['logo']}"
+    same = [u for u in (a.get("website"), a.get("linkedin")) if u]
+    if same: ld["sameAs"] = same
+    if a.get("founded"): ld["foundingDate"] = str(a["founded"])
+    if a.get("alt_names"): ld["alternateName"] = a["alt_names"][:5]
+    if a["region"] not in ("viet-nam", "quoc-te"):
+        ld["address"] = {"@type": "PostalAddress", "addressRegion": REGION_VI.get(a["region"], ""), "addressCountry": "VN"}
+    if a.get("sectors"): ld["knowsAbout"] = [SECT_VI[s] for s in a["sectors"] if s in SECT_VI]
+    a_head = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
+    a_head += '<meta property="og:type" content="profile">'
+    a_last = GIT_DATES.get(a["_file"], TODAY)
     body = f"""
 <div class="wrap crumbs"><a href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a> / <a href="{dir_link(type=a['type'])}" data-i18n="t_{a['type']}">{a['type']}</a></div>
 <div class="wrap actor">
@@ -405,7 +506,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}
 <dl class="facts">{facts_html}</dl>
-{rel_html}{opp_html}{men_html}
+{rel_html}{opp_html}{sim_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>
@@ -421,7 +522,8 @@ for a in actors:
 </div>
 </aside></div>
 """
-    write(f"a/{aid}/index.html", page(name, body, "dir", desc=(desc.get("vi") or f"{name}: hồ sơ trong danh bạ hệ sinh thái khởi nghiệp ĐMST Việt Nam.")))
+    auto_desc = f"{name}: {VIE_TYPE.get(a['type'], a['type']).lower()} tại {REGION_VI.get(a['region'], 'Việt Nam')}" + (f", lĩnh vực {', '.join(SECT_VI[s].lower() for s in a['sectors'] if s in SECT_VI)}" if a.get("sectors") else "") + ". Hồ sơ trong danh bạ mở hệ sinh thái khởi nghiệp Việt Nam."
+    write(f"a/{aid}/index.html", page(name, body, "dir", desc=((desc.get("vi") + " " + auto_desc) if desc.get("vi") and len(desc["vi"]) < 70 else (desc.get("vi") or auto_desc))[:300], head=a_head), lastmod=a_last)
 
 # ---------- bản đồ ----------
 leaf = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
@@ -468,7 +570,7 @@ write("co-hoi/index.html", page("Cơ hội", f"""
 <div class="bar" style="margin-top:20px"><label for="otype" data-vi="Loại cơ hội" data-en="Type">Loại cơ hội</label>
 <select id="otype"><option value="" data-vi="Tất cả" data-en="All">Tất cả</option>{type_opts}</select>
 <a class="btn primary" href="https://github.com/{REPO}/edit/main/data/da-nang/opportunities.yaml" data-vi="Thêm cơ hội" data-en="Add an opportunity">Thêm cơ hội</a></div></div>
-<div class="wrap" style="padding-bottom:72px">{blocks}{ch_html}</div>{opp_script}""", "opps"))
+<div class="wrap" style="padding-bottom:72px">{blocks}{ch_html}</div>{opp_script}""", "opps", desc=f"{len(opps)} cơ hội gọi vốn, cuộc thi, demo day, chương trình ươm tạo và kết nối khách hàng cho startup Việt Nam, kèm hạn nộp, quyền lợi và kết quả."))
 write("su-kien/index.html", page("Cơ hội", f'<div class="wrap page-head"><h1>Trang đã chuyển</h1><p class="lead">Mục sự kiện nay là <a href="{SITE_ROOT}co-hoi/">Cơ hội</a>.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}co-hoi/">'))
 
 
@@ -537,7 +639,7 @@ if BENCH:
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div></section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật của Việt Nam" data-en="Vietnam's top industries">Ngành nổi bật của Việt Nam</h2>{ind_table(co.get("industries"))}</section>
-{SB_NOTE}</div>""", "cities"))
+{SB_NOTE}</div>""", "cities", desc="Hệ sinh thái khởi nghiệp Việt Nam theo thành phố: xếp hạng, số startup, vốn đầu tư và ngành nổi bật của TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng."))
 
     for c in BENCH["cities"]:
         regs = CITY_REGIONS.get(c["id"], [c["id"]])
@@ -589,7 +691,8 @@ if BENCH:
 <p class="small" style="margin-top:10px"><a href="{e(c["url"])}" rel="noopener" data-vi="Trang {e(c['name'])} trên StartupBlink" data-en="{e(c['name'])} on StartupBlink">Trang {e(c["name"])} trên StartupBlink</a></p></section>
 {SB_NOTE}</div>"""
         body += """<script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("citymap");VIEMAP.render(el,el.dataset.ids.split(","),document.getElementById("citymapnote"));});</script>"""
-        write(f"thanh-pho/{c['id']}/index.html", page(c["name"], body, "cities", scripts=["map.js"], head=LEAF))
+        write(f"thanh-pho/{c['id']}/index.html", page(f"Khởi nghiệp {c['name']}", body, "cities", scripts=["map.js"], head=LEAF,
+            desc=f"Hệ sinh thái khởi nghiệp {c['name']}: hạng #{c['global_rank']} thế giới, {len(acts)} tác nhân, {tc['startup']} startup, {tc['fund']} quỹ, bản đồ và cơ hội."))
 
 
 # ---------- trang chủ ----------
@@ -657,7 +760,10 @@ home = f"""
 <p style="margin-top:16px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-vi="Mở danh bạ" data-en="Open the directory">Mở danh bạ</a> <a class="btn ghost" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-i18n="add_missing">Thêm hồ sơ còn thiếu</a></p></div>
 </div></section>
 """
-write("index.html", page("", home, "home"))
+home_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": "Hệ sinh thái khởi nghiệp ĐMST Việt Nam", "url": f"{SITE_URL}/", "inLanguage": "vi",
+           "potentialAction": {"@type": "SearchAction", "target": f"{SITE_URL}/danh-ba/?q={{search_term_string}}", "query-input": "required name=search_term_string"}}
+write("index.html", page("", home, "home", desc=f"Danh bạ mở về {len(actors)} startup, quỹ, vườn ươm, trường, cơ quan và {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng.",
+      head='<script type="application/ld+json">' + json.dumps(home_ld, ensure_ascii=False) + "</script>"))
 
 # ---------- chính sách ----------
 by_year = collections.OrderedDict()
@@ -677,16 +783,30 @@ write("chinh-sach/index.html", page("Chính sách", f"""
 <div class="wrap page-head"><h1 data-i18n="nav_policy">Chính sách</h1>
 <p class="lead" data-vi="Văn bản hỗ trợ khởi nghiệp, đổi mới sáng tạo và chuyển đổi số tại Đà Nẵng, theo năm ban hành." data-en="Documents supporting startups, innovation and digital transformation in Da Nang, by year issued.">Văn bản hỗ trợ khởi nghiệp, đổi mới sáng tạo và chuyển đổi số tại Đà Nẵng, theo năm ban hành.</p>
 <div class="bar" style="margin-top:20px"><label class="sr" for="pq" data-i18n="policy_search">Tìm</label><input id="pq" type="search" data-i18n-ph="policy_search" placeholder="Tìm văn bản, nội dung…"></div></div>
-<div class="wrap" style="padding-bottom:72px">{po_body}</div>{po_script}""", "policy"))
+<div class="wrap" style="padding-bottom:72px">{po_body}</div>{po_script}""", "policy", desc=f"{len(policies)} văn bản chính sách về khởi nghiệp, đổi mới sáng tạo, khoa học công nghệ và chuyển đổi số, tra cứu theo loại và năm."))
 
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
 <p style="margin-top:20px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a></p></div>"""))
 urls = [""] + [p for _, p, _ in NAV[1:]] + [f"thanh-pho/{c['id']}/" for c in (BENCH.get("cities", []) if "BENCH" in globals() else [])] + [f"a/{a['id']}/" for a in actors]
+def _urlset(items):
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in items) + "</urlset>\n")
+groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("to-chuc", [])])
+for u, d in PAGES:
+    (groups["to-chuc"] if u.startswith("a/") else groups["thanh-pho"] if u.startswith("thanh-pho/") else groups["trang"]).append((u, d))
+files = []
+for g, items in groups.items():
+    items.sort()
+    chunks = [items[i:i + 500] for i in range(0, len(items), 500)] or []
+    for k, ch in enumerate(chunks, 1):
+        name = f"sitemap-{g}{'-' + str(k) if len(chunks) > 1 else ''}.xml"
+        open(os.path.join(OUT, name), "w", encoding="utf-8").write(_urlset(ch))
+        files.append((name, max(d for _, d in ch)))
 open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
-    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls) + "</urlset>\n")
+    '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    + "".join(f"<sitemap><loc>{SITE_URL}/{n}</loc><lastmod>{d}</lastmod></sitemap>\n" for n, d in files) + "</sitemapindex>\n")
 open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
 cname = os.path.join(ROOT, "CNAME")
 if os.path.exists(cname):
