@@ -2,6 +2,9 @@ id: startup-brain-life-link
 name:
   vi: Brain-life Link
 type: startup
+sectors:
+- ai
+- deeptech
 region: viet-nam
 verification:
   level: unverified

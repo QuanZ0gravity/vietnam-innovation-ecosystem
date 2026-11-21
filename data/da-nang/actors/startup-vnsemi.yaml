@@ -4,6 +4,9 @@ name:
 type: startup
 categories:
 - Bán dẫn
+sectors:
+- ai
+- deeptech
 description:
   vi: Phần mềm, máy móc, kiểm thử và đóng gói vi mạch.
 region: da-nang

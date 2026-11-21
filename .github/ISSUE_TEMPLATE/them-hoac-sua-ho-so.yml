@@ -34,6 +34,24 @@ body:
     id: website
     attributes:
       label: Website hoặc trang chính thức
+  - type: checkboxes
+    id: sectors
+    attributes:
+      label: Lĩnh vực (chọn tối đa 3)
+      options:
+        - label: "AI, phần mềm (ai)"
+        - label: "Tài chính số (fintech)"
+        - label: "Web3, blockchain (web3)"
+        - label: "Thương mại, bán lẻ (commerce)"
+        - label: "Nông nghiệp, thực phẩm (agrifood)"
+        - label: "Y tế, sinh học (health)"
+        - label: "Giáo dục (edu)"
+        - label: "Du lịch, văn hóa (tourism)"
+        - label: "Năng lượng, môi trường (climate)"
+        - label: "Bán dẫn, robot, phần cứng (deeptech)"
+        - label: "Logistics, di chuyển (mobility)"
+        - label: "Truyền thông, marketing (marketing)"
+        - label: "Bất động sản, xây dựng (property)"
   - type: textarea
     id: description
     attributes:

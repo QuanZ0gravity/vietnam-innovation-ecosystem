@@ -2,6 +2,8 @@ id: startup-ho-shan-tra
 name:
   vi: Hồ Shan Trà
 type: startup
+sectors:
+- agrifood
 region: viet-nam
 verification:
   level: unverified

@@ -5,6 +5,8 @@ type: startup
 categories:
 - Fintech
 - Online Banking
+sectors:
+- fintech
 region: ho-chi-minh
 verification:
   level: unverified

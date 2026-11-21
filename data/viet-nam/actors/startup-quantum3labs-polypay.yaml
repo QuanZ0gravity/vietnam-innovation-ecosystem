@@ -2,6 +2,8 @@ id: startup-quantum3labs-polypay
 name:
   vi: Quantum3Labs/Polypay
 type: startup
+sectors:
+- web3
 website: https://polypay.pro/
 region: viet-nam
 verification:

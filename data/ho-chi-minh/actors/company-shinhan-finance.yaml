@@ -5,6 +5,8 @@ type: company
 categories:
 - Fintech
 - Financial Services
+sectors:
+- fintech
 region: ho-chi-minh
 verification:
   level: unverified

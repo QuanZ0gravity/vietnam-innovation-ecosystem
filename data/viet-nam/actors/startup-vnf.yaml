@@ -5,6 +5,8 @@ alt_names:
 - CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD JOINT STOCK COMPANY
 - CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD (VNF)
 type: startup
+sectors:
+- agrifood
 website: https://vnfoods.vn/
 linkedin: https://www.linkedin.com/company/vnf
 region: viet-nam

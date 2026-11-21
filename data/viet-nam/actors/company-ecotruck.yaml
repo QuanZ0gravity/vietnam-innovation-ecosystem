@@ -2,6 +2,8 @@ id: company-ecotruck
 name:
   vi: Ecotruck
 type: company
+sectors:
+- mobility
 region: viet-nam
 verification:
   level: unverified

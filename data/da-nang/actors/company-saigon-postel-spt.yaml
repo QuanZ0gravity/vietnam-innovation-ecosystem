@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Viễn thông, hạ tầng số
+sectors:
+- deeptech
 website: https://spt.vn
 description:
   vi: Đối tác thương mại hóa chiến lược của Naiscorp Robotics.

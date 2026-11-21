@@ -2,6 +2,9 @@ id: company-snv-netherlands-development-organisation
 name:
   vi: Snv Netherlands Development Organisation
 type: company
+sectors:
+- agrifood
+- climate
 region: viet-nam
 verification:
   level: unverified

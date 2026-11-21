@@ -2,6 +2,9 @@ id: company-burgerprints
 name:
   vi: BurgerPrints
 type: company
+sectors:
+- commerce
+- mobility
 website: https://burgerprints.com/
 linkedin: https://www.linkedin.com/company/burgerprints
 region: quoc-te

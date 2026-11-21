@@ -2,6 +2,10 @@ id: startup-parongpong-raw-lab
 name:
   vi: Parongpong Raw Lab
 type: startup
+sectors:
+- climate
+- deeptech
+- property
 region: viet-nam
 verification:
   level: unverified

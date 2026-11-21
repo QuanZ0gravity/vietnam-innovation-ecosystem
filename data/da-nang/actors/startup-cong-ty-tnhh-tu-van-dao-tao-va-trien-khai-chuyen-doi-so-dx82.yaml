@@ -2,6 +2,10 @@ id: startup-cong-ty-tnhh-tu-van-dao-tao-va-trien-khai-chuyen-doi-so-dx82
 name:
   vi: Công ty TNHH tư vấn, đào tạo và triển khai chuyển đổi số Dx82
 type: startup
+sectors:
+- ai
+- web3
+- edu
 website: https://dx82.vn/
 region: da-nang
 website_status: Chặn truy cập tự động, cần kiểm tra tay

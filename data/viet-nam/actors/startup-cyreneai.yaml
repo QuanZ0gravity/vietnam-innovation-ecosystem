@@ -2,6 +2,8 @@ id: startup-cyreneai
 name:
   vi: CyreneAI
 type: startup
+sectors:
+- web3
 website: https://cyreneai.com
 region: viet-nam
 verification:

@@ -2,6 +2,8 @@ id: company-planetzero-earth
 name:
   vi: Planetzero.earth
 type: company
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

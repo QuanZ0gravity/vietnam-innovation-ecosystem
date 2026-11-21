@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-enso-dana
 name:
   vi: Công ty TNHH Enso Dana
 type: startup
+sectors:
+- climate
 website: https://ensodana.vn/
 region: da-nang
 website_status: Hoạt động

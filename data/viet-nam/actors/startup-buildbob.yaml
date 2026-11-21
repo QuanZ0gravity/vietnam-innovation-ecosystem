@@ -2,6 +2,9 @@ id: startup-buildbob
 name:
   vi: BuildBob
 type: startup
+sectors:
+- ai
+- property
 website: https://buildbob.com/
 region: viet-nam
 verification:

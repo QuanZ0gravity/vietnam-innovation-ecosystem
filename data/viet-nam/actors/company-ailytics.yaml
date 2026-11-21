@@ -2,6 +2,8 @@ id: company-ailytics
 name:
   vi: Ailytics
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI thị giác máy tính
 - AI và phần mềm
+sectors:
+- ai
 status: active
 website: https://hekate.ai
 linkedin: https://www.linkedin.com/company/hekate.ai
@@ -16,5 +18,5 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Bản đồ hệ sinh thái

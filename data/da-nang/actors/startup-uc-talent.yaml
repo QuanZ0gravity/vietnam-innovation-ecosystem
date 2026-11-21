@@ -9,6 +9,9 @@ categories:
 - AI và phần mềm
 - Software & Data
 - Artificial Intelligence
+sectors:
+- ai
+- web3
 founded: 2023
 status: active
 website: https://www.uctalent.io/
@@ -21,7 +24,7 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Decentralab (11/2026)
 - Bản đồ hệ sinh thái
 - indanang.vn
 - StartupBlink (trang công khai, 11/2026)

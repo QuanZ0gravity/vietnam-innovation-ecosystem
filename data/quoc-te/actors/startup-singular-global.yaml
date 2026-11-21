@@ -2,6 +2,8 @@ id: startup-singular-global
 name:
   vi: Singular Global
 type: startup
+sectors:
+- web3
 region: quoc-te
 verification:
   level: unverified

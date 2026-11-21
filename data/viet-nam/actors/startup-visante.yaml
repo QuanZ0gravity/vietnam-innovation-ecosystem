@@ -2,6 +2,9 @@ id: startup-visante
 name:
   vi: Visante
 type: startup
+sectors:
+- health
+- marketing
 region: viet-nam
 verification:
   level: unverified

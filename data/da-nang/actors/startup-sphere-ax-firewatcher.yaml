@@ -5,6 +5,10 @@ type: startup
 categories:
 - ClimateTech, AI
 - Nông nghiệp, khí hậu
+sectors:
+- ai
+- agrifood
+- climate
 description:
   vi: Giám sát, cảnh báo sớm cháy rừng thông minh.
 region: da-nang

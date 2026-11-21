@@ -2,6 +2,8 @@ id: startup-bvarta
 name:
   vi: Bvarta
 type: startup
+sectors:
+- ai
 region: quoc-te
 verification:
   level: unverified

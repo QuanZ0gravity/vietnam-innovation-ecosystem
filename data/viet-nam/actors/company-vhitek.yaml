@@ -2,6 +2,8 @@ id: company-vhitek
 name:
   vi: Vhitek
 type: company
+sectors:
+- fintech
 region: viet-nam
 verification:
   level: unverified

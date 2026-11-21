@@ -2,6 +2,8 @@ id: startup-viralin-ai
 name:
   vi: Viralin AI
 type: startup
+sectors:
+- ai
 region: quoc-te
 verification:
   level: unverified

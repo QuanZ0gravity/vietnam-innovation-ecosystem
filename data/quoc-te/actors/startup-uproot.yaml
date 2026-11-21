@@ -2,6 +2,9 @@ id: startup-uproot
 name:
   vi: Uproot
 type: startup
+sectors:
+- ai
+- web3
 region: quoc-te
 verification:
   level: unverified

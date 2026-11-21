@@ -2,6 +2,9 @@ id: company-cnv-holdings
 name:
   vi: Cnv Holdings
 type: company
+sectors:
+- ai
+- marketing
 region: viet-nam
 verification:
   level: unverified

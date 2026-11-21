@@ -2,6 +2,9 @@ id: startup-crea-in
 name:
   vi: Crea-in
 type: startup
+sectors:
+- tourism
+- marketing
 region: viet-nam
 verification:
   level: unverified

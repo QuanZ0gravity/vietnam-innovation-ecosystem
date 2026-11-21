@@ -2,6 +2,8 @@ id: company-lsp
 name:
   vi: LSP
 type: company
+sectors:
+- marketing
 region: viet-nam
 verification:
   level: unverified

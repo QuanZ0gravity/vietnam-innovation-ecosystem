@@ -2,6 +2,8 @@ id: startup-fujafoods
 name:
   vi: FUJAFoods
 type: startup
+sectors:
+- agrifood
 founded: 2007
 status: active
 website: https://fujafoods.vn
@@ -11,7 +13,7 @@ verification:
   date: '2026-11-07'
   by: Da Nang BioTech Center
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Trung tâm Công nghệ sinh học Đà Nẵng (11/2026)
 - Website chính thức
 description:
   vi: Thực phẩm dinh dưỡng từ rau củ và các loại hạt, sản xuất theo ISO 22000.

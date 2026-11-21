@@ -2,6 +2,8 @@ id: startup-rebirth
 name:
   vi: Rebirth
 type: startup
+sectors:
+- tourism
 region: viet-nam
 verification:
   level: unverified

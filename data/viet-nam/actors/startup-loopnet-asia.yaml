@@ -2,6 +2,10 @@ id: startup-loopnet-asia
 name:
   vi: Loopnet Asia
 type: startup
+sectors:
+- climate
+- deeptech
+- marketing
 region: viet-nam
 verification:
   level: unverified

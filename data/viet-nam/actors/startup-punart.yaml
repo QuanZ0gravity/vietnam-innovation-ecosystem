@@ -2,6 +2,8 @@ id: startup-punart
 name:
   vi: Punart
 type: startup
+sectors:
+- tourism
 region: viet-nam
 verification:
   level: unverified

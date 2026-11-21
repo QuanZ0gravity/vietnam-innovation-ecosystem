@@ -4,6 +4,8 @@ name:
 alt_names:
 - Botstar
 type: startup
+sectors:
+- ai
 status: inactive
 website: https://botstar.com/
 region: da-nang
@@ -14,7 +16,7 @@ verification:
   by: DNES
 sources:
 - startupdanang.vn
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 legacy_id: s37
 description:

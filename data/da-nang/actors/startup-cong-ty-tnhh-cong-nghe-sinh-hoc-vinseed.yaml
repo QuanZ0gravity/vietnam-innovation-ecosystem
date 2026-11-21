@@ -2,6 +2,10 @@ id: startup-cong-ty-tnhh-cong-nghe-sinh-hoc-vinseed
 name:
   vi: Công ty TNHH Công nghệ sinh học Vinseed
 type: startup
+sectors:
+- agrifood
+- health
+- marketing
 website: https://dongtrunghathaodrtrung.com/
 region: da-nang
 website_status: Hoạt động

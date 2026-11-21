@@ -2,6 +2,9 @@ id: company-marinachain
 name:
   vi: Marinachain
 type: company
+sectors:
+- ai
+- climate
 region: viet-nam
 verification:
   level: unverified

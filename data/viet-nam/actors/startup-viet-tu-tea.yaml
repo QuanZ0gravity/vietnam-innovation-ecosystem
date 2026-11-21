@@ -2,6 +2,9 @@ id: startup-viet-tu-tea
 name:
   vi: Việt Tú Tea
 type: startup
+sectors:
+- agrifood
+- tourism
 region: viet-nam
 verification:
   level: unverified

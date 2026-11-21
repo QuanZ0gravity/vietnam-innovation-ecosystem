@@ -102,9 +102,15 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [GOVERNANCE.md](GOVERNANCE.md).
 | `org_confirmed` | Chính tổ chức đó xác nhận |
 | `partner_verified` | Một đơn vị điều phối đã làm việc trực tiếp |
 
+## Dùng dữ liệu
+
+- Trên website: vào **Danh bạ**, lọc theo loại, lĩnh vực, khu vực, rồi bấm **Tải CSV** để tải đúng các hồ sơ đang lọc (UTF-8, mở được bằng Excel và Google Sheets). Miễn phí, không cần tài khoản.
+- Toàn bộ dữ liệu: các tệp YAML trong `data/`, hoặc `site/data/actors.json` sau khi dựng trang.
+- Bản đồ nằm trong Danh bạ (chế độ xem Bản đồ) và trên trang từng thành phố.
+
 ## Nguồn dữ liệu ban đầu
 
-Danh sách startup được ươm tạo, hỗ trợ bởi 5 tổ chức tại Đà Nẵng (DNES, Ecomdy, Decentralab, Trung tâm Công nghệ sinh học Đà Nẵng, Song Han Incubator) lấy từ dữ liệu mạng lưới của Swiss Entrepreneurship Program, cập nhật 11/2026.
+Danh sách startup được ươm tạo, hỗ trợ bởi 5 tổ chức tại Đà Nẵng (DNES, Ecomdy, Decentralab, Trung tâm Công nghệ sinh học Đà Nẵng, Songhan Incubator) lấy từ danh mục ươm tạo của các tổ chức này, cập nhật 11/2026.
 
 Dữ liệu Đà Nẵng ban đầu được chuyển từ bản thử nghiệm *Bản đồ hệ sinh thái khởi nghiệp ĐMST Đà Nẵng 2026*, tổng hợp từ startupdanang.vn, Sở KH&CN Đà Nẵng, Bản lĩnh xứ Quảng, thuvienphapluat.vn, DAVAS và SURF. Khi chuyển sang kho mở:
 

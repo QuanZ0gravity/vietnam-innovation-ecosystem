@@ -5,6 +5,9 @@ type: startup
 categories:
 - Edge AI, robot chăm sóc
 - Robotics, drone
+sectors:
+- ai
+- deeptech
 website: https://nuverxai.com
 linkedin: https://www.linkedin.com/company/nuverxai
 description:

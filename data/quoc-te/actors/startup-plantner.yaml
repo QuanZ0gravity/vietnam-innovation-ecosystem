@@ -2,6 +2,9 @@ id: startup-plantner
 name:
   vi: Plantner
 type: startup
+sectors:
+- climate
+- deeptech
 region: quoc-te
 verification:
   level: unverified

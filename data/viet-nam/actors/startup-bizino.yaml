@@ -2,6 +2,9 @@ id: startup-bizino
 name:
   vi: Bizino
 type: startup
+sectors:
+- ai
+- health
 region: viet-nam
 verification:
   level: unverified

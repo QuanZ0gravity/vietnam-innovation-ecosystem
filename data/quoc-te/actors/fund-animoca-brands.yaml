@@ -2,6 +2,10 @@ id: fund-animoca-brands
 name:
   vi: Animoca Brands
 type: fund
+sectors:
+- web3
+- marketing
+- property
 website: https://www.animocabrands.com/
 linkedin: https://www.linkedin.com/company/animoca-brands
 region: quoc-te

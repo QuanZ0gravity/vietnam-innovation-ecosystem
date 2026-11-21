@@ -2,6 +2,8 @@ id: startup-spacewavy-wavyroom
 name:
   vi: Spacewavy / Wavyroom
 type: startup
+sectors:
+- property
 website: http://www.wavyroom.com
 region: viet-nam
 verification:

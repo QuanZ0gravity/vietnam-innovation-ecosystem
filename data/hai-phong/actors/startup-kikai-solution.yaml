@@ -5,6 +5,8 @@ type: startup
 categories:
 - Software & Data
 - SaaS
+sectors:
+- ai
 region: hai-phong
 verification:
   level: unverified

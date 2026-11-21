@@ -2,6 +2,8 @@ id: company-innovista-solutions
 name:
   vi: Innovista Solutions
 type: company
+sectors:
+- mobility
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,9 @@ id: startup-irtech
 name:
   vi: Irtech
 type: startup
+sectors:
+- ai
+- mobility
 website: https://irtech.com.vn/
 linkedin: https://www.linkedin.com/company/irtech-vietnam
 region: da-nang

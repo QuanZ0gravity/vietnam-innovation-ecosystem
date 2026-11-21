@@ -2,6 +2,9 @@ id: company-cong-ty-tnhh-san-ha
 name:
   vi: Công ty TNHH San Hà
 type: company
+sectors:
+- agrifood
+- deeptech
 region: viet-nam
 verification:
   level: unverified

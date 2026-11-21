@@ -2,6 +2,9 @@ id: company-nextinfra
 name:
   vi: Nextinfra
 type: company
+sectors:
+- ai
+- deeptech
 region: viet-nam
 verification:
   level: unverified

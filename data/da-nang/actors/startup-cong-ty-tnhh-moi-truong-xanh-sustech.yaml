@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-moi-truong-xanh-sustech
 name:
   vi: Công ty TNHH Môi trường xanh Sustech
 type: startup
+sectors:
+- climate
 region: da-nang
 verification:
   level: unverified

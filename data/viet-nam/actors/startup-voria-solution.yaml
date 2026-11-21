@@ -2,6 +2,9 @@ id: startup-voria-solution
 name:
   vi: Voria Solution
 type: startup
+sectors:
+- health
+- deeptech
 region: viet-nam
 verification:
   level: unverified

@@ -7,6 +7,9 @@ categories:
 - Fintech du lịch
 - Thử nghiệm có kiểm soát (sandbox)
 - Thương mại, fintech
+sectors:
+- fintech
+- tourism
 description:
   vi: Giải pháp PayD trong sandbox, 18 tháng.
 region: da-nang

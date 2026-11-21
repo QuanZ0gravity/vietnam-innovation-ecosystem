@@ -4,6 +4,10 @@ name:
 type: company
 categories:
 - AI, dữ liệu
+sectors:
+- ai
+- fintech
+- health
 description:
   vi: Nền tảng IDUS số hóa và cấu trúc dữ liệu cho y tế, bảo hiểm, hành chính công. Nhà cung cấp cho khu vực công, trình bày tại hội thảo 17/11/2026.
 region: da-nang

@@ -4,6 +4,8 @@ name:
 type: creator
 categories:
 - Chủ thể sáng tạo
+sectors:
+- property
 region: former-quang-nam
 verification:
   level: unverified

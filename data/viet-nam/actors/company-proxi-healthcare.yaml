@@ -2,6 +2,9 @@ id: company-proxi-healthcare
 name:
   vi: Proxi Healthcare
 type: company
+sectors:
+- health
+- deeptech
 region: viet-nam
 verification:
   level: unverified

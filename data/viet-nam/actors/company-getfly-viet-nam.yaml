@@ -2,6 +2,10 @@ id: company-getfly-viet-nam
 name:
   vi: Getfly Việt Nam
 type: company
+sectors:
+- ai
+- commerce
+- marketing
 region: viet-nam
 verification:
   level: unverified

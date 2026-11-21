@@ -2,6 +2,9 @@ id: startup-gaco-mushroom-brand
 name:
   vi: Gaco Mushroom Brand
 type: startup
+sectors:
+- agrifood
+- marketing
 region: viet-nam
 verification:
   level: unverified

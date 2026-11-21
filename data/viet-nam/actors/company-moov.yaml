@@ -2,6 +2,8 @@ id: company-moov
 name:
   vi: MOOV
 type: company
+sectors:
+- mobility
 region: viet-nam
 verification:
   level: unverified

@@ -5,6 +5,9 @@ type: company
 categories:
 - Bán dẫn, AI ASIC
 - Bán dẫn
+sectors:
+- ai
+- deeptech
 website: https://skyechip.com
 linkedin: https://www.linkedin.com/company/skyechip
 description:

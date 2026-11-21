@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Dữ liệu pháp luật, AI
+sectors:
+- ai
 website: https://luatvietnam.vn
 description:
   vi: 'AI Công vụ: dữ liệu văn bản của LuatVietnam kết hợp mô hình ngôn ngữ lớn của MISA, kho gần 400.000 văn bản. Nhà cung cấp cho khu vực công, trình bày tại hội thảo 17/11/2026.'

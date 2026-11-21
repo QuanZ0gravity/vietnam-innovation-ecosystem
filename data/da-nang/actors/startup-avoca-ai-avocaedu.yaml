@@ -5,6 +5,9 @@ type: startup
 categories:
 - EdTech, AI
 - Giáo dục
+sectors:
+- ai
+- edu
 description:
   vi: Dự án học tập ứng dụng AI.
 region: da-nang

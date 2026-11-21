@@ -2,6 +2,8 @@ id: startup-knotwork
 name:
   vi: Knotwork
 type: startup
+sectors:
+- ai
 website: https://knotwork.space/
 region: viet-nam
 verification:

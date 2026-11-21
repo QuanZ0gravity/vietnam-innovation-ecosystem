@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-truyen-thong-va-cong-nghe-ux
 name:
   vi: Công ty TNHH Truyền thông và Công nghệ UX
 type: startup
+sectors:
+- marketing
 region: da-nang
 verification:
   level: unverified

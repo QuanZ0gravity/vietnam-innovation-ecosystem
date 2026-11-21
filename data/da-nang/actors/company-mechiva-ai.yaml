@@ -4,6 +4,10 @@ name:
 type: company
 categories:
 - AI
+sectors:
+- ai
+- commerce
+- marketing
 website: https://amazlytic.com/
 region: da-nang
 website_status: Hoạt động

@@ -5,6 +5,8 @@ type: startup
 categories:
 - Transportation
 - Logistics
+sectors:
+- mobility
 region: ha-noi
 verification:
   level: unverified

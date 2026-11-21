@@ -2,6 +2,9 @@ id: startup-culinary-food-tour
 name:
   vi: Culinary Food Tour
 type: startup
+sectors:
+- agrifood
+- tourism
 status: inactive
 region: da-nang
 verification:
@@ -9,4 +12,4 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)

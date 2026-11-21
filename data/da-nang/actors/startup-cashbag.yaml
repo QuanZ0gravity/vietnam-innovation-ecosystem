@@ -5,6 +5,8 @@ type: startup
 categories:
 - Marketing & Sales
 - Adtech
+sectors:
+- marketing
 region: da-nang
 verification:
   level: unverified

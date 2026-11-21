@@ -2,6 +2,8 @@ id: company-le-emobility
 name:
   vi: Le Emobility
 type: company
+sectors:
+- mobility
 region: viet-nam
 verification:
   level: unverified

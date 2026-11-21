@@ -2,6 +2,8 @@ id: startup-kai-legal
 name:
   vi: KAI Legal
 type: startup
+sectors:
+- ai
 website: https://uii.ueh.edu.vn/en/startup-kai-legal/
 region: viet-nam
 verification:

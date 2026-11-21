@@ -6,6 +6,8 @@ alt_names:
 type: startup
 categories:
 - Robotics
+sectors:
+- deeptech
 website: https://www.alphaasimov.com/
 description:
   vi: Công nghệ sâu.

@@ -4,6 +4,8 @@ name:
 type: startup
 categories:
 - Bán dẫn
+sectors:
+- deeptech
 description:
   vi: Doanh nghiệp bán dẫn được thành phố công nhận.
 region: da-nang

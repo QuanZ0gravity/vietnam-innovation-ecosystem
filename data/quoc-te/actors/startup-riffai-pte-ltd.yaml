@@ -2,6 +2,9 @@ id: startup-riffai-pte-ltd
 name:
   vi: Riffai PTE. LTD
 type: startup
+sectors:
+- ai
+- climate
 region: quoc-te
 verification:
   level: unverified

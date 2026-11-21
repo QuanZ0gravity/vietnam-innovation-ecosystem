@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-yorda
 name:
   vi: Công ty TNHH Yorda
 type: startup
+sectors:
+- agrifood
 website: https://yordastonemills.com/
 region: da-nang
 website_status: Hoạt động

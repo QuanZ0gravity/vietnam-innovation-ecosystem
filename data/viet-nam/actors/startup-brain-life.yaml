@@ -2,6 +2,8 @@ id: startup-brain-life
 name:
   vi: Brain-Life
 type: startup
+sectors:
+- ai
 website: https://brainlife.ai/
 linkedin: https://www.linkedin.com/company/brain-life
 region: viet-nam

@@ -5,6 +5,8 @@ type: company
 categories:
 - Transportation
 - Automotive
+sectors:
+- mobility
 region: hai-phong
 verification:
   level: unverified

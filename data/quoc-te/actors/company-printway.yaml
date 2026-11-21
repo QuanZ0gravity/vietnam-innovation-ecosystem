@@ -2,6 +2,8 @@ id: company-printway
 name:
   vi: Printway
 type: company
+sectors:
+- commerce
 website: https://printway.io/
 linkedin: https://www.linkedin.com/company/printway
 region: quoc-te

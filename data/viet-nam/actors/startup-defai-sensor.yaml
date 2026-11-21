@@ -2,6 +2,10 @@ id: startup-defai-sensor
 name:
   vi: DeFAI Sensor
 type: startup
+sectors:
+- ai
+- web3
+- deeptech
 website: https://defaisensor.io/
 region: viet-nam
 verification:

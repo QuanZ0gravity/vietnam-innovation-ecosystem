@@ -4,6 +4,8 @@ name:
 type: fund
 categories:
 - Quỹ nhà nước
+sectors:
+- fintech
 description:
   vi: Trình bày hỗ trợ tài chính cho doanh nghiệp tại hội thảo 17/11/2026; điều kiện và mức hỗ trợ chưa cập nhật.
 region: da-nang

@@ -2,6 +2,8 @@ id: company-webcash-vietnam
 name:
   vi: Webcash Vietnam
 type: company
+sectors:
+- fintech
 region: viet-nam
 verification:
   level: unverified

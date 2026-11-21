@@ -4,6 +4,8 @@ name:
 alt_names:
 - AIMSOO
 type: startup
+sectors:
+- ai
 website: https://aimsoo.ai/
 linkedin: https://www.linkedin.com/company/aimsoo
 region: viet-nam

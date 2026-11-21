@@ -2,6 +2,8 @@ id: startup-cong-ty-co-phan-gapit
 name:
   vi: Công ty cổ phần GAPIT
 type: startup
+sectors:
+- marketing
 website: https://gapit.com.vn/
 linkedin: https://www.linkedin.com/company/gapit-communication-jsc
 region: da-nang

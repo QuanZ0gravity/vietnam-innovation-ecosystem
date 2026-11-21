@@ -2,6 +2,8 @@ id: company-dayladau
 name:
   vi: Dayladau
 type: company
+sectors:
+- tourism
 region: viet-nam
 verification:
   level: unverified

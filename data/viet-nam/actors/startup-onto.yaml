@@ -2,6 +2,9 @@ id: startup-onto
 name:
   vi: ONTO
 type: startup
+sectors:
+- ai
+- deeptech
 region: viet-nam
 verification:
   level: unverified

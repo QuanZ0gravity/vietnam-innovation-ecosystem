@@ -2,6 +2,8 @@ id: startup-linguistic-intelligence-lingint-ai
 name:
   vi: Linguistic Intelligence (Lingint AI)
 type: startup
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

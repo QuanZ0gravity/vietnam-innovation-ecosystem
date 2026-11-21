@@ -2,6 +2,8 @@ id: fund-singapore-fintech-association
 name:
   vi: Singapore FinTech Association
 type: fund
+sectors:
+- fintech
 website: https://singaporefintech.org/
 linkedin: https://www.linkedin.com/company/singaporefintech
 region: quoc-te

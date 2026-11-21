@@ -2,6 +2,10 @@ id: startup-building-up-sustainability-centre
 name:
   vi: Building Up Sustainability Centre
 type: startup
+sectors:
+- climate
+- marketing
+- property
 region: viet-nam
 verification:
   level: unverified

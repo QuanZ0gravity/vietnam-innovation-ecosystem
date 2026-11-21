@@ -2,6 +2,9 @@ id: startup-mailguard-ai-cho-mot-tuong-lai-an-toan-so
 name:
   vi: Mailguard-ai Cho Một Tương Lai An Toàn Số
 type: startup
+sectors:
+- ai
+- web3
 region: viet-nam
 verification:
   level: unverified

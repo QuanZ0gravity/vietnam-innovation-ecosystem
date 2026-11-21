@@ -2,6 +2,8 @@ id: company-zalo-ads
 name:
   vi: Zalo Ads
 type: company
+sectors:
+- marketing
 region: viet-nam
 verification:
   level: unverified

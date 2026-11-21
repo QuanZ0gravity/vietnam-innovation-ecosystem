@@ -2,6 +2,9 @@ id: startup-mangax-technology
 name:
   vi: Mangax Technology
 type: startup
+sectors:
+- health
+- edu
 region: viet-nam
 verification:
   level: unverified

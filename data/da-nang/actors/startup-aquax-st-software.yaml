@@ -5,6 +5,10 @@ type: startup
 categories:
 - Nông nghiệp thông minh
 - Nông nghiệp, khí hậu
+sectors:
+- ai
+- agrifood
+- climate
 description:
   vi: Công nghệ nuôi tôm thông minh kết hợp phần mềm và IoT.
 region: da-nang

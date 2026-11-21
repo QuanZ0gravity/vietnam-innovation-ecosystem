@@ -5,6 +5,9 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+sectors:
+- web3
+- edu
 website: https://weangelscapital.com/
 region: da-nang
 website_status: Hoạt động

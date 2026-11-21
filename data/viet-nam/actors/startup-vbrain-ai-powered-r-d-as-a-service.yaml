@@ -2,6 +2,8 @@ id: startup-vbrain-ai-powered-r-d-as-a-service
 name:
   vi: Vbrain - AI-Powered R&D- as-a-Service
 type: startup
+sectors:
+- ai
 website: http://vbrain.net
 region: viet-nam
 verification:

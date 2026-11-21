@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI, kho tri thức
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Kho tri thức và nền tảng truy cập tri thức tiếng Việt.
 region: da-nang

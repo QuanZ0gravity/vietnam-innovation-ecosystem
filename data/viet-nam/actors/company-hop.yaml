@@ -2,6 +2,9 @@ id: company-hop
 name:
   vi: HOP
 type: company
+sectors:
+- ai
+- deeptech
 region: viet-nam
 verification:
   level: unverified

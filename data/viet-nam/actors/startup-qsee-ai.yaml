@@ -2,6 +2,8 @@ id: startup-qsee-ai
 name:
   vi: QSee AI
 type: startup
+sectors:
+- ai
 website: https://qsee.ai/
 region: viet-nam
 verification:

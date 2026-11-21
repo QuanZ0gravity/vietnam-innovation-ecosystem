@@ -2,6 +2,9 @@ id: startup-barahinnovation
 name:
   vi: Barahinnovation
 type: startup
+sectors:
+- climate
+- deeptech
 region: quoc-te
 verification:
   level: unverified

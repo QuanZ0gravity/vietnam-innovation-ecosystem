@@ -5,6 +5,8 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+sectors:
+- ai
 website: https://genaifund.ai/
 linkedin: https://www.linkedin.com/company/genai-fund
 region: da-nang

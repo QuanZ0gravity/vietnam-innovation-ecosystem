@@ -2,6 +2,8 @@ id: startup-lazorkit
 name:
   vi: LazorKit
 type: startup
+sectors:
+- web3
 website: https://lazorkit.com
 region: viet-nam
 verification:

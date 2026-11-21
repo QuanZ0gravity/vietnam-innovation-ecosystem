@@ -2,6 +2,10 @@ id: startup-piaspace
 name:
   vi: Piaspace
 type: startup
+sectors:
+- ai
+- deeptech
+- marketing
 region: quoc-te
 verification:
   level: unverified

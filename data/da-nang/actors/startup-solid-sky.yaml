@@ -2,6 +2,9 @@ id: startup-solid-sky
 name:
   vi: Solid Sky
 type: startup
+sectors:
+- ai
+- deeptech
 website: https://www.solid-sky.com/
 region: da-nang
 website_status: Hoạt động

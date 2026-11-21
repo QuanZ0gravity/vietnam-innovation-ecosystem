@@ -2,6 +2,8 @@ id: startup-bkmeeting-bkmeeting-an
 name:
   vi: BKMEETING BKMEETING - An
 type: startup
+sectors:
+- deeptech
 region: viet-nam
 verification:
   level: unverified

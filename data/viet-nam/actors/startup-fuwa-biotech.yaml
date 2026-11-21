@@ -2,6 +2,8 @@ id: startup-fuwa-biotech
 name:
   vi: Fuwa Biotech
 type: startup
+sectors:
+- health
 region: viet-nam
 verification:
   level: unverified

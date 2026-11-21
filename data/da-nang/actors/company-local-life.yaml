@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Du lịch
+sectors:
+- tourism
 description:
   vi: Giải Nhất SURF 2025.
 region: da-nang

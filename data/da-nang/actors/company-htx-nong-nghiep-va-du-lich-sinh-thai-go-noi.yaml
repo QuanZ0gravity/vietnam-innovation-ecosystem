@@ -4,6 +4,9 @@ name:
 type: company
 categories:
 - Hợp tác xã
+sectors:
+- agrifood
+- tourism
 description:
   vi: Ra mắt 1/2026.
 region: da-nang

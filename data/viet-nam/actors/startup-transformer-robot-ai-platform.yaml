@@ -2,6 +2,10 @@ id: startup-transformer-robot-ai-platform
 name:
   vi: Transformer Robot & AI Platform
 type: startup
+sectors:
+- ai
+- edu
+- tourism
 region: viet-nam
 verification:
   level: unverified

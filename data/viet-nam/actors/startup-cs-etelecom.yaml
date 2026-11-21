@@ -2,6 +2,8 @@ id: startup-cs-etelecom
 name:
   vi: CS eTelecom
 type: startup
+sectors:
+- marketing
 website: https://cs.etelecom.vn/
 region: viet-nam
 verification:

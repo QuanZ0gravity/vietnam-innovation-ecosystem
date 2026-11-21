@@ -2,6 +2,9 @@ id: company-soft-world
 name:
   vi: Soft World
 type: company
+sectors:
+- ai
+- deeptech
 region: viet-nam
 verification:
   level: unverified

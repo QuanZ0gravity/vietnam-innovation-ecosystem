@@ -34,6 +34,10 @@ Tìm theo tên đầy đủ, tên viết tắt và tên tiếng Anh trong danh b
 
 Trung tâm, viện, không gian của một trường hay tập đoàn là một hồ sơ riêng, nối với đơn vị mẹ bằng quan hệ `part_of` trong `relations.csv`.
 
+## Lĩnh vực
+
+Chọn tối đa 3 lĩnh vực trong `schema/sectors.yaml` và ghi vào trường `sectors`. Nếu hồ sơ của bạn đang có lĩnh vực được gợi ý tự động mà chưa đúng, hãy sửa lại.
+
 ## Thêm một cơ hội
 
 `data/<tỉnh>/opportunities.yaml` chỉ nhận hoạt động có thể dẫn tới vốn, khách hàng hoặc hợp đồng: kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư, kết nối khách hàng, chương trình ươm tạo, tăng tốc, thử nghiệm. Không nhận hội thảo, diễn đàn chung, tin ký kết hay đoàn công tác.

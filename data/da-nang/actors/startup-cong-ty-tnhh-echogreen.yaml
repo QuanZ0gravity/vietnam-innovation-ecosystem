@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-echogreen
 name:
   vi: Công ty TNHH Echogreen
 type: startup
+sectors:
+- climate
 website: https://echogreen.vn/
 region: da-nang
 website_status: Hoạt động

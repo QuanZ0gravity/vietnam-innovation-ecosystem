@@ -2,6 +2,8 @@ id: startup-senlyzer
 name:
   vi: Senlyzer
 type: startup
+sectors:
+- ai
 founded: 2025
 status: active
 website: https://senlyzer.vn
@@ -11,7 +13,7 @@ verification:
   date: '2026-11-07'
   by: Ecomdy
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Ecomdy (11/2026)
 - Website chính thức
 description:
   vi: Tự động hóa quy trình, tác tử AI và phát triển phần mềm cho doanh nghiệp.

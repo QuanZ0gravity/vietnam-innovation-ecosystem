@@ -6,6 +6,8 @@ alt_names:
 type: startup
 categories:
 - Dược phẩm
+sectors:
+- health
 website: https://nexbionpharma.com/
 description:
   vi: Startup tiêu biểu trên cổng thành phố.

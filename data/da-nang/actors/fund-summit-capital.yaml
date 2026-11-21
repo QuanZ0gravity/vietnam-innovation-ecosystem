@@ -5,6 +5,8 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+sectors:
+- ai
 region: da-nang
 verification:
   level: unverified

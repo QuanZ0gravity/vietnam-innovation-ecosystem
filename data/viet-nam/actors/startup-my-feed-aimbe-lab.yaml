@@ -2,6 +2,9 @@ id: startup-my-feed-aimbe-lab
 name:
   vi: My Feed (Aimbe Lab)
 type: startup
+sectors:
+- agrifood
+- deeptech
 website: http://www.aimbelab.com
 region: viet-nam
 verification:

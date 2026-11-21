@@ -2,6 +2,8 @@ id: startup-udata
 name:
   vi: Udata
 type: startup
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

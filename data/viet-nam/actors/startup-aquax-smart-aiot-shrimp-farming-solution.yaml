@@ -2,6 +2,9 @@ id: startup-aquax-smart-aiot-shrimp-farming-solution
 name:
   vi: AquaX - Smart AIoT Shrimp Farming Solution
 type: startup
+sectors:
+- agrifood
+- deeptech
 website: https://aquax.vn/
 region: viet-nam
 verification:

@@ -2,6 +2,8 @@ id: startup-tensor
 name:
   vi: Tensor
 type: startup
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

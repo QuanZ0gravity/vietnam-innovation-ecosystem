@@ -5,6 +5,10 @@ type: startup
 categories:
 - Nông nghiệp đô thị, AIoT
 - Nông nghiệp, khí hậu
+sectors:
+- agrifood
+- climate
+- deeptech
 website: https://cas-energy.com
 linkedin: https://www.linkedin.com/company/casenergy
 description:

@@ -5,6 +5,8 @@ type: startup
 categories:
 - Phần mềm quản lý, AI
 - AI và phần mềm
+sectors:
+- ai
 status: active
 website: https://fastdo.vn/
 linkedin: https://www.linkedin.com/company/fastdovn
@@ -16,6 +18,6 @@ verification:
   level: source_checked
 sources:
 - startupdanang.vn
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Bản đồ hệ sinh thái
 legacy_id: s56

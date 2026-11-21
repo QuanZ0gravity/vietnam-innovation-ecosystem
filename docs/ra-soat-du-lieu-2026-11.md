@@ -73,7 +73,7 @@ Thêm 14 quan hệ `part_of`: các trường thành viên thuộc Đại học �
 - `fund-davas`: DAVAS là diễn đàn đầu tư, không phải quỹ; cần thống nhất cách phân loại.
 - 261 hồ sơ chưa xác minh.
 
-## Bổ sung từ dữ liệu mạng lưới Swiss EP (21/11/2026)
+## Bổ sung từ danh mục ươm tạo của các tổ chức hỗ trợ (21/11/2026)
 
 - 200 startup do 5 tổ chức tại Đà Nẵng ươm tạo, hỗ trợ: DNES 83, Song Han Incubator 59 (bỏ 1 bản ghi đánh dấu trùng), Ecomdy 38, Trung tâm Công nghệ sinh học Đà Nẵng 11, Decentralab 9.
 - 16 startup đã có trong danh bạ được bổ sung thông tin và gắn tên khác (ví dụ Delta X VNM, Copin, Botstar, Selly, VR360); 184 startup mới được thêm, mức xác minh `partner_verified`.
@@ -93,7 +93,7 @@ Thêm 14 quan hệ `part_of`: các trường thành viên thuộc Đại học �
 
 ## Bổ sung từ indanang.vn (21/11/2026)
 
-Quét 28 trang của indanang.vn: danh bạ tổ chức, đối tác Swiss EP, các bên liên quan cấp quốc gia, và trang các sự kiện DAVAS, SURF, InnoEx, Startup Wheel, QVIC, JDI TFOAI4, TECx, Conviction, Web3 Builders Summit, DBFTW, Vietnam Innovation Day.
+Quét 28 trang của indanang.vn: danh bạ tổ chức, các tổ chức hỗ trợ khởi nghiệp, các bên liên quan cấp quốc gia, và trang các sự kiện DAVAS, SURF, InnoEx, Startup Wheel, QVIC, JDI TFOAI4, TECx, Conviction, Web3 Builders Summit, DBFTW, Vietnam Innovation Day.
 
 - Khoảng 360 tác nhân mới, chia thư mục theo khu vực: `ha-noi`, `ho-chi-minh`, `viet-nam` (chưa rõ tỉnh, thành), `quoc-te` (tổ chức nước ngoài). Khoảng 60 hồ sơ đã có được gắn thêm nguồn hoặc website.
 - Tên doanh nghiệp từ cẩm nang InnoEx (viết hoa, song ngữ) được rút về tên thương hiệu; tên pháp lý tiếng Việt và bản gốc giữ trong `alt_names`.

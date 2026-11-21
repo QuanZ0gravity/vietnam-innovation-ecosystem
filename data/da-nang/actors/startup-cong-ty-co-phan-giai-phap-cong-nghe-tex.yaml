@@ -2,6 +2,8 @@ id: startup-cong-ty-co-phan-giai-phap-cong-nghe-tex
 name:
   vi: Công ty cổ phần giải pháp công nghệ TEX
 type: startup
+sectors:
+- edu
 website: https://tex.vn/
 region: da-nang
 website_status: Hoạt động

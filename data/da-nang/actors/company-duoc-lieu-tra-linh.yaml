@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Dược liệu
+sectors:
+- agrifood
 description:
   vi: Sâm Ngọc Linh.
 region: da-nang

@@ -2,6 +2,9 @@ id: fund-totm-labs
 name:
   vi: TOTM Labs
 type: fund
+sectors:
+- ai
+- property
 website: https://www.totm-labs.com/
 region: quoc-te
 verification:

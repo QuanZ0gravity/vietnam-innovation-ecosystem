@@ -2,6 +2,9 @@ id: company-kalodata
 name:
   vi: Kalodata
 type: company
+sectors:
+- ai
+- commerce
 website: https://www.kalodata.com/
 region: quoc-te
 verification:

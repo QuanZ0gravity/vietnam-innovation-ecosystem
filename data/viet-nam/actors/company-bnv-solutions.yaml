@@ -2,6 +2,9 @@ id: company-bnv-solutions
 name:
   vi: Bnv Solutions
 type: company
+sectors:
+- ai
+- edu
 region: viet-nam
 verification:
   level: unverified

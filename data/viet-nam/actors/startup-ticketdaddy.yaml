@@ -2,6 +2,9 @@ id: startup-ticketdaddy
 name:
   vi: TicketDaddy
 type: startup
+sectors:
+- fintech
+- tourism
 website: https://ticketdaddy.io/
 region: viet-nam
 verification:

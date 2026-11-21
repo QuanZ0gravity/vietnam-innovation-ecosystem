@@ -4,6 +4,9 @@ name:
 type: startup
 categories:
 - Technology
+sectors:
+- ai
+- web3
 founded: 2024
 status: active
 website: https://openverse.tech
@@ -13,7 +16,7 @@ verification:
   date: '2026-11-07'
   by: Decentralab
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Decentralab (11/2026)
 - Website chính thức
 description:
   vi: Phát triển phần mềm Web3, blockchain và AI tại Đà Nẵng cho khách hàng quốc tế.

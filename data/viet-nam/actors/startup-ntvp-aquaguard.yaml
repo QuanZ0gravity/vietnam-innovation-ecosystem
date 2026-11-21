@@ -2,6 +2,8 @@ id: startup-ntvp-aquaguard
 name:
   vi: NTVP AquaGuard
 type: startup
+sectors:
+- agrifood
 region: viet-nam
 verification:
   level: unverified

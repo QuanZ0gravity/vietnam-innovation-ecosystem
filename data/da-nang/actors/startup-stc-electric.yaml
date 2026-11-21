@@ -2,6 +2,8 @@ id: startup-stc-electric
 name:
   vi: STC Electric
 type: startup
+sectors:
+- deeptech
 website: https://stcelectric.vn/
 region: da-nang
 website_status: Hoạt động

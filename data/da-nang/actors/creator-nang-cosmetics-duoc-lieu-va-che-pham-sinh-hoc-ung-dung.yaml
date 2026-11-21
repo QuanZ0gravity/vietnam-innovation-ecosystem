@@ -4,6 +4,9 @@ name:
 type: creator
 categories:
 - Chủ thể sáng tạo
+sectors:
+- agrifood
+- health
 region: former-quang-nam
 verification:
   level: unverified

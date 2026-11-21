@@ -5,6 +5,8 @@ type: startup
 categories:
 - Công nghệ thư viện, giáo dục
 - Giáo dục
+sectors:
+- edu
 description:
   vi: Giải pháp thư viện số cho trường học.
 region: da-nang

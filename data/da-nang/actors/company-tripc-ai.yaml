@@ -4,6 +4,9 @@ name:
 type: company
 categories:
 - Du lịch, AI
+sectors:
+- ai
+- tourism
 description:
   vi: Hệ sinh thái du lịch số.
 region: da-nang

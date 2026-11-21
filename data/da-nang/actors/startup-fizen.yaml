@@ -4,6 +4,9 @@ name:
 type: startup
 categories:
 - Technology
+sectors:
+- fintech
+- tourism
 founded: 2023
 status: active
 website: https://fizen.io
@@ -14,7 +17,7 @@ verification:
   date: '2026-11-07'
   by: Decentralab
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Decentralab (11/2026)
 - Website chính thức
 description:
   vi: Ví USDT tự lưu ký kèm thanh toán QR, eSIM du lịch và chuyển tiền quốc tế.

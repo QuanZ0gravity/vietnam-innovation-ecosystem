@@ -8,6 +8,8 @@ categories:
 - Tài sản số
 - Thử nghiệm có kiểm soát (sandbox)
 - Thương mại, fintech
+sectors:
+- fintech
 description:
   vi: Giải pháp MIMO trong sandbox, 36 tháng.
 region: da-nang

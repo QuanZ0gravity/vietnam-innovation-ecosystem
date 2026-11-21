@@ -5,6 +5,9 @@ type: startup
 categories:
 - Fintech
 - Blockchain
+sectors:
+- fintech
+- web3
 region: ha-noi
 verification:
   level: unverified

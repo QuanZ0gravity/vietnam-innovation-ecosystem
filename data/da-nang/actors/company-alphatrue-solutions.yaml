@@ -8,6 +8,8 @@ categories:
 - Tài sản số
 - Thử nghiệm có kiểm soát (sandbox)
 - Thương mại, fintech
+sectors:
+- fintech
 description:
   vi: Basal Pay trong sandbox từ 8/2025, 36 tháng.
 region: da-nang

@@ -2,6 +2,8 @@ id: company-viet-nam
 name:
   vi: cacaFly
 type: company
+sectors:
+- marketing
 region: viet-nam
 verification:
   level: unverified

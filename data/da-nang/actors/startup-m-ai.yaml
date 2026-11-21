@@ -2,6 +2,8 @@ id: startup-m-ai
 name:
   vi: M&AI
 type: startup
+sectors:
+- ai
 website: https://emandai.net/
 linkedin: https://www.linkedin.com/company/emandai
 region: da-nang

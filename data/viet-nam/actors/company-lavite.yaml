@@ -2,6 +2,8 @@ id: company-lavite
 name:
   vi: Lavite
 type: company
+sectors:
+- agrifood
 region: viet-nam
 verification:
   level: unverified

@@ -4,6 +4,9 @@ name:
 type: startup
 categories:
 - Communications
+sectors:
+- fintech
+- commerce
 founded: 2016
 status: active
 website: https://cashbag.vn
@@ -13,7 +16,7 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 description:
   vi: Nền tảng hoàn tiền khi mua sắm trực tuyến (trước là Zody).

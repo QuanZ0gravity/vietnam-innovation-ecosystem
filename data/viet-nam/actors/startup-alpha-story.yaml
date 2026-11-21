@@ -2,6 +2,9 @@ id: startup-alpha-story
 name:
   vi: Alpha Story
 type: startup
+sectors:
+- ai
+- marketing
 website: https://alphastory.ai/
 linkedin: https://www.linkedin.com/company/alpha-story
 region: viet-nam

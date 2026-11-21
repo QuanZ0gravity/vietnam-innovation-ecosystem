@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI hàng hải
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Giải pháp AI cho vận hành hàng hải.
 region: da-nang

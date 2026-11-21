@@ -5,6 +5,8 @@ type: startup
 categories:
 - Healthtech
 - Health Care
+sectors:
+- health
 region: ho-chi-minh
 verification:
   level: unverified

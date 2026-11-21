@@ -2,6 +2,8 @@ id: startup-priyoshop
 name:
   vi: Priyoshop
 type: startup
+sectors:
+- fintech
 region: quoc-te
 verification:
   level: unverified

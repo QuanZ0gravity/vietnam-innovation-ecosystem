@@ -2,6 +2,8 @@ id: startup-skale-placement-placement
 name:
   vi: Skale Placement Placement
 type: startup
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

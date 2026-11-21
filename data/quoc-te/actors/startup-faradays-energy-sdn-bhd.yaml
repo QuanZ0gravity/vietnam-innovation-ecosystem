@@ -2,6 +2,9 @@ id: startup-faradays-energy-sdn-bhd
 name:
   vi: Faradays Energy SDN BHD
 type: startup
+sectors:
+- ai
+- climate
 region: quoc-te
 verification:
   level: unverified

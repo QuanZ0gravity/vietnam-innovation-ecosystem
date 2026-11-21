@@ -2,6 +2,9 @@ id: startup-aqufish-technology-sdn-bhd
 name:
   vi: Aqufish Technology SDN BHD
 type: startup
+sectors:
+- ai
+- agrifood
 region: quoc-te
 verification:
   level: unverified

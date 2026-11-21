@@ -2,6 +2,10 @@ id: startup-skyedge-ai-solutions
 name:
   vi: Skyedge AI Solutions
 type: startup
+sectors:
+- ai
+- climate
+- deeptech
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: fund-universal-materials-incubator-co-ltd-umi
 name:
   vi: Universal Materials Incubator Co., Ltd. (UMI)
 type: fund
+sectors:
+- deeptech
 region: quoc-te
 verification:
   level: unverified

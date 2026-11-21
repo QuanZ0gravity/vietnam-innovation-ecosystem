@@ -97,9 +97,11 @@ for o in opps:
 policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
 # ---------- khung trang ----------
-NAV = [("home", "", "nav_home"), ("dir", "danh-ba/", "nav_dir"), ("map", "ban-do/", "nav_map"),
+NAV = [("home", "", "nav_home"), ("dir", "danh-ba/", "nav_dir"),
        ("cities", "thanh-pho/", "nav_cities"), ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy")]
 CUR = ' aria-current="page"'
+LEAF = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
+        '<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>')
 LOGO = ('<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="8" cy="9" r="4" fill="var(--sea)"/>'
         '<circle cx="22" cy="8" r="3" fill="var(--ink)"/><circle cx="15" cy="22" r="5" fill="var(--sun)"/>'
         '<path d="M8 9 22 8M8 9l7 13M22 8l-7 14" stroke="var(--ink)" stroke-width="1.5" fill="none"/></svg>')
@@ -162,33 +164,20 @@ import unicodedata as _ud, re as _re
 def _fold(s):
     s = (s or "").replace("đ", "d").replace("Đ", "D")
     return "".join(c for c in _ud.normalize("NFKD", s) if not _ud.combining(c)).lower()
-SECTORS = [
-    ("ai", "AI, phần mềm", "AI, software", r"\bai\b|tri tue nhan tao|machine learning|\bhoc may\b|phan mem|software|\bsaas\b|\bapps?\b|chatbot|voicebot|\bdu lieu\b|\bdata\b|\bcloud\b|dam may|\berp\b|\bcrm\b|chuyen doi so|digital transformation|computer vision|thi giac may|\bllm\b|tac tu|\bagents?\b|nen tang so|platform"),
-    ("fintech", "Tài chính số", "Fintech", r"fintech|tai chinh|thanh toan|payment|ngan hang|\bbank|vi dien tu|\bwallet|bao hiem|insur|ke toan|accounting|chung khoan|securities|cho vay|\bloan|remittance|chuyen tien|hoan tien|cashback"),
-    ("web3", "Web3, blockchain", "Web3, blockchain", r"web3|blockchain|chuoi khoi|crypto|\btokens?\b|tokeni|\bdefi\b|\bnft|stablecoin|on-chain|tren chuoi|solana|ethereum|\bdao\b"),
-    ("commerce", "Thương mại, bán lẻ", "Commerce, retail", r"thuong mai dien tu|ecommerce|e-commerce|\bban le\b|retail|\bban hang\b|mua sam|\bshop\b|marketplace|tiktok shop|amazon|print on demand|in theo yeu cau|dac san"),
-    ("agrifood", "Nông nghiệp, thực phẩm", "Agri, food", r"nong nghiep|agri|thuc pham|\bfoods?\b|nong san|ca phe|coffee|\btra (thao|hoa|shan|xanh|viet|co thu)|\btea\b|\bnam (an|linh chi|dong trung)|mushroom|thuy san|aquacult|nuoi tom|shrimp|chan nuoi|livestock|duoc lieu|sam ngoc linh|ginseng|\bocop\b|to yen|chim yen|mat ong|honey|\bbanh\b|nuoc mam|hop tac xa|cooperative|dong trung ha thao|rau cu|trai cay|gia vi|bot nem|\bmut\b"),
-    ("health", "Y tế, sinh học", "Health, bio", r"\by te\b|healthcare|health|suc khoe|benh nhan|medical|y khoa|duoc pham|pharma|cong nghe sinh hoc|biotech|che pham sinh hoc|clinic|phong kham|nha khoa|rang mieng|my pham|cosmetic|lam dep|beauty|cham soc (da|suc khoe|tre|me)"),
-    ("edu", "Giáo dục", "Education", r"giao duc|edtech|education|hoc tap|hoc sinh|sinh vien|e-learning|learning|dao tao|training|tieng anh|english|ngoai ngu|\bstem\b|tutor|thu vien|library|luyen thi|khoa hoc truc tuyen"),
-    ("tourism", "Du lịch, văn hóa", "Tourism, culture", r"du lich|travel|\btours?\b|tourism|homestay|khach san|\bhotels?\b|van hoa|culture|di san|heritage|lang nghe|thu cong|handcraft|nghe thuat|\bart\b|am thuc|farmstay|luu tru"),
-    ("climate", "Năng lượng, môi trường", "Energy, climate", r"nang luong|energy|solar|mat troi|\bpin\b|battery|hydro|carbon|khi nha kinh|\bghg\b|net zero|moi truong|environment|tai che|recycl|\brac\b|waste|chat thai|tuan hoan|circular|climate|khi hau|sinh khoi|biomass|\bnhua\b|plastic|phan huy|bioplastic|khu mui"),
-    ("deeptech", "Bán dẫn, robot, phần cứng", "Chips, robotics, hardware", r"ban dan|semiconductor|\bchips?\b|vi mach|robot|drone|\buav\b|\biot\b|aiot|phan cung|hardware|cam bien|sensor|tu dong hoa (cong nghiep|san xuat|nha may)|industrial automation|lidar|vat lieu|materials?\b|\bnano|graphene|\b3d\b|thiet bi"),
-    ("mobility", "Logistics, di chuyển", "Logistics, mobility", r"logistics|van tai|transport|giao hang|delivery|\bxe (may|dien|o to|tai)|vehicle|\bo to\b|automotive|\bev\b|\bcang\b|\bport\b|\bkho (bai|hang)|warehouse|chuoi cung ung|supply chain|goi xe|ride-hailing|chuoi lanh"),
-    ("marketing", "Truyền thông, marketing", "Media, marketing", r"marketing|quang cao|advertis|truyen thong|\bmedia\b|noi dung so|\bcontent\b|thuong hieu|\bbrand|agency|\bvideo\b|\bgames?\b|giai tri|entertain|martech|affiliate"),
-    ("property", "Bất động sản, xây dựng", "Property, construction", r"bat dong san|proptech|real estate|xay dung|construction|kien truc|architect|noi that|interior|toa nha|\bbuilding\b|nha o|housing|contech|nha mo-dun|modular"),
-]
-_SEC_RX = [(k, _re.compile(rx)) for k, _, _, rx in SECTORS]
-def sectors_of(a):
-    if a["type"] not in ("startup", "company", "creator", "fund"):
-        return []
-    txt = " " + _fold(" ".join((a.get("categories") or []) + [a.get("description", {}).get("vi", "") or "", a["name"]["vi"]])) + " "
-    found = [k for k, rx in _SEC_RX if rx.search(txt)]
-    return found[:3]
+SECTORS = [(s["id"], s["vi"], s["en"], s.get("keywords", "")) for s in yaml.safe_load(open(os.path.join(ROOT, "schema", "sectors.yaml"), encoding="utf-8"))]
 LOGO_DIR = os.path.join(ROOT, "logos")
 for a in actors:
-    a["sectors"] = sectors_of(a)
+    a["sectors"] = a.get("sectors") or []
     if os.path.exists(os.path.join(LOGO_DIR, a["id"] + ".webp")):
         a["logo"] = f"logos/{a['id']}.webp"
+
+
+def icon_svg(k, size=18):
+    P = {"incubator": '<path d="M12 21v-8"/><path d="M12 13c0-4 3-6 7-6 0 4-3 6-7 6z"/><path d="M12 15c0-3-2.5-5-6-5 0 3 2.5 5 6 5z"/><path d="M7 21h10"/>',
+         "fund": '<ellipse cx="9" cy="6" rx="6" ry="2.5"/><path d="M3 6v5c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5V6"/><path d="M3 11v5c0 1.4 2.7 2.5 6 2.5 1 0 2-.1 2.8-.3"/><circle cx="17" cy="16" r="4"/>',
+         "company": '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/>',
+         "university": '<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/>'}
+    return f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{P.get(k, "")}</svg>'
 
 def logo_img(a, size=40, cls="lg"):
     if a.get("logo"):
@@ -290,67 +279,8 @@ def opp_card(o, compact=False):
             + (f'<dl class="facts opp-facts">{rows_html}</dl>' if rows_html else "")
             + (f'<p class="opp-links">{"".join(links)}</p>' if links and not compact else "") + miss_html + '</article>')
 
-# ---------- trang chủ ----------
-def n_of(types):
-    return sum(counts.get(t, 0) for t in types)
+# (trang chủ được dựng sau mục thành phố)
 
-NEEDS = [
-    ("Tôi có một ý tưởng và cần nơi bắt đầu", "I have an idea and need a place to start",
-     "Vườn ươm, không gian đổi mới sáng tạo, tổ chức hỗ trợ và chương trình tăng tốc.",
-     "Incubators, innovation spaces, support organisations and accelerators.",
-     ["incubator", "space", "support_org", "accelerator", "community"]),
-    ("Tôi cần vốn", "I need funding",
-     "Quỹ đầu tư, nhà đầu tư thiên thần và quỹ nhà nước đang có mặt tại Đà Nẵng.",
-     "Venture funds, angel investors and public funds active in Da Nang.", ["fund"]),
-    ("Tôi tìm đối tác, khách hàng thử nghiệm", "I am looking for partners and pilot customers",
-     "Startup, doanh nghiệp và đối tác quốc tế trong hệ sinh thái.",
-     "Startups, companies and international partners in the ecosystem.", ["startup", "company", "international"]),
-    ("Tôi làm nghiên cứu, đào tạo hoặc chính sách", "I work in research, education or policy",
-     "Viện, trường và cơ quan nhà nước; xem thêm danh mục chính sách.",
-     "Universities, institutes and government bodies; see also the policy list.", ["university", "government"]),
-    ("Tôi muốn xem các dự án sáng tạo xứ Quảng", "I want to see Quang Nam creative projects",
-     "Dự án từ chương trình Bản lĩnh xứ Quảng ở khu vực Quảng Nam cũ.",
-     "Projects from the Ban linh xu Quang programme in the former Quang Nam area.", ["creator"]),
-]
-needs_html = "".join(
-    f'<a class="need" href="{dir_link(type=",".join(ts))}"><span class="q" data-vi="{e(q)}" data-en="{e(qe)}">{e(q)}</span>'
-    f'<span class="a" data-vi="{e(d)}" data-en="{e(de)}">{e(d)}</span><span class="n">{n_of(ts)}</span></a>'
-    for q, qe, d, de, ts in NEEDS)
-ranked = sorted(opps, key=lambda o: ({"open": 0, "upcoming": 1, "closed": 2}[opp_status(o)], opp_key_date(o) if opp_status(o) != "closed" else "~" + "".join(chr(255 - ord(c)) for c in opp_key_date(o))))
-home_opps = "".join(opp_card(o, compact=True) for o in ranked[:4])
-n_open = sum(1 for o in opps if opp_status(o) == "open")
-po_html = "".join(
-    f'<li><b>{e(x["document"])}</b><br><span class="muted">{e(x.get("summary"))}</span></li>' for x in policies[:5])
-verified = sum(1 for a in actors if a["verification"]["level"] != "unverified")
-home = f"""
-<section class="hero"><div class="wrap">
-<h1 data-vi="Ai đang làm gì cho khởi nghiệp ở Đà Nẵng?" data-en="Who is doing what for startups in Da Nang?">Ai đang làm gì cho khởi nghiệp ở Đà Nẵng?</h1>
-<p class="lead" data-vi="Danh bạ mở về hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật. Bắt đầu từ Đà Nẵng và khu vực Quảng Nam cũ." data-en="An open, community-maintained directory of Vietnam's startup and innovation ecosystem. It starts with Da Nang and the former Quang Nam area.">Danh bạ mở về hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật. Bắt đầu từ Đà Nẵng và khu vực Quảng Nam cũ.</p>
-<form class="search" action="{SITE_ROOT}danh-ba/" role="search">
-<label class="sr" for="hq" data-i18n="search_ph">Tìm</label>
-<input id="hq" name="q" type="search" data-i18n-ph="search_ph" placeholder="Tìm tổ chức, startup, quỹ…">
-<button class="btn primary" type="submit" data-i18n="search_btn">Tìm</button>
-</form>
-<p class="census" data-vi="Hiện có {len(actors)} tổ chức và dự án, {len(policies)} văn bản chính sách và {len(opps)} cơ hội gọi vốn, thi đấu, ươm tạo. {verified} hồ sơ đã được đối chiếu với nguồn; phần còn lại đang chờ cộng đồng xác minh." data-en="The directory holds {len(actors)} organisations and projects, {len(policies)} policy documents and {len(opps)} funding, competition and programme opportunities. {verified} profiles have been checked against a source; the rest are waiting for the community to verify them.">Hiện có <b>{len(actors)}</b> tổ chức và dự án, <b>{len(policies)}</b> văn bản chính sách và <b>{len(opps)}</b> cơ hội.</p>
-</div></section>
-<section class="needs"><div class="wrap">
-<h2 class="sr">Bắt đầu từ việc bạn cần</h2>
-{needs_html}
-</div></section>
-<section class="band"><div class="wrap split">
-<div><h2 data-vi="Cơ hội gọi vốn, thi đấu, ươm tạo" data-en="Funding, competitions, programmes">Cơ hội gọi vốn, thi đấu, ươm tạo</h2>
-<div class="opp-list" style="margin-top:16px">{home_opps}</div>
-<p style="margin-top:16px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></div>
-<div><h2 data-vi="Chính sách mới ban hành" data-en="Recently issued policies">Chính sách mới ban hành</h2><ul class="list-plain">{po_html}</ul>
-<p style="margin-top:16px"><a href="{SITE_ROOT}chinh-sach/" data-i18n="all_policies">Tất cả chính sách</a></p></div>
-</div></section>
-<section><div class="wrap" style="padding:56px 24px 72px">
-<h2 data-vi="Thấy thiếu hoặc sai?" data-en="Something missing or wrong?">Thấy thiếu hoặc sai?</h2>
-<p class="lead" style="margin-top:12px" data-vi="Mỗi hồ sơ có nút đề xuất sửa. Tổ chức của bạn chưa có trong danh bạ? Gửi thông tin qua biểu mẫu, không cần biết Git." data-en="Every profile has a suggest-an-edit button. Not listed yet? Send your details through a form, no Git needed.">Mỗi hồ sơ có nút đề xuất sửa. Tổ chức của bạn chưa có trong danh bạ? Gửi thông tin qua biểu mẫu, không cần biết Git.</p>
-<p style="margin-top:20px"><a class="btn primary" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-i18n="add_missing">Thêm hồ sơ còn thiếu</a></p>
-</div></section>
-"""
-write("index.html", page("", home, "home"))
 
 # ---------- danh bạ ----------
 static_rows = "".join(
@@ -373,7 +303,8 @@ dir_body = f"""
 <span class="spacer"></span>
 <label class="sr" for="sort">Sắp xếp</label>
 <select id="sort"><option value="rich" data-vi="Thông tin đầy đủ trước" data-en="Most complete first">Thông tin đầy đủ trước</option><option value="az" data-i18n="sort_az">Tên A–Z</option><option value="ver" data-i18n="sort_ver">Đã xác minh trước</option></select>
-<div class="seg" role="group" aria-label="Kiểu hiển thị"><button type="button" id="v-cards" aria-pressed="true" data-i18n="view_cards">Thẻ</button><button type="button" id="v-list" aria-pressed="false" data-i18n="view_list">Danh sách</button></div>
+<div class="seg" role="group" aria-label="Kiểu hiển thị"><button type="button" id="v-cards" aria-pressed="true" data-i18n="view_cards">Thẻ</button><button type="button" id="v-list" aria-pressed="false" data-i18n="view_list">Danh sách</button><button type="button" id="v-map" aria-pressed="false" data-vi="Bản đồ" data-en="Map">Bản đồ</button></div>
+<button type="button" class="btn ghost" id="csv" title="Tải CSV theo bộ lọc hiện tại"><span data-vi="Tải CSV" data-en="Download CSV">Tải CSV</span></button>
 </div>
 <div class="morepanel" id="morepanel" hidden>
 <fieldset id="f-region"><legend data-i18n="f_region">Khu vực</legend></fieldset>
@@ -383,11 +314,12 @@ dir_body = f"""
 <button class="btn ghost" id="clear" type="button" data-i18n="f_clear">Xoá bộ lọc</button>
 </div>
 <p class="count" id="count" aria-live="polite"></p>
+<div id="mapwrap" hidden><div id="mapbox" class="mapbox"></div><p class="small muted" id="mapnote" style="margin-top:8px"></p></div>
 <div id="results"><ul class="rows">{static_rows}</ul></div>
 <nav class="pager" id="pager" aria-label="Phân trang"></nav>
 </div>
 """
-write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["directory.js"]))
+write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["map.js", "directory.js"], head=LEAF))
 
 # ---------- trang từng tác nhân ----------
 issue_base = f"https://github.com/{REPO}/issues/new?"
@@ -507,7 +439,7 @@ map_body = f"""
 <ul class="maplist" id="map-list" style="margin-top:12px"></ul></aside>
 </div>
 """
-write("ban-do/index.html", page("Bản đồ", map_body, "map", scripts=["map.js"], head=leaf))
+write("ban-do/index.html", page("Bản đồ", f'<div class="wrap page-head"><h1>Bản đồ đã chuyển</h1><p class="lead">Bản đồ nay nằm trong <a href="{SITE_ROOT}danh-ba/?view=map">Danh bạ</a> và trang từng thành phố.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}danh-ba/?view=map">'))
 
 # ---------- cơ hội ----------
 groups = [("open", "Đang nhận hồ sơ", "Open for applications"), ("upcoming", "Sắp diễn ra", "Upcoming"), ("closed", "Đã kết thúc", "Closed")]
@@ -639,7 +571,7 @@ if BENCH:
 <h1>{e(c["name"])}</h1>
 <p class="lead" data-vi="Hệ sinh thái khởi nghiệp {e(c['name'])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội." data-en="The {e(c['name'])} startup ecosystem: ranking, industries, funding, actors and opportunities.">Hệ sinh thái khởi nghiệp {e(c["name"])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội.</p></div>
 <div class="wrap" style="padding-bottom:72px">
-<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
 <h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật" data-en="Top industries">Ngành nổi bật</h2>{ind_table(c.get("industries"))}
@@ -649,12 +581,83 @@ if BENCH:
 <div><h3 data-vi="Quỹ, nhà đầu tư" data-en="Funds, investors">Quỹ, nhà đầu tư</h3>{lst("fund", 12)}
 <h3 style="margin-top:20px" data-vi="Tổ chức hỗ trợ" data-en="Support organisations">Tổ chức hỗ trợ</h3>{lst("support_org", 12)}{lst("incubator", 12) if tc["incubator"] else ""}
 <h3 style="margin-top:20px" data-vi="Trường, viện" data-en="Universities">Trường, viện</h3>{lst("university", 12)}</div></div></section>
+<section id="ban-do" class="sec"><h2 data-vi="Bản đồ" data-en="Map">Bản đồ</h2><div class="mapbox" id="citymap" data-ids="{",".join(a["id"] for a in acts)}"></div><p class="small muted" id="citymapnote" style="margin-top:8px"></p>
+<p class="small"><a href="{dir_link(region=",".join(regs), view="map")}" data-vi="Mở bản đồ trong danh bạ để lọc thêm" data-en="Open the map in the directory to filter further">Mở bản đồ trong danh bạ để lọc thêm</a></p></section>
 <section id="co-hoi" class="sec"><h2 data-vi="Cơ hội" data-en="Opportunities">Cơ hội</h2><div class="opp-list">{opp_html}</div>
 <p class="small" style="margin-top:12px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></section>
 <section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
 <p class="small" style="margin-top:10px"><a href="{e(c["url"])}" rel="noopener" data-vi="Trang {e(c['name'])} trên StartupBlink" data-en="{e(c['name'])} on StartupBlink">Trang {e(c["name"])} trên StartupBlink</a></p></section>
 {SB_NOTE}</div>"""
-        write(f"thanh-pho/{c['id']}/index.html", page(c["name"], body, "cities"))
+        body += """<script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("citymap");VIEMAP.render(el,el.dataset.ids.split(","),document.getElementById("citymapnote"));});</script>"""
+        write(f"thanh-pho/{c['id']}/index.html", page(c["name"], body, "cities", scripts=["map.js"], head=LEAF))
+
+
+# ---------- trang chủ ----------
+def n_of(types):
+    return sum(counts.get(t, 0) for t in types)
+NEEDS = [
+    ("Tôi có ý tưởng và cần nơi bắt đầu", "I have an idea and need a place to start", "Vườn ươm, không gian đổi mới sáng tạo, tổ chức hỗ trợ, chương trình tăng tốc.", "Incubators, innovation spaces, support organisations, accelerators.", ["incubator", "space", "support_org", "accelerator", "community"], "incubator"),
+    ("Tôi cần vốn", "I need funding", "Quỹ đầu tư mạo hiểm, nhà đầu tư thiên thần, quỹ nhà nước.", "Venture funds, angel investors, public funds.", ["fund"], "fund"),
+    ("Tôi tìm đối tác, khách hàng thử nghiệm", "I'm looking for partners and pilot customers", "Startup, doanh nghiệp, đối tác quốc tế.", "Startups, companies, international partners.", ["startup", "company", "international"], "company"),
+    ("Tôi làm nghiên cứu, đào tạo, chính sách", "I work in research, education or policy", "Trường, viện, cơ quan nhà nước và văn bản chính sách.", "Universities, institutes, government and policy documents.", ["university", "government"], "university"),
+]
+needs_html = "".join(
+    f'<a class="need" href="{dir_link(type=",".join(ts))}"><span class="nico">{icon_svg(ic, 26)}</span><span class="q" data-vi="{e(q)}" data-en="{e(qe)}">{e(q)}</span>'
+    f'<span class="a" data-vi="{e(d)}" data-en="{e(de)}">{e(d)}</span><span class="n">{n_of(ts)}</span></a>'
+    for q, qe, d, de, ts, ic in NEEDS)
+st_rank = {"open": 0, "upcoming": 1, "closed": 2}
+live = sorted([o for o in opps if opp_status(o) in ("open", "upcoming")], key=lambda o: (st_rank[opp_status(o)], o.get("deadline") or o.get("event_date") or ""))
+recent = sorted([o for o in opps if opp_status(o) == "closed"], key=opp_key_date, reverse=True)
+show = (live + recent)[:4]
+n_open = sum(1 for o in opps if opp_status(o) == "open")
+opp_title_vi = "Cơ hội đang mở" if live else "Cơ hội gần đây"
+opp_title_en = "Open opportunities" if live else "Recent opportunities"
+home_opps = "".join(opp_card(o, compact=True) for o in show)
+city_cards = f'<a class="city all" href="{SITE_ROOT}danh-ba/"><span class="cn" data-vi="Toàn quốc" data-en="All of Vietnam">Toàn quốc</span><span class="cm">{len(actors)} <span data-vi="tác nhân" data-en="actors">tác nhân</span></span><span class="cr" data-vi="Hạng thế giới #{BENCH.get("country", {}).get("global_rank", "–")}" data-en="Global rank #{BENCH.get("country", {}).get("global_rank", "–")}">Hạng thế giới #{BENCH.get("country", {}).get("global_rank", "–")}</span></a>'
+for c in BENCH.get("cities", []):
+    n = sum(1 for a in actors if a["region"] in CITY_REGIONS.get(c["id"], [c["id"]]))
+    no = sum(1 for o in opps if o["_region"] in CITY_REGIONS.get(c["id"], [c["id"]]))
+    city_cards += (f'<a class="city" href="{SITE_ROOT}thanh-pho/{c["id"]}/"><span class="cn">{e(c["name"])}</span>'
+                   f'<span class="cm">{n} <span data-vi="tác nhân" data-en="actors">tác nhân</span> · {no} <span data-vi="cơ hội" data-en="opportunities">cơ hội</span></span>'
+                   f'<span class="cr" data-vi="Hạng thế giới #{c["global_rank"]}" data-en="Global rank #{c["global_rank"]}">Hạng thế giới #{c["global_rank"]}</span></a>')
+feat = sorted([a for a in actors if a["type"] == "startup" and a.get("logo") and (a.get("description") or {}).get("vi") and a.get("status") != "inactive"],
+              key=lambda a: (VER_ORDER.get(a["verification"]["level"], 9), a["name"]["vi"].lower()))[:12]
+feat_html = "".join(f'<a class="fs" href="{SITE_ROOT}a/{a["id"]}/">{logo_img(a, 44)}<span class="nm">{e(a["name"]["vi"])}</span><span class="muted small">{e(", ".join(s[1] for s in SECTORS if s[0] in a["sectors"][:1]))}</span></a>' for a in feat)
+po_html = "".join(f'<li><b>{e(x["document"])}</b><br><span class="muted">{e(x.get("summary"))}</span></li>' for x in policies[:4])
+verified = sum(1 for a in actors if a["verification"]["level"] != "unverified")
+home = f"""
+<section class="hero"><div class="wrap">
+<h1 data-vi="Ai đang làm gì cho khởi nghiệp Việt Nam?" data-en="Who is doing what for startups in Vietnam?">Ai đang làm gì cho khởi nghiệp Việt Nam?</h1>
+<p class="lead" data-vi="Danh bạ mở về startup, quỹ, vườn ươm, trường, cơ quan và cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật." data-en="An open, community-maintained directory of startups, funds, incubators, universities, agencies and opportunities in Vietnam's innovation ecosystem.">Danh bạ mở về startup, quỹ, vườn ươm, trường, cơ quan và cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật.</p>
+<form class="search" action="{SITE_ROOT}danh-ba/" role="search">
+<label class="sr" for="hq" data-i18n="search_ph">Tìm</label>
+<input id="hq" name="q" type="search" data-i18n-ph="search_ph2" placeholder="Tìm theo tên, lĩnh vực, mô tả…">
+<button class="btn primary" type="submit" data-i18n="search_btn">Tìm</button>
+</form>
+<div class="cities" role="list" aria-label="Chọn thành phố">{city_cards}</div>
+</div></section>
+<section class="band first"><div class="wrap">
+<div class="sec-h"><h2 data-vi="{opp_title_vi}" data-en="{opp_title_en}">{opp_title_vi}</h2><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả {len(opps)} cơ hội" data-en="All {len(opps)} opportunities">Tất cả {len(opps)} cơ hội</a></div>
+{"" if live else '<p class="muted small" data-vi="Chưa có chương trình nào đang nhận hồ sơ trong danh sách; dưới đây là các cơ hội vừa kết thúc. Biết một chương trình đang mở? Thêm vào để mọi người cùng thấy." data-en="No programme in the list is taking applications right now; below are recent ones. Know an open programme? Add it.">Chưa có chương trình nào đang nhận hồ sơ trong danh sách; dưới đây là các cơ hội vừa kết thúc.</p>'}
+<div class="opp-grid">{home_opps}</div>
+</div></section>
+<section class="needs"><div class="wrap">
+<h2 class="sr">Bắt đầu từ việc bạn cần</h2>
+{needs_html}
+</div></section>
+<section><div class="wrap" style="padding:48px 24px 8px">
+<div class="sec-h"><h2 data-vi="Startup có hồ sơ đầy đủ" data-en="Startups with complete profiles">Startup có hồ sơ đầy đủ</h2><a href="{dir_link(type="startup")}" data-vi="Xem tất cả startup" data-en="See all startups">Xem tất cả startup</a></div>
+<div class="fsgrid">{feat_html}</div>
+</div></section>
+<section class="band"><div class="wrap split">
+<div><h2 data-vi="Chính sách mới (Đà Nẵng)" data-en="New policies (Da Nang)">Chính sách mới (Đà Nẵng)</h2><ul class="list-plain">{po_html}</ul>
+<p style="margin-top:16px"><a href="{SITE_ROOT}chinh-sach/" data-i18n="all_policies">Tất cả chính sách</a></p></div>
+<div><h2 data-vi="Dữ liệu mở, tải về miễn phí" data-en="Open data, free to download">Dữ liệu mở, tải về miễn phí</h2>
+<p class="muted" style="margin-top:12px" data-vi="{len(actors)} hồ sơ, {verified} đã đối chiếu nguồn. Lọc trong danh bạ rồi bấm Tải CSV để lấy đúng phần bạn cần; dữ liệu dùng giấy phép CC BY 4.0." data-en="{len(actors)} profiles, {verified} checked against a source. Filter the directory and press Download CSV to get exactly what you need; data is CC BY 4.0.">{len(actors)} hồ sơ, {verified} đã đối chiếu nguồn. Lọc trong danh bạ rồi bấm Tải CSV để lấy đúng phần bạn cần; dữ liệu dùng giấy phép CC BY 4.0.</p>
+<p style="margin-top:16px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-vi="Mở danh bạ" data-en="Open the directory">Mở danh bạ</a> <a class="btn ghost" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-i18n="add_missing">Thêm hồ sơ còn thiếu</a></p></div>
+</div></section>
+"""
+write("index.html", page("", home, "home"))
 
 # ---------- chính sách ----------
 by_year = collections.OrderedDict()

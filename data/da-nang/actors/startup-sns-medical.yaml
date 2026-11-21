@@ -5,6 +5,8 @@ type: startup
 categories:
 - HealthTech
 - Y tế
+sectors:
+- health
 description:
   vi: Hệ sinh thái y tế dự phòng và cấp cứu thông minh.
 region: da-nang

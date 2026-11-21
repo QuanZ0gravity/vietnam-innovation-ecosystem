@@ -2,6 +2,9 @@ id: startup-global-cerah
 name:
   vi: Global Cerah
 type: startup
+sectors:
+- agrifood
+- deeptech
 region: quoc-te
 verification:
   level: unverified

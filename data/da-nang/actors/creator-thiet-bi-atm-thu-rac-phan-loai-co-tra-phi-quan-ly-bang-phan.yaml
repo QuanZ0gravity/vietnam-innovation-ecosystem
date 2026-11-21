@@ -4,6 +4,10 @@ name:
 type: creator
 categories:
 - Chủ thể sáng tạo
+sectors:
+- ai
+- climate
+- deeptech
 region: former-quang-nam
 verification:
   level: unverified

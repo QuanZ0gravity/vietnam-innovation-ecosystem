@@ -2,6 +2,9 @@ id: startup-reasonary-ai
 name:
   vi: Reasonary AI
 type: startup
+sectors:
+- ai
+- fintech
 website: https://reasonary.ai
 region: viet-nam
 verification:

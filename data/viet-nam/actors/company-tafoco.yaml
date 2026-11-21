@@ -2,6 +2,9 @@ id: company-tafoco
 name:
   vi: Tafoco
 type: company
+sectors:
+- web3
+- edu
 region: viet-nam
 verification:
   level: unverified

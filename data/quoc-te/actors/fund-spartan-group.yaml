@@ -2,6 +2,9 @@ id: fund-spartan-group
 name:
   vi: Spartan Group
 type: fund
+sectors:
+- web3
+- property
 website: https://www.spartangroup.io/
 linkedin: https://www.linkedin.com/company/spartangroup
 region: quoc-te

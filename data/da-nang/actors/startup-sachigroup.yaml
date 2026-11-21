@@ -4,6 +4,9 @@ name:
 type: startup
 categories:
 - Biotechnology
+sectors:
+- agrifood
+- health
 founded: 2024
 status: active
 website: https://sachigroup.vn
@@ -13,7 +16,7 @@ verification:
   date: '2026-11-07'
   by: Da Nang BioTech Center
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Trung tâm Công nghệ sinh học Đà Nẵng (11/2026)
 - Website chính thức
 description:
   vi: Sản xuất bột nêm chay từ rau củ trích ly, nhà máy đạt ISO 22000.

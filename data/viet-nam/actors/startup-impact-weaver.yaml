@@ -2,6 +2,8 @@ id: startup-impact-weaver
 name:
   vi: Impact Weaver
 type: startup
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

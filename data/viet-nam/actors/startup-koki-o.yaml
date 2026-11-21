@@ -2,6 +2,9 @@ id: startup-koki-o
 name:
   vi: Koki'o
 type: startup
+sectors:
+- fintech
+- web3
 website: https://kokio.app
 region: viet-nam
 verification:

@@ -2,6 +2,8 @@ id: fund-tron-dao-ventures
 name:
   vi: TRON DAO Ventures
 type: fund
+sectors:
+- web3
 website: https://tron.network/
 region: quoc-te
 verification:

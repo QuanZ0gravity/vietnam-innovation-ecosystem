@@ -2,6 +2,8 @@ id: company-byteplus
 name:
   vi: BytePlus
 type: company
+sectors:
+- ai
 website: https://www.byteplus.com/
 linkedin: https://www.linkedin.com/company/byteplus
 region: quoc-te

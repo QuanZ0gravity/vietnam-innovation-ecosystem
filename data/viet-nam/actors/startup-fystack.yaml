@@ -2,6 +2,8 @@ id: startup-fystack
 name:
   vi: Fystack
 type: startup
+sectors:
+- health
 website: http://fystack.io/
 linkedin: https://www.linkedin.com/company/fystack
 region: viet-nam

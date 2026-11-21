@@ -4,6 +4,10 @@ name:
 type: company
 categories:
 - Bán dẫn
+sectors:
+- web3
+- edu
+- deeptech
 website: https://latsemi.com
 description:
   vi: Đào tạo nhân lực và nghiên cứu chip bán dẫn.

@@ -5,6 +5,8 @@ type: company
 categories:
 - Hardware & IoT
 - Hardware
+sectors:
+- deeptech
 region: ha-noi
 verification:
   level: unverified

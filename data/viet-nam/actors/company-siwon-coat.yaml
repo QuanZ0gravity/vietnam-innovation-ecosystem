@@ -2,6 +2,8 @@ id: company-siwon-coat
 name:
   vi: Siwon Coat
 type: company
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

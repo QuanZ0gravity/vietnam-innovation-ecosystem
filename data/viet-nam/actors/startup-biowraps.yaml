@@ -2,6 +2,9 @@ id: startup-biowraps
 name:
   vi: BioWraps
 type: startup
+sectors:
+- agrifood
+- climate
 website: https://biowrapsvietnam.com/
 region: viet-nam
 verification:

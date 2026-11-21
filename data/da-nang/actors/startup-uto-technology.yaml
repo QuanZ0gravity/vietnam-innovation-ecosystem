@@ -5,6 +5,8 @@ type: startup
 categories:
 - TravelTech
 - Du lịch
+sectors:
+- tourism
 website: https://utotech.vn
 description:
   vi: Phát triển nền tảng công nghệ du lịch, trong đó có jGooooo.

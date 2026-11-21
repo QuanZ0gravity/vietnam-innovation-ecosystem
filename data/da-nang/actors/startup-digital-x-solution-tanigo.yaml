@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI cho khu vực công
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Trợ lý AI nội bộ thế hệ 2 cho cơ quan nhà nước.
 region: da-nang

@@ -75,6 +75,6 @@ Hướng có nhu cầu thật mà thành phố hoặc doanh nghiệp đặt ra, 
 
 Tệp `logos/<id>.webp`, 128 × 128 px, nền trong suốt. Logo là nhãn hiệu của chủ sở hữu, không thuộc giấy phép CC BY 4.0 (xem `logos/README.md`). Website tự hiện logo nếu có tệp trùng `id`.
 
-## Lĩnh vực
+## Lĩnh vực (`sectors`)
 
-Website gán tối đa 3 lĩnh vực cho startup, doanh nghiệp, quỹ và dự án, dựa trên phân loại và mô tả (danh sách trong `tools/build.py`, biến `SECTORS`).
+Tối đa 3 mã trong `schema/sectors.yaml`: `ai`, `fintech`, `web3`, `commerce`, `agrifood`, `health`, `edu`, `tourism`, `climate`, `deeptech`, `mobility`, `marketing`, `property`. Tổ chức tự chọn khi gửi biểu mẫu hoặc sửa hồ sơ. 468 hồ sơ hiện có được gán gợi ý ban đầu bằng `tools/suggest_sectors.py` (theo từ khóa trong phân loại và mô tả); đây chỉ là điểm khởi đầu, cần tổ chức xác nhận.

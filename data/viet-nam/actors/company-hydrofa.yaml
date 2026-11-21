@@ -2,6 +2,10 @@ id: company-hydrofa
 name:
   vi: Hydrofa
 type: company
+sectors:
+- ai
+- climate
+- deeptech
 region: viet-nam
 verification:
   level: unverified

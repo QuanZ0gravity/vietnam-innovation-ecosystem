@@ -2,6 +2,9 @@ id: company-binaryus
 name:
   vi: Binaryus
 type: company
+sectors:
+- ai
+- mobility
 region: viet-nam
 verification:
   level: unverified

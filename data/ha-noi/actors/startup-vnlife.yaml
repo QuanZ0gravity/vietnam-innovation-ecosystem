@@ -5,6 +5,8 @@ type: startup
 categories:
 - Fintech
 - Financial Services
+sectors:
+- fintech
 region: ha-noi
 verification:
   level: unverified

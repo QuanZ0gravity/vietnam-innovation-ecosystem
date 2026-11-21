@@ -2,6 +2,9 @@ id: company-iomtek
 name:
   vi: Iomtek
 type: company
+sectors:
+- climate
+- deeptech
 region: viet-nam
 verification:
   level: unverified

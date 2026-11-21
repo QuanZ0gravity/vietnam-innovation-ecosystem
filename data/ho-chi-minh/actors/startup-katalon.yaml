@@ -5,6 +5,8 @@ type: startup
 categories:
 - Software & Data
 - Enterprise Technology
+sectors:
+- ai
 region: ho-chi-minh
 verification:
   level: unverified

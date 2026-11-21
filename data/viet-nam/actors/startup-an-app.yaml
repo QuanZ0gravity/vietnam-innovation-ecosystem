@@ -2,6 +2,8 @@ id: startup-an-app
 name:
   vi: An App
 type: startup
+sectors:
+- ai
 website: http://antech.app
 region: viet-nam
 verification:

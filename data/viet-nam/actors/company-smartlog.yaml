@@ -2,6 +2,9 @@ id: company-smartlog
 name:
   vi: Smartlog
 type: company
+sectors:
+- ai
+- mobility
 region: viet-nam
 verification:
   level: unverified

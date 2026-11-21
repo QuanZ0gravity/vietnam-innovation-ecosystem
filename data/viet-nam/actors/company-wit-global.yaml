@@ -2,6 +2,10 @@ id: company-wit-global
 name:
   vi: Wit Global
 type: company
+sectors:
+- ai
+- tourism
+- marketing
 region: viet-nam
 verification:
   level: unverified

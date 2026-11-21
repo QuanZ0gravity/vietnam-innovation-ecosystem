@@ -2,6 +2,8 @@ id: startup-blaze-ai
 name:
   vi: Blaze AI
 type: startup
+sectors:
+- ai
 website: https://blaze.ai
 linkedin: https://www.linkedin.com/company/getblazeai
 region: viet-nam

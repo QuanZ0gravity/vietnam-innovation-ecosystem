@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - AI
+sectors:
+- ai
 website: https://flow.diid.vn/landing-page
 region: da-nang
 website_status: Hoạt động

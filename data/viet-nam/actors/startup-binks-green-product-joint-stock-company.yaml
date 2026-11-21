@@ -2,6 +2,9 @@ id: startup-binks-green-product-joint-stock-company
 name:
   vi: BINKS Green Product Joint Stock Company
 type: startup
+sectors:
+- agrifood
+- edu
 region: viet-nam
 verification:
   level: unverified

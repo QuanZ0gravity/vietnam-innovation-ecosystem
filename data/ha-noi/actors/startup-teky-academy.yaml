@@ -4,6 +4,8 @@ name:
 type: startup
 categories:
 - Edtech
+sectors:
+- edu
 region: ha-noi
 verification:
   level: unverified

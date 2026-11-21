@@ -2,6 +2,9 @@ id: startup-veevox
 name:
   vi: Veevox
 type: startup
+sectors:
+- climate
+- deeptech
 website: http://VEEVOX.IO
 region: viet-nam
 verification:

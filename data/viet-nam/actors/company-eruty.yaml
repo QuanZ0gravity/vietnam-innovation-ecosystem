@@ -2,6 +2,8 @@ id: company-eruty
 name:
   vi: Eruty
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

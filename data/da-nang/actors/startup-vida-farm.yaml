@@ -2,6 +2,8 @@ id: startup-vida-farm
 name:
   vi: Vida Farm
 type: startup
+sectors:
+- agrifood
 founded: 2024
 status: active
 website: https://vidafarm.vn
@@ -11,7 +13,7 @@ verification:
   date: '2026-11-07'
   by: Ecomdy
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Ecomdy (11/2026)
 - Website chính thức
 description:
   vi: Trà thảo mộc, lá sấy và bột trái cây xuất khẩu; nhận gia công OEM, ODM.

@@ -5,6 +5,10 @@ type: startup
 categories:
 - AI hội thoại
 - AI và phần mềm
+sectors:
+- ai
+- commerce
+- marketing
 website: https://ahachat.com
 description:
   vi: Nền tảng chatbot trên Messenger và Zalo cho marketing, bán hàng, chăm sóc khách hàng.

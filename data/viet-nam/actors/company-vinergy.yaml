@@ -2,6 +2,9 @@ id: company-vinergy
 name:
   vi: Vinergy
 type: company
+sectors:
+- climate
+- deeptech
 region: viet-nam
 verification:
   level: unverified

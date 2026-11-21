@@ -2,6 +2,10 @@ id: startup-vigift
 name:
   vi: Vigift
 type: startup
+sectors:
+- commerce
+- agrifood
+- marketing
 founded: 2019
 status: active
 website: https://vigift.vn
@@ -11,7 +15,7 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 description:
   vi: 'Đặc sản Đà Nẵng làm quà: hải sản khô, bánh kẹo truyền thống.'

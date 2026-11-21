@@ -5,6 +5,9 @@ type: startup
 categories:
 - GenAI, thương mại điện tử
 - AI và phần mềm
+sectors:
+- ai
+- commerce
 description:
   vi: Nền tảng thiết kế bằng GenAI cho người bán hàng trực tuyến.
 region: da-nang

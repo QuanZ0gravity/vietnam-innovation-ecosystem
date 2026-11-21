@@ -2,6 +2,8 @@ id: startup-nha-trang-hitech-ltd-nhtc
 name:
   vi: Nha Trang Hitech LTD ( Nhtc)
 type: startup
+sectors:
+- mobility
 region: viet-nam
 verification:
   level: unverified

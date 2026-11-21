@@ -1,7 +1,22 @@
 /* Danh bạ: tìm kiếm tức thì, lọc bằng biểu tượng theo loại và lĩnh vực, bộ lọc phụ, thẻ có logo.
    Trạng thái lưu trên đường dẫn để chia sẻ. */
 (function () {
-  var PER = 36, all = [], SECT = [], st;
+  var PER = 36, all = [], SECT = [], st, CUR = [];
+  function downloadCSV() {
+    var cols = [["id", "id"], ["name", "ten"], ["type", "loai"], ["sectors", "linh_vuc"], ["region", "khu_vuc"], ["status", "tinh_trang"], ["founded", "nam_thanh_lap"], ["website", "website"], ["linkedin", "linkedin"], ["description", "mo_ta"], ["verification", "muc_xac_minh"], ["sources", "nguon"], ["url", "trang_ho_so"]];
+    var esc = function (v) { v = v == null ? "" : String(v); return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+    var rows = [cols.map(function (c) { return c[1]; }).join(",")];
+    CUR.forEach(function (a) {
+      var r = { id: a.id, name: a.name.vi, type: a.type, sectors: (a.sectors || []).join("; "), region: a.region, status: a.status || "", founded: a.founded || "",
+        website: a.website || "", linkedin: a.linkedin || "", description: a.description && a.description.vi || "", verification: a.verification.level,
+        sources: (a.sources || []).join("; "), url: location.origin + VIE.root + "a/" + a.id + "/" };
+      rows.push(cols.map(function (c) { return esc(r[c[0]]); }).join(","));
+    });
+    var blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = "he-sinh-thai-khoi-nghiep-" + new Date().toISOString().slice(0, 10) + ".csv"; document.body.append(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
   var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator"];
   var REGIONS = ["da-nang", "former-quang-nam", "ha-noi", "ho-chi-minh", "hai-phong", "viet-nam", "quoc-te"];
   var VERS = ["partner_verified", "org_confirmed", "source_checked", "unverified"];
@@ -139,7 +154,9 @@
     });
     var pages = Math.max(1, Math.ceil(list.length / PER)); if (st.page > pages) st.page = pages;
     $("count").textContent = VIE.t("results", { n: list.length });
-    var box = $("results"); box.replaceChildren();
+    var box = $("results"); box.replaceChildren(); CUR = list;
+    $("mapwrap").hidden = st.view !== "map"; box.hidden = st.view === "map"; $("pager").hidden = st.view === "map";
+    if (st.view === "map") { VIEMAP.render($("mapbox"), list.map(function (a) { return a.id; }), $("mapnote")); }
     if (!list.length) {
       var em = VIE.el("div", "empty"); em.append(VIE.el("p", null, VIE.t("none")));
       var lk = VIE.el("a", "btn primary", VIE.t("add_missing")); lk.href = "https://github.com/chuongnv/vietnam-innovation-ecosystem/issues/new?template=them-hoac-sua-ho-so.yml"; lk.style.marginTop = "16px";
@@ -155,7 +172,7 @@
       var next = VIE.el("button", "btn ghost", VIE.t("next")); next.type = "button"; next.disabled = st.page === pages; next.onclick = function () { st.page++; render(); scrollTo(0, 0); };
       pg.append(prev, VIE.el("span", "muted", VIE.t("page", { p: st.page, t: pages })), next);
     }
-    $("v-list").setAttribute("aria-pressed", st.view === "list"); $("v-cards").setAttribute("aria-pressed", st.view === "cards");
+    $("v-list").setAttribute("aria-pressed", st.view === "list"); $("v-cards").setAttribute("aria-pressed", st.view === "cards"); $("v-map").setAttribute("aria-pressed", st.view === "map");
     $("sort").value = st.sort;
   }
   /* gợi ý tức thì dưới ô tìm */
@@ -192,6 +209,8 @@
     $("sort").onchange = function () { st.sort = $("sort").value; render(); };
     $("v-list").onclick = function () { st.view = "list"; render(); };
     $("v-cards").onclick = function () { st.view = "cards"; render(); };
+    $("v-map").onclick = function () { st.view = "map"; render(); };
+    $("csv").onclick = downloadCSV;
     $("more").onclick = function () { var p = $("morepanel"); p.hidden = !p.hidden; $("more").setAttribute("aria-expanded", !p.hidden); };
     $("clear").onclick = function () { var v = st.view; st = fresh(); st.view = v; $("q").value = ""; render(); };
     Promise.all([VIE.load("actors.json"), VIE.load("sectors.json")]).then(function (r) { all = r[0]; SECT = r[1]; render(); document.addEventListener("vie:lang", render); })

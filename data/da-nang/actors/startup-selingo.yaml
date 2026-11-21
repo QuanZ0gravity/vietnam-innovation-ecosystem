@@ -6,6 +6,9 @@ alt_names:
 type: startup
 categories:
 - EdTech, AI
+sectors:
+- ai
+- edu
 website: https://selingo.app/
 description:
   vi: Startup tiêu biểu trên cổng thành phố.

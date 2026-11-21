@@ -5,6 +5,8 @@ type: startup
 categories:
 - Software & Data
 - Enterprise Technology
+sectors:
+- ai
 region: da-nang
 verification:
   level: unverified

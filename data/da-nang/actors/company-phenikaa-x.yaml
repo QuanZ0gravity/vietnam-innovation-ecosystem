@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Robot, xe tự hành
+sectors:
+- deeptech
 website: https://phenikaa-x.com
 description:
   vi: Đối tác công nghệ sáng lập của Alpha Asimov Robotics.

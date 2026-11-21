@@ -4,6 +4,9 @@ name:
 alt_names:
 - Enzy
 type: startup
+sectors:
+- agrifood
+- tourism
 status: active
 website: https://enzy.vn/
 region: da-nang
@@ -14,7 +17,7 @@ verification:
   by: DNES
 sources:
 - startupdanang.vn
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 legacy_id: s35
 description:

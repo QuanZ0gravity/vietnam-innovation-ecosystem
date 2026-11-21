@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Viễn thông, giải pháp số
+sectors:
+- deeptech
 description:
   vi: Đối tác công nghệ chiến lược của XBStation về kết nối UAV.
 region: da-nang

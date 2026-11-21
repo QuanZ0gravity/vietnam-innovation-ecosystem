@@ -2,6 +2,8 @@ id: startup-zinwork
 name:
   vi: Zinwork
 type: startup
+sectors:
+- ai
 status: active
 website: https://zinwork.com
 region: da-nang
@@ -10,7 +12,7 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 description:
   vi: Phần mềm quản lý toàn diện cho doanh nghiệp vừa và nhỏ.

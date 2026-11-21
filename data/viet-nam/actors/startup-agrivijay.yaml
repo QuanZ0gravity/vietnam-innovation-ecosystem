@@ -2,6 +2,10 @@ id: startup-agrivijay
 name:
   vi: Agrivijay
 type: startup
+sectors:
+- commerce
+- agrifood
+- climate
 region: viet-nam
 verification:
   level: unverified

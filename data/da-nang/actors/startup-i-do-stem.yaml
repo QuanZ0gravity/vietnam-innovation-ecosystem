@@ -2,6 +2,8 @@ id: startup-i-do-stem
 name:
   vi: I do Stem
 type: startup
+sectors:
+- edu
 founded: 2022
 status: active
 website: https://idostem.com
@@ -11,4 +13,4 @@ verification:
   date: '2026-11-07'
   by: DNES
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của DNES (11/2026)

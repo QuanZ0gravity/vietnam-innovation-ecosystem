@@ -6,6 +6,8 @@ categories:
 - Xe máy điện
 - Transportation
 - Automotive
+sectors:
+- mobility
 region: da-nang
 verification:
   level: unverified

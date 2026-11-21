@@ -2,6 +2,8 @@ id: company-mystarchain
 name:
   vi: Mystarchain
 type: company
+sectors:
+- web3
 region: viet-nam
 verification:
   level: unverified

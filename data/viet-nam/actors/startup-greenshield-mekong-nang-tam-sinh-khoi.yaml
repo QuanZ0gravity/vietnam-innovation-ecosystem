@@ -2,6 +2,10 @@ id: startup-greenshield-mekong-nang-tam-sinh-khoi
 name:
   vi: 'Greenshield Mekong: Nâng Tầm Sinh Khối'
 type: startup
+sectors:
+- ai
+- climate
+- deeptech
 region: viet-nam
 verification:
   level: unverified

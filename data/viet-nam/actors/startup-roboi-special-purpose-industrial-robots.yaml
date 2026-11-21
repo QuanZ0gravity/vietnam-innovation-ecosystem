@@ -2,6 +2,9 @@ id: startup-roboi-special-purpose-industrial-robots
 name:
   vi: ROBOi - Special-purpose industrial robots
 type: startup
+sectors:
+- ai
+- deeptech
 website: http://www.roboi.kr
 region: viet-nam
 verification:

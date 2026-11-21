@@ -5,6 +5,9 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+sectors:
+- ai
+- web3
 website: https://www.trive.vc/
 linkedin: https://www.linkedin.com/company/trivevc
 region: da-nang

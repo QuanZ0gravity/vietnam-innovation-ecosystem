@@ -2,6 +2,8 @@ id: startup-click-ai
 name:
   vi: Click AI
 type: startup
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

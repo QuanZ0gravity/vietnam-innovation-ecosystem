@@ -2,6 +2,10 @@ id: startup-crosshub
 name:
   vi: Crosshub
 type: startup
+sectors:
+- ai
+- fintech
+- web3
 region: quoc-te
 verification:
   level: unverified

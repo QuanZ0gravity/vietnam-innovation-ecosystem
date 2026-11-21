@@ -4,6 +4,8 @@ name:
 type: creator
 categories:
 - Chủ thể sáng tạo
+sectors:
+- tourism
 region: former-quang-nam
 verification:
   level: unverified

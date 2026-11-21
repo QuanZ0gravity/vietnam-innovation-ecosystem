@@ -2,6 +2,9 @@ id: company-jably
 name:
   vi: Jably
 type: company
+sectors:
+- ai
+- edu
 region: viet-nam
 verification:
   level: unverified

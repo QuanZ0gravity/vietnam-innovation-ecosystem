@@ -2,6 +2,8 @@ id: startup-tech-care-system
 name:
   vi: Tech Care System
 type: startup
+sectors:
+- health
 region: quoc-te
 verification:
   level: unverified

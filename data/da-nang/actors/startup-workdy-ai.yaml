@@ -2,6 +2,10 @@ id: startup-workdy-ai
 name:
   vi: Workdy.ai
 type: startup
+sectors:
+- ai
+- commerce
+- marketing
 founded: 2026
 status: active
 website: https://workdy.ai
@@ -11,7 +15,7 @@ verification:
   date: '2026-11-07'
   by: Ecomdy
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Ecomdy (11/2026)
 - Website chính thức
 description:
   vi: 'Nhân viên AI cho thương mại điện tử xuyên biên giới: nghiên cứu thị trường, làm video sản phẩm.'

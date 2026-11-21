@@ -2,6 +2,8 @@ id: company-easymining
 name:
   vi: Easymining
 type: company
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

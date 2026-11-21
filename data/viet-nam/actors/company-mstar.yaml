@@ -2,6 +2,8 @@ id: company-mstar
 name:
   vi: Mstar
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

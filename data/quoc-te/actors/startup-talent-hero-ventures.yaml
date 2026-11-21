@@ -2,6 +2,8 @@ id: startup-talent-hero-ventures
 name:
   vi: Talent Hero Ventures
 type: startup
+sectors:
+- ai
 region: quoc-te
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: company-bluefrog
 name:
   vi: Bluefrog
 type: company
+sectors:
+- tourism
 region: viet-nam
 verification:
   level: unverified

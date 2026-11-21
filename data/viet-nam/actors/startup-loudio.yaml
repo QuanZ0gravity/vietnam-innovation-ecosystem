@@ -2,6 +2,9 @@ id: startup-loudio
 name:
   vi: Loudio
 type: startup
+sectors:
+- ai
+- marketing
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-parent-tech
 name:
   vi: Công ty TNHH Parent Tech
 type: startup
+sectors:
+- ai
 website: https://mamibabi.com.vn/
 region: da-nang
 website_status: Hoạt động

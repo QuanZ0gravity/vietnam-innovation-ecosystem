@@ -2,6 +2,8 @@ id: fund-stellar-foundation
 name:
   vi: Stellar foundation
 type: fund
+sectors:
+- property
 website: https://stellar.org/
 linkedin: https://www.linkedin.com/company/stellar-development-foundation
 region: quoc-te

@@ -2,6 +2,8 @@ id: company-creative-point
 name:
   vi: Creative Point
 type: company
+sectors:
+- marketing
 region: viet-nam
 verification:
   level: unverified

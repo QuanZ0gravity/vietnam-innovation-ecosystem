@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI suy luận
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Hệ thống suy luận từ sự kiện và dữ liệu có cấu trúc.
 region: da-nang

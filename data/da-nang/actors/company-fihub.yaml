@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Fintech
+sectors:
+- fintech
 website: https://fihub.vn/
 region: da-nang
 website_status: Hoạt động

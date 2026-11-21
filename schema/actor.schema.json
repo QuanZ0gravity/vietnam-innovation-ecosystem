@@ -188,6 +188,29 @@
     "contact_phone": {
       "type": "string",
       "description": "Số tổng đài hoặc số chung của tổ chức, không dùng số di động cá nhân"
+    },
+    "sectors": {
+      "type": "array",
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "ai",
+          "fintech",
+          "web3",
+          "commerce",
+          "agrifood",
+          "health",
+          "edu",
+          "tourism",
+          "climate",
+          "deeptech",
+          "mobility",
+          "marketing",
+          "property"
+        ]
+      },
+      "description": "Tối đa 3 lĩnh vực, theo schema/sectors.yaml"
     }
   }
 }

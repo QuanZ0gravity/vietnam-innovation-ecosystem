@@ -4,6 +4,8 @@ name:
 type: startup
 categories:
 - Ecommerce & Retail
+sectors:
+- commerce
 region: ha-noi
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: startup-ai-enterprise-platform
 name:
   vi: AI Enterprise Platform
 type: startup
+sectors:
+- ai
 website: https://aizcorp.vn/
 region: viet-nam
 verification:

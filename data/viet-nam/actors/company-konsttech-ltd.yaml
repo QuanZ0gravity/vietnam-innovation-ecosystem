@@ -2,6 +2,8 @@ id: company-konsttech-ltd
 name:
   vi: Konsttech LTD
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,9 @@ id: company-n-e-innovations-pte-ltd
 name:
   vi: N&e Innovations PTE LTD
 type: company
+sectors:
+- agrifood
+- tourism
 region: viet-nam
 verification:
   level: unverified

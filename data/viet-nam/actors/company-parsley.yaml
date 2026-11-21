@@ -2,6 +2,9 @@ id: company-parsley
 name:
   vi: Parsley
 type: company
+sectors:
+- health
+- marketing
 region: viet-nam
 verification:
   level: unverified

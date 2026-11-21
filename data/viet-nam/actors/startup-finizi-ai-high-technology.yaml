@@ -2,6 +2,9 @@ id: startup-finizi-ai-high-technology
 name:
   vi: Finizi.ai High Technology
 type: startup
+sectors:
+- ai
+- fintech
 region: viet-nam
 verification:
   level: unverified

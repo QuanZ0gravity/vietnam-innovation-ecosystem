@@ -2,6 +2,8 @@ id: company-estsolution
 name:
   vi: Estsolution
 type: company
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

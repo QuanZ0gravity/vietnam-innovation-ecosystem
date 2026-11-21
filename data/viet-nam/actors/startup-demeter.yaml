@@ -2,6 +2,10 @@ id: startup-demeter
 name:
   vi: Demeter
 type: startup
+sectors:
+- ai
+- fintech
+- agrifood
 region: viet-nam
 verification:
   level: unverified

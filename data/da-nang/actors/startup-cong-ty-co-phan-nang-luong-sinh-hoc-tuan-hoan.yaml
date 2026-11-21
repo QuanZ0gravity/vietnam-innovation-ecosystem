@@ -2,6 +2,8 @@ id: startup-cong-ty-co-phan-nang-luong-sinh-hoc-tuan-hoan
 name:
   vi: Công ty Cổ phần Năng lượng Sinh học Tuần hoàn
 type: startup
+sectors:
+- climate
 website: https://bioforgevn.com/
 region: da-nang
 website_status: Hoạt động

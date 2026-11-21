@@ -2,6 +2,8 @@ id: company-denve
 name:
   vi: Denve
 type: company
+sectors:
+- deeptech
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: startup-halt-energy
 name:
   vi: Halt Energy
 type: startup
+sectors:
+- climate
 region: quoc-te
 verification:
   level: unverified

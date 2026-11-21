@@ -37,3 +37,10 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 ### 4. Quy trình
 - **Biểu mẫu tự khai cho tổ chức** có ô tải logo, LinkedIn, website, lĩnh vực; duyệt qua Pull Request.
 - **Kiểm tra tự động logo** khi có Pull Request (đúng kích thước, nền trong suốt, không phải ảnh chụp).
+
+## Cập nhật 21/11/2026: đã thực hiện
+
+- Trang chủ nói về cả Việt Nam: tiêu đề mới, bộ chọn thành phố (Toàn quốc, TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng) kèm số tác nhân, số cơ hội và hạng, khối "Cơ hội đang mở" ngay dưới phần đầu trang, startup có hồ sơ đầy đủ kèm logo.
+- Bản đồ gộp vào Danh bạ (chế độ xem thứ ba, theo đúng bộ lọc đang chọn) và vào trang từng thành phố. Mục "Bản đồ" bỏ khỏi thanh điều hướng; đường dẫn `/ban-do/` tự chuyển sang Danh bạ.
+- Trường `sectors` trong schema (13 mã), biểu mẫu Issue có ô chọn lĩnh vực, 468 hồ sơ được gán gợi ý ban đầu.
+- Nút **Tải CSV** trong Danh bạ, xuất đúng các hồ sơ theo bộ lọc hiện tại.

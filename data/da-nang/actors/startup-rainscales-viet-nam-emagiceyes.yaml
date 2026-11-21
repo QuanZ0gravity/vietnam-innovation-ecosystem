@@ -5,6 +5,8 @@ type: startup
 categories:
 - AI thị giác máy tính
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Nền tảng giám sát an toàn thời gian thực bằng AI; trong hệ sinh thái Qualcomm.
 region: da-nang

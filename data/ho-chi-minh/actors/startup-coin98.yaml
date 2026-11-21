@@ -4,6 +4,8 @@ name:
 type: startup
 categories:
 - Fintech
+sectors:
+- fintech
 region: ho-chi-minh
 verification:
   level: unverified

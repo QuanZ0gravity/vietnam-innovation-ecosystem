@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-hilab-technology
 name:
   vi: Công ty TNHH Hilab Technology
 type: startup
+sectors:
+- ai
 website: https://hilab.asia/
 linkedin: https://www.linkedin.com/company/hilab-technology
 region: da-nang

@@ -5,6 +5,8 @@ type: startup
 categories:
 - Phần mềm
 - AI và phần mềm
+sectors:
+- ai
 description:
   vi: Dự án phần mềm trong danh sách khởi nghiệp ĐMST của thành phố.
 region: da-nang

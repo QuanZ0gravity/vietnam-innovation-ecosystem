@@ -2,6 +2,8 @@ id: company-saige
 name:
   vi: Saige
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

@@ -2,6 +2,8 @@ id: startup-cong-ty-tnhh-cho-ca-phe
 name:
   vi: Công ty TNHH Chợ Cà Phê
 type: startup
+sectors:
+- agrifood
 website: https://chocaphe.vn/
 region: da-nang
 website_status: Hoạt động

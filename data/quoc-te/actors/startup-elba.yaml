@@ -2,6 +2,9 @@ id: startup-elba
 name:
   vi: ELBA
 type: startup
+sectors:
+- ai
+- marketing
 region: quoc-te
 verification:
   level: unverified

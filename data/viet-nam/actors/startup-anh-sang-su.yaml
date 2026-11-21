@@ -2,6 +2,9 @@ id: startup-anh-sang-su
 name:
   vi: Ánh Sáng Sứ
 type: startup
+sectors:
+- tourism
+- property
 region: viet-nam
 verification:
   level: unverified

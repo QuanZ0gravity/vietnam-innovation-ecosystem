@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Nông nghiệp, dược liệu
+sectors:
+- agrifood
 description:
   vi: Đồng tổ chức hội thảo quốc tế Sâm Ngọc Linh.
 region: da-nang

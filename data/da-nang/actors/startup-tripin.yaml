@@ -2,6 +2,8 @@ id: startup-tripin
 name:
   vi: TripIn
 type: startup
+sectors:
+- tourism
 website: https://www.tripin.vn/
 region: da-nang
 website_status: Hoạt động

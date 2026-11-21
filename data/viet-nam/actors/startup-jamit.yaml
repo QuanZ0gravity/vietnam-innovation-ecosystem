@@ -2,6 +2,8 @@ id: startup-jamit
 name:
   vi: Jamit
 type: startup
+sectors:
+- ai
 website: https://jamit.app
 linkedin: https://www.linkedin.com/company/jamithq
 region: viet-nam

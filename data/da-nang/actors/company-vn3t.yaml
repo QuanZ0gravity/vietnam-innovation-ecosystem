@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Nông nghiệp thông minh
+sectors:
+- agrifood
 description:
   vi: Nuôi tôm thông minh.
 region: da-nang

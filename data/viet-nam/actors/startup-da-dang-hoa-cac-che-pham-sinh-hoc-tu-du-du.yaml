@@ -2,6 +2,8 @@ id: startup-da-dang-hoa-cac-che-pham-sinh-hoc-tu-du-du
 name:
   vi: Đa dạng hóa các chế phẩm sinh học từ đu đủ
 type: startup
+sectors:
+- health
 region: viet-nam
 verification:
   level: unverified

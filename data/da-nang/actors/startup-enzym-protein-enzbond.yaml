@@ -4,6 +4,8 @@ name:
 type: startup
 categories:
 - Biotechnology
+sectors:
+- health
 founded: 2024
 status: active
 region: da-nang
@@ -12,4 +14,4 @@ verification:
   date: '2026-11-07'
   by: Da Nang BioTech Center
 sources:
-- Swiss EP – Map of ecosystem (11/2026)
+- Danh mục ươm tạo của Trung tâm Công nghệ sinh học Đà Nẵng (11/2026)

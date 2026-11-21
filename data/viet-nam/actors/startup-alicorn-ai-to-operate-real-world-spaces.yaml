@@ -2,6 +2,8 @@ id: startup-alicorn-ai-to-operate-real-world-spaces
 name:
   vi: Alicorn - AI to Operate Real-World Spaces
 type: startup
+sectors:
+- ai
 website: https://www.alicorn-space.ai/
 region: viet-nam
 verification:

@@ -2,6 +2,8 @@ id: startup-gaian
 name:
   vi: Gaian
 type: startup
+sectors:
+- fintech
 website: http://Gaian.network
 region: viet-nam
 verification:

@@ -1,0 +1,54 @@
+# Danh mục lĩnh vực dùng cho trường `sectors` của tác nhân.
+# `keywords` chỉ dùng cho công cụ gợi ý tools/suggest_sectors.py, không dùng khi dựng trang.
+- id: ai
+  vi: AI, phần mềm
+  en: AI, software
+  keywords: \bai\b|tri tue nhan tao|machine learning|\bhoc may\b|phan mem|software|\bsaas\b|\bapps?\b|chatbot|voicebot|\bdu lieu\b|\bdata\b|\bcloud\b|dam may|\berp\b|\bcrm\b|chuyen doi so|digital transformation|computer vision|thi giac may|\bllm\b|tac tu|\bagents?\b|nen tang so|platform
+- id: fintech
+  vi: Tài chính số
+  en: Fintech
+  keywords: fintech|tai chinh|thanh toan|payment|ngan hang|\bbank|vi dien tu|\bwallet|bao hiem|insur|ke toan|accounting|chung khoan|securities|cho vay|\bloan|remittance|chuyen tien|hoan tien|cashback
+- id: web3
+  vi: Web3, blockchain
+  en: Web3, blockchain
+  keywords: web3|blockchain|chuoi khoi|crypto|\btokens?\b|tokeni|\bdefi\b|\bnft|stablecoin|on-chain|tren chuoi|solana|ethereum|\bdao\b
+- id: commerce
+  vi: Thương mại, bán lẻ
+  en: Commerce, retail
+  keywords: thuong mai dien tu|ecommerce|e-commerce|\bban le\b|retail|\bban hang\b|mua sam|\bshop\b|marketplace|tiktok shop|amazon|print on demand|in theo yeu cau|dac san
+- id: agrifood
+  vi: Nông nghiệp, thực phẩm
+  en: Agri, food
+  keywords: nong nghiep|agri|thuc pham|\bfoods?\b|nong san|ca phe|coffee|\btra (thao|hoa|shan|xanh|viet|co thu)|\btea\b|\bnam (an|linh chi|dong trung)|mushroom|thuy san|aquacult|nuoi tom|shrimp|chan nuoi|livestock|duoc lieu|sam ngoc linh|ginseng|\bocop\b|to yen|chim yen|mat ong|honey|\bbanh\b|nuoc mam|hop tac xa|cooperative|dong trung ha thao|rau cu|trai cay|gia vi|bot nem|\bmut\b
+- id: health
+  vi: Y tế, sinh học
+  en: Health, bio
+  keywords: \by te\b|healthcare|health|suc khoe|benh nhan|medical|y khoa|duoc pham|pharma|cong nghe sinh hoc|biotech|che pham sinh hoc|clinic|phong kham|nha khoa|rang mieng|my pham|cosmetic|lam dep|beauty|cham soc (da|suc khoe|tre|me)
+- id: edu
+  vi: Giáo dục
+  en: Education
+  keywords: giao duc|edtech|education|hoc tap|hoc sinh|sinh vien|e-learning|learning|dao tao|training|tieng anh|english|ngoai ngu|\bstem\b|tutor|thu vien|library|luyen thi|khoa hoc truc tuyen
+- id: tourism
+  vi: Du lịch, văn hóa
+  en: Tourism, culture
+  keywords: du lich|travel|\btours?\b|tourism|homestay|khach san|\bhotels?\b|van hoa|culture|di san|heritage|lang nghe|thu cong|handcraft|nghe thuat|\bart\b|am thuc|farmstay|luu tru
+- id: climate
+  vi: Năng lượng, môi trường
+  en: Energy, climate
+  keywords: nang luong|energy|solar|mat troi|\bpin\b|battery|hydro|carbon|khi nha kinh|\bghg\b|net zero|moi truong|environment|tai che|recycl|\brac\b|waste|chat thai|tuan hoan|circular|climate|khi hau|sinh khoi|biomass|\bnhua\b|plastic|phan huy|bioplastic|khu mui
+- id: deeptech
+  vi: Bán dẫn, robot, phần cứng
+  en: Chips, robotics, hardware
+  keywords: ban dan|semiconductor|\bchips?\b|vi mach|robot|drone|\buav\b|\biot\b|aiot|phan cung|hardware|cam bien|sensor|tu dong hoa (cong nghiep|san xuat|nha may)|industrial automation|lidar|vat lieu|materials?\b|\bnano|graphene|\b3d\b|thiet bi
+- id: mobility
+  vi: Logistics, di chuyển
+  en: Logistics, mobility
+  keywords: logistics|van tai|transport|giao hang|delivery|\bxe (may|dien|o to|tai)|vehicle|\bo to\b|automotive|\bev\b|\bcang\b|\bport\b|\bkho (bai|hang)|warehouse|chuoi cung ung|supply chain|goi xe|ride-hailing|chuoi lanh
+- id: marketing
+  vi: Truyền thông, marketing
+  en: Media, marketing
+  keywords: marketing|quang cao|advertis|truyen thong|\bmedia\b|noi dung so|\bcontent\b|thuong hieu|\bbrand|agency|\bvideo\b|\bgames?\b|giai tri|entertain|martech|affiliate
+- id: property
+  vi: Bất động sản, xây dựng
+  en: Property, construction
+  keywords: bat dong san|proptech|real estate|xay dung|construction|kien truc|architect|noi that|interior|toa nha|\bbuilding\b|nha o|housing|contech|nha mo-dun|modular

@@ -2,6 +2,8 @@ id: startup-tam-nguyen
 name:
   vi: Tam Nguyen
 type: startup
+sectors:
+- climate
 region: viet-nam
 verification:
   level: unverified

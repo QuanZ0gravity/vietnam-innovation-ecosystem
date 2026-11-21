@@ -2,6 +2,8 @@ id: company-hitek-software
 name:
   vi: Hitek Software
 type: company
+sectors:
+- ai
 region: viet-nam
 verification:
   level: unverified

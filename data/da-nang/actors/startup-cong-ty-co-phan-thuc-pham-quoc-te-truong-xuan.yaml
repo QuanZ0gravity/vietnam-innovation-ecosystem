@@ -2,6 +2,8 @@ id: startup-cong-ty-co-phan-thuc-pham-quoc-te-truong-xuan
 name:
   vi: CÔNG TY CỔ PHẦN THỰC PHẨM QUỐC TẾ TRƯỜNG XUÂN
 type: startup
+sectors:
+- agrifood
 website: https://www.truongxuaninterfoods.com/
 region: da-nang
 website_status: Hoạt động

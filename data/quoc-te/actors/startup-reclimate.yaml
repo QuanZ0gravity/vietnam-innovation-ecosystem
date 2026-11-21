@@ -2,6 +2,8 @@ id: startup-reclimate
 name:
   vi: Reclimate
 type: startup
+sectors:
+- climate
 region: quoc-te
 verification:
   level: unverified

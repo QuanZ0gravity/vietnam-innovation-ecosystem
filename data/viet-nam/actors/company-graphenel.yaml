@@ -2,6 +2,10 @@ id: company-graphenel
 name:
   vi: Graphenel
 type: company
+sectors:
+- climate
+- deeptech
+- property
 region: viet-nam
 verification:
   level: unverified

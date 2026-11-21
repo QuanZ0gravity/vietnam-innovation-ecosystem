@@ -1,32 +1,35 @@
-/* Bản đồ: các hồ sơ có tọa độ, theo địa chỉ hoặc theo phường, xã */
+/* Bản đồ dùng chung: VIEMAP.render(phần tử, danh sách id được phép hoặc null) */
 (function () {
-  document.addEventListener("DOMContentLoaded", function () {
-    Promise.all([VIE.load("actors.geojson"), VIE.load("stats.json")]).then(function (r) {
-      var geo = r[0], stats = r[1];
-      var note = document.getElementById("map-note");
-      var setNote = function () { note.textContent = VIE.t("map_note", { a: geo.features.length, b: stats.actors }); };
-      setNote(); document.addEventListener("vie:lang", setNote);
-      var map = L.map("map", { scrollWheelZoom: false }).setView([15.8, 108.2], 9);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
-      var css = getComputedStyle(document.documentElement);
-      var sea = css.getPropertyValue("--sea").trim() || "#0B6E69", sun = css.getPropertyValue("--sun").trim() || "#E9A800";
-      var bounds = [], list = document.getElementById("map-list");
-      geo.features.forEach(function (f) {
-        var c = f.geometry.coordinates, p = f.properties, ll = [c[1], c[0]];
-        var m = L.circleMarker(ll, { radius: p.precision === "ward" ? 7 : 9, weight: 2, color: "#102A2C",
-          fillColor: p.precision === "ward" ? sun : sea, fillOpacity: .9 }).addTo(map);
-        var div = document.createElement("div"), a = document.createElement("a");
-        a.href = VIE.root + "a/" + p.id + "/"; a.textContent = p.name;
-        div.append(a, document.createElement("br"), VIE.el("span", "muted", VIE.typeLabel(p.type) + (p.precision === "ward" ? " (" + VIE.t("by_ward") + ")" : "")));
-        m.bindPopup(div); bounds.push(ll);
-        var li = document.createElement("li"), b = document.createElement("button");
-        b.type = "button";
-        b.textContent = p.name; b.onclick = function () { map.setView(ll, 15); m.openPopup(); };
-        li.append(b); list.append(li);
+  var geoP = null;
+  function geo() { return geoP || (geoP = VIE.load("actors.geojson")); }
+  window.VIEMAP = {
+    render: function (el, ids, note) {
+      return geo().then(function (g) {
+        if (!window.L) { el.textContent = ""; return 0; }
+        var allow = ids ? new Set(ids) : null;
+        var feats = g.features.filter(function (f) { return !allow || allow.has(f.properties.id); });
+        if (!el._map) {
+          el._map = L.map(el, { scrollWheelZoom: false }).setView([16.0, 108.2], 6);
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(el._map);
+          el._layer = L.layerGroup().addTo(el._map);
+        }
+        var map = el._map; el._layer.clearLayers();
+        var css = getComputedStyle(document.documentElement);
+        var sea = css.getPropertyValue("--sea").trim() || "#0B6E69", sun = css.getPropertyValue("--sun").trim() || "#E9A800";
+        var b = [];
+        feats.forEach(function (f) {
+          var c = f.geometry.coordinates, p = f.properties, ll = [c[1], c[0]];
+          var m = L.circleMarker(ll, { radius: p.precision === "ward" ? 7 : 9, weight: 2, color: "#102A2C", fillColor: p.precision === "ward" ? sun : sea, fillOpacity: .9 });
+          var d = document.createElement("div"), a = document.createElement("a"); a.href = VIE.root + "a/" + p.id + "/"; a.textContent = p.name;
+          d.append(a, document.createElement("br"), VIE.el("span", "muted", VIE.typeLabel(p.type) + (p.precision === "ward" ? " (" + VIE.t("by_ward") + ")" : "")));
+          m.bindPopup(d); m.addTo(el._layer); b.push(ll);
+        });
+        setTimeout(function () { map.invalidateSize(); if (b.length) map.fitBounds(b, { padding: [40, 40], maxZoom: 13 }); }, 50);
+        if (note) note.textContent = VIE.lang() === "en"
+          ? feats.length + " of " + (ids ? ids.length : g.features.length) + " results have a location. Add an address to a profile to put it on the map."
+          : feats.length + " trên " + (ids ? ids.length : g.features.length) + " kết quả có vị trí. Bổ sung địa chỉ vào hồ sơ để hiện trên bản đồ.";
+        return feats.length;
       });
-      if (bounds.length) map.fitBounds(bounds, { padding: [40, 40], maxZoom: 13 });
-    });
-  });
+    }
+  };
 })();

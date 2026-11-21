@@ -5,6 +5,9 @@ type: startup
 categories:
 - Bán dẫn, năng lượng sạch
 - Bán dẫn
+sectors:
+- climate
+- deeptech
 description:
   vi: Chip bán dẫn tối ưu cho ứng dụng năng lượng mặt trời.
 region: da-nang

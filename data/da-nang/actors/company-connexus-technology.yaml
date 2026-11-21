@@ -5,6 +5,9 @@ type: company
 categories:
 - Bán dẫn, AI
 - Bán dẫn
+sectors:
+- ai
+- deeptech
 website: https://connexus.vn
 linkedin: https://www.linkedin.com/company/connexus-vn
 description:
