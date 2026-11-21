@@ -1,0 +1,17 @@
+id: support-org-iot-space
+name:
+  vi: IOT Space
+type: support_org
+categories:
+- Không gian làm việc chung
+- Không gian ĐMST
+website: https://iotcoworkingspace.com
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/iot-space
+legacy_id: d27

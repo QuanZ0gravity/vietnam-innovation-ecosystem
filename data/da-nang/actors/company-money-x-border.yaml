@@ -1,0 +1,14 @@
+id: company-money-x-border
+name:
+  vi: Money X-Border
+type: company
+categories:
+- Thanh toán xuyên biên giới
+description:
+  vi: Hạ tầng quyết toán ngoại biên trong sandbox, 24 tháng.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d91

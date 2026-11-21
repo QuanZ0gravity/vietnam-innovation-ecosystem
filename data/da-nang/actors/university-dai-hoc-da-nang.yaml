@@ -1,0 +1,15 @@
+id: university-dai-hoc-da-nang
+name:
+  vi: Đại học Đà Nẵng
+type: university
+categories:
+- Đại học vùng
+- Viện, trường
+address: 41 Lê Duẩn, Hải Châu 1, Hải Châu, Hải Châu, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+legacy_id: d61

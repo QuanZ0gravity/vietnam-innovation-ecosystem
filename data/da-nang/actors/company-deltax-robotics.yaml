@@ -1,0 +1,14 @@
+id: company-deltax-robotics
+name:
+  vi: DeltaX Robotics
+type: company
+categories:
+- Robotics
+description:
+  vi: Công nghệ sâu.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d80

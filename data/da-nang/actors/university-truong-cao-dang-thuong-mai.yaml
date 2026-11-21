@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-thuong-mai
+name:
+  vi: Trường Cao đẳng Thương mại
+type: university
+categories:
+- Viện, trường
+address: 45 Dũng Sĩ Thanh Khê, Thanh Khê Tây, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u15

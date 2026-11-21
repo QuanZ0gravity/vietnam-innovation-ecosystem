@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-cong-nghe-tekup
+name:
+  vi: Công ty Cổ phần Công nghệ Tekup
+type: startup
+website: https://tekup.vn/en/home/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s27

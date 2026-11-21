@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-5rtech
+name:
+  vi: Công ty Cổ phần 5RTECH
+type: startup
+website: https://5rtech.com.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s47

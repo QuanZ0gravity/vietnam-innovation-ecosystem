@@ -1,0 +1,13 @@
+id: support-org-trung-tam-dmst-va-ho-tro-khoi-nghiep-dh-su-pham-dhdn
+name:
+  vi: Trung tâm Đổi mới sáng tạo và Hỗ trợ khởi nghiệp, Trường Đại học Sư phạm – ĐHĐN
+type: support_org
+categories:
+- Tổ chức hỗ trợ
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+source_url: https://startupdanang.vn/truong-dai-hoc-su-pham-dhdn-khai-truong-trung-tam-doi-moi-sang-tao-ho-tro-khoi-nghiep
+legacy_id: o0

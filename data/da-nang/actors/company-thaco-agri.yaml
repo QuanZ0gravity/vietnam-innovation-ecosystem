@@ -1,0 +1,14 @@
+id: company-thaco-agri
+name:
+  vi: THACO AGRI
+type: company
+categories:
+- Nông nghiệp, dược liệu
+description:
+  vi: Đồng tổ chức hội thảo quốc tế Sâm Ngọc Linh.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d94

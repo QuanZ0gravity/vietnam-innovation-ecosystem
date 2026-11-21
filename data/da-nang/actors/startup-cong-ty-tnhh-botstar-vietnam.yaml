@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-botstar-vietnam
+name:
+  vi: Công ty TNHH BOTSTAR VIETNAM
+type: startup
+website: https://botstar.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s37

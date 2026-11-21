@@ -1,0 +1,10 @@
+id: startup-cong-ty-co-phan-abr
+name:
+  vi: Công ty Cổ phần ABR
+type: startup
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s38

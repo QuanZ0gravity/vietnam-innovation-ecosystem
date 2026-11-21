@@ -1,0 +1,16 @@
+id: support-org-dnes
+name:
+  vi: DNES
+type: support_org
+categories:
+- Vườn ươm doanh nghiệp
+website: https://www.dnes.vn
+description:
+  vi: Vườn ươm đối tác công tư; AI Builder Hackathon cùng Ecomdy (5/2026).
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d12

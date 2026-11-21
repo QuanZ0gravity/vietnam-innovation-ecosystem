@@ -1,0 +1,12 @@
+id: startup-irtech
+name:
+  vi: Irtech
+type: startup
+website: https://irtech.com.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s54

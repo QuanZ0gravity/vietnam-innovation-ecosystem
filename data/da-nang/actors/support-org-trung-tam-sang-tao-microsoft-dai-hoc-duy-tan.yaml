@@ -1,0 +1,13 @@
+id: support-org-trung-tam-sang-tao-microsoft-dai-hoc-duy-tan
+name:
+  vi: Trung tâm Sáng tạo Microsoft đại học Duy Tân
+type: support_org
+categories:
+- Tổ chức hỗ trợ
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+source_url: https://startupdanang.vn/trung-tam-sang-tao-microsoft-dai-hoc-duy-tan
+legacy_id: o2

@@ -1,0 +1,14 @@
+id: government-trung-tam-ung-dung-kh-cn-va-tieu-chuan-do-luong-chat-luong
+name:
+  vi: Trung tâm Ứng dụng KH&CN và Tiêu chuẩn Đo lường Chất lượng
+type: government
+categories:
+- Đơn vị thuộc Sở KH&CN
+description:
+  vi: Chức năng theo QĐ 69/2025/QĐ-UBND.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d8

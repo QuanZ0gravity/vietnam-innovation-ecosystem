@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-dien-luc-mien-trung
+name:
+  vi: Trường Cao đẳng Điện lực Miền Trung
+type: university
+categories:
+- Viện, trường
+address: Số 04 Nguyễn Tất Thành - Hội An - Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u25

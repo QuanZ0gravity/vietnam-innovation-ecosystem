@@ -1,0 +1,16 @@
+id: university-greenwich-viet-nam
+name:
+  vi: Greenwich Việt Nam
+type: university
+categories:
+- Đại học
+website: https://greenwich.edu.vn
+description:
+  vi: Greenwich Innovation Centre.
+region: da-nang
+website_status: Chặn truy cập tự động, cần kiểm tra tay
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d69

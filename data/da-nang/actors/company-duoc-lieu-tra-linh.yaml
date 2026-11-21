@@ -1,0 +1,14 @@
+id: company-duoc-lieu-tra-linh
+name:
+  vi: Dược liệu Trà Linh
+type: company
+categories:
+- Dược liệu
+description:
+  vi: Sâm Ngọc Linh.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d95

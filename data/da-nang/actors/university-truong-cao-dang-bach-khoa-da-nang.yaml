@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-bach-khoa-da-nang
+name:
+  vi: Trường Cao đẳng Bách Khoa Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: 271 Tố Hữu, quận Cẩm Lệ, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u20

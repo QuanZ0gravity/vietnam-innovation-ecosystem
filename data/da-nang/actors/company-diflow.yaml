@@ -1,0 +1,15 @@
+id: company-diflow
+name:
+  vi: DiFlow
+type: company
+categories:
+- AI
+website: https://flow.diid.vn/landing-page
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+legacy_id: d79

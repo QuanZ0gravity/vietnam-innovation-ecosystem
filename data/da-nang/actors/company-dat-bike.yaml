@@ -1,0 +1,13 @@
+id: company-dat-bike
+name:
+  vi: Dat Bike
+type: company
+categories:
+- Xe máy điện
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+legacy_id: d86

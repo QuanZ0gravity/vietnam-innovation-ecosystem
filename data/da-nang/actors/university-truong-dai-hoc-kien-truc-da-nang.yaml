@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-kien-truc-da-nang
+name:
+  vi: Trường Đại học Kiến trúc Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: 566 Núi Thành, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u6

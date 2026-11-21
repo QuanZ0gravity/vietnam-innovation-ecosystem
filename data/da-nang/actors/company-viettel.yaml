@@ -1,0 +1,14 @@
+id: company-viettel
+name:
+  vi: Viettel
+type: company
+categories:
+- Tập đoàn
+description:
+  vi: Hợp tác chiến lược KH&CN với thành phố (6/2026).
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d97

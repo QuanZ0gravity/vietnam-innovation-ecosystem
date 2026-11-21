@@ -1,0 +1,357 @@
+- id: event-dien-dan-sinh-vien-khoi-nghiep-dmst-2026
+  name: Diễn đàn Sinh viên Khởi nghiệp, ĐMST 2026
+  date: '2026-01-08'
+  organizer: Thành phố Đà Nẵng
+  summary: Mở đầu năm khởi nghiệp sinh viên
+  url: https://startupdanang.vn/dien-dan-sinh-vien-khoi-nghiep-doi-moi-sang-tao-2026-ket-noi-tri-thuc-khoi-nguon-khat-vong-khoi-nghiep
+  legacy_id: v0
+- id: event-so-kh-cn-ky-hop-tac-voi-dh-dong-a
+  name: Sở KH&CN ký hợp tác với ĐH Đông Á
+  date: '2026-01-16'
+  organizer: Sở KH&CN, ĐH Đông Á
+  summary: Liên kết nhà nước và nhà trường
+  url: https://startupdanang.vn/so-khoa-hoc-va-cong-nghe-da-nang-ky-ket-hop-tac-voi-truong-dai-hoc-dong-a
+  legacy_id: v1
+- id: event-suci-x-lisk-final-demo
+  name: SUCI x Lisk Final Demo
+  date: '2026-01-24'
+  organizer: SUCI, Lisk
+  summary: Nguồn dự án Web3
+  url: https://startupdanang.vn/da-nang-thuc-day-he-sinh-thai-khoi-nghiep-web3-qua-su-kien-suci-x-lisk-final-demo-day-2026
+  legacy_id: v2
+- id: event-ra-mat-ddut-ban-sao-so-phuong-huong-tra-lien-minh-danang-dig
+  name: Ra mắt dDUT, Bản sao số phường Hương Trà, Liên minh Danang Digital Twin
+  date: '2026-01-29'
+  organizer: ĐH Bách khoa, phường Hương Trà
+  summary: Thị trường thử nghiệm đô thị thông minh
+  url: https://startupdanang.vn/khoi-dong-du-an-ban-sao-so-phuong-huong-tra-ra-mat-lien-minh-danang-digital-twin-alliance
+  legacy_id: v3
+- id: event-khai-truong-trung-tam-dao-tao-nghien-cuu-va-phat-trien-ung-d
+  name: Khai trương Trung tâm Đào tạo, Nghiên cứu và Phát triển Ứng dụng Robot
+  date: '2026-03-06'
+  organizer: Thành phố Đà Nẵng
+  summary: Năng lực robotics tại chỗ
+  url: https://startupdanang.vn/khai-truong-trung-tam-dao-tao-nghien-cuu-va-phat-trien-ung-dung-robot-cong-nghiep-va-tri-tue-nhan-tao-thuc-day-dao-tao-nhan-luc-cong-nghe-ca
+  legacy_id: v4
+- id: event-ky-ket-voi-aed-ao-tai-dien-dan-eu-cua-ngo-toan-cau
+  name: Ký kết với AED (Áo) tại Diễn đàn EU “Cửa ngõ Toàn cầu”
+  date: '2026-03-24'
+  organizer: UBND thành phố, AED
+  summary: Mở rộng đối tác châu Âu
+  url: https://startupdanang.vn/da-nang-ky-ket-hop-tac-voi-co-quan-hop-tac-va-phat-trien-kinh-te-aed-ao-ve-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so
+  legacy_id: v5
+- id: event-lam-viec-voi-co-quan-lap-phap-bang-oregon
+  name: Làm việc với Cơ quan Lập pháp bang Oregon
+  date: '2026-04-03'
+  organizer: DISSC, bang Oregon (Hoa Kỳ)
+  summary: Xúc tiến thương mại
+  url: https://startupdanang.vn/tang-cuong-ket-noi-hop-tac-khoi-nghiep-doi-moi-sang-tao-giua-da-nang-va-bang-oregon-hoa-ky
+  legacy_id: v6
+- id: event-pre-davas-2026
+  name: Pre-DAVAS 2026
+  date: '2026-04-24'
+  organizer: Thành phố Đà Nẵng
+  summary: Chuẩn bị dự án trước DAVAS
+  url: https://startupdanang.vn/pre-davas-nen-tang-ket-noi-kinh-doanh-quoc-te-tai-da-nang
+  legacy_id: v7
+- id: event-empower-founders-residency
+  name: EMpower Founders Residency
+  date: '2026-05-04'
+  organizer: sqrDAO, Da Nang Blockchain Hub
+  summary: Mô hình residency cho founder
+  legacy_id: v8
+- id: event-le-khen-thuong-kh-cn-va-khoi-nghiep-dmst-dmst-tu-di-san-hoi
+  name: Lễ khen thưởng KH,CN và khởi nghiệp ĐMST; ĐMST từ di sản Hội An
+  date: '2026-05-14'
+  organizer: UBND thành phố, Sở KH&CN, phường Hội An
+  summary: Ngày KH,CN và ĐMST Việt Nam
+  legacy_id: v9
+- id: event-chung-ket-bk-shark-2026
+  name: Chung kết BK SHARK 2026
+  date: '2026-05-16'
+  organizer: ĐH Bách khoa
+  summary: 7 dự án kỹ thuật vào chung kết
+  url: https://startupdanang.vn/07-du-an-xuat-sac-tranh-tai-tai-chung-ket-cuoc-thi-bk-shark-2026
+  legacy_id: v10
+- id: event-ai-builder-hackathon
+  name: AI Builder Hackathon
+  date: '2026-05-20'
+  organizer: Ecomdy, DNES
+  summary: Đầu vào cho đợt ươm tạo AI
+  legacy_id: v11
+- id: event-davas-2026-va-web3-builders-summit
+  name: DAVAS 2026 và Web3 Builders’ Summit
+  date: '2026-05-25'
+  organizer: UBND thành phố, Sở KH&CN, DISSC; 31 quỹ
+  summary: 62 dự án, quy mô đầu tư hơn 5 tỷ USD
+  url: https://davas.vc/
+  legacy_id: v12
+- id: event-unchained-summit-vietnam-2026
+  name: Unchained Summit Vietnam 2026
+  date: '2026-05-28'
+  organizer: Cộng đồng Web3
+  summary: Chuỗi sự kiện Web3 quanh DAVAS
+  url: https://startupdanang.vn/hoi-nghi-unchained-summit-vietnam-2026-dien-ra-tai-da-nang-quy-tu-hon-70-dien-gia-trong-nuoc-va-quoc-te
+  legacy_id: v13
+- id: event-hdnd-ban-hanh-goi-nghi-quyet-kh-cn-dmst
+  name: HĐND ban hành gói nghị quyết KH&CN, ĐMST
+  date: '2026-05-29'
+  organizer: HĐND thành phố
+  summary: Khung chính sách thống nhất sau sáp nhập
+  url: https://startupdanang.vn/da-nang-ban-hanh-chinh-sach-thuc-day-khoi-nghiep-doi-moi-sang-tao-phat-trien-vi-mach-ban-dan-va-tri-tue-nhan-tao
+  legacy_id: v14
+- id: event-ai-cross-border-hackathon-2026
+  name: AI Cross-Border Hackathon 2026
+  date: '2026-06-06'
+  organizer: Đà Nẵng đăng cai
+  summary: Điểm đến AI mới nổi
+  url: https://startupdanang.vn/da-nang-thuc-day-phat-trien-cac-giai-phap-ai-cho-thuong-mai-dien-tu-xuyen-bien-gioi
+  legacy_id: v15
+- id: event-hop-tac-chien-luoc-voi-viettel
+  name: Hợp tác chiến lược với Viettel
+  date: '2026-06-11'
+  organizer: UBND thành phố, Viettel
+  summary: Hạ tầng, khách hàng cho startup công nghệ
+  url: https://startupdanang.vn/da-nang-viettel-ky-ket-hop-tac-chien-luoc-thuc-day-khoa-hoc-cong-nghe-doi-moi-sang-tao-va-chuyen-doi-so-giai-doan-2026-2030
+  legacy_id: v16
+- id: event-ban-hanh-de-an-cong-nghe-chuoi-khoi-den-2030
+  name: Ban hành Đề án công nghệ chuỗi khối đến 2030
+  date: '2026-06-23'
+  organizer: UBND thành phố (QĐ 2728)
+  summary: Định hướng phát triển blockchain
+  legacy_id: v17
+- id: event-smartos-ky-hop-tac-voi-dai-thang-holdings
+  name: SmartOS ký hợp tác với Đại Thắng Holdings
+  date: '2026-07-03'
+  organizer: SmartOS (Enosta)
+  summary: Kết quả thương mại của scale-up
+  url: https://startupdanang.vn/smartos-x-dai-thang-holdings-ky-ket-hop-tac-chien-luoc-trien-khai-giai-phap-van-hanh-va-ung-dung-quan-ly-bat-dong-san-tap-trung-cho-chu-dau-tu
+  legacy_id: v18
+- id: event-tuan-le-kinh-te-tai-chinh-cong-nghe-da-nang-2026
+  name: Tuần lễ Kinh tế, Tài chính, Công nghệ Đà Nẵng 2026
+  date: '2026-07-07'
+  organizer: Lãnh đạo Trung ương, bộ ngành, tổ chức quốc tế
+  summary: Nền tảng chính sách cho VIFC-DN
+  url: https://startupdanang.vn/ello-da-nang-lan-toa-giai-phap-du-lich-thong-minh-tai-tuan-le-kinh-te-tai-chinh-cong-nghe-da-nang-2026
+  legacy_id: v19
+- id: event-khai-mac-her-mentor-2026
+  name: Khai mạc Her Mentor 2026
+  date: '2026-07-14'
+  organizer: Songhan Incubator
+  summary: Ươm tạo phụ nữ khởi nghiệp
+  url: https://startupdanang.vn/khai-mac-chuong-trinh-uom-tao-phu-nu-khoi-nghiep-her-mentor-2026
+  legacy_id: v20
+- id: event-dien-dan-khoi-nghiep-quoc-gia-hoa-khanh-2026
+  name: Diễn đàn Khởi nghiệp Quốc gia, Hòa Khánh 2026
+  date: '2026-07-16'
+  organizer: Nhà nước, nhà trường, doanh nghiệp, nhà đầu tư
+  summary: Liên kết “Bốn nhà”
+  url: https://startupdanang.vn/dien-dan-khoi-nghiep-quoc-gia-hoa-khanh-2026-kien-tao-he-sinh-thai-khoi-nghiep-thuc-chat-tu-mo-hinh-lien-ket-bon-nha
+  legacy_id: v21
+- id: event-hoi-thao-quoc-te-sam-ngoc-linh
+  name: Hội thảo quốc tế Sâm Ngọc Linh
+  date: '2026-08-02'
+  organizer: Sở KH&CN, Viện Dược liệu, THACO AGRI, Dược liệu Trà Linh
+  summary: Thế mạnh dược liệu khu vực Quảng Nam cũ
+  url: https://startupdanang.vn/da-nang-thuc-day-phat-trien-sam-ngoc-linh-tu-san-pham-quoc-gia-tro-thanh-thuong-hieu-toan-cau
+  legacy_id: v22
+- id: event-ngay-hoi-chinh-sach-vi-mach-ban-dan-ai-va-dmst-biva-vo-dich
+  name: Ngày hội Chính sách vi mạch bán dẫn, AI và ĐMST; BIVA vô địch Vietnam AI Stars
+  date: '2026-08-07'
+  organizer: Thành phố Đà Nẵng; BIVA
+  summary: Công nghệ chiến lược
+  url: https://startupdanang.vn/da-nang-to-chuc-ngay-hoi-chinh-sach-vi-mach-ban-dan-ai-va-doi-moi-sang-tao-2026
+  legacy_id: v23
+- id: event-ra-mat-ai-tinkerers-da-nang
+  name: Ra mắt AI Tinkerers Đà Nẵng
+  date: '2026-08-15'
+  organizer: Cộng đồng AI Tinkerers
+  summary: Cộng đồng builder AI
+  url: https://startupdanang.vn/ra-mat-ai-tinkerers-da-nang-ket-noi-cong-dong-xay-dung-ai-voi-mang-luoi-toan-cau
+  legacy_id: v24
+- id: event-surf-2026-ky-nguyen-vuon-minh-sang-tao-tien-phong
+  name: SURF 2026 “Kỷ nguyên vươn mình, Sáng tạo tiên phong”
+  date: '2026-08-18'
+  organizer: UBND thành phố, Sở KH&CN, DISSC; Daegu
+  summary: 20 dự án chung kết; ra mắt Không gian trình diễn Daegu
+  url: https://surfdanang.zone/
+  legacy_id: v25
+- id: event-tuan-le-khoi-nghiep-hssv-chung-ket-startup-runway-2026
+  name: Tuần lễ Khởi nghiệp HSSV, chung kết Startup Runway 2026
+  date: '2026-08-19'
+  organizer: ĐH Kinh tế
+  summary: Nguồn founder trẻ
+  url: https://startupdanang.vn/khoi-dong-tuan-le-khoi-nghiep-doi-moi-sang-tao-va-chung-ket-startup-runway-2026
+  legacy_id: v26
+- id: event-cong-bo-6-giai-phap-duoc-thu-nghiem-co-kiem-soat
+  name: Công bố 6 giải pháp được thử nghiệm có kiểm soát
+  date: '2026-08-24'
+  organizer: Sở KH&CN
+  summary: Sandbox đi vào triển khai
+  legacy_id: v27
+- id: event-hop-tac-dmst-voi-sunwah
+  name: Hợp tác ĐMST với Sunwah
+  date: '2026-08-28'
+  organizer: Thành phố Đà Nẵng, Sunwah
+  summary: Nghiên cứu sandbox ngoài tài chính
+  url: https://startupdanang.vn/da-nang-va-sunwah-thuc-day-hop-tac-doi-moi-sang-tao-nghien-cuu-co-che-sandbox-thu-nghiem-cong-nghe-moi
+  legacy_id: v28
+- id: event-tecx-2026-da-nang
+  name: TECx 2026 Da Nang
+  date: '2026-09-06'
+  organizer: Cộng đồng công nghệ thể thao
+  summary: Ngách công nghệ mới
+  legacy_id: v29
+- id: event-hoi-thao-de-an-kinh-te-khong-gian-tam-thap
+  name: Hội thảo Đề án kinh tế không gian tầm thấp
+  date: '2026-09-08'
+  organizer: UBND thành phố
+  summary: Ngành mới cho startup
+  url: https://startupdanang.vn/da-nang-dinh-hinh-he-sinh-thai-kinh-te-khong-gian-tam-thap
+  legacy_id: v30
+- id: event-doan-so-kh-cn-tai-nhat-ban
+  name: Đoàn Sở KH&CN tại Nhật Bản
+  date: '2026-09-09'
+  organizer: Kawasaki, UMI, Tech Hub Yokohama
+  summary: Kết nối thị trường Nhật Bản
+  url: https://startupdanang.vn/da-nang-tang-cuong-ket-noi-he-sinh-thai-doi-moi-sang-tao-voi-doi-tac-nhat-ban
+  legacy_id: v31
+- id: event-doan-thanh-pho-lam-viec-tai-nvidia
+  name: Đoàn thành phố làm việc tại NVIDIA
+  date: '2026-09-21'
+  organizer: UBND thành phố, NVIDIA
+  summary: AI và hạ tầng tính toán
+  url: https://startupdanang.vn/da-nang-tang-cuong-hop-tac-voi-nvidia-thuc-day-phat-trien-ai-va-vi-mach-ban-dan
+  legacy_id: v32
+- id: event-founder-villages-batch-01
+  name: Founder Villages, Batch 01
+  date: '2026-09-25'
+  organizer: Cộng đồng founder
+  summary: Residency ngắn ngày
+  legacy_id: v33
+- id: event-investment-readiness-lab
+  name: Investment Readiness Lab
+  date: '2026-09-28'
+  organizer: Swiss EP, sqrDAO
+  summary: Chuẩn bị gọi vốn cho founder
+  legacy_id: v34
+- id: event-trao-giai-startupblink-cho-da-nang
+  name: Trao giải StartupBlink cho Đà Nẵng
+  date: '2026-09-30'
+  organizer: StartupBlink, DISSC
+  summary: Tăng nhanh nhất Việt Nam
+  legacy_id: v35
+- id: event-qualcomm-vietnam-innovation-challenge-2027-nhan-ho-so
+  name: Qualcomm Vietnam Innovation Challenge 2027 nhận hồ sơ
+  date: '2026-10-01'
+  organizer: Qualcomm và đối tác hệ sinh thái
+  summary: 5G, IoT, AI, thành phố thông minh; ươm tạo, hỗ trợ kỹ thuật, tài trợ
+  legacy_id: v36
+- id: event-le-hoi-dmst-son-tra-2026
+  name: Lễ hội ĐMST Sơn Trà 2026
+  date: '2026-10-03'
+  organizer: UBND phường Sơn Trà
+  summary: ĐMST gắn với cộng đồng, du lịch
+  url: https://startupdanang.vn/son-tra-kien-tao-khong-gian-doi-moi-sang-tao-dua-cong-nghe-den-gan-cong-dong
+  legacy_id: v37
+- id: event-ky-voi-gima-group-qd-4640-thanh-lap-trung-tam-dmst
+  name: Ký với GIMA Group; QĐ 4640 thành lập Trung tâm ĐMST
+  date: '2026-10-09'
+  organizer: DISSC, GIMA; UBND thành phố
+  summary: Kết nối đầu tư; bộ máy thống nhất
+  url: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+  legacy_id: v38
+- id: event-ky-hop-tac-voi-futa-land-va-solana-foundation
+  name: Ký hợp tác với FUTA Land và Solana Foundation
+  date: '2026-10-12'
+  organizer: DISSC, FUTA Land, Solana Foundation
+  summary: Hệ sinh thái blockchain toàn cầu
+  legacy_id: v39
+- id: event-ky-ket-voi-manabu-hubs
+  name: Ký kết với Manabu Hubs
+  date: '2026-10-16'
+  organizer: DISSC, Manabu Hubs
+  summary: Lộ trình sự kiện quốc tế 2027
+  url: https://startupdanang.vn/dissc-ky-ket-voi-manabu-hubs-dua-startup-da-nang-ra-thi-truong-quoc-te
+  legacy_id: v40
+- id: event-doan-cong-tac-han-quoc-tai-fix-2026-va-dh-kyungpook
+  name: Đoàn công tác Hàn Quốc tại FIX 2026 và ĐH Kyungpook
+  date: '2026-10-22'
+  organizer: Sở KH&CN cùng doanh nghiệp
+  summary: Đưa Không gian Daegu vào hoạt động
+  url: https://startupdanang.vn/tu-ket-noi-daegu-da-nang-den-hop-tac-cong-nghe-quoc-te
+  legacy_id: v41
+- id: event-lam-viec-voi-quang-ninh-hai-phong-ve-quy-dmst
+  name: Làm việc với Quảng Ninh, Hải Phòng về quỹ ĐMST
+  date: '2026-10-22'
+  organizer: Sở KH&CN ba địa phương
+  summary: Cơ chế huy động nguồn lực
+  url: https://startupdanang.vn/da-nang-quang-ninh-va-hai-phong-ban-giai-phap-khoi-thong-nguon-luc-khoa-hoc-cong-nghe-va-chuyen-doi-so
+  legacy_id: v42
+- id: event-hoi-thao-thuong-mai-dien-tu-va-thanh-toan-so
+  name: Hội thảo thương mại điện tử và thanh toán số
+  date: '2026-10-22'
+  organizer: UBND thành phố
+  summary: Kênh cho startup e-commerce, fintech
+  url: https://startupdanang.vn/thong-bao-moi-tham-du-hoi-thao-thuc-day-thuong-mai-dien-tu-va-thanh-toan-so-tai-da-nang-nam-2026
+  legacy_id: v43
+- id: event-hoi-thao-he-sinh-thai-tai-chinh-xanh-tai-dia-phuong
+  name: Hội thảo hệ sinh thái tài chính xanh tại địa phương
+  date: '2026-10-23'
+  organizer: Dự án tiếp cận tài chính cho MSME
+  summary: Gắn với định hướng VIFC-DN
+  url: https://startupdanang.vn/dang-ky-tham-gia-hoi-thao-phat-trien-he-sinh-thai-tai-chinh-xanh-tai-dia-phuong-tu-chinh-sach-den-mo-hinh-trien-khai
+  legacy_id: v44
+- id: event-doan-doanh-nghiep-nuoc-ngoai-giao-dich-mua-hang-2026
+  name: Đoàn doanh nghiệp nước ngoài giao dịch mua hàng 2026
+  date: '2026-10-28'
+  organizer: Thành phố Đà Nẵng
+  summary: Kênh khách hàng quốc tế
+  url: https://startupdanang.vn/thong-bao-moi-doanh-nghiep-dang-ky-tham-gia-chuong-trinh-doan-doanh-nghiep-nuoc-ngoai-vao-thanh-pho-da-nang-giao-dich-de-mua-hang-nam-2026
+  legacy_id: v45
+- id: event-trung-tam-doi-moi-sang-tao-da-nang-chinh-thuc-hoat-dong
+  name: Trung tâm Đổi mới sáng tạo Đà Nẵng chính thức hoạt động
+  date: '2026-11-01'
+  organizer: Sở KH&CN
+  summary: Đầu mối thống nhất
+  url: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+  legacy_id: v46
+- id: event-chung-ket-net-zero-challenge-2026
+  name: Chung kết Net Zero Challenge 2026
+  date: '2026-11-12'
+  organizer: Net Zero Challenge (toàn quốc)
+  summary: Cơ hội cho startup công nghệ khí hậu
+  legacy_id: v47
+- id: event-techfest
+  name: TechFest
+  date: '2026-11-15'
+  organizer: Theo kế hoạch
+  summary: Điểm hẹn cuối năm
+  legacy_id: v48
+- id: event-devday-2027
+  name: DevDay 2027
+  date: '2027-04-24'
+  organizer: Ban tổ chức DevDay; Swiss EP
+  summary: Cộng đồng lập trình viên
+  url: https://startupdanang.vn/devday-da-nang-hanh-trinh-hon-mot-thap-ky-kien-tao-he-sinh-thai-cong-nghe
+  legacy_id: v52
+- id: event-smart-city-summit-dai-bac
+  name: Smart City Summit Đài Bắc
+  date: '2027-03-01'
+  organizer: Manabu Hubs
+  summary: Sự kiện quốc tế cho startup
+  legacy_id: v51
+- id: event-trien-lam-khoi-nghiep-dmst-truc-tuyen-surf-2026
+  name: Triển lãm khởi nghiệp, ĐMST trực tuyến SURF 2026
+  date: '2026-12-30'
+  organizer: DISSC
+  summary: Trưng bày startup, công nghệ đến 30/12/2026
+  url: https://vrfair.startupdanang.vn
+  legacy_id: v50
+- id: event-hoi-thao-pho-bien-phap-luat-ve-cong-nghiep-cong-nghe-so
+  name: Hội thảo phổ biến pháp luật về công nghiệp công nghệ số
+  date: '2026-11-17'
+  organizer: Cục Công nghệ số và Trí tuệ nhân tạo; Sở KH&CN
+  summary: Phổ biến ưu đãi đầu tư, sandbox, tài sản số và Luật Trí tuệ nhân tạo
+  url: https://drive.google.com/drive/folders/1W1dclUSpimeZ5GkHVNjtc87J195zLeIQ
+  legacy_id: v49

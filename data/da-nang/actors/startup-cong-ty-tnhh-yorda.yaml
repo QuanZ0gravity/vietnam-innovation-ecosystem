@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-yorda
+name:
+  vi: Công ty TNHH Yorda
+type: startup
+website: https://yordastonemills.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s31

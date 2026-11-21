@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-su-pham-ky-thuat
+name:
+  vi: Trường Đại học Sư phạm Kỹ thuật
+type: university
+categories:
+- Viện, trường
+address: 48 Cao Thắng, Thanh Bình, Hải Châu
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u5

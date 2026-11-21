@@ -1,0 +1,16 @@
+id: government-dissc
+name:
+  vi: DISSC
+type: government
+categories:
+- Trung tâm Hỗ trợ khởi nghiệp ĐMST
+website: https://startupdanang.vn
+description:
+  vi: Vận hành startupdanang.vn, SURF, DAVAS; nay thuộc Trung tâm ĐMST Đà Nẵng.
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d3

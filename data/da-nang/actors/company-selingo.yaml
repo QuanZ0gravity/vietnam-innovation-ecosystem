@@ -1,0 +1,14 @@
+id: company-selingo
+name:
+  vi: SeLingo
+type: company
+categories:
+- EdTech, AI
+description:
+  vi: Startup tiêu biểu trên cổng thành phố.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d85

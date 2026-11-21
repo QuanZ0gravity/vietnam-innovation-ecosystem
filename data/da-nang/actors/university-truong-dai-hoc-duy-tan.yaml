@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-duy-tan
+name:
+  vi: Trường Đại học Duy Tân
+type: university
+categories:
+- Viện, trường
+address: 254 Nguyễn Văn Linh, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u4

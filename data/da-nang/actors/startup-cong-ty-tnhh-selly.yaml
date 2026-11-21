@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-selly
+name:
+  vi: Công ty TNHH SELLY
+type: startup
+website: https://selly.vn/
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s39

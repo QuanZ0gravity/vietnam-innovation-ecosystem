@@ -1,0 +1,16 @@
+id: government-trung-tam-cong-nghe-sinh-hoc-dbc
+name:
+  vi: Trung tâm Công nghệ sinh học (DBC)
+type: government
+categories:
+- Đơn vị sự nghiệp
+website: https://dbc.danang.gov.vn
+description:
+  vi: Công nghệ sinh học, GreenTech & FoodTech Lab; nay thuộc Trung tâm ĐMST Đà Nẵng.
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d5

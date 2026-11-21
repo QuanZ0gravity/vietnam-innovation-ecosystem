@@ -1,0 +1,13 @@
+id: incubator-cong-ty-co-phan-vuon-uom-doanh-nghiep-da-nang-dnes
+name:
+  vi: Công ty Cổ phần Vườn ươm Doanh nghiệp Đà Nẵng (DNES)
+type: incubator
+categories:
+- Vườn ươm
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+source_url: https://startupdanang.vn/dnes-vuon-uom-doanh-nghiep-da-nang
+legacy_id: o17

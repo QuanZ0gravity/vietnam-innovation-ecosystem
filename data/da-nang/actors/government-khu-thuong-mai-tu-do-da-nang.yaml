@@ -1,0 +1,14 @@
+id: government-khu-thuong-mai-tu-do-da-nang
+name:
+  vi: Khu thương mại tự do Đà Nẵng
+type: government
+categories:
+- Hạ tầng chiến lược
+description:
+  vi: Logistics, sản xuất tiên tiến; đang hình thành.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d11

@@ -1,0 +1,16 @@
+id: government-dsac
+name:
+  vi: DSAC
+type: government
+categories:
+- Trung tâm vi mạch bán dẫn và AI
+website: https://dsac.danang.gov.vn
+description:
+  vi: Đào tạo, hạ tầng vi mạch và AI; nay thuộc Trung tâm ĐMST Đà Nẵng.
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d4

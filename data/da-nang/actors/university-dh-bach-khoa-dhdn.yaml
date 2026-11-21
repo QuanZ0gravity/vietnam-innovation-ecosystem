@@ -1,0 +1,14 @@
+id: university-dh-bach-khoa-dhdn
+name:
+  vi: ĐH Bách khoa, ĐHĐN
+type: university
+categories:
+- Trường thành viên
+description:
+  vi: BK SHARK; dDUT; Liên minh Danang Digital Twin.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d62

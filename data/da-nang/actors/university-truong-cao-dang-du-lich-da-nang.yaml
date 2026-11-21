@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-du-lich-da-nang
+name:
+  vi: Trường Cao đẳng Du lịch Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: Nam Kỳ Khởi Nghĩa, Tổ 43, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u18

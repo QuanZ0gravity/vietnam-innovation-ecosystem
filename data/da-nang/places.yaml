@@ -1,0 +1,617 @@
+- id: place-phuong-tam-ky
+  name: Phường Tam Kỳ
+  former_district: TP Tam Kỳ
+  merged_from:
+  - An Mỹ
+  - An Xuân
+  - Trường Xuân
+  legacy_id: l1
+- id: place-phuong-quang-phu
+  name: Phường Quảng Phú
+  former_district: TP Tam Kỳ
+  merged_from:
+  - An Phú
+  - Tam Thanh
+  - Tam Phú
+  legacy_id: l2
+- id: place-phuong-huong-tra
+  name: Phường Hương Trà
+  former_district: TP Tam Kỳ
+  merged_from:
+  - An Sơn
+  - Hòa Hương
+  - Tam Ngọc
+  legacy_id: l3
+- id: place-phuong-ban-thach
+  name: Phường Bàn Thạch
+  former_district: TP Tam Kỳ
+  merged_from:
+  - Tân Thạnh
+  - Hòa Thuận
+  - Tam Thăng
+  legacy_id: l4
+- id: place-phuong-dien-ban
+  name: Phường Điện Bàn
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện Phương
+  - Điện Minh
+  - Vĩnh Điện
+  legacy_id: l5
+- id: place-phuong-dien-ban-dong
+  name: Phường Điện Bàn Đông
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện Nam Đông
+  - Điện Nam Trung
+  - Điện Dương
+  - Điện Ngọc
+  - Điện Nam Bắc
+  legacy_id: l6
+- id: place-phuong-an-thang
+  name: Phường An Thắng
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện An
+  - Điện Thắng Nam
+  - Điện Thắng Trung
+  legacy_id: l7
+- id: place-phuong-dien-ban-bac
+  name: Phường Điện Bàn Bắc
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện Thắng Bắc
+  - Điện Hòa
+  - Điện Tiến
+  legacy_id: l8
+- id: place-phuong-hoi-an
+  name: Phường Hội An
+  former_district: TP Hội An
+  merged_from:
+  - Minh An
+  - Cẩm Phô
+  - Sơn Phong
+  - Cẩm Nam
+  - Cẩm Kim
+  legacy_id: l9
+- id: place-phuong-hoi-an-dong
+  name: Phường Hội An Đông
+  former_district: TP Hội An
+  merged_from:
+  - Hội An Đông
+  legacy_id: l10
+- id: place-phuong-hoi-an-tay
+  name: Phường Hội An Tây
+  former_district: TP Hội An
+  merged_from:
+  - Thanh Hà
+  - Tân An
+  - Cẩm An
+  - Cẩm Hà
+  legacy_id: l11
+- id: place-xa-nui-thanh
+  name: Xã Núi Thành
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Núi Thành
+  - Tam Quang
+  - Tam Nghĩa
+  - Tam Hiệp
+  - Tam Giang
+  legacy_id: l12
+- id: place-xa-tam-my
+  name: Xã Tam Mỹ
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Tam Mỹ Đông
+  - Tam Mỹ Tây
+  - Tam Trà
+  legacy_id: l13
+- id: place-xa-tam-anh
+  name: Xã Tam Anh
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Tam Hòa
+  - Tam Anh Bắc
+  - Tam Anh Nam
+  legacy_id: l14
+- id: place-xa-duc-phu
+  name: Xã Đức Phú
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Tam Sơn
+  - Tam Thạnh
+  legacy_id: l15
+- id: place-xa-tam-xuan
+  name: Xã Tam Xuân
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Tam Xuân I
+  - Tam Xuân II
+  - Tam Tiến
+  legacy_id: l16
+- id: place-xa-tay-ho
+  name: Xã Tây Hồ
+  former_district: Huyện Núi Thành
+  merged_from:
+  - Tam An
+  - Tam Thành
+  - Tam Phước
+  - Tam Lộc
+  legacy_id: l17
+- id: place-xa-chien-dan
+  name: Xã Chiên Đàn
+  former_district: Huyện Phú Ninh
+  merged_from:
+  - Phú Thịnh
+  - Tam Đàn
+  - Tam Thái
+  legacy_id: l18
+- id: place-xa-phu-ninh
+  name: Xã Phú Ninh
+  former_district: Huyện Phú Ninh
+  merged_from:
+  - Tam Dân
+  - Tam Đại
+  - Tam Lãnh
+  legacy_id: l19
+- id: place-xa-lanh-ngoc
+  name: Xã Lãnh Ngọc
+  former_district: Huyện Tiên Phước
+  merged_from:
+  - Tiên Lãnh
+  - Tiên Ngọc
+  - Tiên Hiệp
+  legacy_id: l20
+- id: place-xa-tien-phuoc
+  name: Xã Tiên Phước
+  former_district: Huyện Tiên Phước
+  merged_from:
+  - Tiên Kỳ
+  - Tiên Mỹ
+  - Tiên Phong
+  - Tiên Thọ
+  legacy_id: l21
+- id: place-xa-thanh-binh
+  name: Xã Thạnh Bình
+  former_district: Huyện Tiên Phước
+  merged_from:
+  - Tiên Lập
+  - Tiên Lộc
+  - Tiên An
+  - Tiên Cảnh
+  legacy_id: l22
+- id: place-xa-son-cam-ha
+  name: Xã Sơn Cẩm Hà
+  former_district: Huyện Tiên Phước
+  merged_from:
+  - Tiên Sơn
+  - Tiên Hà
+  - Tiên Châu
+  legacy_id: l23
+- id: place-xa-tra-lien
+  name: Xã Trà Liên
+  former_district: Huyện Bắc Trà My
+  merged_from:
+  - Trà Đông
+  - Trà Nú
+  - Trà Kót
+  legacy_id: l24
+- id: place-xa-tra-giap
+  name: Xã Trà Giáp
+  former_district: Huyện Bắc Trà My
+  merged_from:
+  - Trà Ka
+  - Trà Giáp
+  legacy_id: l25
+- id: place-xa-tra-tan
+  name: Xã Trà Tân
+  former_district: Huyện Bắc Trà My
+  merged_from:
+  - Trà Giác
+  - Trà Tân
+  legacy_id: l26
+- id: place-xa-tra-doc
+  name: Xã Trà Đốc
+  former_district: Huyện Bắc Trà My
+  merged_from:
+  - Trà Bui
+  - Trà Đốc
+  legacy_id: l27
+- id: place-xa-tra-my
+  name: Xã Trà My
+  former_district: Huyện Bắc Trà My
+  merged_from:
+  - Trà My
+  - Trà Sơn
+  - Trà Giang
+  - Trà Dương
+  legacy_id: l28
+- id: place-xa-nam-tra-my
+  name: Xã Nam Trà My
+  former_district: Huyện Nam Trà My
+  merged_from:
+  - Trà Mai
+  - Trà Don
+  legacy_id: l29
+- id: place-xa-tra-tap
+  name: Xã Trà Tập
+  former_district: Huyện Nam Trà My
+  merged_from:
+  - Trà Cang
+  - Trà Tập
+  legacy_id: l30
+- id: place-xa-tra-van
+  name: Xã Trà Vân
+  former_district: Huyện Nam Trà My
+  merged_from:
+  - Trà Vinh
+  - Trà Vân
+  legacy_id: l31
+- id: place-xa-tra-linh
+  name: Xã Trà Linh
+  former_district: Huyện Nam Trà My
+  merged_from:
+  - Trà Nam
+  - Trà Linh
+  legacy_id: l32
+- id: place-xa-tra-leng
+  name: Xã Trà Leng
+  former_district: Huyện Nam Trà My
+  merged_from:
+  - Trà Dơn
+  - Trà Leng
+  legacy_id: l33
+- id: place-xa-thang-binh
+  name: Xã Thăng Bình
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Hà Lam
+  - Bình Nguyên
+  - Bình Quý
+  - Bình Phục
+  legacy_id: l34
+- id: place-xa-thang-an
+  name: Xã Thăng An
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Bình Triều
+  - Bình Giang
+  - Bình Đào
+  - Bình Minh
+  - Bình Dương
+  legacy_id: l35
+- id: place-xa-thang-truong
+  name: Xã Thăng Trường
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Bình Nam
+  - Bình Hải
+  - Bình Sa
+  legacy_id: l36
+- id: place-xa-thang-dien
+  name: Xã Thăng Điền
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Bình An
+  - Bình Trung
+  - Bình Tú
+  legacy_id: l37
+- id: place-xa-thang-phu
+  name: Xã Thăng Phú
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Bình Phú
+  - Bình Quế
+  legacy_id: l38
+- id: place-xa-dong-duong
+  name: Xã Đồng Dương
+  former_district: Huyện Thăng Bình
+  merged_from:
+  - Bình Lãnh
+  - Bình Trị
+  - Bình Định
+  legacy_id: l39
+- id: place-xa-que-son-trung
+  name: Xã Quế Sơn Trung
+  former_district: Huyện Quế Sơn
+  merged_from:
+  - Quế Mỹ
+  - Quế Hiệp
+  - Quế Thuận
+  - Quế Châu
+  legacy_id: l40
+- id: place-xa-que-son
+  name: Xã Quế Sơn
+  former_district: Huyện Quế Sơn
+  merged_from:
+  - Đông Phú
+  - Quế Minh
+  - Quế An
+  - Quế Long
+  - Quế Phong
+  legacy_id: l41
+- id: place-xa-xuan-phu
+  name: Xã Xuân Phú
+  former_district: Huyện Quế Sơn
+  merged_from:
+  - Hương An
+  - Quế Xuân 1
+  - Quế Xuân 2
+  - Quế Phú
+  legacy_id: l42
+- id: place-xa-nong-son
+  name: Xã Nông Sơn
+  former_district: Huyện Nông Sơn
+  merged_from:
+  - Trung Phước
+  - Quế Lộc
+  legacy_id: l43
+- id: place-xa-que-phuoc
+  name: Xã Quế Phước
+  former_district: Huyện Nông Sơn
+  merged_from:
+  - Quế Lâm
+  - Phước Ninh
+  - Ninh Phước
+  legacy_id: l44
+- id: place-xa-duy-nghia
+  name: Xã Duy Nghĩa
+  former_district: Huyện Duy Xuyên
+  merged_from:
+  - Duy Thành
+  - Duy Hải
+  - Duy Nghĩa
+  legacy_id: l45
+- id: place-xa-nam-phuoc
+  name: Xã Nam Phước
+  former_district: Huyện Duy Xuyên
+  merged_from:
+  - Nam Phước
+  - Duy Phước
+  - Duy Vinh
+  legacy_id: l46
+- id: place-xa-duy-xuyen
+  name: Xã Duy Xuyên
+  former_district: Huyện Duy Xuyên
+  merged_from:
+  - Duy Trung
+  - Duy Sơn
+  - Duy Trinh
+  legacy_id: l47
+- id: place-xa-thu-bon
+  name: Xã Thu Bồn
+  former_district: Huyện Duy Xuyên
+  merged_from:
+  - Duy Châu
+  - Duy Hòa
+  - Duy Phú
+  - Duy Tân
+  legacy_id: l48
+- id: place-xa-dien-ban-tay
+  name: Xã Điện Bàn Tây
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện Hồng
+  - Điện Thọ
+  - Điện Phước
+  legacy_id: l49
+- id: place-xa-go-noi
+  name: Xã Gò Nổi
+  former_district: Thị xã Điện Bàn
+  merged_from:
+  - Điện Phong
+  - Điện Trung
+  - Điện Quang
+  legacy_id: l50
+- id: place-xa-dai-loc
+  name: Xã Đại Lộc
+  former_district: Huyện Đại Lộc
+  merged_from:
+  - Ái Nghĩa
+  - Đại Hiệp
+  - Đại Hòa
+  - Đại An
+  - Đại Nghĩa
+  legacy_id: l51
+- id: place-xa-ha-nha
+  name: Xã Hà Nha
+  former_district: Huyện Đại Lộc
+  merged_from:
+  - Đại Đồng
+  - Đại Hồng
+  - Đại Quang
+  legacy_id: l52
+- id: place-xa-thuong-duc
+  name: Xã Thượng Đức
+  former_district: Huyện Đại Lộc
+  merged_from:
+  - Đại Lãnh
+  - Đại Hưng
+  - Đại Sơn
+  legacy_id: l53
+- id: place-xa-vu-gia
+  name: Xã Vu Gia
+  former_district: Huyện Đại Lộc
+  merged_from:
+  - Đại Phong
+  - Đại Minh
+  - Đại Cường
+  legacy_id: l54
+- id: place-xa-phu-thuan
+  name: Xã Phú Thuận
+  former_district: Huyện Đại Lộc
+  merged_from:
+  - Đại Tân
+  - Đại Thắng
+  - Đại Chánh
+  - Đại Thạnh
+  legacy_id: l55
+- id: place-xa-thanh-my
+  name: Xã Thạnh Mỹ
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Thạnh Mỹ
+  legacy_id: l56
+- id: place-xa-ben-giang
+  name: Xã Bến Giằng
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Cà Dy
+  - Tà Bhing
+  - Tà Pơơ
+  legacy_id: l57
+- id: place-xa-nam-giang
+  name: Xã Nam Giang
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Zuôih
+  - Chà Vàl
+  legacy_id: l58
+- id: place-xa-dac-pring
+  name: Xã Đắc Pring
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Đắc Pre
+  - Đắc Pring
+  legacy_id: l59
+- id: place-xa-la-dee
+  name: Xã La Dêê
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Đắc Tôi
+  - La Dêê
+  legacy_id: l60
+- id: place-xa-la-ee
+  name: Xã La Êê
+  former_district: Huyện Nam Giang
+  merged_from:
+  - Chơ Chun
+  - La Êê
+  legacy_id: l61
+- id: place-xa-song-vang
+  name: Xã Sông Vàng
+  former_district: Huyện Đông Giang
+  merged_from:
+  - Tư
+  - Ba
+  legacy_id: l62
+- id: place-xa-song-kon
+  name: Xã Sông Kôn
+  former_district: Huyện Đông Giang
+  merged_from:
+  - A Ting
+  - Jơ Ngây
+  - Sông Kôn
+  legacy_id: l63
+- id: place-xa-dong-giang
+  name: Xã Đông Giang
+  former_district: Huyện Đông Giang
+  merged_from:
+  - Prao
+  - Tà Lu
+  - A Rooi
+  - Zà Hung
+  legacy_id: l64
+- id: place-xa-ben-hien
+  name: Xã Bến Hiên
+  former_district: Huyện Đông Giang
+  merged_from:
+  - Kà Dăng
+  - Mà Cooih
+  legacy_id: l65
+- id: place-xa-avuong
+  name: Xã Avương
+  former_district: Huyện Tây Giang
+  merged_from:
+  - Bhalêê
+  - Avương
+  legacy_id: l66
+- id: place-xa-tay-giang
+  name: Xã Tây Giang
+  former_district: Huyện Tây Giang
+  merged_from:
+  - Atiêng
+  - Dang
+  - Anông
+  - Lăng
+  legacy_id: l67
+- id: place-xa-hung-son
+  name: Xã Hùng Sơn
+  former_district: Huyện Tây Giang
+  merged_from:
+  - Ch’ơm
+  - Gari
+  - Tr’hy
+  - Axan
+  legacy_id: l68
+- id: place-xa-hiep-duc
+  name: Xã Hiệp Đức
+  former_district: Huyện Hiệp Đức
+  merged_from:
+  - Tân Bình
+  - Quế Tân
+  - Quế Lưu
+  legacy_id: l69
+- id: place-xa-viet-an
+  name: Xã Việt An
+  former_district: Huyện Hiệp Đức
+  merged_from:
+  - Thăng Phước
+  - Bình Sơn
+  - Quế Thọ
+  - Bình Lâm
+  legacy_id: l70
+- id: place-xa-phuoc-tra
+  name: Xã Phước Trà
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Sông Trà
+  - Phước Gia
+  - Phước Trà
+  legacy_id: l71
+- id: place-xa-kham-duc
+  name: Xã Khâm Đức
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Khâm Đức
+  - Phước Xuân
+  legacy_id: l72
+- id: place-xa-phuoc-nang
+  name: Xã Phước Năng
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Phước Đức
+  - Phước Mỹ
+  - Phước Năng
+  legacy_id: l73
+- id: place-xa-phuoc-chanh
+  name: Xã Phước Chánh
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Phước Công
+  - Phước Chánh
+  legacy_id: l74
+- id: place-xa-phuoc-thanh
+  name: Xã Phước Thành
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Phước Lộc
+  - Phước Kim
+  - Phước Thành
+  legacy_id: l75
+- id: place-xa-phuoc-hiep
+  name: Xã Phước Hiệp
+  former_district: Huyện Phước Sơn
+  merged_from:
+  - Phước Hòa
+  - Phước Hiệp
+  legacy_id: l76
+- id: place-xa-tam-hai
+  name: Xã Tam Hải
+  former_district: Huyện Núi Thành
+  legacy_id: l77
+- id: place-xa-tan-hiep
+  name: Xã Tân Hiệp
+  former_district: TP Hội An
+  legacy_id: l78

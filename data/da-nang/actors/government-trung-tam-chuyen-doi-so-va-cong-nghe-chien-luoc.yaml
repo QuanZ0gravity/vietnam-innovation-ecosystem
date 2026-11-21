@@ -1,0 +1,15 @@
+id: government-trung-tam-chuyen-doi-so-va-cong-nghe-chien-luoc
+name:
+  vi: Trung tâm Chuyển đổi số và Công nghệ chiến lược
+type: government
+categories:
+- Đơn vị thuộc Sở KH&CN
+- Không gian ĐMST
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/trung-tam-phat-trien-ha-tang-cntt-da-nang
+legacy_id: d6

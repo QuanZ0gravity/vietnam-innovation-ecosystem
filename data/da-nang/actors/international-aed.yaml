@@ -1,0 +1,14 @@
+id: international-aed
+name:
+  vi: AED
+type: international
+categories:
+- Áo
+description:
+  vi: Ký kết tại Diễn đàn EU “Cửa ngõ Toàn cầu” (3/2026).
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d110

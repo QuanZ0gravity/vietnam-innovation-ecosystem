@@ -1,0 +1,17 @@
+id: fund-aiviet-venture
+name:
+  vi: Aiviet Venture
+type: fund
+categories:
+- Quỹ đầu tư
+- Quỹ, nhà đầu tư
+website: https://aiviet.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/aiviet-venture
+legacy_id: d46

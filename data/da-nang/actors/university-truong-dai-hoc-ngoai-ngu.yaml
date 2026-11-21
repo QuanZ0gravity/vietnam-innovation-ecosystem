@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-ngoai-ngu
+name:
+  vi: Trường Đại học Ngoại ngữ
+type: university
+categories:
+- Viện, trường
+address: 131 Lương Nhữ Hộc, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u9

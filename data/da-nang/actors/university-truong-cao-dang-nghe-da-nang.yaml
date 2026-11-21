@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-nghe-da-nang
+name:
+  vi: Trường Cao Đẳng Nghề Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: 99 Tô Hiến Thành, Phước Mỹ, Sơn Trà, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u14

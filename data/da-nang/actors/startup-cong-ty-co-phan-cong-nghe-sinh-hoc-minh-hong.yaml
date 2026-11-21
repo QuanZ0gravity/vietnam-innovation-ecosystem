@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-cong-nghe-sinh-hoc-minh-hong
+name:
+  vi: Công ty Cổ phần Công nghệ sinh học Minh Hồng
+type: startup
+website: https://minhhongbiotech.com/
+region: da-nang
+website_status: Chặn truy cập tự động, cần kiểm tra tay
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s48

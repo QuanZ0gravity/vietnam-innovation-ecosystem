@@ -1,0 +1,13 @@
+id: university-vien-nghien-cuu-va-dao-tao-viet-anh
+name:
+  vi: Viện Nghiên cứu và Đào tạo Việt Anh
+type: university
+categories:
+- Viện, trường
+address: 158A Lê Lợi, Hải Châu 1, Hải Châu
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u12

@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-luong-thuc-thuc-pham
+name:
+  vi: Trường Cao đẳng Lương thực - Thực phẩm
+type: university
+categories:
+- Viện, trường
+address: 101B Lê Hữu Trác, Phước Mỹ, Sơn Trà, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u16

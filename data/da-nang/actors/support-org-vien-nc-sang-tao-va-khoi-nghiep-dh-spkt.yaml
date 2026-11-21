@@ -1,0 +1,16 @@
+id: support-org-vien-nc-sang-tao-va-khoi-nghiep-dh-spkt
+name:
+  vi: Viện NC Sáng tạo và Khởi nghiệp, ĐH SPKT
+type: support_org
+categories:
+- Vườn ươm đại học
+website: https://ute.udn.vn
+description:
+  vi: Ươm tạo dự án kỹ thuật.
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d20

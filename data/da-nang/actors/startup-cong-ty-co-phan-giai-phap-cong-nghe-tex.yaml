@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-giai-phap-cong-nghe-tex
+name:
+  vi: Công ty cổ phần giải pháp công nghệ TEX
+type: startup
+website: https://tex.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s10

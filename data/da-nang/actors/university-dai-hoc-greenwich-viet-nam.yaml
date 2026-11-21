@@ -1,0 +1,13 @@
+id: university-dai-hoc-greenwich-viet-nam
+name:
+  vi: Đại học Greenwich Việt Nam
+type: university
+categories:
+- Viện, trường
+address: 658 Ngô Quyền, An Hải Bắc, Sơn Trà, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u1

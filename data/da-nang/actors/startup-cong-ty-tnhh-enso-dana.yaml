@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-enso-dana
+name:
+  vi: Công ty TNHH Enso Dana
+type: startup
+website: https://ensodana.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s30

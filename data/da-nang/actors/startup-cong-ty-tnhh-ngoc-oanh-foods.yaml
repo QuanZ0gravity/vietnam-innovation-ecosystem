@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-ngoc-oanh-foods
+name:
+  vi: Công Ty TNHH Ngọc Oanh Foods
+type: startup
+website: https://ngocoanhfoods.com/
+region: da-nang
+website_status: Không truy cập được, cần kiểm tra
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s15

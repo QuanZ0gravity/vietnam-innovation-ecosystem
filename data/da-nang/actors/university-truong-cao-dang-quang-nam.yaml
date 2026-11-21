@@ -1,0 +1,15 @@
+id: university-truong-cao-dang-quang-nam
+name:
+  vi: Trường Cao đẳng Quảng Nam
+type: university
+categories:
+- Cao đẳng
+- Viện, trường
+address: Số 431 Hùng Vương - Tam Kỳ - Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+legacy_id: d70

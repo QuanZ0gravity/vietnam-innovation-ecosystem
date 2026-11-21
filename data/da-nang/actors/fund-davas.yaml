@@ -1,0 +1,14 @@
+id: fund-davas
+name:
+  vi: DAVAS
+type: fund
+categories:
+- Diễn đàn đầu tư
+description:
+  vi: 'DAVAS 2026: 62 dự án, 31 quỹ và nhà đầu tư, quy mô hơn 5 tỷ USD.'
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d32

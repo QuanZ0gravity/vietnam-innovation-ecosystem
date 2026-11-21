@@ -1,0 +1,13 @@
+id: university-truong-y-duoc-dai-hoc-da-nang
+name:
+  vi: Trường Y Dược - Đại học Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: Khu đô thị Đại học Đà Nẵng, phường Ngũ Hành Sơn, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u13

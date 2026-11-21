@@ -1,0 +1,14 @@
+id: international-sunwah
+name:
+  vi: Sunwah
+type: international
+categories:
+- Hồng Kông (Trung Quốc)
+description:
+  vi: Hợp tác ĐMST, đề xuất sandbox xe tải điện tự lái tại cảng.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d108

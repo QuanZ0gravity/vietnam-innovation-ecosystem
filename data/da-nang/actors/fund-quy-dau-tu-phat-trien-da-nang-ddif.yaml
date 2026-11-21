@@ -1,0 +1,14 @@
+id: fund-quy-dau-tu-phat-trien-da-nang-ddif
+name:
+  vi: Quỹ Đầu tư phát triển Đà Nẵng (DDIF)
+type: fund
+categories:
+- Quỹ nhà nước
+description:
+  vi: Đầu tư phát triển.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d34

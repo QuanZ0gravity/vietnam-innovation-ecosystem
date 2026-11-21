@@ -1,0 +1,10 @@
+id: startup-dqs
+name:
+  vi: DQS
+type: startup
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s62

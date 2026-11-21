@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-cho-ca-phe
+name:
+  vi: Công ty TNHH Chợ Cà Phê
+type: startup
+website: https://chocaphe.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s16

@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-deltax-robotics
+name:
+  vi: Công ty Cổ phần DeltaX Robotics
+type: startup
+website: https://deltaxrobotics.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s19

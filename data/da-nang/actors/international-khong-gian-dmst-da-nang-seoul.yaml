@@ -1,0 +1,14 @@
+id: international-khong-gian-dmst-da-nang-seoul
+name:
+  vi: Không gian ĐMST Đà Nẵng - Seoul
+type: international
+categories:
+- Không gian quốc tế
+description:
+  vi: Hàn Quốc.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d100

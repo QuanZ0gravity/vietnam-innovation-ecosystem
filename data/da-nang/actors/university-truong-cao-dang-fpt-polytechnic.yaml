@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-fpt-polytechnic
+name:
+  vi: Trường Cao đẳng FPT Polytechnic
+type: university
+categories:
+- Viện, trường
+address: 'Liên kết đào tạo tại: Trường Cao đẳng Phương Đông - Số 03 Hùng Vương, Tân Thạnh, Tam Kỳ, Quảng Nam'
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u29

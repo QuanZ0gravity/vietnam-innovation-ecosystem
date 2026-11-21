@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-top-sinh-vien
+name:
+  vi: Công ty Cổ phần TOP Sinh viên
+type: startup
+website: https://greenbeli.io/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s45

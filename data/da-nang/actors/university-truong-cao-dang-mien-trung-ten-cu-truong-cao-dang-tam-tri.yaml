@@ -1,0 +1,14 @@
+id: university-truong-cao-dang-mien-trung-ten-cu-truong-cao-dang-tam-tri
+name:
+  vi: Trường Cao đẳng Miền Trung (tên cũ Trường Cao đẳng Tâm Trí)
+type: university
+categories:
+- Viện, trường
+address: số 473 Hùng Vương P An Sơn, Tp Tam Kỳ
+region: da-nang
+place: place-phuong-huong-tra
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u24

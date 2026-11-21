@@ -1,0 +1,55 @@
+name: Thêm hoặc sửa một hồ sơ
+description: Dành cho người không dùng Git. Người duyệt sẽ chuyển thành thay đổi dữ liệu.
+title: "[Hồ sơ] "
+labels: ["du-lieu"]
+body:
+  - type: dropdown
+    id: action
+    attributes:
+      label: Bạn muốn
+      options: ["Thêm hồ sơ mới", "Sửa hồ sơ đã có", "Báo hồ sơ không còn hoạt động"]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Tên tổ chức, startup hoặc dự án
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Loại
+      options: ["Startup", "Dự án sáng tạo", "Doanh nghiệp", "Quỹ, nhà đầu tư", "Vườn ươm", "Chương trình tăng tốc", "Không gian ĐMST", "Viện, trường", "Cơ quan nhà nước", "Tổ chức hỗ trợ", "Đối tác quốc tế", "Cộng đồng", "Truyền thông"]
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Tỉnh, thành phố
+      placeholder: "Đà Nẵng"
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website hoặc trang chính thức
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả ngắn (tự viết, tối đa 400 ký tự)
+      description: Vui lòng không sao chép mô tả từ website khác.
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Bạn là
+      options: ["Người của chính tổ chức này", "Đối tác đã làm việc với tổ chức", "Người biết qua nguồn công khai"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Xác nhận
+      options:
+        - label: Thông tin tôi gửi là công khai hoặc đã được tổ chức đồng ý công bố theo giấy phép CC BY 4.0.
+          required: true

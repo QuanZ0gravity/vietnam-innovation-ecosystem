@@ -1,0 +1,14 @@
+id: company-tripc-ai
+name:
+  vi: TripC.AI
+type: company
+categories:
+- Du lịch, AI
+description:
+  vi: Hệ sinh thái du lịch số.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d78

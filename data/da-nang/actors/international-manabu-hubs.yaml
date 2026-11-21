@@ -1,0 +1,18 @@
+id: international-manabu-hubs
+name:
+  vi: Manabu Hubs
+type: international
+categories:
+- Nhật Bản, Đài Loan
+- Mentor, chuyên gia
+website: https://manabuhubs.com/
+linkedin: https://www.linkedin.com/company/manabuhubs
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/manabu-hubs
+legacy_id: d104

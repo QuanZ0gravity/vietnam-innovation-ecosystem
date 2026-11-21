@@ -1,0 +1,13 @@
+id: university-truong-trung-cap-quang-dong
+name:
+  vi: Trường Trung cấp Quảng Đông
+type: university
+categories:
+- Viện, trường
+address: QL 1a, Điện Thắng Bắc, Điện Bàn, Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u33

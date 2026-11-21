@@ -1,0 +1,14 @@
+id: company-icetea-solution
+name:
+  vi: ICETEA SOLUTION
+type: company
+categories:
+- Tài sản số
+description:
+  vi: Giải pháp Umi Pay trong sandbox, 36 tháng.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d90

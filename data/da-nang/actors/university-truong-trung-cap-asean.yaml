@@ -1,0 +1,13 @@
+id: university-truong-trung-cap-asean
+name:
+  vi: Trường Trung cấp ASEAN
+type: university
+categories:
+- Viện, trường
+address: 53 Hùng Vương - Tam Kỳ - Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u32

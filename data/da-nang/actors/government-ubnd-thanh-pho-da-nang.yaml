@@ -1,0 +1,14 @@
+id: government-ubnd-thanh-pho-da-nang
+name:
+  vi: UBND thành phố Đà Nẵng
+type: government
+categories:
+- Chính quyền thành phố
+description:
+  vi: Ban hành chương trình, đề án; chỉ đạo DAVAS, SURF. Được phân cấp cấp phép thử nghiệm có kiểm soát (NQ 20/2026/NQ-CP) và hàng hóa lưỡng dụng (TT 30/2026/TT-BKHCN).
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d0

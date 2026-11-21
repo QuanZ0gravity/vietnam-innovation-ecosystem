@@ -1,0 +1,14 @@
+id: international-bridgent
+name:
+  vi: Bridgent
+type: international
+categories:
+- Singapore
+description:
+  vi: Nông nghiệp bền vững, kinh tế tuần hoàn.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d109

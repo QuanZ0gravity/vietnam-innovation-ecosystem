@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-san-xuat-tmdv-central-viet-nam
+name:
+  vi: Công ty TNHH Sản xuất TMDV Central Việt Nam
+type: startup
+website: https://hiyoufarm.com.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s49

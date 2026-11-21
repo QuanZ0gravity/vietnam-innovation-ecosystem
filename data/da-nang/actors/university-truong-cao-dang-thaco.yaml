@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-thaco
+name:
+  vi: Trường Cao đẳng Thaco
+type: university
+categories:
+- Viện, trường
+address: KCN Tam Hiệp - Núi Thành - Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u23

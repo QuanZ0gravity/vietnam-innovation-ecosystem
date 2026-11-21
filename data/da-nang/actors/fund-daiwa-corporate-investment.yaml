@@ -1,0 +1,14 @@
+id: fund-daiwa-corporate-investment
+name:
+  vi: Daiwa Corporate Investment
+type: fund
+categories:
+- Quỹ đầu tư
+description:
+  vi: Có trong danh sách quỹ của cổng startupdanang.vn.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d43

@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-hoang-phong-dana
+name:
+  vi: Công ty TNHH Hoàng Phong Dana
+type: startup
+website: https://medoan.vn/
+region: da-nang
+website_status: Chặn truy cập tự động, cần kiểm tra tay
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s43

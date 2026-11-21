@@ -1,0 +1,12 @@
+id: startup-ctcp-nexbion-pharma
+name:
+  vi: CTCP NEXBION Pharma
+type: startup
+website: https://nexbionpharma.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s14

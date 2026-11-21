@@ -1,0 +1,14 @@
+id: international-vybe
+name:
+  vi: VYBE
+type: international
+categories:
+- Không gian quốc tế
+description:
+  vi: Hội Doanh nghiệp trẻ Việt Nam tại châu Âu.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d103

@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-alpha-asimov-robotics
+name:
+  vi: Công ty TNHH Alpha Asimov Robotics
+type: startup
+website: https://www.alphaasimov.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s17

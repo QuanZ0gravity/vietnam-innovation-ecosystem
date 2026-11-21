@@ -1,0 +1,14 @@
+id: company-cong-ty-cp-payd
+name:
+  vi: Công ty CP PAYD
+type: company
+categories:
+- Fintech du lịch
+description:
+  vi: Giải pháp PayD trong sandbox, 18 tháng.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d88

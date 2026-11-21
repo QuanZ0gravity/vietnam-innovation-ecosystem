@@ -1,0 +1,16 @@
+id: fund-founders-launchpad
+name:
+  vi: Founders Launchpad
+type: fund
+categories:
+- Quỹ đầu tư
+description:
+  vi: Có trong danh sách quỹ của cổng startupdanang.vn.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+legacy_id: d40;f4
+source_url: https://startupdanang.vn/founderslaunchpad

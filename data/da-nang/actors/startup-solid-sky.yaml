@@ -1,0 +1,12 @@
+id: startup-solid-sky
+name:
+  vi: Solid Sky
+type: startup
+website: https://www.solid-sky.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s1

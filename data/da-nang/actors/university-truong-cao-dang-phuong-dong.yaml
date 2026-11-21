@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-phuong-dong
+name:
+  vi: Trường Cao đẳng Phương Đông
+type: university
+categories:
+- Viện, trường
+address: Số 03 Hùng Vương - Tam Kỳ - Quảng Nam
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u27

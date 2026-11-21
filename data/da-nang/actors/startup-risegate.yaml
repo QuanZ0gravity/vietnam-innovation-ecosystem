@@ -1,0 +1,12 @@
+id: startup-risegate
+name:
+  vi: Risegate
+type: startup
+website: https://risegate.io/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s52

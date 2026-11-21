@@ -1,0 +1,12 @@
+id: startup-mark-deler
+name:
+  vi: Mark Deler
+type: startup
+website: https://markdealer.vn
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s51

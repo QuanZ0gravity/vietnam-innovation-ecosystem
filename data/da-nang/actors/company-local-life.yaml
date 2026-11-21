@@ -1,0 +1,14 @@
+id: company-local-life
+name:
+  vi: Local Life
+type: company
+categories:
+- Du lịch
+description:
+  vi: Giải Nhất SURF 2025.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d77

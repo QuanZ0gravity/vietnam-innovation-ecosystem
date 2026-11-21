@@ -1,0 +1,12 @@
+id: startup-cong-ty-thot-kinh-cuong-luc-sala
+name:
+  vi: Công ty Thớt kính Cường lực SALA
+type: startup
+website: https://thotkinhcuonglucsala.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s44

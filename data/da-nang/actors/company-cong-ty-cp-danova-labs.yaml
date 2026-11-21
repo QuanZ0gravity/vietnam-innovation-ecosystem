@@ -1,0 +1,14 @@
+id: company-cong-ty-cp-danova-labs
+name:
+  vi: Công ty CP DANOVA LABS
+type: company
+categories:
+- Tài sản số
+description:
+  vi: Giải pháp TORA trong sandbox, 36 tháng.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+legacy_id: d89

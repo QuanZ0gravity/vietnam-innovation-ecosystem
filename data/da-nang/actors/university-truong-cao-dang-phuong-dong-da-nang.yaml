@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-phuong-dong-da-nang
+name:
+  vi: Trường Cao đẳng Phương Đông Đà Nẵng
+type: university
+categories:
+- Viện, trường
+address: Số 32 Phan Đăng Lưu, Hòa Cường Bắc, Hải Châu, thành phố Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u19

@@ -1,0 +1,15 @@
+id: support-org-std-office
+name:
+  vi: STD Office
+type: support_org
+categories:
+- Không gian làm việc chung
+- Không gian ĐMST
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/std-office
+legacy_id: d31

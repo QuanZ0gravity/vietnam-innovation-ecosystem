@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-echogreen
+name:
+  vi: Công ty TNHH Echogreen
+type: startup
+website: https://echogreen.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s12

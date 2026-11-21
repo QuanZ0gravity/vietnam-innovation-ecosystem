@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-bach-khoa
+name:
+  vi: Trường Đại học Bách Khoa
+type: university
+categories:
+- Viện, trường
+address: 54 Nguyễn Lương Bằng, quận Liên Chiểu, thành phố Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u10

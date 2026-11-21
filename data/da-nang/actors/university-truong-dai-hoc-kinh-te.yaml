@@ -1,0 +1,13 @@
+id: university-truong-dai-hoc-kinh-te
+name:
+  vi: Trường Đại học Kinh tế
+type: university
+categories:
+- Viện, trường
+address: 71 Ngũ Hành Sơn, Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u11

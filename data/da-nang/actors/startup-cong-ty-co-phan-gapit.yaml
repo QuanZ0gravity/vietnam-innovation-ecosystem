@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-gapit
+name:
+  vi: Công ty cổ phần GAPIT
+type: startup
+website: https://gapit.com.vn/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s18

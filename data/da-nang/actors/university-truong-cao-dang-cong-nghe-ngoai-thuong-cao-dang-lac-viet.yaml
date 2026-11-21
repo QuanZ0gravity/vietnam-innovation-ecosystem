@@ -1,0 +1,13 @@
+id: university-truong-cao-dang-cong-nghe-ngoai-thuong-cao-dang-lac-viet
+name:
+  vi: Trường Cao đẳng Công nghệ - Ngoại thương (Cao đẳng Lạc Việt)
+type: university
+categories:
+- Viện, trường
+address: 42 - 46 Phan Châu Trinh, TP. Đà Nẵng
+region: da-nang
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: u17

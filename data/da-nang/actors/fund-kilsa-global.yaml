@@ -1,0 +1,17 @@
+id: fund-kilsa-global
+name:
+  vi: Kilsa Global
+type: fund
+categories:
+- Quỹ đầu tư
+- Quỹ, nhà đầu tư
+website: https://kilsaglobal.com/
+region: da-nang
+website_status: Chặn truy cập tự động, cần kiểm tra tay
+verification:
+  level: unverified
+sources:
+- Bản đồ hệ sinh thái
+- startupdanang.vn
+source_url: https://startupdanang.vn/kilsa-global
+legacy_id: d52

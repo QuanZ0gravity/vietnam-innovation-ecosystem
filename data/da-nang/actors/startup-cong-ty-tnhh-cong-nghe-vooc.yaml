@@ -1,0 +1,12 @@
+id: startup-cong-ty-tnhh-cong-nghe-vooc
+name:
+  vi: Công ty TNHH Công nghệ VOOC
+type: startup
+website: https://umbalena.vn/
+region: da-nang
+website_status: Chặn truy cập tự động, cần kiểm tra tay
+verification:
+  level: unverified
+sources:
+- startupdanang.vn
+legacy_id: s41

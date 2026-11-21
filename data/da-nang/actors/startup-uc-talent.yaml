@@ -1,0 +1,12 @@
+id: startup-uc-talent
+name:
+  vi: UC TALENT
+type: startup
+website: https://www.uctalent.io/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s22

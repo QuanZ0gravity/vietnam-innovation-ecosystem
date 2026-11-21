@@ -1,0 +1,12 @@
+id: company-medcat
+name:
+  vi: MedCAT
+type: company
+categories:
+- AI, dữ liệu
+region: da-nang
+verification:
+  level: unverified
+sources:
+- Tài liệu Hội thảo phổ biến pháp luật công nghiệp công nghệ số 17/11/2026
+legacy_id: d120

@@ -1,0 +1,12 @@
+id: startup-cong-ty-co-phan-cong-nghe-vn3t
+name:
+  vi: Công ty cổ phần công nghệ VN3T
+type: startup
+website: https://vn3t.com/
+region: da-nang
+website_status: Hoạt động
+verification:
+  level: source_checked
+sources:
+- startupdanang.vn
+legacy_id: s20
