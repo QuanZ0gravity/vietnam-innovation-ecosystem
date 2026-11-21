@@ -7,7 +7,9 @@ type: startup
 sectors:
 - commerce
 - marketing
+founded: 2024
 website: https://ecombox.vn
+address: 235, Đường 154, Phường Tăng Nhơn Phú, TP. Hồ Chí Minh
 description:
   vi: 'Nền tảng vận hành thương mại điện tử: quay video đóng gói, bán đa kênh và quản lý kho đến từng kệ.'
 region: viet-nam
@@ -16,4 +18,5 @@ verification:
 sources:
 - indanang.vn
 - Website chính thức
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026

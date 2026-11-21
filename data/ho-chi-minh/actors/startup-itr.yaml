@@ -1,0 +1,18 @@
+id: startup-itr
+name:
+  vi: ITR
+type: startup
+categories:
+- Y tế, CSSK
+sectors:
+- health
+founded: 2019
+address: Phòng 403, Số 8, ngõ 21 đường Lê Văn Lương, Phường Thanh Xuân, TP Hà Nội, Việt Nam
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực y tế, cssk; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/822

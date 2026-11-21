@@ -4,6 +4,9 @@ name:
 alt_names:
 - FiveSS Technology Joint Stock Company
 type: startup
+sectors:
+- commerce
+founded: 2024
 status: active
 website: https://5sao.com.vn
 linkedin: https://www.linkedin.com/company/5sao-fivess
@@ -19,4 +22,5 @@ sources:
 - Danh mục ươm tạo của DNES (11/2026)
 - Website chính thức
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 legacy_id: s55

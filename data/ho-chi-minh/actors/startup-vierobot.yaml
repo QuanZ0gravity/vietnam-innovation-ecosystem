@@ -1,0 +1,18 @@
+id: startup-vierobot
+name:
+  vi: Công Ty TNHH VIEROBOT
+type: startup
+categories:
+- Phần mềm, CNTT
+sectors:
+- ai
+founded: 2022
+address: 10/20 Đường 30, Khu phố 81, P. Hiệp Bình, Tp.HCM
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/784

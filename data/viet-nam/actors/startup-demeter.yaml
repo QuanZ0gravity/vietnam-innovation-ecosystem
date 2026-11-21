@@ -8,7 +8,9 @@ sectors:
 - ai
 - fintech
 - agrifood
+founded: 2022
 website: https://demeter.vn
+address: Tầng 1, Tòa nhà International Plaza, Số 343 Phạm Ngũ Lão, Phường Bến Thành, Thành phố Hồ Chí Minh
 description:
   vi: AgriTech, AgriFinTech dùng AI, IoT, dữ liệu cho nông nghiệp thông minh, thích ứng khí hậu.
 region: viet-nam
@@ -17,4 +19,5 @@ verification:
 sources:
 - indanang.vn
 - Website chính thức
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 source_url: https://indanang.vn/ecosystem-activities/green-innovation-2026

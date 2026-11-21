@@ -1,16 +1,20 @@
 id: startup-click-ai
 name:
   vi: Click AI
+alt_names:
+- CLICK AI - NỀN TẢNG AI TẤT CẢ TRONG MỘT CLICK AI - THE ALL-IN-ONE AI WORKSPACE
 type: startup
 sectors:
 - ai
+founded: 2024
+website: https://clickai.vn
+address: A2.0603 The Gold View 346 Bến Vân Đồn, Phường Vĩnh Hội, Hồ Chí Minh
+description:
+  vi: 'Không gian làm việc AI tất cả trong một: tạo tác tử AI, quy trình, cơ sở dữ liệu và tích hợp.'
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-alt_names:
-- CLICK AI - NỀN TẢNG AI TẤT CẢ TRONG MỘT CLICK AI - THE ALL-IN-ONE AI WORKSPACE
-description:
-  vi: 'Không gian làm việc AI tất cả trong một: tạo tác tử AI, quy trình, cơ sở dữ liệu và tích hợp.'

@@ -5,6 +5,8 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+description:
+  vi: Nhánh đầu tư mạo hiểm của Tập đoàn LOTTE tại Việt Nam.
 region: da-nang
 verification:
   level: unverified
@@ -12,7 +14,6 @@ sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 source_url: https://startupdanang.vn/lotte-ventures-vietnam
 legacy_id: d45
-description:
-  vi: Nhánh đầu tư mạo hiểm của Tập đoàn LOTTE tại Việt Nam.

@@ -1,0 +1,17 @@
+id: startup-hello3dworld
+name:
+  vi: Hello3Dworld
+type: startup
+categories:
+- Khác
+founded: 2015
+website: https://m.hello3dworld.com/
+address: Số 19, Đường số 36, Phường Tân Hưng, TP.HCM
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực khác; thành lập năm 2015; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/579

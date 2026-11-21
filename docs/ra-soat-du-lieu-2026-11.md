@@ -166,3 +166,13 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Số liệu báo cáo: giá trị hệ sinh thái 75,1 tỷ USD, 3 kỳ lân (khác với số trên website StartupBlink tại thời điểm truy cập: 48,9 tỷ USD; ghi cả hai, nêu rõ nguồn).
 - Thêm MoMo, Tiki, Techcom Securities (TCBS), Startup Haiphong, NSSC, NIC, Sở KH&CN TP.HCM.
 - Sau đợt này: 949 hồ sơ.
+
+## HOIP – Nền tảng kết nối ĐMST TP.HCM (22/11/2026)
+
+- Nguồn: https://hoip.sihub.gov.vn/ (do SIHUB vận hành; robots.txt cho phép). Đọc trang danh sách và trang hồ sơ công khai, mỗi trang một lần, cách nhau 0,3 giây.
+- Startup: 200 hồ sơ; bỏ 5 hồ sơ thử hoặc không phải startup (HOIPVN, Abc, AMD, một trung tâm dịch vụ khu công nghiệp, một hồ sơ ViLaw trùng). Lấy tên, năm thành lập, lĩnh vực (ánh xạ sang 13 lĩnh vực), website, địa chỉ công ty, logo. Mô tả tự sinh ngắn từ lĩnh vực, năm thành lập và giai đoạn; không chép phần giới thiệu do startup tự viết.
+- Nhà đầu tư và vườn ươm, tổ chức hỗ trợ: chỉ lấy tổ chức. Bỏ hồ sơ cá nhân nhà đầu tư và toàn bộ hồ sơ chuyên gia (cá nhân). Không lấy email, số điện thoại.
+- Trùng với danh bạ: 28 hồ sơ đã có được gắn thêm nguồn HOIP và bổ sung thông tin còn thiếu (ví dụ SHTP-IC, VNU-HCM Innovation Hub, SVF, WISE, BambuUP, LOTTE Ventures, ThinkZone, BK Fund, Ecombox, Finizi).
+- Thêm mới 228 hồ sơ, chủ yếu tại TP.HCM; 162 logo.
+- Mục "Tình hình" của TP.HCM thêm số liệu HOIP.
+- Sau đợt này: 1175 hồ sơ, TP.HCM 251.

@@ -1,20 +1,23 @@
 id: startup-brain-life-link
 name:
   vi: Brain-life Link
-type: startup
-sectors:
-- ai
-- deeptech
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
 alt_names:
 - Công ty Cổ Phần Công Nghệ Brain-life Link
 - CÔNG TY CỔ PHẦN CÔNG NGHỆ BRAIN-LIFE LINK BRAIN-LIFE LINK TECHNOLOGY JSC
 - Brain-life Link Technology
 - BRAIN-LIFE LINK TECHNOLOGY JSC
+type: startup
+sectors:
+- ai
+- deeptech
+founded: 2024
+address: 1/22 Đường Cầu xéo, Phường Tân Sơn Nhì, Quận Tân Phú, Thành phố Hồ Chí Minh, Việt Nam
 description:
   vi: Thiết bị đeo ứng dụng AI theo dõi và cải thiện khả năng tập trung theo thời gian thực.
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026

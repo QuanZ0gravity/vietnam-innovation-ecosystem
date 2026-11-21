@@ -1,0 +1,19 @@
+id: startup-aifa
+name:
+  vi: AIFA
+type: startup
+categories:
+- Phần mềm, CNTT
+sectors:
+- ai
+founded: 2025
+website: https://www.aifa.vn/
+address: 38 Điện Biên Phủ phường 17 quận Bình Thạnh
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2025; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/783

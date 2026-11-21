@@ -1,0 +1,19 @@
+id: startup-veca
+name:
+  vi: Công Ty TNHH Veca
+type: startup
+categories:
+- Phần mềm, CNTT
+sectors:
+- ai
+founded: 2020
+website: https://veca.app/
+address: Số 13 Đường Vành Đai Nam (04LK2) Khu DC Hà Đô, Khu phố 9, Phường Thới An, TP Hồ Chí Minh, Việt Nam
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2020; giai đoạn Đầu tư Hạt nhân.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/602

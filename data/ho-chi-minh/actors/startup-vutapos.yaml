@@ -1,0 +1,19 @@
+id: startup-vutapos
+name:
+  vi: Công ty Cổ phần Vutapos
+type: startup
+categories:
+- Phần mềm, CNTT
+- Dịch vụ
+sectors:
+- ai
+founded: 2020
+address: Tầng 3 Tòa nhà Giao Châu, Số 102A Lê Hồng Phong, phường 4, TP.Vũng Tàu
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, dịch vụ; thành lập năm 2020; giai đoạn Khởi nghiệp.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/843

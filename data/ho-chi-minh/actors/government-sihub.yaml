@@ -1,0 +1,11 @@
+id: government-sihub
+name:
+  vi: SIHUB
+type: government
+founded: 2016
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/investor/3

@@ -1,0 +1,19 @@
+id: company-infineon-technologies
+name:
+  vi: Infineon technologies Việt Nam
+type: company
+categories:
+- Năng lượng
+- CN chế biến/ chế tạo
+sectors:
+- climate
+founded: 2019
+address: Tầng 14, Tòa nhà Peakview, số 36 phố Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, Thành phố Hà Nội, Việt Nam
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực năng lượng, cn chế biến/ chế tạo; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/851

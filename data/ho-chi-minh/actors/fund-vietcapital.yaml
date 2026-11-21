@@ -1,0 +1,11 @@
+id: fund-vietcapital
+name:
+  vi: VietCapital
+type: fund
+founded: 2014
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/investor/11

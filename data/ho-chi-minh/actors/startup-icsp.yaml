@@ -1,0 +1,16 @@
+id: startup-icsp
+name:
+  vi: ICSP
+type: startup
+categories:
+- Dịch vụ
+founded: 2024
+address: 27a hoàng việt
+description:
+  vi: 'Hồ sơ trên HOIP: lĩnh vực dịch vụ; thành lập năm 2024; giai đoạn Khởi nghiệp.'
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/startup/829

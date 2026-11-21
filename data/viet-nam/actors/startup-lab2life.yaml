@@ -6,11 +6,14 @@ sectors:
 - ai
 - agrifood
 - climate
+founded: 2024
+address: 203 Linh Trung, kp1, p. Linh Xuân, TP.HCM
+description:
+  vi: Hạ tầng sinh học kết hợp AI cho nông nghiệp và kinh tế sinh học tuần hoàn.
 region: viet-nam
 verification:
   level: unverified
 sources:
 - indanang.vn
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
 source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
-description:
-  vi: Hạ tầng sinh học kết hợp AI cho nông nghiệp và kinh tế sinh học tuần hoàn.
