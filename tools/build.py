@@ -598,8 +598,16 @@ def kpi(label_vi, label_en, value, note=""):
             + (f'<p class="kn small muted">{note}</p>' if note else "") + "</div>")
 
 def insights_html(xs):
+    """Gom các dòng theo nguồn: mỗi nguồn ghi một lần ở đầu nhóm."""
     if not xs: return ""
-    return '<ul class="insights">' + "".join(f'<li>{e(x["text"])} <span class="muted small">({e(x["source"])})</span></li>' for x in xs) + "</ul>"
+    groups = collections.OrderedDict()
+    for x in xs:
+        groups.setdefault(x["source"], []).append(x["text"])
+    out = ""
+    for src, texts in groups.items():
+        out += (f'<p class="ins-src small muted">Theo {e(src)}:</p><ul class="insights">'
+                + "".join(f"<li>{e(t)}</li>" for t in texts) + "</ul>")
+    return out
 
 def city_table(active=None):
     rows = ""
