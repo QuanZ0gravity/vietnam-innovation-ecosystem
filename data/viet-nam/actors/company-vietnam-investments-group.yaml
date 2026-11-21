@@ -1,0 +1,10 @@
+id: company-vietnam-investments-group
+name:
+  vi: Vietnam Investments Group
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang

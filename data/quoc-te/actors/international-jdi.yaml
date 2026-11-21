@@ -1,0 +1,11 @@
+id: international-jdi
+name:
+  vi: JDI
+type: international
+website: https://jdi.group/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

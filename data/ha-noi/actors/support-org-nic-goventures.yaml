@@ -1,0 +1,13 @@
+id: support-org-nic-goventures
+name:
+  vi: NIC GoVentures
+type: support_org
+categories:
+- National innovation and proof-of-concept support
+website: https://nic.gov.vn/
+region: ha-noi
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

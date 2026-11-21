@@ -1,0 +1,12 @@
+id: company-eruty
+name:
+  vi: Eruty
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- ERUTY

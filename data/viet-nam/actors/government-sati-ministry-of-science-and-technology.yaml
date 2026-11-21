@@ -1,0 +1,10 @@
+id: government-sati-ministry-of-science-and-technology
+name:
+  vi: SATI, Ministry of Science and Technology
+type: government
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

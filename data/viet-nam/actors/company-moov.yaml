@@ -1,0 +1,13 @@
+id: company-moov
+name:
+  vi: MOOV
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- Công ty Cổ Phần Thương Mại - Dịch Vụ Moov
+- CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ MOOV

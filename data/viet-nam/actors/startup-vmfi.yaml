@@ -1,0 +1,12 @@
+id: startup-vmfi
+name:
+  vi: VMFI
+type: startup
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/qvic-2026
+alt_names:
+- VMFI INC

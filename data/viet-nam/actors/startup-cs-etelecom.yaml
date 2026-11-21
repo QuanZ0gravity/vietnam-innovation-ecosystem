@@ -1,0 +1,11 @@
+id: startup-cs-etelecom
+name:
+  vi: CS eTelecom
+type: startup
+website: https://cs.etelecom.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

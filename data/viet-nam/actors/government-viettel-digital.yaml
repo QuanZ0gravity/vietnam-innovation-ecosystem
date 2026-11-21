@@ -1,0 +1,11 @@
+id: government-viettel-digital
+name:
+  vi: Viettel Digital
+type: government
+website: https://viettel.digital/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

@@ -1,0 +1,11 @@
+id: startup-roboi-special-purpose-industrial-robots
+name:
+  vi: ROBOi - Special-purpose industrial robots
+type: startup
+website: http://www.roboi.kr
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

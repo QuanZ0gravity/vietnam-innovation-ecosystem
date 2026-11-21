@@ -1,0 +1,12 @@
+id: company-vu-phong-energy-group
+name:
+  vi: Vũ Phong Energy Group
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- VŨ PHONG ENERGY GROUP

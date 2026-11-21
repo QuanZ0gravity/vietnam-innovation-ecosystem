@@ -1,0 +1,11 @@
+id: international-superteam-vn
+name:
+  vi: Superteam VN
+type: international
+website: https://superteam.fun/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/surf-2026

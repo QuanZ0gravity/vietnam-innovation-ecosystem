@@ -1,0 +1,11 @@
+id: international-startupblink
+name:
+  vi: StartupBlink
+type: international
+website: https://www.startupblink.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/surf-2026

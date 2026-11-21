@@ -4,6 +4,7 @@ name:
 type: support_org
 categories:
 - Cộng đồng builder
+website: https://www.sqrdao.com/
 description:
   vi: 'Web3, AI; EMpower Founders Residency (5/2026); chuẩn bị Hub #2 tại Sơn Trà.'
 region: da-nang
@@ -11,4 +12,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- indanang.vn
 legacy_id: d14

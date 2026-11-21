@@ -226,7 +226,10 @@ def opp_card(o, compact=False):
         if oc.get("source"): txt = txt + f' <a href="{e(oc["source"])}" rel="noopener" class="small">nguồn</a>'
         rows.append(("Kết quả", "Outcome", txt))
     if o.get("participants"):
-        rows.append(("Tham gia, được chọn", "Participants", ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in o["participants"] if x in by_id)))
+        ps = [x for x in o["participants"] if x in by_id]
+        shown = ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in ps[:12])
+        more = f' <span class="muted">+{len(ps) - 12}</span>' if len(ps) > 12 else ""
+        rows.append((f"Tham gia, được chọn ({len(ps)})", f"Participants ({len(ps)})", shown + more))
     rows_html = "" if compact else "".join(f'<dt data-vi="{a}" data-en="{b}">{a}</dt><dd>{c}</dd>' for a, b, c in rows)
     links = []
     if o.get("apply_url"): links.append(f'<a class="btn primary" href="{e(o["apply_url"])}" rel="noopener" data-vi="Đăng ký" data-en="Apply">Đăng ký</a>')
@@ -239,7 +242,7 @@ def opp_card(o, compact=False):
         miss_html = (f'<p class="gap small"><span data-vi="Còn thiếu: {mv}." data-en="Missing: {me}.">Còn thiếu: {mv}.</span> '
                      f'<a href="https://github.com/{REPO}/edit/main/data/{o["_region"]}/opportunities.yaml" data-vi="Bổ sung" data-en="Add it">Bổ sung</a></p>')
     return (f'<article class="opp {st}" data-type="{o["type"]}" data-status="{st}">'
-            f'<p class="opp-meta"><span class="pill {st}" data-vi="{sv}" data-en="{se}">{sv}</span><span class="tag" data-vi="{tv}" data-en="{te}">{tv}</span></p>'
+            f'<p class="opp-meta"><span class="pill {st}" data-vi="{sv}" data-en="{se}">{sv}</span><span class="tag" data-vi="{tv}" data-en="{te}">{tv}</span><span class="tag" data-i18n="r_{o["_region"].replace("-", "_")}">{o["_region"]}</span></p>'
             f'<h3>{e(o["title"])}</h3><p class="small muted">{org}</p><p class="opp-dates small">{date_html}</p>'
             + (f'<dl class="facts opp-facts">{rows_html}</dl>' if rows_html else "")
             + (f'<p class="opp-links">{"".join(links)}</p>' if links and not compact else "") + miss_html + '</article>')

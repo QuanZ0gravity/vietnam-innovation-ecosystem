@@ -1,0 +1,13 @@
+id: company-ecotruck
+name:
+  vi: Ecotruck
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- Công ty Cổ Phần Công Nghệ Ecotruck
+- CÔNG TY CỔ PHẦN CÔNG NGHỆ ECOTRUCK

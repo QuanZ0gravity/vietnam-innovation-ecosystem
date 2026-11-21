@@ -1,0 +1,12 @@
+id: company-doubleo
+name:
+  vi: Doubleo
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- DOUBLEO CO.,LTD

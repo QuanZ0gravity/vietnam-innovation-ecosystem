@@ -1,0 +1,11 @@
+id: startup-cyreneai
+name:
+  vi: CyreneAI
+type: startup
+website: https://cyreneai.com
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

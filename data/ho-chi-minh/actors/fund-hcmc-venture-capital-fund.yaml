@@ -1,0 +1,10 @@
+id: fund-hcmc-venture-capital-fund
+name:
+  vi: HCMC Venture Capital Fund
+type: fund
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

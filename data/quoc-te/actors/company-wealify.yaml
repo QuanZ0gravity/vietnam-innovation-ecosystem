@@ -1,0 +1,11 @@
+id: company-wealify
+name:
+  vi: Wealify
+type: company
+website: https://wealify.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/ai-cross-border-2026

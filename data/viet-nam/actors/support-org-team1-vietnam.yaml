@@ -1,0 +1,10 @@
+id: support-org-team1-vietnam
+name:
+  vi: Team1 Vietnam
+type: support_org
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026

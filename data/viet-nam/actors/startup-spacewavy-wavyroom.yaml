@@ -1,0 +1,11 @@
+id: startup-spacewavy-wavyroom
+name:
+  vi: Spacewavy / Wavyroom
+type: startup
+website: http://www.wavyroom.com
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

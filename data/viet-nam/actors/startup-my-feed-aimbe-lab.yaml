@@ -1,0 +1,11 @@
+id: startup-my-feed-aimbe-lab
+name:
+  vi: My Feed (Aimbe Lab)
+type: startup
+website: http://www.aimbelab.com
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -1,0 +1,11 @@
+id: international-napa-global
+name:
+  vi: NAPA Global
+type: international
+website: https://napaglobal.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026

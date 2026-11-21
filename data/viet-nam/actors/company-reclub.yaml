@@ -1,0 +1,10 @@
+id: company-reclub
+name:
+  vi: Reclub
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang

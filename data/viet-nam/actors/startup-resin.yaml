@@ -1,0 +1,11 @@
+id: startup-resin
+name:
+  vi: Resin
+type: startup
+website: http://rightchoice.vn
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

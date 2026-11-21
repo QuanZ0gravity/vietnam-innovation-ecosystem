@@ -4,6 +4,7 @@ name:
 type: company
 categories:
 - AI giọng nói
+website: https://biva.com.vn/
 description:
   vi: Quán quân Vietnam AI Stars 2026; hơn 1 triệu cuộc gọi cho gần 100 doanh nghiệp.
 region: da-nang
@@ -11,4 +12,5 @@ verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
+- indanang.vn
 legacy_id: d72

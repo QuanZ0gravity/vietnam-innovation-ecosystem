@@ -1,0 +1,11 @@
+id: international-investhk
+name:
+  vi: InvestHK
+type: international
+website: https://www.investhk.gov.hk/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/surf-2026

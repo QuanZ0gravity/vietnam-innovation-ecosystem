@@ -1,0 +1,11 @@
+id: startup-edu-time
+name:
+  vi: Edu-time |
+type: startup
+website: http://Edu-time.org
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -1,0 +1,296 @@
+# Cơ hội tạo deal flow. Quy tắc giống data/da-nang/opportunities.yaml.
+- id: opp-startup-wheel-2026
+  title: Startup Wheel 2026
+  type: competition
+  organizer: BSSC, InnoEx
+  event_date: '2026-08-19'
+  primary_source: https://startupwheel.vn/
+  outcome:
+    finalists: 70
+    note: Top 30 bảng Việt Nam, top 10 Vietnam Young Startup và top 30 bảng quốc tế, theo cẩm nang InnoEx 2026.
+  participants:
+  - startup-vua-tho
+  - startup-click-ai
+  - startup-visante
+  - startup-punart
+  - startup-vit3d
+  - startup-lab2life
+  - startup-veevox
+  - startup-hapbio
+  - startup-beesuite-erp
+  - startup-easy-ai
+  - startup-nghe-sanh
+  - startup-travelverse
+  - startup-onto
+  - startup-cong-nghe-thu-hoi-va-gia-tang-gia-tri-dinh-duong
+  - startup-ho-shan-tra
+  - startup-dua-tra-viet-uu-tu-den-ban-tra-the-gioi
+  - startup-bizino
+  - startup-bo-giai-phap-dieu-khien-chuyen-dong-trien
+  - startup-mangaka-app
+  - startup-linguistic-intelligence-lingint-ai
+  - startup-crea-in
+  - startup-greensys
+  - startup-dong-nguyen-food
+  - startup-nen-tang-ai-giam-sat-sop-va-kiem-soat-chat-luong-san-xu
+  - startup-ucall
+  - startup-ecombox
+  - startup-skale-placement-placement
+  - startup-one-piano
+  - startup-brain-life-link
+  - startup-loudio
+  - startup-da-dang-hoa-cac-che-pham-sinh-hoc-tu-du-du
+  - startup-skyedge-ai-solutions
+  - startup-tra-hoa-viet
+  - startup-electroverse
+  - startup-anh-sang-su
+  - startup-ntvp-aquaguard
+  - startup-mailguard-ai-cho-mot-tuong-lai-an-toan-so
+  - startup-rebirth
+  - startup-wispace
+  - startup-greenshield-mekong-nang-tam-sinh-khoi
+  - startup-elba
+  - startup-batterfly
+  - startup-pinkpacker
+  - startup-otiton-medical
+  - startup-plantner
+  - startup-uproot
+  - startup-piaspace
+  - startup-flitto
+  - startup-nextwave
+  - startup-barc
+  - startup-crosshub
+  - startup-halt-energy
+  - startup-barahinnovation
+  - startup-arsenal
+  - startup-jaisworks
+  - startup-priyoshop
+  - startup-talent-hero-ventures
+  - startup-tech-care-system
+  - startup-global-cerah
+  - startup-videnvaren
+  - startup-axxonai-sdn-bhd
+  - startup-youapp-malaysia-sdn-bhd
+  - startup-viralin-ai
+  - startup-aqufish-technology-sdn-bhd
+  - startup-reclimate
+  - startup-bvarta
+  - startup-riffai-pte-ltd
+  - startup-faradays-energy-sdn-bhd
+  - startup-singular-global
+  - startup-agreka-build
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/startup-wheel-2026
+- id: opp-qvic-2026
+  title: Qualcomm Vietnam Innovation Challenge 2026
+  type: competition
+  organizer: Qualcomm
+  event_date: '2026-08-19'
+  primary_source: https://qvic.vn/
+  outcome:
+    finalists: 18
+  participants:
+  - startup-aiz
+  - startup-antaja
+  - startup-fizibox
+  - startup-brain-life-link
+  - startup-finizi-ai-high-technology
+  - startup-naiscorp-robotics
+  - startup-nha-trang-hitech-ltd-nhtc
+  - startup-ologn-technology
+  - startup-tensor
+  - startup-udata
+  - startup-viot-energy-efficiency-platform-jsc-veep-a
+  - startup-voria-solution
+  - startup-bkmeeting-bkmeeting-an
+  - startup-openmind
+  - startup-axtra-labs
+  - startup-ionetworks
+  - startup-mangax-technology
+  - startup-vmfi
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/qvic-2026
+- id: opp-green-innovation-fellowship-2026
+  title: Green Innovation Fellowship 2026
+  type: accelerator_program
+  organizer: Green Innovation
+  event_date: '2026-08-19'
+  primary_source: https://greeninnovation.com.vn/en/
+  focus:
+  - công nghệ xanh
+  - thực phẩm
+  - nông nghiệp
+  outcome:
+    selected: 16
+  participants:
+  - startup-biowraps
+  - startup-tomcare
+  - startup-carafood
+  - startup-demeter
+  - startup-foodmap-asia
+  - startup-vnf
+  - startup-greenamor-ventures
+  - startup-parongpong-raw-lab
+  - startup-tam-nguyen
+  - startup-impact-weaver
+  - startup-agrivijay
+  - startup-phuc-sang-minh
+  - startup-fuwa-biotech
+  - startup-agrikigai
+  - startup-gaco-mushroom-brand
+  - startup-viet-tu-construction-investment-and-trading
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/green-innovation-2026
+- id: opp-plastics-innovation-2026
+  title: Plastics Innovation Programme 2026
+  type: accelerator_program
+  organizer: UNDP Việt Nam
+  event_date: '2026-08-19'
+  focus:
+  - nhựa, kinh tế tuần hoàn
+  outcome:
+    selected: 7
+  participants:
+  - startup-loopnet-asia
+  - startup-mab-vietnam
+  - startup-building-up-sustainability-centre
+  - startup-phu-quoc
+  - startup-nopa-design
+  - support-org-trung-tam-ung-pho-su-co-an-toan-moi-truong-ese
+  - startup-vnf
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/innoex-2026
+- id: opp-innoex-2026
+  title: InnoEx 2026
+  type: buyer_matching
+  organizer: InnoEx
+  event_date: '2026-08-19'
+  primary_source: https://innoex.vn/
+  focus:
+  - kết nối doanh nghiệp
+  - thử nghiệm
+  - gọi vốn
+  participants:
+  - company-alterno
+  - company-cloudaz
+  - company-sjk
+  - company-webcash-vietnam
+  - company-snv-netherlands-development-organisation
+  - company-hr2b-cong-ty-co-phan-tuyen-dung-nhan-tai
+  - company-ngan-hang-uob-viet
+  - company-viet-nam
+  - company-nextinfra
+  - company-innobull
+  - company-n-e-innovations-pte-ltd
+  - company-maxicus-duong-global
+  - company-coastal-link
+  - company-konsttech-ltd
+  - company-doctotek
+  - company-wit-global
+  - company-bluefrog
+  - company-mystarchain
+  - startup-crosshub
+  - company-waterbee
+  - company-vine-plant
+  - startup-barahinnovation
+  - company-marinachain
+  - company-doubleo
+  - company-hydrofa
+  - startup-nextwave
+  - company-fabricduct
+  - company-le-emobility
+  - company-eum
+  - company-aeacbio
+  - company-eruty
+  - company-iomtek
+  - company-denve
+  - startup-halt-energy
+  - company-hyphen
+  - company-lsp
+  - company-tafoco
+  - company-eboost
+  - company-oneads-digital
+  - company-graphenel
+  - company-lecof-men
+  - company-vhitek
+  - company-techhaus-vietnam
+  - company-mstar
+  - company-omedia
+  - company-ecotruck
+  - company-hitek-software
+  - company-creative-point
+  - company-moov
+  - company-cong-ty-tnhh-thuong-mai-dich-vu-do-net-cao
+  - company-kite-metric
+  - company-smartlog
+  - company-vu-phong-energy-group
+  - company-vy-mon-amie-group
+  - company-cong-ty-tnhh-san-ha
+  - company-cinec
+  - company-soft-world
+  - company-lavite
+  - company-estsolution
+  - company-hop
+  - company-farmtoglobal
+  - company-helloworks
+  - company-hoi-doanh-nhan-tre-tp-hcm
+  - company-ailytics
+  - company-sarawak-digital-economy
+  - company-zalo-ads
+  - company-getfly-viet-nam
+  - company-vinamedical
+  - company-innovista-solutions
+  - company-wogi
+  - company-vision-associates
+  - company-vccorp
+  - company-green-transition-training-and-consulting
+  - company-planetzero-earth
+  - company-vinergy
+  - company-golden-gate-bce
+  - company-sgs
+  - company-tekjoy
+  - company-yeou-cooperative
+  - company-hugeailab
+  - company-namuda-planet
+  - company-jably
+  - company-binaryus
+  - company-siwon-coat
+  - company-parsley
+  - company-cnv-holdings
+  - company-dayladau
+  - startup-loudio
+  - startup-hapbio
+  - company-altibase
+  - company-bnv-solutions
+  - company-emct
+  - company-taejin-system
+  - company-saige
+  - company-poseidon-battery
+  - company-easymining
+  - company-evergreen-plus
+  - company-proxi-healthcare
+  - company-metapet
+  - company-askitmore
+  - company-save-the-farms
+  - company-gadget-korea
+  - company-connecting-the-dots-tictoc-croc
+  - company-allmytour
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/innoex-2026
+- id: opp-jdi-tfoai4-2026
+  title: 'JDI TFOAI4: pitching startup AI'
+  type: demo_day
+  organizer: JDI
+  event_date: '2026-08-18'
+  primary_source: https://jdi.group/
+  focus:
+  - AI
+  participants:
+  - startup-alpha-story
+  - startup-deepli
+  - startup-kai-legal
+  - startup-buildbob
+  - startup-qsee-ai
+  - startup-blaze-ai
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/jdi-tfoai4

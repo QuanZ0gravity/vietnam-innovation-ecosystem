@@ -1,0 +1,11 @@
+id: international-pharos-network
+name:
+  vi: Pharos Network
+type: international
+website: https://pharosnetwork.xyz/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026

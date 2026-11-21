@@ -1,0 +1,11 @@
+id: startup-hirenow
+name:
+  vi: hireNOW
+type: startup
+website: https://hirenow.top
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

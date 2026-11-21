@@ -1,0 +1,12 @@
+id: company-golden-gate-bce
+name:
+  vi: Golden Gate Bce
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- GOLDEN GATE BCE

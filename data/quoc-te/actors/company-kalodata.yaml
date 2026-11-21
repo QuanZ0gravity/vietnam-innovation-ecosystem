@@ -1,0 +1,11 @@
+id: company-kalodata
+name:
+  vi: Kalodata
+type: company
+website: https://www.kalodata.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/ai-cross-border-2026

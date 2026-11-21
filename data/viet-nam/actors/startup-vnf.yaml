@@ -1,0 +1,14 @@
+id: startup-vnf
+name:
+  vi: VNF
+type: startup
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD JOINT STOCK COMPANY
+- CÔNG TY CỔ PHẦN VIỆT NAM FOOD (VNF) VIETNAM FOOD (VNF)
+website: https://vnfoods.vn/

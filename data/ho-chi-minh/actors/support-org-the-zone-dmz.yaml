@@ -1,0 +1,12 @@
+id: support-org-the-zone-dmz
+name:
+  vi: The Zone (DMZ)
+type: support_org
+categories:
+- Hands-on venture support
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

@@ -1,0 +1,11 @@
+id: startup-speak-flow
+name:
+  vi: Speak Flow
+type: startup
+website: https://maienglish.edu.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

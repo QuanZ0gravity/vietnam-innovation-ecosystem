@@ -1,0 +1,13 @@
+id: company-wogi
+name:
+  vi: WOGI
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- Công ty TNHH Wogi Việt Nam
+- CÔNG TY TNHH WOGI VIỆT NAM WOGI VIETNAM

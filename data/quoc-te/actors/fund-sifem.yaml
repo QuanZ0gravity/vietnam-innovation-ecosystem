@@ -1,0 +1,12 @@
+id: fund-sifem
+name:
+  vi: Sifem
+type: fund
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/dbftw-2026
+alt_names:
+- SIFEM

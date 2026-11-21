@@ -1,0 +1,11 @@
+id: startup-jamit
+name:
+  vi: Jamit
+type: startup
+website: https://jamit.app
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

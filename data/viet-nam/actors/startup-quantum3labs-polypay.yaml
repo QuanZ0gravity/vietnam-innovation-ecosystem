@@ -1,0 +1,11 @@
+id: startup-quantum3labs-polypay
+name:
+  vi: Quantum3Labs/Polypay
+type: startup
+website: https://polypay.pro/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

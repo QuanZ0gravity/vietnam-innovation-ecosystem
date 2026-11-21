@@ -1,0 +1,13 @@
+id: international-nvidia-nvaitc
+name:
+  vi: Nvidia Nvaitc
+type: international
+website: https://www.nvidia.com/en-us/research/ai-technology-center/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026
+alt_names:
+- NVIDIA NVAITC

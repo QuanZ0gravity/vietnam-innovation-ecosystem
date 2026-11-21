@@ -1,0 +1,11 @@
+id: international-tether
+name:
+  vi: Tether
+type: international
+website: https://tether.to/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

@@ -1,0 +1,11 @@
+id: fund-scex
+name:
+  vi: SCEX
+type: fund
+website: https://scex.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

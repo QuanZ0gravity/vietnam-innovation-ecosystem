@@ -1,0 +1,16 @@
+id: government-da-nang-free-trade-zone
+name:
+  vi: Da Nang Free Trade Zone
+type: government
+categories:
+- Logistics
+- Advanced Manufacturing
+- Digital technology
+description:
+  en: A platform for investment attraction, logistics, advanced manufacturing and new business-model experimentation.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

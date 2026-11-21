@@ -1,0 +1,12 @@
+# Cơ hội tạo deal flow. Quy tắc giống data/da-nang/opportunities.yaml.
+- id: opp-vietnam-innovation-day-2026
+  title: Ngày Đổi mới sáng tạo Việt Nam 2026
+  type: buyer_matching
+  organizer: Bộ Khoa học và Công nghệ, Trung tâm Đổi mới sáng tạo Quốc gia
+  event_date: '2026-10-03'
+  primary_source: https://innovation.gov.vn/
+  focus:
+  - triển lãm công nghệ
+  - kết nối doanh nghiệp
+  secondary_sources:
+  - https://indanang.vn/ecosystem-activities/vietnam-innovation-day-2026

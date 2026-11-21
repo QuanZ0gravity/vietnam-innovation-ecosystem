@@ -1,0 +1,13 @@
+id: support-org-shtp-innovation-center
+name:
+  vi: SHTP Innovation Center
+type: support_org
+categories:
+- High-tech incubation
+website: https://shtp.hochiminhcity.gov.vn/
+region: ho-chi-minh
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

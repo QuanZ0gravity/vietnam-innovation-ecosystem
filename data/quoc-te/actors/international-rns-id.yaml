@@ -1,0 +1,11 @@
+id: international-rns-id
+name:
+  vi: RNS.id
+type: international
+website: https://rns.id/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026

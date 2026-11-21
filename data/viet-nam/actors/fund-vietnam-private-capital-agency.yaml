@@ -1,0 +1,10 @@
+id: fund-vietnam-private-capital-agency
+name:
+  vi: Vietnam Private Capital Agency
+type: fund
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

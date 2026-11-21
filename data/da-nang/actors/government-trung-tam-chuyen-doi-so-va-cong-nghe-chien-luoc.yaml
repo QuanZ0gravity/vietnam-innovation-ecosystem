@@ -1,10 +1,14 @@
 id: government-trung-tam-chuyen-doi-so-va-cong-nghe-chien-luoc
 name:
   vi: Trung tâm Chuyển đổi số và Công nghệ chiến lược
+alt_names:
+- Trung tâm Chuyển đổi số và Công nghệ chiến lược Đà Nẵng
 type: government
 categories:
 - Đơn vị thuộc Sở KH&CN
 - Không gian ĐMST
+description:
+  vi: Quản lý, vận hành Khu Công viên phần mềm Đà Nẵng và hạ tầng công nghệ thông tin do thành phố giao.
 region: da-nang
 verification:
   level: unverified
@@ -13,7 +17,3 @@ sources:
 - startupdanang.vn
 source_url: https://startupdanang.vn/trung-tam-phat-trien-ha-tang-cntt-da-nang
 legacy_id: d6
-description:
-  vi: Quản lý, vận hành Khu Công viên phần mềm Đà Nẵng và hạ tầng công nghệ thông tin do thành phố giao.
-alt_names:
-- Trung tâm Chuyển đổi số và Công nghệ chiến lược Đà Nẵng

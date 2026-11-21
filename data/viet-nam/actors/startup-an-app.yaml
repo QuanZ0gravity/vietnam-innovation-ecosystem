@@ -1,0 +1,11 @@
+id: startup-an-app
+name:
+  vi: An App
+type: startup
+website: http://antech.app
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

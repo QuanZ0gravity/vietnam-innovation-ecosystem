@@ -2,7 +2,7 @@
 (function () {
   var PER = 30, all = [], st = { q: "", type: [], region: [], ver: [], status: [], sort: "az", view: "list", page: 1 };
   var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator"];
-  var REGIONS = ["da-nang", "former-quang-nam"];
+  var REGIONS = ["da-nang", "former-quang-nam", "ha-noi", "ho-chi-minh", "viet-nam", "quoc-te"];
   var VERS = ["partner_verified", "org_confirmed", "source_checked", "unverified"];
   var STATUSES = ["active", "inactive", "unknown"];
   var $ = function (id) { return document.getElementById(id); };

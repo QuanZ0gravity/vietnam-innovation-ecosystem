@@ -1,0 +1,13 @@
+id: international-tron-dao
+name:
+  vi: Tron Dao
+type: international
+website: https://www.trondao.org/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026
+alt_names:
+- TRON DAO

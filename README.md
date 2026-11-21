@@ -10,9 +10,15 @@ Bắt đầu từ **TP Đà Nẵng** (gồm khu vực Quảng Nam cũ). Các t�
 
 ## Hiện có gì
 
-| Tỉnh, thành | Tác nhân | Cơ hội | Chính sách | Cập nhật |
-| --- | --- | --- | --- | --- |
-| Đà Nẵng | 529, trong đó 271 startup | 16 | 123 | 11/2026 |
+| Khu vực | Tác nhân | Startup | Cơ hội |
+| --- | --- | --- | --- |
+| Đà Nẵng | 532 | 271 | 17 |
+| Hà Nội | 8 | 0 | 1 |
+| TP. Hồ Chí Minh | 7 | 0 | 6 |
+| Việt Nam, chưa rõ tỉnh | 254 | 121 | 0 |
+| Quốc tế | 87 | 30 | 0 |
+
+Thư mục `da-nang` gồm cả khu vực Quảng Nam cũ và 123 văn bản chính sách. Cập nhật 11/2026.
 
 Phần lớn hồ sơ đang ở mức **chưa xác minh**. Đây là việc cộng đồng có thể giúp nhiều nhất: xem [Cách đóng góp](CONTRIBUTING.md).
 

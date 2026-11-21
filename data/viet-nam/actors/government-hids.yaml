@@ -1,0 +1,11 @@
+id: government-hids
+name:
+  vi: HIDS
+type: government
+website: https://hids.hochiminhcity.gov.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

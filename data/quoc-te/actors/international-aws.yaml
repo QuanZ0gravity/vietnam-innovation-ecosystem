@@ -1,0 +1,11 @@
+id: international-aws
+name:
+  vi: AWS
+type: international
+website: https://aws.amazon.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

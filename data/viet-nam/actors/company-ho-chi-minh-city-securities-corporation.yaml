@@ -1,0 +1,10 @@
+id: company-ho-chi-minh-city-securities-corporation
+name:
+  vi: Ho Chi Minh City Securities Corporation
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang

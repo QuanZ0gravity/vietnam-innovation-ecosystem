@@ -1,0 +1,16 @@
+id: government-vietnam
+name:
+  vi: Vietnam
+type: government
+categories:
+- FinTech
+- Green Finance
+- Trade Finance
+description:
+  en: Strategic infrastructure for green finance, trade finance, offshore services and FinTech experimentation.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

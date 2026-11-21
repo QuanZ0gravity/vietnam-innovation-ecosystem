@@ -1,0 +1,12 @@
+id: startup-ntvp-aquaguard
+name:
+  vi: NTVP AquaGuard
+type: startup
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026
+alt_names:
+- HỆ THỐNG KIỂM SOÁT VÀ CẢNH BÁO MÔI TRƯỜNG NƯỚC TRONG NUÔI TRỒNG THUỶ SẢN NTVP AQUAGUARD

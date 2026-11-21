@@ -1,0 +1,11 @@
+id: fund-svf
+name:
+  vi: SVF
+type: fund
+website: https://svf.org.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/surf-2026

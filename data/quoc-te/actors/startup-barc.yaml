@@ -1,0 +1,10 @@
+id: startup-barc
+name:
+  vi: BARC
+type: startup
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026

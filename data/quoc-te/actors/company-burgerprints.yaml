@@ -1,0 +1,11 @@
+id: company-burgerprints
+name:
+  vi: BurgerPrints
+type: company
+website: https://burgerprints.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/ai-cross-border-2026

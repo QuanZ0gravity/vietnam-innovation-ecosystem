@@ -1,0 +1,11 @@
+id: support-org-yba-da-nang
+name:
+  vi: YBA Da Nang
+type: support_org
+website: https://dnyba.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/dbftw-2026

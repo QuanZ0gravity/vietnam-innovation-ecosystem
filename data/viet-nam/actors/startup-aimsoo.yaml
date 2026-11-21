@@ -1,0 +1,13 @@
+id: startup-aimsoo
+name:
+  vi: Aimsoo
+type: startup
+website: https://aimsoo.ai/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026
+alt_names:
+- AIMSOO

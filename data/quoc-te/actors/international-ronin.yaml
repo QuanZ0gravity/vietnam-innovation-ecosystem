@@ -1,0 +1,11 @@
+id: international-ronin
+name:
+  vi: Ronin
+type: international
+website: https://roninchain.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026

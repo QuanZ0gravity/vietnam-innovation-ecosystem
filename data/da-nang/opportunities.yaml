@@ -61,6 +61,8 @@
   outcome:
     finalists: 62
     note: 62 dự án, 31 quỹ tham gia; quy mô đầu tư công bố hơn 5 tỷ USD. Số liệu từ bản thử nghiệm, chưa đối chiếu nguồn gốc.
+  participants: [startup-uc-talent, startup-risegate, startup-nghe-sanh, startup-aquax-smart-aiot-shrimp-farming-solution, startup-enosta, startup-atm-academy, startup-lead-on-ghg, startup-alicorn-ai-to-operate-real-world-spaces, startup-dx3s, startup-gaian, startup-blaze-ai, startup-cyreneai, startup-spacewavy-wavyroom, startup-reasonary-ai, startup-binks-green-product-joint-stock-company, company-biva, startup-veevox, startup-biowraps, startup-knotwork, startup-cong-ty-co-phan-5rtech, startup-ecothread, startup-brain-life, startup-tooliki, startup-vbrain-ai-powered-r-d-as-a-service, startup-lazorkit, startup-cs-etelecom, startup-cong-ty-tnhh-cho-ca-phe, startup-hirenow, startup-ai-enterprise-platform, startup-aipad, startup-dev-plus, startup-firewatcher-ai, startup-an-app, startup-roboi-special-purpose-industrial-robots, startup-edu-time, startup-speak-flow, startup-resin, startup-my-feed-aimbe-lab, startup-transformer-robot-ai-platform, startup-money-god-one-inc-elysia-ai, startup-defai-sensor, startup-vouchify, startup-ticketdaddy, startup-jamit, startup-quantum3labs-polypay, startup-fystack, startup-koki-o, startup-aimsoo, startup-valsea, fund-quest-ventures, fund-do-ventures, fund-thinkzone-ventures, fund-daiwa-corporate-investment, fund-founders-launchpad, fund-one-tree-hill-fund, fund-antler, fund-sunwah-innovation-center, fund-genai-fund, fund-mexc-ventures, fund-lotte-ventures-vietnam, fund-aiviet-venture, fund-weangels-capital-ventures, fund-kilsa-global, fund-alliance-mount, fund-totm-labs, fund-bin-corporation-group, fund-scg-korea-fund, fund-zone-ventures, fund-universal-materials-incubator-co-ltd-umi, fund-wavemaker-partners, fund-wavemaker-ventures, fund-bestb-capital, fund-sakura-dream-viet-nam, fund-singapore-fintech-association, fund-animoca-brands, fund-stellar-foundation, fund-tron-dao-ventures]
+  secondary_sources: [https://indanang.vn/ecosystem-activities/davas-2026]
   legacy_id: v12
 - id: opp-ai-cross-border-hackathon-2026
   title: AI Cross-Border Hackathon 2026
@@ -148,3 +150,11 @@
   event_date: '2026-11-12'
   focus: [công nghệ khí hậu]
   legacy_id: v47
+- id: opp-tecx-2026-da-nang
+  title: TECx 2026 Đà Nẵng
+  type: investor_matching
+  organizer: TECx
+  event_date: '2026-09-06'
+  focus: [công nghệ thể thao, sức khỏe, đầu tư]
+  participants: [company-savvi-code, company-thien-kien, company-xstar-fund-management, company-mynavi-techtus-vietnam, company-pixel-inc, company-baseline, company-golden-sunrise-senior-life, company-imt-solutions, company-mk-vision, company-reclub, company-vietnam-investments-group, company-ho-chi-minh-city-securities-corporation, company-codehq, company-sunrise-events-vietnam, company-studio-noah]
+  secondary_sources: [https://indanang.vn/ecosystem-activities/tecx-2026-danang]

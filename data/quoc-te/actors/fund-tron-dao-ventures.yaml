@@ -1,0 +1,11 @@
+id: fund-tron-dao-ventures
+name:
+  vi: TRON DAO Ventures
+type: fund
+website: https://tron.network/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

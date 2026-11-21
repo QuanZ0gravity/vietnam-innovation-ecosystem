@@ -1,0 +1,11 @@
+id: international-sky-mavis
+name:
+  vi: Sky Mavis
+type: international
+website: https://www.skymavis.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

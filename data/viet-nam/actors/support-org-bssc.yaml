@@ -1,0 +1,11 @@
+id: support-org-bssc
+name:
+  vi: BSSC
+type: support_org
+website: https://bssc.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/startup-wheel-2026

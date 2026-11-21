@@ -1,0 +1,11 @@
+id: startup-buildbob
+name:
+  vi: BuildBob
+type: startup
+website: https://buildbob.com/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/jdi-tfoai4

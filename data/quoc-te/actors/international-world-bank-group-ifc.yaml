@@ -1,0 +1,11 @@
+id: international-world-bank-group-ifc
+name:
+  vi: World Bank Group / IFC
+type: international
+website: https://www.worldbank.org/en/country/vietnam
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

@@ -1,0 +1,10 @@
+id: company-sunrise-events-vietnam
+name:
+  vi: Sunrise Events Vietnam
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/tecx-2026-danang

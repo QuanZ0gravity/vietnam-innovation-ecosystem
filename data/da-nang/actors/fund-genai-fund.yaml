@@ -5,11 +5,13 @@ type: fund
 categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
+website: https://genaifund.ai/
 region: da-nang
 verification:
   level: unverified
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
+- indanang.vn
 source_url: https://startupdanang.vn/genai-fund
 legacy_id: d38

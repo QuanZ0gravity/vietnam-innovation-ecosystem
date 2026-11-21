@@ -1,0 +1,10 @@
+id: startup-dx3s
+name:
+  vi: DX3S
+type: startup
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

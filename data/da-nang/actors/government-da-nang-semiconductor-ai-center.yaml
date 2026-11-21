@@ -1,0 +1,16 @@
+id: government-da-nang-semiconductor-ai-center
+name:
+  vi: Da Nang Semiconductor & AI Center
+type: government
+categories:
+- AI
+- Semiconductor
+- Robotics
+description:
+  en: A centre advancing AI and semiconductors, supporting technology teams and developing specialised talent.
+region: da-nang
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/

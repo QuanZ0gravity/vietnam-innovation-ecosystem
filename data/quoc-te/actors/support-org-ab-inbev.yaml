@@ -1,0 +1,11 @@
+id: support-org-ab-inbev
+name:
+  vi: AB InBev
+type: support_org
+website: https://www.ab-inbev.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/green-innovation-2026

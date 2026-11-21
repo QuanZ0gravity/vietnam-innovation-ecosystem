@@ -1,0 +1,11 @@
+id: government-vcci
+name:
+  vi: VCCI
+type: government
+website: https://en.vcci.com.vn/
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/conviction-2026

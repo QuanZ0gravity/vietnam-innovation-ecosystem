@@ -1,0 +1,12 @@
+id: company-proxi-healthcare
+name:
+  vi: Proxi Healthcare
+type: company
+region: viet-nam
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/innoex-2026
+alt_names:
+- PROXI HEALTHCARE

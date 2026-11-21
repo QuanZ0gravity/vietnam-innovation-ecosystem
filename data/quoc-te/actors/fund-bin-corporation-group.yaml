@@ -1,0 +1,10 @@
+id: fund-bin-corporation-group
+name:
+  vi: BIN Corporation Group
+type: fund
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

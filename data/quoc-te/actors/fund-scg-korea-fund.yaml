@@ -1,0 +1,11 @@
+id: fund-scg-korea-fund
+name:
+  vi: SCG Korea Fund
+type: fund
+website: http://scgtalent.com/
+region: quoc-te
+verification:
+  level: unverified
+sources:
+- indanang.vn
+source_url: https://indanang.vn/ecosystem-activities/davas-2026
