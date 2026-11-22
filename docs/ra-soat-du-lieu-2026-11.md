@@ -258,3 +258,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Hub: địa chỉ NAPA Riverside, giờ mở cửa, dịch vụ, mức tài trợ đối tác; quan hệ đối tác với NAPA Global, DNIC, Pharos Network, Superteam Vietnam, Avalanche Team1, DiiD, Swiss EP Vietnam, 9AM Games, Punkga.me.
 - Không đưa vào tên, tài khoản cá nhân của đội vận hành ngoài người sáng lập.
 - Mục "Tình hình" Đà Nẵng thêm dòng về DNC-Chain và ngân sách theo Quyết định 2728/QĐ-UBND, theo trang Insights của Hub.
+
+## Global Innovation Index 2025 – WIPO (22/11/2026)
+
+- Từ báo cáo GII 2025 (PDF, 295 trang): hạng 44/139, hạng 2 nhóm thu nhập trung bình thấp, hạng đầu vào 50, đầu ra 37; 15 năm liên tiếp là nền kinh tế vượt kỳ vọng; hạng 7 trụ cột; nhận định về xuất khẩu công nghệ cao, năng suất lao động, xe điện; không có cụm KH&CN Việt Nam trong top 100.
+- Lưu ở `data/benchmarks/startupblink-2026.yaml` (trường `gii_2025`); trang Địa phương thêm thẻ chỉ số GII, 6 dòng "Tình hình" và biểu đồ 7 trụ cột.

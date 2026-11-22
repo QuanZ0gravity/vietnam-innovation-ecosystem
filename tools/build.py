@@ -714,6 +714,10 @@ def insights_html(xs):
                 + "".join(f"<li>{e(t)}</li>" for t in texts) + "</ul>")
     return out
 
+def dist_rows_rank(d):
+    rows = "".join(f'<tr><td>{e(k)}</td><td>#{v}</td><td><span class="bar-in" style="width:{max(3, round(100 * (140 - v) / 139))}%"></span></td></tr>' for k, v in sorted(d.items(), key=lambda x: x[1]))
+    return f'<div class="tbl-wrap"><table class="tbl dist"><tbody>{rows}</tbody></table></div><p class="small muted">Thanh dài hơn là hạng tốt hơn.</p>'
+
 def city_table(active=None):
     rows = ""
     for c in BENCH.get("cities", []):
@@ -800,6 +804,7 @@ if BENCH:
                   kpi("Giá trị hệ sinh thái", "Ecosystem value", money(co["ecosystem_value_usd"])),
                   kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(co["funding_2017_2025_usd"])),
                   kpi("Vốn năm 2025", "Funding 2025", money(co["funding_2025_usd"]), f'{co["deals_2025"]} thương vụ'),
+                  *([kpi("Chỉ số GII 2025 (WIPO)", "Global Innovation Index 2025", f'#{co["gii_2025"]["rank"]}', f'trên {co["gii_2025"]["of"]} nền kinh tế')] if co.get("gii_2025") else []),
                   kpi("Tác nhân trong danh bạ", "Actors in this directory", f'{len(actors)}'),
                   kpi("Cơ hội đang theo dõi", "Opportunities tracked", f'{len(opps)}')])
     write("thanh-pho/index.html", page("Thành phố", f"""
@@ -809,7 +814,8 @@ if BENCH:
 <div class="wrap" style="padding-bottom:72px">
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
-<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}</section>
+<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}
+{('<h3 style="margin-top:28px" data-vi="Bảy trụ cột GII 2025 (hạng trên 139)" data-en="GII 2025 pillars (rank of 139)">Bảy trụ cột GII 2025 (hạng trên 139)</h3>' + dist_rows_rank(co["gii_2025"]["pillars"])) if co.get("gii_2025") else ""}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
 <h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>

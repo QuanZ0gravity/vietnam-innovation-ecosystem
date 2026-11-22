@@ -3,6 +3,7 @@
 # Một số trang hiện hai con số khác nhau cho cùng chỉ số (ví dụ số startup); ở đây ghi số trong phần mô tả cơ sở dữ liệu.
 # Chuỗi theo năm (global_rank_by_year, funding_by_year_usd, deals_by_year) đọc từ dữ liệu của biểu đồ trên trang công khai, 22/11/2026. Năm 2018 không có xếp hạng.
 # insights: tóm tắt (viết lại) từ báo cáo GSEI 2026 và ấn phẩm Sở KH&CN Đà Nẵng 2025, ghi nguồn từng dòng.
+# gii_2025: Global Innovation Index 2025 (WIPO), báo cáo PDF.
 source: StartupBlink, Global Startup Ecosystem Index 2026
 accessed: '2026-11-21'
 country:
@@ -91,6 +92,18 @@ country:
     source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
   - text: 'Mốc chính sách: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), NIC (2019), Nghị định 264 (2025) lần đầu tạo khung pháp lý cho quỹ đầu tư mạo hiểm quốc gia và địa phương.'
     source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - text: 'Chỉ số Đổi mới sáng tạo toàn cầu (GII) 2025: Việt Nam hạng 44/139 nền kinh tế, hạng 2 trong nhóm thu nhập trung bình thấp (sau Ấn Độ). Đầu ra đổi mới sáng tạo (hạng 37) tốt hơn đầu vào (hạng 50).'
+    source: WIPO, Global Innovation Index 2025
+  - text: 'Việt Nam và Ấn Độ là hai nền kinh tế "vượt kỳ vọng" lâu nhất: 15 năm liên tiếp (2011–2025) đạt kết quả cao hơn mức tương ứng với trình độ phát triển, vượt chuẩn nhóm thu nhập ở cả 7 trụ cột.'
+    source: WIPO, Global Innovation Index 2025
+  - text: Mạnh nhất ở Sản phẩm sáng tạo (hạng 34), Sản phẩm tri thức và công nghệ (39), Trình độ thị trường (43); yếu hơn ở Nguồn nhân lực và nghiên cứu (70), Thể chế (59), Hạ tầng (56).
+    source: WIPO, Global Innovation Index 2025
+  - text: Thuộc nhóm dẫn đầu thế giới về xuất khẩu công nghệ cao; trong ASEAN, Việt Nam tăng nhanh nhất về xuất khẩu, sản xuất công nghệ cao và công bố khoa học giai đoạn 2015–2024.
+    source: WIPO, Global Innovation Index 2025
+  - text: Năng suất lao động tăng 5,4%/năm giai đoạn 2014–2024, nhanh thứ hai thế giới sau Trung Quốc; số xe điện tăng hơn 100% năm 2024, đạt 4,6 xe điện trên 100 xe.
+    source: WIPO, Global Innovation Index 2025
+  - text: Chưa có cụm khoa học và công nghệ nào của Việt Nam (kể cả TP.HCM, Hà Nội) trong danh sách 100 cụm đổi mới sáng tạo hàng đầu thế giới.
+    source: WIPO, Global Innovation Index 2025
   report_metrics:
     ecosystem_value_usd: 75100000000
     unicorns: 3
@@ -98,6 +111,21 @@ country:
     community_activity_rank_apac: 6
     fintech_rank_global: 39
     fintech_rank_apac: 9
+  gii_2025:
+    rank: 44
+    of: 139
+    input_rank: 50
+    output_rank: 37
+    income_group: Thu nhập trung bình thấp (hạng 2, sau Ấn Độ)
+    pillars:
+      Thể chế: 59
+      Nguồn nhân lực và nghiên cứu: 70
+      Hạ tầng: 56
+      Trình độ thị trường: 43
+      Trình độ kinh doanh: 45
+      Sản phẩm tri thức và công nghệ: 39
+      Sản phẩm sáng tạo: 34
+    source: WIPO, Global Innovation Index 2025
 cities:
 - id: ho-chi-minh
   name: TP. Hồ Chí Minh
