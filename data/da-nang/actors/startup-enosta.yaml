@@ -1,21 +1,53 @@
 id: startup-enosta
 name:
-  vi: Enosta (SmartOS)
+  vi: Enosta
 alt_names:
 - ENOSTA
-- Enosta / SmartOS
 - ENOSTA Company Limited
+- Enosta Group
+- Enouvo Group
 type: startup
 categories:
-- Phần mềm, SaaS
+- Tư vấn, phát triển sản phẩm số AI-native
+- Phát triển phần mềm web, mobile, cloud
+- Giải pháp AI và dữ liệu
+- Blockchain
+- Thương hiệu, marketing số
 sectors:
 - ai
+- marketing
+- web3
+founded: 2020
+status: active
 website: https://enosta.com/
-address: 16-18 An Nhon 3, Đà Nẵng
+linkedin: https://www.linkedin.com/company/enosta/
+contact_email: services@enosta.com
+address: 280 Trần Hưng Đạo, phường An Hải, Đà Nẵng
 description:
-  vi: Hợp tác chiến lược với Đại Thắng Holdings (7/2026).
+  vi: 'Công ty tư vấn và phát triển sản phẩm số theo mô hình AI-native: từ ý tưởng, thiết kế, phát triển web, mobile, cloud, giải pháp AI và dữ liệu đến thương hiệu và đưa sản phẩm ra thị trường. Trụ sở tại Đà Nẵng, văn phòng tại Melbourne (Úc) và Gatineau (Canada); hơn 150 nhân sự, đạt ISO 27001. Đứng sau phần mềm quản lý bất động sản cho thuê Smartos.'
+history:
+- date: '2011'
+  text: Thành lập Enouvo IT Solutions tại Đà Nẵng, tiền thân về công nghệ và nhân sự của Enosta.
+  source: https://enosta.com/about-us
+- date: '2020'
+  text: Ra mắt Enosta tại Đà Nẵng; cuối năm mở văn phòng Melbourne (Úc).
+  source: https://enosta.com/about-us
+- date: '2022'
+  text: Được Clutch, The Manifest, SME100 Asia ghi nhận ở các hạng mục dịch vụ CNTT, phát triển ứng dụng, thiết kế sản phẩm, thương hiệu.
+  source: https://enosta.com/about-us
+- date: '2024'
+  text: Mở văn phòng Gatineau (Canada) qua hợp tác với LOYAL Group; Enouvo Group đổi tên thành Enosta Group.
+  source: https://enosta.com/about-us
+- date: '2025'
+  text: Đạt chứng nhận ISO 27001, chuyển sang mô hình vận hành AI-native; tham gia Claude Partner Network, là AWS Select Partner, Strapi Community Partner.
+  source: https://enosta.com/about-us
+- date: '2026'
+  text: Hơn 150 nhân sự tại Việt Nam, Úc, Canada; phục vụ hơn 55 khách hàng, hơn 75 sản phẩm và dự án đã bàn giao.
+  source: https://enosta.com/about-us
+- date: 2026-07
+  text: Hợp tác chiến lược với Đại Thắng Holdings (qua giải pháp Smartos).
+  source: indanang.vn
 region: da-nang
-website_status: Hoạt động
 verification:
   level: source_checked
 sources:
@@ -24,4 +56,6 @@ sources:
 - indanang.vn
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 - Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+- Website chính thức (22/11/2026)
+source_url: https://enosta.com/about-us
 legacy_id: s61;d74

@@ -235,3 +235,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Trang mới `/ban-do-ai/`: (1) bản đồ Việt Nam: startup, doanh nghiệp có lĩnh vực AI và từ khóa AI trong hồ sơ, xếp tự động vào 11 tầng (robot và AI vật lý, an ninh, hạ tầng, AI Agent, AI tạo sinh, 5 nhóm ứng dụng theo ngành, dữ liệu và phần mềm AI) cùng nhóm hỗ trợ hệ sinh thái AI, lọc theo địa phương; (2) xu hướng toàn cầu và (3) thư viện tra cứu 618 bản đồ thị trường AI (2024–11/2026).
 - Nguồn danh sách toàn cầu: Awesome AI Market Maps (Joy Larkin, giấy phép MIT), lưu ở `data/benchmarks/ai-market-maps.json`, gộp 98 nhãn gốc thành 13 nhóm chủ đề.
 - Liên kết từ trang Lĩnh vực.
+
+## Enosta và Smartos (22/11/2026)
+
+- Enosta: cập nhật theo enosta.com (trang chủ, Về chúng tôi, Liên hệ): tên, tên khác (Enosta Group, Enouvo Group), lĩnh vực, năm ra mắt 2020 (tiền thân Enouvo IT Solutions 2011), địa chỉ trụ sở, email chung, LinkedIn, mô tả, dòng thời gian 2011–2026.
+- Smartos: tách thành hồ sơ riêng (Công ty Cổ phần Smartos) theo smartos.space: phần mềm quản lý bất động sản cho thuê, case study Đại Thắng Holdings; quan hệ "liên quan" với Enosta; thay Enosta bằng Smartos trong danh sách tham dự DAVAS 2026 (bộ dữ liệu của Sở ghi "Smartos").

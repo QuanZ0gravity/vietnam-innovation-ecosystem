@@ -1,0 +1,44 @@
+id: startup-smartos
+name:
+  vi: Smartos
+alt_names:
+- SmartOS
+- Smartos Space
+- Công ty Cổ phần Smartos
+type: startup
+categories:
+- PropTech
+- Phần mềm quản lý bất động sản cho thuê
+- Quản lý coworking, văn phòng, căn hộ
+sectors:
+- property
+- ai
+status: active
+website: https://smartos.space/
+linkedin: https://www.linkedin.com/company/smartosspace/
+contact_email: support@smartos.space
+contact_phone: +84 905 969 648
+address: 280 Trần Hưng Đạo, phường An Hải, Đà Nẵng
+description:
+  vi: 'Phần mềm quản lý bất động sản cho thuê (PMS) cho văn phòng, coworking, căn hộ, nhà trọ và chuỗi vận hành: đặt chỗ theo sơ đồ tầng, hợp đồng, hóa đơn và gạch nợ tự động, check-in, thanh toán, quản lý hội viên, cư dân; kèm cổng đặt chỗ Smartos Booking, web và app tùy biến (Bespoke), báo cáo danh mục cho chủ đầu tư (Portfolio). Văn phòng tại Đà Nẵng và TP.HCM; có giao diện tiếng Anh, tiếng Nhật.'
+case_studies:
+- title: 'Đại Thắng Holdings: quản lý 7 tòa nhà trên một hệ thống'
+  url: https://smartos.space/case-study/dai-thang-holdings/
+  publisher: Smartos
+  date: '2026'
+  summary: Case study do Smartos công bố về chuỗi văn phòng X2Office của Đại Thắng Holdings.
+  points:
+  - Trước đây thông tin khách thuê, hợp đồng, công nợ nằm riêng ở từng tòa nhà; báo cáo cho lãnh đạo phải tổng hợp thủ công.
+  - 'Sau triển khai: quản lý tập trung 7 tòa nhà, nhiều pháp nhân, hơn 20.000 m² trên một nền tảng; đồng bộ hợp đồng, công nợ, hóa đơn VAT với kế toán; báo cáo doanh thu, dòng tiền tự động; dùng cho cả văn phòng cho thuê và coworking.'
+  metrics:
+  - label: Tòa nhà quản lý
+    value: '7'
+  - label: Diện tích
+    value: 20.000+ m²
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- Website chính thức (22/11/2026)
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://smartos.space/
