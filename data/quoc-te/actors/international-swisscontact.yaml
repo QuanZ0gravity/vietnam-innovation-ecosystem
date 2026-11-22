@@ -1,0 +1,13 @@
+id: international-swisscontact
+name:
+  vi: Swisscontact
+type: international
+website: https://www.swisscontact.org/
+description:
+  vi: Tổ chức phát triển phi lợi nhuận độc lập của Thụy Sĩ (thành lập 1959); đơn vị thực hiện Swiss EP.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- swissep.org (22/11/2026)
+source_url: https://swissep.org/about-us/behind-swiss-ep

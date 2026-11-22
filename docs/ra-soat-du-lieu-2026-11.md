@@ -274,3 +274,9 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - Vẽ lại 18 biểu đồ từ số liệu trong 4 báo cáo (đọc trực tiếp từ trang biểu đồ của PDF): VC và PE Việt Nam 2013–2025, AI, startup hoạt động toàn cầu, số nhà đầu tư, VC theo lĩnh vực 2024–2025, PE theo ngành 2025, vốn startup Việt Nam theo nửa năm (DealStreetAsia), M&A 2021–10T/2025 (TVS), vốn cổ phần và vay nợ Đông Nam Á 2019–2025, vốn theo giai đoạn, theo nước, vốn AI theo nước, unicorn theo năm, nước, lĩnh vực, đặc điểm nhà sáng lập (Endeavor); thêm bảng chuỗi vốn VC → PE → IPO.
 - Biểu đồ là bản vẽ lại của bản đồ, ghi nguồn từng biểu đồ; không chép ảnh từ báo cáo.
+
+## Swiss EP (22/11/2026)
+
+- Theo swissep.org (trang chủ, Behind Swiss EP, Working principles, Tailored support, Swiss EP experts, Decade of Swiss EP, Countries, Vietnam): cập nhật mô tả, năm 2015, phân loại, dòng thời gian 2014–2025, đội ngũ Việt Nam công bố trên website, phần "Cách Swiss EP làm việc" (nguyên tắc, dịch vụ, chỉ số công khai: 7 nước, 628 chuyên gia trong 10 năm, mạng lưới 700+).
+- Thêm SECO, Swisscontact, J.E. Austin Associates (quan hệ tài trợ, thực hiện) và TOVchain; quan hệ "đối tác" với 13 đơn vị có trên trang Vietnam của swissep.org. Trang hồ sơ có thêm mục "Đối tác" và "Là đối tác của".
+- Chỉ dùng thông tin công khai trên website; không đưa số liệu nội bộ của chương trình.

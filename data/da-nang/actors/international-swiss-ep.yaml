@@ -3,16 +3,76 @@ name:
   vi: Swiss Entrepreneurship Program (Swiss EP)
 alt_names:
 - Swiss EP
+- Swiss EP Vietnam
+- Chương trình Khởi nghiệp Thụy Sĩ
 type: international
 categories:
-- Chương trình quốc tế (SECO tài trợ)
-- Tổ chức hỗ trợ
-website: https://swissep.org
+- Chương trình phát triển hệ sinh thái khởi nghiệp (SECO tài trợ)
+- Nâng năng lực tổ chức hỗ trợ khởi nghiệp
+- Mạng lưới chuyên gia quốc tế (EIR)
+- Hỗ trợ startup mở rộng quy mô
+founded: 2015
+status: active
+website: https://swissep.org/
 linkedin: https://www.linkedin.com/company/swiss-entrepreneurship-program
 description:
-  vi: Nâng năng lực tổ chức hỗ trợ, kết nối chuyên gia quốc tế (EIR).
+  vi: 'Chương trình của Cục Kinh tế Liên bang Thụy Sĩ (SECO), do Swisscontact và J.E. Austin Associates thực hiện, hoạt động tại 7 nước gồm Việt Nam. Hỗ trợ tổ chức hỗ trợ khởi nghiệp và startup tăng trưởng qua tư vấn của nhóm địa phương và mạng lưới hơn 700 chuyên gia quốc tế. Phương châm: "Họ dẫn dắt, chúng tôi hỗ trợ".'
+leadership:
+- role: Nhóm Swiss EP Việt Nam
+  name: Dang Thi Ngoc Dung
+  source: https://swissep.org/countries/vietnam
+- role: Nhóm Swiss EP Việt Nam
+  name: Quynh Anh Nguyen
+  source: https://swissep.org/countries/vietnam
+- role: Nhóm Swiss EP Việt Nam
+  name: Tran Tri Dung
+  source: https://swissep.org/countries/vietnam
+- role: Nhóm Swiss EP Việt Nam
+  name: Chuong Nguyen
+  source: https://swissep.org/countries/vietnam
+- role: Nhóm Swiss EP Việt Nam
+  name: Nhu Le
+  source: https://swissep.org/countries/vietnam
+- role: Nhóm Swiss EP Việt Nam
+  name: Hub Langstaff
+  source: https://swissep.org/countries/vietnam
+history:
+- date: '2014'
+  text: SECO khởi xướng ý tưởng, J.E. Austin Associates (JAA) thực hiện nghiên cứu khả thi.
+  source: https://swissep.org/about-us/behind-swiss-ep
+- date: 2015-06
+  text: 'Bắt đầu hoạt động; SECO giao Swisscontact và JAA thực hiện tại 6 nước: Albania, Bosnia và Herzegovina, Bắc Macedonia, Peru, Serbia, Việt Nam.'
+  source: https://swissep.org/about-us/behind-swiss-ep
+- date: '2019'
+  text: Kosovo tham gia, nâng tổng số nước lên 7.
+  source: https://swissep.org/about-us/behind-swiss-ep
+- date: '2025'
+  text: Tròn 10 năm; 628 chuyên gia đã tham gia các đợt hỗ trợ tại các nước chương trình.
+  source: https://swissep.org/our-impact/decade-of-swiss-ep
+- date: 2026-11
+  text: Tại Việt Nam, Swiss EP nhận định hệ sinh thái đang lan ra các thành phố cấp hai, chuyên sâu theo ngành dọc và đổi mới sáng tạo trong doanh nghiệp lớn; khoảng trống còn lại là vốn giai đoạn đầu và vốn cho nhà sáng lập nữ.
+  source: https://swissep.org/countries/vietnam
+case_studies:
+- title: Cách Swiss EP làm việc với tổ chức hỗ trợ khởi nghiệp
+  url: https://swissep.org/our-work/working-principles
+  publisher: Swiss Entrepreneurship Program
+  date: '2026'
+  summary: Nguyên tắc làm việc rút ra sau 10 năm thực hiện chương trình.
+  points:
+  - 'Trao quyền cho tổ chức địa phương: hỗ trợ đối tác tự thiết kế, thực hiện hoạt động thay vì làm thay.'
+  - 'Nuôi dưỡng tinh thần làm chủ: đối tác tự xác định sứ mệnh và nhu cầu của nhà sáng lập.'
+  - Hỗ trợ năng lực, không trợ cấp chi phí vận hành hay lương ngắn hạn.
+  - 'Dịch vụ: tư vấn trực tiếp của nhóm địa phương, chia sẻ kinh nghiệm từ nhà sáng lập quốc tế (workshop, nói chuyện, gặp 1-1), kết nối mạng lưới, đề xuất hợp tác để lấp khoảng trống hệ sinh thái.'
+  metrics:
+  - label: Nước chương trình
+    value: '7'
+  - label: Năm hoạt động
+    value: 2015–nay
+  - label: Chuyên gia tham gia (10 năm)
+    value: '628'
+  - label: Mạng lưới chuyên gia
+    value: 700+
 region: da-nang
-website_status: Hoạt động
 verification:
   level: source_checked
 sources:
@@ -20,5 +80,6 @@ sources:
 - startupdanang.vn
 - indanang.vn
 - HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
-source_url: https://startupdanang.vn/swiss-entrepreneurship-program-swiss-ep
+- swissep.org (22/11/2026)
+source_url: https://swissep.org
 legacy_id: d98;o12

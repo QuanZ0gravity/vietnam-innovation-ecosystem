@@ -63,7 +63,7 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in", "merged_into"):
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in", "merged_into", "partner"):
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
@@ -518,9 +518,9 @@ for a in actors:
                                       "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
     lead_html = ""
     if a.get("leadership"):
-        lead_html = ('<div class="section"><h2 data-vi="Lãnh đạo" data-en="Leadership">Lãnh đạo</h2><ul class="lead-list">'
+        lead_html = ('<div class="section"><h2 data-vi="Lãnh đạo, đội ngũ" data-en="Leadership, team">Lãnh đạo, đội ngũ</h2><ul class="lead-list">'
                      + "".join(f'<li><b>{e(x["name"])}</b><span class="muted">{e(x["role"])}' + (f' · từ {e(x["since"][5:7] + "/" + x["since"][:4]) if len(x.get("since","")) >= 7 else ""}' if x.get("since") else "") + "</span></li>" for x in a["leadership"])
-                     + '</ul><p class="small muted" data-vi="Theo công bố chính thức về bổ nhiệm." data-en="As officially announced.">Theo công bố chính thức về bổ nhiệm.</p></div>')
+                     + '</ul><p class="small muted" data-vi="Theo công bố chính thức của tổ chức." data-en="As published by the organisation.">Theo công bố chính thức của tổ chức.</p></div>')
     merged_from = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "merged_into" and r["from"] in by_id]
     merged_to = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "merged_into" and r["to"] in by_id]
     mg_html = ""
@@ -561,6 +561,10 @@ for a in actors:
                      + "</div></li>")
         fr_html = (f'<div class="section"><h2 data-vi="Các vòng gọi vốn" data-en="Funding rounds">Các vòng gọi vốn</h2>'
                    f'<p class="muted small" data-vi="Tổng các vòng được công bố: {e(_fmt_money(tot))}" data-en="Announced rounds total: {e(_fmt_money(tot))}">Tổng các vòng được công bố: {e(_fmt_money(tot))}</p><ol class="fr-list">{rows}</ol></div>')
+    partners_in = sorted({r["from"] for r in relations if r["to"] == aid and r.get("type") == "partner" and r["from"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    partner_of = sorted({r["to"] for r in relations if r["from"] == aid and r.get("type") == "partner" and r["to"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    pf_html_p = ((f'<div class="section"><h2 data-vi="Đối tác" data-en="Partners">Đối tác</h2>{mini_cards([by_id[x] for x in partners_in])}</div>') if partners_in else "") + \
+                ((f'<div class="section"><h2 data-vi="Là đối tác của" data-en="Partner of">Là đối tác của</h2>{mini_cards([by_id[x] for x in partner_of])}</div>') if partner_of else "")
     portfolio = sorted({r["to"] for r in relations if r["from"] == aid and r.get("type") == "invested_in" and r["to"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
     pf_html = (f'<div class="section"><h2 data-vi="Danh mục đầu tư" data-en="Portfolio">Danh mục đầu tư</h2>{mini_cards([by_id[x] for x in portfolio])}</div>') if portfolio else ""
     ds = a.get("description_source") or {}
@@ -612,7 +616,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}{mail_button(aid) if a["type"] == "expert" else ""}{src_html}
 <dl class="facts">{facts_html}</dl>
-{mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
+{mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{pf_html_p}{rel_html}{opp_html}{sim_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>

@@ -1,0 +1,16 @@
+id: international-seco
+name:
+  vi: Cục Kinh tế Liên bang Thụy Sĩ (SECO)
+alt_names:
+- SECO
+- State Secretariat for Economic Affairs
+type: international
+website: https://www.seco.admin.ch/
+description:
+  vi: Cơ quan Chính phủ Thụy Sĩ phụ trách kinh tế; bộ phận Hợp tác và Phát triển Kinh tế tài trợ Swiss EP.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- swissep.org (22/11/2026)
+source_url: https://swissep.org/about-us/behind-swiss-ep
