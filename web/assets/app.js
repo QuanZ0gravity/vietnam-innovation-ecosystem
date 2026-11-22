@@ -127,4 +127,10 @@
     if (!window.ICON) return;
     document.querySelectorAll(".jsico").forEach(function (n) { n.outerHTML = ICON(n.dataset.ico, +n.dataset.size || 16); });
   });
+
+  document.addEventListener("click", function (ev) {
+    var b = ev.target.closest && ev.target.closest(".mailbtn"); if (!b) return;
+    var rev = function (x) { return (x || "").split("").reverse().join(""); };
+    location.href = "mailto:" + rev(b.dataset.u) + "@" + rev(b.dataset.d);
+  });
 })();

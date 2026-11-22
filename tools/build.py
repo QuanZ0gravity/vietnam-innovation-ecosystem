@@ -227,6 +227,24 @@ def _fmt_money(v):
     if v >= 1e9: return f"{v/1e9:.1f} tỷ USD".replace(".", ",")
     if v >= 1e6: return (f"{v/1e6:.1f}".rstrip("0").rstrip(".") + " triệu USD").replace(".", ",")
     return f"{int(v):,} USD".replace(",", ".")
+
+# Email chuyên gia: KHÔNG lưu trong kho. Đọc từ biến môi trường EXPERT_CONTACTS (JSON {id: email})
+# hoặc tệp private/expert-contacts.json (đã .gitignore) khi dựng trên máy. Chỉ hiện dưới dạng nút "Gửi email" đã che địa chỉ.
+EXPERT_CONTACTS = {}
+try:
+    if os.environ.get("EXPERT_CONTACTS"):
+        EXPERT_CONTACTS = json.loads(os.environ["EXPERT_CONTACTS"])
+    elif os.path.exists(os.path.join(ROOT, "private", "expert-contacts.json")):
+        EXPERT_CONTACTS = json.load(open(os.path.join(ROOT, "private", "expert-contacts.json"), encoding="utf-8"))
+except Exception:
+    EXPERT_CONTACTS = {}
+def mail_button(aid):
+    em = EXPERT_CONTACTS.get(aid)
+    if not em or "@" not in em: return ""
+    u, d = em.split("@", 1)
+    return (f'<p style="margin-top:14px"><button type="button" class="btn primary mailbtn" data-u="{e(u[::-1])}" data-d="{e(d[::-1])}" '
+            f'data-vi="Gửi email" data-en="Send email">Gửi email</button></p>')
+
 PREFIXES = ("startup-", "company-", "fund-", "incubator-", "accelerator-", "space-", "support-org-", "university-", "government-",
             "international-", "community-", "media-", "creator-", "expert-", "research-")
 def _base_slug(i):
@@ -582,7 +600,7 @@ for a in actors:
 <p>{type_tag(a["type"])}</p>
 {logo_img(a, 72, "lg alogo")}<h1 style="margin-top:8px">{e(name)}</h1>
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
-{desc_html}{src_html}
+{desc_html}{mail_button(aid) if a["type"] == "expert" else ""}{src_html}
 <dl class="facts">{facts_html}</dl>
 {mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
 </article>
