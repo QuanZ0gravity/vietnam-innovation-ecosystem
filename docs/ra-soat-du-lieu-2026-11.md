@@ -240,3 +240,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - Enosta: cập nhật theo enosta.com (trang chủ, Về chúng tôi, Liên hệ): tên, tên khác (Enosta Group, Enouvo Group), lĩnh vực, năm ra mắt 2020 (tiền thân Enouvo IT Solutions 2011), địa chỉ trụ sở, email chung, LinkedIn, mô tả, dòng thời gian 2011–2026.
 - Smartos: tách thành hồ sơ riêng (Công ty Cổ phần Smartos) theo smartos.space: phần mềm quản lý bất động sản cho thuê, case study Đại Thắng Holdings; quan hệ "liên quan" với Enosta; thay Enosta bằng Smartos trong danh sách tham dự DAVAS 2026 (bộ dữ liệu của Sở ghi "Smartos").
+
+## HOIP – rà soát lần 2 (22/11/2026)
+
+- HOIP có thêm 40 hồ sơ startup (tổng 240), 60 vườn ươm và tổ chức hỗ trợ, 11 nhà đầu tư. Thêm 41 hồ sơ mới (39 startup, FTU Innovation and Incubation Space, Viện Phát triển Doanh nghiệp và Tài năng Việt Nam); các tổ chức đã có được đối chiếu, không tạo trùng.
+- Lưu nguyên văn phần tự giới thiệu cho các hồ sơ HOIP còn thiếu; tải logo từ trang hồ sơ HOIP cho 80 đơn vị (loại ảnh mặc định và ảnh chụp không phải logo). Không tải ảnh chân dung của chuyên gia.
