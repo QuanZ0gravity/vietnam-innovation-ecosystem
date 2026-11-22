@@ -98,3 +98,7 @@ Hồ sơ cá nhân tự đăng ký công khai trên nền tảng của chính qu
 ## Phân tích (`case_studies`) và vòng vốn (`funding_rounds`)
 
 `case_studies`: `title`, `url`, `publisher`, `date`, `summary`, `points` (ý chính, viết lại), `metrics` (`label`, `value`, `note`). `funding_rounds`: `date` (YYYY-MM), `round`, `amount_usd`, `lead` và `investors` (id tác nhân), `source`. Quan hệ `invested_in` (quỹ → startup) trong `relations.csv` tạo mục "Danh mục đầu tư" trên trang nhà đầu tư.
+
+## Sự kiện thường niên năm sau (dự kiến)
+
+Khi dựng trang, mỗi chuỗi sự kiện `recurrence: annual` lấy lần tổ chức gần nhất và tạo một bản "Dự kiến" cho năm sau (năm hiện tại + 1), cùng ngày tháng của lần gần nhất. Bản dự kiến hiện trong thẻ "Sắp tới", trên lịch và trang thành phố với nhãn "Dự kiến"; trang chi tiết ghi rõ ngày chưa được ban tổ chức công bố, có `noindex`, không có tệp lịch `.ics`, không có dữ liệu có cấu trúc `Event` và không nằm trong `events.json`. Khi có lịch chính thức, thêm sự kiện năm mới vào `events.yaml`: bản dự kiến tự biến mất.

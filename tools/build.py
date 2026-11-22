@@ -169,7 +169,7 @@ def write(rel, content, lastmod=None):
     if rel.endswith(".html") and "</head>" in content:
         url_path = "" if rel == "index.html" else rel[:-len("index.html")] if rel.endswith("index.html") else rel
         full = f"{SITE_URL}/{url_path}"
-        redirect = 'http-equiv="refresh"' in content
+        redirect = 'http-equiv="refresh"' in content or 'name="robots" content="noindex"' in content
         m = _re.search(r'<meta name="description" content="([^"]*)"', content)
         d = m.group(1) if m else ""
         t = _re.search(r"<title>(.*?)</title>", content, _re.S)
@@ -1236,6 +1236,34 @@ for ev in events:
     if ev.get("recurrence") == "annual" and ev["_state"] == "past":
         ev["_next"] = f'tháng {ev.get("month") or ev["_start"].month}/{ev["_start"].year + 1}'
 
+# Sự kiện thường niên năm sau (dự kiến): mỗi chuỗi thường niên lấy lần gần nhất, chiếu sang năm (năm nay + 1)
+NEXT_YEAR = TODAY_D.year + 1
+def _series_key(t):
+    return _re.sub(r"\s+", " ", _re.sub(r"\b(19|20)\d{2}\b|\(lần \d+\)|lần thứ [ivx]+", "", _fold(t))).strip(" –-:")
+_latest = {}
+for ev in events:
+    if ev.get("recurrence") != "annual": continue
+    k = (ev["_region"], _series_key(ev["title"]))
+    if k not in _latest or ev["_start"] > _latest[k]["_start"]: _latest[k] = ev
+def _shift(d, y):
+    try: return d.replace(year=y)
+    except ValueError: return d.replace(year=y, day=28)
+projected = []
+for k, base in _latest.items():
+    if base["_start"].year >= NEXT_YEAR: continue
+    y0 = base["_start"].year
+    pid = base["id"].replace(str(y0), str(NEXT_YEAR)) if str(y0) in base["id"] else f'{base["id"]}-{NEXT_YEAR}'
+    if any(x["id"] == pid for x in events): continue
+    _t = _re.split(r"\s[–:-]\s|:\s", base["title"])[0].strip()
+    _t = _re.sub(r"\s*\(lần \d+\)|\s*lần thứ [IVXivx]+", "", _t).strip()
+    title = _t.replace(str(y0), str(NEXT_YEAR)) if str(y0) in _t else f'{_t} {NEXT_YEAR}'
+    pe = {kk: vv for kk, vv in base.items() if kk not in ("opportunity", "time", "url")}
+    pe.update({"id": pid, "title": title, "_projected": True, "_base": base, "_start": _shift(base["_start"], NEXT_YEAR), "_end": _shift(base["_end"], NEXT_YEAR),
+               "start": _shift(base["_start"], NEXT_YEAR).isoformat(), "end": _shift(base["_end"], NEXT_YEAR).isoformat(), "_state": "upcoming", "_next": None,
+               "official_url": base.get("url")})
+    projected.append(pe)
+events += projected
+
 def ev_cover(ev, size=120, cls="ev-cover"):
     vi, en, c1, c2 = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])
     label = ev["title"].split("–")[0].strip()
@@ -1252,8 +1280,20 @@ def ev_when(ev):
     if s.month == en.month: return f'{s.day:02d}–{en.day:02d}/{s.month:02d}/{s.year}'
     return f'{s.day:02d}/{s.month:02d} – {en.day:02d}/{en.month:02d}/{en.year}'
 
+def ev_card_projected(ev):
+    vi = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])[0]
+    base = ev["_base"]
+    return (f'<a class="ev-card proj" href="{SITE_ROOT}su-kien/{ev["id"]}/" data-reg="{ev["_region"]}" data-cat="{ev.get("category","")}">'
+            f'<div class="ev-body"><p class="ev-time"><span class="ev-badge proj" data-vi="Dự kiến" data-en="Expected">Dự kiến</span>'
+            f'<span data-vi="Tháng {ev["_start"].month}/{ev["_start"].year} · theo lịch {base["_start"].year}" data-en="{ev["_start"].month}/{ev["_start"].year} · based on {base["_start"].year}">Tháng {ev["_start"].month}/{ev["_start"].year} · theo lịch {base["_start"].year}</span></p><h3>{e(ev["title"])}</h3>'
+            f'<p class="ev-org">{icon_svg_any("community", 14)} <span data-vi="Tổ chức bởi" data-en="By">Tổ chức bởi</span> {e(ev.get("organizer",""))}</p>'
+            f'<p class="ev-loc">{icon_svg_any("pin", 14)} {e(ev.get("venue",""))}</p>'
+            f'<p class="ev-tags"><span class="stag">{e(vi)}</span><span class="ev-rep">{icon_svg_any("repeat", 13)} <span data-vi="Thường niên" data-en="Annual">Thường niên</span></span></p></div>{ev_cover(ev)}</a>')
+
 def ev_card(ev):
     vi = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])[0]
+    if ev.get("_projected"):
+        return ev_card_projected(ev)
     badge = {"live": '<span class="ev-badge live" data-vi="Đang diễn ra" data-en="Live">Đang diễn ra</span>',
              "upcoming": '<span class="ev-badge up" data-vi="Sắp tới" data-en="Upcoming">Sắp tới</span>'}.get(ev["_state"], "")
     rep = (f'<span class="ev-rep">{icon_svg_any("repeat", 13)} <span data-vi="Thường niên" data-en="Annual">Thường niên</span>'
@@ -1292,7 +1332,7 @@ def ics_for(ev):
 REG_NAME = {"da-nang": "Đà Nẵng", "ho-chi-minh": "TP. Hồ Chí Minh", "ha-noi": "Hà Nội", "hai-phong": "Hải Phòng"}
 up = [x for x in events if x["_state"] in ("upcoming", "live")]
 past = [x for x in events if x["_state"] == "past"]
-annual = sorted([x for x in events if x.get("recurrence") == "annual"], key=lambda x: (x.get("month") or x["_start"].month, x["_start"].day))
+annual = sorted([x for x in events if x.get("recurrence") == "annual" and not x.get("_projected")], key=lambda x: (x.get("month") or x["_start"].month, x["_start"].day))
 MONTHS = ["", "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"]
 ann_html = ""
 for mth in range(1, 13):
@@ -1304,8 +1344,9 @@ for _x in sorted(events, key=lambda z: z["_start"]):
     _d = _x["_start"]
     while _d <= _x["_end"]:
         k = _d.isoformat()
-        if k in _evdays: _evdays[k]["t"] += " · " + _x["title"]
-        else: _evdays[k] = {"t": _x["title"], "s": _x["_start"].isoformat()}
+        _t = _x["title"] + (" (dự kiến)" if _x.get("_projected") else "")
+        if k in _evdays: _evdays[k]["t"] += " · " + _t
+        else: _evdays[k] = {"t": _t, "s": _x["_start"].isoformat()}
         _d += datetime.timedelta(days=1)
 ev_days_json = json.dumps(_evdays, ensure_ascii=False).replace("</", "<\\/")
 chips = "".join(f'<button type="button" class="chip" data-f="reg" data-v="{r}">{e(n)}</button>' for r, n in REG_NAME.items() if any(x["_region"] == r for x in events))
@@ -1338,12 +1379,21 @@ b_ld = []
 write("su-kien/index.html", page("Sự kiện", ev_body, "events", scripts=["evcal.js"], desc=f"Lịch {len(events)} sự kiện khởi nghiệp, đổi mới sáng tạo thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội: DAVAS, SURF, InnoEx, Startup Wheel, Techmart, Ngày ĐMST Việt Nam."))
 for ev in events:
     os.makedirs(os.path.join(OUT, "su-kien", ev["id"]), exist_ok=True)
-    open(os.path.join(OUT, "su-kien", ev["id"], "su-kien.ics"), "w", encoding="utf-8", newline="").write(ics_for(ev))
+    if not ev.get("_projected"):
+        open(os.path.join(OUT, "su-kien", ev["id"], "su-kien.ics"), "w", encoding="utf-8", newline="").write(ics_for(ev))
     orgs = [by_id[i] for i in ev.get("organizer_ids") or [] if i in by_id]
     opp = next((o for o in opps if o["id"] in (ev.get("opportunity"), "opp-" + str(ev.get("opportunity")))), None)
     vi = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])[0]
     same = sorted([x for x in events if x is not ev and (x.get("category") == ev.get("category") or x["_region"] == ev["_region"])], key=lambda x: abs((x["_start"] - ev["_start"]).days))[:4]
-    state_txt = {"past": '<span class="ev-badge" data-vi="Đã diễn ra" data-en="Past">Đã diễn ra</span>', "live": '<span class="ev-badge live">Đang diễn ra</span>', "upcoming": '<span class="ev-badge up">Sắp tới</span>'}[ev["_state"]]
+    if ev.get("_projected"):
+        _b = ev["_base"]
+        state_txt = '<span class="ev-badge proj" data-vi="Dự kiến" data-en="Expected">Dự kiến</span>'
+        proj_note = (f'<div class="proj-note"><p><b data-vi="Lịch dự kiến." data-en="Expected date.">Lịch dự kiến.</b> '
+                     f'<span data-vi="Ngày dự đoán theo lần tổ chức năm {_b["_start"].year}; ban tổ chức chưa công bố ngày chính thức năm {ev["_start"].year}." data-en="Projected from the {_b["_start"].year} edition; the organiser has not announced the {ev["_start"].year} date.">Ngày dự đoán theo lần tổ chức năm {_b["_start"].year}; ban tổ chức chưa công bố ngày chính thức năm {ev["_start"].year}.</span> '
+                     f'<a href="{SITE_ROOT}su-kien/{_b["id"]}/" data-vi="Xem lần tổ chức {_b["_start"].year}" data-en="See the {_b["_start"].year} edition">Xem lần tổ chức {_b["_start"].year}</a></p></div>')
+    else:
+        proj_note = ""
+    state_txt = state_txt if ev.get("_projected") else {"past": '<span class="ev-badge" data-vi="Đã diễn ra" data-en="Past">Đã diễn ra</span>', "live": '<span class="ev-badge live">Đang diễn ra</span>', "upcoming": '<span class="ev-badge up">Sắp tới</span>'}[ev["_state"]]
     body = f"""
 <div class="wrap crumbs"><a href="{SITE_ROOT}su-kien/" data-i18n="nav_events">Sự kiện</a> / {e(ev["title"])}</div>
 <div class="wrap ev-page">
@@ -1351,13 +1401,13 @@ for ev in events:
 <div class="box"><h2 class="small" data-vi="Đơn vị tổ chức" data-en="Hosted by">Đơn vị tổ chức</h2>
 {mini_cards(orgs) if orgs else f'<p>{e(ev.get("organizer",""))}</p>'}</div>
 <p class="small muted" style="margin-top:12px"><span data-vi="Nguồn" data-en="Source">Nguồn</span>: <a href="{e(ev.get("source",""))}" rel="noopener">{e(_re.sub(r"^https?://", "", ev.get("source","")).split("/")[0])}</a></p></aside>
-<article><p>{state_txt}<span class="stag" style="margin-left:6px">{e(vi)}</span></p><h1 style="margin-top:10px">{e(ev["title"])}</h1>
+<article><p>{state_txt}<span class="stag" style="margin-left:6px">{e(vi)}</span></p><h1 style="margin-top:10px">{e(ev["title"])}</h1>{proj_note}
 <div class="ev-facts">
-<div class="ev-fact"><span class="ev-fi">{icon_svg_any("calendar", 20)}</span><div><b>{e(ev_when(ev))}</b>{f'<p class="small muted"><span data-vi="Thường niên, dự kiến" data-en="Annual, next">Thường niên, dự kiến</span> {e(ev["_next"])}</p>' if ev.get("_next") else ('<p class="small muted" data-vi="Thường niên" data-en="Annual">Thường niên</p>' if ev.get("recurrence") == "annual" else "")}</div></div>
+<div class="ev-fact"><span class="ev-fi">{icon_svg_any("calendar", 20)}</span><div><b>{e(("Tháng " + str(ev["_start"].month) + "/" + str(ev["_start"].year) + " (dự kiến)") if ev.get("_projected") else ev_when(ev))}</b>{f'<p class="small muted"><span data-vi="Thường niên, dự kiến" data-en="Annual, next">Thường niên, dự kiến</span> {e(ev["_next"])}</p>' if ev.get("_next") else ('<p class="small muted" data-vi="Thường niên" data-en="Annual">Thường niên</p>' if ev.get("recurrence") == "annual" else "")}</div></div>
 <div class="ev-fact"><span class="ev-fi">{icon_svg_any("pin", 20)}</span><div><b>{e(ev.get("venue",""))}</b><p class="small muted">{e(REG_NAME.get(ev["_region"], ""))}</p></div></div>
 </div>
 <p class="ev-actions">{f'<a class="btn primary" href="{e(ev["url"])}" rel="noopener" data-vi="Trang sự kiện" data-en="Event page">Trang sự kiện</a>' if ev.get("url") else ""}
-<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>
+{"" if ev.get("_projected") else f'<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>'}{f'<a class="btn ghost" href="{e(ev["official_url"])}" rel="noopener" data-vi="Trang sự kiện (lần trước)" data-en="Previous edition website">Trang sự kiện (lần trước)</a>' if ev.get("_projected") and ev.get("official_url") else ""}
 {f'<a class="btn ghost" href="{SITE_ROOT}co-hoi/{opp["id"].removeprefix("opp-")}/" data-vi="Cơ hội, danh sách tham gia" data-en="Opportunity and participants">Cơ hội, danh sách tham gia</a>' if opp else ""}</p>
 <div class="section"><h2 data-vi="Giới thiệu" data-en="About">Giới thiệu</h2><p class="desc">{e(ev.get("summary",""))}</p></div>
 {('<div class="section"><h2 data-vi="Sự kiện liên quan" data-en="Related events">Sự kiện liên quan</h2><div class="ev-items">' + "".join(ev_card(x) for x in same) + '</div></div>') if same else ""}
@@ -1367,10 +1417,11 @@ for ev in events:
           "eventStatus": "https://schema.org/EventScheduled", "url": f'{SITE_URL}/su-kien/{ev["id"]}/',
           "location": {"@type": "Place", "name": ev.get("venue", ""), "address": {"@type": "PostalAddress", "addressLocality": REG_NAME.get(ev["_region"], ""), "addressCountry": "VN"}},
           "organizer": {"@type": "Organization", "name": ev.get("organizer", "")}, "description": ev.get("summary", "")}
+    _head = '<meta name="robots" content="noindex">' if ev.get("_projected") else '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"
     write(f'su-kien/{ev["id"]}/index.html', page(ev["title"], body, "events",
           desc=f'{ev["title"]}: {ev_when(ev)}, {ev.get("venue","")}. {ev.get("summary","")}'[:300],
-          head='<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"), lastmod=GIT_DATES.get(ev["_file"], TODAY))
-dump("events.json", [{k: (str(v) if k in ("start", "end") else v) for k, v in ev.items() if not k.startswith("_")} | {"region": ev["_region"]} for ev in events])
+          head=_head), lastmod=GIT_DATES.get(ev["_file"], TODAY))
+dump("events.json", [{k: (str(v) if k in ("start", "end") else v) for k, v in ev.items() if not k.startswith("_")} | {"region": ev["_region"]} for ev in events if not ev.get("_projected")])
 
 
 info_page("gioi-thieu/quyen-rieng-tu/index.html", "Quyền riêng tư và dữ liệu cá nhân", "Privacy and personal data", f"""
@@ -1424,8 +1475,9 @@ def _days_for(evs):
         _d = _x["_start"]
         while _d <= _x["_end"]:
             k = _d.isoformat()
-            if k in out: out[k]["t"] += " · " + _x["title"]
-            else: out[k] = {"t": _x["title"], "s": _x["_start"].isoformat()}
+            _t = _x["title"] + (" (dự kiến)" if _x.get("_projected") else "")
+            if k in out: out[k]["t"] += " · " + _t
+            else: out[k] = {"t": _t, "s": _x["_start"].isoformat()}
             _d += datetime.timedelta(days=1)
     return json.dumps(out, ensure_ascii=False).replace("</", "<\\/")
 for _f in glob.glob(os.path.join(OUT, "thanh-pho", "*", "index.html")):

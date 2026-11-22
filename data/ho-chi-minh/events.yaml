@@ -164,8 +164,6 @@
   source: https://sihub.gov.vn/events/64
   time: 08:00–17:00
   price: free
-  recurrence: annual
-  month: 8
 - id: sihub-76-hoi-nghi-ednovation-2025-cung-giao-duc-b
   title: EdNovation 2025 – Cùng giáo dục bứt phá với công nghệ
   start: '2025-05-16'
@@ -440,8 +438,6 @@
   source: https://sihub.gov.vn/events/104
   time: 08:00
   price: free
-  recurrence: annual
-  month: 7
 - id: sihub-105-branding-performance-growth-summit-2026
   title: Branding & Performance Growth Summit 2026
   start: '2026-07-23'
@@ -457,8 +453,6 @@
   time: 14:00–17:30
   format: hybrid
   price: free
-  recurrence: annual
-  month: 7
 - id: sihub-106-dien-dan-asia-r-d-connect-2026
   title: Diễn đàn Asia R&D Connect 2026
   start: '2026-07-22'
@@ -473,5 +467,3 @@
   source: https://sihub.gov.vn/events/106
   time: 13:00–17:30
   price: free
-  recurrence: annual
-  month: 7
