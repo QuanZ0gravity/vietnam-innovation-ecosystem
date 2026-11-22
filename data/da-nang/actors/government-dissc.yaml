@@ -11,9 +11,13 @@ status: inactive
 contact_email: htkndmst@danang.gov.vn
 address: 58 Nguyễn Chí Thanh, Đà Nẵng
 description:
-  vi: Vận hành startupdanang.vn, SURF, DAVAS; nay thuộc Trung tâm ĐMST Đà Nẵng.
+  vi: Đã ngừng hoạt động từ 01/11/2026, hợp nhất vào DNIC. Vận hành startupdanang.vn, SURF, DAVAS; nay thuộc Trung tâm ĐMST Đà Nẵng.
+history:
+- date: '2026-11-01'
+  text: Ngừng hoạt động độc lập; hợp nhất cùng hai trung tâm còn lại thành Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC), theo Quyết định 4640/QĐ-UBND ngày 09/10/2026.
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
 region: da-nang
-website_status: Đã hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC) từ 1/11/2026 (QĐ 4640/QĐ-UBND); startupdanang.vn nay do DNIC quản lý
+website_status: Ngừng hoạt động từ 01/11/2026, hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC) theo QĐ 4640/QĐ-UBND; startupdanang.vn nay do DNIC quản lý
 verification:
   level: source_checked
 sources:
