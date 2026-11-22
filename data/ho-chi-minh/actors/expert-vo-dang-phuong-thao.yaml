@@ -1,0 +1,20 @@
+id: expert-vo-dang-phuong-thao
+name:
+  vi: Võ Đăng Phương Thảo
+type: expert
+categories:
+- Chuyên gia
+- Khác
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực khác.
+description_source:
+  text: '📍Luật sư, Đại diện Sở hữu công nghiệp 📍Phó Giám đốc Công ty Luật TNHH AGL 📌 Kinh nghiệm: - Tư vấn và đại diện khách hàng trong các vụ án liên quan đến tranh chấp thương mại, dân sự… - Tư vấn pháp lý doanh nghiệp, đặc biệt lĩnh vực sở hữu trí tuệ. - Đào tạo trong lĩnh vực sở hữu trí tuệ. - Tư vấn và thực hiện Dự án Khoa học và Công nghệ của các tỉnh, thành phố.'
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/expert/131
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/131

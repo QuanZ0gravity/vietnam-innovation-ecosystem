@@ -11,6 +11,11 @@ website: https://dronesoccer.vn/
 address: 16 Hoa Thị, phường Cầu Kiệu, Tp.HCM
 description:
   vi: 'Hồ sơ trên HOIP: lĩnh vực giáo dục; thành lập năm 2023; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://dronesoccer.vn/ Giáo dục Mô Hình Khác 30-10-2023 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/852
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

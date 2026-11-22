@@ -9,7 +9,12 @@ sectors:
 founded: 2025
 address: Quận 10 Tp hcm
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực f&b; thành lập năm 2025; giai đoạn Ý tưởng.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực F&B; thành lập năm 2025; giai đoạn Ý tưởng.'
+description_source:
+  text: -- F&B Mô Hình O2O (Gắn Kết Online Tới Offline/Ngược Lại) 10-08-2025 Việt Nam Hồ Chí Minh ý tưởng khởi nghiệp F&B ...
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/561
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

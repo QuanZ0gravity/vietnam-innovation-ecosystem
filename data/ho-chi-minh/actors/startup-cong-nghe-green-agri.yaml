@@ -11,6 +11,11 @@ website: https://greencheck.vn
 address: Chung cư An Khang, Khu đô thị An Phú An Khánh, Thủ Đức, Hồ Chí Minh
 description:
   vi: 'Hồ sơ trên HOIP: lĩnh vực môi trường; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://greencheck.vn Môi trường Mô Hình Kinh Doanh Xanh và Bền Vững 24-03-2022 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/801
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

@@ -9,6 +9,11 @@ website: https://compassvietnam.vn
 address: 49 Hàm Nghi, Phường 9, Thành phố Vũng Tàu, Tỉnh Bà Rịa - Vũng Tàu
 description:
   vi: 'Hồ sơ trên HOIP: lĩnh vực dịch vụ; thành lập năm 2021; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://compassvietnam.vn Dịch vụ Mô Hình Truyền Thống 21-05-2021 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/859
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

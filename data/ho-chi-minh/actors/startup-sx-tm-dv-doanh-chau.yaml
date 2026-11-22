@@ -9,7 +9,12 @@ sectors:
 founded: 2024
 address: 313/4 Nguyễn Duy Dương, Phường Vườn Lài, TP.HCM
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp; thành lập năm 2024; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp; thành lập năm 2024; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sản xuất TP, Nông/Lâm nghiệp Nền Tảng Thương Mại, Mô Hình Truyền Thống 26-02-2024 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/817
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

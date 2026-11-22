@@ -11,7 +11,12 @@ sectors:
 founded: 2022
 address: Khu phố 5, Phường Hắc Dịch, Thị xã Phú Mỹ
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp, cn chế biến/ chế tạo, khác; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp, chế biến, chế tạo, khác; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- CN chế biến/ chế tạo, Khác, Sản xuất TP, Nông/Lâm nghiệp Mô Hình Kinh Doanh Xanh và Bền Vững 22-11-2022 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/857
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

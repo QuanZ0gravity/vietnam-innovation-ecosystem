@@ -1,0 +1,22 @@
+id: expert-le-pham-thien-duc
+name:
+  vi: Lê Phạm Thiên Đức
+type: expert
+categories:
+- Nhà đầu tư cá nhân
+- Sản xuất TP, Nông/Lâm nghiệp
+- Giáo dục
+- Xây dựng, BĐS
+- Trung gian/môi giới
+sectors:
+- agrifood
+- edu
+- property
+description:
+  vi: 'Nhà đầu tư cá nhân trên HOIP: đã đầu tư 90 dự án, quy mô mỗi thương vụ tới 30 tỷ đồng.'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/investor/135

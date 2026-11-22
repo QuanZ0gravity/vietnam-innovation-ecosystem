@@ -9,7 +9,12 @@ sectors:
 founded: 2021
 address: 4/8 Quang Trung, phường 1, Tp.Vũng Tàu
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp; thành lập năm 2021; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp; thành lập năm 2021; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sản xuất TP, Nông/Lâm nghiệp Mô Hình Truyền Thống, Mô Hình Ngang Hàng (P2P) 06-07-2021 Việt Nam Bà Rịa - Vũng Tàu
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/846
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

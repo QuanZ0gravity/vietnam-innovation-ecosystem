@@ -9,7 +9,12 @@ sectors:
 founded: 2019
 address: Phòng 403, Số 8, ngõ 21 đường Lê Văn Lương, Phường Thanh Xuân, TP Hà Nội, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực y tế, cssk; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực y tế, CSSK; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Y tế, CSSK Nền Tảng Dịch vụ Theo Yêu Cầu 03-05-2019 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/822
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

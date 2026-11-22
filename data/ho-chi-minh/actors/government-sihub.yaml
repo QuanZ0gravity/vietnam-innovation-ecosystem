@@ -3,6 +3,11 @@ name:
   vi: SIHUB
 type: government
 founded: 2016
+description_source:
+  text: Phần mềm, CNTT, Giáo dục, Sinh học, CNSH 08-06-2016 Việt Nam Hồ Chí Minh Sihub là sáng kiến hỗ trợ KNĐMST của Sở KHCN TPHCM.
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/investor/3
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

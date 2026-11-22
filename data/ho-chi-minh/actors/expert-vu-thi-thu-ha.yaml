@@ -1,0 +1,17 @@
+id: expert-vu-thi-thu-ha
+name:
+  vi: Vũ Thị Thu Hà
+type: expert
+categories:
+- Chuyên gia
+- Phần mềm, CNTT
+sectors:
+- ai
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực phần mềm, CNTT.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/33

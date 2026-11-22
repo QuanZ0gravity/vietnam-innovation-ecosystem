@@ -9,7 +9,12 @@ sectors:
 founded: 2013
 address: Bà Đất Eco Homestay, Số nhà 200, Tổ 2, Ấp 3, Xã Trị An, Tỉnh Đồng Nai
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực hospitality, lưu trú; thành lập năm 2013; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực lưu trú, lưu trú; thành lập năm 2013; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Hospitality, lưu trú Nền Tảng Dịch vụ Theo Yêu Cầu 06-03-2013 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/804
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

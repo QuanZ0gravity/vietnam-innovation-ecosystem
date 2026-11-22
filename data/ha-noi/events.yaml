@@ -1,0 +1,25 @@
+- id: ai-cross-border-2026
+  title: "Cross-Border AI Innovation Summit 2026"
+  start: '2026-08-21'
+  end: '2026-08-22'
+  venue: "Forevermark Convention Center, Hà Nội"
+  category: ai
+  organizer: "Ecomdy Media"
+  organizer_ids: [incubator-ecomdy-ecombator]
+  url: https://ecomdymedia.com/blog/cross-border-ai-innovation-summit-2026
+  summary: "Chương trình 48 giờ xây dựng sản phẩm AI cho thương mại điện tử xuyên biên giới và thị trường toàn cầu."
+  source: https://indanang.vn/ecosystem-activities/ai-cross-border-2026
+- id: vietnam-innovation-day-2026
+  title: "Ngày Đổi mới sáng tạo Việt Nam 2026"
+  start: '2026-10-03'
+  end: '2026-10-05'
+  venue: "Trung tâm Hội nghị Quốc gia, Hà Nội"
+  category: ecosystem
+  organizer: "Trung tâm Đổi mới sáng tạo Quốc gia (NIC)"
+  organizer_ids: [government-nic]
+  url: https://innovation.gov.vn
+  recurrence: annual
+  month: 10
+  summary: "Sự kiện đổi mới sáng tạo quốc gia với các diễn đàn, 10 khu trưng bày công nghệ, triển lãm và kết nối doanh nghiệp."
+  opportunity: vietnam-innovation-day-2026
+  source: https://indanang.vn/ecosystem-activities/vietnam-innovation-day-2026

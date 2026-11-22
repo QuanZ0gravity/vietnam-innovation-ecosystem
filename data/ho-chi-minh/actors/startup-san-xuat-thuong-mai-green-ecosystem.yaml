@@ -9,7 +9,12 @@ sectors:
 founded: 2023
 address: 68, đường A2, khu tái định cư khu phố 8A, tổ 29, Phường Long Bình, Tỉnh Đồng Nai, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp; thành lập năm 2023; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp; thành lập năm 2023; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sản xuất TP, Nông/Lâm nghiệp Mô Hình Kinh Doanh Xanh và Bền Vững, Mô Hình Khác 12-10-2023 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/820
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

@@ -176,3 +176,10 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Thêm mới 228 hồ sơ, chủ yếu tại TP.HCM; 162 logo.
 - Mục "Tình hình" của TP.HCM thêm số liệu HOIP.
 - Sau đợt này: 1175 hồ sơ, TP.HCM 251.
+
+## Bổ sung HOIP, sự kiện, quyền riêng tư (22/11/2026)
+
+- Theo yêu cầu: lưu nguyên văn phần tự giới thiệu trên HOIP của 191 startup và tổ chức vào trường `description_source` (ghi nguồn, ngày truy cập, đường dẫn hồ sơ gốc), hiển thị dưới mục "Giới thiệu nguyên văn" và dùng cho tìm kiếm.
+- Thêm 40 hồ sơ chuyên gia và 1 nhà đầu tư cá nhân từ HOIP (loại mới `expert`): tên, lĩnh vực, giới thiệu nguyên văn, đường dẫn hồ sơ HOIP. Không công bố email, số điện thoại, địa chỉ cá nhân; lý do ghi ở trang Quyền riêng tư.
+- Sự kiện: 17 sự kiện 2026 tại Đà Nẵng, TP.HCM, Hà Nội (từ indanang.vn/ecosystem-activities và tin trên HOIP), 9 sự kiện thường niên có tháng dự kiến năm sau. Trang `/su-kien/` theo kiểu Luma: dòng thời gian theo ngày, lọc theo nơi và chủ đề, trang chi tiết có nút "Thêm vào lịch" (.ics). Trang thành phố có mục Sự kiện.
+- Chân trang: thêm trang Quyền riêng tư và dữ liệu cá nhân, Điều khoản sử dụng, và một dòng về quyền xem, sửa, xoá thông tin.

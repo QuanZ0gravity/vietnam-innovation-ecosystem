@@ -12,6 +12,11 @@ website: https://davenghethuat.com/
 address: 19 Bạch Đằng, Phường Bà Rịa, Thành phố Hồ Chí Minh
 description:
   vi: 'Hồ sơ trên HOIP: lĩnh vực môi trường, khác; thành lập năm 2019; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+description_source:
+  text: 'https://davenghethuat.com/ Môi trường, Khác Mô Hình Kinh Doanh Xanh và Bền Vững 18-12-2019 Việt Nam Toàn quốc Dự án của chúng tôi nhằm biến rác thải vỏ sò, ốc, những phế phẩm thường bị vứt bỏ và gây ô nhiễm môi trường, thành các sản phẩm lưu niệm và décor sang trọng. Quá trình thực hiện dự án được chia thành các bước cụ thể như sau: - Thu Gom và Phân Loại Vỏ Hải Sản - Xử Lý và Vệ Sinh - Chế Tác và Thiết Kế - Hoàn Thiện và Kiểm Tra Chất Lượng - Phân Phối và Tiếp Thị - Đánh Giá và Cải Tiến'
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/604
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

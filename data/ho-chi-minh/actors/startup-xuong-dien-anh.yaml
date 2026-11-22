@@ -9,7 +9,12 @@ sectors:
 founded: 2025
 address: TP.HCM
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực media/ entertaiment; thành lập năm 2025; giai đoạn Ý tưởng.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực truyền thông, giải trí; thành lập năm 2025; giai đoạn Ý tưởng.'
+description_source:
+  text: -- Media/ Entertaiment Nền Tảng Thương Mại 01-01-2025 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/727
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

@@ -1,0 +1,29 @@
+id: expert-tran-nhat-thong
+name:
+  vi: Trần Nhật Thông
+type: expert
+categories:
+- Chuyên gia
+- Sản xuất TP, Nông/Lâm nghiệp
+- Hospitality, lưu trú
+- Xây dựng, BĐS
+- Trung gian/môi giới
+- CN chế biến/ chế tạo
+- Dịch vụ
+sectors:
+- agrifood
+- tourism
+- property
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp, lưu trú, lưu trú, xây dựng, BĐS, trung gian/môi giới, chế biến, chế tạo, dịch vụ.
+description_source:
+  text: 'Prowtech International Vina → Doanh nghiệp được định giá 1.000 tỷ VNĐ, đồng thời nhận đầu tư chiến lược từ VGI Public Company Limited (Thái Lan) thông qua VGI Vietnam JSC. Mở rộng hệ sinh thái với các công ty thành viên: T-ICON Company Limited, Transad Vietnam JSC, Viet Media Impressive JSC.'
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/expert/171
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/171

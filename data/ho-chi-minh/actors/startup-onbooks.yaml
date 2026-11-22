@@ -11,6 +11,11 @@ website: https://onbooks.com.vn/
 address: Tòa Nhà STMORITZ, 1014 Phạm Văn Đồng, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
 description:
   vi: 'Hồ sơ trên HOIP: lĩnh vực giáo dục; thành lập năm 2015; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://onbooks.com.vn/ Giáo dục Nền Tảng Dịch vụ Theo Yêu Cầu 01-01-2015 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/815
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

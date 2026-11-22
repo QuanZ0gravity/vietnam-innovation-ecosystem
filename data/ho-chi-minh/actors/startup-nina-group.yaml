@@ -11,7 +11,12 @@ sectors:
 founded: 2025
 address: 37 Bế Văn Cấm, Tân Hưng, TP.HCM
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, media/ entertaiment; thành lập năm 2025; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT, truyền thông, giải trí; thành lập năm 2025; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phần mềm, CNTT, Media/ Entertaiment Nền Tảng Dịch vụ Theo Yêu Cầu 28-04-2025 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/788
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

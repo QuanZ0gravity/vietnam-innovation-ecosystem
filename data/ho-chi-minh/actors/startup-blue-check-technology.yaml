@@ -9,7 +9,12 @@ sectors:
 founded: 2024
 address: Tầng 3, 202 Lê Lai, phường Bến Thành, Tp. Hồ Chí Minh
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2024; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2024; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phần mềm, CNTT Nền Tảng Thương Mại 16-10-2024 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/799
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

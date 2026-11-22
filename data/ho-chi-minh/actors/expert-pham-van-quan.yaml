@@ -1,0 +1,24 @@
+id: expert-pham-van-quan
+name:
+  vi: Phạm Văn Quân
+type: expert
+categories:
+- Chuyên gia
+- Phần mềm, CNTT
+- Dịch vụ
+- Khác
+sectors:
+- ai
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực phần mềm, CNTT, dịch vụ, khác.
+description_source:
+  text: Chuyên gia tư vấn Chuyển đổi số Quốc gia, Chuyên gia tư vấn cung cấp giải pháp Truy xuất nguồn gốc sản phẩm, hàng hóa
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/expert/165
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/165

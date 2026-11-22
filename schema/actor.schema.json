@@ -48,7 +48,8 @@
         "support_org",
         "international",
         "community",
-        "media"
+        "media",
+        "expert"
       ]
     },
     "categories": {
@@ -211,6 +212,29 @@
         ]
       },
       "description": "Tối đa 3 lĩnh vực, theo schema/sectors.yaml"
+    },
+    "description_source": {
+      "type": "object",
+      "required": [
+        "text",
+        "source"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "accessed": {
+          "type": "string"
+        }
+      },
+      "description": "Phần tự giới thiệu nguyên văn từ nguồn bên thứ ba (ví dụ HOIP), giữ để tra cứu và lọc; không thuộc giấy phép CC BY 4.0 của dữ liệu."
     }
   }
 }

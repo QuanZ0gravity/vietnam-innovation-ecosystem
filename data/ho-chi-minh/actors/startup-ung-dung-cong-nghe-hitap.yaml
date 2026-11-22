@@ -9,7 +9,12 @@ sectors:
 founded: 2022
 address: Số 161 Đường Nguyễn Thị Minh Khai, Phường 8, Thành phố Vũng Tàu
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2022; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phần mềm, CNTT Nền Tảng Dịch vụ Theo Yêu Cầu 15-08-2022 Việt Nam Bà Rịa - Vũng Tàu
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/863
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

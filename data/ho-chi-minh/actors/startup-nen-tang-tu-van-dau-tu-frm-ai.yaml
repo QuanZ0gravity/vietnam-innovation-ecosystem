@@ -9,7 +9,12 @@ sectors:
 founded: 2025
 address: 179 Trần Xuân Soạn, Phường Tân Thuận, Thành phố Hồ Chí Minh
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2025; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2025; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+description_source:
+  text: -- Phần mềm, CNTT Subcription – SaaS, Mô Hình Kinh Doanh Xanh và Bền Vững 06-08-2025 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/603
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

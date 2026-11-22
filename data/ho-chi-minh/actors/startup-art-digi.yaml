@@ -9,7 +9,12 @@ sectors:
 founded: 2025
 address: Lâm Đồng
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2025; giai đoạn Ý tưởng.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2025; giai đoạn Ý tưởng.'
+description_source:
+  text: -- Phần mềm, CNTT Nền Tảng Dịch vụ Theo Yêu Cầu 01-01-2025 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/678
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

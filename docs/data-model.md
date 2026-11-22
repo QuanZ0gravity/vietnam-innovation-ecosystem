@@ -78,3 +78,15 @@ Tệp `logos/<id>.webp`, 128 × 128 px, nền trong suốt. Logo là nhãn hiệ
 ## Lĩnh vực (`sectors`)
 
 Tối đa 3 mã trong `schema/sectors.yaml`: `ai`, `fintech`, `web3`, `commerce`, `agrifood`, `health`, `edu`, `tourism`, `climate`, `deeptech`, `mobility`, `marketing`, `property`. Tổ chức tự chọn khi gửi biểu mẫu hoặc sửa hồ sơ. 468 hồ sơ hiện có được gán gợi ý ban đầu bằng `tools/suggest_sectors.py` (theo từ khóa trong phân loại và mô tả); đây chỉ là điểm khởi đầu, cần tổ chức xác nhận.
+
+## Sự kiện (`data/<địa phương>/events.yaml`)
+
+Mỗi sự kiện: `id`, `title`, `start`, `end` (YYYY-MM-DD), `venue`, `category` (capital, web3, ai, deeptech, founders, ecosystem, health), `organizer`, `organizer_ids` (tuỳ chọn), `url` (trang chính thức), `recurrence: annual` và `month` nếu diễn ra hằng năm, `summary`, `opportunity` (id cơ hội liên quan, tuỳ chọn), `source`. Trang `/su-kien/` hiển thị theo ngày (Sắp tới, Lịch thường niên, Đã qua); mỗi sự kiện có trang riêng và tệp lịch `.ics`.
+
+## Chuyên gia (`type: expert`)
+
+Hồ sơ cá nhân tự đăng ký công khai trên nền tảng của chính quyền (hiện là HOIP). Ghi tên, lĩnh vực, phần tự giới thiệu và đường dẫn hồ sơ gốc. Không ghi email, số điện thoại, địa chỉ cá nhân.
+
+## Giới thiệu nguyên văn (`description_source`)
+
+`text`, `source`, `url`, `accessed`: phần tự giới thiệu nguyên văn lấy từ nguồn bên thứ ba, để tra cứu và lọc. Không thuộc CC BY 4.0. Trường `description` vẫn là mô tả ngắn của bản đồ.

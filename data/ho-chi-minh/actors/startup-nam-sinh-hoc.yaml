@@ -9,7 +9,12 @@ sectors:
 founded: 2018
 address: Thôn Tân Bình, Châu Đức, Bà Rịa - Vũng Tàu
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sinh học, cnsh; thành lập năm 2018; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sinh học, CNSH; thành lập năm 2018; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sinh học, CNSH Mô Hình Khác 05-07-2018 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/864
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

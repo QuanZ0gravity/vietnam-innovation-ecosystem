@@ -1,0 +1,22 @@
+id: expert-tran-ninh-dong
+name:
+  vi: Trần Ninh Đông
+type: expert
+categories:
+- Chuyên gia
+- CN chế biến/ chế tạo
+- Dịch vụ
+- Khác
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực chế biến, chế tạo, dịch vụ, khác.
+description_source:
+  text: Kinh tế, Hành chính, Luật
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/expert/41
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/41

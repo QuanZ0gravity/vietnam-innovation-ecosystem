@@ -1,0 +1,84 @@
+- id: entrepreneurship-bootcamp-2026
+  title: "Entrepreneurship Bootcamp 2026"
+  start: '2026-04-13'
+  end: '2026-04-24'
+  venue: "SIHUB, 123 Trương Định, phường Xuân Hòa, TP.HCM"
+  category: founders
+  organizer: "Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)"
+  organizer_ids: [government-sihub]
+  recurrence: annual
+  month: 4
+  summary: "Khóa huấn luyện tập trung 10 ngày bằng tiếng Anh với giảng viên Ivey Business School, từ học khởi nghiệp đến năng lực ra quyết định thực tế."
+  source: https://hoip.sihub.gov.vn/
+- id: conviction-2026
+  title: "Conviction 2026 – Diễn đàn Kinh tế tài sản số và AI"
+  start: '2026-08-14'
+  end: '2026-08-15'
+  venue: "Thiskyhall Sala, TP.HCM"
+  category: web3
+  organizer: "Conviction"
+  url: https://www.conviction.vn
+  summary: "Diễn đàn quốc gia về tài sản số, blockchain và AI, kèm các sự kiện bên lề như HSC Conference và Builders' Breakfast."
+  source: https://indanang.vn/ecosystem-activities/conviction-2026
+- id: jdi-tfoai4-2026
+  title: "JDI TFOAI4 – The Future of AI, Chapter 4"
+  start: '2026-08-18'
+  end: '2026-08-18'
+  venue: "TP.HCM"
+  category: ai
+  organizer: "JDI"
+  organizer_ids: [international-jdi]
+  summary: "Hội thảo về AI ứng dụng, hạ tầng, quản trị AI và đầu tư, kèm gọi vốn startup và triển lãm."
+  opportunity: jdi-tfoai4-2026
+  source: https://indanang.vn/ecosystem-activities/jdi-tfoai4
+- id: innoex-2026
+  title: "InnoEx 2026"
+  start: '2026-08-19'
+  end: '2026-08-20'
+  venue: "Thiskyhall Sala, TP.HCM"
+  category: founders
+  organizer: "InnoEx"
+  organizer_ids: [support-org-innoex]
+  url: https://innoex.vn
+  recurrence: annual
+  month: 8
+  summary: "Diễn đàn đổi mới sáng tạo doanh nghiệp và khởi nghiệp lớn nhất Việt Nam, gồm chung kết Startup Wheel, QVIC và Green Innovation Fellowship."
+  opportunity: innoex-2026
+  source: https://indanang.vn/ecosystem-activities/innoex-2026
+- id: startup-wheel-2026
+  title: "Chung kết Startup Wheel 2026"
+  start: '2026-08-19'
+  end: '2026-08-20'
+  venue: "TP.HCM"
+  category: founders
+  organizer: "Trung tâm Hỗ trợ Thanh niên Khởi nghiệp (BSSC)"
+  organizer_ids: [support-org-bssc]
+  url: https://startupwheel.vn
+  recurrence: annual
+  month: 8
+  summary: "Cuộc thi khởi nghiệp quốc tế thường niên do BSSC tổ chức, chung kết trong khuôn khổ InnoEx."
+  opportunity: startup-wheel-2026
+  source: https://indanang.vn/ecosystem-activities/startup-wheel-2026
+- id: techmart-2026-hcm
+  title: "Techmart 2026 – Công nghệ sản xuất thông minh và tự động hóa cho doanh nghiệp vừa và nhỏ"
+  start: '2026-10-29'
+  end: '2026-10-30'
+  venue: "SIHUB, 28 Huỳnh Văn Nghệ, phường Phú Lợi, TP.HCM"
+  category: deeptech
+  organizer: "Sở Khoa học và Công nghệ TP.HCM, SIHUB"
+  organizer_ids: [government-so-khcn-tp-hcm, government-sihub]
+  recurrence: annual
+  month: 10
+  summary: "Chợ công nghệ và thiết bị với 50 gian hàng, hơn 100 công nghệ, 15 chuyên đề hội thảo và tư vấn chuyên gia cho doanh nghiệp vừa và nhỏ."
+  source: https://hoip.sihub.gov.vn/
+- id: robotics-toan-quoc-2026
+  title: "Chung kết Cuộc thi Sáng tạo Robotics toàn quốc lần thứ VI"
+  start: '2026-11-01'
+  end: '2026-11-01'
+  venue: "Trường Đại học Tôn Đức Thắng, TP.HCM"
+  category: deeptech
+  organizer: "Trung ương Đoàn TNCS Hồ Chí Minh"
+  recurrence: annual
+  month: 11
+  summary: "Vòng chung kết với 276 đội, 517 thí sinh từ 19 tỉnh, thành phố."
+  source: https://hoip.sihub.gov.vn/

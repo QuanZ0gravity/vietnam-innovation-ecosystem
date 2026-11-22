@@ -9,7 +9,12 @@ sectors:
 founded: 2012
 address: 59/12 Đinh Bộ Lĩnh, Phường Bình Thạnh, Thành phố Hồ Chí Minh
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp; thành lập năm 2012; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp; thành lập năm 2012; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sản xuất TP, Nông/Lâm nghiệp Nền Tảng Thương Mại 10-10-2012 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/770
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

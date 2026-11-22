@@ -17,7 +17,7 @@
     a.download = "he-sinh-thai-khoi-nghiep-" + new Date().toISOString().slice(0, 10) + ".csv"; document.body.append(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
-  var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator"];
+  var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator", "expert"];
   var REGIONS = ["da-nang", "former-quang-nam", "ha-noi", "ho-chi-minh", "hai-phong", "viet-nam", "quoc-te"];
   var VERS = ["partner_verified", "org_confirmed", "source_checked", "unverified"];
   var STATUSES = ["active", "inactive", "unknown"];
@@ -45,7 +45,7 @@
     var s = p.toString(); history.replaceState(null, "", location.pathname + (s ? "?" + s : ""));
   }
   function hay(a) {
-    if (!a._h) a._h = norm([a.name.vi, a.name.en, (a.alt_names || []).join(" "), (a.categories || []).join(" "), a.description && a.description.vi, a.website].join(" "));
+    if (!a._h) a._h = norm([a.name.vi, a.name.en, (a.alt_names || []).join(" "), (a.categories || []).join(" "), a.description && a.description.vi, a.description_source && a.description_source.text, a.website].join(" "));
     return a._h;
   }
   function has(a, h) { return h === "logo" ? !!a.logo : h === "description" ? !!(a.description && a.description.vi) : !!a[h]; }

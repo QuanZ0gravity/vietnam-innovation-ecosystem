@@ -10,7 +10,12 @@ sectors:
 founded: 2009
 address: 100 Trần Lựu, Phường An Phú, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực media/ entertaiment, khác; thành lập năm 2009; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực truyền thông, giải trí, khác; thành lập năm 2009; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Khác, Media/ Entertaiment Mô Hình Khác 23-04-2009 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/687
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

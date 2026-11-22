@@ -1,0 +1,81 @@
+# Sự kiện hệ sinh thái tại Đà Nẵng. recurrence: annual = thường niên; month = tháng thường diễn ra.
+- id: davas-2026
+  title: "DAVAS 2026 – Diễn đàn Đầu tư mạo hiểm và Đầu tư thiên thần Đà Nẵng"
+  start: '2026-05-25'
+  end: '2026-05-27'
+  venue: "Đà Nẵng"
+  category: capital
+  organizer: "Sở Khoa học và Công nghệ Đà Nẵng"
+  organizer_ids: [government-so-khoa-hoc-va-cong-nghe]
+  url: https://davas.vc
+  recurrence: annual
+  month: 5
+  summary: "Diễn đàn đầu tư kết nối startup với quỹ đầu tư mạo hiểm và nhà đầu tư thiên thần trong và ngoài nước, kèm gọi vốn, kết nối 1-1 và triển lãm."
+  opportunity: davas-2026
+  source: https://indanang.vn/ecosystem-activities/davas-2026
+- id: web3-builders-summit-2026
+  title: "Web3 Builders' Summit LFBUIDL 2026"
+  start: '2026-05-24'
+  end: '2026-05-27'
+  venue: "Đà Nẵng"
+  category: web3
+  organizer: "Web3 Builders' Summit"
+  url: https://www.web3builderssummit.com
+  recurrence: annual
+  month: 5
+  summary: "Chương trình dành cho người xây dựng sản phẩm Web3, diễn ra cùng DAVAS, kết nối cộng đồng phát triển, chính sách và vốn."
+  source: https://indanang.vn/ecosystem-activities/web3-builders-summit-2026
+- id: dbftw-2026
+  title: "DBFTW 2026 – Đối thoại chính sách cấp cao và Diễn đàn Tài chính Việt Nam"
+  start: '2026-07-07'
+  end: '2026-07-12'
+  venue: "Đà Nẵng"
+  category: capital
+  organizer: "Vietnam Policy Forum"
+  url: https://vietnampolicyforum.com
+  summary: "Chuỗi đối thoại chính sách về mô hình tăng trưởng mới, tài chính và công nghệ, gắn với định hướng trung tâm tài chính quốc tế tại Đà Nẵng."
+  source: https://indanang.vn/ecosystem-activities/dbftw-2026
+- id: surf-2026
+  title: "SURF Đà Nẵng 2026 – Ngày hội khởi nghiệp đổi mới sáng tạo"
+  start: '2026-08-18'
+  end: '2026-08-19'
+  venue: "Đà Nẵng"
+  category: ecosystem
+  organizer: "Sở Khoa học và Công nghệ Đà Nẵng"
+  organizer_ids: [government-so-khoa-hoc-va-cong-nghe]
+  url: https://surfdanang.zone
+  recurrence: annual
+  month: 8
+  summary: "Ngày hội khởi nghiệp thường niên của Đà Nẵng: gọi vốn, triển lãm startup, diễn đàn đổi mới sáng tạo và chính sách thử nghiệm có kiểm soát."
+  opportunity: surf-2026
+  source: https://indanang.vn/ecosystem-activities/surf-2026
+- id: tecx-2026-danang
+  title: "TECx 2026 Đà Nẵng – Công nghệ thể thao"
+  start: '2026-09-06'
+  end: '2026-09-07'
+  venue: "Wyndham Golden Bay, Đà Nẵng"
+  category: deeptech
+  organizer: "TECx"
+  summary: "Diễn đàn công nghệ thể thao và hiệu suất con người, kết nối startup, nhà đầu tư và doanh nghiệp trong ngành."
+  opportunity: tecx-2026-da-nang
+  source: https://indanang.vn/ecosystem-activities/tecx-2026-danang
+- id: founder-villages-2026
+  title: "Founder Villages – Khóa 01"
+  start: '2026-09-25'
+  end: '2026-09-27'
+  venue: "Suối Lương, Hải Vân Park, Đà Nẵng"
+  category: founders
+  organizer: "Founder Villages"
+  url: https://foundervillages.com
+  summary: "Ba ngày cùng ở, cùng làm sản phẩm cho 10 người sáng lập, kết thúc bằng phần trình bày sản phẩm."
+  source: https://indanang.vn/ecosystem-activities/founder-villages-2026
+- id: da-nang-longevity-summit-2026
+  title: "Da Nang Longevity Summit & Exhibition 2026"
+  start: '2026-11-13'
+  end: '2026-11-14'
+  venue: "Furama Resort và Fusion, Đà Nẵng"
+  category: health
+  organizer: "Da Nang Global Business Summit"
+  url: https://dnlongevity.dnglobalbusinesssummit.com/
+  summary: "Hội nghị và triển lãm quốc tế về y học trường thọ, lão hóa khỏe mạnh, kết nối khoa học, doanh nghiệp và đầu tư."
+  source: https://indanang.vn/ecosystem-activities/da-nang-longevity-summit-2026

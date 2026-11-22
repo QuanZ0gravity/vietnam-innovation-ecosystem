@@ -11,7 +11,12 @@ sectors:
 founded: 2025
 address: Số 669 Đỗ Mười (đường Quốc lộ 1K cũ), Khu phố 3, Phường Linh Xuân, TP. Thủ Đức, TP. Hồ Chí Minh.
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, dịch vụ, khác; thành lập năm 2025; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT, dịch vụ, khác; thành lập năm 2025; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+description_source:
+  text: -- Phần mềm, CNTT, Dịch vụ, Khác Nền Tảng Dịch vụ Theo Yêu Cầu 01-01-2025 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/763
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

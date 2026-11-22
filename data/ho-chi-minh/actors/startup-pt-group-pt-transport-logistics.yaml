@@ -9,7 +9,12 @@ sectors:
 founded: 2011
 address: Số 5A Đường số 04, Phường Gò Vấp, TP. Hồ Chí Minh, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phương tiện vt - logistic; thành lập năm 2011; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phương tiện vận tải, logistics; thành lập năm 2011; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phương tiện VT - logistic Mô Hình Truyền Thống 22-09-2011 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/798
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

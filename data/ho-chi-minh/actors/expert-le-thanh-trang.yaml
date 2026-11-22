@@ -1,0 +1,19 @@
+id: expert-le-thanh-trang
+name:
+  vi: Lê Thanh Trang
+type: expert
+categories:
+- Chuyên gia
+- Môi trường
+- Trung gian/môi giới
+- Dịch vụ
+sectors:
+- climate
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực môi trường, trung gian/môi giới, dịch vụ.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/32

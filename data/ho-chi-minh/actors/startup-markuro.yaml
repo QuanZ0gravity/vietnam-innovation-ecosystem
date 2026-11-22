@@ -9,7 +9,12 @@ sectors:
 founded: 2025
 address: Phòng 5.09, Lầu 5, Toà nhà ST Moritz, Số 1014 Phạm Văn Đồng, Phường Hiệp Bình, Tp. Hồ Chí Minh, Việt Nam.
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2025; giai đoạn Ý tưởng.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2025; giai đoạn Ý tưởng.'
+description_source:
+  text: -- Phần mềm, CNTT Subcription – SaaS 25-06-2025 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/573
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

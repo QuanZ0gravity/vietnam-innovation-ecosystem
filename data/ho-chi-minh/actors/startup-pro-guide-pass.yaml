@@ -9,7 +9,12 @@ sectors:
 founded: 2013
 address: 138 Trần Lựu, Phường Bình Trưng, TP Hồ Chí Minh, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2013; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2013; giai đoạn Sản phẩm / Dịch vụ Sơ khai (MVP).'
+description_source:
+  text: -- Phần mềm, CNTT Mô Hình Blockchain và Tiền Kỹ Thuật Số 19-03-2013 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/756
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

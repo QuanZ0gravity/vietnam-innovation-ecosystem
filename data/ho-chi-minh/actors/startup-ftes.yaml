@@ -12,7 +12,12 @@ founded: 2025
 website: https://ftes.vn
 address: 5A Đường số 5, Phường Linh Xuân, Thành Phố Hồ Chí Minh
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, giáo dục; thành lập năm 2025; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT, giáo dục; thành lập năm 2025; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://ftes.vn Giáo dục, Phần mềm, CNTT Freemium 26-08-2025 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/582
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

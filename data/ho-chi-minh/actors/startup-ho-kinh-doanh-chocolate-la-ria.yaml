@@ -9,7 +9,12 @@ sectors:
 founded: 2009
 address: Số 188 Đường số 6, Tổ 5, Trung Sơn, Xã Suối Nghệ, Huyện Châu Đức, Tỉnh Bà Rịa - Vũng Tàu, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp; thành lập năm 2009; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp; thành lập năm 2009; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Sản xuất TP, Nông/Lâm nghiệp Nền Tảng Dịch vụ Theo Yêu Cầu 14-08-2009 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/865
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

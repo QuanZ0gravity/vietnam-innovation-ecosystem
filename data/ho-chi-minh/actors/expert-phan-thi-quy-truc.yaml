@@ -1,0 +1,20 @@
+id: expert-phan-thi-quy-truc
+name:
+  vi: Phan Thị Qúy Trúc
+type: expert
+categories:
+- Chuyên gia
+- Khác
+description:
+  vi: Chuyên gia trên HOIP, lĩnh vực khác.
+description_source:
+  text: Phó Phòng Quản lý Công nghệ - Sở Khoa học và Công nghệ TPHCM
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/expert/35
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+source_url: https://hoip.sihub.gov.vn/expert/35

@@ -10,7 +10,12 @@ sectors:
 founded: 2020
 address: Tầng 3 Tòa nhà Giao Châu, Số 102A Lê Hồng Phong, phường 4, TP.Vũng Tàu
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, dịch vụ; thành lập năm 2020; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT, dịch vụ; thành lập năm 2020; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phần mềm, CNTT, Dịch vụ Nền Tảng Dịch vụ Theo Yêu Cầu 27-03-2020 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/843
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

@@ -12,7 +12,12 @@ sectors:
 founded: 2025
 address: 297/26 Lý Thường Kiệt
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt, media/ entertaiment, dịch vụ; thành lập năm 2025; giai đoạn Ý tưởng.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT, truyền thông, giải trí, dịch vụ; thành lập năm 2025; giai đoạn Ý tưởng.'
+description_source:
+  text: -- Phần mềm, CNTT, Dịch vụ, Media/ Entertaiment Subcription – SaaS 01-09-2025 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/590
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

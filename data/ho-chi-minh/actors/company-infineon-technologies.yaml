@@ -10,7 +10,12 @@ sectors:
 founded: 2019
 address: Tầng 14, Tòa nhà Peakview, số 36 phố Hoàng Cầu, Phường Ô Chợ Dừa, Quận Đống Đa, Thành phố Hà Nội, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực năng lượng, cn chế biến/ chế tạo; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực năng lượng, chế biến, chế tạo; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- CN chế biến/ chế tạo, Năng lượng Mô Hình Khác 12-04-2019 Việt Nam Hà Nội
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/851
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

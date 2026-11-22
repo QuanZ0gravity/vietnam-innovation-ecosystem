@@ -11,7 +11,12 @@ sectors:
 founded: 2018
 address: Landmark 4, Vinhomes Central Park, Phường Thạnh Mỹ Tây, HCMC.
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực xây dựng, bđs, media/ entertaiment; thành lập năm 2018; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực xây dựng, BĐS, truyền thông, giải trí; thành lập năm 2018; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Xây dựng, BĐS, Media/ Entertaiment Nền Tảng Dịch vụ Theo Yêu Cầu, Mô Hình Khác 06-06-2018 Việt Nam Toàn quốc
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/836
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

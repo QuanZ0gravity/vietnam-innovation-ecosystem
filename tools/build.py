@@ -21,7 +21,7 @@ def fmt_date(s):
     return f"{s[8:10]}/{s[5:7]}/{s[:4]}" if len(s) >= 10 and s[4] == "-" else s
 
 TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university",
-         "government", "company", "international", "community", "media", "creator"]
+         "government", "company", "international", "community", "media", "creator", "expert"]
 VER_ORDER = {"partner_verified": 0, "org_confirmed": 1, "source_checked": 2, "unverified": 3}
 VER_CLASS = {"unverified": "l0", "source_checked": "l1", "org_confirmed": "l2", "partner_verified": "l3"}
 
@@ -98,7 +98,7 @@ policies.sort(key=lambda x: str(x.get("issued") or ""), reverse=True)
 
 # ---------- khung trang ----------
 NAV = [("dir", "danh-ba/", "nav_dir"),
-       ("cities", "thanh-pho/", "nav_cities"), ("sectors", "linh-vuc/", "nav_sectors"), ("opps", "co-hoi/", "nav_opps"), ("policy", "chinh-sach/", "nav_policy"), ("data", "du-lieu/", "nav_data")]
+       ("cities", "thanh-pho/", "nav_cities"), ("sectors", "linh-vuc/", "nav_sectors"), ("opps", "co-hoi/", "nav_opps"), ("events", "su-kien/", "nav_events"), ("policy", "chinh-sach/", "nav_policy"), ("data", "du-lieu/", "nav_data")]
 CUR = ' aria-current="page"'
 LEAF = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
         '<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>')
@@ -139,7 +139,8 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav></div></footer>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
+<p class="foot-legal small"><span data-vi="Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích." data-en="Personal data on this site is processed under Vietnamese personal data protection law. You may view, correct, hide or delete information about yourself. No tracking cookies or analytics.">Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích.</span> <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi yêu cầu" data-en="Send a request">Gửi yêu cầu</a></p></div></footer>
 </body>
 </html>
 """
@@ -362,7 +363,7 @@ dir_body = f"""
 write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["map.js", "directory.js"], head=LEAF, desc=f"Danh bạ {len(actors)} startup, quỹ đầu tư, vườn ươm, trường, cơ quan trong hệ sinh thái khởi nghiệp Việt Nam. Lọc theo loại, lĩnh vực, địa phương; xem bản đồ; tải CSV miễn phí."))
 
 # ---------- trang từng tác nhân ----------
-VIE_TYPE = {"startup": "Startup", "fund": "Quỹ đầu tư", "incubator": "Vườn ươm", "accelerator": "Chương trình tăng tốc", "space": "Không gian đổi mới sáng tạo", "support_org": "Tổ chức hỗ trợ khởi nghiệp", "university": "Trường, viện", "government": "Cơ quan nhà nước", "company": "Doanh nghiệp", "international": "Đối tác quốc tế", "community": "Cộng đồng", "media": "Truyền thông", "creator": "Dự án sáng tạo"}
+VIE_TYPE = {"expert": "Chuyên gia", "startup": "Startup", "fund": "Quỹ đầu tư", "incubator": "Vườn ươm", "accelerator": "Chương trình tăng tốc", "space": "Không gian đổi mới sáng tạo", "support_org": "Tổ chức hỗ trợ khởi nghiệp", "university": "Trường, viện", "government": "Cơ quan nhà nước", "company": "Doanh nghiệp", "international": "Đối tác quốc tế", "community": "Cộng đồng", "media": "Truyền thông", "creator": "Dự án sáng tạo"}
 REGION_VI = {"da-nang": "Đà Nẵng", "former-quang-nam": "Khu vực Quảng Nam cũ", "ha-noi": "Hà Nội", "ho-chi-minh": "TP. Hồ Chí Minh",
              "hai-phong": "Hải Phòng", "viet-nam": "Việt Nam", "quoc-te": "Quốc tế"}
 SECT_VI = {k: vi for k, vi, _, _ in SECTORS}
@@ -469,6 +470,11 @@ for a in actors:
     src_html = e(src) + (f'<br><a href="{e(a["source_url"])}" rel="noopener" class="small">{e(a["source_url"])}</a>' if a.get("source_url") else "")
     issue_q = urllib.parse.urlencode({"template": "them-hoac-sua-ho-so.yml", "title": f"[Hồ sơ] {name}",
                                       "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
+    ds = a.get("description_source") or {}
+    src_html = ""
+    if ds.get("text"):
+        src_html = (f'<div class="srcdesc"><p class="small muted"><span data-vi="Giới thiệu nguyên văn" data-en="Self-description (verbatim)">Giới thiệu nguyên văn</span> · '
+                    f'<a href="{e(ds.get("url") or "")}" rel="noopener">{e(ds.get("source"))}</a></p><blockquote>{e(ds["text"])}</blockquote></div>')
     linked = set(related.get(aid, [])) | {r["to"] for r in relations if r["from"] == aid} | {r["from"] for r in relations if r["to"] == aid}
     sim_html = ""
     sec0 = (a.get("sectors") or [None])[0]
@@ -483,7 +489,7 @@ for a in actors:
         rv = REGION_VI.get(a["region"], a["region"])
         sim_html += (f'<div class="section"><h2 data-vi="Cùng địa phương: {e(rv)}" data-en="Same area: {e(rv)}">Cùng địa phương: {e(rv)}</h2>'
                      f'{mini_cards(xs)}<p class="small" style="margin-top:10px"><a href="{dir_link(type=a["type"], region=a["region"])}" data-vi="Xem tất cả" data-en="See all">Xem tất cả</a></p></div>')
-    ld = {"@context": "https://schema.org", "@type": "EducationalOrganization" if a["type"] == "university" else "GovernmentOrganization" if a["type"] == "government" else "Organization",
+    ld = {"@context": "https://schema.org", "@type": "Person" if a["type"] == "expert" else "EducationalOrganization" if a["type"] == "university" else "GovernmentOrganization" if a["type"] == "government" else "Organization",
           "name": name, "url": f"{SITE_URL}/a/{aid}/"}
     if (a.get("description") or {}).get("vi"): ld["description"] = a["description"]["vi"]
     if a.get("logo"): ld["logo"] = f"{SITE_URL}/{a['logo']}"
@@ -504,7 +510,7 @@ for a in actors:
 <p>{type_tag(a["type"])}</p>
 {logo_img(a, 72, "lg alogo")}<h1 style="margin-top:8px">{e(name)}</h1>
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
-{desc_html}
+{desc_html}{src_html}
 <dl class="facts">{facts_html}</dl>
 {rel_html}{opp_html}{sim_html}{men_html}
 </article>
@@ -571,7 +577,6 @@ write("co-hoi/index.html", page("Cơ hội", f"""
 <select id="otype"><option value="" data-vi="Tất cả" data-en="All">Tất cả</option>{type_opts}</select>
 <a class="btn primary" href="https://github.com/{REPO}/edit/main/data/da-nang/opportunities.yaml" data-vi="Thêm cơ hội" data-en="Add an opportunity">Thêm cơ hội</a></div></div>
 <div class="wrap" style="padding-bottom:72px">{blocks}{ch_html}</div>{opp_script}""", "opps", desc=f"{len(opps)} cơ hội gọi vốn, cuộc thi, demo day, chương trình ươm tạo và kết nối khách hàng cho startup Việt Nam, kèm hạn nộp, quyền lợi và kết quả."))
-write("su-kien/index.html", page("Cơ hội", f'<div class="wrap page-head"><h1>Trang đã chuyển</h1><p class="lead">Mục sự kiện nay là <a href="{SITE_ROOT}co-hoi/">Cơ hội</a>.</p></div>', head=f'<meta http-equiv="refresh" content="0; url={SITE_ROOT}co-hoi/">'))
 
 
 # ---------- thành phố ----------
@@ -680,6 +685,17 @@ def funding_chart(fund, deals, title=""):
         g += f'<text x="{x:.1f}" y="{H-12}" class="ax" text-anchor="middle">{y}</text>'
     return f'<figure class="chart"><svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(title)}">{g}</svg></figure>'
 
+CITY_EVENTS = collections.defaultdict(list)
+for _f in sorted(glob.glob(os.path.join(ROOT, "data", "*", "events.yaml"))):
+    for _ev in yaml.safe_load(open(_f, encoding="utf-8")) or []:
+        CITY_EVENTS[os.path.basename(os.path.dirname(_f))].append(_ev)
+def city_events_html(regs):
+    xs = sorted([x for r in regs for x in CITY_EVENTS.get(r, [])], key=lambda x: str(x["start"]))
+    if not xs: return '<p class="muted small" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
+    rows = "".join(f'<li><a href="{SITE_ROOT}su-kien/{x["id"]}/"><b>{e(x["title"])}</b></a> <span class="muted small">{e(fmt_date(x["start"]))}'
+                   + (" · thường niên" if x.get("recurrence") == "annual" else "") + f' · {e(x.get("venue",""))}</span></li>' for x in xs)
+    return f'<ul class="list-plain">{rows}</ul><p class="small" style="margin-top:10px"><a href="{SITE_ROOT}su-kien/" data-vi="Tất cả sự kiện" data-en="All events">Tất cả sự kiện</a></p>'
+
 if BENCH:
     co = BENCH["country"]
     kp = "".join([kpi("Hạng thế giới", "Global rank", f'#{co["global_rank"]} {chg(co["rank_change"])}'),
@@ -744,7 +760,7 @@ if BENCH:
 <h1>{e(c["name"])}</h1>
 <p class="lead" data-vi="Hệ sinh thái khởi nghiệp {e(c['name'])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội." data-en="The {e(c['name'])} startup ecosystem: ranking, industries, funding, actors and opportunities.">Hệ sinh thái khởi nghiệp {e(c["name"])}: xếp hạng, ngành, vốn, danh bạ tác nhân và cơ hội.</p></div>
 <div class="wrap" style="padding-bottom:72px">
-<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
+<nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#su-kien" data-vi="Sự kiện" data-en="Events">Sự kiện</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(c.get("insights"))}
 <h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
@@ -764,6 +780,7 @@ if BENCH:
 <h3 style="margin-top:20px" data-vi="Trường, viện" data-en="Universities">Trường, viện</h3>{lst("university", 12)}</div></div></section>
 <section id="ban-do" class="sec"><h2 data-vi="Bản đồ" data-en="Map">Bản đồ</h2><div class="mapbox" id="citymap" data-ids="{",".join(a["id"] for a in acts)}"></div><p class="small muted" id="citymapnote" style="margin-top:8px"></p>
 <p class="small"><a href="{dir_link(region=",".join(regs), view="map")}" data-vi="Mở bản đồ trong danh bạ để lọc thêm" data-en="Open the map in the directory to filter further">Mở bản đồ trong danh bạ để lọc thêm</a></p></section>
+<section id="su-kien" class="sec"><h2 data-vi="Sự kiện" data-en="Events">Sự kiện</h2>{city_events_html(regs)}</section>
 <section id="co-hoi" class="sec"><h2 data-vi="Cơ hội" data-en="Opportunities">Cơ hội</h2><div class="opp-list">{opp_html}</div>
 <p class="small" style="margin-top:12px"><a href="{SITE_ROOT}co-hoi/" data-vi="Tất cả cơ hội" data-en="All opportunities">Tất cả cơ hội</a></p></section>
 <section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
@@ -917,6 +934,7 @@ TYPE_PAGES = [
     ("co-quan-nha-nuoc", ["government"], "Cơ quan nhà nước", "Government bodies", "Cơ quan quản lý, đơn vị sự nghiệp và trung tâm đổi mới sáng tạo của nhà nước.", "Public agencies, public service units and state innovation centres."),
     ("doanh-nghiep", ["company"], "Doanh nghiệp", "Companies", "Doanh nghiệp công nghệ, doanh nghiệp lớn và đối tác thương mại làm việc với startup.", "Technology firms, corporates and commercial partners working with startups."),
     ("doi-tac-quoc-te", ["international"], "Đối tác quốc tế", "International partners", "Tổ chức quốc tế, cơ quan phát triển và đối tác nước ngoài hoạt động trong hệ sinh thái Việt Nam.", "International organisations, development agencies and foreign partners active in Vietnam."),
+    ("chuyen-gia", ["expert"], "Chuyên gia, nhà đầu tư cá nhân", "Experts and angel investors", "Chuyên gia tư vấn và nhà đầu tư cá nhân đã tự đăng ký hồ sơ trên nền tảng của chính quyền (HOIP).", "Advisers and angel investors self-registered on the city government platform (HOIP)."),
     ("du-an-sang-tao", ["creator"], "Dự án sáng tạo", "Creative projects", "Dự án sáng tạo cộng đồng, chủ yếu từ chương trình Bản lĩnh xứ Quảng.", "Community creative projects, mostly from the Ban linh xu Quang programme."),
 ]
 for slug, ts, t, te, i, ie in TYPE_PAGES:
@@ -1126,6 +1144,185 @@ info_page("gioi-thieu/dong-gop/index.html", "Đóng góp", "Contribute", f"""
 <p>Hướng dẫn kỹ thuật đầy đủ: <a href="https://github.com/{REPO}/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
 """, "Cách đóng góp cho bản đồ hệ sinh thái khởi nghiệp Việt Nam: gửi biểu mẫu, sửa hồ sơ, thêm cơ hội, gửi logo, yêu cầu gỡ thông tin.")
 
+
+# ================= SỰ KIỆN (kiểu Luma) =================
+EV_CAT = {"capital": ("Vốn, chính sách", "Capital, policy", "#0B6E69", "#E9A800"),
+          "web3": ("Web3, tài sản số", "Web3, digital assets", "#5B21B6", "#22D3EE"),
+          "ai": ("AI, công nghệ sâu", "AI, deep tech", "#1D4ED8", "#A78BFA"),
+          "deeptech": ("Công nghệ, sản xuất", "Technology, manufacturing", "#0F766E", "#F59E0B"),
+          "founders": ("Founder, thị trường", "Founders, markets", "#C2410C", "#FDE68A"),
+          "ecosystem": ("Hệ sinh thái", "Ecosystem", "#102A2C", "#34D399"),
+          "health": ("Sức khỏe, trường thọ", "Health, longevity", "#BE185D", "#FBCFE8")}
+EV_ICON = {"capital": "fund", "web3": "web3", "ai": "ai", "deeptech": "deeptech", "founders": "startup", "ecosystem": "community", "health": "health"}
+WD = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật"]
+events = []
+for f in sorted(glob.glob(os.path.join(ROOT, "data", "*", "events.yaml"))):
+    reg = os.path.basename(os.path.dirname(f))
+    for ev in yaml.safe_load(open(f, encoding="utf-8")) or []:
+        ev["_region"] = reg
+        ev["_file"] = os.path.relpath(f, ROOT)
+        events.append(ev)
+TODAY_D = datetime.date.fromisoformat(TODAY)
+def _d(s): return datetime.date.fromisoformat(str(s)[:10])
+for ev in events:
+    ev["_start"] = _d(ev["start"]); ev["_end"] = _d(ev.get("end") or ev["start"])
+    ev["_state"] = "upcoming" if ev["_start"] > TODAY_D else ("live" if ev["_end"] >= TODAY_D else "past")
+    if ev.get("recurrence") == "annual" and ev["_state"] == "past":
+        ev["_next"] = f'tháng {ev.get("month") or ev["_start"].month}/{ev["_start"].year + 1}'
+
+def ev_cover(ev, size=120, cls="ev-cover"):
+    vi, en, c1, c2 = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])
+    label = ev["title"].split("–")[0].strip()
+    return (f'<div class="{cls}" style="background:linear-gradient(135deg,{c1},{c2})" aria-hidden="true">'
+            f'<span class="ev-ico">{icon_svg_any(EV_ICON.get(ev.get("category"), "community"), 26)}</span>'
+            f'<span class="ev-lab">{e(label)}</span></div>')
+
+def icon_svg_any(k, size=18):
+    return f'<span class="jsico" data-ico="{k}" data-size="{size}"></span>'
+
+def ev_when(ev):
+    s, en = ev["_start"], ev["_end"]
+    if s == en: return f'{WD[s.weekday()]}, {s.day:02d}/{s.month:02d}/{s.year}'
+    if s.month == en.month: return f'{s.day:02d}–{en.day:02d}/{s.month:02d}/{s.year}'
+    return f'{s.day:02d}/{s.month:02d} – {en.day:02d}/{en.month:02d}/{en.year}'
+
+def ev_card(ev):
+    vi = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])[0]
+    badge = {"live": '<span class="ev-badge live" data-vi="Đang diễn ra" data-en="Live">Đang diễn ra</span>',
+             "upcoming": '<span class="ev-badge up" data-vi="Sắp tới" data-en="Upcoming">Sắp tới</span>'}.get(ev["_state"], "")
+    rep = (f'<span class="ev-rep">{icon_svg_any("repeat", 13)} <span data-vi="Thường niên" data-en="Annual">Thường niên</span>'
+           + (f' · <span data-vi="dự kiến {e(ev["_next"])}" data-en="next: {e(ev["_next"])}">dự kiến {e(ev["_next"])}</span>' if ev.get("_next") else "") + "</span>") if ev.get("recurrence") == "annual" else ""
+    return (f'<a class="ev-card" href="{SITE_ROOT}su-kien/{ev["id"]}/" data-reg="{ev["_region"]}" data-cat="{ev.get("category","")}">'
+            f'<div class="ev-body"><p class="ev-time">{badge}{e(ev_when(ev))}</p><h3>{e(ev["title"])}</h3>'
+            f'<p class="ev-org">{icon_svg_any("community", 14)} <span data-vi="Tổ chức bởi" data-en="By">Tổ chức bởi</span> {e(ev.get("organizer",""))}</p>'
+            f'<p class="ev-loc">{icon_svg_any("pin", 14)} {e(ev.get("venue",""))}</p>'
+            f'<p class="ev-tags"><span class="stag">{e(vi)}</span>{rep}</p></div>{ev_cover(ev)}</a>')
+
+def ev_timeline(evs, newest_first=False):
+    evs = sorted(evs, key=lambda x: x["_start"], reverse=newest_first)
+    out, cur = "", None
+    for ev in evs:
+        key = ev["_start"]
+        if key != cur:
+            if cur is not None: out += "</div></div>"
+            out += (f'<div class="ev-day"><div class="ev-date"><b>{key.day} thg {key.month}</b><span>{WD[key.weekday()]}</span><span class="muted small">{key.year}</span></div>'
+                    f'<div class="ev-items">')
+            cur = key
+        out += ev_card(ev)
+    if cur is not None: out += "</div></div>"
+    return out or '<p class="muted" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
+
+def ics_for(ev):
+    def esc(s): return str(s or "").replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+    dt_end = ev["_end"] + datetime.timedelta(days=1)
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//innovation.invietnam.vn//events//VI", "BEGIN:VEVENT",
+             f'UID:{ev["id"]}@innovation.invietnam.vn', f'DTSTAMP:{TODAY.replace("-", "")}T000000Z',
+             f'DTSTART;VALUE=DATE:{ev["_start"].strftime("%Y%m%d")}', f'DTEND;VALUE=DATE:{dt_end.strftime("%Y%m%d")}',
+             f'SUMMARY:{esc(ev["title"])}', f'LOCATION:{esc(ev.get("venue"))}',
+             f'DESCRIPTION:{esc((ev.get("summary") or "") + " " + (ev.get("url") or ""))}',
+             f'URL:{SITE_URL}/su-kien/{ev["id"]}/', "END:VEVENT", "END:VCALENDAR"]
+    return "\r\n".join(lines) + "\r\n"
+
+REG_NAME = {"da-nang": "Đà Nẵng", "ho-chi-minh": "TP. Hồ Chí Minh", "ha-noi": "Hà Nội", "hai-phong": "Hải Phòng"}
+up = [x for x in events if x["_state"] in ("upcoming", "live")]
+past = [x for x in events if x["_state"] == "past"]
+annual = sorted([x for x in events if x.get("recurrence") == "annual"], key=lambda x: (x.get("month") or x["_start"].month, x["_start"].day))
+MONTHS = ["", "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"]
+ann_html = ""
+for mth in range(1, 13):
+    xs = [x for x in annual if (x.get("month") or x["_start"].month) == mth]
+    if not xs: continue
+    ann_html += f'<div class="ev-day"><div class="ev-date"><b>{MONTHS[mth]}</b><span class="muted small" data-vi="hằng năm" data-en="every year">hằng năm</span></div><div class="ev-items">' + "".join(ev_card(x) for x in xs) + "</div></div>"
+chips = "".join(f'<button type="button" class="chip" data-f="reg" data-v="{r}">{e(n)}</button>' for r, n in REG_NAME.items() if any(x["_region"] == r for x in events))
+chips2 = "".join(f'<button type="button" class="chip sm" data-f="cat" data-v="{k}">{e(v[0])}</button>' for k, v in EV_CAT.items() if any(x.get("category") == k for x in events))
+ev_body = f"""
+<div class="wrap page-head ev-head"><h1 data-vi="Sự kiện" data-en="Events">Sự kiện</h1>
+<p class="lead" data-vi="Sự kiện khởi nghiệp, đổi mới sáng tạo diễn ra thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội. Mỗi sự kiện có thể thêm vào lịch của bạn." data-en="Annual and upcoming startup and innovation events in Da Nang, Ho Chi Minh City and Hanoi. Add any event to your calendar.">Sự kiện khởi nghiệp, đổi mới sáng tạo diễn ra thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<div class="ev-tabs" role="tablist"><button role="tab" class="on" data-tab="up" data-vi="Sắp tới ({len(up)})" data-en="Upcoming ({len(up)})">Sắp tới ({len(up)})</button><button role="tab" data-tab="annual" data-vi="Lịch thường niên ({len(annual)})" data-en="Annual calendar ({len(annual)})">Lịch thường niên ({len(annual)})</button><button role="tab" data-tab="past" data-vi="Đã qua ({len(past)})" data-en="Past ({len(past)})">Đã qua ({len(past)})</button></div>
+<div class="chiprow ev-filter"><button type="button" class="chip on" data-f="reg" data-v="" data-vi="Tất cả nơi" data-en="All places">Tất cả nơi</button>{chips}</div>
+<div class="chiprow sm ev-filter"><button type="button" class="chip sm on" data-f="cat" data-v="" data-vi="Mọi chủ đề" data-en="All topics">Mọi chủ đề</button>{chips2}</div>
+<section class="ev-pane" data-pane="up">{ev_timeline(up) if up else '<div class="empty"><p data-vi="Chưa có sự kiện sắp tới trong danh sách. Xem Lịch thường niên để biết các sự kiện dự kiến năm sau, hoặc gửi sự kiện bạn biết." data-en="No upcoming events listed. See the annual calendar or submit one.">Chưa có sự kiện sắp tới trong danh sách. Xem Lịch thường niên để biết các sự kiện dự kiến năm sau, hoặc gửi sự kiện bạn biết.</p></div>'}</section>
+<section class="ev-pane" data-pane="annual" hidden>{ann_html}</section>
+<section class="ev-pane" data-pane="past" hidden>{ev_timeline(past, newest_first=True)}</section>
+<p class="small" style="margin-top:28px"><a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi một sự kiện" data-en="Submit an event">Gửi một sự kiện</a></p>
+</div>
+<script>
+(function(){{var tabs=document.querySelectorAll('.ev-tabs [data-tab]'),panes=document.querySelectorAll('.ev-pane'),st={{reg:'',cat:''}};
+function apply(){{document.querySelectorAll('.ev-card').forEach(function(c){{c.hidden=(st.reg&&c.dataset.reg!==st.reg)||(st.cat&&c.dataset.cat!==st.cat);}});
+document.querySelectorAll('.ev-day').forEach(function(d){{d.hidden=!d.querySelector('.ev-card:not([hidden])');}});}}
+tabs.forEach(function(t){{t.onclick=function(){{tabs.forEach(function(x){{x.classList.toggle('on',x===t)}});panes.forEach(function(p){{p.hidden=p.dataset.pane!==t.dataset.tab}});history.replaceState(null,'','#'+t.dataset.tab);}};}});
+document.querySelectorAll('.ev-filter .chip').forEach(function(b){{b.onclick=function(){{st[b.dataset.f]=b.dataset.v;b.parentNode.querySelectorAll('.chip').forEach(function(x){{x.classList.toggle('on',x===b)}});apply();}};}});
+var h=location.hash.slice(1);if(h){{var t=document.querySelector('.ev-tabs [data-tab="'+h+'"]');if(t)t.click();}}else if(!{len(up)}){{document.querySelector('.ev-tabs [data-tab="annual"]').click();}}}})();
+</script>"""
+b_ld = []
+write("su-kien/index.html", page("Sự kiện", ev_body, "events", desc=f"Lịch {len(events)} sự kiện khởi nghiệp, đổi mới sáng tạo thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội: DAVAS, SURF, InnoEx, Startup Wheel, Techmart, Ngày ĐMST Việt Nam."))
+for ev in events:
+    os.makedirs(os.path.join(OUT, "su-kien", ev["id"]), exist_ok=True)
+    open(os.path.join(OUT, "su-kien", ev["id"], "su-kien.ics"), "w", encoding="utf-8", newline="").write(ics_for(ev))
+    orgs = [by_id[i] for i in ev.get("organizer_ids") or [] if i in by_id]
+    opp = next((o for o in opps if o["id"] in (ev.get("opportunity"), "opp-" + str(ev.get("opportunity")))), None)
+    vi = EV_CAT.get(ev.get("category"), EV_CAT["ecosystem"])[0]
+    same = sorted([x for x in events if x is not ev and (x.get("category") == ev.get("category") or x["_region"] == ev["_region"])], key=lambda x: abs((x["_start"] - ev["_start"]).days))[:4]
+    state_txt = {"past": '<span class="ev-badge" data-vi="Đã diễn ra" data-en="Past">Đã diễn ra</span>', "live": '<span class="ev-badge live">Đang diễn ra</span>', "upcoming": '<span class="ev-badge up">Sắp tới</span>'}[ev["_state"]]
+    body = f"""
+<div class="wrap crumbs"><a href="{SITE_ROOT}su-kien/" data-i18n="nav_events">Sự kiện</a> / {e(ev["title"])}</div>
+<div class="wrap ev-page">
+<aside class="ev-side">{ev_cover(ev, cls="ev-cover big")}
+<div class="box"><h2 class="small" data-vi="Đơn vị tổ chức" data-en="Hosted by">Đơn vị tổ chức</h2>
+{mini_cards(orgs) if orgs else f'<p>{e(ev.get("organizer",""))}</p>'}</div>
+<p class="small muted" style="margin-top:12px"><span data-vi="Nguồn" data-en="Source">Nguồn</span>: <a href="{e(ev.get("source",""))}" rel="noopener">{e(_re.sub(r"^https?://", "", ev.get("source","")).split("/")[0])}</a></p></aside>
+<article><p>{state_txt}<span class="stag" style="margin-left:6px">{e(vi)}</span></p><h1 style="margin-top:10px">{e(ev["title"])}</h1>
+<div class="ev-facts">
+<div class="ev-fact"><span class="ev-fi">{icon_svg_any("calendar", 20)}</span><div><b>{e(ev_when(ev))}</b>{f'<p class="small muted"><span data-vi="Thường niên, dự kiến" data-en="Annual, next">Thường niên, dự kiến</span> {e(ev["_next"])}</p>' if ev.get("_next") else ('<p class="small muted" data-vi="Thường niên" data-en="Annual">Thường niên</p>' if ev.get("recurrence") == "annual" else "")}</div></div>
+<div class="ev-fact"><span class="ev-fi">{icon_svg_any("pin", 20)}</span><div><b>{e(ev.get("venue",""))}</b><p class="small muted">{e(REG_NAME.get(ev["_region"], ""))}</p></div></div>
+</div>
+<p class="ev-actions">{f'<a class="btn primary" href="{e(ev["url"])}" rel="noopener" data-vi="Trang sự kiện" data-en="Event page">Trang sự kiện</a>' if ev.get("url") else ""}
+<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>
+{f'<a class="btn ghost" href="{SITE_ROOT}co-hoi/{opp["id"].removeprefix("opp-")}/" data-vi="Cơ hội, danh sách tham gia" data-en="Opportunity and participants">Cơ hội, danh sách tham gia</a>' if opp else ""}</p>
+<div class="section"><h2 data-vi="Giới thiệu" data-en="About">Giới thiệu</h2><p class="desc">{e(ev.get("summary",""))}</p></div>
+{('<div class="section"><h2 data-vi="Sự kiện liên quan" data-en="Related events">Sự kiện liên quan</h2><div class="ev-items">' + "".join(ev_card(x) for x in same) + '</div></div>') if same else ""}
+</article></div>"""
+    ld = {"@context": "https://schema.org", "@type": "Event", "name": ev["title"], "startDate": str(ev["start"]), "endDate": str(ev.get("end") or ev["start"]),
+          "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled", "url": f'{SITE_URL}/su-kien/{ev["id"]}/',
+          "location": {"@type": "Place", "name": ev.get("venue", ""), "address": {"@type": "PostalAddress", "addressLocality": REG_NAME.get(ev["_region"], ""), "addressCountry": "VN"}},
+          "organizer": {"@type": "Organization", "name": ev.get("organizer", "")}, "description": ev.get("summary", "")}
+    write(f'su-kien/{ev["id"]}/index.html', page(ev["title"], body, "events",
+          desc=f'{ev["title"]}: {ev_when(ev)}, {ev.get("venue","")}. {ev.get("summary","")}'[:300],
+          head='<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False) + "</script>"), lastmod=GIT_DATES.get(ev["_file"], TODAY))
+dump("events.json", [{k: (str(v) if k in ("start", "end") else v) for k, v in ev.items() if not k.startswith("_")} | {"region": ev["_region"]} for ev in events])
+
+
+info_page("gioi-thieu/quyen-rieng-tu/index.html", "Quyền riêng tư và dữ liệu cá nhân", "Privacy and personal data", f"""
+<p class="lead">Trang này giải thích bản đồ thu thập, công bố và xử lý dữ liệu cá nhân như thế nào, và bạn có những quyền gì.</p>
+<h2>Bản đồ có dữ liệu cá nhân nào</h2>
+<ul><li><b>Hồ sơ chuyên gia và nhà đầu tư cá nhân</b>: họ tên, lĩnh vực, phần tự giới thiệu nguyên văn và đường dẫn tới hồ sơ gốc. Nguồn: nền tảng HOIP của TP.HCM, nơi chính người đó tự đăng ký công khai.</li>
+<li><b>Hồ sơ tổ chức</b>: thông tin của tổ chức, chỉ dùng kênh liên hệ chung (email info@, contact@, email cơ quan). Không công bố tên người đại diện, số điện thoại hay email cá nhân lấy từ tài liệu.</li>
+<li><b>Người đóng góp</b>: tên tài khoản GitHub hiện trong lịch sử thay đổi của kho dữ liệu.</li></ul>
+<h2>Vì sao không công bố email, số điện thoại cá nhân</h2>
+<p>Sự đồng ý một người dành cho nền tảng gốc gắn với mục đích của nền tảng đó. Đăng lại email, số điện thoại trong một kho dữ liệu mở có thể bị sao chép hàng loạt và không thu hồi được. Vì vậy bản đồ chỉ dẫn đường tới hồ sơ gốc để liên hệ. Ai muốn hiện kênh liên hệ trên bản đồ có thể tự bổ sung vào hồ sơ của mình.</p>
+<h2>Cơ sở xử lý</h2>
+<p>Dữ liệu được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân, trên cơ sở thông tin đã được chính chủ thể công bố công khai cho mục đích kết nối hệ sinh thái khởi nghiệp, hoặc do chính chủ thể gửi qua biểu mẫu.</p>
+<h2>Quyền của bạn</h2>
+<ul><li>Xem thông tin bản đồ đang có về mình.</li><li>Yêu cầu sửa thông tin sai.</li><li>Yêu cầu ẩn hoặc xoá hồ sơ, phần giới thiệu hay bất kỳ thông tin nào về mình.</li><li>Phản đối việc công bố thông tin về mình.</li></ul>
+<p>Gửi yêu cầu qua <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml">biểu mẫu</a>, ghi rõ hồ sơ và yêu cầu. Thông tin được ẩn khỏi trang ngay khi xác minh yêu cầu; quy trình xử lý ghi trong <a href="https://github.com/{REPO}/blob/main/GOVERNANCE.md">GOVERNANCE.md</a>.</p>
+<h2>Cookie và theo dõi</h2>
+<p>Trang không đặt cookie theo dõi và không dùng công cụ phân tích. Trình duyệt chỉ lưu lựa chọn ngôn ngữ, giao diện sáng tối trên máy bạn. Phông chữ tải từ Google Fonts và nền bản đồ tải từ OpenStreetMap, nên các dịch vụ này nhận địa chỉ IP của trình duyệt theo chính sách của họ.</p>
+""", "Chính sách quyền riêng tư và dữ liệu cá nhân của bản đồ hệ sinh thái khởi nghiệp Việt Nam: dữ liệu nào được công bố, cơ sở xử lý, quyền xem, sửa, xoá.")
+info_page("gioi-thieu/dieu-khoan/index.html", "Điều khoản sử dụng", "Terms of use", f"""
+<h2>Giấy phép</h2>
+<p>Dữ liệu theo giấy phép CC BY 4.0: được dùng, chỉnh sửa, kể cả cho mục đích thương mại, miễn ghi nguồn "Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam". Mã nguồn theo giấy phép MIT.</p>
+<h2>Nội dung không thuộc CC BY</h2>
+<ul><li>Logo là nhãn hiệu của chủ sở hữu, chỉ dùng để nhận diện tổ chức.</li><li>Phần "Giới thiệu nguyên văn" là nội dung của tổ chức, cá nhân hoặc nguồn gốc (như HOIP), giữ lại để tra cứu và có ghi nguồn.</li><li>Số liệu xếp hạng trích từ StartupBlink thuộc StartupBlink.</li></ul>
+<h2>Độ chính xác</h2>
+<p>Dữ liệu tổng hợp từ nguồn công khai và cộng đồng, có ghi mức xác minh cho từng hồ sơ. Bản đồ không bảo đảm thông tin đầy đủ, mới nhất hay chính xác tuyệt đối; hãy kiểm tra với nguồn gốc trước khi ra quyết định đầu tư, ký kết hay hợp tác.</p>
+<h2>Không dùng sai mục đích</h2>
+<p>Không dùng dữ liệu để gửi thư rác, quấy rối, hay thu thập thông tin cá nhân trái pháp luật.</p>
+<h2>Liên hệ, khiếu nại</h2>
+<p>Gửi qua <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml">biểu mẫu</a>. Xem thêm <a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/">Quyền riêng tư và dữ liệu cá nhân</a>.</p>
+""", "Điều khoản sử dụng bản đồ hệ sinh thái khởi nghiệp Việt Nam: giấy phép CC BY 4.0, nội dung bên thứ ba, độ chính xác, cách khiếu nại.")
+
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
@@ -1134,9 +1331,9 @@ urls = [""] + [p for _, p, _ in NAV[1:]] + [f"thanh-pho/{c['id']}/" for c in (BE
 def _urlset(items):
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
             + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in items) + "</urlset>\n")
-groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("linh-vuc", []), ("co-hoi", []), ("chinh-sach", []), ("to-chuc", [])])
+groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("linh-vuc", []), ("co-hoi", []), ("su-kien", []), ("chinh-sach", []), ("to-chuc", [])])
 for u, d in PAGES:
-    g = "to-chuc" if u.startswith("a/") else next((k for k in ("thanh-pho", "linh-vuc", "co-hoi", "chinh-sach") if u.startswith(k + "/") and u != k + "/"), "trang")
+    g = "to-chuc" if u.startswith("a/") else next((k for k in ("thanh-pho", "linh-vuc", "co-hoi", "su-kien", "chinh-sach") if u.startswith(k + "/") and u != k + "/"), "trang")
     groups[g].append((u, d))
 files = []
 for g, items in groups.items():

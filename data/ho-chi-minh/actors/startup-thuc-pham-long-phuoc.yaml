@@ -11,7 +11,12 @@ sectors:
 founded: 2019
 address: Đường số 105C, Ấp Tây, Xã Long Phước, Thành phố Bà Rịa, Tỉnh Bà Rịa - Vũng Tàu, Việt Nam
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất tp, nông/lâm nghiệp, dịch vụ, khác; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực sản xuất thực phẩm, nông/lâm nghiệp, dịch vụ, khác; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Dịch vụ, Khác, Sản xuất TP, Nông/Lâm nghiệp Mô Hình Kinh Doanh Xanh và Bền Vững, Nền Tảng Dịch vụ Theo Yêu Cầu 22-01-2019 Việt Nam Bà Rịa - Vũng Tàu
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/844
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

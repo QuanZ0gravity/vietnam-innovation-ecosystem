@@ -9,7 +9,12 @@ sectors:
 founded: 2020
 address: Tầng 12, Tòa nhà Trụ sở điều hành và Trung tâm thương mại Viettel, số 285 Cách Mạng Tháng Tám, phường Hòa Hưng, TP. Hồ Chí Minh
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2020; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2020; giai đoạn Khởi nghiệp.'
+description_source:
+  text: https://greencheck.vn Phần mềm, CNTT Nền Tảng Dịch vụ Theo Yêu Cầu 03-09-2020 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/796
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified

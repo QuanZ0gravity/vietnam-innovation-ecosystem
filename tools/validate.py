@@ -85,6 +85,25 @@ for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
                 if row[side] not in ids:
                     errors.append(f"{os.path.relpath(rfile, ROOT)}:{i}: '{row[side]}' không tồn tại")
 
+# sự kiện
+import datetime as _dt
+_ev_ids = {}
+for _f in sorted(glob.glob(os.path.join(ROOT, "data", "*", "events.yaml"))):
+    _rel = os.path.relpath(_f, ROOT)
+    for _k, _ev in enumerate(yaml.safe_load(open(_f, encoding="utf-8")) or [], 1):
+        for _req in ("id", "title", "start", "venue", "organizer", "source"):
+            if not _ev.get(_req):
+                errors.append(f"{_rel}#{_k}: thiếu '{_req}'")
+        try:
+            _s = _dt.date.fromisoformat(str(_ev.get("start"))); _e = _dt.date.fromisoformat(str(_ev.get("end") or _ev.get("start")))
+            if _e < _s: errors.append(f"{_rel}#{_k}: ngày kết thúc trước ngày bắt đầu")
+        except Exception:
+            errors.append(f"{_rel}#{_k}: ngày phải có dạng YYYY-MM-DD")
+        if _ev.get("id") in _ev_ids: errors.append(f"{_rel}#{_k}: id sự kiện trùng với {_ev_ids[_ev['id']]}")
+        _ev_ids[_ev.get("id")] = _rel
+        for _o in _ev.get("organizer_ids") or []:
+            if _o not in ids: errors.append(f"{_rel}#{_k}: organizer_ids '{_o}' không tồn tại")
+
 opp_schema = Draft202012Validator(json.load(open(os.path.join(ROOT, "schema", "opportunity.schema.json"), encoding="utf-8")))
 AGGREGATORS = ("startupdanang.vn",)
 for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):

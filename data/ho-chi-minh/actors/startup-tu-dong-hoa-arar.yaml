@@ -9,7 +9,12 @@ sectors:
 founded: 2019
 address: 74 đường số 10, cityland, Phường Gò Vấp
 description:
-  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, cntt; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+  vi: 'Hồ sơ trên HOIP: lĩnh vực phần mềm, CNTT; thành lập năm 2019; giai đoạn Khởi nghiệp.'
+description_source:
+  text: -- Phần mềm, CNTT Mô Hình Khác 18-11-2019 Việt Nam Hồ Chí Minh
+  source: HOIP (tự giới thiệu)
+  url: https://hoip.sihub.gov.vn/startup/779
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified
