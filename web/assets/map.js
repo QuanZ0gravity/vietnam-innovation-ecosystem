@@ -20,7 +20,7 @@
         feats.forEach(function (f) {
           var c = f.geometry.coordinates, p = f.properties, ll = [c[1], c[0]];
           var m = L.circleMarker(ll, { radius: p.precision === "ward" ? 7 : 9, weight: 2, color: "#102A2C", fillColor: p.precision === "ward" ? sun : sea, fillOpacity: .9 });
-          var d = document.createElement("div"), a = document.createElement("a"); a.href = VIE.root + "a/" + p.id + "/"; a.textContent = p.name;
+          var d = document.createElement("div"), a = document.createElement("a"); a.href = VIE.root + (p.url || ("to-chuc/" + p.id + "/")); a.textContent = p.name;
           d.append(a, document.createElement("br"), VIE.el("span", "muted", VIE.typeLabel(p.type) + (p.precision === "ward" ? " (" + VIE.t("by_ward") + ")" : "")));
           m.bindPopup(d); m.addTo(el._layer); b.push(ll);
         });

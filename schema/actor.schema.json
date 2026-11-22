@@ -235,6 +235,96 @@
         }
       },
       "description": "Phần tự giới thiệu nguyên văn từ nguồn bên thứ ba (ví dụ HOIP), giữ để tra cứu và lọc; không thuộc giấy phép CC BY 4.0 của dữ liệu."
+    },
+    "case_studies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "url",
+          "publisher"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "points": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "metrics": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    },
+    "funding_rounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "round"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "date": {
+            "type": "string"
+          },
+          "round": {
+            "type": "string"
+          },
+          "amount_usd": {
+            "type": "number"
+          },
+          "lead": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "investors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      }
     }
   }
 }

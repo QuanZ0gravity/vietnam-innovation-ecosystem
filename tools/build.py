@@ -60,7 +60,7 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by"):
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in"):
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
@@ -220,6 +220,27 @@ def icon_svg(k, size=18):
          "university": '<path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/><path d="M22 9v6"/>'}
     return f'<svg width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{P.get(k, "")}</svg>'
 
+def _fmt_money(v):
+    v = float(v or 0)
+    if v >= 1e9: return f"{v/1e9:.1f} tỷ USD".replace(".", ",")
+    if v >= 1e6: return (f"{v/1e6:.1f}".rstrip("0").rstrip(".") + " triệu USD").replace(".", ",")
+    return f"{int(v):,} USD".replace(",", ".")
+PREFIXES = ("startup-", "company-", "fund-", "incubator-", "accelerator-", "space-", "support-org-", "university-", "government-",
+            "international-", "community-", "media-", "creator-", "expert-")
+def _base_slug(i):
+    for pfx in PREFIXES:
+        if i.startswith(pfx): return i[len(pfx):]
+    return i
+def _section(t): return "startup" if t == "startup" else "chuyen-gia" if t == "expert" else "to-chuc"
+PATH = {}
+_used = set()
+for _a in sorted(actors, key=lambda x: x["id"]):
+    sec = _section(_a["type"]); s = _base_slug(_a["id"])
+    if (sec, s) in _used: s = _a["id"]
+    _used.add((sec, s)); PATH[_a["id"]] = f"{sec}/{s}/"
+    _a["url"] = PATH[_a["id"]]
+def apath(i): return PATH.get(i, f"to-chuc/{i}/")
+
 def logo_img(a, size=40, cls="lg"):
     if a.get("logo"):
         return f'<img class="{cls}" src="{SITE_ROOT}{a["logo"]}" alt="" width="{size}" height="{size}" loading="lazy">'
@@ -259,7 +280,7 @@ for a in actors:
         coord, prec = place_by_id[a["place"]]["coordinates"], "ward"
     if coord:
         features.append({"type": "Feature", "geometry": {"type": "Point", "coordinates": coord},
-                         "properties": {"id": a["id"], "name": a["name"]["vi"], "type": a["type"],
+                         "properties": {"id": a["id"], "url": apath(a["id"]), "name": a["name"]["vi"], "type": a["type"],
                                         "verification": a["verification"]["level"], "precision": prec}})
 dump("actors.geojson", {"type": "FeatureCollection", "features": features})
 counts = collections.Counter(a["type"] for a in actors)
@@ -284,7 +305,7 @@ def opp_card(o, compact=False):
     date_html = "".join(f'<span><span data-vi="{a}" data-en="{b}">{a}</span>: <b>{e(fmt_date(d))}</b></span>' for a, b, d in dates)
     org = e(o["organizer"])
     if o.get("organizer_ids"):
-        org = ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in o["organizer_ids"] if x in by_id)
+        org = ", ".join(f'<a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a>' for x in o["organizer_ids"] if x in by_id)
     rows = []
     if o.get("eligibility"): rows.append(("Đối tượng", "Who can apply", e(o["eligibility"])))
     if o.get("benefits") or o.get("funding"): rows.append(("Quyền lợi", "Benefits", e(" ".join(filter(None, [o.get("funding"), o.get("benefits")])))))
@@ -300,7 +321,7 @@ def opp_card(o, compact=False):
         rows.append(("Kết quả", "Outcome", txt))
     if o.get("participants"):
         ps = [x for x in o["participants"] if x in by_id]
-        shown = ", ".join(f'<a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a>' for x in ps[:12])
+        shown = ", ".join(f'<a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a>' for x in ps[:12])
         more = f' <span class="muted">+{len(ps) - 12}</span>' if len(ps) > 12 else ""
         rows.append((f"Tham gia, được chọn ({len(ps)})", f"Participants ({len(ps)})", shown + more))
     rows_html = "" if compact else "".join(f'<dt data-vi="{a}" data-en="{b}">{a}</dt><dd>{c}</dd>' for a, b, c in rows)
@@ -325,7 +346,7 @@ def opp_card(o, compact=False):
 
 # ---------- danh bạ ----------
 static_rows = "".join(
-    f'<li><a href="{SITE_ROOT}a/{a["id"]}/"><span class="nm">{e(a["name"]["vi"])}</span>'
+    f'<li><a href="{SITE_ROOT}{apath(a["id"])}"><span class="nm">{e(a["name"]["vi"])}</span>'
     f'{type_tag(a["type"])}{ver_badge(a["verification"]["level"])}</a></li>'
     for a in sorted(actors, key=lambda x: x["name"]["vi"].lower()))
 dir_body = f"""
@@ -393,7 +414,7 @@ def similar(a, pool, n=6, exclude=()):
     return out
 def mini_cards(xs):
     return '<div class="fsgrid">' + "".join(
-        f'<a class="fs" href="{SITE_ROOT}a/{x["id"]}/">{logo_img(x, 44)}<span class="nm">{e(x["name"]["vi"])}</span>'
+        f'<a class="fs" href="{SITE_ROOT}{apath(x["id"])}">{logo_img(x, 44)}<span class="nm">{e(x["name"]["vi"])}</span>'
         f'<span class="muted small" data-i18n="t_{x["type"]}">{x["type"]}</span></a>' for x in xs) + "</div>"
 
 issue_base = f"https://github.com/{REPO}/issues/new?"
@@ -430,7 +451,7 @@ for a in actors:
         facts.append(("Tên khác", "Other names", e("; ".join(a["alt_names"]))))
         facts_html = "".join(f'<dt data-vi="{vi}" data-en="{en}">{vi}</dt><dd>{val}</dd>' for vi, en, val in facts)
     if related.get(aid):
-        items = "".join(f'<li><a href="{SITE_ROOT}a/{r}/">{e(by_id[r]["name"]["vi"])}</a> {type_tag(by_id[r]["type"])}</li>'
+        items = "".join(f'<li><a href="{SITE_ROOT}{apath(r)}">{e(by_id[r]["name"]["vi"])}</a> {type_tag(by_id[r]["type"])}</li>'
                         for r in sorted(related[aid]))
         rel_html = f'<div class="section"><h2 data-vi="Liên quan" data-en="Related">Liên quan</h2><ul class="list-plain">{items}</ul></div>'
     men = sorted(mentioned.get(aid, []), key=lambda r: r.get("date") or "", reverse=True)[:12]
@@ -452,24 +473,52 @@ for a in actors:
     incubators = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "incubated_by" and r["to"] in by_id]
     alumni = sorted({r["from"] for r in relations if r["to"] == aid and r.get("type") == "incubated_by" and r["from"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
     if incubators:
-        items = "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a> {type_tag(by_id[x]["type"])}</li>' for x in dict.fromkeys(incubators))
+        items = "".join(f'<li><a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a> {type_tag(by_id[x]["type"])}</li>' for x in dict.fromkeys(incubators))
         rel_html = f'<div class="section"><h2 data-vi="Được ươm tạo, hỗ trợ bởi" data-en="Supported by">Được ươm tạo, hỗ trợ bởi</h2><ul class="list-plain">{items}</ul></div>' + rel_html
     if alumni:
         act = [x for x in alumni if by_id[x].get("status") != "inactive"]
         ina = [x for x in alumni if by_id[x].get("status") == "inactive"]
-        items = "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a></li>' for x in act)
-        items += "".join(f'<li><a href="{SITE_ROOT}a/{x}/">{e(by_id[x]["name"]["vi"])}</a> <span class="muted small" data-vi="(đã ngừng hoạt động)" data-en="(no longer active)">(đã ngừng hoạt động)</span></li>' for x in ina)
+        items = "".join(f'<li><a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a></li>' for x in act)
+        items += "".join(f'<li><a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a> <span class="muted small" data-vi="(đã ngừng hoạt động)" data-en="(no longer active)">(đã ngừng hoạt động)</span></li>' for x in ina)
         rel_html += (f'<div class="section"><h2 data-vi="Startup đã ươm tạo, hỗ trợ ({len(alumni)})" data-en="Startups supported ({len(alumni)})">Startup đã ươm tạo, hỗ trợ ({len(alumni)})</h2>'
                      f'<ul class="list-plain alumni">{items}</ul></div>')
     if parents or children:
-        items = "".join(f'<li><span class="muted small" data-vi="Thuộc" data-en="Part of">Thuộc</span> <a href="{SITE_ROOT}a/{p_}/">{e(by_id[p_]["name"]["vi"])}</a></li>' for p_ in parents)
-        items += "".join(f'<li><a href="{SITE_ROOT}a/{c_}/">{e(by_id[c_]["name"]["vi"])}</a> {type_tag(by_id[c_]["type"])}</li>' for c_ in sorted(children))
+        items = "".join(f'<li><span class="muted small" data-vi="Thuộc" data-en="Part of">Thuộc</span> <a href="{SITE_ROOT}{apath(p_)}">{e(by_id[p_]["name"]["vi"])}</a></li>' for p_ in parents)
+        items += "".join(f'<li><a href="{SITE_ROOT}{apath(c_)}">{e(by_id[c_]["name"]["vi"])}</a> {type_tag(by_id[c_]["type"])}</li>' for c_ in sorted(children))
         rel_html = f'<div class="section"><h2 data-vi="Đơn vị liên quan" data-en="Related units">Đơn vị liên quan</h2><ul class="list-plain">{items}</ul></div>' + rel_html
     vdate = a["verification"].get("date")
     src = "; ".join(a["sources"])
     src_html = e(src) + (f'<br><a href="{e(a["source_url"])}" rel="noopener" class="small">{e(a["source_url"])}</a>' if a.get("source_url") else "")
     issue_q = urllib.parse.urlencode({"template": "them-hoac-sua-ho-so.yml", "title": f"[Hồ sơ] {name}",
                                       "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
+    # case study, vòng vốn, nhà đầu tư, danh mục đầu tư
+    cs_html = ""
+    for cs in a.get("case_studies") or []:
+        mets = "".join(f'<div class="kpi"><p class="kv">{e(m["value"])}</p><p class="kl">{e(m["label"])}</p>' + (f'<p class="kn small muted">{e(m["note"])}</p>' if m.get("note") else "") + "</div>" for m in cs.get("metrics") or [])
+        pts = "".join(f"<li>{e(x)}</li>" for x in cs.get("points") or [])
+        cs_html += (f'<div class="section casestudy"><h2 data-vi="Phân tích, case study" data-en="Case study">Phân tích, case study</h2>'
+                    f'<div class="cs-card"><p class="small muted">{e(cs["publisher"])}{" · " + e(cs["date"]) if cs.get("date") else ""}</p>'
+                    f'<h3>{e(cs["title"])}</h3><p>{e(cs.get("summary",""))}</p>'
+                    + (f'<div class="kpis cs-kpis">{mets}</div>' if mets else "") + (f'<ul class="cs-points">{pts}</ul>' if pts else "")
+                    + f'<p><a class="btn primary" href="{e(cs["url"])}" rel="noopener" data-vi="Đọc toàn bộ phân tích" data-en="Read the full case study">Đọc toàn bộ phân tích</a></p></div></div>')
+    fr_html = ""
+    if a.get("funding_rounds"):
+        def _who(ids):
+            return ", ".join((f'<a href="{SITE_ROOT}{apath(i)}">{e(by_id[i]["name"]["vi"])}</a>' if i in by_id else e(i)) for i in ids)
+        rows = ""
+        tot = 0
+        for r in sorted(a["funding_rounds"], key=lambda r: r["date"]):
+            amt = r.get("amount_usd"); tot += amt or 0
+            rows += (f'<li class="fr"><span class="fr-d">{e(r["date"][5:7] + "/" + r["date"][:4] if len(r["date"]) >= 7 else r["date"])}</span>'
+                     f'<div><b>{e(r["round"])}</b>{" · " + e(_fmt_money(amt)) if amt else ""}'
+                     + (f'<p class="small"><span class="muted" data-vi="Dẫn dắt:" data-en="Lead:">Dẫn dắt:</span> {_who(r["lead"])}</p>' if r.get("lead") else "")
+                     + (f'<p class="small"><span class="muted" data-vi="Tham gia:" data-en="Participants:">Tham gia:</span> {_who(r["investors"])}</p>' if r.get("investors") else "")
+                     + (f'<p class="small"><a href="{e(r["source"])}" rel="noopener" data-vi="Nguồn" data-en="Source">Nguồn</a></p>' if r.get("source") else "")
+                     + "</div></li>")
+        fr_html = (f'<div class="section"><h2 data-vi="Các vòng gọi vốn" data-en="Funding rounds">Các vòng gọi vốn</h2>'
+                   f'<p class="muted small" data-vi="Tổng các vòng được công bố: {e(_fmt_money(tot))}" data-en="Announced rounds total: {e(_fmt_money(tot))}">Tổng các vòng được công bố: {e(_fmt_money(tot))}</p><ol class="fr-list">{rows}</ol></div>')
+    portfolio = sorted({r["to"] for r in relations if r["from"] == aid and r.get("type") == "invested_in" and r["to"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    pf_html = (f'<div class="section"><h2 data-vi="Danh mục đầu tư" data-en="Portfolio">Danh mục đầu tư</h2>{mini_cards([by_id[x] for x in portfolio])}</div>') if portfolio else ""
     ds = a.get("description_source") or {}
     src_html = ""
     if ds.get("text"):
@@ -490,7 +539,7 @@ for a in actors:
         sim_html += (f'<div class="section"><h2 data-vi="Cùng địa phương: {e(rv)}" data-en="Same area: {e(rv)}">Cùng địa phương: {e(rv)}</h2>'
                      f'{mini_cards(xs)}<p class="small" style="margin-top:10px"><a href="{dir_link(type=a["type"], region=a["region"])}" data-vi="Xem tất cả" data-en="See all">Xem tất cả</a></p></div>')
     ld = {"@context": "https://schema.org", "@type": "Person" if a["type"] == "expert" else "EducationalOrganization" if a["type"] == "university" else "GovernmentOrganization" if a["type"] == "government" else "Organization",
-          "name": name, "url": f"{SITE_URL}/a/{aid}/"}
+          "name": name, "url": f"{SITE_URL}/{apath(aid)}"}
     if (a.get("description") or {}).get("vi"): ld["description"] = a["description"]["vi"]
     if a.get("logo"): ld["logo"] = f"{SITE_URL}/{a['logo']}"
     same = [u for u in (a.get("website"), a.get("linkedin")) if u]
@@ -512,7 +561,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}{src_html}
 <dl class="facts">{facts_html}</dl>
-{rel_html}{opp_html}{sim_html}{men_html}
+{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>
@@ -529,7 +578,7 @@ for a in actors:
 </aside></div>
 """
     auto_desc = f"{name}: {VIE_TYPE.get(a['type'], a['type']).lower()} tại {REGION_VI.get(a['region'], 'Việt Nam')}" + (f", lĩnh vực {', '.join(SECT_VI[s].lower() for s in a['sectors'] if s in SECT_VI)}" if a.get("sectors") else "") + ". Hồ sơ trong danh bạ mở hệ sinh thái khởi nghiệp Việt Nam."
-    write(f"a/{aid}/index.html", page(name, body, "dir", desc=((desc.get("vi") + " " + auto_desc) if desc.get("vi") and len(desc["vi"]) < 70 else (desc.get("vi") or auto_desc))[:300], head=a_head), lastmod=a_last)
+    write(f"{apath(aid)}index.html", page(name, body, "dir", desc=((desc.get("vi") + " " + auto_desc) if desc.get("vi") and len(desc["vi"]) < 70 else (desc.get("vi") or auto_desc))[:300], head=a_head), lastmod=a_last)
 
 # ---------- bản đồ ----------
 leaf = ('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">'
@@ -749,7 +798,7 @@ if BENCH:
         def lst(t, n=24):
             xs = sorted([a for a in acts if a["type"] == t], key=lambda a: (not a.get("logo"), not a.get("description"), VER_ORDER.get(a["verification"]["level"], 9), a["name"]["vi"].lower()))
             if not xs: return '<p class="muted small" data-vi="Chưa có trong danh bạ." data-en="None listed yet.">Chưa có trong danh bạ.</p>'
-            items = "".join(f'<li><a href="{SITE_ROOT}a/{a["id"]}/">{logo_img(a, 22)}{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
+            items = "".join(f'<li><a href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 22)}{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
             more = f'<p class="small"><a href="{dir_link(type=t, region=",".join(regs))}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p>' if len(xs) > n else ""
             return f'<ul class="list-plain alumni">{items}</ul>{more}'
         copps = sorted([o for o in opps if o["_region"] in regs], key=lambda o: opp_key_date(o), reverse=True)
@@ -820,7 +869,7 @@ for c in BENCH.get("cities", []):
                    f'<span class="cr" data-vi="Hạng thế giới #{c["global_rank"]}" data-en="Global rank #{c["global_rank"]}">Hạng thế giới #{c["global_rank"]}</span></a>')
 feat = sorted([a for a in actors if a["type"] == "startup" and a.get("logo") and (a.get("description") or {}).get("vi") and a.get("status") != "inactive"],
               key=lambda a: (VER_ORDER.get(a["verification"]["level"], 9), a["name"]["vi"].lower()))[:12]
-feat_html = "".join(f'<a class="fs" href="{SITE_ROOT}a/{a["id"]}/">{logo_img(a, 44)}<span class="nm">{e(a["name"]["vi"])}</span><span class="muted small">{e(", ".join(s[1] for s in SECTORS if s[0] in a["sectors"][:1]))}</span></a>' for a in feat)
+feat_html = "".join(f'<a class="fs" href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 44)}<span class="nm">{e(a["name"]["vi"])}</span><span class="muted small">{e(", ".join(s[1] for s in SECTORS if s[0] in a["sectors"][:1]))}</span></a>' for a in feat)
 po_html = "".join(f'<li><b>{e(x["document"])}</b><br><span class="muted">{e(x.get("summary"))}</span></li>' for x in policies[:4])
 verified = sum(1 for a in actors if a["verification"]["level"] != "unverified")
 home = f"""
@@ -1323,6 +1372,20 @@ info_page("gioi-thieu/dieu-khoan/index.html", "Điều khoản sử dụng", "Te
 <p>Gửi qua <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml">biểu mẫu</a>. Xem thêm <a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/">Quyền riêng tư và dữ liệu cá nhân</a>.</p>
 """, "Điều khoản sử dụng bản đồ hệ sinh thái khởi nghiệp Việt Nam: giấy phép CC BY 4.0, nội dung bên thứ ba, độ chính xác, cách khiếu nại.")
 
+
+# ---------- chuyển hướng đường dẫn cũ /a/<id>/ ----------
+_redir = ["# Đường dẫn hồ sơ cũ /a/<id>/ chuyển sang /startup/, /to-chuc/, /chuyen-gia/ (11/2026)"]
+for _a in actors:
+    new = f"{SITE_ROOT}{apath(_a['id'])}"
+    _redir.append(f"/a/{_a['id']}/ {new} 301")
+    stub = (f'<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>{e(_a["name"]["vi"])}</title>'
+            f'<meta name="robots" content="noindex"><link rel="canonical" href="{SITE_URL}/{apath(_a["id"])}">'
+            f'<meta http-equiv="refresh" content="0; url={new}"></head><body><a href="{new}">{e(_a["name"]["vi"])}</a></body></html>')
+    os.makedirs(os.path.join(OUT, "a", _a["id"]), exist_ok=True)
+    open(os.path.join(OUT, "a", _a["id"], "index.html"), "w", encoding="utf-8").write(stub)
+_redir += ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
+open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
+
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
@@ -1333,7 +1396,7 @@ def _urlset(items):
             + "".join(f"<url><loc>{SITE_URL}/{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in items) + "</urlset>\n")
 groups = collections.OrderedDict([("trang", []), ("thanh-pho", []), ("linh-vuc", []), ("co-hoi", []), ("su-kien", []), ("chinh-sach", []), ("to-chuc", [])])
 for u, d in PAGES:
-    g = "to-chuc" if u.startswith("a/") else next((k for k in ("thanh-pho", "linh-vuc", "co-hoi", "su-kien", "chinh-sach") if u.startswith(k + "/") and u != k + "/"), "trang")
+    g = "to-chuc" if u.startswith(("startup/", "to-chuc/", "chuyen-gia/")) else next((k for k in ("thanh-pho", "linh-vuc", "co-hoi", "su-kien", "chinh-sach") if u.startswith(k + "/") and u != k + "/"), "trang")
     groups[g].append((u, d))
 files = []
 for g, items in groups.items():

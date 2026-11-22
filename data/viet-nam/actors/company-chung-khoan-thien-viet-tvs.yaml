@@ -1,0 +1,13 @@
+id: company-chung-khoan-thien-viet-tvs
+name:
+  vi: Chứng khoán Thiên Việt (TVS)
+type: company
+website: https://www.tvs.vn/
+description:
+  vi: Công ty chứng khoán; đầu tư 4 triệu USD vào Dat Bike tháng 3/2026.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn – Dat Bike Case Study (08/2026)
+source_url: https://indanang.vn/dat-bike-case-study

@@ -107,7 +107,7 @@
       var hits = data.filter(function (a) { var h = norm([a.name.vi, a.name.en, (a.alt_names || []).join(" "), (a.categories || []).join(" ")].join(" ")); return ws.every(function (w) { return h.indexOf(w) >= 0; }); })
         .sort(function (a, b) { return (norm(a.name.vi).indexOf(q) === 0 ? 0 : 1) - (norm(b.name.vi).indexOf(q) === 0 ? 0 : 1) || (b.logo ? 1 : 0) - (a.logo ? 1 : 0); }).slice(0, 8);
       hits.forEach(function (x) {
-        var li = document.createElement("li"); li.setAttribute("role", "option"); var a = document.createElement("a"); a.href = VIE.root + "a/" + x.id + "/";
+        var li = document.createElement("li"); li.setAttribute("role", "option"); var a = document.createElement("a"); a.href = VIE.root + (x.url || ("to-chuc/" + x.id + "/"));
         var im;
         if (x.logo) { im = document.createElement("img"); im.src = VIE.root + x.logo; im.alt = ""; } else { im = VIE.el("span", "ini", (x.name.vi[0] || "?").toUpperCase()); }
         im.className = "sg-logo" + (x.logo ? "" : " ini"); a.append(im);

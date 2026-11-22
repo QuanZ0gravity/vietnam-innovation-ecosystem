@@ -1,0 +1,13 @@
+id: fund-innoven-capital
+name:
+  vi: InnoVen Capital
+type: fund
+website: https://www.innovencapital.com/
+description:
+  vi: Nhà đầu tư; tham gia các vòng vốn của Dat Bike.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- indanang.vn – Dat Bike Case Study (08/2026)
+source_url: https://indanang.vn/dat-bike-case-study

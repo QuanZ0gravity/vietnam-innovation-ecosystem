@@ -9,7 +9,7 @@
     CUR.forEach(function (a) {
       var r = { id: a.id, name: a.name.vi, type: a.type, sectors: (a.sectors || []).join("; "), region: a.region, status: a.status || "", founded: a.founded || "",
         website: a.website || "", linkedin: a.linkedin || "", description: a.description && a.description.vi || "", verification: a.verification.level,
-        sources: (a.sources || []).join("; "), url: location.origin + VIE.root + "a/" + a.id + "/" };
+        sources: (a.sources || []).join("; "), url: location.origin + VIE.root + (a.url || ("to-chuc/" + a.id + "/")) };
       rows.push(cols.map(function (c) { return esc(r[c[0]]); }).join(","));
     });
     var blob = new Blob(["\ufeff" + rows.join("\r\n")], { type: "text/csv;charset=utf-8" });
@@ -116,7 +116,7 @@
     $("more-n").hidden = !n; $("more-n").textContent = n;
   }
   function card(x) {
-    var a = VIE.el("a", "dcard"); a.href = VIE.root + "a/" + x.id + "/";
+    var a = VIE.el("a", "dcard"); a.href = VIE.root + (x.url || ("to-chuc/" + x.id + "/"));
     var top = VIE.el("div", "dc-top"); top.append(logo(x, "dc-logo"));
     var tt = VIE.el("div", "dc-tt"); tt.append(VIE.el("span", "nm", VIE.name(x)));
     var meta = VIE.el("span", "dc-meta"); meta.innerHTML = ICON(x.type, 14); meta.append(" " + VIE.typeLabel(x.type) + " · " + VIE.regionLabel(x.region));
@@ -130,7 +130,7 @@
     a.append(foot); return a;
   }
   function row(x) {
-    var li = document.createElement("li"), a = VIE.el("a", "drow"); a.href = VIE.root + "a/" + x.id + "/";
+    var li = document.createElement("li"), a = VIE.el("a", "drow"); a.href = VIE.root + (x.url || ("to-chuc/" + x.id + "/"));
     a.append(logo(x, "dr-logo"), VIE.el("span", "nm", VIE.name(x)));
     var t = VIE.el("span", "tag"); t.innerHTML = ICON(x.type, 13); t.append(" " + VIE.typeLabel(x.type)); a.append(t);
     a.append(VIE.el("span", "muted small dr-sec", (x.sectors || []).map(sectLabel).join(", ")), VIE.el("span", "muted small", VIE.regionLabel(x.region)));
@@ -185,7 +185,7 @@
       .sort(function (a, b) { var an = norm(VIE.name(a)).indexOf(nq) === 0 ? 0 : 1, bn = norm(VIE.name(b)).indexOf(nq) === 0 ? 0 : 1; return an - bn || score(b) - score(a); }).slice(0, 7);
     hits.forEach(function (x, k) {
       var li = VIE.el("li"); li.setAttribute("role", "option"); li.id = "sg" + k;
-      var a = VIE.el("a"); a.href = VIE.root + "a/" + x.id + "/"; a.append(logo(x, "sg-logo"));
+      var a = VIE.el("a"); a.href = VIE.root + (x.url || ("to-chuc/" + x.id + "/")); a.append(logo(x, "sg-logo"));
       var t = VIE.el("span", "sg-t"); t.append(VIE.el("span", "nm", VIE.name(x)), VIE.el("span", "muted small", VIE.typeLabel(x.type) + " · " + VIE.regionLabel(x.region)));
       a.append(t); li.append(a); ul.append(li);
     });

@@ -193,3 +193,9 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Mục "Tình hình" của TP.HCM: tỷ trọng của TP.HCM trong cả nước, giá trị hệ sinh thái, vốn mạo hiểm, Quỹ ĐTMH TP.HCM, kết quả Nghị quyết 20/2023 và dự thảo chính sách hỗ trợ mới.
 - Làm sạch phần giới thiệu nguyên văn của 2 hồ sơ nhà đầu tư, vườn ươm HOIP bị dính các trường dữ liệu.
 - Sau đợt này: 1233 hồ sơ, 42 sự kiện.
+
+## Dat Bike và đường dẫn hồ sơ (22/11/2026)
+
+- Dat Bike chuyển loại từ "doanh nghiệp" sang "startup" (thành lập 2019, từ Batch 2019 của DNES); bổ sung mục "Phân tích, case study" theo bài của inDanang (8/2026), 6 vòng gọi vốn có nguồn (TechCrunch, PIDG, Tuổi Trẻ News, TVS), 13 nhà đầu tư (thêm mới 11) với quan hệ `invested_in`, quan hệ ươm tạo với DNES.
+- Tổng các vòng công bố là 45,9 triệu USD; bài phân tích ghi 51 triệu USD tổng vốn đã huy động (có thể gồm khoản chưa công bố chi tiết).
+- Đường dẫn hồ sơ đổi từ `/a/<id>/` sang `/startup/`, `/to-chuc/`, `/chuyen-gia/`, có chuyển hướng 301.

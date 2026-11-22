@@ -90,3 +90,11 @@ Hồ sơ cá nhân tự đăng ký công khai trên nền tảng của chính qu
 ## Giới thiệu nguyên văn (`description_source`)
 
 `text`, `source`, `url`, `accessed`: phần tự giới thiệu nguyên văn lấy từ nguồn bên thứ ba, để tra cứu và lọc. Không thuộc CC BY 4.0. Trường `description` vẫn là mô tả ngắn của bản đồ.
+
+## Đường dẫn hồ sơ
+
+`/startup/<tên>/` cho startup, `/chuyen-gia/<tên>/` cho chuyên gia, `/to-chuc/<tên>/` cho các loại còn lại; `<tên>` là `id` bỏ tiền tố loại (ví dụ `company-dat-bike` → `/startup/dat-bike/`). Đổi loại tác nhân sẽ đổi phần đầu đường dẫn nhưng `id` giữ nguyên. Đường dẫn cũ `/a/<id>/` chuyển hướng 301 qua tệp `_redirects` (Cloudflare Pages) và trang chuyển hướng dự phòng.
+
+## Phân tích (`case_studies`) và vòng vốn (`funding_rounds`)
+
+`case_studies`: `title`, `url`, `publisher`, `date`, `summary`, `points` (ý chính, viết lại), `metrics` (`label`, `value`, `note`). `funding_rounds`: `date` (YYYY-MM), `round`, `amount_usd`, `lead` và `investors` (id tác nhân), `source`. Quan hệ `invested_in` (quỹ → startup) trong `relations.csv` tạo mục "Danh mục đầu tư" trên trang nhà đầu tư.

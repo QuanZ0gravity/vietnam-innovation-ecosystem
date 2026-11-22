@@ -3,24 +3,110 @@ name:
   vi: Dat Bike
 alt_names:
 - DAT BIKE VIETNAM Company Limited
-type: company
+- Datbike
+- Công ty TNHH Dat Bike Việt Nam
+type: startup
 categories:
 - Xe máy điện
-- Transportation
-- Automotive
+- Phương tiện điện
 - Doanh nghiệp khoa học và công nghệ
 sectors:
 - mobility
+- climate
+- deeptech
+founded: 2019
+status: active
 website: https://dat.bike/
-address: 85 Cao Ba Quat, Đà Nẵng
+address: 85 Cao Bá Quát, Đà Nẵng
 description:
-  vi: Hãng xe máy điện Việt Nam, nhà máy tại Đà Nẵng.
+  vi: Startup xe máy điện thành lập năm 2019 tại Đà Nẵng, từ Batch 2019 của DNES; tự phát triển pin, bộ điều khiển động cơ, firmware và sản xuất tại Việt Nam.
+case_studies:
+- title: 'Dat Bike: một startup địa phương trở thành năng lực công nghiệp'
+  url: https://indanang.vn/dat-bike-case-study
+  publisher: inDanang – Đà Nẵng Startup Ecosystem
+  date: 2026-08
+  summary: Phân tích cách Dat Bike giữ phần khó của ngành xe điện (pin, bộ điều khiển, phần mềm, sản xuất) ở lại Việt Nam, đóng góp của doanh nghiệp cho kinh tế địa phương, và những gì hệ sinh thái Đà Nẵng cần xây để có thêm doanh nghiệp tương tự.
+  points:
+  - 'Tích hợp dọc là lợi thế: toàn bộ công nghệ lõi (pin, BMS, bộ điều khiển động cơ, firmware, OTA) do đội ngũ trong nước phát triển; chi phí hệ truyền động trên hiệu năng giảm khoảng 60% sau 4 năm.'
+  - 'Sáu thế hệ sản phẩm là sáu vòng thử–sai: từ Weaver (2019) chứng minh năng lực kỹ thuật, Quantum (2023) chuyển sang thị trường đại chúng, đến Era (2026) giá từ 29,9 triệu đồng cho nhu cầu gia đình.'
+  - 'Tác động lan tỏa: khoảng 90% chuỗi cung ứng nội địa với khoảng 300 doanh nghiệp Việt, 80% nhà cung cấp trong bán kính 30 km quanh nhà máy; hơn 500 việc làm trực tiếp.'
+  - 'Bài học cho Đà Nẵng: cần hạ tầng thử nghiệm hard-tech dùng chung, vốn kiên nhẫn cho R&D (grant, vay chuyển đổi, quỹ đồng đầu tư), cầu nối startup với nhà cung cấp, sandbox đô thị và chuyên gia từng vận hành sản xuất.'
+  - 'Thách thức giai đoạn tới: biên lợi nhuận, chất lượng ở quy mô hàng chục nghìn xe, vòng đời và tái chế pin, quốc tế hóa sang Thái Lan và Đông Nam Á.'
+  metrics:
+  - label: Vốn đã huy động
+    value: 51 triệu USD
+    note: sau khoản đầu tư của TVS, 3/2026
+  - label: Xe ra thị trường
+    value: 20.000+
+    note: 7 mẫu xe
+  - label: Việc làm trực tiếp
+    value: 500+
+    note: dữ liệu doanh nghiệp, 8/2026
+  - label: Chuỗi cung ứng nội địa
+    value: 90%
+    note: khoảng 300 doanh nghiệp Việt
+  - label: CO₂ cắt giảm lũy kế
+    value: 4.000 tấn
+    note: dữ liệu doanh nghiệp
+funding_rounds:
+- date: 2021-04
+  round: Pre-Series A
+  amount_usd: 2600000
+  lead:
+  - fund-jungle-ventures
+  investors:
+  - fund-wavemaker-partners
+  - fund-hustle-fund
+  - fund-iseed-ventures
+  source: https://techcrunch.com/2021/04/12/vietnamese-electric-motorbike-startup-dat-bike-raises-2-6m-led-by-jungle-ventures/
+- date: 2022-04
+  round: Series A
+  amount_usd: 5300000
+  lead:
+  - fund-jungle-ventures
+  investors:
+  - fund-wavemaker-partners
+  source: https://techcrunch.com/2022/04/27/dat-bike-is-the-creator-of-vietnams-first-domestic-electric-motorbike/
+- date: 2022-11
+  round: Vòng tăng trưởng
+  amount_usd: 8000000
+  lead:
+  - fund-jungle-ventures
+  investors:
+  - fund-gsr-ventures
+  - fund-delivery-hero-ventures
+  - fund-wavemaker-partners
+  - fund-innoven-capital
+  source: https://techcrunch.com/2022/11/23/dat-bike-gets-another-8m-to-put-more-e-bikes-on-vietnams-roads/
+- date: 2024-08
+  round: Khoản vay chuyển đổi
+  amount_usd: 4000000
+  lead:
+  - fund-infraco-asia-pidg
+  source: https://pidg.org/pidg-announces-first-e-mobility-transaction-in-southeast-asia/
+- date: 2025-09
+  round: Series B
+  amount_usd: 22000000
+  lead:
+  - company-f-c-c
+  - fund-rebright-partners
+  investors:
+  - fund-cathay-venture
+  - fund-aiviet-venture
+  source: https://news.tuoitre.vn/vietnamese-e-motorbike-startup-dat-bike-raises-22mn-in-series-b-round-103250918194038356.htm
+- date: 2026-03
+  round: Đầu tư chiến lược
+  amount_usd: 4000000
+  lead:
+  - company-chung-khoan-thien-viet-tvs
+  source: https://www.tvs.vn/en/news/tvs-invests-4-million-usd-in-electric-motorbike-brand-dat-bike
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - StartupBlink (trang công khai, 11/2026)
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- indanang.vn – Dat Bike Case Study (08/2026)
 legacy_id: d86
