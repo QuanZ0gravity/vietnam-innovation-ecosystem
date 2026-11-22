@@ -106,3 +106,7 @@ Khi dựng trang, mỗi chuỗi sự kiện `recurrence: annual` lấy lần t�
 ## Ảnh khi chia sẻ link
 
 Khi dựng trang, `tools/og.py` tạo ảnh 1200 × 630 (`site/og/<id>.jpg`) cho mỗi hồ sơ có logo hoặc ảnh đại diện: logo (hoặc ảnh tròn với chuyên gia), tên, loại, địa phương. Trang hồ sơ khai báo ảnh này trong `og:image`; hồ sơ không có logo dùng ảnh mặc định `assets/og-default.png`. Cần Pillow (đã thêm vào `requirements.txt`) và phông Be Vietnam Pro trong `web/fonts/` (giấy phép OFL).
+
+## Diễn giả sự kiện (`speakers`)
+
+Sự kiện có thể có `speakers`: danh sách `name`, `title`, `org`, `org_id` (nếu tổ chức có trong danh bạ) và `speakers_source`. Chỉ ghi họ tên, chức danh, đơn vị theo công bố của ban tổ chức; không tạo hồ sơ cá nhân, không lưu ảnh, liên hệ.

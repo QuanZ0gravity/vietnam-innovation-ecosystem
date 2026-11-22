@@ -481,3 +481,4 @@ img.person{border-radius:50%!important;object-fit:cover!important;padding:0!impo
 .city-ev .ev-day{padding-bottom:14px}
 .dmore{margin-bottom:10px}
 #danh-ba{margin-bottom:12px}
+.spk{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin-top:10px}.spk-c{display:flex;flex-direction:column;gap:3px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:.88rem;line-height:1.4}.spk-c b{font-size:.98rem}

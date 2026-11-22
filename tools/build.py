@@ -1478,6 +1478,9 @@ for ev in events:
 {"" if ev.get("_projected") else f'<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>'}{f'<a class="btn ghost" href="{e(ev["official_url"])}" rel="noopener" data-vi="Trang sự kiện (lần trước)" data-en="Previous edition website">Trang sự kiện (lần trước)</a>' if ev.get("_projected") and ev.get("official_url") else ""}
 {f'<a class="btn ghost" href="{SITE_ROOT}co-hoi/{opp["id"].removeprefix("opp-")}/" data-vi="Cơ hội, danh sách tham gia" data-en="Opportunity and participants">Cơ hội, danh sách tham gia</a>' if opp else ""}</p>
 <div class="section"><h2 data-vi="Giới thiệu" data-en="About">Giới thiệu</h2><p class="desc">{e(ev.get("summary",""))}</p></div>
+{('<div class="section"><h2 data-vi="Diễn giả" data-en="Speakers">Diễn giả</h2><p class="small muted">' + str(len(ev.get("speakers") or [])) + ' diễn giả theo công bố của ban tổ chức. <a href="' + e(ev.get("speakers_source", "")) + '" rel="noopener">Nguồn</a></p><div class="spk">' + "".join(
+    f'<div class="spk-c"><b>{e(s["name"])}</b><span>{e(s.get("title",""))}</span>' + ((f'<a href="{SITE_ROOT}{apath(s["org_id"])}">{e(s["org"])}</a>' if s.get("org_id") in by_id else f'<span class="muted">{e(s.get("org",""))}</span>') if s.get("org") else "") + '</div>'
+    for s in ev.get("speakers") or []) + '</div></div>') if ev.get("speakers") else ""}
 {('<div class="section"><h2 data-vi="Sự kiện liên quan" data-en="Related events">Sự kiện liên quan</h2><div class="ev-items">' + "".join(ev_card(x) for x in same) + '</div></div>') if same else ""}
 </article></div>"""
     ld = {"@context": "https://schema.org", "@type": "Event", "name": ev["title"], "startDate": str(ev["start"]), "endDate": str(ev.get("end") or ev["start"]),
