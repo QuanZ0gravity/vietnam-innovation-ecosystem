@@ -22,17 +22,20 @@
   summary: Diễn đàn quốc gia về tài sản số, blockchain và AI, kèm các sự kiện bên lề như HSC Conference và Builders' Breakfast.
   source: https://indanang.vn/ecosystem-activities/conviction-2026
 - id: jdi-tfoai4-2026
-  title: JDI TFOAI4 – The Future of AI, Chapter 4
+  title: 'JDI – The Future of Artificial Intelligence: Chapter 4'
   start: '2026-08-18'
   end: '2026-08-18'
-  venue: TP.HCM
+  venue: Riverside Palace, TP.HCM
   category: ai
-  organizer: JDI
+  organizer: 'JDI Group (đồng hành: Alibaba Cloud)'
   organizer_ids:
   - international-jdi
-  summary: Hội thảo về AI ứng dụng, hạ tầng, quản trị AI và đầu tư, kèm gọi vốn startup và triển lãm.
+  summary: 'Hội nghị "Từ AI hype đến tác động kinh doanh": hơn 1.000 người tham dự, hơn 40 diễn giả, 20 đơn vị triển lãm; chủ đề ứng dụng AI, dữ liệu và mô hình nền, hạ tầng AI, quản trị AI; bàn tròn, kết nối nhà đầu tư 1-1, gọi vốn startup.'
   opportunity: jdi-tfoai4-2026
   source: https://indanang.vn/ecosystem-activities/jdi-tfoai4
+  url: https://the-future-of-artificial-intelligence.webflow.io/
+  recurrence: annual
+  month: 8
 - id: innoex-2026
   title: InnoEx 2026
   start: '2026-08-19'
