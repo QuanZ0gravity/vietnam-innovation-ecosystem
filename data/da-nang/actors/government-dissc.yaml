@@ -7,13 +7,13 @@ alt_names:
 type: government
 categories:
 - Trung tâm Hỗ trợ khởi nghiệp ĐMST
-website: https://startupdanang.vn
+status: inactive
 contact_email: htkndmst@danang.gov.vn
 address: 58 Nguyễn Chí Thanh, Đà Nẵng
 description:
   vi: Vận hành startupdanang.vn, SURF, DAVAS; nay thuộc Trung tâm ĐMST Đà Nẵng.
 region: da-nang
-website_status: Đã hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng từ 1/11/2026 (QĐ 4640/QĐ-UBND)
+website_status: Đã hợp nhất vào Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC) từ 1/11/2026 (QĐ 4640/QĐ-UBND); startupdanang.vn nay do DNIC quản lý
 verification:
   level: source_checked
 sources:

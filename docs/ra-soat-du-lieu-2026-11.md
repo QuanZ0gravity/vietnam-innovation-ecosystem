@@ -211,3 +211,8 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Gộp 8 cặp trùng với hồ sơ đã có (ví dụ Vườn ươm ĐH Nông Lâm, VBIO, ESE, BSA, VIC).
 - Lưu ý chất lượng nguồn: cột lĩnh vực của nhiệm vụ có vẻ gán chưa chuẩn (nhiều đề tài kỹ thuật được ghi "khoa học xã hội và nhân văn").
 - Trang cổng chặn truy cập tự động có user-agent trình duyệt; tệp CSV tải trực tiếp được.
+
+## DNIC (22/11/2026)
+
+- Theo hồ sơ tổ chức trên ybadanang.com và tin startupdanang.vn (02/11/2026): đổi tên hồ sơ thành "Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC)", bổ sung tên tiếng Anh, chức năng nhiệm vụ, địa chỉ, email chung, website startupdanang.vn (chuyển từ DISSC), lãnh đạo theo quyết định bổ nhiệm (trường mới `leadership`), dòng thời gian (trường mới `history`), quan hệ `merged_into` từ DISSC, DBC, DSAC và `part_of` Sở KH&CN. DISSC, DBC, DSAC chuyển tình trạng "đã ngừng hoạt động".
+- Thêm sự kiện Hội thảo Kết nối Đổi mới sáng tạo xanh Nhật Bản – Đà Nẵng (01/12/2026).

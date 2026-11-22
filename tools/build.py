@@ -60,7 +60,7 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in"):
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in", "merged_into"):
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
@@ -491,6 +491,25 @@ for a in actors:
     src_html = e(src) + (f'<br><a href="{e(a["source_url"])}" rel="noopener" class="small">{e(a["source_url"])}</a>' if a.get("source_url") else "")
     issue_q = urllib.parse.urlencode({"template": "them-hoac-sua-ho-so.yml", "title": f"[Hồ sơ] {name}",
                                       "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
+    lead_html = ""
+    if a.get("leadership"):
+        lead_html = ('<div class="section"><h2 data-vi="Lãnh đạo" data-en="Leadership">Lãnh đạo</h2><ul class="lead-list">'
+                     + "".join(f'<li><b>{e(x["name"])}</b><span class="muted">{e(x["role"])}' + (f' · từ {e(x["since"][5:7] + "/" + x["since"][:4]) if len(x.get("since","")) >= 7 else ""}' if x.get("since") else "") + "</span></li>" for x in a["leadership"])
+                     + '</ul><p class="small muted" data-vi="Theo công bố chính thức về bổ nhiệm." data-en="As officially announced.">Theo công bố chính thức về bổ nhiệm.</p></div>')
+    merged_from = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "merged_into" and r["from"] in by_id]
+    merged_to = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "merged_into" and r["to"] in by_id]
+    mg_html = ""
+    if merged_from:
+        mg_html += '<div class="section"><h2 data-vi="Hợp nhất từ" data-en="Formed from">Hợp nhất từ</h2>' + mini_cards([by_id[x] for x in merged_from]) + "</div>"
+    if merged_to:
+        mg_html += ('<div class="section merged-note"><p><b data-vi="Đã hợp nhất vào" data-en="Merged into">Đã hợp nhất vào</b> '
+                    + ", ".join(f'<a href="{SITE_ROOT}{apath(x)}">{e(by_id[x]["name"]["vi"])}</a>' for x in merged_to) + "</p></div>")
+    hist_html = ""
+    if a.get("history"):
+        hist_html = ('<div class="section"><h2 data-vi="Dòng thời gian" data-en="Timeline">Dòng thời gian</h2><ol class="fr-list">'
+                     + "".join(f'<li class="fr"><span class="fr-d">{e(fmt_date(h["date"]) if len(h["date"]) == 10 else h["date"])}</span><div><p>{e(h["text"])}</p>'
+                               + (f'<p class="small"><a href="{e(h["source"])}" rel="noopener" data-vi="Nguồn" data-en="Source">Nguồn</a></p>' if h.get("source", "").startswith("http") else "") + "</div></li>" for h in sorted(a["history"], key=lambda h: h["date"]))
+                     + "</ol></div>")
     # case study, vòng vốn, nhà đầu tư, danh mục đầu tư
     cs_html = ""
     for cs in a.get("case_studies") or []:
@@ -561,7 +580,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}{src_html}
 <dl class="facts">{facts_html}</dl>
-{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
+{mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>

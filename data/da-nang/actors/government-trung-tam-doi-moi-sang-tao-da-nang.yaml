@@ -1,14 +1,63 @@
 id: government-trung-tam-doi-moi-sang-tao-da-nang
 name:
-  vi: Trung tâm Đổi mới sáng tạo Đà Nẵng
+  vi: Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC)
+  en: Da Nang Innovation Center (DNIC)
+alt_names:
+- DNIC
+- Da Nang Innovation Center
+- Trung tâm Đổi mới sáng tạo thành phố Đà Nẵng
 type: government
 categories:
-- Đơn vị sự nghiệp, Sở KH&CN
+- Đơn vị sự nghiệp công lập thuộc Sở KH&CN
+- Tổ chức hỗ trợ khởi nghiệp
+- Nghiên cứu, chuyển giao công nghệ
+sectors:
+- deeptech
+- health
+- ai
+founded: 2026
+status: active
+website: https://startupdanang.vn/
+contact_email: dnic@danang.gov.vn
+address: 58 Nguyễn Chí Thanh, phường Hải Châu, Đà Nẵng
 description:
-  vi: Hợp nhất DISSC, DSAC, DBC theo QĐ 4640/QĐ-UBND; hoạt động từ 1/11/2026. Đầu mối mời doanh nghiệp công nghệ số dự hội thảo 17/11/2026.
+  vi: Đơn vị sự nghiệp công lập thuộc Sở KH&CN Đà Nẵng, hợp nhất DISSC, DBC và DSAC theo Quyết định 4640/QĐ-UBND ngày 09/10/2026, hoạt động từ 01/11/2026. Nghiên cứu, đào tạo, phát triển và chuyển giao công nghệ; cung cấp dịch vụ về đổi mới sáng tạo, khởi nghiệp sáng tạo, công nghệ sinh học, vi mạch, bán dẫn và AI, thông tin thống kê KH&CN và chuyển đổi số; quản lý hạ tầng KH&CN được giao.
+leadership:
+- role: Giám đốc
+  name: Nguyễn Viết Toàn
+  since: 2026-11
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- role: Phó Giám đốc
+  name: Võ Đức Anh
+  since: 2026-11
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- role: Phó Giám đốc
+  name: Đào Thị Thanh Thảo
+  since: 2026-11
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- role: Phó Giám đốc
+  name: Đặng Ngọc Minh
+  since: 2026-11
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+history:
+- date: '2026-10-09'
+  text: UBND thành phố ban hành Quyết định 4640/QĐ-UBND thành lập Trung tâm trên cơ sở hợp nhất DISSC, DBC và DSAC; Trung tâm kế thừa nhiệm vụ của ba đơn vị cho đến khi có quy định chức năng, nhiệm vụ mới.
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- date: '2026-11-01'
+  text: Chính thức hoạt động.
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- date: '2026-11-02'
+  text: 'Sở KH&CN công bố quyết định thành lập và bổ nhiệm lãnh đạo. Sở giao Trung tâm sớm ban hành quy chế, đẩy mạnh chuyển đổi số, góp phần đưa Đà Nẵng vào nhóm 3–5 địa phương dẫn đầu về Chỉ số đổi mới sáng tạo cấp tỉnh (PII). Năm nhiệm vụ trọng tâm: ổn định tổ chức; bàn giao tài chính, tài sản, hồ sơ; phát huy nghiên cứu, chuyển giao công nghệ và khởi nghiệp; tăng kỷ luật, sử dụng hiệu quả tài sản công; phối hợp với các phòng, ban.'
+  source: https://startupdanang.vn/da-nang-thanh-lap-trung-tam-doi-moi-sang-tao
+- date: '2026-12-01'
+  text: Đồng tổ chức Hội thảo Kết nối Đổi mới sáng tạo xanh Nhật Bản – Đà Nẵng cùng Thành phố Yokohama, YUSA và YBA Đà Nẵng.
+  source: https://www.ybadanang.com/to-chuc/dnic/
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
+- YBA Đà Nẵng – hồ sơ tổ chức DNIC (ybadanang.com, 11/2026)
+- startupdanang.vn (02/11/2026)
+source_url: https://www.ybadanang.com/to-chuc/dnic/
 legacy_id: d2
