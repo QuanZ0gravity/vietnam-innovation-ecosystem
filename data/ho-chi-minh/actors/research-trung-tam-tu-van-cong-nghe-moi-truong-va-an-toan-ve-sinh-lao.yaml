@@ -1,0 +1,20 @@
+id: research-trung-tam-tu-van-cong-nghe-moi-truong-va-an-toan-ve-sinh-lao
+name:
+  vi: Trung tâm Tư vấn Công nghệ Môi trường và An toàn Vệ sinh Lao động
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 286/8A, Tô Hiến Thành, Phường Hòa Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu và triển khai ứng dụng về xử lý môi trường; trang thiết bị bảo hộ lao động và tiết kiệm năng lượng. 2. Sản xuất thử - thử nghiệm từ kết quả nghiên cứu. 3. Dịch vụ KH&CN: - Tư vấn: thiết kế; giám sát thi công; thiết bị xử lý môi trường; quan trắc; đánh giá tác động môi trường; hệ thống quản lý chất lượng. - Phân tích thí nghiệm; thông tin khoa học và công nghệ; đào tạo bồi dưỡng về công nghệ môi trường và bảo hộ lao động. 4. Hợp tác trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

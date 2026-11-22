@@ -1,0 +1,20 @@
+id: research-trung-tam-cong-nghe-moi-truong-va-dich-vu-tu-van-dau-tu
+name:
+  vi: Trung tâm Công nghệ Môi trường và Dịch vụ Tư vấn Đầu tư
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 1091, Trần Hưng Đạo, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu, triển khai ứng dụng công nghệ mới trong lĩnh vực môi trường. 2- Sản xuất thử - thử nghiệm và chuyển giao công nghệ từ kết quả nghiên cứu. 3- Dịch vụ KH-CN: - Tư vấn: thiết kế, giám sát các dự án xử lý môi trường, công nghệ quản lý và xử lý chất thải (rắn, lỏng, khí), công nghệ thu gom xử lý chất thải nguy hại, công nghệ quan trắc, kiểm soát và xử lý ô nhiễm, công nghệ xử lý môi trường bằng phương pháp sinh học, đánh giá tác động môi trường, quy hoạch môi trường. - Đào tạo bồi dưỡng, chuyển giao công nghệ trong lĩnh vực môi trường theo Luật định. 4- Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

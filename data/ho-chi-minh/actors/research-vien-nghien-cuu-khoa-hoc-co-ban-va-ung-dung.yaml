@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-khoa-hoc-co-ban-va-ung-dung
+name:
+  vi: Viện Nghiên cứu Khoa Học Cơ Bản Và Ứng Dụng
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 6, Trần Nhật Duật, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Duy Tân. Chủ trì 2 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong các lĩnh vực: Kỹ thuật phần mềm; Hệ thống thông tin; Công nghệ kỹ thuật Điện - Điện tử; Hóa học; Vật lý; Quản trị kinh doanh; Tài chính ngân hàng; Kế toán; Kiến trúc; Kỹ thuật xây dựng; Công nghệ kỹ thuật công trình xây dựng; Công nghệ kỹ thuật môi trường; Quản lý tài nguyên và môi trường; Công nghệ thực phẩm; Công nghệ sinh học; Điều dưỡng; Dược học; Y Đa khoa; Răng - Hàm - Mặt; Văn học, Việt Nam học; Truyền thông đa phương tiện; Quan hệ quốc tế; Ngôn ngữ Anh; Luật Kinh tế, Luật học; Ngôn ngữ Trung Quốc; Quản trị dịch vụ Du lịch và Lữ hành.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

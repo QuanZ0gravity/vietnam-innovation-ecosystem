@@ -1,0 +1,20 @@
+id: research-trung-tam-so-huu-tri-tue-va-chuyen-giao-cong-nghe
+name:
+  vi: Trung tâm Sở hữu Trí tuệ và Chuyển giao Công nghệ
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: Khu phố 6, Phường Linh Xuân, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc VNU-HCM (Hệ thống). Chủ trì 2 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1- Nghiên cứu khoa học trong lĩnh vực sở hữu trí tuệ và chuyển giao công nghệ. 2- Dịch vụ KH&CN: Dịch vụ sở hữu trí tuệ (đại diện sở hữu công nghiệp, đại diện, tư vấn, dịch vụ quyền tác giả và quyền liên quan; tư vấn, dịch vụ quyền đối với giống cây trồng ; dịch vụ chuyển giao công nghệ; thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). 3- Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

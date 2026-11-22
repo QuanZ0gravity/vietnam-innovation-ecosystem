@@ -1,0 +1,21 @@
+id: research-trung-tam-ung-dung-phat-trien-cong-nghe-va-day-nghe
+name:
+  vi: Trung Tâm Ứng Dụng Phát Triển Công Nghệ Và Dạy Nghề
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 30, Đường số 03, Phường An Khánh, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Công ty TNHH MTV Tài nguyên và Môi trường Miền Nam.
+description_source:
+  text: '1. Nghiên cứu khoa học, phát triển công nghệ trong lĩnh vực: đất đai, bất động sản, tài nguyên nước, tài nguyên khoáng sản, địa chất, môi trường, khí tượng thủy văn và biến đổi khí hậu; đo đạc và bản đồ, biển và hải đảo. 2. Dịch vụ khoa học và công nghệ: - Khảo sát, thiết kế, lập dự án, lập thiết kế kỹ thuật - dự toán, tư vấn kiểm tra, giám sát, thẩm định chất lượng công trình, sản phẩm trong các hoạt động về đo đạc bản đồ, đất đai, môi trường, tài nguyên nước, khí tượng thủy văn và biến đổi khí hậu, địa chất và khoáng sản, biển và hải đảo. - Xây dựng cơ sở dữ liệu hệ thống thông tin địa lý; xây dựng cơ sở dữ liệu hệ thống thông tin tài nguyên và môi trường; xây dựng cơ sở dữ liệu chuyên ngành trong các lĩnh vực: đo đạc bản đồ, đất đai, môi trường, tài nguyên nước, khí tượng thủy văn và biến đổi khí hậu, địa chất và khoáng sản, biển và hải đảo. - Tổ chức hội nghị, hội thảo trong nước; chuyển giao kết quả nghiên cứu. Tư vấn, kiểm tra, giám sát, thẩm định chất lượng công trình; phản
+    biện, đánh giá, chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ, huấn luyện chuyên môn theo các lĩnh vực đăng ký (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

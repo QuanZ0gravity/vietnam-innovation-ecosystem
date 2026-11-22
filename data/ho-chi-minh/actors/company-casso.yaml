@@ -1,0 +1,15 @@
+id: company-casso
+name:
+  vi: Công ty TNHH CASSO
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: I.102D, Nhà A, Khu Công Nghệ Phần Mềm, Đường Nội Bộ Đại Học Quốc Gia Thành Phố Hồ Chí Minh, Khu Phố 6, Phường Linh Xuân, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

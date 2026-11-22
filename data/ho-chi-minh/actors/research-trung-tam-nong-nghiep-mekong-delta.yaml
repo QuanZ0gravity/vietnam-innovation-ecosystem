@@ -1,0 +1,21 @@
+id: research-trung-tam-nong-nghiep-mekong-delta
+name:
+  vi: Trung Tâm Nông Nghiệp Mekong Delta
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 1F5, 5 Lô R1-1, Khu Phố Sky Garden 1, Phường Tân Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và công nghệ trong lĩnh vực: Nông hóa, thổ nhưỡng, bảo vệ thực vật, bảo quản và chế biến nông sản. 2. Sản xuất thử nghiệm, sản xuất kinh doanh các sản phẩm là kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: tư vấn, phản biện, đánh giá, chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ, huấn luyện, bồi duõng chuyên môn theo lĩnh vực đăng ký. 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

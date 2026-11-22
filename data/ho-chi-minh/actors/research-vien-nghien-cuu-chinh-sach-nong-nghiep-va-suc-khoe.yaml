@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-chinh-sach-nong-nghiep-va-suc-khoe
+name:
+  vi: Viện Nghiên cứu Chính Sách Nông Nghiệp Và Sức Khỏe
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 279, Nguyễn Tri Phương, Phường Vườn Lài, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Kinh tế Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học trong lĩnh vực kinh tế học sức khỏe và chính sách nông nghiệp. 2. Dịch vụ khoa học và công nghệ: tổ chức các hội nghị, hội thảo, thông tin khoa học công nghệ, chuyển giao công nghệ, tư vấn, bồi dưỡng chuyên môn theo lĩnh vực đăng ký. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

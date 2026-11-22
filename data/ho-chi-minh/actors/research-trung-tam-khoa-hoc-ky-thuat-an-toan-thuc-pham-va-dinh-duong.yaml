@@ -1,0 +1,20 @@
+id: research-trung-tam-khoa-hoc-ky-thuat-an-toan-thuc-pham-va-dinh-duong
+name:
+  vi: Trung Tâm Khoa Học Kỹ Thuật An Toàn Thực Phẩm Và Dinh Dưỡng Miền Nam
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 15, Bà Lê Chân, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Hội Khoa học Kỹ thuật An toàn Thực phẩm Việt Nam.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: An toàn thực phẩm, Công nghệ thực phẩm; Dinh dưỡng; Y tế công cộng; Thực phẩm chức năng. 2. Kinh doanh, sản xuất kinh doanh, sản xuất thử nghiệm các sản phẩm hình thành từ kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: Tổ chức hội nghị, hội thảo; Tư vấn, phản biện, đánh giá các nhiệm vụ khoa học và công nghệ; Tư vấn về chất lượng hàng hóa, an toàn thực phẩm, sỡ hữu trí tuệ; Chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ; Huấn luyện, bồi dưỡng chuyên môn ngắn hạn cho các tổ chức, cá nhân có nhu cầu theo các lĩnh vực đăng ký trên (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác trong và ngoài nước theo các lĩnh vực đăng ký phù hợp với luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

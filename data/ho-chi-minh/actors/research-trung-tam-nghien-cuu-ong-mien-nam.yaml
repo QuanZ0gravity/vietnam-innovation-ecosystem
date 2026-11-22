@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-ong-mien-nam
+name:
+  vi: Trung tâm nghiên cứu ong Miền Nam
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: X19, Đường 61, Phường Tân Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '"1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Sinh lý và hóa sinh động vật nuôi; Chọn, tạo giống động vật nuôi, nhân giống động vật nuôi; Thức ăn và dinh dưỡng cho động vật nuôi; Chăm sóc, nuôi dưỡng và bảo vệ động vật nuôi; Gây mê và điều trị thú y; Dịch tễ học thú y, miễn dịch học thú y; Giải phẫu học và sinh lý học thú y; phẫu thuật thú y; Bệnh học thú y, chẩn đoán bệnh thú y, vệ sinh thú y; Vi sinh vật học thú y, vi rút học thú y trên đối tượng ong mật; 2. Dịch vụ khoa học và công nghệ: tổ chức hội nghị, hội thảo; phân tích thí nghiệm; tư vấn, chuyển giao công nghệ; thông tin khoa học và công nghệ; huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp chứng nhận, không cấp văn bằng, chứng chỉ); 3. Kinh doanh và sản xuất kinh doanh các sản phẩm là kết quả nghiên cứu; 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

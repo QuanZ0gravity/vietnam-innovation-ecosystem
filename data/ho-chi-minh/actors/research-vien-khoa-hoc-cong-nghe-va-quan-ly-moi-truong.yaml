@@ -1,0 +1,21 @@
+id: research-vien-khoa-hoc-cong-nghe-va-quan-ly-moi-truong
+name:
+  vi: Viện Khoa học Công nghệ và Quản lý Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 12 Nguyễn Văn Bảo, Phường Hạnh Thông, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Công nghiệp Thành phố Hồ Chí Minh. Chủ trì 1 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1- Nghiên cứu, phát triển về khoa học công nghệ và quản lý môi trường phục vụ ngăn ngừa và giảm thiểu ô nhiễm công nghiệp, nông lâm nghiệp, đô thị và nông thôn. 2- Triển khai ứng dụng, sản xuất thử nghiệm các chế phẩm sinh học, thử nghiệm các mô hình, thiết bị phục vụ xử lý ô nhiễm môi trường. 3- Dịch vụ KH&CN: - Tư vấn, dịch vụ về khoa học và công nghệ môi trường, tư vấn thiết kế và chuyển giao công nghệ ngăn ngừa và xử lý chất thải Hbảo vệ môi trường. - Dịch vụ quan trắc và phân tích môi trường, đánh giá tác động môi trường. - Thẩm định, phản biện xã hội về khoa học công nghệ và môi trường. - Đào tạo bồi dưỡng nâng cao nghiệp vụ trên lĩnh vực đăng ký. 4- Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-khoa-hoc-lanh-dao-va-quan-tri-doanh-nghiep
+name:
+  vi: Viện Nghiên cứu Khoa học Lãnh đạo và Quản trị Doanh nghiệp
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 275, Nguyễn Trãi, Phường Bến Thành, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu khoa học về lãnh đạo và quản lý kinh tế. 2- Dịch vụ KH&CN: + Tư vấn về nghiên cứu thị trường, chiến lược phát triển, quản lý doanh nghiệp, quản lý kinh tế. + Bồi dưỡng nghiệp vụ kỹ năng lãnh đạo, quản trị doanh nghiệp; nghiệp vụ đấu thầu; nghiệp vụ định giá xây dựng; nghiệp vụ quản lý dự án đầu tư; nghiệp vụ đánh giá và thẩm định dự án đầu tư; nghiệp vụ giám sát thi công xây dựng công trình, công tác an toàn lao động; nghiệp vụ về bất động sản, quản lý tòa nhà, quản trị nhân sự, tài chính - ngân hàng, kế toán - kiểm toán, thị trường chứng khoán, marketing; nghiệp vụ về thí nghiệm và kiểm định chất lượng theo quy định pháp luật (không cấp văn bằng, chứng chỉ ). 3- Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

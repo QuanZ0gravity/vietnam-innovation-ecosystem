@@ -1,0 +1,20 @@
+id: research-vien-quan-tri-tai-san-tri-tue-minh-duc
+name:
+  vi: Viện Quản Trị Tài Sản Trí Tuệ Minh Đức
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 39, Bến Vân Đồn, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Biên bản họp hội đồng sáng lập 27/5/2018. Chủ trì 2 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1. Nghiên cứu khoa học trong lĩnh vực: quan hệ sản xuất kinh doanh liên quan đến tài sản trí tuệ; kinh doanh và quản trị kinh doanh liên quan đến tài sản trí tuệ; khoa học giáo dục nói chung liên quan đến sở hữu trí tuệ và quản trị tài sản trí tuệ. 2. Dịch vụ khoa học và công nghệ: tư vấn về sở hữu trí tuệ (không bao gồm tư vấn liên quan đến thủ tục xác lập và bảo vệ/thực thi quyền sở hữu trí tuệ); dịch vụ tư vấn chuyển giao công nghệ (hỗ trợ các bên lựa chọn công nghệ, đàm phán ký kết, thực hiện hợp đồng chuyển giao công nghệ); dịch vụ thẩm định giá công nghệ và tài sản trí tuệ; dịch vụ tập huấn, bồi dưỡng chuyên môn theo lĩnh vực đăng ký. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

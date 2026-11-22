@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-khoa-hoc-va-phat-trien-cong-nghe-giao-t
+name:
+  vi: Trung tâm Nghiên cứu Khoa học và Phát triển Công nghệ Giao thông vận tải
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 2, D3, Phường Bình Thạnh Tây, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu phát triển và triển khai ứng dụng công nghệ ngành giao thông vận tải. 2. Sản xuất thử, thử nghiệm và chuyển giao công nghệ trong các lĩnh vực công nghiệp, công nghệ vật liệu, và kết cấu hạ tầng công trình giao thông, môi trường, cấp thoát nước và dân dụng. 3. Dịch vụ KH&CN: - Thông tin tư vấn, tổ chức đào tạo bồi dưỡng, ứng dụng tiến bộ khoa học kỹ thuật ngành giao thông vận tải và môi trường, tư vấn đầu tư, thiết kế, giám sát, kiểm định kỹ thuật, đánh giá chất lượng thiết bị, phương tiện, kết cấu hạ tầng công trình giao thông vận tải và môi trường, dàn khoan. 4. Hợp tác trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -1,0 +1,15 @@
+id: company-nong-nghiep-cong-nghe-cao-duyen-hai
+name:
+  vi: Công ty TNHH Nông nghiệp Công nghệ cao Duyên Hải
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 537, Lý Nhơn, Xã An Thới Đông, Huyện Cần Giờ, Thành phố Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

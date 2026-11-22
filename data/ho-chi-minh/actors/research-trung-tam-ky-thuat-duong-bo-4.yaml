@@ -1,0 +1,20 @@
+id: research-trung-tam-ky-thuat-duong-bo-4
+name:
+  vi: Trung tâm Kỹ thuật Đường bộ 4
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 296, Nguyễn Văn Đậu, Phường Bình Lợi Trung, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu, triển khai ứng dụng tiến bộ kỹ thuật và chuyển giao công nghệ trong lĩnh vực xây dựng, quản lý và bảo trì đường bộ. - Khảo sát, thu thập và cập nhật dữ liệu tình trạng đường bộ. - Dịch vụ KH&CN: tư vấn lập dự án đầu tư xây dựng công trình; tư vấn giám sát xây dựng công trình; thẩm tra, thẩm định hồ sơ các dự án, hồ sơ thiết kế kỹ thuật thi công; thẩm tra an toàn giao thông đường bộ; khảo sát, thiết kế, kiểm định chất lượng công trình (kể cả các dự án sửa chữa nâng cấp bến phà, phương tiện thủy) theo quy định pháp luật; kiểm tra, thử tải, đánh giá chất lượng công trình; thí nghiệm, thử nghiệm vật liệu, kết cấu mới thuộc chuyên ngành giao thông đường bộ; đánh giá tác động môi trường dự án xây dựng; quản lý dự án đầu tư xây dựng công trình giao thông. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

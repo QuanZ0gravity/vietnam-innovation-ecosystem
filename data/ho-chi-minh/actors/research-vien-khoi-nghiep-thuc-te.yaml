@@ -1,0 +1,20 @@
+id: research-vien-khoi-nghiep-thuc-te
+name:
+  vi: Viện Khởi Nghiệp Thực Tế
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 128, Hồng Hà, Phường Đức Nhuận, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Liên hiệp Khoa học doanh nhân Việt Nam.
+description_source:
+  text: '1. Hoạt động nghiên cứu khoa học, phát triển công nghệ và triển khai thực nghiệm trong lĩnh vực: doanh nhân, doanh nghiệp và khởi nghiệp; Nghiên cứu thăm dò thị trường cho các loại hình khởi nghiệp thực tế; Nghiên cứu Xây dựng luận chứng khoa học cho các chương trình, dự án, kế hoạch, chính sách kinh tế - xã hội phát triển doanh nhân, doanh nghiệp khởi nghiệp, khởi nghiệp thực tế. 2. Dịch vụ khoa học và công nghệ: Thông tin khoa học và công nghệ; Chuyển giao khoa học và công nghệ; Đánh giá định mức tín nhiệm doanh nhân, doanh nghiệp và khởi nghiệp; giám sát độc lập các dự án khoa học và công nghệ về doanh nhân, doanh nghiệp và khởi nghiệp; Tổ chức hoạt động ươm tạo doanh nghiệp khoa học và công nghệ; Tổ chức đào tạo và bồi dưỡng nhân lực phục vụ cho việc nghiên cứu, triển khai ứng dụng khoa học, công nghệ vào sản xuất (Chỉ được cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ)'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

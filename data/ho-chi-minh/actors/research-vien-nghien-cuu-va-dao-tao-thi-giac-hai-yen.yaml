@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-va-dao-tao-thi-giac-hai-yen
+name:
+  vi: Viện Nghiên cứu và Đào Tạo Thị Giác Hải Yến
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 31A, Nguyễn Đình Chiểu, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc công ty cổ phần Hải Yến Anh Trần.
+description_source:
+  text: '1. Nghiên cứu khoa học về các bệnh lý của mắt và khoa học thị giác; Nghiên cứu ứng dụng thiết bị trong chẩn đoán và điều trị bệnh lý về mắt và khoa học thị giác. 2. Dịch vụ KH&CN: tổ chức hội thảo, hội nghị trao đổi thông tin, cập nhật các kiến thức, kỹ năng chuyên môn mới, đặc biệt các ứng dụng khoa học kỹ thuật vào hoạt động khám, chữa bệnh; đào tạo và chuyển giao công nghệ trong lĩnh vực nhãn khoa (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

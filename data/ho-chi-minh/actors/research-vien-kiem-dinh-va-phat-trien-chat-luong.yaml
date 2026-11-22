@@ -1,0 +1,20 @@
+id: research-vien-kiem-dinh-va-phat-trien-chat-luong
+name:
+  vi: Viện Kiểm định và Phát triển Chất lượng
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 72, Đường Số 2, Phường Chợ Quán, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu lý thuyết và thực tiễn về khoa học chất lượng - Dịch vụ KH&CN: tư vấn và đào tạo bồi dưỡng về quản lý, đánh giá, kiểm định chứng nhận theo quy định pháp luật, phát triển chất lượng theo Hiệp định rào cản kỹ thuật thương mại – TBT. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -1,0 +1,21 @@
+id: research-vien-phat-trien-kinh-te-xa-hoi
+name:
+  vi: Viện phát triển Kinh tế - Xã hội
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện phát triển
+address: TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu khoa học và phát triển công nghệ: lĩnh vực quan hệ sản xuất kinh doanh, kinh doanh và quản trị kinh doanh, lịch sử Việt Nam, lý luận văn học, nghiên cứu văn học nói chung. 2- Dịch vụ khoa học và công nghệ: chuyển giao công nghệ, tư vấn, huấn luyền bồi dưỡng chuyên môn theo lĩnh vực đăng ký. 3- Hợp tác trong và ngoài nước: theo lĩnh vực đăng ký phù hợp với các quy định của pháp luật.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

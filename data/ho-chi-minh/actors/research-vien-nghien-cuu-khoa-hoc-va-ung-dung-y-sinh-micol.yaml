@@ -1,0 +1,16 @@
+id: research-vien-nghien-cuu-khoa-hoc-va-ung-dung-y-sinh-micol
+name:
+  vi: Viện Nghiên cứu Khoa học và Ứng dụng Y Sinh MICOL
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: Tầng 3, 4 số 72/2A-72/2B Trần Quốc Tuấn, Phường Hạnh Thông, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

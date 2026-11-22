@@ -1,0 +1,21 @@
+id: research-vien-phat-trien-sinh-hoc-phan-tu-chau-a
+name:
+  vi: Viện Phát Triển Sinh Học Phân Tử Châu Á
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện phát triển
+address: Phòng 1002, Tầng 10, Toàn Nhà Rosana Tower, 60 Nguyễn Đình Chiểu, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Công ty TNHH Phát triển đầu tư IFG - ICAREBASE Việt Nam (Quyết định số 271103.2019/QĐ-IFGVN ngày 27/12/2019).
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: công nghệ gen, protein trong y học; công nghệ sinh học liên quan đến y học, y tế. 2. Dịch vụ khoa học và công nghệ: - Tổ chức hội nghị, hội thảo; tập huấn, bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ); - Thành lập, phát triển phòng thí nghiệm tại Việt Nam; - Tư vấn, dịch vụ thông tin khoa học công nghệ, chuyển giao công nghệ theo lĩnh vực đăng ký. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

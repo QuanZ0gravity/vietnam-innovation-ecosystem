@@ -1,0 +1,20 @@
+id: research-vien-doi-moi-sang-tao-truong-dh-kinh-te
+name:
+  vi: Viện Đổi mới sáng tạo - Trường ĐH Kinh tế Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 232/6, Võ Thị Sáu, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Kinh tế Thành phố Hồ Chí Minh. Chủ trì 3 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1. Hoạt động nghiên cứu khoa học về đổi mới sáng tạo: tham mưu tổ chức triển khai các chương trình, đề án nghiên cứu tốt nhất để đưa sản phẩm khoa học công nghệ tiếp cận thử với thị trường, thúc đẩy và hỗ trợ cho các ý tưởng đổi mới sáng tạo, các phát kiến trong khoa học công nghệ có thể hiện thực hóa thành công. 2. Dịch vụ khoa học và công nghệ: - Tư vấn, hỗ trợ cho các cá nhân, tổ chức, doanh nghiệp để phát triển các ý tưởng đổi mới sáng tạo thành công; - Đào tạo, bồi dưỡng kiến thức chuyên môn cho doanh nghiệp và các tổ chức hướng đến tăng cường phát triển khoa học, công nghệ trong nền kinh tế về đổi mới sáng tạo; - Tổ chức hội thảo, hội nghị về đổi mới sáng tạo trong quản lý, kinh doanh. 3. Hợp tác đổi mới sáng tạo thông qua việc khai thác các chương trình, dự án, các quỹ đầu tư đổi mới sáng tạo trong và ngoài nước về lĩnh vực đăng ký phù hợp với Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

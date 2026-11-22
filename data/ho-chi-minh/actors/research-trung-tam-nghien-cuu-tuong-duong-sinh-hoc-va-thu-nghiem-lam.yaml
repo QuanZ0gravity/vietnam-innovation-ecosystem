@@ -1,0 +1,16 @@
+id: research-trung-tam-nghien-cuu-tuong-duong-sinh-hoc-va-thu-nghiem-lam
+name:
+  vi: Trung tâm nghiên cứu tương đương sinh học và thử nghiệm lâm sàng thống nhất
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 01 Lý Thường Kiệt, Phường Tân Sơn Nhất, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Bệnh viện Thống Nhất.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

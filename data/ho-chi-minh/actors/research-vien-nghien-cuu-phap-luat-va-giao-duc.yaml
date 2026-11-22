@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-phap-luat-va-giao-duc
+name:
+  vi: Viện Nghiên cứu Pháp Luật Và Giáo Dục
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 338/71, Lê Thị Riêng, Phường Thới An, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Luật Thương mai; Luật Kinh tế; Luật Dân sự; Luật Hành chính nhà nước; Luật Quốc tế Khoa học giáo dục nói chung (bao gồm cả sư phạm học, lý luận giáo dục). 2. Dịch vụ khoa học và công nghệ: Tổ chức hội nghị, hội thảo; Tư vấn, phản biện, đánh giá các nhiệm vụ khoa học và công nghệ, chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ; Dịch vụ tư vấn và hỗ trợ trong hoạt động giáo dục; Huấn luyện, bồi dưỡng chuyên môn ngắn hạn cho các tổ chức, cá nhân có nhu cầu theo các lĩnh vực đăng ký trên (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

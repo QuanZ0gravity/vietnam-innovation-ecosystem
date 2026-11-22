@@ -1,0 +1,20 @@
+id: research-trung-tam-phat-trien-cong-nghe-ky-thuat-giao-thong
+name:
+  vi: Trung tâm Phát triển Công nghệ Kỹ thuật Giao thông
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 7, Đường 49, Phường Hiệp Bình Phước, Thành phố Thủ Đức
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: kỹ thuật xây dựng; công trình hạ tầng đô thị; công trình giao thông vận tải; công trình thủy lợi; địa kỹ thuật. 2. Sản xuất thử - thử nghiệm, sản xuất – kinh doanh các sản phảm là kết quả nghiên cứu. 3. Dịch vụ KH&CN: Dịch vụ thử nghiệm chất lượng sản phẩm, hàng hóa; Dịch vụ chứng nhận sản phẩm phù hợp tiêu chuẩn; Dịch vụ giám định số lượng chất lượng sản phẩm, hàng hóa trong lĩnh vực xây dựng; tư vấn thiết kế, tư vấn giám sát trong lĩnh vực: kỹ thuật xây dựng; công trình hạ tầng đô thị; công trình giao thông vận tải; công trình thủy lợi; địa kỹ thuật, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

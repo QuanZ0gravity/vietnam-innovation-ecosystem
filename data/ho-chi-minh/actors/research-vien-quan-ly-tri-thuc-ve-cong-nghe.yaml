@@ -1,0 +1,20 @@
+id: research-vien-quan-ly-tri-thuc-ve-cong-nghe
+name:
+  vi: Viện Quản lý Tri thức về Công nghệ
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 35, Ung Văn Khiêm, Phường Bình Thạnh, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng các hệ thống quản lý chất lượng. 2. Dịch vụ KH&CN: Dịch vụ chứng nhận hệ thống quản lý chất lượng; chứng nhận sản phẩm phù hợp tiêu chuẩn; thông tin khoa học; huấn luyện bồi dưỡng nâng cao nghiệp vụ chuyên môn theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo các lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

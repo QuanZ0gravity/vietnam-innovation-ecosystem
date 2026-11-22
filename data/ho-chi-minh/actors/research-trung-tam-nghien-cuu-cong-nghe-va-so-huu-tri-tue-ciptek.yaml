@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-cong-nghe-va-so-huu-tri-tue-ciptek
+name:
+  vi: Trung tâm nghiên cứu công nghệ và sở hữu trí tuệ CIPTEK
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 22, Lê Văn Miến, Phường An Khánh, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: kỹ thuật cơ khí nói chung; công nghệ sinh học liên quan đến y học, y tế; hóa dược học; công nghệ thực phẩm; thực phẩm chức năng; thổ nhưỡng, chọn, tạo giống cây trồng; công nghệ nhân giống cây trồng. 2. Dịch vụ KH&CN: dịch vụ đại diện sở hữu trí tuệ; dịch vụ tư vấn về sở hữu trí tuệ; chuyển giao công nghệ, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

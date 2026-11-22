@@ -1,0 +1,16 @@
+id: company-lien-hop-khoa-hoc-cong-nghe-moi-truong-biwase
+name:
+  vi: Công ty TNHH MTV Liên hợp Khoa học - Công nghệ - Môi trường Biwase
+type: company
+categories:
+- Tổ chức khoa học và công nghệ
+- Doanh nghiệp KHCN
+address: Khu Phố 1B, 39, Phường Chánh Phú Hòa, Phường Bến Cát, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

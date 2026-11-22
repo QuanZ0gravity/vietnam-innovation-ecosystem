@@ -1,0 +1,15 @@
+id: company-cong-nghe-giao-duc-dotb
+name:
+  vi: Công ty Cổ phần Công nghệ Giáo dục DotB
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 545/40/2/5 Đường Nguyễn Xiển, Phường Long Bình, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

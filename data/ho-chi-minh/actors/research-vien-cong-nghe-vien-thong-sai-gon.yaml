@@ -1,0 +1,20 @@
+id: research-vien-cong-nghe-vien-thong-sai-gon
+name:
+  vi: Viện Công nghệ Viễn thông Sài gòn
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 100, Đào Duy Anh, Phường Đức Nhuận, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu phát triển và triển khai áp dụng các công nghệ thuộc các lĩnh vực công nghệ thông tin, cơ - điện tử, viễn thông. - Sản xuất thử nghiệm, chuyển giao công nghệ thuộc các lĩnh vực công nghệ thông tin, cơ – điện tử, viễn thông. - Dịch vụ KH&CN: Tư vấn: khảo sát, thiết kế, giám sát công trình chuyên ngành điện tử, viễn thông, công nghệ thông tin; tư vấn đầu tư xây dựng: thẩm tra, quản lý dự án, đấu thầu, chuyển giao công nghệ điện tử, viễn thông, công nghệ thông tin theo Luật định. - Hợp tác trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

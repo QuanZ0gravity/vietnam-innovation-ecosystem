@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-va-pha-trien-cong-nghe-cao-van-lang
+name:
+  vi: Viện Nghiên cứu và phá triển công nghệ cao Văn Lang
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 45, Nguyễn Khắc Nhu, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Văn Lang.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ: trong lĩnh vực công nghệ cao về quản lý, sản xuất ứng dụng công nghệ cao, nông nghiệp công nghệ cao, công nghệ sinh học, công nghiệ sinh học thực phẩm, công nghệ môi trường, công nghệ thông tin, năng lượng sinh học tái tạo; 2. Kinh doanh và sản xuất kinh doanh: các sản phẩm là kết quả nghiên cứu khoa học theo lĩnh vực đăng ký; 3. Dịch vụ khoa học và công nghệ: tổ chức hội nghị, hội thảo, đấu thầu các đề tài, dự án, các hợp đồng chuyển giao công nghệ, tư vấn khoa học, tổ chức triển khai phối hợp các hợp đồng liên kết về nghiên cứu khoa học, mở các lớp tập huấn, đào tạo ngắn hạn, bồi dưỡng kiến thức và kỹ năng (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ); 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định./.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

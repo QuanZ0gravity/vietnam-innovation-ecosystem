@@ -1,0 +1,15 @@
+id: company-ky-thuat-nang-luong-xanh
+name:
+  vi: Công ty TNHH Kỹ thuật Năng lượng Xanh
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 1B Đường TL29, Khu Phố 1, Phường An Phú Đông, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

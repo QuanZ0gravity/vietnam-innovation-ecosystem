@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-va-tu-van-ky-thuat-thiet-bi-y-te
+name:
+  vi: Trung tâm Nghiên cứu và Tư vấn Kỹ thuật Thiết bị Y tế
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 2, Cao Lỗ, Phường Chánh Hưng, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu khoa học và triển khai ứng dụng công nghệ về thiết bị, dụng cụ và công trình y tế. - Sản xuất thử - thử nghiệm từ kết quả nghiên cứu. - Dịch vụ KH&CN: Tư vấn lập các dự án xây dựng cơ sở hạ tầng y tế, tư vấn thiết kế, lắp đặt, hướng dẫn vận hành, bảo dưỡng, sửa chữa, tư vấn đấu thầu xây dựng công trình y tế, tư vấn đấu thầu mua sắm trang thiết bị y tế, chuyển giao công nghệ, thông tin, đào tạo bồi dưỡng nghiệp vụ chuyên môn trong lĩnh vực thiết bị, dụng cụ và công trình y tế. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

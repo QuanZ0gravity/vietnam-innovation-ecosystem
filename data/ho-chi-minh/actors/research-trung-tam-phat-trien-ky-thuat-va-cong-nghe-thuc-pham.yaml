@@ -1,0 +1,20 @@
+id: research-trung-tam-phat-trien-ky-thuat-va-cong-nghe-thuc-pham
+name:
+  vi: Trung tâm phát triển kỹ thuật và công nghệ thực phẩm
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 243, Phan Đăng Lưu, Phường Đức Nhuận, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu triển khai xây dựng các dự án về công nghiệp, dân dụng, cấp thoát nước và hạ tầng kỹ thuật. 2- Dịch vụ khoa học và công nghệ: - Tư vấn thiết kế, chế tạo, cung cấp, lắp đặt thiết bị và chuyển giao công nghệ các dự án trong lĩnh vực công nghiệp và dân dụng. - Tư vấn lập dự án và xây dựng các dự án, tư vấn xây dựng các phòng thí nghiệm, đánh giá tác động môi trường, xây dựng các hệ thống xử lý môi trường, tư vấn thiết kế bản vẽ thi công, lập tổng dự toán xây dựng, tư vấn quản lý các dự án đầu tư xây dựng, tư vấn đấu thầu, tư vấn giám sát thi công xây dựng và lắp đặt thiết bị - công nghệ các dự án trong lĩnh vực công nghiệp, dân dụng, cấp thoát nước và hạ tầng kỹ thuật. - Dịch vụ: giám định hàng hóa xuất nhập khẩu, kiểm soát các vấn đề an toàn thực phẩm, chất lượng sản phẩm; thẩm định thiết bị công nghệ, thẩm định giá, kiểm định chất lượng công trình, thẩm tra thiết kế, dự toán và tổng dự toán công trình theo Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

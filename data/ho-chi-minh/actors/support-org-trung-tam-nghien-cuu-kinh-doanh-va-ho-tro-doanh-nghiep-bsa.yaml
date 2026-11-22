@@ -1,11 +1,23 @@
 id: support-org-trung-tam-nghien-cuu-kinh-doanh-va-ho-tro-doanh-nghiep-bsa
 name:
   vi: Trung tâm nghiên cứu kinh doanh và hỗ trợ doanh nghiệp (BSA)
+alt_names:
+- Trung tâm Nghiên cứu Kinh doanh và Hỗ trợ Doanh nghiệp
 type: support_org
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
 founded: 2007
+address: 163, Pasteur, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: quan hệ sản xuất kinh doanh; kinh doanh và quản trị kinh doanh. 2. Dịch vụ KH&CN: Tư vấn, chuyển giao kết quả nghiên cứu, thông tin khoa học, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified
 sources:
 - HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
 source_url: https://hoip.sihub.gov.vn/incubator/16

@@ -1,0 +1,20 @@
+id: research-trung-tam-phat-trien-cong-nghe-thong-tin
+name:
+  vi: Trung tâm Phát triển Công nghệ Thông tin
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 133G, Nguyễn Chí Thành, Phường Hòa Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Công Nghệ Thông Tin Thành phố Hồ Chí Minh.
+description_source:
+  text: '- Nghiên cứu, ứng dụng, triển khai công nghệ thông tin để phát triển các sản phẩm và dịch vụ phần mềm phục vụ nhu cầu phát tiển kinh tế - xã hội. - Dịch vụ KH&CN: Tư vấn, thông tin , đào tạo bồi dưỡng theo lĩnh vực đăng ký. - Hợp tác trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

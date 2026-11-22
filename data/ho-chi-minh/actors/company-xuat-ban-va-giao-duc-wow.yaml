@@ -1,0 +1,15 @@
+id: company-xuat-ban-va-giao-duc-wow
+name:
+  vi: Công ty Cổ phần Xuất bản và Giáo dục Wow
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: Tầng 3, Số 82 Nguyễn Xí, Phường Bình Thạnh, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

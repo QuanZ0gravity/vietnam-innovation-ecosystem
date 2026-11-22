@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-khoa-hoc-giao-duc
+name:
+  vi: Viện Nghiên cứu Khoa Học Giáo Dục
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 71/3, Nguyễn Văn Thương, Phường Bình Thạnh, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học sư phạm Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học trong lĩnh vực: Quan hệ sản xuất kinh doanh; Kinh doanh và quản trị kinh doanh; Khoa học giáo dục nói chung (bao gồm sư phạm học và lý luận giáo dục); Giáo dục chuyên biệt cho người khuyết tật. 2. Dịch vụ khoa học và công nghệ: + Dịch vụ môi giới chuyển giao công nghệ (hỗ trợ các bên có nhu cầu mua hoặc bán tìm kiếm đối tác để ký hợp đồng chuyển giao công nghệ); + Dịch vụ tư vấn chuyển giao công nghệ (hỗ trợ các bên lựa chọn công nghệ, đàm phán, ký kết, thực hiện hợp đồng chuyển giao công nghệ). + Tư vấn, liên kết, tập huấn, bồi dưỡng nghiệp vụ ngắn hạn theo lĩnh vực đăng ký phù hợp Luật định (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ).'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

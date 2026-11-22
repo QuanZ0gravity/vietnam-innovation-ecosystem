@@ -1,0 +1,22 @@
+id: research-vien-nghien-cuu-va-phat-trien-cong-nghe-nam-long
+name:
+  vi: Viện Nghiên cứu và Phát Triển Công Nghệ Nam Long
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 57, Yên Đỗ, Phường Gia Định, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Công ty CP Tập đoàn Đầu tư Công nghệ Nam Long.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Kỹ thuật điện, điện tử, công nghệ thông tin và truyền thông; Nghiên cứu phát triển công nghệ 4.0, IoT, AI, GIS vào các lĩnh vực; Kỹ thuật cơ khí và công nghệ chế tạo máy; Công nghệ hóa học; Công nghệ môi trường. 2. Kinh doanh và sản xuất kinh doanh các sản phẩm hình thành từ kết quả nghiên cứu 3. Dịch vụ khoa học công nghệ: Tổ chức hội nghị, hội thảo trong nước; chuyển giao kết quả nghiên cứu; Dịch vụ về kiểm định, hiệu chuẩn, thử nghiệm phương tiện đo; Dịch vụ tư vấn về đầu tư, trang bị và quản lý phòng đo lường, thử nghiệm chất lượng sản phẩm, hàng hóa; tư vấn áp dụng các công cụ quản lý chất lượng; tư vấn xây dựng tiêu chuẩn; tư vấn xây dựng hệ thống bảo đảm về đo lường. Dịch vụ bảo trì, bảo dưỡng và sửa chữa các phương tiện đo, thiết bị thử nghiệm, thiết bị kỹ thuật. Dịch vụ ứng dụng kỹ thuật mã số, mã vạch cho sản phẩm hàng hóa và dịch vụ. Tư vấn, phản biện, đánh giá, chuyển giao nghiên cứu khoa học, thông tin khoa
+    học công nghệ, huấn luyện, bồi dưỡng chuyên môn theo các lĩnh vực đăng ký (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

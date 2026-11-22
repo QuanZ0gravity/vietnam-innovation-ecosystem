@@ -1,0 +1,15 @@
+id: company-phat-trien-va-chuyen-giao-phan-mem
+name:
+  vi: Công ty TNHH Phát triển và Chuyển giao Phần mềm
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 49 Ngõ 203 Kim Ngưu, Phường Thanh Lương, Quận Hai Bà Trưng, Thành Phố Hà Nội, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

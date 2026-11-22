@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-ung-dung-cong-nghe-khi-tuong-thuy-van-v
+name:
+  vi: Trung tâm Nghiên cứu Ứng dụng công nghệ Khí tượng Thủy văn và Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 78, Bàu Cát 1, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu và triển khai ứng dụng trong các lĩnh vực: khí tượng học và các khoa học khí quyển; thủy văn-tài nguyên nước; công nghệ quan trắc môi trường; kiểm soát và xử lý ô nhiễm. 2. Dịch vụ khoa học và công nghệ: Tư vấn; thông tin khoa học và công nghệ; chuyển giao công nghệ theo lĩnh vực đăng ký. 3. Hợp tác trong và ngoài nước theo các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

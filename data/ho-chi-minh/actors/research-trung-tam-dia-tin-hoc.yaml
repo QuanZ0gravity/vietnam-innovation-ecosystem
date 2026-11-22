@@ -1,0 +1,20 @@
+id: research-trung-tam-dia-tin-hoc
+name:
+  vi: Trung tâm Địa Tin học
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: Khu Phố 6, Phường Đông Hòa, Phường Dĩ An, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Khu Công nghệ Phần mềm - Đại học Quốc gia Thành phố Hồ Chí Minh (ITP).
+description_source:
+  text: '- Nghiên cứu, triển khai và chuyển giao công nghệ trong các lĩnh vực: địa tin học, công nghệ vũ trụ, công nghệ thông tin, quy hoạch đô thị, quản lý tài nguyên và môi trường. - Sản xuất thử, thử nghiệm, xây dựng cơ sở dữ liệu và thực hiện các dịch vụ khoa học và công nghệ trên các lĩnh vực đăng ký. - Đào tạo, tư vấn, thẩm định, thiết kế và thực hiện các công trình, dự án, hợp tác quốc tế theo các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

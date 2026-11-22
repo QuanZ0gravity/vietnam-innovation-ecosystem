@@ -1,0 +1,23 @@
+id: research-vien-ngoai-khoa-laser
+name:
+  vi: Viện Ngoại khoa Laser
+alt_names:
+- Viện Ngoại khoa Laser (ILAS)
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 136, Đường Số 14, Phường Tân Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu, triển khai ứng dụng kỹ thuật lĩnh vực vật lý y sinh, y học. - Sản xuất thử nghiệm các thiết bị phục vụ chẩn đoán và điều trị. - Dịch vụ KH&CN: Tư vấn trang thiết bị y tế, chuyển giao kỹ thuật điều trị, thông tin, đào tạo bồi dưỡng về lĩnh vực vật lý y sinh, y học. - Hợp tác trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

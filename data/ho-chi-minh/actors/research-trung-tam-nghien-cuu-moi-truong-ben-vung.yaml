@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-moi-truong-ben-vung
+name:
+  vi: Trung tâm nghiên cứu môi trường bền vững
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 104/25/8A, Trần Bá Giao, Phường An Nhơn, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Công ty Cổ phần Thương mại Đoàn Gia.
+description_source:
+  text: '1. Nghiên cứu khoa học, phát triển công nghệ và triển khai ứng dụng: công nghệ quản lý và xử lý chất thải (rắn, lỏng, khí); công nghệ quan trắc môi trường, kiểm soát và xử lý ô nhiễm. 2. Dịch vụ khoa học và công nghệ: phân tích thí nghiệm, tư vấn, chuyển giao kết quả nghiên cứu, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ) 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định./.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

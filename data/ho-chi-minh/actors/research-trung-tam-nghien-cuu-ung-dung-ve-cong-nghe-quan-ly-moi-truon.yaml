@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-ung-dung-ve-cong-nghe-quan-ly-moi-truon
+name:
+  vi: Trung tâm Nghiên cứu ứng dụng về Công nghệ & Quản lý Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 45, Nguyễn Khắc Nhu, Phường Bến Thành, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực công nghệ và quản lý môi trường, cấp và thoát nước. 2. Sản xuất thử - thử nghiệm; sản xuất kinh doanh các sản phẩm từ kết quả nghiên cứu. 3. Dịch vụ KH&CN: Đánh giá tác động môi trường và cam kết bảo vệ môi trường; chuyển giao công nghệ; tư vấn lập đăng ký chủ nguồn thải; tư vấn thiết kế, lắp đặt và vận hành các hệ thống xử lý ô nhiễm; tư vấn giám sát thi công các công trình về môi trường; tư vấn về quản lý môi trường và công nghệ môi trường; tư vấn đấu thầu, lập dự án đầu tư, lập hồ sơ mời thầu và đánh giá hồ sơ dự thầu các công trình môi trường; tư vấn giám sát và kiểm soát chất lượng môi trường; phân tích thí nghiệm và đánh giá chất lượng nước, khí, chất thải rắn công nghiệp và nguy hại, đào tạo bồi dưỡng theo lĩnh vực đăng ký (không cấp văn bằng chứng chỉ). 4. Hợp tác trong và ngòai nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

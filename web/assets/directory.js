@@ -17,7 +17,7 @@
     a.download = "he-sinh-thai-khoi-nghiep-" + new Date().toISOString().slice(0, 10) + ".csv"; document.body.append(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
   }
-  var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator", "expert"];
+  var TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university", "government", "company", "international", "community", "media", "creator", "expert", "research"];
   var REGIONS = ["da-nang", "former-quang-nam", "ha-noi", "ho-chi-minh", "hai-phong", "viet-nam", "quoc-te"];
   var VERS = ["partner_verified", "org_confirmed", "source_checked", "unverified"];
   var STATUSES = ["active", "inactive", "unknown"];

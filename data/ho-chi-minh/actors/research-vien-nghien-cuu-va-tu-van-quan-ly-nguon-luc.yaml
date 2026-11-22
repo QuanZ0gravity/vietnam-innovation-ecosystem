@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-va-tu-van-quan-ly-nguon-luc
+name:
+  vi: Viện Nghiên cứu và Tư vấn quản lý nguồn lực
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: B9/2 Cư Xá 30.4, Điện Biên Phủ, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu và triển khai ứng dụng khoa học và công nghệ về phát triển nguồn nhân lực nhân tài. 2- Dịch vụ KH&CN: Tư vấn đầu tư, lập và thẩm định dự án đầu tư, tư vấn đấu thầu, quản lý dự án, quản trị doanh nghiệp, tư vấn xây dựng và đánh giá hệ thống quản lý chất lượng, chất lượng hàng hóa, tư vấn chuyển giao công nghệ; thông tin khoa học và công nghệ; đào tạo bồi dưỡng nguồn nhân lực. 3- Hợp tác trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

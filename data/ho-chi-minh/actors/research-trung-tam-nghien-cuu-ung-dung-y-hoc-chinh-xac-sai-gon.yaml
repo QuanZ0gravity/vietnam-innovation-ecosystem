@@ -1,0 +1,22 @@
+id: research-trung-tam-nghien-cuu-ung-dung-y-hoc-chinh-xac-sai-gon
+name:
+  vi: Trung Tâm Nghiên Cứu Ứng Dụng Y Học Chính Xác Sài Gòn
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: LL2 Ba Vì, Phường Hòa Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Tim mạch; Bệnh về khớp; Nội tiết và chuyển hóa; Ung thư học; Lão khoa, điều dưỡng; Nội khoa; Chẩn đoán hình ảnh; Công nghệ và kỹ thuật thiết bị y học, Công nghệ gen, protein trong y học. 2. Sản xuất thử nghiệm, sản xuất kinh doanh các sản phẩm hình thành từ kết quả nghiên cứu nêu trên. 3. Dịch vụ khoa học và công nghệ: Dịch vụ sưu tầm, xử lý bảo quản, nghiên cứu giám định, thẩm định và trao đổi mẫu vật về khoa học và công nghệ; Dịch vụ chuyển giao công nghệ; Thông tin phổ biến kiến thức, tổ chức hội nghị, hội thảo khoa học; Tư vấn, phản biện, đánh giá các nhiệm vụ khoa học và công nghệ, chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ; Huấn luyện, bồi dưỡng chuyên môn ngắn hạn cho các tổ chức, cá nhân có nhu cầu theo các lĩnh vực đăng ký (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng
+    ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

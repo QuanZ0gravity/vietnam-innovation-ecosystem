@@ -1,0 +1,20 @@
+id: research-vien-khoa-hoc-va-an-toan-ve-sinh-lao-dong
+name:
+  vi: Viện Khoa học và an toàn vệ sinh lao động Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 153A, Xô Viết Nghệ Tĩnh, Phường Gia Định, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Sở Lao động - Thương binh và Xã hội.
+description_source:
+  text: '1. Nghiên cứu, ứng dụng các kết quả nghiên cứu khoa học trong lĩnh vực an toàn, vệ sinh lao động và phát triển công nghệ; nghiên cứu sản xuất các thiết bị an toàn phục vụ hoạt động sản xuất, kinh doanh. 2. Dịch vụ khoa học và công nghệ: + Kiểm toán năng lượng, tư vấn tiết kiệm năng lượng; + Kiểm định và dịch vụ kỹ thuật an toàn; + Huấn luyện An toàn lao động và đào tạo nghề; + Kiểm soát môi trường lao động (vệ sinh lao động): quan trắc và kiểm soát môi trường lao động công nghiệp. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

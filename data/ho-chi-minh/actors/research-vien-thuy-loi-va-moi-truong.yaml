@@ -1,0 +1,20 @@
+id: research-vien-thuy-loi-va-moi-truong
+name:
+  vi: Viện Thủy lợi và Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 2, Trường Sa, Phường Gia Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu khoa học, phát triển và chuyển giao công nghệ trong lĩnh vực thủy lợi, thủy điện, địa kỹ thuật, vật liệu và công nghệ xây dựng mới, cấp thoát nước, cơ sở hạ tầng, thủy sản, môi trường, phòng tránh và giảm nhẹ thiên tai. - Sản xuất thử nghiệm, chuyển giao tiến bộ khoa học công nghệ thuộc các lĩnh vực đăng ký, tham gia thi công các công trình có áp dụng tiến bộ khoa học công nghệ từ kết quả nghiên cứu. - Dịch vụ KH&CN: Tư vấn đầu tư, điều tra cơ bản, quy hoạch, lập dự án, khảo sát, thiết kế, thẩm định, đấu thầu, phản biện, giám sát, thí nghiệm, kiểm tra an toàn công trình, đánh giá và xử lý môi trường, thông tin khoa học công nghệ, tham gia đào tạo huấn luyện bồi dưỡng nâng cao nghệp vụ. - Liên kết hợp tác với các tổ chức trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

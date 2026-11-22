@@ -1,0 +1,21 @@
+id: research-phong-thi-nghiem-trong-diem-dieu-khien-so-va-ky-thuat-he-tho
+name:
+  vi: Phòng Thí nghiệm Trọng điểm điều khiển số và kỹ thuật hệ thống
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Phòng thí nghiệm
+address: 268 Đ. Lý Thường Kiệt, Phường Hòa Hưng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM. Chủ trì 2 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '- Nghiên cứu, thiết kế, chế tạo, lắp đặt, bảo trì và chuyển giao các thiết bị (phần cứng và phần mềm) trong lĩnh vực điều khiển số và kỹ thuật hệ thống, các hệ thống cơ điện tử, viễn thông, công nghệ thông tin, cơ khí tự động hoá và kỹ thuật hệ thống công nghiệp. - Sản xuất thử nghiệm và chuyển giao công nghệ từ kết quả nghiên cứu. - Dịch vụ KH&CN: Tư vấn, thẩm định, thi công, đào tạo bồi dưỡng nâng cao nghiệp vụ chuyên trên lĩnh vực đăng ký theo Luật định. - Hợp tác với các tổ chức trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

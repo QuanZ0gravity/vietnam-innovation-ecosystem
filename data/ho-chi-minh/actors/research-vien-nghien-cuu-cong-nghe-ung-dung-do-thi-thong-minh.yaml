@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-cong-nghe-ung-dung-do-thi-thong-minh
+name:
+  vi: Viện Nghiên cứu Công Nghệ Ứng Dụng Đô Thị Thông Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: Số 3, Công Trường Quốc Tế, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Công ty TNHH Đầu tư Phát triển Giáo dục - Trường Đại học Quản lý và Công nghệ Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng công nghệ trong lĩnh vực công nghệ thông tin và công nghệ tự động hóa phục vụ đô thị thông minh, bao gồm: Xây dựng nền tảng thử nghiệm mở; Mô hình hệ thống dữ liệu mở; Phát triển các ứng dụng trên nền vạn vật kết nối, các giải pháp ứng dụng trí tuệ nhân tạo và các giải pháp bảo mật an ninh mạng. 2. Dịch vụ khoa học và công nghệ: tư vấn, chuyển giao kết quả nghiên cứu, thông tin khoa học – công nghệ; huấn luyện, bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

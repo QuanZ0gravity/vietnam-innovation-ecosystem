@@ -1,0 +1,21 @@
+id: research-vien-phat-trien-cong-nghe-moi-truong-va-tai-nguyen-nuoc-phu
+name:
+  vi: Viện Phát triển công nghệ môi trường và tài nguyên nước Phú Mỹ
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện phát triển
+address: 710/14, Lũy Bán Bích, Phường Phú Thọ Hòa, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực công nghệ quản lý và xử lý chất thải (rắn, lỏng, khí); công nghệ sản xuất sạch, tái chế; công nghệ quan trắc môi trường, mức độ xả thải, xác định mức độ ô nhiễm của đất, nước, không khí; nghiên cứu chế độ dòng chảy; những vấn đề về thủy văn học, tài nguyên nước. 2. Sản xuất thử nghiệm các sản phẩm là kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: tư vấn chuyển giao kết quả nghiên cứu, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ) Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

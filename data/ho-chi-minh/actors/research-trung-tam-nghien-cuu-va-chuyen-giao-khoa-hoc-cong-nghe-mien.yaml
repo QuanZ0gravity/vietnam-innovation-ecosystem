@@ -1,0 +1,16 @@
+id: research-trung-tam-nghien-cuu-va-chuyen-giao-khoa-hoc-cong-nghe-mien
+name:
+  vi: Trung tâm Nghiên cứu và Chuyển giao Khoa học Công nghệ Miền nam
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: Phường Linh Xuân, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM. Chủ trì 3 nhiệm vụ KH&CN cấp thành phố.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

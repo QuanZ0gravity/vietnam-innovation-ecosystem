@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-va-phat-trien-cong-nghe-vat-lieu-xay-du
+name:
+  vi: Trung tâm Nghiên cứu và Phát triển công nghệ vật liệu xây dựng FiCO (336)
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 111A, Pasteur, Phường Gia Định, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: vật liệu xây dựng. 2. Sản xuất - thử nghiệm; sản xuất - kinh doanh các sản phẩm là kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: tư vấn, chuyển giao kết quả nghiên cứu, thông tin khoa học và công nghệ, huấn luyện và bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

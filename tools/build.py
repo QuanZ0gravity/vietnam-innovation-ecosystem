@@ -21,7 +21,7 @@ def fmt_date(s):
     return f"{s[8:10]}/{s[5:7]}/{s[:4]}" if len(s) >= 10 and s[4] == "-" else s
 
 TYPES = ["startup", "fund", "incubator", "accelerator", "space", "support_org", "university",
-         "government", "company", "international", "community", "media", "creator", "expert"]
+         "government", "company", "international", "community", "media", "creator", "expert", "research"]
 VER_ORDER = {"partner_verified": 0, "org_confirmed": 1, "source_checked": 2, "unverified": 3}
 VER_CLASS = {"unverified": "l0", "source_checked": "l1", "org_confirmed": "l2", "partner_verified": "l3"}
 
@@ -226,7 +226,7 @@ def _fmt_money(v):
     if v >= 1e6: return (f"{v/1e6:.1f}".rstrip("0").rstrip(".") + " triệu USD").replace(".", ",")
     return f"{int(v):,} USD".replace(",", ".")
 PREFIXES = ("startup-", "company-", "fund-", "incubator-", "accelerator-", "space-", "support-org-", "university-", "government-",
-            "international-", "community-", "media-", "creator-", "expert-")
+            "international-", "community-", "media-", "creator-", "expert-", "research-")
 def _base_slug(i):
     for pfx in PREFIXES:
         if i.startswith(pfx): return i[len(pfx):]
@@ -384,7 +384,7 @@ dir_body = f"""
 write("danh-ba/index.html", page("Danh bạ", dir_body, "dir", scripts=["map.js", "directory.js"], head=LEAF, desc=f"Danh bạ {len(actors)} startup, quỹ đầu tư, vườn ươm, trường, cơ quan trong hệ sinh thái khởi nghiệp Việt Nam. Lọc theo loại, lĩnh vực, địa phương; xem bản đồ; tải CSV miễn phí."))
 
 # ---------- trang từng tác nhân ----------
-VIE_TYPE = {"expert": "Chuyên gia", "startup": "Startup", "fund": "Quỹ đầu tư", "incubator": "Vườn ươm", "accelerator": "Chương trình tăng tốc", "space": "Không gian đổi mới sáng tạo", "support_org": "Tổ chức hỗ trợ khởi nghiệp", "university": "Trường, viện", "government": "Cơ quan nhà nước", "company": "Doanh nghiệp", "international": "Đối tác quốc tế", "community": "Cộng đồng", "media": "Truyền thông", "creator": "Dự án sáng tạo"}
+VIE_TYPE = {"research": "Viện, tổ chức KH&CN", "expert": "Chuyên gia", "startup": "Startup", "fund": "Quỹ đầu tư", "incubator": "Vườn ươm", "accelerator": "Chương trình tăng tốc", "space": "Không gian đổi mới sáng tạo", "support_org": "Tổ chức hỗ trợ khởi nghiệp", "university": "Trường, viện", "government": "Cơ quan nhà nước", "company": "Doanh nghiệp", "international": "Đối tác quốc tế", "community": "Cộng đồng", "media": "Truyền thông", "creator": "Dự án sáng tạo"}
 REGION_VI = {"da-nang": "Đà Nẵng", "former-quang-nam": "Khu vực Quảng Nam cũ", "ha-noi": "Hà Nội", "ho-chi-minh": "TP. Hồ Chí Minh",
              "hai-phong": "Hải Phòng", "viet-nam": "Việt Nam", "quoc-te": "Quốc tế"}
 SECT_VI = {k: vi for k, vi, _, _ in SECTORS}
@@ -983,6 +983,7 @@ TYPE_PAGES = [
     ("co-quan-nha-nuoc", ["government"], "Cơ quan nhà nước", "Government bodies", "Cơ quan quản lý, đơn vị sự nghiệp và trung tâm đổi mới sáng tạo của nhà nước.", "Public agencies, public service units and state innovation centres."),
     ("doanh-nghiep", ["company"], "Doanh nghiệp", "Companies", "Doanh nghiệp công nghệ, doanh nghiệp lớn và đối tác thương mại làm việc với startup.", "Technology firms, corporates and commercial partners working with startups."),
     ("doi-tac-quoc-te", ["international"], "Đối tác quốc tế", "International partners", "Tổ chức quốc tế, cơ quan phát triển và đối tác nước ngoài hoạt động trong hệ sinh thái Việt Nam.", "International organisations, development agencies and foreign partners active in Vietnam."),
+    ("vien-to-chuc-khcn", ["research"], "Viện, tổ chức khoa học và công nghệ", "Research institutes and S&T organisations", "Viện nghiên cứu, trung tâm nghiên cứu và tổ chức khoa học và công nghệ đã đăng ký hoạt động, theo dữ liệu mở của các thành phố.", "Research institutes, research centres and registered S&T organisations, from city open data."),
     ("chuyen-gia", ["expert"], "Chuyên gia, nhà đầu tư cá nhân", "Experts and angel investors", "Chuyên gia tư vấn và nhà đầu tư cá nhân đã tự đăng ký hồ sơ trên nền tảng của chính quyền (HOIP).", "Advisers and angel investors self-registered on the city government platform (HOIP)."),
     ("du-an-sang-tao", ["creator"], "Dự án sáng tạo", "Creative projects", "Dự án sáng tạo cộng đồng, chủ yếu từ chương trình Bản lĩnh xứ Quảng.", "Community creative projects, mostly from the Ban linh xu Quang programme."),
 ]

@@ -1,0 +1,21 @@
+id: research-trung-tam-dich-vu-khkt-lam-nghiep
+name:
+  vi: Trung tâm Dịch vụ KHKT Lâm Nghiệp Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 126 H Phan Đăng Lưu, Phường Đức Nhuận, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Nông Lâm Thành phố Hồ Chí Minh.
+description_source:
+  text: '- Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực lâm nghiệp. - Dịch vụ KH&CN: tư vấn, lập dự thầu và thẩm định các dự án bảo tồn, phát triển rừng và nghề rừng; tư vấn kiểm định về hạt giống, con, cây, gỗ và lâm sản ngoài gỗ theo quy định; tư vấn bảo vệ môi trường sinh thái, ứng dụng GIS, lâm nghiệp đô thị; chuyển giao công nghệ; thông tin KH&CN; huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp chứng nhận, không cấp văn bằng, chứng chỉ) - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

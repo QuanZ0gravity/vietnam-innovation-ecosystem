@@ -198,6 +198,10 @@ cities:
     source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
   - text: Tòa nhà SIHUB tại 123 Trương Định khánh thành tháng 8/2025; SIHUB hợp tác với Plug and Play từ 5/2026 và có mạng lưới đối tác gồm 13 trường đại học, 2 khu công nghệ Hàn Quốc.
     source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
+  - text: Dữ liệu mở của Sở KH&CN ghi nhận 139 doanh nghiệp khoa học và công nghệ và khoảng 460 tổ chức khoa học và công nghệ (viện, trung tâm nghiên cứu) tại TP.HCM.
+    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
+  - text: '732 nhiệm vụ, đề tài, đề án KH&CN của thành phố; nhiều nhất là khoa học xã hội và nhân văn (405) và công nghệ sinh học (152). Đơn vị chủ trì nhiều nhất: Trung tâm Công nghệ Sinh học Thành phố Hồ Chí Minh, Viện Nghiên cứu phát triển Thành phố Hồ Chí Minh, Trường Đại học Bách khoa Thành phố Hồ Chí Minh, Viện Sinh học Nhiệt đới.'
+    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
 - id: ha-noi
   name: Hà Nội
   url: https://www.startupblink.com/startup-ecosystem/hanoi-vn

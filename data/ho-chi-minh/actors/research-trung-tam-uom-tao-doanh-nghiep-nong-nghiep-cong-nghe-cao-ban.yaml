@@ -1,0 +1,21 @@
+id: research-trung-tam-uom-tao-doanh-nghiep-nong-nghiep-cong-nghe-cao-ban
+name:
+  vi: Trung tâm Ươm tạo Doanh nghiệp Nông nghiệp Công nghệ cao - Ban Quản Lý Khu NNCNC Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: Ấp 01, Xã Nhuận Đức, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Ban Quản lý khu Nông nghiệp Công nghệ cao Thành phố Hồ Chí Minh. Chủ trì 7 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '- Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực nông nghiệp ứng dụng công nghệ cao. - Sản xuất thử - thử nghiệm, ươm tạo công nghệ và chuyển giao công nghệ từ kết quả nghiên cứu. - Dịch vụ KH&CN: Dịch vụ sở hữu trí tuệ, thông tin khoa học và công nghệ, đào tạo bồi dưỡng hỗ trợ và ươm tạo doanh nghiệp nông nghiệp công nghệ cao. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-ung-dung-ky-thuat-dia-chat-va-dau-khi
+name:
+  vi: Viện Nghiên cứu Ứng dụng Kỹ thuật Địa chất và Dầu Khí
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 23A, Hậu Giang, Phường Tân Sơn Nhất, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu quy hoạch và sử dụng hợp lý tài nguyên thiên nhiên, địa chất khoáng sản, địa chất công trình, địa chất thuỷ văn, địa chất môi trường, địa kỹ thuật và kỹ thuật dầu khí. - Sản xuất thử nghiệm và chuyển giao công nghệ từ kết quả nghiên cứu. (Khoa KT, Địa chất và Dầu khí – ĐHBK) - Dịch vụ KH&CN: Tư vấn, giám định công nghệ, thông tin, phân tích thử nghiệm, đào tạo bồi dưỡng về lĩnh vực đăng ký theo quy định pháp luật. - Hợp tác trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

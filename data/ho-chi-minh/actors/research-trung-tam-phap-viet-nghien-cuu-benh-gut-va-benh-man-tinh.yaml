@@ -1,0 +1,21 @@
+id: research-trung-tam-phap-viet-nghien-cuu-benh-gut-va-benh-man-tinh
+name:
+  vi: Trung tâm Pháp Việt Nghiên cứu bệnh Gút và bệnh mạn tính
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 13A Hồng Hà, Phường Tân Sơn Hòa, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Công Nghệ Thông Tin Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: bệnh về khớp; tim mạch; nội tiết và chuyển hóa; tiêu hóa và gan mật học; niệu học và thận học; lão khoa, điều dưỡng; dược học cổ truyền. 2. Sản xuất thử- thử nghiệm; sản xuất- kinh doanh các sản phẩm là kết quả nghiên cứu và phát triển. 2. Dịch vụ KH&CN: Tư vấn, chuyển giao công nghệ, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

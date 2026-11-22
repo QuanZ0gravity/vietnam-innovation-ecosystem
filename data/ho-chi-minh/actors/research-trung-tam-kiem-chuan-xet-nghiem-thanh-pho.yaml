@@ -1,0 +1,21 @@
+id: research-trung-tam-kiem-chuan-xet-nghiem-thanh-pho
+name:
+  vi: Trung Tâm Kiểm Chuẩn Xét Nghiệm Thành Phố
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 75A Cao Thắng, Phường Bàn Cờ, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Sở Y tế Thành phố Hồ Chí Minh.
+description_source:
+  text: 1. Tổ chức nghiên cứu khoa học nhằm thúc đẩy các mặt hoạt động của công tác kiểm chuẩn xét nghiệm, phục vụ yêu cầu nâng cao chất lượng của các xét nghiệm về y khoa trên địa bàn thành phố. 2. Kiểm định, hiệu chuẩn trang thiết bị y tế phục vụ xét nghiệm và thử nghiệm tủ an toàn sinh học. 3. Đào tạo bồi dưỡng cán bộ chuyên môn kỹ thuật về kiểm chuẩn xét nghiệm. Phối hợp với các cơ quan liên quan tổ chức huấn luyện, bồi dưỡng nâng cao kiến thức và năng lực cán bộ trong các cơ sở xét nghiệm nhằm đảm bảo chất lượng xét nghiệm.
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

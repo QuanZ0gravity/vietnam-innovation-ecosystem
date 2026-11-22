@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-va-ung-dung-ky-thuat-xay-dung
+name:
+  vi: Trung tâm nghiên cứu và ứng dụng kỹ thuật xây dựng
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 1, Võ Văn Ngân, Phường Thủ Đức, Thành phố Thủ Đức
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực kỹ thuật xây dựng và kỹ thuật kiến trúc. 2. Sản xuất thử - thử nghiệm, sản xuất - kinh doanh các sản phẩm là kết quả nghiên cứu. 3. Dịch vụ KH&CN: tư vấn, chuyển giao công nghệ, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng nâng cao nghiệp vụ chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

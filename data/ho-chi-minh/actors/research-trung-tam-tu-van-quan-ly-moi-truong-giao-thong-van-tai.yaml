@@ -1,0 +1,20 @@
+id: research-trung-tam-tu-van-quan-ly-moi-truong-giao-thong-van-tai
+name:
+  vi: Trung tâm Tư vấn Quản lý Môi trường Giao thông Vận tải
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: C145 KDC Thới An, Phường Trung Mỹ Tây, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Dịch vụ KH&CN: Lập hồ sơ đánh giá tác động môi trường, thiết kế, thí nghiệm, phân tích đánh giá, giám sát môi trường giao thông vận tải; tư vấn an toàn môi trường cho các dự án phát triển trong lĩnh vực giao thông vận tải, thông tin khoa học và công nghệ, đào tạo bồi dưỡng về lĩnh vực môi trường trong ngành giao thông vận tải. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

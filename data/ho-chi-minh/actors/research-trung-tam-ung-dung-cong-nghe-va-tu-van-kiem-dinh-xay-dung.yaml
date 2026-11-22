@@ -1,0 +1,20 @@
+id: research-trung-tam-ung-dung-cong-nghe-va-tu-van-kiem-dinh-xay-dung
+name:
+  vi: Trung tâm Ứng dụng Công nghệ và Tư vấn Kiểm định Xây dựng
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 778K/35, Nguyễn Kiệm, Phường Hạnh Thông, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu và triển khai ứng dụng trong lĩnh vực xây dựng: giao thông, dân dụng và công nghiệp. - Sản xuất thử - thử nghiệm vật liệu xây dựng, chuyển giao công nghệ trong lĩnh vực xây dựng. - Dịch vụ KH&CN: Khảo sát địa hình, địa chất, thủy văn công trình; quan trắc biến dạng, lún; thí nghiệm kiểm tra thử tải cầu, thí nghiệm xác định sức chịu tải của cọc các lọai; thí nghiệm xác định chỉ tiêu cơ lý của vật liệu xây dựng. Tư vấn: lập dự án đầu tư, thiết kế, thẩm tra thiết kế và dự toán, đấu thầu, quản lý các dự án xây dựng; giám sát thi công các công trình giao thông, thủy lợi, dân dụng, công nghiệp; chứng nhận sự phù hợp về chất lượng công trình xây dựng theo Luật định. - Hợp tác trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

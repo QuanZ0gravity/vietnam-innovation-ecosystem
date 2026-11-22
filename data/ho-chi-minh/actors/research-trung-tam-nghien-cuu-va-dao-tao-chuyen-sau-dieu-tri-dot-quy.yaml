@@ -1,0 +1,16 @@
+id: research-trung-tam-nghien-cuu-va-dao-tao-chuyen-sau-dieu-tri-dot-quy
+name:
+  vi: Trung tâm nghiên cứu và đào tạo chuyên sâu điều trị đột quỵ s.i.s thành phố hồ chí minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: Số 148 Đường Số 16, Khu Phố Phước Lai, Phường Long Phước, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

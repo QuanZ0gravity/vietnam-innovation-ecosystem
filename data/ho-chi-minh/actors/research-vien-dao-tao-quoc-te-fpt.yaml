@@ -1,0 +1,21 @@
+id: research-vien-dao-tao-quoc-te-fpt
+name:
+  vi: Viện Đào tạo Quốc tế FPT Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện đào tạo
+address: 391A, Nam Kỳ Khởi Nghĩa, Phường Bình Tiên, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học FPT.
+description_source:
+  text: '- Nghiên cứu phát triển các chương trình đào tạo tiên tiến, cập nhật theo chuẩn mực quốc tế và gắn với công nghiệp công nghệ thông tin. - Dịch vụ KH&CN: tư vấn, chuyển giao công nghệ, đào tạo bồi dưỡng nguồn nhân lực công nghệ thông tin (chỉ được cấp giấy chứng nhận, không cấp văn bẳng, chúng chỉ). - Hợp tác với các tổ chức trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

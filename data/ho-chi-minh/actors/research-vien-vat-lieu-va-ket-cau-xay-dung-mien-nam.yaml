@@ -1,0 +1,21 @@
+id: research-vien-vat-lieu-va-ket-cau-xay-dung-mien-nam
+name:
+  vi: Viện Vật Liệu Và Kết Cấu Xây Dựng Miền Nam
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 98, Vũ Tông Phan, Phường Bình Trưng, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học phát triển công nghệ và triển khai thực nghiệm trong lĩnh vực: Kiến trúc; Kỹ thuật xây dựng; Công trình hạ tầng đô thị; Công trình giao thông vận tải; Công trình thủy lợi; Công nghệ vật liệu xây dựng; Công nghệ sản xuất vật liệu tiên tiến. 2. Sản xuất thử nghiệm, sản xuất kinh doanh sản phẩm là kết quả nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực đăng ký. 3. Dịch vụ Khoa học Công nghệ: Tổ chức hội nghị, hội thảo, Thông tin khoa học và công nghệ; Dịch vụ môi giới chuyển giao công nghệ; Dịch vụ thử nghiệm chất lượng sản phẩm, hàng hóa; Dịch vụ giám định số lượng, chất lượng sản phẩm, hàng hóa; Dịch vụ tư vấn chuyển giao công nghệ (hỗ trợ các bên lựa chọn công nghệ, đàm phán, ký kết, thực hiện hợp đồng chuyển giao công nghệ); Dịch vụ tra cứu và chỉ dẫn thông tin khoa học và công nghệ; Tư vấn, phản biện, đánh giá, quản lý giám sát dự án đầu tư xây dựng, chuyển giao kết quả nghiên cứu khoa học trong lĩnh vực đăng ký; Đào tạo, tập huấn, bồi dưỡng chuyên
+    môn theo các lĩnh vực đăng ký trên (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

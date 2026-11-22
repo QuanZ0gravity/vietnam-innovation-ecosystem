@@ -1,0 +1,20 @@
+id: research-trung-tam-dao-tao-va-chi-dao-tuyen-benh-vien-thong-nhat
+name:
+  vi: Trung Tâm Đào Tạo Và Chỉ Đạo Tuyến - Bệnh Viện Thống Nhất
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: Số 01 Lý Thường Kiệt, Phường Tân Sơn Nhất, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Bệnh viện Thống Nhất.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ: trong lĩnh vực: khoa học y, dược và sức khỏe. 2. Dịch vụ khoa học và công nghệ: đào tạo, tập huấn, bồi dưỡng chuyên môn, tổ chức hội nghị, hội thảo theo lĩnh vực đăng ký phù hợp luật định. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-va-phat-trien-nong-nghiep-cong-nghe-cao
+name:
+  vi: Trung tâm Nghiên cứu và Phát triển Nông nghiệp Công nghệ cao
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: Ấp 1, Xã Nhuận Đức, Huyện Củ Chi, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Ban Quản lý Khu Công nghệ cao Thành phố Hồ Chí Minh. Chủ trì 12 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '- Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: rau; quả; sinh vật cảnh; chăn nuôi thủy sản; gia súc, gia cầm và chế phẩm sinh học. - Sản xuất thử - thử nghiệm; sản xuất – kinh doanh các sản phẩm là kết quả nghiên cứu và phát triển. - Dịch vụ KH&CN: Tư vấn, chuyển giao công nghệ, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ). - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

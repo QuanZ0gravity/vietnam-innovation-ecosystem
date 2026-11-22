@@ -1,0 +1,21 @@
+id: research-vien-khoa-hoc-kinh-te-va-cong-nghe-sai-gon
+name:
+  vi: Viện Khoa Học Kinh Tế Và Công Nghệ Sài Gòn
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 104, Chu Văn An, Phường Bình Thạnh, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học phát triển công nghệ và triển khai thực nghiệm trong lĩnh vực: Quan hệ sản xuất kinh doanh; Kinh doanh và quản trị kinh doanh; Công nghệ sinh học liên quan đến y học, y tế, Công nghệ thực phẩm, Công nghệ đồ uống. 2. Sản xuất thử nghiệm, sản xuất kinh doanh sản phẩm là kết quả nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực đăng ký. 3. Dịch vụ Khoa học Công nghệ: Tổ chức hội nghị, hội thảo, Thông tin khoa học và công nghệ; Dịch vụ môi giới chuyển giao công nghệ (hỗ trợ các bên có nhu cầu mua hoặc bán tìm kiếm đối tác để ký kết hợp đồng chuyển giao công nghệ); Dịch vụ tư vấn chuyển giao công nghệ (hỗ trợ các bên lựa chọn công nghệ, đàm phán, ký kết, thực hiện hợp đồng chuyển giao công nghệ); Dịch vụ tra cứu và chỉ dẫn thông tin khoa học và công nghệ; Tư vấn, phản biện, đánh giá, chuyển giao kết quả nghiên cứu khoa học trong lĩnh vực đăng ký, Tập huấn, bồi dưỡng chuyên môn theo các lĩnh vực đăng ký trên (chỉ được cấp giấy chứng nhận, đối với việc cấp
+    văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

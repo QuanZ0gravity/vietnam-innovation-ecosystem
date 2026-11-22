@@ -1,0 +1,21 @@
+id: research-vien-nghien-cuu-dao-tao-cong-nghe-cao-victoria
+name:
+  vi: Viện Nghiên cứu Đào Tạo Công Nghệ Cao Victoria
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: Phường Long Bình, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Hòa Bình.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Công nghệ môi trường; Địa vật lý, trắc địa học, bản đồ; Công nghệ hóa học; Kinh tế và kinh doanh; Công nghệ thông tin và truyền thông; Kỹ thuật điện, điện tử; Khoa học giáo dục. 2. Kinh doanh, sản xuất kinh doanh, sản xuất thử nghiệm các sản phẩm hình thành từ kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: Tổ chức hội nghị, hội thảo; Thông tin khoa học và công nghệ; Dịch vụ môi giới chuyển giao công nghệ; Dịch vụ tư vấn chuyển giao công nghệ; Dịch vụ thử nghiệm chất lượng sản phẩm hàng hóa; Tư vấn, phản biện, đánh giá, chuyển giao kết quả nghiên cứu trong lĩnh vực đăng ký; Tập huấn, đào tạo, bồi dưỡng chuyên môn theo lĩnh vực đăng ký phù hợp với Luật định (chỉ được cấp giấy chứng nhận, đối với việc cấp văn bằng, chứng chỉ phải được phép của cơ quan Nhà nước có thẩm quyền). 4. Hợp tác với các tổ chức, cá nhân trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định./.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

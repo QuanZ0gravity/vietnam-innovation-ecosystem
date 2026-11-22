@@ -1,0 +1,20 @@
+id: research-vien-giao-duc-duni
+name:
+  vi: Viện Giáo Dục Duni Thành Phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 28, Đường số 8, Phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Đông Đô.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: kinh doanh và quản trị kinh doanh; quan hệ sản xuất kinh doanh; công nghệ phần mềm; kỹ thuật điện và điện tử; công nghệ phần cứng và kiến trúc máy tính; các hệ thống thông tin và truyền thông. 2. Sản xuất thử nghiệm - kinh doanh các sản phẩm là kết quả nghiên cứu, triển khai ứng dụng các kết quả nghiên cứu cho các cá nhân, tổ chức có nhu cầu. 3. Dịch vụ khoa học và công nghệ: tư vấn đầu tư, lập dự án đầu tư, giám sát độc lập các đề tài/dự án khoa học, tư vấn các vấn đề trong lĩnh vực nghiên cứu. 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

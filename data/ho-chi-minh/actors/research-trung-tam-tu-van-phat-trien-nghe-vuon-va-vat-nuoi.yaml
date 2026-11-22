@@ -1,0 +1,21 @@
+id: research-trung-tam-tu-van-phat-trien-nghe-vuon-va-vat-nuoi
+name:
+  vi: Trung tâm Tư vấn Phát triển Nghề vườn và Vật nuôi
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: 58 Nguyễn Bĩnh Khiêm, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: cây rau, cây hoa và cây ăn quả; chọn, tạo giống cây trồng ; công nghệ nhân giống cây trồng; bảo vệ thực vật; bảo quản và chế biến nông sản; thức ăn và dinh dưỡng cho động vật nuôi. - Dịch vụ KH&CN: Tư vấn, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký không cấp văn bằng, chứng chỉ). - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

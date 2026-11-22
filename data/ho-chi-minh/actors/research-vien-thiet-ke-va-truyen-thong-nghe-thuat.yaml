@@ -1,0 +1,20 @@
+id: research-vien-thiet-ke-va-truyen-thong-nghe-thuat
+name:
+  vi: Viện Thiết Kế Và Truyền Thông Nghệ Thuật
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 2, Trần Quý Khoách, Phường Tân Định, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Mỹ thuật Công nghiệp Á Châu.
+description_source:
+  text: '1. Nghiên cứu khoa học và công nghệ trong lĩnh vực thiết kế, mỹ thuật ứng dụng và mỹ thuật công nghiệp; thiết kế sản phẩm, thiết kế đồ họa, thiết kế trang trí nội ngoại thất, thiết kế thời trang, thiết kế truyền thông. 2. Dịch vụ khoa học và công nghệ: tổ chức hội nghị, hội thảo, thông tin khoa học và công nghệ, chuyển giao công nghệ, tư vấn, bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng chứng chỉ); Dịch vụ xây dựng và phát triển hệ thống tư liệu học tập in ấn truyền thống và điện tử, online. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

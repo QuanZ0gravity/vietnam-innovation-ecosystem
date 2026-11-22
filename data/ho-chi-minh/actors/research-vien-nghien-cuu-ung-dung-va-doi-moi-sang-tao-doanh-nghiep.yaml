@@ -1,0 +1,22 @@
+id: research-vien-nghien-cuu-ung-dung-va-doi-moi-sang-tao-doanh-nghiep
+name:
+  vi: Viện Nghiên cứu Ứng Dụng Và Đổi Mới Sáng Tạo Doanh Nghiệp
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện nghiên cứu
+address: 226/36, Nguyễn Văn Lượng, Phường Gò Vấp, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Hoạt động nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Sinh học lý thuyết; Hóa sinh; Các công nghệ xử lý sinh học, xúc tác sinh học, lên men; Các công nghệ sản phẩm sinh học, vật liệu sinh học, chất dẻo sinh học, nhiên liệu sinh học, các hóa chất được chiết tách từ sinh học, các vật liệu mới có nguồn gốc sinh học; Các vấn đề chung về hóa học công nghiệp; Quan hệ sản xuất kinh doanh; Kinh doanh và quản trị kinh doanh. 2. Kinh doanh, sản xuất kinh doanh, sản xuất thử nghiệm các sản phẩm hình thành từ kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: Tổ chức hội nghị, hội thảo (như hội thảo chuyên đề, hội thảo khoa học, hội thảo tham vấn, seminars và workshops); Tư vấn, phản biện, đánh giá các nhiệm vụ khoa học và công nghệ, chuyển giao nghiên cứu khoa học, thông tin khoa học công nghệ về các lĩnh vực đăng ký; Dịch vụ tư vấn chuyển giao công nghệ (hỗ trợ các bên lựa chọn công nghệ, đàm phán, ký kết, thực hiện hợp đồng chuyển giao công nghệ); tập huấn, bồi dưỡng
+    chuyên môn ngắn hạn cho các tổ chức, cá nhân có nhu cầu theo các lĩnh vực đăng ký trên. 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

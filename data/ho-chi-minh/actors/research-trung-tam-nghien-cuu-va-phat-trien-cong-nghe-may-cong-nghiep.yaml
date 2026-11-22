@@ -1,0 +1,21 @@
+id: research-trung-tam-nghien-cuu-va-phat-trien-cong-nghe-may-cong-nghiep
+name:
+  vi: Trung tâm Nghiên cứu và Phát triển Công nghệ máy công nghiệp
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 12, Nguyễn Văn Bảo, Phường Hạnh Thông, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Công nghiệp Thành phố Hồ Chí Minh.
+description_source:
+  text: '- Nghiên cứu phát triển khoa học và công nghệ thuộc các lĩnh vực: cơ khí chế tạo máy, nhiệt - lạnh, tự động hóa, năng lương và kiểm toán năng lượng, công nghệ bảo quản. - Sản xuất thử - thử nghiệm và chuyển giao công nghệ từ kết quả nghiên cứu và ứng dụng kỹ thuật mới. - Dịch vụ KH&CN: Lắp đặt, sửa chữa, bảo trì, tư vấn, đào tạo bồi dưỡng, thẩm định và lập dự án đầu tư trên các lĩnh vực đăng ký theo Luật định. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

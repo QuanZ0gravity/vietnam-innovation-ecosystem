@@ -1,0 +1,22 @@
+id: research-trung-tam-nghien-cuu-va-boi-duong-nghiep-vu-khoa-hoc-cong-ng
+name:
+  vi: Trung Tâm Nghiên Cứu Và Bồi Dưỡng Nghiệp Vụ Khoa Học Công Nghệ - Môi Trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 96, Cao Thắng, Phường Xuân Hòa, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: kinh doanh và quản trị kinh doanh; khoa học công nghệ và quan trắc môi trường; kiểm soát và xử lý ô nhiễm; công nghệ quản lý và xử lý nước thải (rắn, lỏng, khí), hóa lý, hóa phân tích, đo lường. 2. Sản xuất thử nghiệm - kinh doanh các sản phẩm là kết quả nghiên cứu khoa học, các chương trình hợp tác với các tổ chức/cá nhân. 3. Dịch vụ khoa học và công nghệ: Tổ chức hội nghị, hội thảo, tư vấn, đào tạo, bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ); Tư vấn xây dựng các dự án đầu tư, trang bị và quản lý phòng đo lường, thử nghiệm chất lượng sản phẩm, hàng hóa; tư vấn xây dựng và áp dụng các công cụ quản lý chất lượng theo bộ tiêu chuẩn ISO; tư vấn xây dựng hệ thống dây chuyền công nghệ; tư vấn xây dựng hệ thống đảm bảo về đo lường; Dịch vụ thử nghiệm, giám định số lượng, chất lượng sản phẩm, hàng hóa; Dịch vụ tư vấn chuyển giao công nghệ, giám định công nghệ trong lĩnh
+    vực khoa học công nghệ và môi trường; Dịch vụ kiểm định, hiệu chuẩn, thử nghiệm, bảo trì, bảo dưỡng và sửa chữa các phương tiện đo, thiết bị thử nghiệm, thiết bị kỹ thuật; Dịch vụ báo cáo đánh giá tác động môi trường, báo cáo kiểm tra đánh giá độ chính xác tương đối của hệ thống các trạm quan trắc môi trường. 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

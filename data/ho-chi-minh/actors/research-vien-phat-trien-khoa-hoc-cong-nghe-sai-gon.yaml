@@ -1,0 +1,21 @@
+id: research-vien-phat-trien-khoa-hoc-cong-nghe-sai-gon
+name:
+  vi: Viện Phát Triển Khoa Học Công Nghệ Sài Gòn
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện phát triển
+address: 373B1, Nguyễn Trãi, Phường Bến Thành, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Quan hệ sản xuất kinh doanh, kinh doanh và quản trị kinh doanh, nghệ thuật kiến trúc, nghệ thuật trình diễn, nghệ thuật điện ảnh, nghệ thuận truyền thanh, truyền hình và các vấn đề nghiên cứu nghệ thuật khác. 2. Kinh doanh và sản xuất kinh doanh các sản phẩm là kết quả nghiên cứu. 3. Dịch vụ khoa học và công nghệ: tổ chức hội thảo, hội nghị, thông tin khoa học và công nghệ, thư viện, lưu trữ, chuyển giao công nghệ, tư vấn, tập huấn, bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

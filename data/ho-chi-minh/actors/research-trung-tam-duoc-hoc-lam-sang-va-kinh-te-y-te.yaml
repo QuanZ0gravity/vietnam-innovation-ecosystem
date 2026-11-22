@@ -1,0 +1,21 @@
+id: research-trung-tam-duoc-hoc-lam-sang-va-kinh-te-y-te
+name:
+  vi: Trung tâm Dược học lâm sàng và Kinh tế Y tế
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Viện/Trung tâm nghiên cứu
+address: Số 04 Đường 03, Phường Bảy Hiền, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Nguyễn Tất Thành Thành phố Hồ Chí Minh.
+description_source:
+  text: '1. Nghiên cứu khoa học, phát triển công nghệ và triển khai thực nghiệm: lĩnh vực kinh tế y tế; dược học lâm sàng và điều trị; 2. Sản xuất thử nghiệm, sản xuất kinh doanh các sản phẩm là kết quả nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực đăng ký; 3. Dịch vụ khoa học và công nghệ: tư vấn, phản biện, đánh giá, chuyển giao kết quả nghiên cứu khoa học, thông tin khoa học công nghệ, huấn luyện chuyên môn theo các lĩnh vực đăng ký trên (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ) 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

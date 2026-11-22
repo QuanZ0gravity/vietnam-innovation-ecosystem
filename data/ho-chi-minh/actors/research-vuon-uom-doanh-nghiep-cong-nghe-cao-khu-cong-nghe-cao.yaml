@@ -1,0 +1,21 @@
+id: research-vuon-uom-doanh-nghiep-cong-nghe-cao-khu-cong-nghe-cao
+name:
+  vi: Vườn ươm Doanh nghiệp công nghệ cao - Khu Công nghệ cao Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 35, Nguyễn Thông, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Ban Quản lý Khu Công nghệ cao Thành phố Hồ Chí Minh.
+description_source:
+  text: 1. Tổ chức hoạt động, dịch vụ ươm tạo theo nhu cầu ươm tạo; tổ chức các dịch vụ đào tạo khởi nghiệp, đổi mới sáng tạo; thương mại hóa các sản phẩm khởi nghiệp thuộc lĩnh vực công nghệ cao và chuyển giao công nghệ các kết quả nghiên cứu khoa học – công nghệ trong và ngoài nước; tổ chức các sự kiện quảng bá sản phẩm, công nghệ của doanh nghiệp ươm tạo và khởi nghiệp. 2. Thực hiện các nhiệm vụ ươm tạo doanh nghiệp chuyên ngành công nghệ cao theo quy định của Chính phủ, yêu cầu của Bộ ngành, Thành phố và Ban Quản lý với hỗ trợ tài chính một phần từ ngân sách nhà nước. 3. Liên kết phối hợp thực hiện các chương trình, dự án phát triển doanh nghiệp với các tổ chức tài chính, các Quỹ hỗ trợ phát triển khoa học và công nghệ, các Quỹ đầu tư mạo hiểm, các Ngân hàng, các Trường, Viện và các Vườn ươm khác trong và ngoài nước để tạo một mạng lưới tuyển chọn đầu tư ươm tạo doanh nghiệp công nghệ, giúp Ban Quản lý Khu Công nghệ cao TP.HCM đầu tư hiệu quả, góp phần thúc đẩy tiềm lực về khoa học và
+    công nghệ cao trong nước. 4. Quản lý kế hoạch, chương trình ươm tạo doanh nghiệp công nghệ cao có hỗ trợ từ ngân sách Nhà nước và từ các nguồn tài chính khác.
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

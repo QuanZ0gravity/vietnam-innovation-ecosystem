@@ -1,0 +1,20 @@
+id: research-vien-marketing-va-quan-tri-viet-nam
+name:
+  vi: Viện Marketing và Quản trị Việt Nam
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: B2-14, Mỹ Thái 3, Nguyễn Lương Bằng, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu cơ sở lý luận và ứng dụng thực tiễn khoa học marketing và quản trị. 2- Dịch vụ KH&CN: Tư vấn giải pháp marketing và quản trị, xây dựng hình ảnh và thương hiệu, xây dựng cơ sở dữ liệu và cung cấp thông tin, đào tạo bồi dưỡng nâng cao nghiệp vụ chuyên môn, tổ chức hội nghị, hội thảo về thị trường marketing và quản trị. 3- Hợp tác trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

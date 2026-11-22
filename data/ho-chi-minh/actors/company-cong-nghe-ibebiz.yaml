@@ -1,0 +1,15 @@
+id: company-cong-nghe-ibebiz
+name:
+  vi: Công ty Cổ phần Công nghệ IBEBIZ
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: Tầng 2, Tòa Nhà Pylo, 32, Đường số 34, Phường Bình Trưng Tây, TP. Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

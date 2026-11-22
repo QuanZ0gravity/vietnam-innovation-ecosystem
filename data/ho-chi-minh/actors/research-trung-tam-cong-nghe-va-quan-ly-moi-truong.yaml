@@ -1,0 +1,20 @@
+id: research-trung-tam-cong-nghe-va-quan-ly-moi-truong
+name:
+  vi: Trung tâm Công nghệ và Quản lý Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: Lô T2 - 6, Đường D1, Phường Bình Thạnh, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực: công nghệ quản lý và xử lý chất thải (rắn, lỏng , khí); công nghệ sản xuất sạch, tái chế; công nghệ phục hồi và tái tạo môi trường; công nghệ phân tích chu trình sống; công nghệ quan trắc môi trường, kiểm soát và xử lý ô nhiễm. 2. Sản xuất thử - thử nghiệm; sản xuất – kinh doanh các sản phẩm là kết quả nghiên cứu và phát triển. 3. Dịch vụ KH&CN: phân tích thí nghiệm, tư vấn, chuyển giao công nghệ, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng nâng cao nghiệp vụ chuyên môn theo lĩnh vực đăng ký. 4. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

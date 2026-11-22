@@ -1,0 +1,15 @@
+id: company-phat-trien-giao-duc-quoc-te-gaia
+name:
+  vi: Công ty Cổ phần Phát triển Giáo dục Quốc tế GAIA
+type: company
+categories:
+- Doanh nghiệp khoa học và công nghệ
+address: 41C, Lê Đình Thám, Phường Tân Sơn Nhì, Thành phố Hồ Chí Minh
+description:
+  vi: Doanh nghiệp khoa học và công nghệ tại TP.HCM, được Sở KH&CN TP.HCM cấp giấy chứng nhận.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-về-doanh-nghiệp-khoa-học-và-công-nghệ-0

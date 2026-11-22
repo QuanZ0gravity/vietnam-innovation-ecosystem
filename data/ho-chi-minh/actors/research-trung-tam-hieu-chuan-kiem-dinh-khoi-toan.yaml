@@ -1,0 +1,20 @@
+id: research-trung-tam-hieu-chuan-kiem-dinh-khoi-toan
+name:
+  vi: Trung tâm Hiệu chuẩn Kiểm định Khởi Toàn
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 89, Đường số 6, Xã Bà Điểm, Huyện Hóc Môn, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu cải tiến thiết bị và công nghệ trong lĩnh vực đo lường. 2. Dịch vụ KH&CN: thử nghiệm chất lượng sản phẩm, hàng hoá; kiểm định, hiệu chuẩn, thử nghiệm phương tiện đo; bảo trì, bảo dưỡng và sửa chữa các phương tiện đo, thiết bị thử nghiệm, thiết vị kỹ thuật; tư vấn về đầu tư, trang bị và quản lý phòng đo lường, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ được cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

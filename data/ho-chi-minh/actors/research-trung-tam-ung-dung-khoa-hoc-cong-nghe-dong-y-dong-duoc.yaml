@@ -1,0 +1,20 @@
+id: research-trung-tam-ung-dung-khoa-hoc-cong-nghe-dong-y-dong-duoc
+name:
+  vi: Trung tâm Ứng dụng Khoa học Công nghệ Đông Y Đông dược
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 272-275, Nguyễn Văn Trỗi, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu phát triển và ứng dụng triển khai các thành tựu khoa học kỹ thuật trong lĩnh vực y và dược học cổ truyền. - Sản xuất và kinh doanh thuốc y học cổ truyền trên cơ sở các kết quả nghiên cứu theo quy định của Nhà nước. - Dịch vụ KH&CN: đào tạo bồi dưỡng nâng cao trình độ chuyên môn, liên kết hợp tác trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

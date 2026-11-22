@@ -1,0 +1,21 @@
+id: research-trung-tam-khoi-nghiep-sang-tao
+name:
+  vi: Trung tâm Khởi nghiệp sáng tạo Thành phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 123 Trương Định, Phường Xuân Hòa, Phường Vũng Tàu, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Sở Khoa học và Công nghệ Thành phố Hồ Chí Minh. Chủ trì 4 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '1. Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực: Kinh doanh và quản trị kinh doanh; Công nghệ tự động hóa và các hệ thống điều khiển, giám sát, điều khiển số bằng máy tính; Các hệ thống thông tin và truyền thông; Công nghệ phần mềm. 2. Dịch vụ khoa học và công nghệ: Dịch vụ xây dựng cơ sở dữ liệu (thư mục và toàn văn); Dịch vụ nghiên cứu xây dựng và phát triển hệ thống thông tin ngân hàng dữ liệu, lưu trữ điện tử; Dịch vụ triển lãm khoa học và công nghệ; tổ chức chợ công nghệ và thiết bị; tổ chức hội nghị, hội thảo chuyên đề, đào tạo ngắn hạn; tư vấn, hỗ trợ về kế hoạch kinh doanh cho người khởi nghiệp.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

@@ -199,3 +199,15 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Dat Bike chuyển loại từ "doanh nghiệp" sang "startup" (thành lập 2019, từ Batch 2019 của DNES); bổ sung mục "Phân tích, case study" theo bài của inDanang (8/2026), 6 vòng gọi vốn có nguồn (TechCrunch, PIDG, Tuổi Trẻ News, TVS), 13 nhà đầu tư (thêm mới 11) với quan hệ `invested_in`, quan hệ ươm tạo với DNES.
 - Tổng các vòng công bố là 45,9 triệu USD; bài phân tích ghi 51 triệu USD tổng vốn đã huy động (có thể gồm khoản chưa công bố chi tiết).
 - Đường dẫn hồ sơ đổi từ `/a/<id>/` sang `/startup/`, `/to-chuc/`, `/chuyen-gia/`, có chuyển hướng 301.
+
+## Cổng dữ liệu mở TP.HCM – opendata.hochiminhcity.gov.vn (22/11/2026)
+
+- Ba bộ dữ liệu của Sở KH&CN TP.HCM (trang bộ dữ liệu ghi "Giấy phép không được chỉ định"; dùng làm dữ liệu công khai có ghi nguồn):
+  - Dữ liệu về doanh nghiệp khoa học và công nghệ: 139 doanh nghiệp (tên, trụ sở).
+  - Dữ liệu tổ chức khoa học và công nghệ: 461 tổ chức (tên, loại tổ chức, địa chỉ, cơ quan quản lý, lĩnh vực hoạt động đăng ký).
+  - Dữ liệu nhiệm vụ, đề tài, đề án khoa học và công nghệ: 732 nhiệm vụ; chỉ dùng số liệu tổng hợp (số nhiệm vụ theo đơn vị chủ trì, theo lĩnh vực).
+- Thêm 595 hồ sơ (loại mới `research` cho viện, trung tâm nghiên cứu, tổ chức KH&CN). Lĩnh vực hoạt động đăng ký lưu nguyên văn ở `description_source`. Mô tả ghi cơ quan quản lý và số nhiệm vụ KH&CN cấp thành phố đơn vị đã chủ trì.
+- Không đưa vào: tên người đại diện của tổ chức, tên chủ nhiệm nhiệm vụ.
+- Gộp 8 cặp trùng với hồ sơ đã có (ví dụ Vườn ươm ĐH Nông Lâm, VBIO, ESE, BSA, VIC).
+- Lưu ý chất lượng nguồn: cột lĩnh vực của nhiệm vụ có vẻ gán chưa chuẩn (nhiều đề tài kỹ thuật được ghi "khoa học xã hội và nhân văn").
+- Trang cổng chặn truy cập tự động có user-agent trình duyệt; tệp CSV tải trực tiếp được.

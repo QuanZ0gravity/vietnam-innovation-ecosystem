@@ -1,0 +1,20 @@
+id: research-vien-chat-luong-quan-ly
+name:
+  vi: Viện Chất lượng Quản lý
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 97, Trần Quang Diệu, Phường Tân Sơn Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1- Nghiên cứu và triển khai các đề tài thuộc lĩnh vực khoa học quản lý kinh tế. 2- Dịch vụ KH&CN: tư vấn các hệ thống quản lý chất lượng quốc tế và các lĩnh vực quản lý kinh tế: thương hiệu và nhượng quyền thương hiệu, marketing, hệ thống phân phối và giao nhận nhân lực, tổ chức và quản lý sản xuất, hệ thống thông tin, tin học thống kê và kế toán, tư vấn du học theo Luật định. Đào tạo bồi dưỡng, liên kết hợp tác với các tổ chức trong và ngoài nước theo lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

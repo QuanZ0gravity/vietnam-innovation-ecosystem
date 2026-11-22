@@ -1,11 +1,22 @@
 id: incubator-trung-tam-uom-tao-doanh-nghiep-nho-va-vua-doi-moi-sang-tao-v
 name:
   vi: Trung tâm ươm tạo doanh nghiệp nhỏ và vừa đổi mới sáng tạo Victory (VIC)
+alt_names:
+- Trung Tâm Ươm Tạo Doanh Nghiệp Nhỏ Và Vừa Đổi Mới Sáng Tạo Icm; Trung Tâm Ươm Tạo Doanh Nghiệp Nhỏ Và Vừa Đổi Mới Sáng Tạo Victory
 type: incubator
+categories:
+- Tổ chức khoa học và công nghệ
 founded: 2024
+address: 92G-92H, Nguyễn Hữu Cảnh, Phường Thạnh Mỹ Tây, Thành phố Hồ Chí Minh
+description_source:
+  text: '1. Nghiên cứu khoa học trong lĩnh vực: Quan hệ sản xuất kinh doanh, kinh doanh và quản trị kinh doanh, đổi mới sáng tạo và khởi nghiệp. 2. Dịch vụ khoa học và công nghệ: - Tư vấn, chuyển giao công nghệ, tổ chức Hội nghị, hội thảo, sự kiện. - Chuyển giao kết quả nghiên cứu, công nghệ, thông tin khoa học và công nghệ. - Tư vấn chuyên môn theo các lĩnh vực đăng ký. - Ươm tạo, đào tạo, tập huấn và bồi dưỡng chuyên môn theo lĩnh vực đăng ký. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
 region: ho-chi-minh
 verification:
   level: unverified
 sources:
 - HOIP – Nền tảng kết nối ĐMST TP.HCM (SIHUB), 11/2026
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
 source_url: https://hoip.sihub.gov.vn/incubator/27

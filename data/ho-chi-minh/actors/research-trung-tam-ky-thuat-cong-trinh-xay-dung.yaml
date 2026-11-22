@@ -1,0 +1,20 @@
+id: research-trung-tam-ky-thuat-cong-trinh-xay-dung
+name:
+  vi: Trung Tâm Kỹ Thuật Công Trình Xây Dựng
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 179, Trần Quốc Thảo, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '1. Nghiên cứu khoa học và công nghệ trong lĩnh vực: kỹ thuật xây dựng, công trình hạ tầng đô thị, công trình giao thông, công trình thủy lợi. 2. Dịch vụ khoa học và công nghệ: Tư vấn, lập dự án các công trình xây dựng, hạ tầng kỹ thuật, công trình giao thông, công trình thủy lợi. 3. Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

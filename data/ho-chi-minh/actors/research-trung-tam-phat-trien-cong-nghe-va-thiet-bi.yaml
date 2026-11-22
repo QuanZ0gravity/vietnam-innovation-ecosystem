@@ -1,0 +1,20 @@
+id: research-trung-tam-phat-trien-cong-nghe-va-thiet-bi
+name:
+  vi: Trung tâm Phát triển Công nghệ và Thiết bị
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: F1/68 B, Ấp 6, Xã Tân Vĩnh Lộc, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Bách khoa Thành phố Hồ Chí Minh.
+description_source:
+  text: 'giao thông. - Dịch vụ KH&CN: + Tư vấn đấu thầu, lập dự án đầu tư, quản lý dự án, khảo sát thiết kế, thẩm tra, thẩm định thiết kế và dự toán các công trình giao thông, thủy lợi, dân dụng, công nghiệp và hạ tầng kỹ thuật, đánh giá tác động môi trường trong công trình xây dựng, giao thông. + Tư vấn giám sát, khảo sát địa chất công trình, thí nghiệm, kiểm định chất lượng các công trình giao thông, thủy lợi, dân dụng, công nghiệp và hạ tầng kỹ thuật. + Tư vấn kiểm tra, chứng nhận sự phù hợp về chất lượng công trình xây dựng theo Luật định. + Liên kết đào tạo bồi dưỡng, chuyển giao công nghệ mới về quản lý công trình xây dựng, giao thông. - Hợp tác với các tổ chức trong và ngoài nước trên lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

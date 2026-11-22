@@ -1,0 +1,20 @@
+id: research-trung-tam-tu-van-so-huu-tri-tue-va-dau-tu
+name:
+  vi: Trung tâm Tư vấn Sở hữu Trí tuệ và Đầu tư
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 9, Sông Thương, Phường Tân Sơn Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Dịch vụ KH&CN: + Dịch vụ đại diện sở hữu trí tuệ; + Dịch vụ tư vấn về sở hữu trí tuệ; + Dịch vụ tư vấn chuyển giao công nghệ; + Dịch vụ tư vấn xây dựng tiêu chuẩn - Hợp tác trong và ngoài nước theolĩnh vực đăng ký phù hợp Luật định'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

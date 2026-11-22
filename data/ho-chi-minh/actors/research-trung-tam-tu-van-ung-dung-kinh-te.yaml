@@ -1,0 +1,20 @@
+id: research-trung-tam-tu-van-ung-dung-kinh-te
+name:
+  vi: Trung tâm tư vấn ứng dụng kinh tế
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 149, Pasteur, Phường Xuân Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM.
+description_source:
+  text: '- Nghiên cứu và triển khai ứng dụng trong lĩnh vực kinh tế, xã hội, môi trường, đô thị. - Dịch vụ KH&CN: Tư vấn kinh tế, tài chính, quản trị doanh nghiệp, xúc tiến thị trường; tư vấn lập và thẩm định dự án đầu tư; tư vấn đấu thầu trong nước và quốc tế; thông tin; đào tạo nguồn nhân lực cho doanh nghiệp; thẩm định, đánh giá công nghệ; thẩm định giá trị tài sản vô hình theo Luật định. - Hợp tác trong và ngoài nước trên các lĩnh vực đăng ký.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

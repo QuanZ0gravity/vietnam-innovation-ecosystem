@@ -1,0 +1,21 @@
+id: research-vien-khoa-hoc-cong-nghe-hang-khong
+name:
+  vi: Viện Khoa học Công nghệ Hàng không
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 156/12, Cộng Hòa, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Hội Khoa học và Công nghệ hàng không Việt Nam.
+description_source:
+  text: '- Nghiên cứu khoa học và phát triển công nghệ trong lĩnh vực chế tạo phương tiện bay, xây dựng, giao thông và hàng không; hiệu chuẩn đo lường - Nghiên cứu các tiêu chuẩn, quy trình, quy phạm kỹ thuật chuyên ngành hàng không. - Sản xuất thử - thử nghiệm và chuyển giao công nghệ mới, vật liệu mới, kết cấu mới trong lĩnh vực hàng không, xây dựng, cầu đường, sân bay. - Dịch vụ KH&CN: + Tư vấn giám sát thi công công trình; tư vấn giám sát khảo sát đo đạc, địa chất thủy văn - địa chất công trình; tư vấn kiểm tra đánh giá, chứng nhận đủ điều kiện đảm bảo an toàn chịu lực và sự phù hợp về chất lượng công trình xây dựng theo Luật định. + Thử nghiệm và kiểm định vật liệu, cấu kiện và công trình xây dựng. + Thông tin khoa học và công nghệ, huấn luyện bồi dưỡng theo lĩnh vực đăng ký (không cấp văn bằng, chứng chỉ); + Nghiên cứu khoa học và triển khai ứng dụng trong lĩnh vực hiệu chuẩn đo lường. + Dịch vụ kiểm định, hiệu chuẩn, thử nghiệm phương tiện đo. + Dịch vụ bảo trì, bảo dưỡng và sửa chữa
+    các phương tiện đo, thiết bị thử nghiệm. + Tư vấn chuyển giao kết quả nghiên cứu, thông tin khoa học và công nghệ trong lĩnh vực hiệu chuẩn, đo lường. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

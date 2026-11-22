@@ -1,0 +1,20 @@
+id: research-trung-tam-huan-luyen-va-thi-dau-the-duc-the-thao
+name:
+  vi: Trung Tâm Huấn Luyện Và Thi Đấu Thể Dục Thể Thao Thành Phố Hồ Chí Minh
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 02-04, Lê Đại Hành, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Sở Văn hóa và Thể thao Thành phố Hồ Chí Minh.
+description_source:
+  text: 'Tổ chức nghiên cứu, thí nghiệm và ứng dụng khoa học - công nghệ trong lĩnh vực thể dục thể thao và các lĩnh vực khoa học có liên quan như: y học, sinh lý học, sinh cơ học, sinh hóa học, tâm lý học, quản lý học; điều trị và phục hồi chấn thương thể thao.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

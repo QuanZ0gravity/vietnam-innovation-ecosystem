@@ -1,0 +1,21 @@
+id: research-trung-tam-phat-trien-khoa-hoc-va-cong-nghe-tre
+name:
+  vi: Trung tâm phát triển khoa học và công nghệ trẻ
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+- Trung tâm nghiên cứu
+address: 1, Phạm Ngọc Thạch, Phường Sài Gòn, TP. Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Sở Khoa học và Công nghệ Thành phố Hồ Chí Minh. Chủ trì 1 nhiệm vụ KH&CN cấp thành phố.
+description_source:
+  text: '- Nghiên cứu khoa học và triển khai ứng dụng trong các lĩnh vực khoa học kỹ thuật và khoa học xã hội. - Dịch vụ KH&CN: tư vấn, chuyển giao kết quả nghiên cứu, thông tin khoa học và công nghệ, huấn luyện bồi dưỡng chuyên môn theo lĩnh vực đăng ký (chỉ cấp giấy chứng nhận, không cấp văn bằng, chứng chỉ). - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0

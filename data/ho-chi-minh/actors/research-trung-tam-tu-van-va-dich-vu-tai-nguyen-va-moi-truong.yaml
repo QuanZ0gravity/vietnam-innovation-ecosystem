@@ -1,0 +1,20 @@
+id: research-trung-tam-tu-van-va-dich-vu-tai-nguyen-va-moi-truong
+name:
+  vi: Trung tâm Tư vấn và Dịch vụ Tài nguyên và Môi trường
+type: research
+categories:
+- Tổ chức khoa học và công nghệ
+address: 236B, Lê Văn Sỹ, Phường Tân Sơn Hòa, Thành phố Hồ Chí Minh
+description:
+  vi: Tổ chức khoa học và công nghệ tại TP.HCM, trực thuộc Trường Đại học Tài nguyên Môi trường Thành phố Hồ Chí Minh.
+description_source:
+  text: '- Nghiên cứu khoa học về lĩnh vực tài nguyên và môi truờng. - Sản xuất thử - thử nghiệm tư kết quả nghiên cứu. - Dịch vụ KH&CN: tư vấn lập dự án, chuyển giao công nghệ, tư vấn lắp đặt thiết bị, huấn luyện, bồi dưỡng; thông tin khoa học và công nghệ; phân tích thí nghiệm; điều tra, thống kê, kiểm kê, quy hoạch, thiết kế; khảo sát, đo đạc, thẩm định, kiểm định, định giá, lập dự toán trong lĩnh vực quản lý đất đai, môi trường, địa chất, trắc địa bản đồ, khí tượng thủy văn – tài nguyên nước, cấp thoát nước và GIS. Tư vấn hệ thống quản lý chất lượng ISO, kiểm toán năng lượng. Đo vẽ lập bản đồ, bình đồ, khảo sát thăm dò: địa chính, địa hình, địa chất, địa vật lý, địa chất công trình, địa chất thủy văn, địa chất môi trường và các mỏ khoáng sản. - Hợp tác trong và ngoài nước theo lĩnh vực đăng ký phù hợp Luật định.'
+  source: Cổng dữ liệu mở TP.HCM (lĩnh vực hoạt động đăng ký)
+  url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
+  accessed: '2026-11-22'
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (11/2026)
+source_url: https://opendata.hochiminhcity.gov.vn/dataset/dữ-liệu-tổ-chức-khoa-học-và-công-nghệ-tổ-chức-khoa-học-và-công-nghệ-0
