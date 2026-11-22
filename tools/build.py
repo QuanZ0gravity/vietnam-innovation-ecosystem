@@ -1074,7 +1074,7 @@ unclassified = sum(1 for a in actors if a["type"] in ("startup", "company", "fun
 write("linh-vuc/index.html", page("Lĩnh vực", f"""
 <div class="wrap page-head"><h1 data-vi="Lĩnh vực" data-en="Sectors">Lĩnh vực</h1>
 <p class="lead" data-vi="13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ. Lĩnh vực do tổ chức tự chọn; một số hồ sơ đang mang gợi ý tự động chờ xác nhận." data-en="13 sectors across startups, companies and funds. Organisations choose their own sectors; some profiles still carry automatic suggestions awaiting confirmation.">13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ.</p></div>
-<div class="wrap" style="padding-bottom:72px"><a class="mm-promo" href="{SITE_ROOT}ban-do-ai/"><b data-vi="Mới: Bản đồ thị trường AI Việt Nam" data-en="New: Vietnam AI market map">Mới: Bản đồ thị trường AI Việt Nam</b><span data-vi="Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →" data-en="AI companies by layer and industry, with global trends →">Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →</span></a><div class="cities secgrid">{sec_cards}</div>
+<div class="wrap" style="padding-bottom:72px"><!--AI_PROMO--><div class="cities secgrid">{sec_cards}</div>
 <p class="small muted" style="margin-top:20px" data-vi="{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu." data-en="{unclassified} profiles have no sector yet.">{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu.</p></div>""", "sectors",
       desc="Startup, doanh nghiệp và quỹ đầu tư Việt Nam theo 13 lĩnh vực: AI, tài chính số, Web3, nông nghiệp, y tế, giáo dục, du lịch, năng lượng, bán dẫn, logistics và hơn nữa."))
 
@@ -1628,6 +1628,23 @@ draw();}})();
 </script>"""
 write("ban-do-ai/index.html", page("Bản đồ thị trường AI Việt Nam", aimap_body, "sectors",
       desc=f"Bản đồ thị trường AI Việt Nam: {n_ai} startup, doanh nghiệp AI theo tầng hạ tầng, mô hình, AI Agent, robot, an ninh và ứng dụng theo ngành; xu hướng từ {len(MMI)} bản đồ AI toàn cầu."))
+
+
+# ---------- khối giới thiệu Bản đồ thị trường AI trên trang Lĩnh vực ----------
+_lv = os.path.join(OUT, "linh-vuc", "index.html")
+if os.path.exists(_lv):
+    _logos = [a for k in ("agents", "genai", "infra", "physical", "v-fintech", "v-health", "v-commerce", "data") for a in sorted(ai_companies.get(k, []), key=lambda a: -richness(a)) if a.get("logo")][:12]
+    _mos = "".join(f'<span class="aip-l"><img src="{SITE_ROOT}{a["logo"]}" alt="" loading="lazy"></span>' for a in _logos)
+    _layers = sum(1 for k, *_ in AI_LAYERS if ai_companies.get(k))
+    promo = f"""<a class="ai-promo" href="{SITE_ROOT}ban-do-ai/">
+<div class="aip-text"><span class="aip-badge" data-vi="Mới" data-en="New">Mới</span>
+<h2 data-vi="Bản đồ thị trường AI Việt Nam" data-en="Vietnam AI market map">Bản đồ thị trường AI Việt Nam</h2>
+<p data-vi="Ai đang làm AI ở Việt Nam, ở tầng nào, và thế giới đang đổ tiền vào đâu." data-en="Who builds AI in Vietnam, at which layer, and where the world is investing.">Ai đang làm AI ở Việt Nam, ở tầng nào, và thế giới đang đổ tiền vào đâu.</p>
+<div class="aip-stats"><span><b>{n_ai}</b><i data-vi="doanh nghiệp AI" data-en="AI companies">doanh nghiệp AI</i></span><span><b>{_layers}</b><i data-vi="tầng công nghệ, ngành" data-en="layers and industries">tầng công nghệ, ngành</i></span><span><b>{len(MMI)}</b><i data-vi="bản đồ AI toàn cầu" data-en="global AI maps">bản đồ AI toàn cầu</i></span></div>
+<span class="aip-cta" data-vi="Khám phá bản đồ →" data-en="Explore the map →">Khám phá bản đồ →</span></div>
+<div class="aip-mosaic" aria-hidden="true">{_mos}</div></a>"""
+    _h = open(_lv, encoding="utf-8").read()
+    open(_lv, "w", encoding="utf-8").write(_h.replace("<!--AI_PROMO-->", promo))
 
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
 def _days_for(evs):
