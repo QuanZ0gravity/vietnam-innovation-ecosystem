@@ -1,0 +1,49 @@
+# Tổng hợp báo cáo đầu tư mạo hiểm Việt Nam và Đông Nam Á, cập nhật 11/2026.
+# Số liệu trích từ báo cáo (ghi nguồn từng mục); nhận định do bản đồ tổng hợp lại.
+sources:
+  vpca: {title: "Vietnam Innovation & Private Capital Report 2025 (trình bày tại VIPC 2026)", by: "VPCA, NIC, Do Ventures, BCG", date: "2026"}
+  tvs: {title: "Venture Capital & Private Equity – Vietnam Outlook 2026", by: "TVS (Chứng khoán Thiên Việt)", date: "01/2026"}
+  dsa: {title: "Southeast Asia Startup Funding Report – Full Year 2025", by: "DealStreetAsia DATA VANTAGE", date: "2026"}
+  endeavor: {title: "Founder Pathways: Where Do Unicorns Come From?", by: "Endeavor Insight", date: "09/2023"}
+vietnam:
+  - {label: "Vốn VC năm 2025", value: "509 triệu USD", note: "+28%, 103 thương vụ", src: vpca}
+  - {label: "Vốn PE năm 2025", value: "3,96 tỷ USD", note: "+113%, cao nhất từ trước tới nay", src: vpca}
+  - {label: "Tổng vốn tư nhân", value: "4,5 tỷ USD", note: "149 thương vụ VC và PE", src: vpca}
+  - {label: "Vốn vào startup AI", value: "130 triệu USD", note: "gấp 13 lần năm 2023", src: vpca}
+  - {label: "Startup Việt hoạt động toàn cầu", value: "51 triệu USD", note: "cao nhất từ trước tới nay", src: vpca}
+  - {label: "Nhà đầu tư VC đang hoạt động", value: "119", note: "giảm từ 173 ở đỉnh", src: vpca}
+  - {label: "IPO năm 2025", value: "1,3 tỷ USD", note: "3 niêm yết, chưa có công ty công nghệ được VC/PE hậu thuẫn", src: vpca}
+  - {label: "Startup Việt Nam theo DealStreetAsia", value: "36 thương vụ", note: "0,36 tỷ USD; thấp nhất trong hơn 7 năm về số thương vụ", src: dsa}
+region:
+  - {label: "Vốn cổ phần startup Đông Nam Á 2025", value: "5,37 tỷ USD", note: "461 thương vụ, thấp nhất hơn 6 năm", src: dsa}
+  - {label: "Singapore", value: "61% thương vụ", note: "78% giá trị vốn", src: dsa}
+  - {label: "Vay nợ startup", value: "2,81 tỷ USD", note: "kỷ lục, chỉ 31 thương vụ (trung tâm dữ liệu, năng lượng tái tạo, fintech)", src: dsa}
+  - {label: "Unicorn mới năm 2025", value: "4", note: "tổng 59 ở Đông Nam Á; 23 năm 2021, 1 năm 2024", src: dsa}
+insights:
+  - {text: "Tiền quay lại nhưng chọn lọc: tổng vốn tăng nhờ ít thương vụ lớn hơn, số thương vụ vẫn ở đáy nhiều năm. VPCA ghi VC Việt Nam 2025 tăng 28% lên 509 triệu USD; DealStreetAsia và TVS ghi khoảng 356 triệu USD trong 11 tháng với 34 thương vụ. Chênh lệch do khác cách tính, nhưng cùng một xu hướng.", src: [vpca, tvs, dsa]}
+  - {text: "Giai đoạn đầu khó nhất: vòng hạt giống, tiền hạt giống ở Đông Nam Á yếu nhất nhiều năm; ở Việt Nam số thương vụ giai đoạn đầu chạm đáy. Nhà đầu tư đòi bằng chứng cụ thể (thư ý định, thí điểm, doanh thu) thay vì tầm nhìn.", src: [dsa, tvs]}
+  - {text: "Cửa mở rõ nhất ở Series A, B và giai đoạn muộn: số thương vụ giai đoạn muộn ở Đông Nam Á tăng gấp đôi trong nửa sau 2025; vốn dồn vào doanh nghiệp có đơn vị kinh tế tốt và đường tới lợi nhuận.", src: [dsa]}
+  - {text: "AI là năng lực xuyên ngành chứ không phải một ngành: vốn vào startup AI Việt Nam tăng 13 lần từ 2023; nhà đầu tư ưu tiên AI gắn vào quy trình doanh nghiệp (B2B, AI agent, tự động hóa) hơn mô hình thử nghiệm.", src: [vpca, tvs, dsa]}
+  - {text: "Ngành được quan tâm: y tế (Nhi Đồng 315 dẫn đầu 2025), giáo dục, xe điện (Dat Bike Series B), công nghệ xanh, bán dẫn (thiết kế, IP), hạ tầng; thương mại điện tử và fintech tiêu dùng chững lại.", src: [tvs, dsa, vpca]}
+  - {text: "Nợ mạo hiểm và tín dụng tư nhân thành kênh vốn bổ sung: giúp kéo dài đường băng, giảm pha loãng cho nhà sáng lập; ở Đông Nam Á vay nợ startup đạt kỷ lục 2,81 tỷ USD.", src: [tvs, dsa]}
+  - {text: "Gọi vốn của quỹ khó nhất trong 7 năm: nhiều quỹ tập trung vào Việt Nam chưa đóng được quỹ mới vì nhà đầu tư góp vốn (LP) đòi lợi nhuận đã hiện thực hóa (DPI). Quỹ chuyên ngành mới vẫn ra đời (AI, Web3, khí hậu, nhà sáng lập trẻ).", src: [tvs]}
+  - {text: "Đường thoái vốn đang mở: FTSE Russell nâng hạng thị trường Việt Nam lên Thị trường mới nổi thứ cấp từ 9/2026, có thể kéo 5–6 tỷ USD vốn thụ động; IPO trở lại; M&A và bán lại cổ phần là lối thoát thực tế gần nhất. Mắt xích còn thiếu: chưa có IPO công ty công nghệ được VC/PE hậu thuẫn.", src: [tvs, vpca]}
+unicorn_path:
+  - step: "Nhà sáng lập"
+    text: "80% nhà sáng lập unicorn từng khởi nghiệp hoặc làm ở một công ty khởi nghiệp trước đó. Chỉ khoảng 1/3 học đại học top 100 thế giới và 20% từng làm ở tập đoàn công nghệ lớn, tư vấn hay ngân hàng hàng đầu: kinh nghiệm thực chiến quan trọng hơn danh tiếng nơi học, nơi làm."
+    src: [endeavor]
+  - step: "Góc nhìn quốc tế"
+    text: "Học, làm việc ở nước ngoài, di cư hoặc có bố mẹ di cư là dấu hiệu chung của nhiều nhà sáng lập unicorn; ở Việt Nam, vốn vào startup Việt hoạt động toàn cầu đạt mức cao nhất (51 triệu USD năm 2025)."
+    src: [endeavor, vpca]
+  - step: "Bằng chứng thị trường"
+    text: "Trước khi gọi vốn: có thư ý định, thí điểm, doanh thu; đơn vị kinh tế dương và đường tới lợi nhuận rõ. Đây là ngưỡng mới của nhà đầu tư giai đoạn đầu."
+    src: [tvs, dsa]
+  - step: "Vốn tăng trưởng"
+    text: "Series A, B là cửa đang mở; kết hợp vốn cổ phần với nợ mạo hiểm, tín dụng bằng VND để giảm pha loãng. Vốn giai đoạn muộn dồn vào số ít doanh nghiệp quy mô khu vực (fintech, y tế, hạ tầng)."
+    src: [dsa, tvs]
+  - step: "Thoái vốn"
+    text: "M&A, bán lại cổ phần trước; IPO trong nước khi thị trường được nâng hạng (9/2026) và quy định niêm yết mới (Nghị định 245/2025). 8/10 công ty lớn nhất thế giới từng được VC/PE hậu thuẫn trước khi niêm yết."
+    src: [tvs, vpca]
+  - step: "Hiệu ứng nhân"
+    text: "Nhà sáng lập đã scale thành công có khả năng làm nhà đầu tư thiên thần, cố vấn cao gấp hơn hai lần; nhân viên các unicorn ra đi khởi nghiệp. Vài unicorn đầu tiên có thể kích hoạt cả hệ sinh thái."
+    src: [endeavor]

@@ -142,7 +142,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
 <p class="foot-legal small"><span data-vi="Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích." data-en="Personal data on this site is processed under Vietnamese personal data protection law. You may view, correct, hide or delete information about yourself. No tracking cookies or analytics.">Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích.</span> <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi yêu cầu" data-en="Send a request">Gửi yêu cầu</a></p></div></footer>
 </body>
 </html>
@@ -815,6 +815,7 @@ if BENCH:
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}
+<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
 {('<h3 style="margin-top:28px" data-vi="Bảy trụ cột GII 2025 (hạng trên 139)" data-en="GII 2025 pillars (rank of 139)">Bảy trụ cột GII 2025 (hạng trên 139)</h3>' + dist_rows_rank(co["gii_2025"]["pillars"])) if co.get("gii_2025") else ""}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
@@ -1651,6 +1652,49 @@ if os.path.exists(_lv):
 <div class="aip-mosaic" aria-hidden="true">{_mos}</div></a>"""
     _h = open(_lv, encoding="utf-8").read()
     open(_lv, "w", encoding="utf-8").write(_h.replace("<!--AI_PROMO-->", promo))
+
+
+# ================= ĐẦU TƯ MẠO HIỂM 2026 =================
+_vcp = os.path.join(ROOT, "data", "benchmarks", "vc-2026.yaml")
+if os.path.exists(_vcp):
+    VC = yaml.safe_load(open(_vcp, encoding="utf-8"))
+    S = VC["sources"]
+    def _src(keys):
+        keys = keys if isinstance(keys, list) else [keys]
+        return '<span class="vc-src">' + ", ".join(e(S[k]["by"]) for k in keys if k in S) + "</span>"
+    def _grid(items):
+        return '<div class="kpis vc-kpis">' + "".join(
+            f'<div class="kpi"><p class="kv">{e(x["value"])}</p><p class="kl">{e(x["label"])}</p><p class="kn small muted">{e(x.get("note",""))}</p>{_src(x["src"])}</div>' for x in items) + "</div>"
+    ins = "".join(f'<li><span>{e(x["text"])}</span> {_src(x["src"])}</li>' for x in VC["insights"])
+    steps = "".join(f'<li class="up-step"><span class="up-n">{k}</span><h3>{e(x["step"])}</h3><p>{e(x["text"])}</p>{_src(x["src"])}</li>' for k, x in enumerate(VC["unicorn_path"], 1))
+    funds = [a for a in actors if a["type"] == "fund" and a.get("status") != "inactive"]
+    vn_funds = sorted([a for a in funds if a["region"] not in ("quoc-te",)], key=lambda a: (-richness(a), a["name"]["vi"].lower()))[:12]
+    srcs = "".join(f'<li><b>{e(v["title"])}</b> · {e(v["by"])}, {e(v["date"])}</li>' for v in S.values())
+    vc_body = f"""
+<div class="wrap page-head"><h1 data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</h1>
+<p class="lead" data-vi="Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn." data-en="A synthesis of four venture capital reports on Vietnam and Southeast Asia, plus the pathway to unicorns.">Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<nav class="onpage small"><a href="#viet-nam">Việt Nam</a><a href="#khu-vuc">Đông Nam Á</a><a href="#nhan-dinh">Nhận định</a><a href="#unicorn">Con đường unicorn</a><a href="#nguon">Nguồn</a></nav>
+<section id="viet-nam" class="sec"><h2>Việt Nam 2025</h2>{_grid(VC["vietnam"])}</section>
+<section id="khu-vuc" class="sec"><h2>Đông Nam Á 2025</h2>{_grid(VC["region"])}</section>
+<section id="nhan-dinh" class="sec"><h2 data-vi="8 nhận định" data-en="8 insights">8 nhận định</h2><ol class="vc-ins">{ins}</ol>
+<p class="small muted">Nhận định do bản đồ tổng hợp từ các báo cáo; số liệu giữ nguyên theo từng nguồn. Các nguồn dùng phương pháp và phạm vi khác nhau nên con số có thể chênh nhau.</p></section>
+<section id="unicorn" class="sec"><h2 data-vi="Con đường hình thành unicorn" data-en="The pathway to unicorns">Con đường hình thành unicorn</h2>
+<p class="lead" style="font-size:1.05rem">Ghép nghiên cứu hành trình 200 nhà sáng lập unicorn của Endeavor Insight với bối cảnh vốn 2025–2026 ở Việt Nam và Đông Nam Á.</p>
+<ol class="vcp">{steps}</ol>
+<div class="up-note"><h3>Gợi ý cho hệ sinh thái</h3>
+<ul><li><b>Vườn ươm, chương trình hỗ trợ:</b> đo đầu ra bằng bằng chứng thị trường (thí điểm, doanh thu), kết nối startup với doanh nghiệp lớn để có hợp đồng đầu tiên.</li>
+<li><b>Chính sách:</b> vốn mồi và quỹ đồng đầu tư cho giai đoạn đầu, nơi thiếu vốn nhất; mở đường niêm yết cho công ty công nghệ.</li>
+<li><b>Nhà sáng lập:</b> tích lũy kinh nghiệm ở startup đang tăng trưởng, làm việc với thị trường nước ngoài, nhắm Series A với đơn vị kinh tế dương.</li>
+<li><b>Cộng đồng:</b> kéo nhà sáng lập đã thành công trở lại làm nhà đầu tư thiên thần, mentor (hiệu ứng nhân).</li></ul>
+<p class="small muted">Phần gợi ý là nhận định của bản đồ, không trích từ báo cáo.</p></div></section>
+<section class="sec"><h2 data-vi="Quỹ trong danh bạ" data-en="Funds in the directory">Quỹ trong danh bạ</h2>{mini_cards(vn_funds)}
+<p class="small" style="margin-top:10px"><a href="{SITE_ROOT}danh-ba/quy-dau-tu/">Tất cả {len(funds)} quỹ, nhà đầu tư</a> · <a href="{SITE_ROOT}co-hoi/">Cơ hội gọi vốn đang mở</a></p></section>
+<section id="nguon" class="sec"><h2 data-vi="Nguồn" data-en="Sources">Nguồn</h2><ul class="list-plain">{srcs}</ul>
+<p class="small muted">Báo cáo thuộc bản quyền của đơn vị phát hành; trang này chỉ trích số liệu và tóm tắt.</p></section>
+</div>"""
+    write("von-dau-tu/index.html", page("Đầu tư mạo hiểm 2026", vc_body, "cities",
+          desc="Tổng hợp báo cáo đầu tư mạo hiểm Việt Nam và Đông Nam Á 2026 (VPCA, TVS, DealStreetAsia, Endeavor): số liệu, 8 nhận định và con đường hình thành unicorn."))
 
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
 def _days_for(evs):
