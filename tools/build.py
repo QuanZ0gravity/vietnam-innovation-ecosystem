@@ -758,11 +758,7 @@ for _f in sorted(glob.glob(os.path.join(ROOT, "data", "*", "events.yaml"))):
     for _ev in yaml.safe_load(open(_f, encoding="utf-8")) or []:
         CITY_EVENTS[os.path.basename(os.path.dirname(_f))].append(_ev)
 def city_events_html(regs):
-    xs = sorted([x for r in regs for x in CITY_EVENTS.get(r, [])], key=lambda x: str(x["start"]))
-    if not xs: return '<p class="muted small" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
-    rows = "".join(f'<li><a href="{SITE_ROOT}su-kien/{x["id"]}/"><b>{e(x["title"])}</b></a> <span class="muted small">{e(fmt_date(x["start"]))}'
-                   + (" · thường niên" if x.get("recurrence") == "annual" else "") + f' · {e(x.get("venue",""))}</span></li>' for x in xs)
-    return f'<ul class="list-plain">{rows}</ul><p class="small" style="margin-top:10px"><a href="{SITE_ROOT}su-kien/" data-vi="Tất cả sự kiện" data-en="All events">Tất cả sự kiện</a></p>'
+    return f'<!--CITY_EVENTS:{",".join(regs)}-->'
 
 if BENCH:
     co = BENCH["country"]
@@ -854,7 +850,7 @@ if BENCH:
 <section id="xep-hang" class="sec"><h2 data-vi="So với các thành phố khác" data-en="Compared with other cities">So với các thành phố khác</h2>{city_table(c["id"])}
 </div>"""
         body += """<script>document.addEventListener("DOMContentLoaded",function(){var el=document.getElementById("citymap");VIEMAP.render(el,el.dataset.ids.split(","),document.getElementById("citymapnote"));});</script>"""
-        write(f"thanh-pho/{c['id']}/index.html", page(f"Khởi nghiệp {c['name']}", body, "cities", scripts=["map.js"], head=LEAF,
+        write(f"thanh-pho/{c['id']}/index.html", page(f"Khởi nghiệp {c['name']}", body, "cities", scripts=["map.js", "evcal.js"], head=LEAF,
             desc=f"Hệ sinh thái khởi nghiệp {c['name']}: hạng #{c['global_rank']} thế giới, {len(acts)} tác nhân, {tc['startup']} startup, {tc['fund']} quỹ, bản đồ và cơ hội."))
 
 
@@ -1336,48 +1332,9 @@ tabs.forEach(function(t){{t.onclick=function(){{tabs.forEach(function(x){{x.clas
 document.querySelectorAll('.ev-filter .chip').forEach(function(b){{b.onclick=function(){{st[b.dataset.f]=b.dataset.v;b.parentNode.querySelectorAll('.chip').forEach(function(x){{x.classList.toggle('on',x===b)}});apply();}};}});
 var h=location.hash.slice(1);if(h){{var t=document.querySelector('.ev-tabs [data-tab="'+h+'"]');if(t)t.click();}}else if(!{len(up)}){{document.querySelector('.ev-tabs [data-tab="annual"]').click();}}}})();
 </script>
-<script>(function(){{
-var EV={ev_days_json}, TODAY="{TODAY}";
-var box=document.getElementById('evcal'); if(!box) return;
-var M=["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12"];
-var ME=["January","February","March","April","May","June","July","August","September","October","November","December"];
-var WDV=["T2","T3","T4","T5","T6","T7","CN"], WDE=["Mo","Tu","We","Th","Fr","Sa","Su"];
-var en=function(){{return document.documentElement.lang==='en'||(window.VIE&&VIE.lang&&VIE.lang()==='en');}};
-var cur=new Date(TODAY+'T00:00:00'); cur.setDate(1);
-function pad(n){{return (n<10?'0':'')+n;}}
-function draw(){{
-  var y=cur.getFullYear(), m=cur.getMonth(), first=(new Date(y,m,1).getDay()+6)%7, days=new Date(y,m+1,0).getDate();
-  var h='<div class="evcal-h"><button type="button" class="evcal-nav" data-d="-1" aria-label="Tháng trước">‹</button><b>'+(en()?ME[m]:M[m])+' '+y+'</b><button type="button" class="evcal-nav" data-d="1" aria-label="Tháng sau">›</button></div><div class="evcal-g">';
-  (en()?WDE:WDV).forEach(function(w){{h+='<span class="evcal-w">'+w+'</span>';}});
-  for(var i=0;i<first;i++) h+='<span></span>';
-  for(var d=1;d<=days;d++){{
-    var k=y+'-'+pad(m+1)+'-'+pad(d), info=EV[k], cls='evcal-d'+(k===TODAY?' today':'')+(info?' has':'');
-    h+= info ? '<button type="button" class="'+cls+'" data-k="'+k+'" title="'+info.t.replace(/"/g,'&quot;')+'">'+d+'<i></i></button>' : '<span class="'+cls+'">'+d+'</span>';
-  }}
-  h+='</div>';
-  var cnt=Object.keys(EV).filter(function(k){{return k.slice(0,7)===y+'-'+pad(m+1);}}).length;
-  h+='<p class="evcal-c small muted">'+(cnt? (en()? cnt+' day(s) with events':cnt+' ngày có sự kiện') : (en()?'No events this month':'Không có sự kiện trong tháng'))+'</p>';
-  box.innerHTML=h;
-  box.querySelectorAll('.evcal-nav').forEach(function(b){{b.onclick=function(){{cur.setMonth(cur.getMonth()+(+b.dataset.d));draw();}};}});
-  box.querySelectorAll('.evcal-d.has').forEach(function(b){{b.onclick=function(){{go(b.dataset.k);}};}});
-}}
-function go(k){{
-  var info=EV[k]; if(!info) return;
-  var target=document.getElementById('d-'+info.s);
-  var tab=target?target.closest('.ev-pane').dataset.pane:(info.s>=TODAY?'up':'past');
-  var t=document.querySelector('.ev-tabs [data-tab="'+tab+'"]'); if(t) t.click();
-  document.querySelectorAll('.ev-filter .chip[data-v=""]').forEach(function(c){{c.click();}});
-  target=document.querySelector('.ev-pane[data-pane="'+tab+'"] #d-'+info.s) || document.getElementById('d-'+info.s);
-  if(target){{target.scrollIntoView({{behavior:'smooth',block:'start'}}); target.classList.add('flash'); setTimeout(function(){{target.classList.remove('flash');}},1600);}}
-}}
-// start on the month of the nearest upcoming event, else the latest past one
-var keys=Object.keys(EV).sort(), next=keys.filter(function(k){{return k>=TODAY;}})[0]||keys[keys.length-1];
-if(next){{cur=new Date(next+'T00:00:00'); cur.setDate(1);}}
-draw(); document.addEventListener('vie:lang',draw);
-}})();
-</script>"""
+<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{ev_days_json},"{TODAY}");}});</script>"""
 b_ld = []
-write("su-kien/index.html", page("Sự kiện", ev_body, "events", desc=f"Lịch {len(events)} sự kiện khởi nghiệp, đổi mới sáng tạo thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội: DAVAS, SURF, InnoEx, Startup Wheel, Techmart, Ngày ĐMST Việt Nam."))
+write("su-kien/index.html", page("Sự kiện", ev_body, "events", scripts=["evcal.js"], desc=f"Lịch {len(events)} sự kiện khởi nghiệp, đổi mới sáng tạo thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội: DAVAS, SURF, InnoEx, Startup Wheel, Techmart, Ngày ĐMST Việt Nam."))
 for ev in events:
     os.makedirs(os.path.join(OUT, "su-kien", ev["id"]), exist_ok=True)
     open(os.path.join(OUT, "su-kien", ev["id"], "su-kien.ics"), "w", encoding="utf-8", newline="").write(ics_for(ev))
@@ -1457,6 +1414,33 @@ for _a in actors:
     open(os.path.join(OUT, "a", _a["id"], "index.html"), "w", encoding="utf-8").write(stub)
 _redir += ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
 open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
+
+
+# ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
+def _days_for(evs):
+    out = {}
+    for _x in sorted(evs, key=lambda z: z["_start"]):
+        _d = _x["_start"]
+        while _d <= _x["_end"]:
+            k = _d.isoformat()
+            if k in out: out[k]["t"] += " · " + _x["title"]
+            else: out[k] = {"t": _x["title"], "s": _x["_start"].isoformat()}
+            _d += datetime.timedelta(days=1)
+    return json.dumps(out, ensure_ascii=False).replace("</", "<\\/")
+for _f in glob.glob(os.path.join(OUT, "thanh-pho", "*", "index.html")):
+    _h = open(_f, encoding="utf-8").read()
+    _m = _re.search(r"<!--CITY_EVENTS:([^>]*)-->", _h)
+    if not _m: continue
+    _regs = _m.group(1).split(",")
+    _evs = [x for x in events if x["_region"] in _regs]
+    if not _evs:
+        _rep = '<p class="muted small" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
+    else:
+        _rep = (f'<div class="ev-layout city-ev"><div class="ev-main">{ev_timeline(_evs, newest_first=True)}'
+                f'<p class="small" style="margin-top:14px"><a href="{SITE_ROOT}su-kien/" data-vi="Tất cả sự kiện" data-en="All events">Tất cả sự kiện</a></p></div>'
+                f'<aside class="ev-aside"><div class="evcal" id="evcal"></div><p class="small muted" style="margin-top:10px" data-vi="Chọn ngày có chấm để xem sự kiện." data-en="Pick a dotted day.">Chọn ngày có chấm để xem sự kiện.</p></aside></div>'
+                f'<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{_days_for(_evs)},"{TODAY}");}});</script>')
+    open(_f, "w", encoding="utf-8").write(_h.replace(_m.group(0), _rep))
 
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
