@@ -1,0 +1,47 @@
+id: international-swiss-viet-economic-forum
+name:
+  vi: Diễn đàn Kinh tế Thụy Sĩ – Việt Nam (SVEF)
+  en: Swiss-Viet Economic Forum (SVEF)
+alt_names:
+- SVEF
+- Swiss-Viet Economic Forum
+- Swiss-Vietnamese Economic Forum
+type: international
+categories:
+- Diễn đàn kinh tế song phương
+- Xúc tiến thương mại, đầu tư
+- Hỗ trợ thâm nhập thị trường
+- Đối thoại chính sách
+sectors:
+- fintech
+- climate
+- health
+status: active
+website: https://swissvieteconomicforum.org/
+linkedin: https://www.linkedin.com/company/swiss-viet-economic-forum
+contact_email: contact@svef.ch
+contact_phone: +41 76 592 88 56
+description:
+  vi: 'Diễn đàn kết nối doanh nghiệp, tổ chức và cơ quan chính phủ Thụy Sĩ và Việt Nam: diễn đàn, hội thảo, đoàn xúc tiến thương mại, hỗ trợ thâm nhập thị trường, vận động chính sách; tập trung tài chính, công nghệ, pháp lý, giáo dục, bền vững. Khẩu hiệu "Cultivating Excellence Together".'
+history:
+- date: '2024'
+  text: Diễn đàn Kinh tế Thụy Sĩ – Việt Nam 2024 tại Zurich, chủ đề "Tăng cường quan hệ, kiến tạo tương lai".
+  source: https://swissvieteconomicforum.org/
+- date: 2025-06
+  text: SVEF 2025 tại Zurich.
+  source: https://hanoi2026.svef.ch/
+- date: '2025-11-03'
+  text: SVEF 2025 tại Đà Nẵng (3–5/11, Furama Resort), chủ đề "Đối tác đổi mới vì tăng trưởng bền vững"; đồng tổ chức với UBND thành phố Đà Nẵng và Đại sứ quán Thụy Sĩ; hơn 300 đại biểu; phiên toàn thể, tham quan khu công nghiệp, đô thị thông minh, hội thảo chuyên ngành, kết nối với các tỉnh.
+  source: https://hanoi2026.svef.ch/svef2025-danang
+- date: '2026-06-09'
+  text: 'SVEF 2026 tại Đại học Zurich (9–11/6), chủ đề "Beyond Bilateral: Building Smart, Sustainable and Connected Economies"; chuyển từ đối thoại sang thực thi, xây lộ trình hợp tác 2026–2030.'
+  source: https://hanoi2026.svef.ch/svef2026-zurich
+- date: '2026-10-18'
+  text: 'SVEF 2026 tại Hà Nội (18–20/10, khách sạn Melia), trong bối cảnh Hiệp định thương mại tự do EFTA – Việt Nam; 8 trụ cột: tài chính và thị trường vốn, chuyển đổi công nghiệp, hạ tầng đô thị, năng lượng bền vững, đổi mới sáng tạo – AI – kinh tế số, y tế, giáo dục và nhân lực, pháp lý và thâm nhập thị trường; ra mắt Sáng kiến Giáo dục và Tài năng SVEF và Lộ trình hợp tác SVEF 2026–2030.'
+  source: https://hanoi2026.svef.ch/
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- swissvieteconomicforum.org, hanoi2026.svef.ch (22/11/2026)
+source_url: https://swissvieteconomicforum.org/

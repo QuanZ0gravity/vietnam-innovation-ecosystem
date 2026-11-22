@@ -91,3 +91,15 @@
   - government-trung-tam-doi-moi-sang-tao-da-nang
   summary: Hội thảo kết nối doanh nghiệp, startup và tổ chức đổi mới sáng tạo xanh giữa Nhật Bản (Yokohama) và Đà Nẵng.
   source: https://www.ybadanang.com/to-chuc/dnic/
+- id: svef-2025-da-nang
+  title: Diễn đàn Kinh tế Thụy Sĩ – Việt Nam (SVEF) 2025 – Đà Nẵng
+  start: '2025-11-03'
+  end: '2025-11-05'
+  venue: Furama Resort, Đà Nẵng
+  category: capital
+  organizer: UBND TP. Đà Nẵng, Đại sứ quán Thụy Sĩ tại Việt Nam, SVEF
+  organizer_ids:
+  - international-swiss-viet-economic-forum
+  url: https://hanoi2026.svef.ch/svef2025-danang
+  summary: 'Chủ đề "Đối tác đổi mới vì tăng trưởng bền vững": đầu tư, đổi mới sáng tạo, dịch vụ tài chính, hợp tác với các tỉnh; hơn 300 đại biểu.'
+  source: https://hanoi2026.svef.ch/svef2025-danang
