@@ -1,29 +1,80 @@
 id: incubator-ecomdy-ecombator
 name:
-  vi: Ecomdy / The Ecombator
+  vi: Ecomdy Media / Ecombator
 alt_names:
-- Ecomdy / Ecombator
-- The Ecombator (Ecomdy)
+- Ecomdy / The Ecombator
 - Ecomdy
+- Ecomdy Media
+- Ecombator
+- The Ecombator
+- Ecomdy Global
 type: incubator
 categories:
-- Vườn ươm tư nhân
-- Tổ chức hỗ trợ
+- Agency TikTok chính thức (Premier TikTok Marketing Partner)
+- Vườn ươm thương mại điện tử xuyên biên giới (Ecombator)
+- Ươm tạo startup ad-tech, martech, AI
+- Đối tác TikTok Shop thị trường Mỹ
+sectors:
+- marketing
+- commerce
+- ai
 founded: 2020
 status: active
-website: https://ecomdymedia.com
-linkedin: https://www.linkedin.com/company/ecomdy
-address: 55 Lê Quang Hòa, Đà Nẵng
+website: https://ecomdymedia.com/
+linkedin: https://www.linkedin.com/company/ecomdy/
+contact_email: support@ecomdymedia.com
+address: 55 Lê Quang Hòa, Đà Nẵng (trụ sở); văn phòng tại Singapore, Mỹ (Illinois), Pakistan (Karachi)
 description:
-  vi: Thương mại điện tử xuyên biên giới, AI venture building; đợt ươm tạo 9 startup AI (6/2026).
+  vi: 'Startup công nghệ tại Đà Nẵng, agency TikTok chính thức cho thương mại điện tử: tài khoản quảng cáo, TikTok Shop, quảng cáo game và ứng dụng, dịch vụ white-label. Vận hành Ecombator, vườn ươm giúp doanh nghiệp Việt bán hàng xuyên biên giới sang Mỹ qua TikTok Shop, hợp tác cùng Swiss EP; ươm tạo startup ad-tech, martech, AI.'
+history:
+- date: '2020'
+  text: Thành lập tại Đà Nẵng. Tên Ecomdy ghép từ "Ecommerce" và chữ "đi" ("Let's Ecomdy!").
+  source: https://ecomdymedia.com/company-about-us
+- date: 2022-10
+  text: Nhận giải TikTok Campaign Management.
+  source: https://ecomdymedia.com/company-about-us
+- date: 2023-11
+  text: Được trao huy hiệu TikTok Agency Partner.
+  source: https://ecomdymedia.com/company-about-us
+- date: 2024-05
+  text: Nhận giải TikTok Agency Marketing Partner of the Year.
+  source: https://ecomdymedia.com/company-about-us
+- date: '2024'
+  text: 'Khởi động Ecombator, sáng kiến chung của Ecomdy Media và Ecomdy Global hợp tác cùng Swiss EP: ươm tạo doanh nghiệp in theo yêu cầu (POD), dropshipping bán sang Mỹ qua TikTok Shop; quy trình nộp hồ sơ trực tuyến, phỏng vấn 1-1, xác minh, ươm tạo và tăng tốc.'
+  source: https://ecombator.com/
+- date: '2026'
+  text: Thắng giải "Innovation in Agency" tại TikTok Partner Innovation Awards 2026, là agency châu Á – Thái Bình Dương duy nhất được ghi nhận toàn cầu về đổi mới; trở thành Premier TikTok Marketing Partner.
+  source: https://ecomdymedia.com/
+- date: 2026-06
+  text: Đợt ươm tạo 9 startup AI.
+  source: indanang.vn
+case_studies:
+- title: Ecomdy Media qua các con số
+  url: https://ecomdymedia.com/company-about-us
+  publisher: Ecomdy Media
+  date: '2026'
+  summary: Số liệu do Ecomdy công bố trên website.
+  points:
+  - 'Dịch vụ: tài khoản quảng cáo TikTok cho agency, TikTok Shop, quảng cáo game và ứng dụng, white-label cho agency khác, ươm tạo startup.'
+  - 'Ecombator: workshop do chuyên gia dẫn dắt, mentor 1-1 định kỳ, mạng lưới chuyên gia và nhà đầu tư, hỗ trợ độc quyền với tư cách đối tác TikTok.'
+  metrics:
+  - label: Khách hàng
+    value: 50.000+
+  - label: Đối tác
+    value: 120+
+  - label: Quốc gia
+    value: 60+
+  - label: Nhân sự
+    value: 70+
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - Danh mục ươm tạo của DNES (11/2026)
 - indanang.vn
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
-source_url: https://startupdanang.vn/the-ecombator-ecomdy-a012t3tncc
+- ecomdymedia.com, ecombator.com (22/11/2026)
+source_url: https://ecomdymedia.com/company-about-us
 legacy_id: d13;o3
