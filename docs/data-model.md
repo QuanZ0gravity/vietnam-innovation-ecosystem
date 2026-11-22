@@ -102,3 +102,7 @@ Hồ sơ cá nhân tự đăng ký công khai trên nền tảng của chính qu
 ## Sự kiện thường niên năm sau (dự kiến)
 
 Khi dựng trang, mỗi chuỗi sự kiện `recurrence: annual` lấy lần tổ chức gần nhất và tạo một bản "Dự kiến" cho năm sau (năm hiện tại + 1), cùng ngày tháng của lần gần nhất. Bản dự kiến hiện trong thẻ "Sắp tới", trên lịch và trang thành phố với nhãn "Dự kiến"; trang chi tiết ghi rõ ngày chưa được ban tổ chức công bố, có `noindex`, không có tệp lịch `.ics`, không có dữ liệu có cấu trúc `Event` và không nằm trong `events.json`. Khi có lịch chính thức, thêm sự kiện năm mới vào `events.yaml`: bản dự kiến tự biến mất.
+
+## Ảnh khi chia sẻ link
+
+Khi dựng trang, `tools/og.py` tạo ảnh 1200 × 630 (`site/og/<id>.jpg`) cho mỗi hồ sơ có logo hoặc ảnh đại diện: logo (hoặc ảnh tròn với chuyên gia), tên, loại, địa phương. Trang hồ sơ khai báo ảnh này trong `og:image`; hồ sơ không có logo dùng ảnh mặc định `assets/og-default.png`. Cần Pillow (đã thêm vào `requirements.txt`) và phông Be Vietnam Pro trong `web/fonts/` (giấy phép OFL).

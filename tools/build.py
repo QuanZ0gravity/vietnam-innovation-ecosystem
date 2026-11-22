@@ -6,6 +6,9 @@ Biến môi trường:
 """
 import collections, csv, datetime, glob, html, json, os, re as _re, shutil, urllib.parse
 import yaml
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from og import make_card
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site")
@@ -592,6 +595,13 @@ for a in actors:
     if a.get("sectors"): ld["knowsAbout"] = [SECT_VI[s] for s in a["sectors"] if s in SECT_VI]
     a_head = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
     a_head += '<meta property="og:type" content="profile">'
+    if a.get("logo"):
+        _src = os.path.join(ROOT, a["logo"])
+        _out = os.path.join(OUT, "og", aid + ".jpg")
+        if make_card(_src, name, f'{VIE_TYPE.get(a["type"], a["type"])} · {REGION_VI.get(a["region"], "Việt Nam")}', _out, round_img=a["logo"].startswith("photos/")):
+            a_head += (f'<meta property="og:image" content="{SITE_URL}/og/{aid}.jpg"><meta property="og:image:width" content="1200">'
+                       f'<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">'
+                       f'<meta property="og:image:alt" content="{e(name)}">')
     a_last = GIT_DATES.get(a["_file"], TODAY)
     body = f"""
 <div class="wrap crumbs"><a href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a> / <a href="{dir_link(type=a['type'])}" data-i18n="t_{a['type']}">{a['type']}</a></div>
