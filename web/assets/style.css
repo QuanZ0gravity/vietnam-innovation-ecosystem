@@ -394,3 +394,23 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .ev-badge.proj{background:transparent;border:1px dashed var(--sea);color:var(--sea)}
 .ev-card.proj{border-style:dashed}
 .proj-note p{margin:12px 0 0;padding:12px 16px;border-radius:12px;border:1px dashed var(--sea);background:var(--surface)}
+/* Bản đồ thị trường AI */
+.mm{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px;margin-top:10px}
+.mm-box{border:1.5px solid var(--line);border-radius:16px;padding:14px;background:var(--surface)}
+.mm-box.wide{grid-column:1/-1}
+.mm-box[hidden]{display:none}
+.mm-box h3{font-size:.95rem;margin:0 0 10px;display:flex;justify-content:space-between;gap:8px}
+.mm-box h3 b{color:var(--sea)}
+.mm-box.sup{background:var(--paper);border-style:dashed}
+.mm-tiles{display:flex;flex-wrap:wrap;gap:6px}
+.mm-t{display:inline-flex;align-items:center;gap:6px;padding:4px 8px 4px 4px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:inherit;text-decoration:none;font-size:.8rem;max-width:220px}
+.mm-t[hidden]{display:none}
+.mm-t:hover{border-color:var(--ink-2)}
+.mm-t span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mm-t .lg{width:28px;height:28px;padding:1px;border-radius:7px}
+.mm-t .ini{width:28px!important;height:28px!important;font-size:.65rem}
+.mm-lib{list-style:none;padding:0;margin:8px 0 0}
+.mm-lib li{padding:9px 0;border-bottom:1px solid var(--line);line-height:1.45}
+.mm-promo{display:flex;flex-direction:column;gap:4px;padding:16px 18px;margin-bottom:18px;border-radius:14px;background:var(--ink);color:var(--paper);text-decoration:none}
+.mm-promo span{opacity:.85;font-size:.92rem}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0 0;font-size:.85rem;color:var(--ink-2)}.lg-i{display:inline-flex;align-items:center;gap:6px}.lg-i i{width:14px;height:4px;border-radius:2px;display:inline-block}

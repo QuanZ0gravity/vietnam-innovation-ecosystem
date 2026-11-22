@@ -1042,7 +1042,7 @@ unclassified = sum(1 for a in actors if a["type"] in ("startup", "company", "fun
 write("linh-vuc/index.html", page("Lĩnh vực", f"""
 <div class="wrap page-head"><h1 data-vi="Lĩnh vực" data-en="Sectors">Lĩnh vực</h1>
 <p class="lead" data-vi="13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ. Lĩnh vực do tổ chức tự chọn; một số hồ sơ đang mang gợi ý tự động chờ xác nhận." data-en="13 sectors across startups, companies and funds. Organisations choose their own sectors; some profiles still carry automatic suggestions awaiting confirmation.">13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ.</p></div>
-<div class="wrap" style="padding-bottom:72px"><div class="cities secgrid">{sec_cards}</div>
+<div class="wrap" style="padding-bottom:72px"><a class="mm-promo" href="{SITE_ROOT}ban-do-ai/"><b data-vi="Mới: Bản đồ thị trường AI Việt Nam" data-en="New: Vietnam AI market map">Mới: Bản đồ thị trường AI Việt Nam</b><span data-vi="Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →" data-en="AI companies by layer and industry, with global trends →">Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →</span></a><div class="cities secgrid">{sec_cards}</div>
 <p class="small muted" style="margin-top:20px" data-vi="{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu." data-en="{unclassified} profiles have no sector yet.">{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu.</p></div>""", "sectors",
       desc="Startup, doanh nghiệp và quỹ đầu tư Việt Nam theo 13 lĩnh vực: AI, tài chính số, Web3, nông nghiệp, y tế, giáo dục, du lịch, năng lượng, bán dẫn, logistics và hơn nữa."))
 
@@ -1467,6 +1467,135 @@ for _a in actors:
 _redir += ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
 open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
 
+
+
+# ================= BẢN ĐỒ THỊ TRƯỜNG AI =================
+AI_LAYERS = [
+    ("physical", "Robot, IoT, AI vật lý", "Robotics, IoT, physical AI", r"robot|drone|\buav\b|\biot\b|aiot|cam bien|sensor|tu hanh|autonomous|lidar"),
+    ("security", "An ninh mạng, AI an toàn", "Security and AI safety", r"bao mat|an ninh mang|security|an toan thong tin|cyber|phat hien vi pham|chong gian lan|fraud"),
+    ("infra", "Hạ tầng: chip, tính toán, đám mây", "Infrastructure: chips, compute, cloud", r"ban dan|semiconductor|\bchips?\b|vi mach|\bgpu\b|data ?center|trung tam du lieu|\bcloud\b|dam may|compute|fpga|\bhpc\b|sieu may tinh"),
+    ("agents", "AI Agent, chatbot, tự động hóa", "AI agents, chatbots, automation", r"\bagents?\b|tac tu|chatbot|voicebot|tro ly ao|tro ly ai|assistant|tu dong hoa|automation|\brpa\b|nhan vien ai|ai employee"),
+    ("genai", "AI tạo sinh, giọng nói, thị giác", "Generative, voice and vision AI", r"generative|tao sinh|\bllm\b|ngon ngu lon|giong noi|\bvoice\b|speech|thi giac may|computer vision|\bvision\b|nhan dien|\bocr\b|tao video|video ai|hinh anh ai"),
+    ("v-fintech", "Ứng dụng: tài chính", "Applied AI: finance", r"fintech|tai chinh|thanh toan|payment|ngan hang|bao hiem|chung khoan|\bcrypto|blockchain|\bdefi\b|giao dich|trading"),
+    ("v-health", "Ứng dụng: y tế, sinh học", "Applied AI: health and bio", r"\by te\b|health|benh|medical|duoc|sinh hoc|\bbio|suc khoe|nha khoa|than kinh|neuro"),
+    ("v-edu", "Ứng dụng: giáo dục, nhân sự", "Applied AI: education and HR", r"giao duc|hoc tap|hoc sinh|\bedu|dao tao|tieng anh|tuyen dung|nhan su|\bhr\b|talent|ung vien"),
+    ("v-commerce", "Ứng dụng: thương mại, marketing", "Applied AI: commerce and marketing", r"thuong mai|ecommerce|e-commerce|ban hang|marketing|quang cao|tiktok|amazon|ban le|retail|khach hang|seller"),
+    ("v-industry", "Ứng dụng: nông nghiệp, sản xuất, logistics", "Applied AI: agriculture, industry, logistics", r"nong nghiep|nuoi tom|thuy san|san xuat|nha may|logistics|van tai|\bkho\b|\bcang\b|cong nghiep|xay dung|nang luong|moi truong"),
+    ("data", "Dữ liệu, nền tảng, phần mềm AI", "Data, platforms and AI software", r"."),
+]
+AI_SUPPORT_TYPES = ("fund", "support_org", "community", "government", "research", "university", "international", "incubator", "accelerator", "space")
+_ai_rx = [(k, _re.compile(rx)) for k, _, _, rx in AI_LAYERS]
+def _ai_text(a):
+    return " " + _fold(" ".join([a["name"]["vi"]] + (a.get("alt_names") or []) + (a.get("categories") or []) + [(a.get("description") or {}).get("vi", ""), (a.get("description_source") or {}).get("text", "")[:600]])) + " "
+def is_ai(a):
+    t = _ai_text(a)
+    return "ai" in (a.get("sectors") or []) and _re.search(r"\bai\b|tri tue nhan tao|machine learning|hoc may|\bllm\b|genai|tac tu|chatbot|voicebot|thi giac may|computer vision", t) is not None
+ai_companies, ai_support = collections.defaultdict(list), []
+for a in actors:
+    if a.get("status") == "inactive": continue
+    if a["type"] in ("startup", "company", "creator"):
+        if not is_ai(a): continue
+        t = _ai_text(a)
+        layer = next(k for k, rx in _ai_rx if rx.search(t))
+        ai_companies[layer].append(a)
+    elif a["type"] in AI_SUPPORT_TYPES:
+        t = _ai_text(a)
+        if _re.search(r"\bai\b|tri tue nhan tao|genai|machine learning|vi mach", t) and _re.search(r"\bai\b|tri tue", _fold(a["name"]["vi"] + " " + " ".join(a.get("alt_names") or []) + " " + (a.get("description") or {}).get("vi", ""))):
+            ai_support.append(a)
+n_ai = sum(len(v) for v in ai_companies.values())
+def _tile(a):
+    return (f'<a class="mm-t" href="{SITE_ROOT}{apath(a["id"])}" data-reg="{a["region"]}" title="{e(a["name"]["vi"])}">{logo_img(a, 34)}'
+            f'<span>{e(a["name"]["vi"])}</span></a>')
+mm_boxes = ""
+for k, vi, en, _ in AI_LAYERS:
+    xs = sorted(ai_companies.get(k, []), key=lambda a: (-richness(a), a["name"]["vi"].lower()))
+    if not xs: continue
+    mm_boxes += (f'<section class="mm-box{" wide" if len(xs) > 18 else ""}"><h3><span data-vi="{e(vi)}" data-en="{e(en)}">{e(vi)}</span> <b>{len(xs)}</b></h3>'
+                 f'<div class="mm-tiles">{"".join(_tile(a) for a in xs)}</div></section>')
+sup = sorted(ai_support, key=lambda a: (a["type"], a["name"]["vi"].lower()))
+mm_boxes += (f'<section class="mm-box wide sup"><h3><span data-vi="Hỗ trợ hệ sinh thái AI: quỹ, trung tâm, cộng đồng, nghiên cứu" data-en="AI ecosystem support: funds, centres, communities, research">Hỗ trợ hệ sinh thái AI: quỹ, trung tâm, cộng đồng, nghiên cứu</span> <b>{len(sup)}</b></h3>'
+             f'<div class="mm-tiles">{"".join(_tile(a) for a in sup)}</div></section>') if sup else ""
+_reg_counts = collections.Counter(a["region"] for v in ai_companies.values() for a in v)
+mm_chips = '<button type="button" class="chip on" data-r="">' + f'<span data-vi="Tất cả" data-en="All">Tất cả</span><b>{n_ai}</b></button>' + "".join(
+    f'<button type="button" class="chip" data-r="{r}">{REG_L(r)}<b>{n}</b></button>' for r, n in _reg_counts.most_common() if n)
+# --- xu hướng toàn cầu từ danh sách bản đồ AI
+AIMM = json.load(open(os.path.join(ROOT, "data", "benchmarks", "ai-market-maps.json"), encoding="utf-8"))
+MMI = AIMM["items"]
+GROUP_VI = {"agents": "AI Agent, tự động hóa", "vertical": "AI theo ngành (tài chính, y tế, pháp lý…)", "infra": "Hạ tầng, chip, tính toán", "physical": "Robot, AI vật lý",
+            "security": "An ninh AI", "genai": "AI tạo sinh, giọng nói, video", "devtools": "Công cụ lập trình AI", "enterprise": "AI doanh nghiệp", "top": "Bảng xếp hạng AI",
+            "data": "Dữ liệu AI", "consumer": "AI tiêu dùng", "regional": "AI theo khu vực", "other": "Chủ đề khác"}
+_MON = {m: i for i, m in enumerate(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], 1)}
+def _q(mstr):
+    mn, y = mstr.split()[0], mstr.split()[-1]
+    return f"{y}-Q{(_MON.get(mn, 1) - 1) // 3 + 1}"
+gc = collections.Counter(i["group"] for i in MMI if i["group"] != "other")
+bars = sorted(gc.items(), key=lambda x: -x[1])
+W, rowh = 760, 30
+mxv = max(v for _, v in bars) if bars else 1
+bar_svg = f'<figure class="chart"><svg viewBox="0 0 {W} {len(bars) * rowh + 10}" role="img" aria-label="Số bản đồ AI theo chủ đề">' + "".join(
+    f'<text x="0" y="{k * rowh + 20}" class="ax">{e(GROUP_VI.get(g, g))}</text><rect x="300" y="{k * rowh + 7}" width="{max(4, (W - 360) * v / mxv):.0f}" height="18" rx="4" fill="var(--sea)"/>'
+    f'<text x="{306 + (W - 360) * v / mxv:.0f}" y="{k * rowh + 21}" class="ax">{v}</text>' for k, (g, v) in enumerate(bars)) + "</svg></figure>"
+qs = sorted({_q(i["month"]) for i in MMI})
+TREND = ["agents", "physical", "security", "infra", "vertical"]
+series = [(GROUP_VI[g], {q: sum(1 for i in MMI if i["group"] == g and _q(i["month"]) == q) for q in qs}) for g in TREND]
+def trend_chart(series, qs):
+    Wt, Ht, L, R, T, B = 760, 300, 40, 20, 16, 34
+    mx = max((v for _, d in series for v in d.values()), default=1) or 1
+    xs = lambda i: L + (Wt - L - R) * i / max(1, len(qs) - 1)
+    yv = lambda v: T + (Ht - T - B) * (1 - v / mx)
+    g = "".join(f'<line x1="{L}" x2="{Wt-R}" y1="{yv(t):.1f}" y2="{yv(t):.1f}" class="gl"/><text x="{L-8}" y="{yv(t)+4:.1f}" class="ax" text-anchor="end">{t}</text>' for t in range(0, mx + 1, max(1, mx // 4)))
+    g += "".join(f'<text x="{xs(i):.1f}" y="{Ht-12}" class="ax" text-anchor="middle">{q.replace("-", " ")}</text>' for i, q in enumerate(qs) if i % 2 == 0 or len(qs) < 8)
+    for k, (name, d) in enumerate(series):
+        col = SER_COL[k % len(SER_COL)]
+        pts = [(xs(i), yv(d.get(q, 0))) for i, q in enumerate(qs)]
+        g += f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" stroke="{col}" stroke-width="2.3"/>'
+    legend = "".join(f'<span class="lg-i"><i style="background:{SER_COL[k % len(SER_COL)]}"></i>{e(name)}</span>' for k, (name, _) in enumerate(series))
+    return f'<div class="legend">{legend}</div><figure class="chart"><svg viewBox="0 0 {Wt} {Ht}" role="img" aria-label="Xu hướng theo quý">{g}</svg></figure><p class="small muted">Quý 4/2026 mới có số liệu tháng 10, 11.</p>'
+by_year = collections.Counter(i["month"].split()[-1] for i in MMI)
+top_q = {g: max(qs, key=lambda q: dict(s)[q] if False else 0) for g in TREND}
+lib = json.dumps([{"t": i["title"], "a": i["author"], "m": i["month"], "c": i["cat"], "g": i["group"], "u": i["url"]} for i in MMI], ensure_ascii=False).replace("</", "<\\/")
+gchips = "".join(f'<button type="button" class="chip sm" data-g="{g}">{e(GROUP_VI.get(g, g))}<b>{n}</b></button>' for g, n in bars)
+vn_layers_count = {k: len(ai_companies.get(k, [])) for k, *_ in AI_LAYERS}
+apps = sum(v for k, v in vn_layers_count.items() if k.startswith("v-"))
+aimap_body = f"""
+<div class="wrap page-head"><p class="crumb small"><a href="{SITE_ROOT}linh-vuc/" data-vi="Lĩnh vực" data-en="Sectors">Lĩnh vực</a> / <a href="{SITE_ROOT}linh-vuc/ai/">AI</a></p>
+<h1 data-vi="Bản đồ thị trường AI Việt Nam" data-en="Vietnam AI market map">Bản đồ thị trường AI Việt Nam</h1>
+<p class="lead" data-vi="{n_ai} startup, doanh nghiệp AI xếp theo tầng công nghệ và ngành ứng dụng, cùng {len(sup)} quỹ, trung tâm, cộng đồng hỗ trợ; đặt cạnh xu hướng từ {len(MMI)} bản đồ thị trường AI toàn cầu." data-en="{n_ai} AI startups and companies by technology layer and application, plus {len(sup)} supporting funds, centres and communities, set against trends from {len(MMI)} global AI market maps.">{n_ai} startup, doanh nghiệp AI xếp theo tầng công nghệ và ngành ứng dụng, cùng {len(sup)} quỹ, trung tâm, cộng đồng hỗ trợ; đặt cạnh xu hướng từ {len(MMI)} bản đồ thị trường AI toàn cầu.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<nav class="onpage small"><a href="#viet-nam" data-vi="Bản đồ Việt Nam" data-en="Vietnam map">Bản đồ Việt Nam</a><a href="#xu-huong" data-vi="Xu hướng toàn cầu" data-en="Global trends">Xu hướng toàn cầu</a><a href="#thu-vien" data-vi="Thư viện bản đồ AI" data-en="Market map library">Thư viện bản đồ AI</a></nav>
+<section id="viet-nam" class="sec"><h2 data-vi="Bản đồ Việt Nam" data-en="Vietnam map">Bản đồ Việt Nam</h2>
+<div class="chiprow mm-reg">{mm_chips}</div>
+<div class="mm">{mm_boxes}</div>
+<p class="small muted" style="margin-top:12px" data-vi="Xếp tầng tự động theo phân loại và mô tả của từng hồ sơ; mỗi tổ chức một ô. Tổ chức của bạn nằm sai ô? Sửa lĩnh vực, mô tả trong hồ sơ." data-en="Layers are assigned automatically from each profile's categories and description.">Xếp tầng tự động theo phân loại và mô tả của từng hồ sơ; mỗi tổ chức một ô. Tổ chức của bạn nằm sai ô? Sửa lĩnh vực, mô tả trong hồ sơ.</p></section>
+<section id="xu-huong" class="sec"><h2 data-vi="Xu hướng toàn cầu" data-en="Global trends">Xu hướng toàn cầu</h2>
+<ul class="insights">
+<li>Từ 2024 đến 11/2026, các quỹ đầu tư, nhà phân tích và chuyên gia công bố ít nhất {len(MMI)} bản đồ thị trường AI ({by_year.get("2024",0)} năm 2024, {by_year.get("2025",0)} năm 2025, {by_year.get("2026",0)} năm 2026).</li>
+<li>Chủ đề được vẽ bản đồ nhiều nhất là <b>AI theo ngành</b> ({gc.get("vertical",0)}) và <b>AI Agent</b> ({gc.get("agents",0)}), tiếp theo là hạ tầng, chip, tính toán ({gc.get("infra",0)}), robot và AI vật lý ({gc.get("physical",0)}), an ninh AI ({gc.get("security",0)}).</li>
+<li>Theo người tổng hợp danh sách, nửa đầu và nửa cuối 2026 số bản đồ mới chậm lại so với 2024–2025, nhất là từ các quỹ lớn; bản đồ mới ngày càng hẹp chủ đề hoặc gắn với một khu vực địa lý.</li>
+<li>Đối chiếu với Việt Nam: {apps} trong {n_ai} doanh nghiệp AI trên bản đồ là ứng dụng theo ngành, {vn_layers_count.get("agents",0)} ở mảng AI Agent, chatbot; tầng hạ tầng ({vn_layers_count.get("infra",0)}), robot và AI vật lý ({vn_layers_count.get("physical",0)}), an ninh AI ({vn_layers_count.get("security",0)}) còn mỏng so với mức quan tâm toàn cầu.</li>
+</ul>
+<h3 style="margin-top:24px" data-vi="Số bản đồ thị trường AI theo chủ đề (2024–2026)" data-en="AI market maps by topic (2024–2026)">Số bản đồ thị trường AI theo chủ đề (2024–2026)</h3>{bar_svg}
+<h3 style="margin-top:24px" data-vi="Theo quý: năm chủ đề lớn" data-en="By quarter: five major topics">Theo quý: năm chủ đề lớn</h3>{trend_chart(series, qs)}
+<p class="small muted">Nguồn: <a href="{AIMM["repo"]}" rel="noopener">Awesome AI Market Maps</a> (Joy Larkin, giấy phép MIT), truy cập {AIMM["accessed"]}. Nhóm chủ đề do bản đồ này gộp lại từ {len({i["cat"] for i in MMI})} nhãn gốc.</p></section>
+<section id="thu-vien" class="sec"><h2 data-vi="Thư viện bản đồ AI toàn cầu" data-en="Global AI market map library">Thư viện bản đồ AI toàn cầu</h2>
+<div class="bigsearch"><span class="bs-ico">{icon_svg_any("search", 20)}</span><input id="mmq" type="search" placeholder="Tìm theo tên bản đồ, tác giả, chủ đề…" autocomplete="off"></div>
+<div class="chiprow sm" id="mmg"><button type="button" class="chip sm on" data-g="">Tất cả<b>{len(MMI)}</b></button>{gchips}</div>
+<p class="small muted" id="mmc"></p><ul class="mm-lib" id="mml"></ul>
+<p style="margin-top:12px"><button type="button" class="btn ghost" id="mmmore" data-vi="Xem thêm" data-en="Show more">Xem thêm</button></p></section>
+</div>
+<script>
+(function(){{var D={lib},q=document.getElementById('mmq'),L=document.getElementById('mml'),C=document.getElementById('mmc'),more=document.getElementById('mmmore'),g='',n=40;
+var norm=function(s){{return (s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();}};
+function draw(){{var w=norm(q.value).split(/\\s+/).filter(Boolean);var xs=D.filter(function(d){{if(g&&d.g!==g)return false;var h=norm(d.t+' '+d.a+' '+d.c);return w.every(function(x){{return h.indexOf(x)>=0;}});}});
+C.textContent=xs.length+' bản đồ';L.innerHTML='';xs.slice(0,n).forEach(function(d){{var li=document.createElement('li'),a=document.createElement('a');a.href=d.u;a.rel='noopener';a.target='_blank';a.textContent=d.t;var m=document.createElement('span');m.className='muted small';m.textContent=' · '+d.a+' · '+d.m+' · '+d.c;li.append(a,m);L.append(li);}});more.hidden=xs.length<=n;}}
+q.addEventListener('input',function(){{n=40;draw();}});more.onclick=function(){{n+=60;draw();}};
+document.querySelectorAll('#mmg .chip').forEach(function(b){{b.onclick=function(){{g=b.dataset.g;document.querySelectorAll('#mmg .chip').forEach(function(x){{x.classList.toggle('on',x===b);}});n=40;draw();}};}});
+document.querySelectorAll('.mm-reg .chip').forEach(function(b){{b.onclick=function(){{var r=b.dataset.r;document.querySelectorAll('.mm-reg .chip').forEach(function(x){{x.classList.toggle('on',x===b);}});
+document.querySelectorAll('.mm-t').forEach(function(t){{t.hidden=r&&t.dataset.reg!==r;}});document.querySelectorAll('.mm-box').forEach(function(bx){{bx.hidden=!bx.querySelector('.mm-t:not([hidden])');}});}};}});
+draw();}})();
+</script>"""
+write("ban-do-ai/index.html", page("Bản đồ thị trường AI Việt Nam", aimap_body, "sectors",
+      desc=f"Bản đồ thị trường AI Việt Nam: {n_ai} startup, doanh nghiệp AI theo tầng hạ tầng, mô hình, AI Agent, robot, an ninh và ứng dụng theo ngành; xu hướng từ {len(MMI)} bản đồ AI toàn cầu."))
 
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
 def _days_for(evs):

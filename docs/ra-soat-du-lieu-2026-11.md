@@ -229,3 +229,9 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - Thêm 5 sự kiện tại Hà Nội: TECHFEST Việt Nam 2026 (11–13/12, khu vực phố đi bộ Hồ Hoàn Kiếm), Cuộc thi Tìm kiếm Tài năng Khởi nghiệp sáng tạo Quốc gia (11/12), Giải thưởng GIFPP (11/12), Giải thưởng Đại sứ Thương hiệu ĐMST Quốc gia (11/12), V-INNOHEALTH Award (11/12); thêm cơ hội "Cuộc thi TECHFEST 2026".
 - Chỉ lấy các mục trang ghi "Đã xác minh nguồn". Lễ khai mạc, bế mạc, diễn đàn chính sách, triển lãm, hội thảo bên lề hiện ghi "Bản ghi minh họa · chưa phải sự kiện công bố" nên không tách thành sự kiện riêng; chỉ nêu trong mô tả sự kiện tổng. Bỏ giải golf, pickleball và bản ghi thử nghiệm (EF P7 test).
+
+## Bản đồ thị trường AI (22/11/2026)
+
+- Trang mới `/ban-do-ai/`: (1) bản đồ Việt Nam: startup, doanh nghiệp có lĩnh vực AI và từ khóa AI trong hồ sơ, xếp tự động vào 11 tầng (robot và AI vật lý, an ninh, hạ tầng, AI Agent, AI tạo sinh, 5 nhóm ứng dụng theo ngành, dữ liệu và phần mềm AI) cùng nhóm hỗ trợ hệ sinh thái AI, lọc theo địa phương; (2) xu hướng toàn cầu và (3) thư viện tra cứu 618 bản đồ thị trường AI (2024–11/2026).
+- Nguồn danh sách toàn cầu: Awesome AI Market Maps (Joy Larkin, giấy phép MIT), lưu ở `data/benchmarks/ai-market-maps.json`, gộp 98 nhãn gốc thành 13 nhóm chủ đề.
+- Liên kết từ trang Lĩnh vực.

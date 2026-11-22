@@ -1,0 +1,4951 @@
+{
+"source": "Awesome AI Market Maps – Joy Larkin (MIT License)",
+"repo": "https://github.com/joylarkin/Awesome-AI-Market-Maps",
+"accessed": "2026-11-22",
+"items": [
+{
+"month": "November 2026",
+"cat": "Applied AI",
+"author": "Petar Petrov — Eilla",
+"title": "AI Deployment Firms",
+"url": "https://aideploymentfirms.com",
+"group": "other"
+},
+{
+"month": "November 2026",
+"cat": "Biopharma AI",
+"author": "Elicit",
+"title": "AI for Pharma",
+"url": "https://elicit.com/ai-for-pharma",
+"group": "other"
+},
+{
+"month": "November 2026",
+"cat": "AI Compute",
+"author": "Siddharth Ramakrishnan & Jonas Ciplickas — Scale Venture Partners",
+"title": "Inference providers have their heads in the clouds",
+"url": "https://www.scalevp.com/blog/inference-providers-have-their-head-in-the-clouds",
+"group": "infra"
+},
+{
+"month": "November 2026",
+"cat": "AI Data",
+"author": "AI Circle",
+"title": "AI Circle Human Data Landscape",
+"url": "https://www.ai-circle.org/ai-circle-human-data-landscape",
+"group": "data"
+},
+{
+"month": "November 2026",
+"cat": "Enterprise AI",
+"author": "Tim Tully & Joff Redfern & Deedy Das & Derek Xiao — Menlo Ventures",
+"title": "State of Enterprise AI",
+"url": "https://menlovc.com/perspective/2026-the-state-of-enterprise-ai/",
+"group": "enterprise"
+},
+{
+"month": "November 2026",
+"cat": "AI Finance",
+"author": "The Private Markets Forum",
+"title": "AI in Private Markets Map",
+"url": "https://lnkd.in/p/g26qddZW",
+"group": "vertical"
+},
+{
+"month": "November 2026",
+"cat": "Healthcare AI",
+"author": "Greg Yap & JP Sanday & Croom Beatty & Johnny Hu & Derek Xiao & Sabrina Lu — Menlo Ventures",
+"title": "2026: The State of AI in Healthcare",
+"url": "https://menlovc.com/perspective/2026-the-state-of-ai-in-healthcare/",
+"group": "vertical"
+},
+{
+"month": "November 2026",
+"cat": "Legal AI",
+"author": "Harshith Viswanath",
+"title": "Mapping the AI-Native Law Firm",
+"url": "https://harshithviswanath.substack.com/p/mapping-the-ai-native-law-firm",
+"group": "vertical"
+},
+{
+"month": "November 2026",
+"cat": "Physical AI",
+"author": "Will Howard Davies",
+"title": "The 2026 Physical AI Market Map",
+"url": "https://lnkd.in/p/gnJpnz5m",
+"group": "physical"
+},
+{
+"month": "November 2026",
+"cat": "Top AI",
+"author": "Bessemer Venture Partners + Newcomer",
+"title": "The AI 100",
+"url": "https://ai100.newcomer.co/",
+"group": "top"
+},
+{
+"month": "November 2026",
+"cat": "Top AI",
+"author": "Leonis Capital",
+"title": "The 2026 Leonis AI 100",
+"url": "https://www.leoniscap.com/research/the-2026-leonis-ai-100",
+"group": "top"
+},
+{
+"month": "November 2026",
+"cat": "Everything Else",
+"author": "CB Insights",
+"title": "The Emerging AI 50 in NYC",
+"url": "https://www.cbinsights.com/research/the-emerging-ai-50-in-nyc/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "AI Agents",
+"author": "Jay Zhao & LJW & Jenny Xiao — Leonis Capital",
+"title": "The Agent Land Grab",
+"url": "https://leonisnewsletter.substack.com/p/the-agent-land-grab",
+"group": "agents"
+},
+{
+"month": "October 2026",
+"cat": "AI Agents",
+"author": "Supplify",
+"title": "The Agentic AI Supply Chain Tech Map 2026",
+"url": "https://getsupplify.com/supply-chain-map/",
+"group": "agents"
+},
+{
+"month": "October 2026",
+"cat": "AI Agents",
+"author": "MightyBot",
+"title": "AI Agents Market Map 2026: Every Category Mapped",
+"url": "https://mightybot.ai/blog/ai-automation-agents-market-maps-gone-wild/",
+"group": "agents"
+},
+{
+"month": "October 2026",
+"cat": "AI Agents",
+"author": "Zentor / Personal Agent Bench",
+"title": "Personal AI agents list: products and evidence",
+"url": "https://personalagentbench.com/landscape/",
+"group": "agents"
+},
+{
+"month": "October 2026",
+"cat": "AI Chips",
+"author": "Dealroom.co",
+"title": "AI-Native EDA Startups: who owns how much of the chip design stack",
+"url": "https://dealroom.co/api/marketmap-render?slug=ai-native-eda-startups&theme=light",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "European AI",
+"author": "N47 & Sifted",
+"title": "Celebrating the top 100 European AI startups in 2026",
+"url": "https://www.n47.com/insights/celebrating-the-top-100-european-ai-startups-in-2026",
+"group": "regional"
+},
+{
+"month": "October 2026",
+"cat": "Enterprise AI",
+"author": "Murray Newlands — Open Future Forum",
+"title": "The AI Leaders Market Map",
+"url": "https://openfutureforum.com/research/ai-leaders-market-map",
+"group": "enterprise"
+},
+{
+"month": "October 2026",
+"cat": "AI Data",
+"author": "Cunyan Ma — Brown University CNTR",
+"title": "Mapping the Hidden Global Labor Powering AI",
+"url": "https://www.ai-materiality-map.org/data-workers/",
+"group": "data"
+},
+{
+"month": "October 2026",
+"cat": "AI Infrastructure",
+"author": "Eze Vidra — VC Cafe",
+"title": "The rise of the inference economy",
+"url": "https://www.vccafe.com/the-rise-of-the-inference-economy/",
+"group": "infra"
+},
+{
+"month": "October 2026",
+"cat": "AI Infrastructure",
+"author": "AI-Driven Playbooks",
+"title": "I Mapped 103 Companies Across the Entire AI Supply Chain. Here Is Where the Money Still Has to Flow Through 2028.",
+"url": "https://aidriventrading.substack.com/p/i-mapped-103-companies-across-the",
+"group": "infra"
+},
+{
+"month": "October 2026",
+"cat": "AI Safety",
+"author": "CB Insights",
+"title": "Anthropic's IPO filing maps the AI safety startup market",
+"url": "https://www.cbinsights.com/research/newsletter-october-1-2026/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "AI Security",
+"author": "Lightspeed & Fortune",
+"title": "Cyber60 CISO Survey",
+"url": "https://lsvp.com/cyber60-2026-2027/",
+"group": "security"
+},
+{
+"month": "October 2026",
+"cat": "AI Security",
+"author": "TechOperators",
+"title": "The Cyber × AI Map",
+"url": "https://www.techoperators.com/landscape",
+"group": "security"
+},
+{
+"month": "October 2026",
+"cat": "AI Security",
+"author": "CB Insights",
+"title": "40+ startups calling BS on AI fakes",
+"url": "https://www.cbinsights.com/research/newsletter-october-15-2026/",
+"group": "security"
+},
+{
+"month": "October 2026",
+"cat": "Consumer AI",
+"author": "Olivia Moore — a16z",
+"title": "The Top 100 Gen AI Consumer Apps 7th Edition",
+"url": "https://a16z.com/100-gen-ai-apps-7/",
+"group": "consumer"
+},
+{
+"month": "October 2026",
+"cat": "Japanese AI",
+"author": "Seranova",
+"title": "AI in Japan: Market Map",
+"url": "https://map.seranova.jp/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Vertical AI",
+"author": "Hustle Fund",
+"title": "Vertical AI market map: 8 industries for investors",
+"url": "https://www.hustlefund.vc/post/vertical-ai-market-map",
+"group": "vertical"
+},
+{
+"month": "October 2026",
+"cat": "Physical AI",
+"author": "Altis",
+"title": "Physical AI Models (VLA, World Model)",
+"url": "https://www.altis.vc/research/sector/physical-ai-models-vla-world-model",
+"group": "physical"
+},
+{
+"month": "October 2026",
+"cat": "Physical AI",
+"author": "Pauly Market",
+"title": "I Mapped Nearly 4,500 Robotics & Physical AI Companies. Here’s What I Found.",
+"url": "https://paulymarket.substack.com/p/robotics-physical-ai-atlas",
+"group": "physical"
+},
+{
+"month": "October 2026",
+"cat": "Physical AI",
+"author": "Humanoid.guide",
+"title": "Humanoid Robotics: The Consolidation Map",
+"url": "https://humanoid.guide/humanoid-robotics-consolidation-map/",
+"group": "physical"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Nathan Benaich — Air Street Capital",
+"title": "STATE OF AI REPORT",
+"url": "https://www.stateof.ai/State-of-AI-Report-2026.pdf",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Air Street Capital & Dealroom.co",
+"title": "State of AI Report 2026: the funding data",
+"url": "https://dealroom.co/airstreet/2026/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Parvez Siddiqui",
+"title": "AI ROI, Measured",
+"url": "https://lnkd.in/p/gcvHHpNX",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Various",
+"title": "The Trustworthy AI Map",
+"url": "https://trustworthyaimap.org/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Cledara",
+"title": "The Real-Time AI Market Map: Tools & Startups",
+"url": "https://data.cledara.com/ai-market-map",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Will Francis",
+"title": "Is there an AI bubble? The AI circular economy, mapped",
+"url": "https://ai-circular-economy.com/",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Clement Vouillon — Axomap",
+"title": "Landscape Directory",
+"url": "https://axomap.com/maps",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "The Collective",
+"title": "AI for Fitness Operators",
+"url": "https://www.wearethecollective.world/ai-map-fitness-operators",
+"group": "other"
+},
+{
+"month": "October 2026",
+"cat": "Everything Else",
+"author": "Devtoolwatch Board",
+"title": "AI Developer Tools Ranked by GitHub Stars and npm/PyPI Download Growth",
+"url": "https://index.devtoolwatch.com/",
+"group": "other"
+},
+{
+"month": "September 2026",
+"cat": "AI Agents",
+"author": "David Pawlan",
+"title": "Assistant Benchmark",
+"url": "https://assistantbenchmark.com/",
+"group": "agents"
+},
+{
+"month": "September 2026",
+"cat": "AI Agents",
+"author": "Hustle Fund",
+"title": "AI agents market map: 6 layers for startup investors",
+"url": "https://www.hustlefund.vc/post/ai-agents-market-map",
+"group": "agents"
+},
+{
+"month": "September 2026",
+"cat": "Consumer AI",
+"author": "Shawn Carolan & Amy Wu Martin & Sam Borja — Menlo Ventures",
+"title": "2026: The State of Consumer AI",
+"url": "https://menlovc.com/perspective/2026-the-state-of-consumer-ai/",
+"group": "consumer"
+},
+{
+"month": "September 2026",
+"cat": "Enterprise AI",
+"author": "Arion Research",
+"title": "The Arion Enterprise AI Atlas",
+"url": "https://www.enterpriseaiatlas.ai/",
+"group": "enterprise"
+},
+{
+"month": "September 2026",
+"cat": "Physical AI",
+"author": "Medha Agarwal & Noah Lin — defy.vc",
+"title": "From Models to Machines: The Physical AI Market Map",
+"url": "https://makecents.substack.com/p/from-models-to-machines-the-physical",
+"group": "physical"
+},
+{
+"month": "September 2026",
+"cat": "Physical AI",
+"author": "AI Circle",
+"title": "Human data for physical AI",
+"url": "https://www.ai-circle.org/physical-ai-human-data-map",
+"group": "physical"
+},
+{
+"month": "September 2026",
+"cat": "AI Security",
+"author": "Alstin Capital",
+"title": "Cybersecurity follows AI adoption",
+"url": "https://www.linkedin.com/pulse/cybersecurity-follows-ai-adoption-alstincapital-nvppe/p",
+"group": "security"
+},
+{
+"month": "September 2026",
+"cat": "AI Security",
+"author": "Rachel Monroe — Security Ops Wire",
+"title": "The AI Agent Security Market Map: 40+ Companies Building the New Security Stack",
+"url": "https://securityopswire.com/ai-agent-security-companies-market-map/",
+"group": "security"
+},
+{
+"month": "September 2026",
+"cat": "AI Services",
+"author": "Kadan Capital",
+"title": "AI Native Services Market Map Version 2.0",
+"url": "https://kadan.vc/ai-native-services",
+"group": "enterprise"
+},
+{
+"month": "September 2026",
+"cat": "Fintech AI",
+"author": "Madeline Renbarger — Newcomer",
+"title": "MARKET MAP: 89 VC-Backed Startups Changing Finance, Audits, Banking & Compliance",
+"url": "https://www.newcomer.co/p/market-map-89-vc-backed-startups",
+"group": "vertical"
+},
+{
+"month": "September 2026",
+"cat": "Insurance AI",
+"author": "Ali Afridi",
+"title": "AI Startups Transforming P&C Insurance — Market Maps",
+"url": "https://maps.afridi.io/insurance-x-ai",
+"group": "vertical"
+},
+{
+"month": "September 2026",
+"cat": "Insurance AI",
+"author": "CB Insights",
+"title": "Insurtech 50: The most promising insurtech startups of 2026",
+"url": "https://www.cbinsights.com/research/report/top-insurtech-startups-2026/",
+"group": "vertical"
+},
+{
+"month": "September 2026",
+"cat": "Robotics",
+"author": "Hustle Fund",
+"title": "Robotics market map: 4 layers angel investors should know",
+"url": "https://www.hustlefund.vc/post/robotics-market-map",
+"group": "physical"
+},
+{
+"month": "September 2026",
+"cat": "Voice AI",
+"author": "Global AI Forum",
+"title": "The Voice AI agents landscape",
+"url": "https://gaiforum.com/research/landscape/voice-ai-agents",
+"group": "genai"
+},
+{
+"month": "September 2026",
+"cat": "Voice AI",
+"author": "Hustle Fund",
+"title": "Voice AI market map: 51 companies across six layers",
+"url": "https://www.hustlefund.vc/post/voice-ai-market-map",
+"group": "genai"
+},
+{
+"month": "September 2026",
+"cat": "Everything Else",
+"author": "Harmonic",
+"title": "Harmonic Hot 25 Startups(TM)",
+"url": "https://harmonic.ai/hot-25-startups/q4-2026",
+"group": "other"
+},
+{
+"month": "September 2026",
+"cat": "Everything Else",
+"author": "Hustle Fund",
+"title": "AI Market Map 2026: Startup Stack for Investors",
+"url": "https://www.hustlefund.vc/post/ai-market-map",
+"group": "other"
+},
+{
+"month": "September 2026",
+"cat": "Everything Else",
+"author": "Leslie Busick",
+"title": "The AI Stack, Mapped",
+"url": "https://ai-stack-mapped.vercel.app/",
+"group": "other"
+},
+{
+"month": "August 2026",
+"cat": "AI Agents",
+"author": "Regents",
+"title": "The Agentic AI Market Map: 243 Companies Building the Stack Around Models",
+"url": "https://x.com/regents_sh/article/2087642721653841997",
+"group": "agents"
+},
+{
+"month": "August 2026",
+"cat": "Applied AI",
+"author": "Matt McIlwain & Rolanda Fu — Madrona Ventures",
+"title": "Introducing the 2026 Intelligent Applications 40",
+"url": "https://www.madrona.com/ia40-intelligent-applications-40-2026/",
+"group": "other"
+},
+{
+"month": "August 2026",
+"cat": "European AI",
+"author": "Awi Lifshitz — Headline VC",
+"title": "27 Startups Shaping Europe's Future",
+"url": "https://www.linkedin.com/posts/awilifshitz_europe-now-has-its-own-ai-category-leaders-activity-7490407539289939968-XDUI",
+"group": "regional"
+},
+{
+"month": "August 2026",
+"cat": "AI Finance",
+"author": "Solve",
+"title": "AI vendors in Wealth Management",
+"url": "https://solvetogether.co.uk/our-services/ai-map/",
+"group": "vertical"
+},
+{
+"month": "August 2026",
+"cat": "AI Hardware Tools",
+"author": "Jonathan Beri",
+"title": "AI Hardware Tools Startups",
+"url": "https://lnkd.in/p/gQPGx3Ki",
+"group": "other"
+},
+{
+"month": "August 2026",
+"cat": "AI Healthcare",
+"author": "Confido Health & Healthcare AI Guy",
+"title": "The Outpatient Provider Agentic AI Market Map",
+"url": "https://lnkd.in/p/gSQAyHvu",
+"group": "other"
+},
+{
+"month": "August 2026",
+"cat": "Industrial AI",
+"author": "Michael Finocchiaro",
+"title": "The Case for Adaptive: The Money Has Already Voted",
+"url": "https://www.linkedin.com/pulse/case-adaptive-money-has-already-voted-michael-finocchiaro-mbage/",
+"group": "physical"
+},
+{
+"month": "August 2026",
+"cat": "Physical AI",
+"author": "Adam Liu & Adrian Kania & Lou Segall & Jake Randall — Sapphire Ventures",
+"title": "Physical AI: The Countdown to Robotics’ ChatGPT Moment",
+"url": "https://sapphireventures.com/blog/physical-ai-chatgpt-moment/",
+"group": "physical"
+},
+{
+"month": "August 2026",
+"cat": "AI Services",
+"author": "Itay Inbar & Jason Cohen — Greenfield Growth",
+"title": "As AI takes over services, who keeps the gain?",
+"url": "https://www.greenfield-growth.com/knowledge/ai-in-services/",
+"group": "enterprise"
+},
+{
+"month": "August 2026",
+"cat": "AI Rollups",
+"author": "Christian Ulstrup — Caritas Venture Co.",
+"title": "AI rollups and AI-native private equity: the 2026 market map",
+"url": "https://caritas.ventures/ai-rollup-market-map/",
+"group": "other"
+},
+{
+"month": "August 2026",
+"cat": "Quantum",
+"author": "Ines Goetschel — Balderton",
+"title": "Market Map of European Quantum Companies",
+"url": "https://www.linkedin.com/posts/activity-7488608450999095296-Usrg",
+"group": "other"
+},
+{
+"month": "July 2026",
+"cat": "AI Compute",
+"author": "Air Street Press",
+"title": "State of AI Report Compute Index 2026",
+"url": "https://press.airstreet.com/p/state-of-ai-compute-index-june-2026",
+"group": "infra"
+},
+{
+"month": "July 2026",
+"cat": "AI Compute",
+"author": "Space Insider",
+"title": "Orbital Data Center Market Map",
+"url": "https://www.linkedin.com/posts/orbital-data-center-segment-market-map-ugcPost-7478030072696889344-0TkZ/",
+"group": "infra"
+},
+{
+"month": "July 2026",
+"cat": "AI Compute",
+"author": "Ivana Delevska",
+"title": "AI Hardware Value Chain",
+"url": "https://www.linkedin.com/posts/ivana-delevska-503a341b3_semiconductors-aiinvesting-artificialintelligence-share-7479928339416190976-Z62w/",
+"group": "infra"
+},
+{
+"month": "July 2026",
+"cat": "DefenseTech",
+"author": "Steve Leightell & Ben Wilde & Simon Chong — Georgian",
+"title": "AI Landscape Series: AI in Defense",
+"url": "https://georgian.io/posts/ai-landscape-series-defense-ai",
+"group": "physical"
+},
+{
+"month": "July 2026",
+"cat": "AI Devtools",
+"author": "Denise Teng — Gradient",
+"title": "Coding Agents 2.0: Interface, Inference, and Verification",
+"url": "https://www.gradient.com/blog/posts/coding-agents-2/",
+"group": "other"
+},
+{
+"month": "July 2026",
+"cat": "AI Devtools",
+"author": "Rishi Maheshwari — Dallas VC",
+"title": "Stop Prompting. Start Looping.",
+"url": "https://rishimaheshwari.substack.com/p/stop-prompting-start-looping",
+"group": "other"
+},
+{
+"month": "July 2026",
+"cat": "Enterprise AI",
+"author": "i5 invest",
+"title": "Enterprise AI Market Map",
+"url": "https://www.linkedin.com/posts/henrymorley_growth-tech-startups-share-7478104696231120897-oKXI/",
+"group": "enterprise"
+},
+{
+"month": "July 2026",
+"cat": "Enterprise AI",
+"author": "Hitachi Ventures",
+"title": "The Emerging Enterprise Agentic AI Stack",
+"url": "https://medium.com/@HitachiVentures/the-emerging-enterprise-agentic-ai-stack-bbce1d451d2d",
+"group": "enterprise"
+},
+{
+"month": "July 2026",
+"cat": "AI Finance",
+"author": "Open Future Forum",
+"title": "The CFO AI Market Map",
+"url": "https://openfutureforum.com/research/cfo-ai-market-map",
+"group": "vertical"
+},
+{
+"month": "July 2026",
+"cat": "Healthcare AI",
+"author": "Dentaiware",
+"title": "Dental AI & Software Market Map",
+"url": "https://dentaiware.com/market-map",
+"group": "vertical"
+},
+{
+"month": "July 2026",
+"cat": "Insurance AI",
+"author": "Milennia Capital",
+"title": "AI in Insurance and Financial Market Map",
+"url": "https://www.linkedin.com/posts/andreww-grayy_ai-insurance-insurtech-share-7483537286115287041-kOpk/",
+"group": "vertical"
+},
+{
+"month": "July 2026",
+"cat": "Physical AI",
+"author": "Jens Peder Kristensen",
+"title": "Physical AI Software Landscape",
+"url": "https://www.linkedin.com/posts/jens-peder-kristensen_stop-looking-at-the-robot-bodies-the-share-7478405784897269761-BBnN/",
+"group": "physical"
+},
+{
+"month": "July 2026",
+"cat": "Physical AI",
+"author": "Ashish Kakran — Seligman Ventures",
+"title": "Physical AI Market Map",
+"url": "https://www.linkedin.com/posts/kakran_physicalai-robotics-worldmodels-share-7483596265830653955-tT4W/",
+"group": "physical"
+},
+{
+"month": "July 2026",
+"cat": "Physical AI",
+"author": "10D",
+"title": "Israeli Physical AI Map",
+"url": "https://www.10d.vc/2026/07/15/israeli-physical-ai-map/",
+"group": "physical"
+},
+{
+"month": "July 2026",
+"cat": "Physical AI",
+"author": "Daniel Lee — The Deal Machine",
+"title": "The Anatomy of Physical AI",
+"url": "https://www.linkedin.com/pulse/anatomy-physical-ai-daniel-lee-sebie/",
+"group": "physical"
+},
+{
+"month": "July 2026",
+"cat": "AI Security",
+"author": "Richard Stiennon",
+"title": "Guardians of the Machine Age",
+"url": "https://guardiansofthemachineage.com/",
+"group": "security"
+},
+{
+"month": "July 2026",
+"cat": "Top AI",
+"author": "Jonathan Userovici & Astrid Moullé-Berteaux & Cyprien Benoist — Headline VC",
+"title": "AI Europe 100 · 2026",
+"url": "https://headline.com/blog-latest/article-latest/ai-europe-100-2026",
+"group": "top"
+},
+{
+"month": "July 2026",
+"cat": "AI Everything Else",
+"author": "Arcadia Capital",
+"title": "Mapping the AI Economy",
+"url": "https://www.linkedin.com/posts/119-pages-3-market-maps-33-sub-segments-ugcPost-7480698068246376448-3UZS/",
+"group": "other"
+},
+{
+"month": "July 2026",
+"cat": "AI Everything Else",
+"author": "Andre Retterath — Earlybird Venture Capital",
+"title": "Data-Driven VC Landscape 2026",
+"url": "https://datadrivenvc.io/ddvc-landscape-2026",
+"group": "other"
+},
+{
+"month": "June 2026",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "The agentic commerce market map",
+"url": "https://www.cbinsights.com/learn/agentic-commerce-market-map",
+"group": "agents"
+},
+{
+"month": "June 2026",
+"cat": "AI Agents",
+"author": "Rishi Maheshwari — Dallas VC",
+"title": "Who Owns Memory? The Market Map for AI Agents' Missing State Layer",
+"url": "https://rishimaheshwari.substack.com/p/who-owns-memory-the-market-map-for?r=28d067",
+"group": "agents"
+},
+{
+"month": "June 2026",
+"cat": "AI Agents",
+"author": "Cala",
+"title": "The AI Context Layer Market Map",
+"url": "https://docs.google.com/presentation/d/1VD2yMLKKv3NJfvJOdjQ8EEJoezxLQJbO_Ki6JWHJMso/edit?slide=id.p1#slide=id.p1",
+"group": "agents"
+},
+{
+"month": "June 2026",
+"cat": "AI Agents",
+"author": "Justine Moore — a16z",
+"title": "AI Assistants in iMessage Market Map",
+"url": "https://www.linkedin.com/posts/justinemoore94_new-market-map-bringing-ai-assistants-to-share-7470683444050583552-u9c0/",
+"group": "agents"
+},
+{
+"month": "June 2026",
+"cat": "AI DevTools",
+"author": "Advika Jalan & Simon Menashy & Prakriti Roy — MMC Ventures",
+"title": "AI Tokenomics: How to tokenmin while ROImaxxing",
+"url": "https://mmc.vc/research/ai-tokenomics-how-to-tokenmin-while-roimaxxing/",
+"group": "devtools"
+},
+{
+"month": "June 2026",
+"cat": "AI DevTools",
+"author": "Yoko Li — a16z",
+"title": "The Next Frontier of Visual AI Is Code",
+"url": "https://x.com/stuffyokodraws/status/2061824755813306779",
+"group": "devtools"
+},
+{
+"month": "June 2026",
+"cat": "AI Drug Discovery",
+"author": "Advika Jalan & Charlotte Barttelot — MMC Ventures",
+"title": "AI x TechBio: Featuring the future of drug discovery",
+"url": "https://mmc.vc/research/ai-x-techbio-featuring-the-future-of-drug-discovery/",
+"group": "vertical"
+},
+{
+"month": "June 2026",
+"cat": "AI Drug Discovery",
+"author": "Synaptic",
+"title": "AI in Drug Development Market Map",
+"url": "https://x.com/synaptic_data/status/2065080899952378258",
+"group": "vertical"
+},
+{
+"month": "June 2026",
+"cat": "AI Drug Discovery",
+"author": "Cathy Gao & Aditya Reddy & Jasmine Yang & Misty Liao — Sapphire Ventures",
+"title": "How AI is Rewiring the Drug Development Stack",
+"url": "https://sapphireventures.com/blog/how-ai-is-rewiring-the-drug-development-stack/",
+"group": "vertical"
+},
+{
+"month": "June 2026",
+"cat": "Fintech AI",
+"author": "CB Insights",
+"title": "The fraud prevention market map: 200+ companies building fraud & trust infrastructure for the AI era",
+"url": "https://www.cbinsights.com/research/report/the-fraud-prevention-market-map-for-the-ai-era/",
+"group": "vertical"
+},
+{
+"month": "June 2026",
+"cat": "Healthcare AI",
+"author": "Next Kin Partner",
+"title": "Healthcare voice AI isn't one market: a map of who the AI talks to",
+"url": "https://nkpartner.com/insights/healthcare-voice-ai-market-map",
+"group": "vertical"
+},
+{
+"month": "June 2026",
+"cat": "AI Infrastructure",
+"author": "Team8",
+"title": "AI Infrastructure's Big Opportunity: The Reliability Layer",
+"url": "https://team8.vc/ai-infrastructure/",
+"group": "infra"
+},
+{
+"month": "June 2026",
+"cat": "AI Native",
+"author": "Andrei Rebrov",
+"title": "The AI Native E-Commerce Services Market Map",
+"url": "https://www.linkedin.com/posts/andrebrov_ecommerce-dtc-shopify-share-7469728481367625728-AVJt/",
+"group": "other"
+},
+{
+"month": "June 2026",
+"cat": "AI Neolabs",
+"author": "Rich Kotite & Aaron Rosenberg — Radical Ventures",
+"title": "The Rise of NeoLabs",
+"url": "https://radical.vc/the-rise-of-the-neolab/",
+"group": "genai"
+},
+{
+"month": "June 2026",
+"cat": "AI Neolabs",
+"author": "Nick Grossman — USV",
+"title": "The Rebel Alliance",
+"url": "https://x.com/nickgrossman/status/2070181707613937866",
+"group": "genai"
+},
+{
+"month": "June 2026",
+"cat": "AI Security",
+"author": "Cloud Security Alliance",
+"title": "Agentic AI Security Innovator Market Map",
+"url": "https://cloudsecurityalliance.org/artifacts/csa-innovator-market-map",
+"group": "security"
+},
+{
+"month": "June 2026",
+"cat": "AI Everything Else",
+"author": "Drone Industry Insights",
+"title": "Drone Market Map 2026: 1,413 Drone Industry Companies in One Infographic",
+"url": "https://droneii.com/drone-market-map-2026",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "AI Agents",
+"author": "Maha Malik & Mira Amin & Kent Bennett & Charles Birnbaum — Bessemer Venture Partners",
+"title": "Agentic commerce: The rise of the delegated buyer",
+"url": "https://www.bvp.com/atlas/agentic-commerce-the-rise-of-the-delegated-buyer",
+"group": "agents"
+},
+{
+"month": "May 2026",
+"cat": "AI Agents",
+"author": "Chuk Okpalugo",
+"title": "Agentic Finance Is More Than AI That Can Pay",
+"url": "https://www.linkedin.com/pulse/agentic-finance-more-than-ai-can-pay-chuk-okpalugo-bo6bc/",
+"group": "agents"
+},
+{
+"month": "May 2026",
+"cat": "AI Agents",
+"author": "Riccardo Arvizzigno",
+"title": "Agentic Commerce in 2026",
+"url": "https://onworkingmodels.substack.com/p/agentic-commerce-in-2026",
+"group": "agents"
+},
+{
+"month": "May 2026",
+"cat": "AI Automation",
+"author": "Shawn Carolan & Ryan Hand — Menlo Ventures",
+"title": "LLM-Enhanced Messaging: The Rise of Agentic Inboxes",
+"url": "https://menlovc.com/perspective/llm-enhanced-messaging-the-rise-of-agentic-inboxes/",
+"group": "agents"
+},
+{
+"month": "May 2026",
+"cat": "AI Compute",
+"author": "Lindsey Li & Brielee Lu & Josh Hechtman & David Cowan — Bessemer Venture Partners",
+"title": "Roadmap: The AI data center stack",
+"url": "https://www.bvp.com/atlas/roadmap-the-ai-data-center-stack",
+"group": "infra"
+},
+{
+"month": "May 2026",
+"cat": "AI Compute",
+"author": "Rishi Maheshwari — Dallas VC",
+"title": "The Inference Market Map",
+"url": "https://rishimaheshwari.substack.com/p/the-inference-market-map",
+"group": "infra"
+},
+{
+"month": "May 2026",
+"cat": "European AI",
+"author": "RAISE Ventures",
+"title": "Which startups are worth watching right now? (European early-stage map)",
+"url": "https://www.linkedin.com/posts/raise-groupe_market-mapping-the-future-in-focus-2026-activity-7465391785037606912-6rhu",
+"group": "regional"
+},
+{
+"month": "May 2026",
+"cat": "European AI",
+"author": "RankMyAI",
+"title": "Zuid Holland, Amsterdam, Groningen, Dutch AI, Danish AI, Norwegian AI Market Maps",
+"url": "https://www.rankmyai.com/maps",
+"group": "regional"
+},
+{
+"month": "May 2026",
+"cat": "Industrial AI",
+"author": "Fay Goldstein",
+"title": "Israeli Industrial AI Market",
+"url": "https://www.linkedin.com/posts/faygoldstein_over-the-past-two-weeks-ive-had-multiple-share-7456994844524109825-J_hy",
+"group": "physical"
+},
+{
+"month": "May 2026",
+"cat": "AI Infra",
+"author": "Redpoint",
+"title": "The InfraRed Report 2026",
+"url": "https://www.redpoint.com/reports/the-infrared-report-2026/",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "Insurance AI",
+"author": "Sruthi Ramaswami & Carolyn Wu & Brooke Chang — ICONIQ",
+"title": "Which Insurance AI Companies Will Matter in Ten Years?",
+"url": "https://www.iconiq.com/growth/insights/which-insurance-ai-companies-will-matter-in-ten-years",
+"group": "vertical"
+},
+{
+"month": "May 2026",
+"cat": "Robotics",
+"author": "Horizon AI",
+"title": "Global Cleaning Robots Market & Supply Chain Map (2026)",
+"url": "https://www.linkedin.com/posts/global-cleaning-robots-market-supply-chain-share-7456207537722380289-8172",
+"group": "physical"
+},
+{
+"month": "May 2026",
+"cat": "AI Security",
+"author": "Notable Capital",
+"title": "The 30 Most Promising Private Cybersecurity Startups",
+"url": "https://risingincyber.com",
+"group": "security"
+},
+{
+"month": "May 2026",
+"cat": "AI Workforce",
+"author": "Michael Slepikas",
+"title": "AI Native Workforce & Learning Intelligence Landscape",
+"url": "https://www.linkedin.com/posts/slepikas_workforcedevelopment-futureofwork-learninganddevelopment-share-7462507765014556673-Jnw2",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "Top AI",
+"author": "CB Insights",
+"title": "AI 100: The most promising artificial intelligence startups of 2026",
+"url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2026/",
+"group": "top"
+},
+{
+"month": "May 2026",
+"cat": "AI Everything Else",
+"author": "Ally Bell",
+"title": "Blue Bottle x VC SF",
+"url": "https://bottle.blue/",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "AI Everything Else",
+"author": "Dealroom.co",
+"title": "Tech Ecosystem Index 2026",
+"url": "https://app.dealroom.co/tech-ecosystem-index",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "AI Everything Else",
+"author": "Sean Jacobsohn & Nikhil Goel & David Somers & Kevin Schultz — Norwest Venture Partners & Storm Ventures",
+"title": "Mapping the Future of HR Tech",
+"url": "https://www.norwest.com/blog/mapping-the-future-of-hr-tech/",
+"group": "other"
+},
+{
+"month": "May 2026",
+"cat": "AI Everything Else",
+"author": "Machine Cinema",
+"title": "AI Creative Market Map - The Tools of the New Craft",
+"url": "https://text.machinecinema.ai/p/ai-creative-market-map-the-tools",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "AI Agents",
+"author": "Kevin Burke — Sapphire Ventures",
+"title": "Market Memo \"Agents: Towards an Autonomous Future\"",
+"url": "https://www.linkedin.com/posts/kevinburkeutmba_agents-towards-an-autonomous-future-ugcPost-7452068558055948288-u87x",
+"group": "agents"
+},
+{
+"month": "April 2026",
+"cat": "AI Agents",
+"author": "Jordan Leites & Nikhil Goel — Norwest Venture Partners",
+"title": "From Click to Command: The Shift to Agentic Payments",
+"url": "https://www.norwest.com/blog/agentic-payments/",
+"group": "agents"
+},
+{
+"month": "April 2026",
+"cat": "AI Agents",
+"author": "Chang Xu",
+"title": "Investing in the Open Source Agent Stack (part 2 of 2)",
+"url": "https://www.basisset.com/insights/investing-in-the-open-source-agent-stack-part-2-of-2/",
+"group": "agents"
+},
+{
+"month": "April 2026",
+"cat": "AI Compute",
+"author": "Grove Ventures",
+"title": "Data Center Infrastructure: Israeli Startup Ecosystem Map",
+"url": "https://www.grovevc.com/israeli-startup-ecosystem-map/",
+"group": "infra"
+},
+{
+"month": "April 2026",
+"cat": "Conversational AI",
+"author": "Hemingway",
+"title": "Conversational AI in Mental Health Market Map",
+"url": "https://www.linkedin.com/posts/stephenduke1_whos-building-conversational-ai-for-mental-share-7455257225775955968-LLGO",
+"group": "agents"
+},
+{
+"month": "April 2026",
+"cat": "AI Data",
+"author": "Adam Liu & Jai Das & Adrian Kania — Sapphire Ventures",
+"title": "Reinforcement Learning: Learning by Doing",
+"url": "https://sapphireventures.com/blog/reinforcement-learning-environments-ai-agents/",
+"group": "data"
+},
+{
+"month": "April 2026",
+"cat": "Fintech AI",
+"author": "i5invest",
+"title": "Office of CFO Tech Landscape",
+"url": "https://www.linkedin.com/posts/herwigspringer_strategy-startups-growth-share-7445093478201499649-3ZxY/",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "Healthcare AI",
+"author": "Second Opinion x Confido Market Map",
+"title": "Agentic Market Map Ambulatory Provider Categories",
+"url": "https://secondopinion.media/p/market-map-meet-the-companies-deploying-ai-agents-in-the-outpatient-setting",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "AI Infra",
+"author": "Malika Aubakirova and Matt Bornstein — a16z",
+"title": "Why We Need Continual Learning",
+"url": "https://www.a16z.news/p/why-we-need-continual-learning",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "Legal AI",
+"author": "Legaltech Hub",
+"title": "LTH GenAI Legal Tech Map: March 2026",
+"url": "https://www.legaltechnologyhub.com/contents/lth-genai-legal-tech-map-march-2026/",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "AI Native",
+"author": "Felix Frenzel — Kandan Capital",
+"title": "AI Native Services Market Map",
+"url": "https://www.linkedin.com/posts/felixfrenzel_whos-going-to-win-the-incumbent-law-firm-share-7454687261637455872-8jzi",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "Robotics",
+"author": "Hafeez Jimoh",
+"title": "Robotics Unicorn Companies 2026",
+"url": "https://www.linkedin.com/posts/jimohafeezco_the-robotics-market-geographic-split-is-more-share-7448390123349733377-NnH_/",
+"group": "physical"
+},
+{
+"month": "April 2026",
+"cat": "Robotics",
+"author": "IEEE RAS",
+"title": "Global Robotics Industry Funding Report Download Request",
+"url": "https://docs.google.com/forms/d/e/1FAIpQLSc7oEObF8A-4yllX3T0tn0lDzrhBYxmIsYbiF7QXbawxmTIfw/viewform",
+"group": "physical"
+},
+{
+"month": "April 2026",
+"cat": "Robotics",
+"author": "Greater Zurich Area",
+"title": "Robotics & intelligent systems in the Greater Zurich Area",
+"url": "https://www.greaterzuricharea.com/en/robotics-intelligent-systems",
+"group": "physical"
+},
+{
+"month": "April 2026",
+"cat": "Robotics",
+"author": "Jeremy Levine & Talia Goldberg & Janelle Teng Wade & Alexandra Sukin & Bhavik Nagda & Jason Scheller — Bessemer Venture Partners",
+"title": "Bessemer Predicts: Robotics and physical AI",
+"url": "https://www.bvp.com/atlas/bessemer-predicts-robotics-and-physical-ai",
+"group": "physical"
+},
+{
+"month": "April 2026",
+"cat": "AI Services",
+"author": "Kadan Capital",
+"title": "AI Native Services Market Map",
+"url": "https://www.linkedin.com/posts/felixfrenzel_whos-going-to-win-the-incumbent-law-firm-activity-7454726086354944000-IdMh",
+"group": "enterprise"
+},
+{
+"month": "April 2026",
+"cat": "Scientific Discovery AI",
+"author": "Andrew Hedin & Marla Jalbut, M.D. & Grace Dai — Bessemer Venture Partners",
+"title": "Building biology-native data infrastructure for the AI era",
+"url": "https://www.bvp.com/atlas/building-biology-native-data-infrastructure-for-the-ai-era",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "Scientific Discovery AI",
+"author": "XAnge",
+"title": "Bio-Foundation Models: A Shift in AI for Biology",
+"url": "https://www.xange.vc/knowledge-hub/bio-foundation-models-market-map",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "Scientific Discovery AI",
+"author": "Extantia",
+"title": "Advanced Materials Development",
+"url": "https://www.linkedin.com/posts/extantia_advancedmaterials-deeptech-materialsscience-activity-7444639664730398720-7oR0/",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "AI Security",
+"author": "Aleix Pérez — Criteria Venture Partners",
+"title": "Offensive Security Market Map: The Rise of Autonomous Hacking",
+"url": "https://cyberflow.substack.com/p/offensive-security-market-map-the",
+"group": "security"
+},
+{
+"month": "April 2026",
+"cat": "AI Security",
+"author": "Ena Uffelmann — G+D Ventures",
+"title": "AI Security Market Map",
+"url": "https://www.linkedin.com/posts/ena-uffelmann_gd-ventures-ai-security-market-map-ugcPost-7452295325026807809-4_TB",
+"group": "security"
+},
+{
+"month": "April 2026",
+"cat": "Venture AI",
+"author": "Cory Bolotsky",
+"title": "AI Tools for Venture Capital",
+"url": "https://vctools.bolots.ky",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "Vertical AI",
+"author": "JP Sanday & Croom Beatty & Sam Borja & Sabrina Lu — Menlo Ventures",
+"title": "Software Finally Gets to Work: The Opportunity in Vertical AI",
+"url": "https://menlovc.com/perspective/software-finally-gets-to-work-the-opportunity-in-vertical-ai/",
+"group": "vertical"
+},
+{
+"month": "April 2026",
+"cat": "Voice AI",
+"author": "Dawn Capital",
+"title": "Beyond the uncanny: moving to lifelike Voice AI",
+"url": "https://www.linkedin.com/posts/ai-voiceai-enterprisesoftware-ugcPost-7452351039883739136-896R",
+"group": "genai"
+},
+{
+"month": "April 2026",
+"cat": "AI Everything Else",
+"author": "Silicon Valley Bank",
+"title": "The AI Market Map for VC Backed Companies",
+"url": "https://www.linkedin.com/posts/fun-news-tropic-was-recently-highlighted-share-7450011189922758656-V8EL",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "AI Everything Else",
+"author": "Anirudh Sathya",
+"title": "Private Equity Firms by Competitive Advantages",
+"url": "https://www.linkedin.com/posts/anirudh-sathya_privateequity-pe-dealmaking-share-7447427134647730176-QAjh",
+"group": "other"
+},
+{
+"month": "April 2026",
+"cat": "AI Everything Else",
+"author": "Negar Rajabi",
+"title": "AI Investment Map 2026: Where Should You Build?",
+"url": "https://medium.com/@negarra/ai-investment-map-2026-where-should-you-build-f8c055383d6d",
+"group": "other"
+},
+{
+"month": "March 2026",
+"cat": "AI Agents",
+"author": "Artemis",
+"title": "Agentic Commerce Market Map",
+"url": "https://agenticpayments.artemisanalytics.com/",
+"group": "agents"
+},
+{
+"month": "March 2026",
+"cat": "AI Agents",
+"author": "Thomas Krane & William Blackwell — Insight Partners",
+"title": "Identity and Access Management (IAM) in the age of AI Agents",
+"url": "https://www.insightpartners.com/ideas/iam-ai-agents/",
+"group": "agents"
+},
+{
+"month": "March 2026",
+"cat": "AI Agents",
+"author": "Jason Cui and Jennifer Li — a16z",
+"title": "Your Data Agents Need Context",
+"url": "https://www.a16z.news/p/your-data-agents-need-context",
+"group": "agents"
+},
+{
+"month": "March 2026",
+"cat": "AI Compute",
+"author": "Aurelia Han & Siddharth Ramakrishnan — Scale Venture Partners",
+"title": "The Big Data Center Squeeze: Getting More Compute From Existing Infrastructure",
+"url": "https://www.scalevp.com/blog/the-big-data-center-squeeze-getting-more-compute-from-existing-infrastructure",
+"group": "infra"
+},
+{
+"month": "March 2026",
+"cat": "AI Compute",
+"author": "Remarkable Ventures Climate",
+"title": "Efficient & Edge AI Compute Market Map",
+"url": "https://www.linkedin.com/posts/remarkable-ventures-climate_for-the-past-several-years-ai-infrastructure-activity-7436849324581621760-qN4h",
+"group": "infra"
+},
+{
+"month": "March 2026",
+"cat": "AI Compute",
+"author": "McRock Capital",
+"title": "Data Center Software and Digital Solutions Market Map",
+"url": "https://www.linkedin.com/pulse/hidden-layer-ai-boom-mcrock-capital-amxmc/",
+"group": "infra"
+},
+{
+"month": "March 2026",
+"cat": "Consumer AI",
+"author": "Matt Brown — Headline VC",
+"title": "Maslow's Hierarchy of Consumer AI",
+"url": "https://headline.com/blog-latest/article-latest/maslows-hierarchy",
+"group": "consumer"
+},
+{
+"month": "March 2026",
+"cat": "Consumer AI",
+"author": "Mathilde Valin & Jeroen Arts & Sameer Singh — Speedinvest",
+"title": "Europe's Consumer Renaissance: A market map of early-stage European Consumer AI companies",
+"url": "https://www.speedinvest.com/knowledge/europes-consumer-renaissance-a-market-map-of-early-stage-european-consumer-ai-companies",
+"group": "consumer"
+},
+{
+"month": "March 2026",
+"cat": "Consumer AI",
+"author": "Olivia Moore — a16z",
+"title": "The Top 100 Gen AI Consumer Apps 6th Edition",
+"url": "https://a16z.com/100-gen-ai-apps-6/",
+"group": "consumer"
+},
+{
+"month": "March 2026",
+"cat": "Enterprise AI",
+"author": "i5invest",
+"title": "Enterprise AI Market Map",
+"url": "https://www.linkedin.com/posts/wagnermarkus_growth-tech-startups-share-7440035652542435328-NShb",
+"group": "enterprise"
+},
+{
+"month": "March 2026",
+"cat": "European AI",
+"author": "Prosus & Dealroom.co",
+"title": "Report: The State Of AI In Europe",
+"url": "https://www.prosus.com/state-of-ai-europe",
+"group": "regional"
+},
+{
+"month": "March 2026",
+"cat": "European AI",
+"author": "Dealroom.co",
+"title": "The European Deep Tech Report 2026",
+"url": "https://dealroom.co/reports/the-european-deep-tech-report-2026/",
+"group": "regional"
+},
+{
+"month": "March 2026",
+"cat": "Healthcare AI",
+"author": "Effie GUO",
+"title": "11 Market Maps to help you navigate China Healthcare AI",
+"url": "https://www.linkedin.com/posts/effie-yifei-guo_11-market-maps-to-help-you-navigate-china-ugcPost-7441815957553147904-Fi3M",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "Industrial AI",
+"author": "Anastasia Lukach — Venture Protocol",
+"title": "Industrial AI: The $154B Venture Map",
+"url": "https://www.linkedin.com/posts/anastasialukach_one-of-the-most-underestimated-opportunities-share-7438576857668784129-i6zK",
+"group": "physical"
+},
+{
+"month": "March 2026",
+"cat": "AI Infrastructure",
+"author": "via @KairosPraxis Twitter",
+"title": "AI Memory Optimization Landscape (2024-2026)",
+"url": "https://x.com/KairosPraxis/status/2038684163029553502",
+"group": "infra"
+},
+{
+"month": "March 2026",
+"cat": "AI Infrastructure",
+"author": "Janelle Teng Wade & Lance Co Ting Keh & Talia Goldberg & David Cowan & Grace Ma & Bhavik Nagda & Brandon Nydick & Bar Weiner — Bessemer Venture Partners",
+"title": "AI Infrastructure Roadmap: Five frontiers for 2026",
+"url": "https://www.bvp.com/atlas/ai-infrastructure-roadmap-five-frontiers-for-2026",
+"group": "infra"
+},
+{
+"month": "March 2026",
+"cat": "InsurTech",
+"author": "Houlihan Lokey",
+"title": "InsurTech Market Update",
+"url": "https://cdn.hl.com/pdf/2026/insurtech-market-update-feb-2026.pdf#page=24",
+"group": "other"
+},
+{
+"month": "March 2026",
+"cat": "Legal AI",
+"author": "Legaltech Hub",
+"title": "LTH AI Agents in Legal Map: March 2026",
+"url": "https://www.legaltechnologyhub.com/contents/lth-ai-agents-in-legal-map-march-2026/",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "Legal AI",
+"author": "The LegalTech Fund",
+"title": "Early Stage Transactional Market Map",
+"url": "https://www.legaltech.com/transactional-market-map",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "AI Market",
+"author": "Logan Bartlett & Adil Bhatia & Lydia Day — Redpoint Ventures",
+"title": "Reflections on the State of the Software and AI Market",
+"url": "https://www.redpoint.com/reports/2026-market-update/",
+"group": "other"
+},
+{
+"month": "March 2026",
+"cat": "Physical AI",
+"author": "Jeremy Levine & Alex Ferrara & Talia Goldberg & David Cowan & Alexandra Sukin & Bhavik Nagda & Jason Scheller — Bessemer Venture Partners",
+"title": "50 startups transforming industries with physical AI",
+"url": "https://www.bvp.com/atlas/50-startups-transforming-industries-with-physical-ai",
+"group": "physical"
+},
+{
+"month": "March 2026",
+"cat": "Robotics",
+"author": "Jeremy Levine & Alex Ferrara & Talia Goldberg & David Cowan & Alexandra Sukin & Bhavik Nagda & Jason Scheller — Bessemer Venture Partners",
+"title": "50 startups transforming industries with physical AI",
+"url": "https://www.bvp.com/atlas/50-startups-transforming-industries-with-physical-ai",
+"group": "physical"
+},
+{
+"month": "March 2026",
+"cat": "Robotics",
+"author": "Jan Olsson — Extantia",
+"title": "European Robotics Market Map",
+"url": "https://x.com/_jan_olsson_/status/2029484759408070696",
+"group": "physical"
+},
+{
+"month": "March 2026",
+"cat": "Robotics",
+"author": "Petri Rajahalme & Sointu Karjalainen & Dave Haynes & David Ripert — FOV Ventures",
+"title": "FOV Robotics Market Map 2026: A Guide to the European Landscape",
+"url": "https://viewpoints.fov.ventures/p/fov-robotics-market-map-2026",
+"group": "physical"
+},
+{
+"month": "March 2026",
+"cat": "Scientific Discovery AI",
+"author": "Topology.vc",
+"title": "Scientific AI Map",
+"url": "https://app.topology.vc/scientific-ai-map",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "AI Services",
+"author": "Emergence Capital",
+"title": "AI-Native Services market map",
+"url": "https://www.linkedin.com/posts/jakesaper_77-companies-8-sectors-the-first-market-share-7442564767904362496-RA9T",
+"group": "enterprise"
+},
+{
+"month": "March 2026",
+"cat": "AI Security",
+"author": "OWASP GenAI Security Project",
+"title": "AI Security Solutions Landscape for LLM and GenAI Apps Q2 2026",
+"url": "https://www.linkedin.com/posts/owasp-genai-aisecurity-share-7442212118046756864-Ov0Z",
+"group": "security"
+},
+{
+"month": "March 2026",
+"cat": "AI Security",
+"author": "Venky Ganesan & Rama Sekhar & Sam Borja & Sabrina Lu — Menlo Ventures",
+"title": "Agents for Security: The Tipping Point for Offensive AI",
+"url": "https://menlovc.com/perspective/agents-for-security-the-tipping-point-for-offensive-ai/",
+"group": "security"
+},
+{
+"month": "March 2026",
+"cat": "AI Security",
+"author": "Kalaari Capital",
+"title": "Cybersecurity in AI",
+"url": "https://www.linkedin.com/posts/cybersecurity-ai-data-share-7439276517429301248-lP2W",
+"group": "security"
+},
+{
+"month": "March 2026",
+"cat": "AI Wealth Management",
+"author": "Elan Arnowitz & Alessandro Luciano & Adam Vartabedian — Insight Partners",
+"title": "Supercharging financial advisors: How AI is reshaping wealth management",
+"url": "https://www.insightpartners.com/ideas/ai-wealth-management/",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "AI Wealth Management",
+"author": "Pitchbook",
+"title": "AI market map: 500 leading VC-backed AI companies",
+"url": "https://pitchbook.com/news/articles/artificial-intelligence-market-map-startups-venture-capital",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "AI Wealth Management",
+"author": "Cherie Hu — Water & Music",
+"title": "Music tech ownership ouroboros, 2026 edition",
+"url": "https://www.linkedin.com/pulse/music-tech-ownership-ouroboros-2026-edition-cherie-hu-djrnc/",
+"group": "vertical"
+},
+{
+"month": "March 2026",
+"cat": "AI Wealth Management",
+"author": "Vlad Oleksiienko",
+"title": "GTM Market Map of Europe",
+"url": "https://www.linkedin.com/posts/voleksiienko_europe-is-quietly-building-one-of-the-strongest-share-7441890533192433664-11E8",
+"group": "vertical"
+},
+{
+"month": "February 2026",
+"cat": "AI Agents",
+"author": "QED Investors",
+"title": "A biblical history of agentic payments",
+"url": "https://qedinvestors.substack.com/p/a-biblical-history-of-agentic-payments",
+"group": "agents"
+},
+{
+"month": "February 2026",
+"cat": "AEC AI",
+"author": "Jonas Ciplickas — Scale Venture Partners",
+"title": "VLMs are finally giving AEC its 'AI will change everything' moment",
+"url": "https://www.scalevp.com/blog/vlms-are-finally-giving-aec-its-ai-will-change-everything-moment",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Drug Discovery",
+"author": "VC Beat",
+"title": "China AI Drug Discovery Ecosystem",
+"url": "https://x.com/biogerontology/status/2019732759686860980",
+"group": "vertical"
+},
+{
+"month": "February 2026",
+"cat": "AI Ecosystem",
+"author": "MapCo",
+"title": "AI Ecosystem Intelligence",
+"url": "https://www.mapco.ai/directory.html?instance=aiagents",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "EdTech",
+"author": "Sarah Morin & Ben Kornell & Alex Sarlin & Jen Lapaz — EdTech Insiders",
+"title": "Out Now: The Updated Edtech Insiders K-12 Generative AI Market Maps",
+"url": "https://edtechinsiders.substack.com/p/out-now-the-updated-edtech-insiders",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "Enterprise AI",
+"author": "Jan Lynn-Matern — Emerge VC",
+"title": "Enterprise AI adoption: a market map for founders",
+"url": "https://medium.com/emerge-edtech-insights/enterprise-ai-adoption-a-market-map-for-founders-aac6dbaa2bc7",
+"group": "enterprise"
+},
+{
+"month": "February 2026",
+"cat": "Healthcare AI",
+"author": "CB Insights",
+"title": "Healthcare & life sciences AI agent market map",
+"url": "https://www.linkedin.com/posts/healthcare-life-sciences-ai-agent-market-share-7432790649382318080-mq71",
+"group": "vertical"
+},
+{
+"month": "February 2026",
+"cat": "AI Infrastructure",
+"author": "TLV Ventures",
+"title": "Mapping Israel’s AI infrastructure opportunity",
+"url": "https://www.calcalistech.com/ctechnews/article/b1qdiprv11l",
+"group": "infra"
+},
+{
+"month": "February 2026",
+"cat": "Insurance AI",
+"author": "Amanda Paolino — SemperVirens VC",
+"title": "Is Insurance Having it's AI Moment?",
+"url": "https://www.linkedin.com/pulse/insurance-having-its-ai-moment-amanda-paolino-3sthc/",
+"group": "vertical"
+},
+{
+"month": "February 2026",
+"cat": "Mining",
+"author": "Atlas Strategic Minerals",
+"title": "The Critical Technology Landscape",
+"url": "https://www.linkedin.com/posts/khanyi-n-b4a1b25a_criticalminerals-miningtech-deeptech-activity-7422958628036333568-fZ8P",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "Mining",
+"author": "Jonathan Healy — Cathay Innovation",
+"title": "Redefining the Mining Value Chain",
+"url": "https://medium.com/cathay-innovation/redefining-the-mining-value-chain-3d029e5906db",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Neolabs",
+"author": "TBPN",
+"title": "AI Neolabs",
+"url": "https://x.com/tbpn/status/2024213382539464750/photo/1",
+"group": "genai"
+},
+{
+"month": "February 2026",
+"cat": "AI Shopping",
+"author": "Gennaro Cuofano",
+"title": "The AI Shopping Market Map",
+"url": "https://businessengineer.ai/p/the-ai-shopping-market-map-2026?r=5r7d1f&utm_medium=ios&shareImageVariant=overlay&triedRedirect=true",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Simulation",
+"author": "Lightwheel",
+"title": "3D Asset & Simulation Market Landscape",
+"url": "https://3dmarketmap-mtqssu8l.manus.space/",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Simulation",
+"author": "Contrarian Ventures",
+"title": "Market Map Along Stack Depth And Physics Domain ",
+"url": "https://www.linkedin.com/posts/climatetechvc_simulation-software-market-map-activity-7424061261677629440-JnnV",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "Workplace AI",
+"author": "Cathy Gao & Kevin Burke & Marina Beveridge & Chloe Lin & Aditya Reddy — Sapphire Ventures",
+"title": "AI and the End of the Productivity Bundle",
+"url": "https://sapphireventures.com/blog/ai-and-the-end-of-the-productivity-bundle/",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Everything Else",
+"author": "Murph Capital",
+"title": "2026 VC Predictions Market Map",
+"url": "https://murphcapital.substack.com/p/2026-vc-predictions-market-map",
+"group": "other"
+},
+{
+"month": "February 2026",
+"cat": "AI Everything Else",
+"author": "Fivos Aresti",
+"title": "The GTM Map of Europe",
+"url": "https://www.linkedin.com/posts/fivosaresti_europe-is-quietly-building-world-class-gtm-activity-7430567093198057472-EBNK",
+"group": "other"
+},
+{
+"month": "January 2026",
+"cat": "AI Agents",
+"author": "Kenn So — Generational",
+"title": "AI Agent App & Infrastructure Market Map",
+"url": "https://datawrapper.dwcdn.net/s94df/4/",
+"group": "agents"
+},
+{
+"month": "January 2026",
+"cat": "AI Agents",
+"author": "Denise Teng — Gradient",
+"title": "Environments for LM agents: from agentic RL to context optimization",
+"url": "https://www.gradient.com/blog/posts/environment-for-lm-agents/",
+"group": "agents"
+},
+{
+"month": "January 2026",
+"cat": "AI Agents",
+"author": "Helena Barman — Antler",
+"title": "Agentic commerce: Unleashing the autonomous economy",
+"url": "https://www.antler.co/blog/agentic-commerce-unleashing-the-autonomous-economy",
+"group": "agents"
+},
+{
+"month": "January 2026",
+"cat": "AI Agents",
+"author": "Cem Dilmegani — AI Multiple",
+"title": "The 7 Layers of Agentic AI Stack in 2026",
+"url": "https://aimultiple.com/agentic-ai-stack",
+"group": "agents"
+},
+{
+"month": "January 2026",
+"cat": "AI Data Center",
+"author": "NosTerra Venture Capital",
+"title": "Efficient Compute",
+"url": "https://www.linkedin.com/posts/nostera-venture-capital_nosterra-venture-capital-market-map-efficient-activity-7419778310211158016-g9sb",
+"group": "infra"
+},
+{
+"month": "January 2026",
+"cat": "DefenseTech",
+"author": "Janelle Teng Wade & Christopher Wan & Jason Scheller & David Cowan — Bessemer Venture Partners",
+"title": "Defense tech roadmap: Five frontiers for 2026",
+"url": "https://www.bvp.com/atlas/defense-tech-roadmap-five-frontiers-for-2026",
+"group": "physical"
+},
+{
+"month": "January 2026",
+"cat": "DefenseTech",
+"author": "Josh Ogden — AVSS and NORRG",
+"title": "Canadian Defence Tech Market Map",
+"url": "https://www.linkedin.com/posts/josh-ogden-4a5a5532_canadian-defence-tech-market-map-by-avss-activity-7421323414558208000-Lzwx/",
+"group": "physical"
+},
+{
+"month": "January 2026",
+"cat": "AI DevTools",
+"author": "ICONIQ Capital",
+"title": "State of AI: Bi-Annual Snapshot The Execution Era of AI",
+"url": "https://www.iconiqcapital.com/growth/reports/2026-state-of-ai-bi-annual-snapshot",
+"group": "devtools"
+},
+{
+"month": "January 2026",
+"cat": "Fintech AI",
+"author": "The Wealth Mosaic",
+"title": "The AI WealthTech Market Map, February 2026",
+"url": "https://www.thewealthmosaic.com/vendors/the-wealth-mosaic/news/the-ai-wealthtech-market-map-february-2026/",
+"group": "vertical"
+},
+{
+"month": "January 2026",
+"cat": "Healthcare AI",
+"author": "Omar K.",
+"title": "San Francisco AI Stack Beyond Clinical Hype",
+"url": "https://www.linkedin.com/posts/omarxgrowth_healthtech-digitalhealth-healthcareai-activity-7417936523540520960-u6eq",
+"group": "vertical"
+},
+{
+"month": "January 2026",
+"cat": "AI Infrastructure",
+"author": "Jono Vickery — Activant Capital",
+"title": "AI Infrastructure: Compute (1/4) Sizing the market for AI Compute",
+"url": "https://activantcapital.com/research/ai-infra-compute",
+"group": "infra"
+},
+{
+"month": "January 2026",
+"cat": "AI Infrastructure",
+"author": "Michel Kurek",
+"title": "AI Inference Hardware Market Map 2026",
+"url": "https://www.linkedin.com/posts/michelkurek_aihardware-machinelearning-inference-activity-7422242759073337345-SpVa",
+"group": "infra"
+},
+{
+"month": "January 2026",
+"cat": "Physical AI",
+"author": "CB Insights",
+"title": "The physical AI models market map: Behind the arms race to control robot intelligence",
+"url": "https://www.cbinsights.com/research/the-physical-ai-models-market-map/",
+"group": "physical"
+},
+{
+"month": "January 2026",
+"cat": "AI Search",
+"author": "Massive",
+"title": "LLM Search Stack Q1 2026",
+"url": "https://www.linkedin.com/posts/jasongrad_llm-search-stack-q1-2026-it-would-be-an-activity-7415028815984357376-9Hb6",
+"group": "other"
+},
+{
+"month": "January 2026",
+"cat": "AI Security",
+"author": "Aqsa Taylor & Francis Odum — Software Analyst Cyber Research",
+"title": "AISOC for MDR: The Structural Evolution of Managed Detection and Response",
+"url": "https://softwareanalyst.substack.com/p/aisoc-for-mdr-the-structural-evolution",
+"group": "security"
+},
+{
+"month": "January 2026",
+"cat": "AI Everything Else",
+"author": "Alexandre Dewez — 20VC",
+"title": "French AI Ecosystem Market Map (Draft)",
+"url": "https://www.linkedin.com/posts/alexandre-dewez_insight-625-%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%94%F0%9D%97%9C-%F0%9D%97%98%F0%9D%97%B0%F0%9D%97%BC%F0%9D%98%80%F0%9D%98%86%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BA-activity-7416873876443525120-oQsw/",
+"group": "other"
+},
+{
+"month": "January 2026",
+"cat": "AI Everything Else",
+"author": "Omar K",
+"title": "India Hospital AI Revenue Stack 2025",
+"url": "https://www.linkedin.com/posts/omarxgrowth_india-is-running-thousands-of-hospital-ai-activity-7410896465549746176-miB6",
+"group": "other"
+},
+{
+"month": "January 2026",
+"cat": "AI Everything Else",
+"author": "eaidb",
+"title": "The Responsible AI Ecosystem FY 2025 Market Map*",
+"url": "https://eaidb.org/map",
+"group": "other"
+},
+{
+"month": "January 2026",
+"cat": "AI Everything Else",
+"author": "Solve Partners",
+"title": "AI landscape for UK wealth management",
+"url": "https://www.linkedin.com/posts/solve-partners_solvepartners-wealthmanagement-ai-activity-7422973123106537472-9Kq7",
+"group": "other"
+},
+{
+"month": "December 2025",
+"cat": "Enterprise AI",
+"author": "Tim Tully & Joff Redfern & Deedy Das & Derek Xiao — Menlo Ventures",
+"title": "2025: The State of Generative AI in the Enterprise featuring Departmental AI, Vertical AI, Modern AI Stack Market Maps",
+"url": "https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/",
+"group": "enterprise"
+},
+{
+"month": "December 2025",
+"cat": "AI Data Center",
+"author": "CB Insights",
+"title": "The data center value chain market map",
+"url": "https://www.cbinsights.com/research/report/data-center-value-chain-market-map/",
+"group": "infra"
+},
+{
+"month": "December 2025",
+"cat": "AI Data Infrastructure",
+"author": "Jaya Gupta & Ashu Garg — Foundation Capital",
+"title": "AI’s trillion-dollar opportunity: Context graphs",
+"url": "https://foundationcapital.com/context-graphs-ais-trillion-dollar-opportunity/",
+"group": "other"
+},
+{
+"month": "December 2025",
+"cat": "Energy AI",
+"author": "BGV",
+"title": "The State of the Energy Management Market",
+"url": "https://benhamouglobalventures.com/energy-management-market/",
+"group": "vertical"
+},
+{
+"month": "December 2025",
+"cat": "Fintech AI",
+"author": "Inovia Capital",
+"title": "The AI-Powered Finance Automation Stack",
+"url": "https://finance-automation.inovia.vc/",
+"group": "vertical"
+},
+{
+"month": "December 2025",
+"cat": "Fintech AI",
+"author": "Elan Arnowitz & Alessandro Luciano — Insight Partners",
+"title": "AI in financial services is here: How firms are adopting and where they’re stuck",
+"url": "https://www.insightpartners.com/ideas/ai-in-financial-services/",
+"group": "vertical"
+},
+{
+"month": "December 2025",
+"cat": "Legaltech AI",
+"author": "The LegalTech Fund",
+"title": "LTH GenAI Legal Tech Map: December 2025",
+"url": "https://www.legaltechnologyhub.com/contents/lth-genai-legal-tech-map-december-2025/",
+"group": "vertical"
+},
+{
+"month": "December 2025",
+"cat": "Robotics",
+"author": "Tuo Liu",
+"title": "Humanoid Robotics Companies in Europe",
+"url": "https://x.com/Robo_Tuo/status/1996972828575649833",
+"group": "physical"
+},
+{
+"month": "December 2025",
+"cat": "Voice AI",
+"author": "Adam Coccari — Hubspot Ventures",
+"title": "Vertical Voice Agents",
+"url": "https://www.linkedin.com/pulse/vertical-voice-agents-adam-coccari-tsamc/",
+"group": "genai"
+},
+{
+"month": "December 2025",
+"cat": "AI Everything Else",
+"author": "CB Insights",
+"title": "Our top AI market maps of 2025",
+"url": "https://www.cbinsights.com/research/top-ai-market-maps-2025/",
+"group": "other"
+},
+{
+"month": "December 2025",
+"cat": "AI Everything Else",
+"author": "Malika Aubakirova & Alex Atallah & Chris Clark & Justin Summerville & Anjney Midha — a16z & OpenRouter",
+"title": "State of AI An Empirical 100 Trillion Token Study with OpenRouter",
+"url": "https://openrouter.ai/state-of-ai",
+"group": "other"
+},
+{
+"month": "December 2025",
+"cat": "AI Everything Else",
+"author": "Mike Overell — New Literacies",
+"title": "A Year of Tracking AI Products for Kids",
+"url": "https://newliteracies.ai/market-map/",
+"group": "other"
+},
+{
+"month": "December 2025",
+"cat": "AI Everything Else",
+"author": "Planet A Ventures",
+"title": "Nailing Manufacturing Software GTM The Founder Guide",
+"url": "https://planet-a.medium.com/nailing-manufacturing-software-gtm-the-founder-guide-344666fd8e91",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "The AI agent market map",
+"url": "https://www.cbinsights.com/research/ai-agent-market-map-2025/",
+"group": "agents"
+},
+{
+"month": "November 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "The agentic commerce market map",
+"url": "https://www.cbinsights.com/research/report/agentic-commerce-market-map/",
+"group": "agents"
+},
+{
+"month": "November 2025",
+"cat": "AI Agents",
+"author": "Reliable Agents",
+"title": "State of Agentic Browser/Computer Use 🤖 Q4 2025",
+"url": "https://reliableagents.ai/2025-Q4",
+"group": "agents"
+},
+{
+"month": "November 2025",
+"cat": "AI Agents",
+"author": "Strategy of Security",
+"title": "AI Agent Identity Market Landscape",
+"url": "https://www.linkedin.com/posts/colegrolmus_two-of-the-hardest-problems-with-securing-activity-7394754918689169408-5I5Y",
+"group": "agents"
+},
+{
+"month": "November 2025",
+"cat": "AI Agents",
+"author": "Advika Jalan & Sevi Uras & Nitish Malhotra — MMC",
+"title": "Agentic Enablers: Treating AI’s amnesia and other disorders",
+"url": "https://mmc.vc/research/agentic-enablers-treating-ais-amnesia-and-other-disorders/",
+"group": "agents"
+},
+{
+"month": "November 2025",
+"cat": "AI Data",
+"author": "It's Pronounced Data",
+"title": "2025 Data, Research & Information Services Landscape",
+"url": "https://drive.google.com/file/d/17GXF42UvzG53x1scEDHQKUudvdWO5IJ8/view?_bhlid=fec226ca06b4d303f24578932134df715b3e9eeb",
+"group": "data"
+},
+{
+"month": "November 2025",
+"cat": "AI Data Center",
+"author": "Epoch AI",
+"title": "Frontier Data Centers",
+"url": "https://epoch.ai/data/data-centers",
+"group": "infra"
+},
+{
+"month": "November 2025",
+"cat": "AI Data Center",
+"author": "NosTerra Venture Capital",
+"title": "The Power Grid",
+"url": "https://www.linkedin.com/posts/nostera-venture-capital_nosterra-venture-capital-market-map-the-activity-7396940394997133312-4m_T",
+"group": "infra"
+},
+{
+"month": "November 2025",
+"cat": "DefenseTech",
+"author": "Emerging Defense",
+"title": "Defense Tech Market Map",
+"url": "https://emergingdefense.xyz/market-map-v2",
+"group": "physical"
+},
+{
+"month": "November 2025",
+"cat": "Energy AI",
+"author": "Dimitri Kremp & Paul Parenty — Axeleo Capital",
+"title": "AI & Energy",
+"url": "https://www.axc.vc/blog-posts/energy-ai",
+"group": "vertical"
+},
+{
+"month": "November 2025",
+"cat": "Fintech AI",
+"author": "Rajeev Dham & Aditya Reddy & Jasmine Yang — Sapphire Ventures",
+"title": "From Spreadsheet Analysts to AI Agents: Reinventing the Modern Finance Stack",
+"url": "https://sapphireventures.com/blog/from-spreadsheet-analysts-to-ai-agents-reinventing-the-modern-finance-stack/",
+"group": "vertical"
+},
+{
+"month": "November 2025",
+"cat": "Fintech AI",
+"author": "mostly metrics",
+"title": "AI's impact on finance report",
+"url": "https://mostlymetrics.typeform.com/to/gvDh9ocY?typeform-source=github.com/joylarkin/Awesome-AI-Market-Maps",
+"group": "vertical"
+},
+{
+"month": "November 2025",
+"cat": "Fintech AI",
+"author": "Josipa Majic Predin",
+"title": "AI-Powered Financial Planning And The Rise Of Personalized Financial Independence Tools",
+"url": "https://www.forbes.com/sites/josipamajic/2025/11/06/ai-powered-financial-planning-and-the-rise-of-personalized-financial-independence-tools/",
+"group": "vertical"
+},
+{
+"month": "November 2025",
+"cat": "AI Hardware",
+"author": "Quartr",
+"title": "The Semiconductor Value Chain",
+"url": "https://x.com/Quartr_App/status/1986162811098017952",
+"group": "infra"
+},
+{
+"month": "November 2025",
+"cat": "AI Hardware",
+"author": "SemiAnalysis",
+"title": "ClusterMAX™ 2.0: The Industry Standard GPU Cloud Rating System",
+"url": "https://newsletter.semianalysis.com/p/clustermax-20-the-industry-standard",
+"group": "infra"
+},
+{
+"month": "November 2025",
+"cat": "Legaltech AI",
+"author": "The LegalTech Fund",
+"title": "The RegTech Market Map (Fall 2025)",
+"url": "https://www.legaltech.com/post/regtech-market-map",
+"group": "vertical"
+},
+{
+"month": "November 2025",
+"cat": "AI Models",
+"author": "Gartner",
+"title": "2025 Gartner® Innovation Guide for Generative AI Model Providers",
+"url": "https://www.linkedin.com/posts/openai_openai-is-recognized-as-an-emerging-leader-activity-7396246002619383808-Vgtl",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "Robotics",
+"author": "Tuo Liu",
+"title": "Humanoid Robotics Companies",
+"url": "https://www.linkedin.com/posts/tuoliu_humanoid-robotics-is-more-than-just-hardware-activity-7399098846636716033-qtym",
+"group": "physical"
+},
+{
+"month": "November 2025",
+"cat": "AI Rollups",
+"author": "Shawn Dimantha — Hydra Ventures",
+"title": "The AI Rollups Market Map: how AI Rollups are winning where vertical AI startups stumble",
+"url": "https://www.linkedin.com/posts/shawndimantha_ai-rollups-market-map-activity-7396220923034513408-vIW9",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Search",
+"author": "Jason Cui & Steph Zhang & Jennifer Li & Sarah Wang — a16z",
+"title": "Search Wars: Episode 2",
+"url": "https://a16z.substack.com/p/search-wars-episode-2v",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Security",
+"author": "Venky Ganesan & Rama Sekhar & Sam Borja — Menlo Ventures",
+"title": "Rethinking Security for the Age of Autonomy",
+"url": "https://menlovc.com/perspective/agents-for-security-and-the-opportunity-to-disrupt-securitys-giants/",
+"group": "security"
+},
+{
+"month": "November 2025",
+"cat": "AI Security",
+"author": "Techoperators Venture Capital",
+"title": "Cybersecurity + AI Startup Landscape",
+"url": "https://www.techoperators.com/landscape",
+"group": "security"
+},
+{
+"month": "November 2025",
+"cat": "AI Security",
+"author": "Kalaari Capital",
+"title": "AI in Cybersecurity",
+"url": "https://www.linkedin.com/posts/kalaari-capital_ai-technology-cybersecurity-activity-7396139320069386240-6csu",
+"group": "security"
+},
+{
+"month": "November 2025",
+"cat": "AI Security",
+"author": "Aleix Pérez and Criteria Venture Tech",
+"title": "Auto-Remediation market map: The Next Frontier in AppSec",
+"url": "https://cyberflow.substack.com/p/auto-remediation-market-map-the-next",
+"group": "security"
+},
+{
+"month": "November 2025",
+"cat": "AI Survey",
+"author": "Theory Ventures",
+"title": "AI in Practice Survey 2025",
+"url": "https://theoryvc.com/ai-in-practice-survey-2025",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "Top AI",
+"author": "Accel",
+"title": "The Accel Globalscape 2025: The Race for Compute featuring multiple AI Market Maps",
+"url": "https://www.slideshare.net/slideshow/the-accel-2025-globalscape-race-for-compute/284115583",
+"group": "top"
+},
+{
+"month": "November 2025",
+"cat": "Top AI",
+"author": "Jenny Xiao & Jay Zhao & and Liang Wu — Leonis Capital",
+"title": "The Leonis AI 100",
+"url": "https://www.leoniscap.com/research/the-leonis-ai-100",
+"group": "top"
+},
+{
+"month": "November 2025",
+"cat": "Top AI",
+"author": "Artificial Analysis",
+"title": "Q3 2025 State of AI",
+"url": "https://artificialanalysis.ai/orgs",
+"group": "top"
+},
+{
+"month": "November 2025",
+"cat": "AI Video",
+"author": "Justine Moore — a16z",
+"title": "Market map on video generation models",
+"url": "https://x.com/venturetwins/status/1990169320614453600",
+"group": "genai"
+},
+{
+"month": "November 2025",
+"cat": "AI Everything Else",
+"author": "Laura McGinnis  Balderton Capital",
+"title": "Gen Z Guide: Redefining Demand for the Next Decade",
+"url": "https://ejphpcw98jt.exactdn.com/wp-content/uploads/2025/11/Balderton_State-of-GenZ.pdf",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Everything Else",
+"author": "Matt Gatto & Jessie Sheff — Insight Partners",
+"title": "Building a moat in the age of AI",
+"url": "https://www.insightpartners.com/ideas/building-a-moat-in-the-age-of-ai/",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Everything Else",
+"author": "SET Ventures",
+"title": "Market Map - AI-powered Industrial Process Efficiency Startups",
+"url": "https://www.linkedin.com/posts/setventures_setventures-energytech-industrialai-activity-7393920604262785025-0w-8",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Everything Else",
+"author": "Legal Tech Verband Deutschland",
+"title": "German AI Legal Tech Market Map",
+"url": "https://www.linkedin.com/posts/legal-tech-verband-deutschland_legaltech-innovation-digitalisierung-activity-7393960357532438529-jffm",
+"group": "other"
+},
+{
+"month": "November 2025",
+"cat": "AI Everything Else",
+"author": "Remagine Ventures",
+"title": "The Israeli Gaming Landscape - Q4 2025",
+"url": "https://remagineventures.com/contenthub",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "AI Agents",
+"author": "ecommert",
+"title": "Agentic commerce map for CPG & FMCG brands",
+"url": "https://www.linkedin.com/posts/mert-damlapinar_cpg-fmcg-ecommerce-activity-7382125082342481920-DY6k",
+"group": "agents"
+},
+{
+"month": "October 2025",
+"cat": "AI Agents",
+"author": "Vig Sachidananda & Denise Teng — Gradient",
+"title": "Our Investment in Anchor",
+"url": "https://www.gradient.com/blog/posts/anchor-browser/",
+"group": "agents"
+},
+{
+"month": "October 2025",
+"cat": "AI Agents",
+"author": "George Mathew & Hunter Korn & Ash Tutika & William Blackwell — Insight Partners",
+"title": "Securing the autonomous future: Trust, safety, and reliability of agentic AI",
+"url": "https://www.insightpartners.com/ideas/securing-agentic-ai/",
+"group": "agents"
+},
+{
+"month": "October 2025",
+"cat": "AI Applications",
+"author": "Olivia Moore & Marc Andrusko & Seema Amble — a16z",
+"title": "The AI Application Spending Report: Where Startup Dollars Really Go",
+"url": "https://a16z.com/the-ai-application-spending-report-where-startup-dollars-really-go/",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "Conversational AI",
+"author": "Assaf Harel & Jonathan Schwartz — Norwest",
+"title": "Bringing Enterprise-Grade AI Agents to Healthcare: Why We’re Backing Hyro",
+"url": "https://www.norwest.com/blog/why-were-backing-hyro/",
+"group": "agents"
+},
+{
+"month": "October 2025",
+"cat": "AI Datacenter",
+"author": "Laura Katzman — Buoyant VC",
+"title": "Efficient Compute: Why Optimization Is Now Inevitable",
+"url": "https://www.buoyant.vc/blog/efficient-compute-why-optimization-is-now-inevitable",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "AI DevTools",
+"author": "Guido Appenzeller & Yoko Li — a16z",
+"title": "The Trillion Dollar AI Software Development Stack",
+"url": "https://a16z.com/the-trillion-dollar-ai-software-development-stack/",
+"group": "devtools"
+},
+{
+"month": "October 2025",
+"cat": "AI DevTools",
+"author": "Jennifer Bemert — XAnge",
+"title": "Inside LLMOps: The Emerging Market Map for AI Agents",
+"url": "https://www.xange.vc/knowledge-hub/llm-ops_market-map-2025",
+"group": "devtools"
+},
+{
+"month": "October 2025",
+"cat": "AI DevTools",
+"author": "Eric Fett — NGP Capital",
+"title": "Evals Are the New Moat—And RL Turns Them into Your Product Advantage",
+"url": "https://www.ngpcap.com/insights/evals-are-the-new-moat--and-rl-turns-them-into-your-product-advantage",
+"group": "devtools"
+},
+{
+"month": "October 2025",
+"cat": "AI DevTools",
+"author": "CB Insights",
+"title": "The AI software development market map",
+"url": "https://www.cbinsights.com/research/ai-software-development-market-map/",
+"group": "devtools"
+},
+{
+"month": "October 2025",
+"cat": "Enterprise AI",
+"author": "Emmanuel Benhamou — BGV",
+"title": "Mapping the Human–AI Frontier: Where Intelligence Meets Enterprise",
+"url": "https://medium.com/@emmanuel.benhamou/mapping-the-human-ai-frontier-where-intelligence-meets-enterprise-2482563b5ed6",
+"group": "enterprise"
+},
+{
+"month": "October 2025",
+"cat": "Fintech AI",
+"author": "Laura Bock & Shruti Batra — QED Investors",
+"title": "Finance's back office is entering its biggest upgrade cycle in decades",
+"url": "https://www.qedinvestors.com/blog/finances-back-office-is-entering-its-biggest-upgrade-cycle-in-decades",
+"group": "vertical"
+},
+{
+"month": "October 2025",
+"cat": "Fintech AI",
+"author": "The Private Markets Forum",
+"title": "AI in Private Markets",
+"url": "https://www.private-markets.com/lead-magnet-page/ai-in-private-markets-directory",
+"group": "vertical"
+},
+{
+"month": "October 2025",
+"cat": "Fintech AI",
+"author": "The Wealth Mosaic",
+"title": "The AI WealthTech Market Map, October 2025",
+"url": "https://www.thewealthmosaic.com/vendors/the-wealth-mosaic/news/the-ai-wealthtech-market-map-october-2025/",
+"group": "vertical"
+},
+{
+"month": "October 2025",
+"cat": "Healthcare AI",
+"author": "Greg Yap & Derek Xiao & Johnny Hu Ph.D. & JP Sanday & Croom Beatty — Menlo Ventures",
+"title": "2025: The State of AI in Healthcare",
+"url": "https://menlovc.com/perspective/2025-the-state-of-ai-in-healthcare/",
+"group": "vertical"
+},
+{
+"month": "October 2025",
+"cat": "Industrial AI",
+"author": "ArcInsight Partners",
+"title": "Industrial AI Market Map",
+"url": "https://www.linkedin.com/posts/arcinsight-partners_industrial-ai-activity-7386621722277351424-iG-z",
+"group": "physical"
+},
+{
+"month": "October 2025",
+"cat": "AI Infra",
+"author": "CB Insights",
+"title": "AI inference and processing",
+"url": "https://www.linkedin.com/posts/jason-salt_the-limit-of-ai-is-compute-especially-when-activity-7387207161136852992-UKxS",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "Open Source AI",
+"author": "Synaptic",
+"title": "Model Behavior: Open Source AI ",
+"url": "https://research.synaptic.com/resources/market-overviews/model-behavior-open-source-ai",
+"group": "genai"
+},
+{
+"month": "October 2025",
+"cat": "Retail AI",
+"author": "Ken Fenyo",
+"title": "AI & Computer Vision Market Map",
+"url": "https://www.linkedin.com/posts/kenfenyo_i-recently-published-a-market-map-on-the-activity-7389309948465385473-VXI4",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "Robotics",
+"author": "Merphi",
+"title": "Humanoid robots 2025",
+"url": "https://www.merphi.se/download-robotic-poster/",
+"group": "physical"
+},
+{
+"month": "October 2025",
+"cat": "Robotics",
+"author": "Lonne Jaffe & Adithya Sanjay & Sourish Jasti — Insight Partners",
+"title": "The state of the robotics ecosystem: The tech, use cases, and field deployment",
+"url": "https://www.insightpartners.com/ideas/the-state-of-the-robotics-ecosystem/",
+"group": "physical"
+},
+{
+"month": "October 2025",
+"cat": "Robotics",
+"author": "Arthur Brasseur & Isabel Young & Augustin Collot — Atlantic Vantage Point",
+"title": "The Global Robotics Race and How They Actually Work",
+"url": "https://avpcap.com/the-global-robotics-race-and-how-robots-actually-work/",
+"group": "physical"
+},
+{
+"month": "October 2025",
+"cat": "AI Security",
+"author": "Kathryn Shih & Jimmy Park — Forgepoint Capital",
+"title": "Margin of Safety #30: Autonomous Remediation",
+"url": "https://mofsafety.substack.com/p/margin-of-safety-30-autonomous-remediation",
+"group": "security"
+},
+{
+"month": "October 2025",
+"cat": "Semiconductors",
+"author": "Spector",
+"title": "Semiconductor Market Map",
+"url": "https://www.linkedin.com/posts/specterhq_semiconductors-activity-7381328079006220288-LgrX",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "Top AI",
+"author": "Matt Turck & Aman Kabeer — Firstmark",
+"title": "The 2025 MAD (ML, AI & Data) Landscape",
+"url": "https://mad.firstmark.com/",
+"group": "top"
+},
+{
+"month": "October 2025",
+"cat": "Top AI",
+"author": "Redpoint Ventures",
+"title": "AI 64",
+"url": "https://www.redpoint.com/ai64/",
+"group": "top"
+},
+{
+"month": "October 2025",
+"cat": "Top AI",
+"author": "Greenfield & TechCrunch Disrupt",
+"title": "AI Disruptors 60",
+"url": "https://www.disruptors60.ai/",
+"group": "top"
+},
+{
+"month": "October 2025",
+"cat": "AI Video",
+"author": "Justine Moore — a16z",
+"title": "There is no God Tier video model",
+"url": "https://a16z.substack.com/p/there-is-no-god-tier-video-model",
+"group": "genai"
+},
+{
+"month": "October 2025",
+"cat": "AI Everything Else",
+"author": "Greg Paterson & Nic Brisbourne — Molten Ventures",
+"title": "Molten's UK Generative AI Market Map 2025",
+"url": "https://www.moltenventures.com/insights/moltens-uk-generative-ai-market-map-2025",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "AI Everything Else",
+"author": "Equal Ventures",
+"title": "AI x wholesale",
+"url": "https://www.linkedin.com/posts/zhangchelsea_wholesale-commerce-ai-activity-7381702658958479360-7l02",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "AI Everything Else",
+"author": "Ivan Montoya",
+"title": "2025 Mexico Early Stage 100",
+"url": "https://www.linkedin.com/posts/ivanmontoya1_2025-mexico-early-stage-100-activity-7382048452454748160-QS_i",
+"group": "other"
+},
+{
+"month": "October 2025",
+"cat": "AI Everything Else",
+"author": "Cherie Hu — Water & Music",
+"title": "Music Tech Highlights: 2025 Investments",
+"url": "https://www.linkedin.com/posts/cheriehu_musicindustry-musictech-venturecapital-activity-7389004799976878098-LIBQ",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Agents",
+"author": "Jelena Zec & Jeff Flynn & Robert Li & Lucas Kirshenbaum — Citi Ventures",
+"title": "Agentic commerce at scale: Why startups are key in building robust AI-powered shopping experiences",
+"url": "https://www.citi.com/ventures/perspectives/opinion/agentic-commerce-why-startups-are-key.html",
+"group": "agents"
+},
+{
+"month": "September 2025",
+"cat": "AI Agents",
+"author": "Laura Salesse — Eight Roads",
+"title": "Fintech x AI - part 2 : The rise of agentic payment infrastructure",
+"url": "https://www.linkedin.com/pulse/fintech-x-ai-part-2-rise-agentic-payment-laura-salesse-bo5re/?trackingId=jlR6snACTke4JoApBF9qsQ%3D%3D",
+"group": "agents"
+},
+{
+"month": "September 2025",
+"cat": "AI Agents",
+"author": "Kenn So — Generational",
+"title": "Agents at Work",
+"url": "https://www.generational.pub/p/agents-at-work",
+"group": "agents"
+},
+{
+"month": "September 2025",
+"cat": "Biopharma AI",
+"author": "Emergent Ventures",
+"title": "AI Opportunities in Biopharma: Early Signals",
+"url": "https://www.emergent.vc/blog/opportunities-for-ai-in-biopharma-early-signals",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "Construction AI",
+"author": "Varad Mohod — Plug and Play Ventures",
+"title": "What’s Next for AI in Construction Tech?",
+"url": "https://www.linkedin.com/posts/varad-mohod_whats-next-for-ai-in-construction-tech-activity-7369043759516319744-7RFp",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Data Center",
+"author": "Future Energy Ventures",
+"title": "Data Center Market Map",
+"url": "https://www.linkedin.com/posts/futureenergyventures_data-center-market-map-by-fev-activity-7368913517925597185-3tiS",
+"group": "infra"
+},
+{
+"month": "September 2025",
+"cat": "AI Data Center",
+"author": "Fortino Capital Partners",
+"title": "AI is reshaping the MSP industry, what are the opportunities?",
+"url": "https://www.fortinocapital.com/blog/ai-reshaping-msp-industry-what-are-opportunities",
+"group": "infra"
+},
+{
+"month": "September 2025",
+"cat": "AI DevTools",
+"author": "Canaccord Genuity",
+"title": "Pure-play DBMS Ecosystem (Commercial Providers)",
+"url": "https://www.linkedin.com/posts/nicolas-hourcard-cfa-b7349b37_postgres-realtime-timeseries-activity-7379173611485437953-Bdr8",
+"group": "devtools"
+},
+{
+"month": "September 2025",
+"cat": "Energy AI",
+"author": "Remarkable Ventures Climate",
+"title": "AI and Energy Market Landscape, version 2: 195 AI Companies Powering the Future of Energy",
+"url": "https://airtable.com/app68AZGbQLyNhrDh/shrVJy9bskvpPt4cs/tblzlhqtg9LdBo8YV",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Fintech AI",
+"author": "Anirudh Sathya",
+"title": "A market map of all the M&A/PE tech companies that I know of",
+"url": "https://www.linkedin.com/posts/anirudh-sathya_pe-mergers-marketmap-activity-7372688330553053184-nn0a",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Healthcare AI",
+"author": "dentaiware",
+"title": "The Dental AI & Software Market Map",
+"url": "https://www.linkedin.com/posts/andreas-augat_ai-and-software-are-reshaping-dentistry-activity-7369342247227539456-Noiq",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Healthcare AI",
+"author": "Specter",
+"title": "EU HealthTech Landscape 2025",
+"url": "https://insights.tryspecter.com/eu-healthtech-landscape-2025/",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Healthcare AI",
+"author": "HealthTechX Global",
+"title": "Healthtech AI and Automation I & UK Market Map",
+"url": "https://www.linkedin.com/posts/derrick-khor_how-many-homegrown-clinical-ai-and-automation-activity-7373989206966059008-rFPz",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Healthcare AI",
+"author": "Cathy Gao & Misty Liao & Callum Kuo & Aditya Reddy — Sapphire Ventures",
+"title": "The AI Healthcare Stack: Data Activation, Automation and the 10x Provider",
+"url": "https://sapphireventures.com/blog/ai-healthcare-stack-data-automation-10x-provider-2025/",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Legaltech AI",
+"author": "Legaltech Hub",
+"title": "LTH GenAI Legal Tech Map: September 2025",
+"url": "https://www.legaltechnologyhub.com/contents/lth-genai-legal-tech-map-september-2025/",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "Legaltech AI",
+"author": "CB Insights",
+"title": "The legaltech market map",
+"url": "https://www.linkedin.com/posts/jason-salt_140-companies-making-the-case-for-legal-activity-7376326108415389696-ntNO",
+"group": "vertical"
+},
+{
+"month": "September 2025",
+"cat": "AI Observability",
+"author": "Paweł Huryn",
+"title": "The Ultimate Guide to AI Observability and Evaluation Platforms",
+"url": "https://www.productcompass.pm/p/ai-observability-evaluation-platforms",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "Procurement AI",
+"author": "Amedeo Lorenzotti — M13",
+"title": "Market Map: Gov't Contracting Technology",
+"url": "https://www.linkedin.com/posts/amedeo-lorenzotti-847b39166_founders-are-showing-up-where-the-incumbents-activity-7372377686867886081-QPIt/",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "Robotics",
+"author": "Connie Biel — Montage Ventures",
+"title": "Robotics Market Map",
+"url": "https://www.linkedin.com/posts/connielwang_at-montage-ventures-we-invest-in-ai-applications-activity-7378851875325927424-dPcc",
+"group": "physical"
+},
+{
+"month": "September 2025",
+"cat": "AI Search",
+"author": "Rebecca Rodseth & Marc Wu & Teddy Cohen — Activant Capital",
+"title": "Enterprise Search Is Entering a New Era",
+"url": "https://activantcapital.com/research/enterprise-search-is-entering-a-new-era",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Startups",
+"author": "Theory Ventures",
+"title": "A Living Market Map",
+"url": "https://theoryvc.com",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "Voice AI",
+"author": "Rohil Bagga — Lightspeed India",
+"title": "Voice AI Market Map",
+"url": "https://www.linkedin.com/posts/rohil-bagga-2b61b6181_voice-ai-is-having-its-moment-in-the-past-activity-7378697042581315584-QLsa",
+"group": "genai"
+},
+{
+"month": "September 2025",
+"cat": "AI Everything Else",
+"author": "Daisy Zhao & Olivia Moore — a16z",
+"title": "The AI-Native Office Suite – Can AI Do Work For You?",
+"url": "https://a16z.com/the-ai-native-office-suite-can-ai-do-work-for-you/",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Everything Else",
+"author": "GoHub Ventures",
+"title": "European Defense Tech Market Map",
+"url": "https://x.com/GoHubVentures/status/1968213404822409235",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Everything Else",
+"author": "Priscilla Russo — Redpoint Ventures",
+"title": "Design at the Speed of AI",
+"url": "https://www.linkedin.com/pulse/design-speed-ai-priscilla-russo-8kevc/",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Everything Else",
+"author": "Patricia Haueiss",
+"title": "Australia’s AI Ecosystem",
+"url": "https://ai-in-australia.com/",
+"group": "other"
+},
+{
+"month": "September 2025",
+"cat": "AI Everything Else",
+"author": "Jonathan Userovici & Astrid Moullé-Berteaux & Cyprien Benoist — Headline",
+"title": "Introducing the AI Europe 100",
+"url": "https://headline.com/blog-latest/article-latest/ai-europe-100",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "The AI Agent Tech Stack: The Infrastructure Powering Autonomous AI",
+"url": "https://www.linkedin.com/posts/jason-salt_the-ai-agent-tech-stack-the-infrastructure-activity-7363322879712624640-Acfp",
+"group": "agents"
+},
+{
+"month": "August 2025",
+"cat": "AI Agents",
+"author": "Leo Lu & Joanne Chen — Foundation Capital",
+"title": "How AI agents will redefine market research",
+"url": "https://foundationcapital.com/how-ai-agents-will-redefine-user-research/",
+"group": "agents"
+},
+{
+"month": "August 2025",
+"cat": "AI Agents",
+"author": "Joanna Graiver — OpenOcean",
+"title": "The state of agentic AI in 2025: what’s working, what isn’t, and what’s next",
+"url": "https://www.openocean.vc/articles/the-state-of-agentic-ai-in-2025-whats-working-what-isnt-and-whats-next",
+"group": "agents"
+},
+{
+"month": "August 2025",
+"cat": "AI Agents",
+"author": "Eric Zhou & Yoko Li & Seema Amble & Jennifer Li — a16z",
+"title": "The Rise of Computer Use and Agentic Coworkers",
+"url": "https://a16z.com/the-rise-of-computer-use-and-agentic-coworkers/",
+"group": "agents"
+},
+{
+"month": "August 2025",
+"cat": "AI Agents",
+"author": "dealroom.co",
+"title": "1.5k+ AI Agents",
+"url": "https://app.dealroom.co/lists/53885",
+"group": "agents"
+},
+{
+"month": "August 2025",
+"cat": "AI App Builders",
+"author": "Gabriel Vasquez & Stephenie Zhang & and Yoko Li — a16z",
+"title": "One Prompt, Zero Engineers: Your New Internal Dev",
+"url": "https://a16z.com/one-prompt-zero-engineers-your-new-internal-dev/",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI Browsers",
+"author": "Can Gurel — Delphi Intelligence",
+"title": "Browser Wars Got Personal",
+"url": "https://www.delphiintelligence.io/research/browser-wars-got-personal",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "Consumer AI",
+"author": "Olivia Moore & Daisy Zhao — a16z",
+"title": " The Top 100 Gen AI Consumer Apps 5th Edition",
+"url": "https://a16z.com/100-gen-ai-apps-5/",
+"group": "consumer"
+},
+{
+"month": "August 2025",
+"cat": "AI Customer Support",
+"author": "Norwest",
+"title": "AI Native Customer Support Market Map",
+"url": "https://www.linkedin.com/posts/norwest-venture-partners_this-year-alone-organizations-around-the-activity-7361461976708911105-uP3C",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI DevTools",
+"author": "Janelle Teng & Lauri Moore & Lindsey Li & Libbie Frost — Bessemer Venture Partners",
+"title": "Roadmap: Developer Tooling for Software 3.0",
+"url": "https://www.bvp.com/atlas/roadmap-developer-tooling-for-software-3-0",
+"group": "devtools"
+},
+{
+"month": "August 2025",
+"cat": "Fintech AI",
+"author": "Dave Wang",
+"title": "I mapped 81 AI companies disrupting Wall Street",
+"url": "https://www.linkedin.com/posts/davewangmia_i-mapped-81-ai-companies-disrupting-wall-activity-7358518819625000960-578I",
+"group": "vertical"
+},
+{
+"month": "August 2025",
+"cat": "Fintech AI",
+"author": "Alloy Alchemist Fund",
+"title": "AI Compliance for Financial Institutions",
+"url": "https://docs.google.com/spreadsheets/d/1vKnqE19OIcOpIlaptbbmIiA8ZsWxN9QVLoi8G4pUtaQ/edit?gid=0#gid=0",
+"group": "vertical"
+},
+{
+"month": "August 2025",
+"cat": "Healthcare AI",
+"author": "Zach Teiger",
+"title": "AI is Impacting the Way We Track",
+"url": "https://zachteiger.substack.com/p/ai-is-impacting-the-way-we-track?r=1q9x6c",
+"group": "vertical"
+},
+{
+"month": "August 2025",
+"cat": "Healthcare AI",
+"author": "Fiat Ventures",
+"title": "The Healthcare & Fintech Market Map",
+"url": "https://www.fiat.vc/post/the-healthcare-and-fintech-market-map",
+"group": "vertical"
+},
+{
+"month": "August 2025",
+"cat": "Logistics AI",
+"author": "Chelsea Zhang & Christo Ritter & Ali Afridi — Equal Ventures",
+"title": "Logistics x AI | The First Wave of Gen AI",
+"url": "https://newsletter.equal.vc/p/logistics-ai",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "Open Models",
+"author": "LMArena",
+"title": "August 2025: Top 10 Open Models by Provider (Text)",
+"url": "https://www.linkedin.com/posts/lmarena_openmodels-aitrends-activity-7361462179671265281-k9uT",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "Open Models",
+"author": "Nathan Lambert & Florian Brand — Interconnects",
+"title": "Ranking the Chinese Open Model Builders",
+"url": "https://www.interconnects.ai/p/chinas-top-19-open-model-labs",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI Security",
+"author": "Sapphire Ventures",
+"title": "State of Cybersecurity: Growth, Risk, and Resilience",
+"url": "https://sapphireventures.com/blog/state-of-cybersecurity-growth-risk-and-resilience/",
+"group": "security"
+},
+{
+"month": "August 2025",
+"cat": "AI Software Development",
+"author": "Stellaris Venture Partners",
+"title": "Building in AI x SDLC",
+"url": "https://www.linkedin.com/posts/vardhan-dharnidharka_so-stellaris-venture-partners-created-a-market-activity-7363819358747303936-l5Gn",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "Voice AI",
+"author": "Sierra Ventures",
+"title": "Transforming Voice: Market Map of 150+ Voice AI Companies",
+"url": "https://www.sierraventures.com/content/voice-ai-market-map",
+"group": "genai"
+},
+{
+"month": "August 2025",
+"cat": "AI Everthing Else",
+"author": "Katy Rea — Bessemer Venture Partners",
+"title": "Roadmap: Public Safety AI",
+"url": "https://www.bvp.com/atlas/roadmap-public-safety-ai",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI Everthing Else",
+"author": "Denise Teng — Gradient",
+"title": "Always-On Iteration: How AI Transforms Product Feedback, Analytics, and Prototyping",
+"url": "https://www.gradient.com/blog/posts/how-ai-transforms-product-feedback/",
+"group": "other"
+},
+{
+"month": "August 2025",
+"cat": "AI Everthing Else",
+"author": "The Techshop SGR",
+"title": "Agentic AI: Italy",
+"url": "https://www.linkedin.com/posts/techshopcapital_agentic-ai-italy-is-on-the-mapactually-activity-7366788974897520640-aoZ3",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "AI Agents",
+"author": "Venky Ganesan & Rama Sekhar & Feyza Haskaraman & Sam Borja — Menlo Ventures",
+"title": "Security for Agents and Agents for Security: The Next Cybersecurity Frontier",
+"url": "https://menlovc.com/perspective/security-for-agents-and-agents-for-security-the-next-cybersecurity-frontier/",
+"group": "agents"
+},
+{
+"month": "July 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "The top 20 AI agents startups by revenue",
+"url": "https://www.linkedin.com/posts/mcarrelli_ai-agents-are-turning-into-revenue-machines-activity-7353958030763298816-vLwr",
+"group": "agents"
+},
+{
+"month": "July 2025",
+"cat": "AI Automation",
+"author": "Anna Bosch — b2venture",
+"title": "Europe's Industrial Moment: Why AI Automation is the Key to Revitalizing Manufacturing Competitiveness",
+"url": "https://www.b2venture.vc/stories/europes-industrial-moment-why-ai-automation-is-the-key-to-revitalizing-manufacturing-competitiveness",
+"group": "agents"
+},
+{
+"month": "July 2025",
+"cat": "AI Compliance",
+"author": "Shruti Batra — QED Investors",
+"title": "AI's Compliance Takeover",
+"url": "https://www.qedinvestors.com/blog/ais-compliance-takeover",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "Consumer AI",
+"author": "NEA",
+"title": "The Current #13: Context in Consumer AI",
+"url": "https://www.linkedin.com/pulse/current-13-context-consumer-ai-new-enterprise-associates-jg0hc/",
+"group": "consumer"
+},
+{
+"month": "July 2025",
+"cat": "Energy AI",
+"author": "Remarkable Ventures Climate",
+"title": "Our AI x Energy Market Map",
+"url": "https://www.linkedin.com/posts/remarkable-ventures-climate_climate-climateai-aienergy-activity-7351259697485627392-vLCv",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "Fintech AI",
+"author": "Noah Gross — Scale Venture Partners",
+"title": "Where’s my AI banker? Why financial services is lagging on AI adoption",
+"url": "https://www.scalevp.com/insights/wheres-my-ai-banker-why-financial-services-is-lagging-on-ai-adoption/",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "Government AI",
+"author": "Olivia Levine — Greenfield Partners",
+"title": "The Quiet Rise of AI in Government",
+"url": "https://www.greenfield-growth.com/blog-posts/the-quiet-rise-of-ai-in-government",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "Healthcare AI",
+"author": "Sundeep Peechu & Tobi Coker & Eric Flaningam — Felicis Ventures",
+"title": "Healthcare's Trillion-Dollar Admin Problem",
+"url": "https://www.felicis.com/insight/healthcare-ai-admin",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "AI Infrastructure",
+"author": "Astasia Myers & Dan Bartus — Felicis Ventures",
+"title": "Routing the Future: Model Routing Will Decide Who Wins in AI Infrastructure",
+"url": "https://www.felicis.com/insight/model-routing",
+"group": "infra"
+},
+{
+"month": "July 2025",
+"cat": "Insurance AI",
+"author": "Christo Ritter & Adam Chadroff & and Ali Afridi — Equal Ventures",
+"title": "Insurance x AI | The First Wave of Gen AI in P&C",
+"url": "https://newsletter.equal.vc/p/insurance-ai-market-map",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "Legal AI",
+"author": "Legaltech Hub",
+"title": "LTH AI Agents in Legal Map: July 2025",
+"url": "https://www.legaltechnologyhub.com/contents/lth-ai-agents-in-legal-map-july-2025/",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "Legal AI",
+"author": "Specter",
+"title": "🧑‍⚖️ Legal AI Landscape",
+"url": "https://insights.tryspecter.com/legal-ai-landscape-2025/",
+"group": "vertical"
+},
+{
+"month": "July 2025",
+"cat": "AI Real Estate",
+"author": "Pi Labs",
+"title": "Real AI for Real Assets",
+"url": "https://www.linkedin.com/posts/pi-labs-ltd-_sneak-peek-of-the-paper-activity-7349020184923283458-Fu0r",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "AI Security",
+"author": "George Mathew & Hunter Korn & Ash Tutika & William Blackwell — Insight Partners",
+"title": "The race to secure enterprise AI",
+"url": "https://www.insightpartners.com/ideas/securing-ai/",
+"group": "security"
+},
+{
+"month": "July 2025",
+"cat": "Voice AI",
+"author": "Inside/VC",
+"title": "Voice AI Market Map",
+"url": "https://www.linkedin.com/posts/insidevc_voice-infrastructure-middleware-activity-7354086305967865858-1M1z",
+"group": "genai"
+},
+{
+"month": "July 2025",
+"cat": "AI Everything Else",
+"author": "Florian Seemann — P9",
+"title": "The State of AI-First Services Today",
+"url": "https://medium.com/point-nine-news/the-state-of-ai-first-services-today-648e5816e89d",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "AI Everything Else",
+"author": "Brighteye Ventures",
+"title": "Research Tools: breaching new frontiers",
+"url": "https://www.brighteyevc.com/post/research-tools-breaching-new-frontiers",
+"group": "other"
+},
+{
+"month": "July 2025",
+"cat": "AI Everything Else",
+"author": "Cherie Hu — Water & Music",
+"title": "Music Tech Investment and M&A",
+"url": "https://www.linkedin.com/posts/cheriehu_musictech-musicbusiness-venturecapital-activity-7345787020016840705-uxpi",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Agents",
+"author": "Huang et al.",
+"title": "DEEP RESEARCH AGENTS: A SYSTEMATIC EXAMINATION AND ROADMAP",
+"url": "https://arxiv.org/pdf/2506.18096#page=5",
+"group": "agents"
+},
+{
+"month": "June 2025",
+"cat": "AI Agents",
+"author": "Sahar Mor — AI Tidbits",
+"title": "The Open-Source Toolkit for Building AI Agents v2",
+"url": "https://www.aitidbits.ai/p/open-source-agents-updated",
+"group": "agents"
+},
+{
+"month": "June 2025",
+"cat": "Consumer AI",
+"author": "Shawn Carolan, Amy Wu Martin, C.C. Gong, Sam Borja — Menlo Ventures",
+"title": "2025: The State of Consumer AI",
+"url": "https://menlovc.com/perspective/2025-the-state-of-consumer-ai/",
+"group": "consumer"
+},
+{
+"month": "June 2025",
+"cat": "AI Data",
+"author": "Einat Orr — LakeFS",
+"title": "The State of Data and AI Engineering 2025",
+"url": "https://lakefs.io/blog/the-state-of-data-ai-engineering-2025/",
+"group": "data"
+},
+{
+"month": "June 2025",
+"cat": "AI DevTools",
+"author": "ICONIQ Capital",
+"title": "2025 State of AI Report: The Builder’s Playbook",
+"url": "https://www.iconiqcapital.com/growth/reports/2025-state-of-ai",
+"group": "devtools"
+},
+{
+"month": "June 2025",
+"cat": "AI DevTools",
+"author": "Chris Millisits",
+"title": "Antler - Market Map AI Agents: Engineering",
+"url": "https://www.antler.co/blog/ai-market-map-engineering",
+"group": "devtools"
+},
+{
+"month": "June 2025",
+"cat": "AI DevTools",
+"author": "Jenny Xiao & Liang Wu & Jay Zhao",
+"title": "Leonis Capital - MCPs: Value Creation, Capture, and Destruction—Lessons from the API Era",
+"url": "https://leonisnewsletter.substack.com/p/mcps-value-creation-capture-and-destructionlesso",
+"group": "devtools"
+},
+{
+"month": "June 2025",
+"cat": "AI DevTools",
+"author": "Javier Redondo — Scale Venture Partners",
+"title": "MCP is the new WWW",
+"url": "https://www.scalevp.com/insights/mcp-is-the-new-www/",
+"group": "devtools"
+},
+{
+"month": "June 2025",
+"cat": "AI DevTools",
+"author": "AI Insider",
+"title": "Exploring AI Insider’s Market Map: Model Development & Deployment",
+"url": "https://theaiinsider.tech/2025/06/04/exploring-ai-insiders-market-map-model-development-deployment/",
+"group": "devtools"
+},
+{
+"month": "June 2025",
+"cat": "Government AI",
+"author": "Commonweal Ventures",
+"title": "The Modern Government Tech Stack",
+"url": "https://www.linkedin.com/posts/nate-loewentheil_amtech-vc-govtech-activity-7341084459401728000-5j0H",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "Healthcare AI",
+"author": "Charge",
+"title": "The Healthcare AI Governance Market Map",
+"url": "https://www.linkedin.com/posts/charge-health-ai_ai-is-transforming-healthcare-but-it-also-activity-7336019128035475456-ZHcs",
+"group": "vertical"
+},
+{
+"month": "June 2025",
+"cat": "Healthcare AI",
+"author": "AlbionVC",
+"title": "European HealthTech Market Map 2025",
+"url": "https://albion.vc/spotlight/deep-dives/european-healthtech-market-map-2025/",
+"group": "vertical"
+},
+{
+"month": "June 2025",
+"cat": "InsurTech AI",
+"author": "Plug and Play Insurtech",
+"title": "Customer Service & Support Conversational & Voice AI",
+"url": "https://www.linkedin.com/posts/gonzalo-calle-santiago_customerservice-virtualagents-aiinnovation-activity-7338238612406218752-YUX4",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Marketing",
+"author": "Henry Shi",
+"title": "Market Map of AI Ad-Gen Tools",
+"url": "https://www.linkedin.com/posts/henrythe9th_ive-spent-100m-on-ads-as-a-founder-and-activity-7335640153769562116-ndd-",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Marketing",
+"author": "Zach Cohen & Seema Amble — a16z",
+"title": "Faster, Smarter, Cheaper: AI Is Reinventing Market Research",
+"url": "https://a16z.com/ai-market-research/",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Marketing",
+"author": "Varun Ramakrishnan — SignalFire",
+"title": "AI is reshaping B2B GTM with signals you’re still ignoring",
+"url": "https://www.signalfire.com/blog/ai-is-reshaping-b2b-gtm-with-signals-youre-ignoring",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Security",
+"author": "Wickey Wang — SafenAI.org ",
+"title": "The AI Cybersecurity Frontier: 100 Emerging Startups to Watch (2021–2024)",
+"url": "https://wickey.substack.com/p/the-ai-cybersecurity-frontier-100",
+"group": "security"
+},
+{
+"month": "June 2025",
+"cat": "AI Security",
+"author": "Malika Aubakirova — a16z",
+"title": "Next-Gen Pentesting: AI Empowers the Good Guys",
+"url": "https://a16z.com/next-gen-pentesting-ai-empowers-the-good-guys/",
+"group": "security"
+},
+{
+"month": "June 2025",
+"cat": "AI Security",
+"author": "James Berthoty — Latio",
+"title": "2025 Latio AI Security Report",
+"url": "https://pulse.latio.tech/p/2025-latio-ai-security-report",
+"group": "security"
+},
+{
+"month": "June 2025",
+"cat": "AI Software QA/Testing",
+"author": "Jacob Conger & Ram Raval — Headline",
+"title": "AI Can Write Code. Who Makes Sure It Works?",
+"url": "https://headline.com/blog-latest/article-latest/ai-can-write-code-who-makes-sure-it-works",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "Supply Chain AI",
+"author": "Activant Capital",
+"title": "AI is Rewriting the Rules of Supply Chain",
+"url": "https://activantcapital.com/research/ai-is-rewriting-the-rules-of-supply-chain",
+"group": "other"
+},
+{
+"month": "June 2025",
+"cat": "AI Video",
+"author": "Nic Mitham",
+"title": "The AI Video Stack: Status By Company",
+"url": "https://www.linkedin.com/posts/nicmitham_aivideo-fullstack-shortformvideo-activity-7335359142515142656-h3Gx",
+"group": "genai"
+},
+{
+"month": "June 2025",
+"cat": "AI Video",
+"author": "Justine Moore — a16z",
+"title": " New market map: AI video generation",
+"url": "https://x.com/venturetwins/status/1935367302834495832",
+"group": "genai"
+},
+{
+"month": "June 2025",
+"cat": "Voice AI",
+"author": "Ivan Landabaso — Startup Riders",
+"title": "Voice AI Market Map 2025",
+"url": "https://www.linkedin.com/posts/ivanlandabaso_ai-startups-voiceagents-activity-7343518092620148737-1VQ7",
+"group": "genai"
+},
+{
+"month": "June 2025",
+"cat": "Voice AI",
+"author": "Anna Chen & Vivek Ramaswami — Madrona",
+"title": "Voice Is Going Vertical: How Verticalized Voice AI Is Becoming the Next Killer App",
+"url": "https://www.madrona.com/voice-is-going-vertical-how-verticalized-voice-ai-is-becoming-the-next-killer-app/",
+"group": "genai"
+},
+{
+"month": "June 2025",
+"cat": "AI Everything Else",
+"author": "Machine Cinema",
+"title": "AI Storytelling Market Map Q3 2025",
+"url": "https://text.machinecinema.ai/p/ai-storytelling-market-map-q3-2025",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Agents",
+"author": "b2venture",
+"title": "The Market Map of AI Voice & Call Center Agents",
+"url": "https://www.b2venture.vc/stories/the-market-map-of-ai-voice-call-center-agents",
+"group": "agents"
+},
+{
+"month": "May 2025",
+"cat": "AI Agents",
+"author": "Tanay Jaipuria — Wing VC",
+"title": "AI App Builder Agents: Default Tool Choices",
+"url": "https://www.linkedin.com/posts/tanayjaipuria_80-of-new-databases-on-neon-were-created-activity-7333552988696829953-boOp",
+"group": "agents"
+},
+{
+"month": "May 2025",
+"cat": "AI Agents",
+"author": "Scott Wingo — Retailgentic",
+"title": "Retailgentic Ecosystem as of 5/8/25",
+"url": "https://www.retailgentic.com/p/retailgentic-ecosystem-as-of-5825",
+"group": "agents"
+},
+{
+"month": "May 2025",
+"cat": "AI Agents",
+"author": "Scott Wingo — Retailgentic",
+"title": "Agentic Payments - The Essential Building Block for the Agentic Shopping Future.",
+"url": "https://www.retailgentic.com/p/agentic-payments-the-essential-building",
+"group": "agents"
+},
+{
+"month": "May 2025",
+"cat": "AI Data",
+"author": "AI Insider",
+"title": "Layer 2 Data Structure and Processing market map",
+"url": "https://www.linkedin.com/posts/ai-insider-intel_layer-2-market-map-activity-7331600550217551874-Xgzz",
+"group": "data"
+},
+{
+"month": "May 2025",
+"cat": "AI Drug Discovery",
+"author": "Scale Venture Partners",
+"title": "The future of biological foundation models and value creation in AI-driven drug discovery",
+"url": "https://www.scalevp.com/insights/the-future-of-biological-foundation-models-and-value-creation-in-ai-driven-drug-discovery/",
+"group": "vertical"
+},
+{
+"month": "May 2025",
+"cat": "AI Drug Discovery",
+"author": "CB Insights",
+"title": "The AI in drug R&D market map",
+"url": "https://www.cbinsights.com/research/ai-drug-research-development-market-map/",
+"group": "vertical"
+},
+{
+"month": "May 2025",
+"cat": "AI Hardware and Inference",
+"author": "AI Insider",
+"title": "Market Map: AI Hardware and Datacenter enablers",
+"url": "https://www.linkedin.com/posts/ai-insider-intel_ai-chips-gpus-activity-7329150192421703683-k4uw",
+"group": "infra"
+},
+{
+"month": "May 2025",
+"cat": "AI Hardware and Inference",
+"author": "AlbionVC & Beauhurst",
+"title": "UK Future of Compute Market Map",
+"url": "https://albion.vc/spotlight/deep-dives/the-future-of-compute-mini-market-map/",
+"group": "infra"
+},
+{
+"month": "May 2025",
+"cat": "AI Hardware and Inference",
+"author": "Wing VC",
+"title": "The AI Inference Stack",
+"url": "https://www.linkedin.com/pulse/ai-inference-stack-jake-flomenberg-rsppc/",
+"group": "infra"
+},
+{
+"month": "May 2025",
+"cat": "AI Infrastructure",
+"author": "Cobus Greyling",
+"title": "AI Agent infrastructure and Build Stack",
+"url": "https://www.linkedin.com/posts/cobusgreyling_ai-artificialintelligence-aiagents-activity-7325111303839055872-qrem",
+"group": "infra"
+},
+{
+"month": "May 2025",
+"cat": "Large Language Models",
+"author": "Eduardo Ordax",
+"title": "The 2025 Landscape of LLMs — Updated View of the Big Players in the Game of AI",
+"url": "https://www.linkedin.com/posts/eordax_llms-ai-machinelearning-activity-7325788055221452802-y5ue",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "Robotics",
+"author": "Vanessa Loiola",
+"title": "Robotics Overview 2025",
+"url": "https://www.linkedin.com/feed/update/urn:li:activity:7325134009544421378/",
+"group": "physical"
+},
+{
+"month": "May 2025",
+"cat": "Spatial Computing",
+"author": "Nic Mitham — KZero Worldswide",
+"title": "Spatial Computing Market Map Q2 2025",
+"url": "https://www.linkedin.com/posts/nicmitham_kzero-spatial-reality-market-map-q2-2025-activity-7328696144966922242-wEp6",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Security",
+"author": "Dan Cahana — Notable Capital",
+"title": "Agent Identity Security Framework",
+"url": "https://www.notablecap.com/blog/the-identity-shift-preparing-for-a-non-human-future",
+"group": "security"
+},
+{
+"month": "May 2025",
+"cat": "Top AI",
+"author": "Ollie Forsyth & Amos Bar Joseph — New Economies",
+"title": "Top 100 Startups to Watch",
+"url": "https://www.neweconomies.co/p/the-new-operating-system",
+"group": "top"
+},
+{
+"month": "May 2025",
+"cat": "Venture AI",
+"author": "Cory Bolotsky",
+"title": "Market Map: Data + AI Tooling for Venture Capital Firms",
+"url": "https://bolots.ky/p/vc-ai-data-market-map",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "Voice AI",
+"author": "Anna Piñol & Valerie Osband Mahoney — NFX",
+"title": "Voice AI is Working. Here’s Where It Wins First",
+"url": "https://www.nfx.com/post/voice-ai-is-working",
+"group": "genai"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Business of Apps",
+"title": "AI App Market Map 2025",
+"url": "https://www.linkedin.com/posts/business-of-apps_introducing-our-ai-app-market-map-2025-activity-7323624734837911554-p-kN",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Craig Iskowitz",
+"title": "AI Notetaker market for Financial Advisors",
+"url": "https://www.linkedin.com/posts/craigiskowitz_wealthmanagement-ai-financialadvisors-activity-7323704087596654593-oLf-",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "LiveRamp Ventures",
+"title": "A.I. in Digital Advertising Landscape",
+"url": "https://www.linkedin.com/posts/jimmy-ren-b015b639_introducing-our-first-ever-ai-in-digital-activity-7325182089702633474--ChQ",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Jonathan King — Coinbase Ventures",
+"title": "The Rise of Onchain AI: Agents, Apps, and Commerce",
+"url": "https://x.com/cbventures/status/1923401975766355982",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Ollie Forsyth & Partners — New Economies",
+"title": "HOW TO ADOPT AI WITHIN THE WORKPLACE",
+"url": "https://www.neweconomies.co/i/161537748/how-to-adopt-ai-within-the-workplace",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "MMC",
+"title": "AI Discoverability: How can I get ChatGPT to recommend my brand?",
+"url": "https://mmc.vc/research/ai-discoverability-how-can-i-get-chatgpt-to-recommend-my-brand/",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Zach Cohen and Seema Amble — a16z",
+"title": "How Generative Engine Optimization (GEO) Rewrites the Rules of Search",
+"url": "https://a16z.com/geo-over-seo",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Carta",
+"title": "1,200+ seed rounds raised by US startups on Carta over the last 12 months",
+"url": "https://www.linkedin.com/posts/peterjameswalker_startups-seed-founders-activity-7333567913305485314-G2Q_",
+"group": "other"
+},
+{
+"month": "May 2025",
+"cat": "AI Everything Else",
+"author": "Omers Ventures",
+"title": "The Next Frontier in Recruiting and Talent Acquisition",
+"url": "https://www.omersventures.com/news/the-next-frontier-in-recruiting-and-talent-acquisition/",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Agents",
+"author": "Antler",
+"title": "Market Map AI Agents: Sales",
+"url": "https://www.antler.co/blog/ai-market-map-sales",
+"group": "agents"
+},
+{
+"month": "April 2025",
+"cat": "AI Agents",
+"author": "Georgian",
+"title": "AI LANDSCAPE SERIES Agentic Platforms and Applications",
+"url": "https://georgian.io/agentic-platforms-and-applications/",
+"group": "agents"
+},
+{
+"month": "April 2025",
+"cat": "AI Agents",
+"author": "Tom Doerr",
+"title": "LLM Agent Systems Landscape 2025",
+"url": "https://x.com/tom_doerr/status/1916296071552156099/photo/1",
+"group": "agents"
+},
+{
+"month": "April 2025",
+"cat": "AI Data",
+"author": "Hitachi Ventures",
+"title": "From Pipelines to Insights: The AI-Driven Data Stack Revolution in 2025",
+"url": "https://medium.com/@HitachiVentures/from-pipelines-to-insights-the-ai-driven-data-stack-revolution-in-2025-64a58c070b5d",
+"group": "data"
+},
+{
+"month": "April 2025",
+"cat": "AI DevTools",
+"author": "Denise Teng — Gradient Ventures",
+"title": "Code Gen Tool Market Map",
+"url": "https://www.linkedin.com/posts/activity-7318692414703947777-HTC-",
+"group": "devtools"
+},
+{
+"month": "April 2025",
+"cat": "AI DevTools",
+"author": "Yujian Tang",
+"title": "LLM Stack Market Map",
+"url": "https://www.linkedin.com/posts/yujiantang_revamped-this-market-map-retrieval-data-activity-7316147686779363329-AYjk",
+"group": "devtools"
+},
+{
+"month": "April 2025",
+"cat": "Fintech AI",
+"author": "Norwest",
+"title": "Market Map: Reimagining the CFO Software Stack",
+"url": "https://www.nvp.com/blog/market-map-reimagining-cfo-software-stack/",
+"group": "vertical"
+},
+{
+"month": "April 2025",
+"cat": "Fintech AI",
+"author": "Kison Patel — Dealroom",
+"title": "AI Tools for M&A Market Map",
+"url": "https://www.linkedin.com/posts/kisonpatel_buyerledmanda-aitools-corporatedevelopment-activity-7321582532402077696-CarX",
+"group": "vertical"
+},
+{
+"month": "April 2025",
+"cat": "AI Gaming",
+"author": "Daniel Derzic — Hartmann Capital",
+"title": "GenAI in Gaming Industry Report: Q1 2025",
+"url": "https://www.hartmanncapital.com/news-insights/genai-in-gaming-industry-report-q1-2025",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Hardware and Inference",
+"author": "Ashish Kakran — Thomvest Ventures",
+"title": "AI inference tooling landscape",
+"url": "https://www.linkedin.com/posts/kakran_ai-inference-startups-activity-7318052931742617600-4rRn",
+"group": "infra"
+},
+{
+"month": "April 2025",
+"cat": "AI Hardware and Inference",
+"author": "Gennaro Cuofano",
+"title": "AI Compute Market Map: A Practical Guide",
+"url": "https://businessengineer.ai/p/ai-compute-market-map-a-practical",
+"group": "infra"
+},
+{
+"month": "April 2025",
+"cat": "AI Hardware and Inference",
+"author": "World Fund",
+"title": "Green Computing in the AI Era",
+"url": "https://www.worldfund.vc/knowledge/green-computing-in-the-ai-era",
+"group": "infra"
+},
+{
+"month": "April 2025",
+"cat": "Healthtech AI",
+"author": "7wire Ventures",
+"title": "From Diagnosis to Treatment: Unlocking Potential with Generative AI",
+"url": "https://www.7wireventures.com/perspectives/from-diagnosis-to-treatment-unlocking-potential-with-generative-ai/",
+"group": "vertical"
+},
+{
+"month": "April 2025",
+"cat": "Healthtech AI",
+"author": "Elion",
+"title": "AI Denials Management Market Map: Recovering lost revenue with robots?",
+"url": "https://elion.health/resources/ai-denials-management",
+"group": "vertical"
+},
+{
+"month": "April 2025",
+"cat": "AI Infrastructure",
+"author": "Ensemble VC",
+"title": "All AI infrastructure market maps are wrong. But some are better than others.",
+"url": "https://www.ensemble.vc/research/all-ai-infrastructure-market-maps-are-wrong-but-some-are-better-than-others",
+"group": "infra"
+},
+{
+"month": "April 2025",
+"cat": "Legal AI",
+"author": "Synaptic",
+"title": "AI x Legaltech 2025",
+"url": "https://x.com/synaptic_data/status/1911810464322928884",
+"group": "vertical"
+},
+{
+"month": "April 2025",
+"cat": "Robotics",
+"author": "Tracxn",
+"title": "Industrial Robotics sector overview",
+"url": "https://tracxn.com/d/sectors/industrial-robotics/__8YzlIwdZtVDpzlzTadeYnqjdh1suJksuE5MDB89oZiU",
+"group": "physical"
+},
+{
+"month": "April 2025",
+"cat": "Voice AI",
+"author": "Cathy Gao & Julie Nguyen — Sapphire Ventures",
+"title": "B2B Voice AI Landscape",
+"url": "https://www.linkedin.com/feed/update/urn:li:activity:7315387989294043137/",
+"group": "genai"
+},
+{
+"month": "April 2025",
+"cat": "AI Security",
+"author": "Premji Invest — Alumni Ventures",
+"title": "AI Is Coming: Meet the Startups Building Cyber Defenses for the Age of AI",
+"url": "https://www.premjiinvest.com/blog/ai-is-coming-meet-the-startups-building-cyber-defenses-for-the-age-of-ai",
+"group": "security"
+},
+{
+"month": "April 2025",
+"cat": "AI Security",
+"author": "Software Analyst Cyber Research",
+"title": "Securing For AI Specialist Ecosystem",
+"url": "https://www.linkedin.com/posts/software-analyst_as-enterprises-race-to-deploy-genai-and-llms-activity-7315805428607504385-hClF",
+"group": "security"
+},
+{
+"month": "April 2025",
+"cat": "Top AI",
+"author": "Forbes",
+"title": "AI 50",
+"url": "https://www.forbes.com/lists/ai50/",
+"group": "top"
+},
+{
+"month": "April 2025",
+"cat": "Top AI",
+"author": "CB Insights",
+"title": "AI 100: The most promising artificial intelligence startups of 2025",
+"url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2025/",
+"group": "top"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "Reach Capital",
+"title": "AI Is Unlocking the Future of Frontline Work — And Where We're Investing",
+"url": "https://www.reachcapital.com/2025/04/03/ai-is-unlocking-the-future-of-frontline-work-and-where-were-investing/",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "AI Learned to Talk. Now it's Learning to Build Reality",
+"url": "https://a16z.com/ai-is-learning-to-build-reality/",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "AI Avatars Escape the Uncanny Valley",
+"url": "https://a16z.com/ai-avatars/",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "XAnge",
+"title": "Market Map: European AI-Enabled SalesTech",
+"url": "https://www.xange.vc/knowledge-hub/ai-enabled-salestech-separating-hype-from-the-real",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "CroAI",
+"title": "The Croatian AI Landscape",
+"url": "https://map.croai.org/",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "Nimble",
+"title": "AI Automation and Agents for ecommerce Market Map",
+"url": "https://www.linkedin.com/posts/joshwood1_ecommerce-aiagents-marketmaps-activity-7318272007819653121-ewIs",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "GoHub Ventures",
+"title": "AI Personal Assistants",
+"url": "https://www.linkedin.com/posts/gohubventures_ai-startups-activity-7320034821735378944-_lJP",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "Joseph Kim — GameMakers",
+"title": "📍 The Definitive AI x Gaming Market Map (April 2025)",
+"url": "https://www.gamemakers.com/p/the-definitive-ai-x-gaming-market",
+"group": "other"
+},
+{
+"month": "April 2025",
+"cat": "AI Everything Else",
+"author": "The Wealth Mosaic",
+"title": "The AI WealthTech Market Map, April 2025",
+"url": "https://www.thewealthmosaic.com/vendors/the-wealth-mosaic/news/the-ai-wealthtech-market-map-april-2025/",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "AI Agent Market Map",
+"url": "https://www.cbinsights.com/research/ai-agent-market-map/",
+"group": "agents"
+},
+{
+"month": "March 2025",
+"cat": "AI Agents",
+"author": "Antler",
+"title": "Market Map AI Agents: Marketing",
+"url": "https://www.antler.co/blog/ai-market-map-marketing",
+"group": "agents"
+},
+{
+"month": "March 2025",
+"cat": "AI Agents",
+"author": "Antler",
+"title": "Market Map AI Agents: Fintech",
+"url": "https://www.antler.co/blog/ai-market-map-fintech",
+"group": "agents"
+},
+{
+"month": "March 2025",
+"cat": "AI Agents",
+"author": "AI Agents Directory",
+"title": "AI Agents Market Landscape",
+"url": "https://aiagentsdirectory.com/landscape",
+"group": "agents"
+},
+{
+"month": "March 2025",
+"cat": "AI Agents",
+"author": "Acrew Capital",
+"title": "A-Commerce Evolution: Agentic Commerce as The New Frontier",
+"url": "https://perspectives.acrewcapital.com/a-commerce-evolution-agentic-commerce-as-the-new-frontier-27a4c855a778",
+"group": "agents"
+},
+{
+"month": "March 2025",
+"cat": "AI Data",
+"author": "Bessemer",
+"title": "Roadmap: Data 3.0 in the Lakehouse Era",
+"url": "https://www.bvp.com/atlas/roadmap-data-3-0-in-the-lakehouse-era",
+"group": "data"
+},
+{
+"month": "March 2025",
+"cat": "AI Data",
+"author": "Activant Capital",
+"title": "AI's Undervalued Asset - Data's pivotal role in the next era of Gen AI deployment",
+"url": "https://activantcapital.com/research/ai-s-undervalued-asset",
+"group": "data"
+},
+{
+"month": "March 2025",
+"cat": "AI DevTools and Integrations",
+"author": "Yoko Li — a16z",
+"title": "A Deep Dive Into MCP and the Future of AI Tooling",
+"url": "https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/",
+"group": "devtools"
+},
+{
+"month": "March 2025",
+"cat": "AI DevTools and Integrations",
+"author": "Auchenberg",
+"title": "AI Tools and Integrations Market Map",
+"url": "https://github.com/auchenberg/ai-tools-integrations-market-map",
+"group": "devtools"
+},
+{
+"month": "March 2025",
+"cat": "AI DevTools and Integrations",
+"author": "Thomvest Ventures",
+"title": "Market Map: 130+ companies transforming the AI Software Development market",
+"url": "https://blog.thomvest.com/market-map-130-companies-transforming-the-ai-software-development-market-1e8ef2179439",
+"group": "devtools"
+},
+{
+"month": "March 2025",
+"cat": "AI DevTools and Integrations",
+"author": "Yujian Tang",
+"title": "LLM Stack Market Map",
+"url": "https://www.linkedin.com/posts/yujiantang_seattlestartupsummit-activity-7310753598353592321-qYZY",
+"group": "devtools"
+},
+{
+"month": "March 2025",
+"cat": "Foundation Models",
+"author": "Leonis Capital",
+"title": "Zero or Hero: A Technical Framework for Valuing AI Companies (Part I: Foundation Models)",
+"url": "https://www.leoniscap.com/deep-dives/zero-or-hero-a-technical-framework-for-valuing-ai-companies-(part-i-foundation-models",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "GenAI",
+"author": "a16z",
+"title": "The Top 100 GenAI Consumer Apps 2025",
+"url": "https://a16z.com/100-gen-ai-apps-4/",
+"group": "genai"
+},
+{
+"month": "March 2025",
+"cat": "GenAI",
+"author": "IoT Analytics",
+"title": "The leading generative AI companies",
+"url": "https://iot-analytics.com/leading-generative-ai-companies/",
+"group": "genai"
+},
+{
+"month": "March 2025",
+"cat": "AI Hardware",
+"author": "SemiAnalysis",
+"title": "The GPU Cloud ClusterMAX™ Rating System | How to Rent GPUs",
+"url": "https://semianalysis.com/2025/03/26/the-gpu-cloud-clustermax-rating-system-how-to-rent-gpus/",
+"group": "infra"
+},
+{
+"month": "March 2025",
+"cat": "AI Hardware",
+"author": "AIMultiple Research",
+"title": "Top 20 AI Chip Makers: NVIDIA & Its Competitors in 2025",
+"url": "https://research.aimultiple.com/ai-chip-makers/",
+"group": "infra"
+},
+{
+"month": "March 2025",
+"cat": "AI Hardware",
+"author": "Synaptic",
+"title": "Chipping Away: AI x Hardware",
+"url": "https://synaptic.com/resources/chipping-away-ai-hardware/",
+"group": "infra"
+},
+{
+"month": "March 2025",
+"cat": "Healthtech AI",
+"author": "Protege",
+"title": "Healthcare AI Market Map",
+"url": "https://www.withprotege.ai/ai-market-map",
+"group": "vertical"
+},
+{
+"month": "March 2025",
+"cat": "Healthtech AI",
+"author": "High Street Equity Partners",
+"title": "Health Tech Seed Landscape: Startups to Watch",
+"url": "https://www.linkedin.com/posts/high-street-equity-partners_health-tech-seed-landscape-startups-to-watch-activity-7310328926164123651-caPk",
+"group": "vertical"
+},
+{
+"month": "March 2025",
+"cat": "AI Infrastructure",
+"author": "Headline VC",
+"title": "The Duality of Infrastructure Software Investing in an AI World - \"Infra of AI\" and \"AI in Infra\" Market Maps",
+"url": "https://headline.com/blog-latest/article-latest/the-duality-of-infrastructure-software-investing-i",
+"group": "infra"
+},
+{
+"month": "March 2025",
+"cat": "AI Infrastructure",
+"author": "Forum Ventures",
+"title": "AI Infrastructure Market Map",
+"url": "https://airtable.com/appJKSyHsK9L7emVe/shrIaPop9BFkCdXx5/tblep1S6vE6nyvsJ3",
+"group": "infra"
+},
+{
+"month": "March 2025",
+"cat": "Robotics",
+"author": "Hardware FYI",
+"title": "Deep Tech Market Map - Robotics and Autonomous Systems",
+"url": "https://www.linkedin.com/feed/update/urn:li:activity:7308530241210093569/",
+"group": "physical"
+},
+{
+"month": "March 2025",
+"cat": "AI Security",
+"author": "Software Analyst Cyber Research",
+"title": "Securing AI/LLMs in 2025: A Practical Guide To Securing & Deploying AI",
+"url": "https://softwareanalyst.substack.com/p/securing-aillms-in-2025-a-practical",
+"group": "security"
+},
+{
+"month": "March 2025",
+"cat": "Vertical AI",
+"author": "Forum Ventures",
+"title": "Vertical AI Market Map",
+"url": "https://airtable.com/appJKSyHsK9L7emVe/shrsmkAjfpzC7Ofaa/tblRYihkumYwZ9BXu",
+"group": "vertical"
+},
+{
+"month": "March 2025",
+"cat": "Voice AI",
+"author": "Chelcie Taylor — Notable Capital",
+"title": "Vertical Voice Agents Are Taking Off: Here’s Why",
+"url": "https://www.notablecap.com/blog/vertical-voice-agents-are-taking-off-heres-why",
+"group": "genai"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "Shopping in 'God Mode' with AI",
+"url": "https://a16z.com/ai-shopping-online/",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Optimist Ventures",
+"title": "Q1'25 Insurtech Market Map",
+"url": "https://medium.com/@jp_at_optimist/q125-insurtech-market-map-%EF%B8%8F-aa3ee89bd275",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Brighteye Ventures",
+"title": "AI for Enhancing Productivity - learning in the flow of work",
+"url": "https://www.brighteyevc.com/post/ai-for-training-the-evolution-of-corporate-training-1",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Brighteye Ventures",
+"title": "AI for Training - the evolution of corporate training",
+"url": "https://www.brighteyevc.com/post/ai-for-training-the-evolution-of-corporate-training",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Brighteye Ventures",
+"title": "AI for Hiring - how AI is transforming talent acquisition",
+"url": "https://www.brighteyevc.com/post/ai-for-hiring-transforming-talent-acquisition-with-ai",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Florian Seemann — P9",
+"title": "A First Landscape of AI-first Service Businesses",
+"url": "https://medium.com/point-nine-news/a-first-landscape-of-ai-first-service-businesses-d0a5e4977678",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "RankMyAI",
+"title": "Mapping the Dutch AI Landscape: Key insights from our latest report",
+"url": "https://www.rankmyai.com/insights/5/mapping-the-dutch-ai-landscape-key-insights-from-our-latest-report",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Juhi Parekh",
+"title": "Demystifying Spatial AI : A Market Map",
+"url": "https://juhiparekh.substack.com/p/demystifying-spatial-ai",
+"group": "other"
+},
+{
+"month": "March 2025",
+"cat": "AI Everything Else",
+"author": "Eric Flanigam — Generative Value",
+"title": "The Current State of AI Markets",
+"url": "https://www.generativevalue.com/p/the-current-state-of-ai-markets-6b3",
+"group": "other"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "Madrona",
+"title": "The AI Agent Infrastructure Stack",
+"url": "https://www.madrona.com/ai-agent-infrastructure-three-layers-tools-data-orchestration/",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "Wing.vc",
+"title": "The rise of the agentic workforce",
+"url": "https://www.wing.vc/content/the-rise-of-the-agentic-workforce",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "Kenn So — Generational",
+"title": "Memory in AI Agents",
+"url": "https://www.generational.pub/p/memory-in-ai-agents",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "AI Accelerator Instutite",
+"title": "Agentic Code Gen Market Leaders",
+"url": "https://www.aiacceleratorinstitute.com/agentic-code-generation-the-future-of-software-development/",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "Elaia",
+"title": "Agentic AI: the Next (R)evolution?",
+"url": "https://medium.com/elaia/agentic-ai-the-next-r-evolution-384bd77f5c57",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "Michael Tefula — Ada Ventures",
+"title": "AI Agent Market Map *",
+"url": "https://mychaelangelo.github.io/ai_agents_marketmap/",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Agents",
+"author": "AgentOps.ai",
+"title": "2025 AI Agent Market Map",
+"url": "https://x.com/AtomSilverman/status/1893050805718262005",
+"group": "agents"
+},
+{
+"month": "February 2025",
+"cat": "AI Data Engineering",
+"author": "Alireza Sadeghi — pracdata.io",
+"title": "2025 Open Source Data Engineering Landscape",
+"url": "https://www.pracdata.io/p/open-source-data-engineering-landscape-2025",
+"group": "other"
+},
+{
+"month": "February 2025",
+"cat": "AI DevTools",
+"author": "Dallas VC",
+"title": "Observability: Current Landscape and Emerging Trends",
+"url": "https://www.dallasvc.com/post/observability-current-landscape-and-emerging-trends",
+"group": "devtools"
+},
+{
+"month": "February 2025",
+"cat": "Robotics",
+"author": "Morgan Stanley Research",
+"title": "The Humanoid 100: Mapping the Humanoid Robot Value Chain",
+"url": "https://advisor.morganstanley.com/john.howard/documents/field/j/jo/john-howard/The_Humanoid_100_-_Mapping_the_Humanoid_Robot_Value_Chain.pdf",
+"group": "physical"
+},
+{
+"month": "February 2025",
+"cat": "Robotics",
+"author": "Aaron Pickard — Dorm Room Fund",
+"title": "Humanoid Robots Market Map & Investor List",
+"url": "https://aaronpickard.substack.com/p/humanoid-robots-market-map-and-investor",
+"group": "physical"
+},
+{
+"month": "February 2025",
+"cat": "Robotics",
+"author": "Merphi",
+"title": "Categorization of ROBOTS",
+"url": "https://www.merphi.se/downloads/#link-categorization",
+"group": "physical"
+},
+{
+"month": "February 2025",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "AI-Powered Web App Builders Market Map",
+"url": "https://a16z.com/ai-web-app-builders/",
+"group": "other"
+},
+{
+"month": "February 2025",
+"cat": "AI Everything Else",
+"author": "Inc42",
+"title": "Indian GenAI Startup Tracker: 60+ Startups Putting India On The Global AI Map",
+"url": "https://inc42.com/startups/indian-genai-startup-tracker/",
+"group": "other"
+},
+{
+"month": "February 2025",
+"cat": "AI Everything Else",
+"author": "Backlinko",
+"title": "Most Popular AI Apps",
+"url": "https://backlinko.com/most-popular-ai-apps",
+"group": "other"
+},
+{
+"month": "January 2025",
+"cat": "AI Agents",
+"author": "a16z",
+"title": "AI Voice Agent Update",
+"url": "https://a16z.com/ai-voice-agents-2025-update/",
+"group": "agents"
+},
+{
+"month": "January 2025",
+"cat": "AI Agents",
+"author": "Menlo Ventures",
+"title": "Beyond Bots: How AI Agents Are Driving the Next Wave of Enterprise Automation",
+"url": "https://menlovc.com/perspective/beyond-bots-how-ai-agents-are-driving-the-next-wave-of-enterprise-automation/?=Jan2025",
+"group": "agents"
+},
+{
+"month": "January 2025",
+"cat": "AI Agents",
+"author": "Dawn Capital",
+"title": "AI Agents",
+"url": "https://dawncapital.com/horizons/#agentic-ai",
+"group": "agents"
+},
+{
+"month": "January 2025",
+"cat": "AI Agents",
+"author": "CB Insights",
+"title": "Industrial AI Agents & Copilots Market Map",
+"url": "https://x.com/CBinsights/status/1879536580496343474",
+"group": "agents"
+},
+{
+"month": "January 2025",
+"cat": "AI Data",
+"author": "Eric Flanigam — Generative Value",
+"title": "The Unstructured Data Landscape",
+"url": "https://www.generativevalue.com/p/the-unstructured-data-landscape",
+"group": "data"
+},
+{
+"month": "January 2025",
+"cat": "AI DevTools",
+"author": "AI Accelerator Institute",
+"title": "LLMOps Market Map",
+"url": "https://www.aiacceleratorinstitute.com/llmops-optimizing-towards-enterprise-value-in-the-llm-agentic-era/",
+"group": "devtools"
+},
+{
+"month": "January 2025",
+"cat": "Fintech AI",
+"author": "Magnusta Capital",
+"title": "FinTech AI Market Map",
+"url": "https://medium.com/%40Mangusta/mangusta-capital-2025-fintech-ai-market-map-c936a84e1a84",
+"group": "vertical"
+},
+{
+"month": "January 2025",
+"cat": "AI Hardware and Inference",
+"author": "AI Supremacy",
+"title": "The AI Semiconductor Landscape",
+"url": "https://www.ai-supremacy.com/p/the-ai-semiconductor-landscape-2025",
+"group": "infra"
+},
+{
+"month": "January 2025",
+"cat": "AI Hardware and Inference",
+"author": "Eric Flanigam — Generative Value",
+"title": "A Deep Dive on Inference Semiconductors",
+"url": "https://www.generativevalue.com/p/a-deep-dive-on-inference-semiconductors",
+"group": "infra"
+},
+{
+"month": "January 2025",
+"cat": "Healthtech AI",
+"author": "Lux Capital",
+"title": "Unlocking Potential: Artificial Intelligence for Women's Health",
+"url": "https://www.luxcapital.com/news/unlocking-potential-artificial-intelligence-for-womens-health",
+"group": "vertical"
+},
+{
+"month": "January 2025",
+"cat": "Healthtech AI",
+"author": "NVIDIA",
+"title": "NVIDIA Healthcare & Life Sciences Market Map",
+"url": "https://x.com/HealthcareAIGuy/status/1884615818509680871",
+"group": "vertical"
+},
+{
+"month": "January 2025",
+"cat": "AI Security",
+"author": "TechOperators",
+"title": "Cybersecurity + AI Startup Market Map",
+"url": "https://www.linkedin.com/posts/techoperators-llc_cybersecurity-ai-startup-market-map-jan-activity-7287878267297017861-FIJr",
+"group": "security"
+},
+{
+"month": "January 2025",
+"cat": "Voice AI",
+"author": "Dawn Capital",
+"title": "Voice AI Market",
+"url": "https://dawncapital.com/horizons/#voice-ai-market",
+"group": "genai"
+},
+{
+"month": "January 2025",
+"cat": "AI Everything Else",
+"author": "Aakash Gupta",
+"title": "Sales Tech Market Map 2025: The $30B Industry Breakdown",
+"url": "https://www.news.aakashg.com/p/sales-tech-market-map-2025",
+"group": "other"
+},
+{
+"month": "January 2025",
+"cat": "AI Everything Else",
+"author": "Sapphire Ventures",
+"title": "AI-Native Applications Market Map",
+"url": "https://medium.com/@cgao/ai-native-applications-a-framework-for-evaluating-the-future-of-enterprise-software-0ddfa3989db9",
+"group": "other"
+},
+{
+"month": "January 2025",
+"cat": "AI Everything Else",
+"author": "Mininath Jirage",
+"title": "Evolving Market Map — Marketing Stack with GenAI",
+"url": "https://medium.com/@mininathjirage/evolving-market-map-marketing-stack-with-genai-5eb83b7d4678",
+"group": "other"
+},
+{
+"month": "December 2024",
+"cat": "AI Agents",
+"author": "Insight Partners",
+"title": "The State of the AI Agents Ecosystem",
+"url": "https://www.insightpartners.com/ideas/state-of-the-ai-agent-ecosystem-use-cases-and-learnings-for-technology-builders-and-buyers/",
+"group": "agents"
+},
+{
+"month": "December 2024",
+"cat": "Healthcare AI",
+"author": "Obvious Ventures",
+"title": "How Generative AI Is Transforming Healthcare",
+"url": "https://obvious.com/ideas/how-generative-ai-is-transforming-healthcare/",
+"group": "vertical"
+},
+{
+"month": "December 2024",
+"cat": "AI Trends",
+"author": "Kenn So — Generational",
+"title": "AI Trends 2024",
+"url": "https://www.generational.pub/p/ai-trends-2024",
+"group": "other"
+},
+{
+"month": "December 2024",
+"cat": "AI Security",
+"author": "Brandon Dixon — Applied GAI in Security",
+"title": "Agentic Security Marketmap",
+"url": "https://applied-gai-in-security.ghost.io/agentic-security-marketmap/",
+"group": "security"
+},
+{
+"month": "December 2024",
+"cat": "AI Security",
+"author": "Software Analyst Cyber Research",
+"title": "Data Security Platforms: The New Frontier in Cybersecurity & AI",
+"url": "https://softwareanalyst.substack.com/p/data-security-platforms-the-new-frontier",
+"group": "security"
+},
+{
+"month": "December 2024",
+"cat": "Vertical AI",
+"author": "Greenfield",
+"title": "Vertical AI Is Here: How to Capture the Opportunity and Win Big",
+"url": "https://www.greenfield-growth.com/blog-posts/vertical-ai-is-here-how-to-capture-the-opportunity-and-win-big",
+"group": "vertical"
+},
+{
+"month": "December 2024",
+"cat": "AI Everything Else",
+"author": "DocuBridge",
+"title": "AI in Private Equity: an Overview of the AI Market Map",
+"url": "https://www.docubridge.ai/articles/ai-in-private-equity-an-overview-of-the-ai-market-map",
+"group": "other"
+},
+{
+"month": "December 2024",
+"cat": "AI Everything Else",
+"author": "Ascend",
+"title": "Mapping Seattle's Enterprise AI Startups",
+"url": "https://www.ascend.vc/blog/mapping-seattles-enterprise-ai-startups",
+"group": "other"
+},
+{
+"month": "December 2024",
+"cat": "AI Everything Else",
+"author": "eaidb.org",
+"title": "The Responsible AI Ecosystem FY 2024 Market Map *",
+"url": "https://www.eaidb.org/map",
+"group": "other"
+},
+{
+"month": "November 2024",
+"cat": "AI Agents",
+"author": "Sahar Mor — AI Tidbits",
+"title": "The Open-Source Toolkit for Building AI Agents",
+"url": "https://www.aitidbits.ai/p/open-source-agents",
+"group": "agents"
+},
+{
+"month": "November 2024",
+"cat": "AI Agents",
+"author": "Letta",
+"title": "The AI Agents Stack",
+"url": "https://www.letta.com/blog/ai-agents-stack",
+"group": "agents"
+},
+{
+"month": "November 2024",
+"cat": "AI Automation",
+"author": "a16z",
+"title": "RIP to RPA: The Rise of Intelligent Automation",
+"url": "https://a16z.com/rip-to-rpa-the-rise-of-intelligent-automation/",
+"group": "agents"
+},
+{
+"month": "November 2024",
+"cat": "Fintech AI",
+"author": "Foundation Capital",
+"title": "Banking's New Tech Stack: A market map of generative AI in financial services",
+"url": "https://foundationcapital.com/bankings-new-tech-stack-a-market-map-of-generative-ai-in-financial-services/",
+"group": "vertical"
+},
+{
+"month": "November 2024",
+"cat": "GenAI",
+"author": "Menlo Ventures",
+"title": "2024: The State of Generative AI in the Enterprise",
+"url": "https://menlovc.com/2024-the-state-of-generative-ai-in-the-enterprise/",
+"group": "genai"
+},
+{
+"month": "November 2024",
+"cat": "AI Hardware and Inference",
+"author": "Generative Value",
+"title": "The Inference Landscape",
+"url": "https://www.generativevalue.com/p/the-inference-landscape",
+"group": "infra"
+},
+{
+"month": "November 2024",
+"cat": "Healthcare AI",
+"author": "Flare Capital",
+"title": "Representative Health System AI Market Map",
+"url": "https://x.com/HealthcareAIGuy/status/1854904237337325768",
+"group": "vertical"
+},
+{
+"month": "November 2024",
+"cat": "AI Security",
+"author": "PitchBook",
+"title": "Market Map: Application security defends software's next generation",
+"url": "https://pitchbook.com/news/articles/market-map-application-security-startups-q2-2024",
+"group": "security"
+},
+{
+"month": "November 2024",
+"cat": "AI Security",
+"author": "Felicis Ventures",
+"title": "How AI is reshaping IT, QA, and Incident Response",
+"url": "https://www.felicis.com/insight/ai-it-qa-incident-response",
+"group": "security"
+},
+{
+"month": "November 2024",
+"cat": "Voice AI",
+"author": "Bessemer",
+"title": "Roadmap: Voice AI",
+"url": "https://www.bvp.com/atlas/roadmap-voice-ai",
+"group": "genai"
+},
+{
+"month": "November 2024",
+"cat": "AI Everything Else",
+"author": "Sapphire Ventures",
+"title": "AI-Native Applications: A Framework for Evaluating the Future of Enterprise Software",
+"url": "https://sapphireventures.com/blog/ai-native-applications/",
+"group": "other"
+},
+{
+"month": "November 2024",
+"cat": "AI Everything Else",
+"author": "Insight Partners",
+"title": "Reimagination of everything: How intelligence-first design and the Next Stack will unlock human+AI collaborative reasoning",
+"url": "https://www.insightpartners.com/ideas/intelligence-first-design-unlocks-humanai-collaborative-reasoning/",
+"group": "other"
+},
+{
+"month": "November 2024",
+"cat": "AI Everything Else",
+"author": "Hardware FYI",
+"title": "Deep Tech Market Map: The Future of Aerospace and Defense",
+"url": "https://hardwarefyi.substack.com/p/deep-tech-market-map-the-future-of",
+"group": "other"
+},
+{
+"month": "November 2024",
+"cat": "AI Everything Else",
+"author": "OpenOcean",
+"title": "The market map for AI-enabled services: where to watch in 2025",
+"url": "https://www.openocean.vc/articles/the-market-map-for-ai-enabled-services-where-to-watch-in-2025",
+"group": "other"
+},
+{
+"month": "November 2024",
+"cat": "AI Everything Else",
+"author": "EdTech Insiders",
+"title": "The Edtech Insiders Generative AI Map",
+"url": "https://edtechinsiders.substack.com/p/the-edtech-insiders-generative-ai",
+"group": "other"
+},
+{
+"month": "October 2024",
+"cat": "AI Agents",
+"author": "Foundation Capital",
+"title": "A System of Agents brings Service-as-Software to life",
+"url": "https://foundationcapital.com/system-of-agents/",
+"group": "agents"
+},
+{
+"month": "October 2024",
+"cat": "AI Hardware",
+"author": "Eric Flanigam — Generative Value",
+"title": "A Primer on AI Data Centers",
+"url": "https://www.generativevalue.com/p/a-primer-on-ai-data-centers",
+"group": "infra"
+},
+{
+"month": "October 2024",
+"cat": "AI Infrastructure",
+"author": "PitchBook",
+"title": "Market Map: VCs bet on data infrastructure to keep fueling AI",
+"url": "https://pitchbook.com/news/articles/market-map-venture-capital-investors-data-infrastructure-ai",
+"group": "infra"
+},
+{
+"month": "October 2024",
+"cat": "AI Security",
+"author": "Oren Yunger & Dan Cahana — Notable Capital",
+"title": "Identity Crisis: Breaking Down The Emerging Identity Stack",
+"url": "https://www.notablecap.com/blog/identity-crisis-breaking-down-the-emerging-identity-stack",
+"group": "security"
+},
+{
+"month": "October 2024",
+"cat": "Vertical AI",
+"author": "Ardent Venture Partners",
+"title": "One Year Later: A Refreshed View of the AI-Native Vertical Software Landscape",
+"url": "https://medium.com/@ardent-vc/one-year-later-a-refreshed-view-of-the-ai-native-vertical-software-landscape-1c400dd1243e",
+"group": "vertical"
+},
+{
+"month": "October 2024",
+"cat": "AI Everything Else",
+"author": "Alex Carter",
+"title": "Leading RAG Technology Companies to Watch in 2024",
+"url": "https://medium.com/@iamalexcarter/leading-rag-technology-companies-to-watch-in-2024-ed6c1c6bc475",
+"group": "other"
+},
+{
+"month": "October 2024",
+"cat": "AI Everything Else",
+"author": "Nathan Benaich — Air Street Capital",
+"title": "Welcome to STATE OF AI REPORT 2024.",
+"url": "https://www.stateof.ai/2024-report-launch",
+"group": "other"
+},
+{
+"month": "October 2024",
+"cat": "AI Everything Else",
+"author": "Coinbase Ventures",
+"title": "Demystifying the Crypto x AI Stack",
+"url": "https://paragraph.com/@cbventures/demystifying-the-crypto-x-ai-stack",
+"group": "other"
+},
+{
+"month": "October 2024",
+"cat": "AI Everything Else",
+"author": "Eric Flanigam — Generative Value",
+"title": "Nuclear's AI Opportunity",
+"url": "https://www.generativevalue.com/p/nuclears-ai-opportunity",
+"group": "other"
+},
+{
+"month": "September 2024",
+"cat": "AI Agents",
+"author": "Menlo Ventures",
+"title": "Beyond Bots: How AI Agents Are Driving the Next Wave of Enterprise Automation",
+"url": "https://menlovc.com/perspective/beyond-bots-how-ai-agents-are-driving-the-next-wave-of-enterprise-automation/",
+"group": "agents"
+},
+{
+"month": "September 2024",
+"cat": "AI Agents",
+"author": "E2B.dev",
+"title": "Awesome AI Agents",
+"url": "https://github.com/e2b-dev/awesome-ai-agents",
+"group": "agents"
+},
+{
+"month": "September 2024",
+"cat": "Climate AI",
+"author": "Climactic",
+"title": "Climate AI Market *",
+"url": "https://www.climactic.vc/climate-ai-market",
+"group": "other"
+},
+{
+"month": "September 2024",
+"cat": "Health AI",
+"author": "IVP",
+"title": "Health AI 35: What to know, who to watch",
+"url": "https://www.ivp.com/content/health-ai-35-what-to-know-who-to-watch/",
+"group": "other"
+},
+{
+"month": "September 2024",
+"cat": "Health AI",
+"author": "Flare Capital Partners",
+"title": "Where do Healthcare Budgets Match AI Hype? A 10-Year Lookback of Funding Data",
+"url": "https://flarecapitalpartners.medium.com/where-do-healthcare-budgets-match-ai-hype-a-10-year-lookback-of-funding-data-783d52010e29#6103",
+"group": "other"
+},
+{
+"month": "September 2024",
+"cat": "Robotics",
+"author": "MMC",
+"title": "Robotics: Featuring the transformers",
+"url": "https://mmc.vc/research/robotics-featuring-the-transformers/",
+"group": "physical"
+},
+{
+"month": "September 2024",
+"cat": "Vertical AI",
+"author": "IVP",
+"title": "The Value of Vertical AI",
+"url": "https://www.ivp.com/content/the-value-of-vertical-ai/",
+"group": "vertical"
+},
+{
+"month": "September 2024",
+"cat": "Voice AI",
+"author": "Lightspeed",
+"title": "The Future of Voice: Our Thoughts On How It Will Transform Conversational AI",
+"url": "https://lsvp.com/stories/the-future-of-voice-our-thoughts-on-how-it-will-transform-conversational-ai/",
+"group": "genai"
+},
+{
+"month": "September 2024",
+"cat": "AI Everything Else",
+"author": "American Family Ventures",
+"title": "The 2024 Home Services Market Map",
+"url": "https://www.amfamventures.com/news/the-2024-home-services-market-map/",
+"group": "other"
+},
+{
+"month": "September 2024",
+"cat": "AI Everything Else",
+"author": "CACV Central",
+"title": "Mapping the Growth of AI in Canada Through Investment",
+"url": "https://central.cvca.ca/mapping-the-growth-of-ai-in-canada-through-investment",
+"group": "other"
+},
+{
+"month": "August 2024",
+"cat": "Enterprise AI",
+"author": "Lisa Han & Nnamdi Iregbulem — Lightspeed",
+"title": "AI Enterprise Market Map: Cutting through the hype",
+"url": "https://lsvp.com/stories/ai-enterprise-market-map-cutting-through-the-hype/",
+"group": "enterprise"
+},
+{
+"month": "August 2024",
+"cat": "Open Source AI",
+"author": "Synaptic",
+"title": "Open Source AI: A Fast Forward",
+"url": "https://synaptic.com/resources/open-source-ai-2024",
+"group": "genai"
+},
+{
+"month": "August 2024",
+"cat": "AI Security",
+"author": "Software Analyst Cyber Research",
+"title": "Deep Dive Into The Security for AI Ecosystem",
+"url": "https://softwareanalyst.substack.com/p/deep-dive-into-the-security-for-ai",
+"group": "security"
+},
+{
+"month": "August 2024",
+"cat": "AI Everything Else",
+"author": "New Economies",
+"title": "AI Unicorns Landscape",
+"url": "https://www.neweconomies.co/i/147601422/meet-the-ai-unicorns",
+"group": "other"
+},
+{
+"month": "August 2024",
+"cat": "AI Everything Else",
+"author": "Bessemer",
+"title": "The Rise of Cloud AI in India 2024",
+"url": "https://www.bvp.com/atlas/the-rise-of-cloud-ai-in-india-2024",
+"group": "other"
+},
+{
+"month": "July 2024",
+"cat": "GenAI",
+"author": "Ollie Forsyth — New Economies",
+"title": "The 2024 landscape across enterprise and vertical platforms. Generative AI + AI Agents Market Maps",
+"url": "https://www.neweconomies.co/p/generative-ai",
+"group": "genai"
+},
+{
+"month": "July 2024",
+"cat": "GenAI",
+"author": "AWS Marketplace",
+"title": "Generative AI partner offerings in AWS Marketplace: Core & Infrastructure Software",
+"url": "https://aws.amazon.com/blogs/awsmarketplace/generative-ai-partner-offerings-in-aws-marketplace-core-infrastructure-software/",
+"group": "genai"
+},
+{
+"month": "July 2024",
+"cat": "Robotics",
+"author": "Coatue",
+"title": "Robotics won't have a ChatGPT Moment",
+"url": "https://www.coatue.com/blog/perspective/robotics-wont-have-a-chatgpt-moment",
+"group": "physical"
+},
+{
+"month": "July 2024",
+"cat": "AI Security",
+"author": "Geodesic Capital",
+"title": "Cybersecurity in an AI-First World",
+"url": "https://geodesiccap.com/insight/cybersecurity-in-an-ai-first-world/",
+"group": "security"
+},
+{
+"month": "July 2024",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "\"Death of a Salesforce\": Why AI Will Transform the Next Generation of Sales Tech",
+"url": "https://a16z.com/ai-transforms-sales/",
+"group": "other"
+},
+{
+"month": "July 2024",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "New a16z investment thesis: AI scribes",
+"url": "https://x.com/omooretweets/status/1812878684182942144",
+"group": "other"
+},
+{
+"month": "July 2024",
+"cat": "AI Everything Else",
+"author": "Hardware FYI",
+"title": "Manufacturing Deep-Tech Market Map",
+"url": "https://hardwarefyi.substack.com/p/the-analog-89-apple-vision-pro-suppliers",
+"group": "other"
+},
+{
+"month": "June 2024",
+"cat": "AI Agents",
+"author": "Ollie Forsyth — New Economies",
+"title": "AI Agents: The ultimate market map",
+"url": "https://www.neweconomies.co/p/ai-agents-part-i",
+"group": "agents"
+},
+{
+"month": "June 2024",
+"cat": "AI Data",
+"author": "Madrona",
+"title": "The Rise of AI Agent Infrastructure",
+"url": "https://www.madrona.com/the-rise-of-ai-agent-infrastructure/",
+"group": "data"
+},
+{
+"month": "June 2024",
+"cat": "AI Data",
+"author": "Felicis Ventures",
+"title": "The rise of AI data infrastructure",
+"url": "https://www.felicis.com/insight/ai-data-infrastructure",
+"group": "data"
+},
+{
+"month": "June 2024",
+"cat": "AI DevTools",
+"author": "Blumberg Capital",
+"title": "Mapping the AI Toolchain – 2024 Perspective",
+"url": "https://blumbergcapital.com/news-insights/mapping-the-ai-toolchain-2024-perspective/",
+"group": "devtools"
+},
+{
+"month": "June 2024",
+"cat": "Enterprise AI",
+"author": "IVP",
+"title": "The IVP Enterprise AI 55: 2024 Edition",
+"url": "https://www.ivp.com/content/the-ivp-enterprise-ai-55-2024/",
+"group": "enterprise"
+},
+{
+"month": "June 2024",
+"cat": "Horizontal AI",
+"author": "PitchBook",
+"title": "Market Map: Mega-deals dominate AI's horizontal platform startups",
+"url": "https://pitchbook.com/news/articles/market-map-ai-ml-horizontal-platforms-2024",
+"group": "other"
+},
+{
+"month": "June 2024",
+"cat": "AI Infrastructure",
+"author": "Bessemer",
+"title": "Roadmap: AI Infrastructure",
+"url": "https://www.bvp.com/atlas/roadmap-ai-infrastructure",
+"group": "infra"
+},
+{
+"month": "June 2024",
+"cat": "Legaltech AI",
+"author": "Battery Ventures",
+"title": "The New Code of Law: How AI Will Revolutionize the Legal Sector",
+"url": "https://www.battery.com/blog/the-new-code-of-law/",
+"group": "vertical"
+},
+{
+"month": "June 2024",
+"cat": "Legaltech AI",
+"author": "The LegalTech Fund",
+"title": "Early-Stage Legaltech Generative AI Market Map",
+"url": "https://www.legaltech.com/post/early-stage-legaltech-generative-ai-market-map-june-2024",
+"group": "vertical"
+},
+{
+"month": "June 2024",
+"cat": "AI Security",
+"author": "Deutsche Telekom Israel",
+"title": "Global GenAI Cyber Security Market Map",
+"url": "https://www.dtisrael.com/genaisecurity",
+"group": "security"
+},
+{
+"month": "June 2024",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "Death, Taxes, and AI: How Generative AI Will Change Accounting",
+"url": "https://a16z.com/generative-ai-in-accounting/",
+"group": "other"
+},
+{
+"month": "June 2024",
+"cat": "AI Everything Else",
+"author": "a16z",
+"title": "Say Hello to My New AI Marketer: How Gen AI-Based Software Is Advancing Marketing and Sales",
+"url": "https://a16z.com/ai-marketer-how-gen-ai-based-software-is-advancing-marketing-and-sales/",
+"group": "other"
+},
+{
+"month": "June 2024",
+"cat": "AI Everything Else",
+"author": "The Westly Group",
+"title": "AI for the Power Sector",
+"url": "https://medium.com/@TheWestlyGroup/ai-for-the-power-sector-0aa7365fce82",
+"group": "other"
+},
+{
+"month": "June 2024",
+"cat": "AI Everything Else",
+"author": "Bain & Company",
+"title": "AI Leaders to Watch in 2024 mapped by Bain & Company as numbers of providers and funding continue to burgeon",
+"url": "https://www.bain.com/about/media-center/press-releases/2024/ai-leaders-to-watch-in-2024-mapped-by-bain--company-as-numbers-of-providers-and-funding-continue-to-burgeon/",
+"group": "other"
+},
+{
+"month": "May 2024",
+"cat": "AI Agents",
+"author": "a16z",
+"title": "Hi, AI: Our Thesis On AI Voice Agents",
+"url": "https://x.com/omooretweets/status/1795834644732285402",
+"group": "agents"
+},
+{
+"month": "May 2024",
+"cat": "AI Agents",
+"author": "Insight Partners",
+"title": "AI Agents are disrupting automation: Current approaches, market solutions and recommendations",
+"url": "https://www.insightpartners.com/ideas/ai-agents-disrupting-automation/",
+"group": "agents"
+},
+{
+"month": "May 2024",
+"cat": "AI Agents",
+"author": "Prosus Ventures",
+"title": "The emerging AI AgentOps landscape: a builders' perspective",
+"url": "https://www.prosus.com/news-insights/group-updates/2024/ai-agentops-landscape",
+"group": "agents"
+},
+{
+"month": "May 2024",
+"cat": "Conversational AI",
+"author": "Cobus Greyling",
+"title": "The Conversational AI Technology Landscape: Version 5.0",
+"url": "https://medium.com/@cobusgreyling/the-conversational-ai-technology-landscape-version-5-0-840290d97c7f",
+"group": "agents"
+},
+{
+"month": "May 2024",
+"cat": "AI Data",
+"author": "Activant Capital",
+"title": "Unstructured Data Pipelines",
+"url": "https://activantcapital.com/research/unstructured-data-pipelines",
+"group": "data"
+},
+{
+"month": "May 2024",
+"cat": "AI DevTools",
+"author": "Greylock",
+"title": "Code Smarter, Not Harder",
+"url": "https://greylock.com/greymatter/code-smarter-not-harder/",
+"group": "devtools"
+},
+{
+"month": "May 2024",
+"cat": "AI Infrastructure",
+"author": "Sapphire Ventures",
+"title": "Building the Future: A Deep Dive Into the Generative AI App Infrastructure Stack",
+"url": "https://sapphireventures.com/blog/building-the-future-a-deep-dive-into-the-generative-ai-app-infrastructure-stack/",
+"group": "infra"
+},
+{
+"month": "May 2024",
+"cat": "Robotics",
+"author": "Obvious Ventures",
+"title": "Getting Physical: The New AI Frontier of Robotics",
+"url": "https://obvious.com/ideas/getting-physical-the-new-ai-frontier-of-robotics/",
+"group": "physical"
+},
+{
+"month": "May 2024",
+"cat": "AI Everything Else",
+"author": "Paolo Fornasini — Venture",
+"title": "Top Of The Stack: Mapping Today's AI x PE-tech Landscape",
+"url": "https://medium.com/venturehq/top-of-the-stack-mapping-todays-ai-x-pe-tech-landscape-52d87d7aaa9a",
+"group": "other"
+},
+{
+"month": "May 2024",
+"cat": "AI Everything Else",
+"author": "Reimagine Ventures",
+"title": "The Q2 2024 Israeli Generative AI startup landscape",
+"url": "https://www.remagineventures.com/generative-ai-landscape/",
+"group": "other"
+},
+{
+"month": "May 2024",
+"cat": "AI Everything Else",
+"author": "Kyle Poyar and Palle Broe",
+"title": "How AI apps make money",
+"url": "https://substack.com/home/post/p-144001968",
+"group": "other"
+},
+{
+"month": "April 2024",
+"cat": "Conversational AI",
+"author": "CXO Today",
+"title": "The Top Conversational AI Solutions Vendors in 2024",
+"url": "https://www.cxtoday.com/conversational-ai/the-top-conversational-ai-solutions-vendors-in-2024/",
+"group": "agents"
+},
+{
+"month": "April 2024",
+"cat": "Open Source AI",
+"author": "Alex Irina Sandu",
+"title": "20 Popular Open Source AI Developer Tools",
+"url": "https://alexsandu.substack.com/p/20-popular-open-source-ai-developer",
+"group": "genai"
+},
+{
+"month": "April 2024",
+"cat": "Robotics",
+"author": "Tangram Vision",
+"title": "2024 Perception Industry Market Map",
+"url": "https://www.tangramvision.com/blog/2024-perception-industry-market-map",
+"group": "physical"
+},
+{
+"month": "April 2024",
+"cat": "Top AI",
+"author": "Sequoia",
+"title": "AI 50 2024",
+"url": "https://www.sequoiacap.com/article/ai-50-2024/",
+"group": "top"
+},
+{
+"month": "April 2024",
+"cat": "Top AI",
+"author": "CB Insights",
+"title": "AI 100: The most promising artificial intelligence startups of 2024",
+"url": "https://www.cbinsights.com/research/report/artificial-intelligence-top-startups-2024/",
+"group": "top"
+},
+{
+"month": "April 2024",
+"cat": "AI Everything Else",
+"author": "Sapphire Ventures",
+"title": "\"La French Tech\" – A Tour de Force of Innovation and Growth",
+"url": "https://sapphireventures.com/blog/la-french-tech-a-tour-de-force-of-innovation-and-growth/",
+"group": "other"
+},
+{
+"month": "April 2024",
+"cat": "AI Everything Else",
+"author": "MMC",
+"title": "The Who's Who in Responsible AI",
+"url": "https://mmc.vc/research/the-whos-who-in-responsible-ai/",
+"group": "other"
+},
+{
+"month": "March 2024",
+"cat": "AI Automation",
+"author": "Foundation Capital",
+"title": "Beyond RPA: How LLMs are ushering in a new era of intelligent process automation",
+"url": "https://foundationcapital.com/beyond-rpa-how-llms-are-ushering-in-a-new-era-of-intelligent-process-automation/",
+"group": "agents"
+},
+{
+"month": "March 2024",
+"cat": "AI Infrastructure",
+"author": "Criteria Venture Tech",
+"title": "LLM Infrastructure Stack Market Map",
+"url": "https://aleixperez.substack.com/p/llm-infrastructure-stack-market-landscape",
+"group": "infra"
+},
+{
+"month": "March 2024",
+"cat": "AI Hardware",
+"author": "Activant Capital",
+"title": "Silicon Synapses for AI - AI hardware in data centers and on the edge",
+"url": "https://activantcapital.com/research/ai-hardware",
+"group": "infra"
+},
+{
+"month": "March 2024",
+"cat": "AI Hardware",
+"author": "Alex Huckstepp",
+"title": "\"Software for Hardware\" is Heating Up! The landscape of software solutions for developing and manufacturing hardware is rapidly expanding.",
+"url": "https://medium.com/@alexhuckstepp/software-for-hardware-is-heating-up-8c39979c0eac",
+"group": "infra"
+},
+{
+"month": "March 2024",
+"cat": "AI Security",
+"author": "Creandum",
+"title": "Mastering AI Governance and Security",
+"url": "https://creandum.com/stories/mastering-ai-governance-and-security/",
+"group": "security"
+},
+{
+"month": "March 2024",
+"cat": "AI Everything Else",
+"author": "Matt Turck — Firstmark",
+"title": "Full Steam Ahead: The 2024 MAD (Machine Learning, AI & Data) Landscape",
+"url": "https://mattturck.com/mad2024/",
+"group": "other"
+},
+{
+"month": "February 2024",
+"cat": "AI DevTools",
+"author": "Maverick Ventures",
+"title": "Market Map of LLM Evaluation Startups",
+"url": "https://medium.com/p/what-the-history-of-software-development-tells-us-about-the-hurdles-to-enterprise-adoption-of-llms-c96bc968456d",
+"group": "devtools"
+},
+{
+"month": "February 2024",
+"cat": "Robotics",
+"author": "Sifted.eu",
+"title": "Early Stage European Robotics Market Map",
+"url": "https://sifted.eu/pro/briefings/robotics-2024",
+"group": "physical"
+},
+{
+"month": "February 2024",
+"cat": "AI Security",
+"author": "Menlo Ventures",
+"title": "Security for AI: The New Wave of Startups Racing to Secure the AI Stack",
+"url": "https://menlovc.com/perspective/security-for-ai-genai-risks-and-the-emerging-startup-landscape/",
+"group": "security"
+},
+{
+"month": "January 2024",
+"cat": "AI Data Engineering",
+"author": "Alireza Sadeghi — pracdata.io",
+"title": "2024 Open Source Data Engineering Landscape",
+"url": "https://www.pracdata.io/p/open-source-data-engineering-landscape",
+"group": "other"
+},
+{
+"month": "January 2024",
+"cat": "Open Source AI",
+"author": "Synaptic",
+"title": "Free Weights: Open Source AI",
+"url": "https://synaptic.com/resources/free-weights-open-source-ai",
+"group": "genai"
+},
+{
+"month": "January 2024",
+"cat": "Vertical AI",
+"author": "Kwesi Acquay — Scaling Verticals",
+"title": "Is 2024 Vertical AI's breakout year?",
+"url": "https://scalingverticals.substack.com/p/is-2024-vertical-ais-breakout-year",
+"group": "vertical"
+}
+]
+}
