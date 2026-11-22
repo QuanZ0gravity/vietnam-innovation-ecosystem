@@ -64,3 +64,9 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - `/du-lieu/`: tải CSV toàn bộ (`data/actors.csv`), JSON, GeoJSON; bảng chất lượng dữ liệu theo địa phương (tỷ lệ có logo, mô tả, website, LinkedIn, lĩnh vực, vị trí, đã xác minh); đường dẫn mô hình dữ liệu, schema, giấy phép, lịch sử thay đổi.
 - `/gioi-thieu/`, `/gioi-thieu/phuong-phap/`, `/gioi-thieu/dong-gop/`.
 - Sitemap thêm các tệp `sitemap-linh-vuc.xml`, `sitemap-co-hoi.xml`, `sitemap-chinh-sach.xml`.
+
+## Trang địa phương – sắp xếp lại (22/11/2026)
+
+- Mục Danh bạ: thay các cột danh sách chữ dài bằng thẻ phân nhóm (Startup, Quỹ, Vườn ươm và hỗ trợ, Trường và viện, Doanh nghiệp, Chuyên gia, Cơ quan và đối tác) kèm số lượng; mỗi nhóm hiện 12 hồ sơ dạng thẻ đồng cỡ (logo, tên tối đa 2 dòng, lĩnh vực), ưu tiên hồ sơ đầy đủ, có case study, vòng vốn; nút "Xem tất cả N trong danh bạ" mở danh bạ đã lọc sẵn.
+- Khối "Trong danh bạ mở này" đếm theo đúng các nhóm trên (trước đây thiếu viện, tổ chức KH&CN).
+- Mục Sự kiện: chỉ hiện tối đa 6 sự kiện sắp tới và 4 sự kiện gần đây (trước đây hiện toàn bộ, trang dài gần 10.000 px); lịch tháng vẫn đánh dấu đủ mọi sự kiện.

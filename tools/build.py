@@ -855,6 +855,35 @@ if BENCH:
             items = "".join(f'<li><a href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 22)}{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
             more = f'<p class="small"><a href="{dir_link(type=t, region=",".join(regs))}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p>' if len(xs) > n else ""
             return f'<ul class="list-plain alumni">{items}</ul>{more}'
+        DIR_GROUPS = [("startup", "Startup", "Startups", ["startup"]),
+                      ("quy", "Quỹ, nhà đầu tư", "Funds, investors", ["fund"]),
+                      ("ho-tro", "Vườn ươm, hỗ trợ", "Incubators, support", ["incubator", "accelerator", "space", "support_org", "community"]),
+                      ("truong-vien", "Trường, viện", "Universities, research", ["university", "research"]),
+                      ("doanh-nghiep", "Doanh nghiệp", "Companies", ["company", "creator"]),
+                      ("chuyen-gia", "Chuyên gia", "Experts", ["expert"]),
+                      ("co-quan", "Cơ quan, đối tác", "Government, partners", ["government", "international", "media"])]
+        SEC_VI = {s[0]: s[1] for s in SECTORS}
+        def dcard(a):
+            sub = (SEC_VI.get((a.get("sectors") or [""])[0]) if a.get("sectors") else None) or ((a.get("categories") or [None])[0]) or VIE_TYPE.get(a["type"], "")
+            return (f'<a class="dc" href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 44)}<span class="dc-t"><span class="dc-n">{e(a["name"]["vi"])}</span>'
+                    f'<span class="dc-s">{e(sub)}</span></span></a>')
+        tabs, panes = "", ""
+        first = True
+        for gid, gvi, gen, types in DIR_GROUPS:
+            xs = sorted([a for a in acts if a["type"] in types and a.get("status") != "inactive"],
+                        key=lambda a: (-(richness(a) + (3 if a.get("logo") else 0) + (5 if a.get("case_studies") or a.get("funding_rounds") else 0)), a["name"]["vi"].lower()))
+            if not xs: continue
+            tabs += (f'<button type="button" role="tab" class="dt{" on" if first else ""}" data-p="{gid}" aria-selected="{"true" if first else "false"}">'
+                     f'<span data-vi="{e(gvi)}" data-en="{e(gen)}">{e(gvi)}</span><b>{len(xs)}</b></button>')
+            more = (f'<a class="btn ghost" href="{dir_link(type=",".join(types), region=",".join(regs))}" data-vi="Xem tất cả {len(xs)} trong danh bạ →" data-en="See all {len(xs)} in the directory →">Xem tất cả {len(xs)} trong danh bạ →</a>')
+            panes += (f'<div class="dpane" data-p="{gid}"{"" if first else " hidden"}><div class="dgrid">{"".join(dcard(a) for a in xs[:12])}</div>'
+                      f'<p class="dmore">{more}</p></div>')
+            first = False
+        ours2 = [kpi("Tổng số hồ sơ", "Profiles", str(len(acts)))] + [kpi(gvi, gen, str(sum(1 for a in acts if a["type"] in types))) for gid, gvi, gen, types in DIR_GROUPS if any(a["type"] in types for a in acts)]
+        dir_html = (f'<div class="dtabs" role="tablist">{tabs}</div>{panes}'
+                    '<script>document.addEventListener("DOMContentLoaded",function(){var ts=document.querySelectorAll(".dtabs .dt"),ps=document.querySelectorAll(".dpane");'
+                    'ts.forEach(function(t){t.onclick=function(){ts.forEach(function(x){x.classList.toggle("on",x===t);x.setAttribute("aria-selected",x===t)});'
+                    'ps.forEach(function(p){p.hidden=p.dataset.p!==t.dataset.p});};});});</script>')
         copps = sorted([o for o in opps if o["_region"] in regs], key=lambda o: opp_key_date(o), reverse=True)
         opp_html = "".join(opp_card(o, compact=True) for o in copps[:6]) or '<p class="muted small" data-vi="Chưa có cơ hội nào." data-en="No opportunities yet.">Chưa có cơ hội nào.</p>'
         corp = ", ".join(e(x) for x in c.get("corporations") or []) or "–"
@@ -866,7 +895,7 @@ if BENCH:
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#su-kien" data-vi="Sự kiện" data-en="Events">Sự kiện</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(c.get("insights"))}
-<h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
+<h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours2)}</div></section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
 <h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>
 {rank_chart([(c["name"], c.get("global_rank_by_year") or {})], title="Hạng thế giới theo năm")}
@@ -876,11 +905,7 @@ if BENCH:
 </section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật" data-en="Top industries">Ngành nổi bật</h2>{ind_table(c.get("industries"))}
 <p class="small" style="margin-top:12px"><span class="muted" data-vi="Doanh nghiệp lớn tích cực làm việc với startup:" data-en="Corporations active with startups:">Doanh nghiệp lớn tích cực làm việc với startup:</span> {corp}</p></section>
-<section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>
-<div class="cols2"><div><h3 data-vi="Startup" data-en="Startups">Startup</h3>{lst("startup")}</div>
-<div><h3 data-vi="Quỹ, nhà đầu tư" data-en="Funds, investors">Quỹ, nhà đầu tư</h3>{lst("fund", 12)}
-<h3 style="margin-top:20px" data-vi="Tổ chức hỗ trợ" data-en="Support organisations">Tổ chức hỗ trợ</h3>{lst("support_org", 12)}{lst("incubator", 12) if tc["incubator"] else ""}
-<h3 style="margin-top:20px" data-vi="Trường, viện" data-en="Universities">Trường, viện</h3>{lst("university", 12)}</div></div></section>
+<section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>{dir_html}</section>
 <section id="ban-do" class="sec"><h2 data-vi="Bản đồ" data-en="Map">Bản đồ</h2><div class="mapbox" id="citymap" data-ids="{",".join(a["id"] for a in acts)}"></div><p class="small muted" id="citymapnote" style="margin-top:8px"></p>
 <p class="small"><a href="{dir_link(region=",".join(regs), view="map")}" data-vi="Mở bản đồ trong danh bạ để lọc thêm" data-en="Open the map in the directory to filter further">Mở bản đồ trong danh bạ để lọc thêm</a></p></section>
 <section id="su-kien" class="sec"><h2 data-vi="Sự kiện" data-en="Events">Sự kiện</h2>{city_events_html(regs)}</section>
@@ -1773,14 +1798,20 @@ for _f in glob.glob(os.path.join(OUT, "thanh-pho", "*", "index.html")):
     _m = _re.search(r"<!--CITY_EVENTS:([^>]*)-->", _h)
     if not _m: continue
     _regs = _m.group(1).split(",")
-    _evs = [x for x in events if x["_region"] in _regs]
+    _all = [x for x in events if x["_region"] in _regs]
+    _up = sorted([x for x in _all if x["_state"] in ("upcoming", "live")], key=lambda z: z["_start"])[:6]
+    _past = sorted([x for x in _all if x["_state"] == "past"], key=lambda z: z["_start"], reverse=True)[:4]
+    _evs = _up + _past
     if not _evs:
         _rep = '<p class="muted small" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
     else:
-        _rep = (f'<div class="ev-layout city-ev"><div class="ev-main">{ev_timeline(_evs, newest_first=True)}'
-                f'<p class="small" style="margin-top:14px"><a href="{SITE_ROOT}su-kien/" data-vi="Tất cả sự kiện" data-en="All events">Tất cả sự kiện</a></p></div>'
+        _rep = (f'<div class="ev-layout city-ev"><div class="ev-main">'
+                + (f'<h3 class="ev-sub">Sắp tới</h3>{ev_timeline(_up)}' if _up else "")
+                + (f'<h3 class="ev-sub">Gần đây</h3>{ev_timeline(_past, newest_first=True)}' if _past else "")
+                + f'<p class="small muted">{len(_all)} sự kiện của địa phương trên bản đồ.</p>'
+                f'<p class="small" style="margin-top:6px"><a class="btn ghost" href="{SITE_ROOT}su-kien/" data-vi="Xem tất cả sự kiện →" data-en="All events →">Xem tất cả sự kiện →</a></p></div>'
                 f'<aside class="ev-aside"><div class="evcal" id="evcal"></div><p class="small muted" style="margin-top:10px" data-vi="Chọn ngày có chấm để xem sự kiện." data-en="Pick a dotted day.">Chọn ngày có chấm để xem sự kiện.</p></aside></div>'
-                f'<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{_days_for(_evs)},"{TODAY}");}});</script>')
+                f'<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{_days_for(_all)},"{TODAY}");}});</script>')
     open(_f, "w", encoding="utf-8").write(_h.replace(_m.group(0), _rep))
 
 # ---------- 404, sitemap, robots ----------
