@@ -78,32 +78,42 @@ country:
     2024: 44
     2025: 25
   insights:
-  - text: Tăng 5 bậc lên hạng 50 thế giới, vị trí cao nhất từ khi có bảng xếp hạng; giữ hạng 5 Đông Nam Á và hạng 10 châu Á.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hệ sinh thái tăng trưởng 67,9% trong năm, cao nhất Đông Nam Á và cao hơn nhiều mức trung bình thế giới 17,5%.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 52/125 về môi trường kinh doanh, sát với hạng hệ sinh thái; cải thiện môi trường kinh doanh có thể mở thêm dư địa tăng trưởng.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 2 Đông Nam Á về giá trị thương hiệu hệ sinh thái và hạng 6 châu Á – Thái Bình Dương về hoạt động cộng đồng khởi nghiệp, cao hơn vị trí chung.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Cấu trúc hai trung tâm: điểm của TP.HCM chỉ gấp 1,2 lần Hà Nội. Có 4 thành phố trong top 1.000, thêm Hải Phòng.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Ngành mạnh nhất là Fintech: hạng 39 thế giới, hạng 9 châu Á – Thái Bình Dương.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Mốc chính sách: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), NIC (2019), Nghị định 264 (2025) lần đầu tạo khung pháp lý cho quỹ đầu tư mạo hiểm quốc gia và địa phương.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Chỉ số Đổi mới sáng tạo toàn cầu (GII) 2025: Việt Nam hạng 44/139 nền kinh tế, hạng 2 trong nhóm thu nhập trung bình thấp (sau Ấn Độ). Đầu ra đổi mới sáng tạo (hạng 37) tốt hơn đầu vào (hạng 50).'
-    source: WIPO, Global Innovation Index 2025
-  - text: 'Việt Nam và Ấn Độ là hai nền kinh tế "vượt kỳ vọng" lâu nhất: 15 năm liên tiếp (2011–2025) đạt kết quả cao hơn mức tương ứng với trình độ phát triển, vượt chuẩn nhóm thu nhập ở cả 7 trụ cột.'
-    source: WIPO, Global Innovation Index 2025
-  - text: Mạnh nhất ở Sản phẩm sáng tạo (hạng 34), Sản phẩm tri thức và công nghệ (39), Trình độ thị trường (43); yếu hơn ở Nguồn nhân lực và nghiên cứu (70), Thể chế (59), Hạ tầng (56).
-    source: WIPO, Global Innovation Index 2025
-  - text: Thuộc nhóm dẫn đầu thế giới về xuất khẩu công nghệ cao; trong ASEAN, Việt Nam tăng nhanh nhất về xuất khẩu, sản xuất công nghệ cao và công bố khoa học giai đoạn 2015–2024.
-    source: WIPO, Global Innovation Index 2025
-  - text: Năng suất lao động tăng 5,4%/năm giai đoạn 2014–2024, nhanh thứ hai thế giới sau Trung Quốc; số xe điện tăng hơn 100% năm 2024, đạt 4,6 xe điện trên 100 xe.
-    source: WIPO, Global Innovation Index 2025
-  - text: Chưa có cụm khoa học và công nghệ nào của Việt Nam (kể cả TP.HCM, Hà Nội) trong danh sách 100 cụm đổi mới sáng tạo hàng đầu thế giới.
-    source: WIPO, Global Innovation Index 2025
+  - theme: Xếp hạng
+    text: Hạng 50 thế giới về hệ sinh thái khởi nghiệp (tăng 5 bậc, cao nhất từ trước tới nay), hạng 5 Đông Nam Á; tăng trưởng 67,9% trong năm, nhanh nhất Đông Nam Á.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Xếp hạng
+    text: Hạng 44/139 về Chỉ số Đổi mới sáng tạo toàn cầu, hạng 2 nhóm thu nhập trung bình thấp; 15 năm liên tiếp (2011–2025) đạt kết quả vượt mức tương ứng với trình độ phát triển.
+    sources:
+    - WIPO GII 2025
+    source: WIPO GII 2025
+  - theme: Thế mạnh, điểm yếu
+    text: 'Đầu ra đổi mới sáng tạo (hạng 37) tốt hơn đầu vào (hạng 50): mạnh ở sản phẩm sáng tạo, tri thức và công nghệ, xuất khẩu công nghệ cao; yếu ở nguồn nhân lực và nghiên cứu (70), thể chế (59), hạ tầng (56). Môi trường kinh doanh hạng 52/125.'
+    sources:
+    - WIPO GII 2025
+    - StartupBlink 2026
+    source: WIPO GII 2025
+  - theme: Thế mạnh, điểm yếu
+    text: Năng suất lao động tăng 5,4%/năm (2014–2024), nhanh thứ hai thế giới; nhưng chưa có cụm khoa học và công nghệ nào trong top 100 thế giới.
+    sources:
+    - WIPO GII 2025
+    source: WIPO GII 2025
+  - theme: Cấu trúc hệ sinh thái
+    text: 'Hai trung tâm cân bằng: điểm của TP.HCM chỉ gấp 1,2 lần Hà Nội; 4 thành phố trong top 1.000 (thêm Đà Nẵng, Hải Phòng). Ngành mạnh nhất là Fintech, hạng 39 thế giới.'
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vốn đầu tư
+    text: 'Năm 2025: vốn đầu tư mạo hiểm 509 triệu USD (tăng 28%), vốn cổ phần tư nhân 3,96 tỷ USD (kỷ lục); mắt xích còn thiếu là IPO của công ty công nghệ được VC/PE hậu thuẫn.'
+    sources:
+    - VPCA 2026
+    source: VPCA 2026
+  - theme: Chính sách
+    text: 'Các mốc khung pháp lý: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), thành lập NIC (2019), Nghị định 264/2025 lần đầu cho phép quỹ đầu tư mạo hiểm có vốn nhà nước ở trung ương và địa phương.'
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
   report_metrics:
     ecosystem_value_usd: 75100000000
     unicorns: 3
@@ -200,36 +210,38 @@ cities:
     2024: 31
     2025: 18
   insights:
-  - text: Tăng 12 bậc lên hạng 98, lần đầu vào top 100 thế giới; giữ hạng 5 Đông Nam Á.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Dẫn đầu Đông Nam Á về độ trưởng thành của hệ sinh thái (nhóm chỉ số Ecosystem Maturity), nhờ thành tích startup đã đạt được.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Fintech hạng 3 Đông Nam Á, hạng 60 thế giới; Blockchain hạng 5 Đông Nam Á, hạng 70 thế giới.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nơi có MoMo, Sky Mavis và Tiki. Sở KH&CN quản lý SIHUB, BSSC và đồng tổ chức InnoEx.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nền tảng HOIP của Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB) có 200 hồ sơ startup, khoảng 40 chuyên gia, 11 nhà đầu tư và 45 vườn ươm, tổ chức hỗ trợ.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: 82 trong 200 startup trên HOIP (41%) thành lập năm 2025, cho thấy nhiều hồ sơ còn ở giai đoạn ý tưởng hoặc mới thành lập.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: 'Lĩnh vực nhiều startup nhất trên HOIP: phần mềm, CNTT (68); dịch vụ (25); thực phẩm, nông lâm nghiệp (24); chế biến, chế tạo (19).'
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: Thành phố hỗ trợ startup theo cơ chế đặc thù của Nghị quyết 20/2024/NQ-HĐND, ví dụ chương trình Fintech 2025 với gói ươm tạo tới 400 triệu đồng mỗi dự án và chương trình ươm tạo qua cuộc thi Startup Wheel cùng BSSC.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: TP.HCM chiếm khoảng 50% số startup, 40% cơ sở ươm tạo và hỗ trợ khởi nghiệp, 44% vốn đầu tư và 60% số thương vụ của cả nước.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Giá trị hệ sinh thái khoảng 7,5 tỷ USD (Startup Genome 2024); vốn đầu tư mạo hiểm khoảng 260 triệu USD qua 77 thương vụ (Do Ventures tổng hợp); khoảng 100 quỹ đầu tư hoạt động (Báo cáo đầu tư sáng tạo Việt Nam 2025).
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Ngày 17/4/2026, thành phố công bố Quỹ Đầu tư mạo hiểm TP.HCM, quỹ có vốn nhà nước đóng vai trò vốn mồi để đồng đầu tư cùng quỹ tư nhân.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Giai đoạn 2024–2025, Nghị quyết 20/2023/NQ-HĐND hỗ trợ 179 dự án qua 35 nhiệm vụ, tổng kinh phí hơn 18,3 tỷ đồng. Dự thảo chính sách mới (7/2026) đề xuất hỗ trợ không hoàn lại tới 50 triệu đồng (tiền ươm tạo), 100 triệu đồng (ươm tạo) và 500 triệu đồng (tăng tốc) mỗi dự án, qua tổ chức trung gian.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Tòa nhà SIHUB tại 123 Trương Định khánh thành tháng 8/2025; SIHUB hợp tác với Plug and Play từ 5/2026 và có mạng lưới đối tác gồm 13 trường đại học, 2 khu công nghệ Hàn Quốc.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Dữ liệu mở của Sở KH&CN ghi nhận 139 doanh nghiệp khoa học và công nghệ và khoảng 460 tổ chức khoa học và công nghệ (viện, trung tâm nghiên cứu) tại TP.HCM.
-    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
-  - text: '732 nhiệm vụ, đề tài, đề án KH&CN của thành phố; nhiều nhất là khoa học xã hội và nhân văn (405) và công nghệ sinh học (152). Đơn vị chủ trì nhiều nhất: Trung tâm Công nghệ Sinh học Thành phố Hồ Chí Minh, Viện Nghiên cứu phát triển Thành phố Hồ Chí Minh, Trường Đại học Bách khoa Thành phố Hồ Chí Minh, Viện Sinh học Nhiệt đới.'
-    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
+  - theme: Xếp hạng
+    text: Hạng 98 thế giới (tăng 12 bậc), lần đầu vào top 100; dẫn đầu Đông Nam Á về độ trưởng thành của hệ sinh thái. Fintech hạng 60 thế giới (hạng 3 Đông Nam Á), Blockchain hạng 70.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vị thế
+    text: Chiếm khoảng 50% số startup, 40% cơ sở ươm tạo và hỗ trợ, 44% vốn đầu tư và 60% số thương vụ của cả nước; nơi có MoMo, Sky Mavis, Tiki.
+    sources:
+    - SIHUB
+    - StartupBlink 2026
+    source: SIHUB
+  - theme: Vốn đầu tư
+    text: Giá trị hệ sinh thái khoảng 7,5 tỷ USD; vốn đầu tư mạo hiểm khoảng 260 triệu USD qua 77 thương vụ; khoảng 100 quỹ đang hoạt động. Ngày 17/4/2026 công bố Quỹ Đầu tư mạo hiểm TP.HCM có vốn nhà nước, làm vốn mồi đồng đầu tư cùng quỹ tư nhân.
+    sources:
+    - SIHUB
+    source: SIHUB
+  - theme: Mạng lưới hỗ trợ
+    text: SIHUB là đầu mối (tòa nhà mới 8/2025, hợp tác Plug and Play từ 5/2026), cùng BSSC và InnoEx. Nền tảng HOIP có 240 startup, 60 vườn ươm và tổ chức hỗ trợ, 40 chuyên gia; 41% startup trên HOIP mới thành lập năm 2025.
+    sources:
+    - SIHUB
+    - HOIP
+    source: SIHUB
+  - theme: Năng lực KH&CN
+    text: 139 doanh nghiệp khoa học và công nghệ, khoảng 460 tổ chức KH&CN; 732 nhiệm vụ KH&CN cấp thành phố, đơn vị chủ trì nhiều nhất là Trung tâm Công nghệ Sinh học, Viện Nghiên cứu phát triển, Trường ĐH Bách khoa.
+    sources:
+    - Dữ liệu mở TP.HCM
+    source: Dữ liệu mở TP.HCM
+  - theme: Chính sách
+    text: Nghị quyết 20/2023/NQ-HĐND hỗ trợ 179 dự án với hơn 18,3 tỷ đồng (2024–2025); dự thảo chính sách mới (7/2026) đề xuất hỗ trợ không hoàn lại tới 50, 100 và 500 triệu đồng mỗi dự án cho tiền ươm tạo, ươm tạo, tăng tốc.
+    sources:
+    - SIHUB
+    source: SIHUB
 - id: ha-noi
   name: Hà Nội
   url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
@@ -306,12 +318,17 @@ cities:
     2024: 11
     2025: 4
   insights:
-  - text: Tăng 30 bậc lên hạng 118 thế giới, hạng 6 Đông Nam Á, tăng trưởng 48,6%.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 4 Đông Nam Á về hiệu quả đầu tư hệ sinh thái (Ecosystem Returns), cao hơn vị trí chung.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nơi đặt NIC và NSSC, hai đầu mối quốc gia về đổi mới sáng tạo và khởi nghiệp.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - theme: Xếp hạng
+    text: Hạng 118 thế giới (tăng 30 bậc), hạng 6 Đông Nam Á, tăng trưởng 48,6%; hạng 4 Đông Nam Á về hiệu quả đầu tư của hệ sinh thái.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vai trò quốc gia
+    text: Nơi đặt NIC và NSSC, hai đầu mối quốc gia về đổi mới sáng tạo và khởi nghiệp; tổ chức các sự kiện quốc gia thường niên như TECHFEST Việt Nam và Ngày Đổi mới sáng tạo Việt Nam.
+    sources:
+    - StartupBlink 2026
+    - Bản đồ hệ sinh thái
+    source: StartupBlink 2026
 - id: da-nang
   name: Đà Nẵng
   url: https://www.startupblink.com/startup-ecosystem/da-nang-vn
@@ -452,9 +469,13 @@ cities:
     2024: 0
     2025: 0
   insights:
-  - text: Lần đầu vào top 1.000 thế giới, hạng 765.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Startup Haiphong là đầu mối điều phối khởi nghiệp, định vị thành phố là trung tâm bổ trợ cho Hà Nội và TP.HCM; thành phố đặt mục tiêu làm nơi thử nghiệm (sandbox) cho giải pháp công nghệ mới.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: VinFast, đặt nhà máy tại Hải Phòng, là thương vụ thoái vốn trên 1 tỷ USD của thành phố.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - theme: Xếp hạng
+    text: Lần đầu vào top 1.000 thế giới, hạng 765.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Định vị
+    text: Startup Haiphong điều phối hệ sinh thái, định vị thành phố là trung tâm bổ trợ cho Hà Nội và TP.HCM, nơi thử nghiệm (sandbox) giải pháp công nghệ mới; VinFast (nhà máy tại Hải Phòng) là thương vụ thoái vốn trên 1 tỷ USD.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
