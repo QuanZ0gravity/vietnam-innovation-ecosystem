@@ -1,0 +1,15 @@
+id: startup-paradise-tycoon
+name:
+  vi: Paradise Tycoon
+type: startup
+sectors:
+- web3
+- marketing
+description:
+  vi: 'Game Web3 nhiều người chơi miễn phí: xây dựng, chế tạo, cạnh tranh; tài sản NFT. sqrDAO đầu tư vòng seed.'
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

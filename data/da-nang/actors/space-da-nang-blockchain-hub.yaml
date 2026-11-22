@@ -1,0 +1,29 @@
+id: space-da-nang-blockchain-hub
+name:
+  vi: Da Nang Blockchain Hub
+alt_names:
+- DBH
+- Trung tâm Blockchain Đà Nẵng
+type: space
+categories:
+- Không gian Web3, coworking, sự kiện
+- Không phụ thuộc chuỗi (chain-agnostic)
+- Hỗ trợ pháp lý, sandbox
+sectors:
+- web3
+- fintech
+status: active
+website: https://www.danangblockchainhub.com/
+address: Tầng 10, tòa nhà NAPA Riverside, 381 Trần Hưng Đạo, An Hải, Đà Nẵng
+description:
+  vi: 'Không gian Web3 dành cho builder tại miền Trung, chào đón mọi hệ sinh thái blockchain uy tín: đào tạo kiến thức nền (bảo mật, hợp đồng thông minh, account abstraction), không gian làm việc chung và sự kiện, kết nối tư vấn pháp lý và sandbox. Do sqrDAO vận hành; mở thứ Hai đến thứ Sáu, 9:00–18:00.'
+history:
+- date: 2026-11
+  text: 'Tài trợ theo năm từ đối tác: Premium Partner 300 USD/tháng (Pharos Network, Superteam Vietnam, Avalanche Team1, DiiD), Ecosystem Partner 100 USD/tháng (Swiss EP Vietnam, 9AM Games, Punkga.me); đối tác chiến lược sqrDAO, NAPA Global, DNIC.'
+  source: https://www.danangblockchainhub.com/
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- danangblockchainhub.com (22/11/2026)
+source_url: https://www.danangblockchainhub.com/

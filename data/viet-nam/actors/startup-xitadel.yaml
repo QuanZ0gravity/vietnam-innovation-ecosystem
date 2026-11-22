@@ -1,0 +1,15 @@
+id: startup-xitadel
+name:
+  vi: Xitadel
+type: startup
+sectors:
+- web3
+- fintech
+description:
+  vi: 'Giao thức trái phiếu Web3: dự án sau TGE huy động vốn không cần bán token; nhà đầu tư nhận lợi suất cố định. sqrDAO đầu tư pre-seed.'
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

@@ -1,17 +1,41 @@
 id: support-org-sqrdao-da-nang-blockchain-hub
 name:
-  vi: sqrDAO / Da Nang Blockchain Hub
-type: support_org
+  vi: sqrDAO
+alt_names:
+- sqrDAO / Da Nang Blockchain Hub
+- sqrDAO Vietnam
+type: community
 categories:
-- Cộng đồng builder
+- Cộng đồng builder Web3
+- Chương trình tăng tốc (sqrBUIDL)
+- Đầu tư giai đoạn sớm
+- Hạ tầng node xác thực (sqrNODE)
+- AI agent (sqrAI)
+sectors:
+- web3
+- ai
+status: active
 website: https://www.sqrdao.com/
 linkedin: https://www.linkedin.com/company/sqrdao
 description:
-  vi: 'Web3, AI; EMpower Founders Residency (5/2026); chuẩn bị Hub #2 tại Sơn Trà.'
+  vi: Cộng đồng riêng của founder, nhà đầu tư và builder Web3 tại Việt Nam và Đông Nam Á. Vận hành Da Nang Blockchain Hub, Web3 Builders' Summit, chuỗi Web3 Builders' Voice; chương trình tăng tốc sqrBUIDL (BUIDL-athon trên Solana, Lisk), hạ tầng node sqrNODE, mảng AI agent sqrAI; đầu tư pre-seed, seed vào dự án của thành viên.
+leadership:
+- role: Founder
+  name: Castelian
+  source: https://www.sqrdao.com/
+history:
+- date: 2026-11
+  text: 'Quy mô cộng đồng (sqrDAO và Web3 Builders'' Summit): hơn 100 thành viên hoạt động, hơn 4.400 builder tham dự, hơn 300 sự kiện địa phương, hơn 40 đơn vị đồng tổ chức và đối tác, hơn 50 diễn giả và mentor. Thành viên mới được kết nạp qua gặp trực tiếp tại sự kiện.'
+  source: https://www.sqrdao.com/
+- date: 2026-05
+  text: EMpower Founders Residency.
+  source: indanang.vn
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - indanang.vn
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/
 legacy_id: d14

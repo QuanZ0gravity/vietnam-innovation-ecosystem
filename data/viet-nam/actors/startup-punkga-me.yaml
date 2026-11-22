@@ -1,0 +1,16 @@
+id: startup-punkga-me
+name:
+  vi: Punkga.me
+type: startup
+sectors:
+- web3
+- marketing
+website: https://punkga.me/
+description:
+  vi: 'Nền tảng truyện tranh Web3: tác giả xuất bản và kiếm tiền từ tác phẩm qua sở hữu trí tuệ trên chuỗi, NFT.'
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

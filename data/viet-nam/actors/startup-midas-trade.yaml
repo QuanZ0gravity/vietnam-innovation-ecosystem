@@ -1,0 +1,15 @@
+id: startup-midas-trade
+name:
+  vi: Midas.trade
+type: startup
+sectors:
+- web3
+- fintech
+description:
+  vi: '"Superexchange" trên mạng Base giúp tìm và giao dịch tài sản số. sqrDAO đầu tư pre-seed.'
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

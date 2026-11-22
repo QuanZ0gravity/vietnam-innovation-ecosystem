@@ -240,3 +240,20 @@ government-trung-tam-cong-nghe-sinh-hoc-dbc,merged_into,government-trung-tam-doi
 government-dsac,merged_into,government-trung-tam-doi-moi-sang-tao-da-nang,2026,QĐ 4640/QĐ-UBND
 government-trung-tam-doi-moi-sang-tao-da-nang,part_of,government-so-khoa-hoc-va-cong-nghe,2026,QĐ 4640/QĐ-UBND
 startup-smartos,related,startup-enosta,,"enosta.com, smartos.space (cùng địa chỉ 280 Trần Hưng Đạo; Enosta giới thiệu Smartos trên website)"
+space-da-nang-blockchain-hub,part_of,support-org-sqrdao-da-nang-blockchain-hub,,https://www.danangblockchainhub.com/ (sqrDAO vận hành)
+international-napa-global,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+government-trung-tam-doi-moi-sang-tao-da-nang,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-pharos-network,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-superteam-vn,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-avalanche-team1,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+company-diid,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-swiss-ep,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+company-9am-games,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+startup-punkga-me,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-harmonix-finance,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-xitadel,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-paradise-tycoon,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-berally,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-xpet,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-midas-trade,,https://www.sqrdao.com/
+company-diflow,part_of,company-diid,,https://www.danangblockchainhub.com/

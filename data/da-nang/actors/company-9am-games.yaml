@@ -1,0 +1,14 @@
+id: company-9am-games
+name:
+  vi: 9AM Games
+type: company
+sectors:
+- marketing
+description:
+  vi: Studio game di động tại Đà Nẵng, hơn 50 trò chơi, hơn 20 triệu lượt tải.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- danangblockchainhub.com (22/11/2026)
+source_url: https://www.danangblockchainhub.com/

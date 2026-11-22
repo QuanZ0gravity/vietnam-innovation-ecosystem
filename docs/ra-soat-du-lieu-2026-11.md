@@ -250,3 +250,11 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - Theo xác nhận của người điều phối dự án rằng chuyên gia đã đồng ý công khai hồ sơ trên HOIP: tải ảnh đại diện của 40 chuyên gia và nhà đầu tư cá nhân (cắt vuông 160 × 160 px, thư mục `photos/`, không thuộc CC BY), bổ sung phần "Thành tựu, giải thưởng" nguyên văn cho 4 hồ sơ. Trang Quyền riêng tư nêu rõ dữ liệu này và cách yêu cầu gỡ.
 - Email và số điện thoại cá nhân vẫn chưa đưa lên.
+
+## sqrDAO và Da Nang Blockchain Hub (22/11/2026)
+
+- Tách thành hai hồ sơ: sqrDAO (cộng đồng, giữ đường dẫn cũ) và Da Nang Blockchain Hub (không gian, do sqrDAO vận hành), theo sqrdao.com và danangblockchainhub.com.
+- sqrDAO: mô tả các sáng kiến (Hub, Web3 Builders' Summit, Web3 Builders' Voice, sqrBUIDL, sqrNODE, sqrAI), quy mô cộng đồng, người sáng lập (bút danh công khai), danh mục đầu tư 6 dự án (Harmonix, Xitadel, Paradise Tycoon, Midas.trade đang hoạt động; Berally ngừng; xPet đã thoái vốn).
+- Hub: địa chỉ NAPA Riverside, giờ mở cửa, dịch vụ, mức tài trợ đối tác; quan hệ đối tác với NAPA Global, DNIC, Pharos Network, Superteam Vietnam, Avalanche Team1, DiiD, Swiss EP Vietnam, 9AM Games, Punkga.me.
+- Không đưa vào tên, tài khoản cá nhân của đội vận hành ngoài người sáng lập.
+- Mục "Tình hình" Đà Nẵng thêm dòng về DNC-Chain và ngân sách theo Quyết định 2728/QĐ-UBND, theo trang Insights của Hub.
