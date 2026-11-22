@@ -414,3 +414,4 @@ footer.foot .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:spac
 .mm-promo{display:flex;flex-direction:column;gap:4px;padding:16px 18px;margin-bottom:18px;border-radius:14px;background:var(--ink);color:var(--paper);text-decoration:none}
 .mm-promo span{opacity:.85;font-size:.92rem}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:8px 0 0;font-size:.85rem;color:var(--ink-2)}.lg-i{display:inline-flex;align-items:center;gap:6px}.lg-i i{width:14px;height:4px;border-radius:2px;display:inline-block}
+img.person{border-radius:50%!important;object-fit:cover!important;padding:0!important}

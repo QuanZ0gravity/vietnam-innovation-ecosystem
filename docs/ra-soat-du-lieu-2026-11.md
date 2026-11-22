@@ -245,3 +245,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - HOIP có thêm 40 hồ sơ startup (tổng 240), 60 vườn ươm và tổ chức hỗ trợ, 11 nhà đầu tư. Thêm 41 hồ sơ mới (39 startup, FTU Innovation and Incubation Space, Viện Phát triển Doanh nghiệp và Tài năng Việt Nam); các tổ chức đã có được đối chiếu, không tạo trùng.
 - Lưu nguyên văn phần tự giới thiệu cho các hồ sơ HOIP còn thiếu; tải logo từ trang hồ sơ HOIP cho 80 đơn vị (loại ảnh mặc định và ảnh chụp không phải logo). Không tải ảnh chân dung của chuyên gia.
+
+## Ảnh và thành tựu chuyên gia HOIP (22/11/2026)
+
+- Theo xác nhận của người điều phối dự án rằng chuyên gia đã đồng ý công khai hồ sơ trên HOIP: tải ảnh đại diện của 40 chuyên gia và nhà đầu tư cá nhân (cắt vuông 160 × 160 px, thư mục `photos/`, không thuộc CC BY), bổ sung phần "Thành tựu, giải thưởng" nguyên văn cho 4 hồ sơ. Trang Quyền riêng tư nêu rõ dữ liệu này và cách yêu cầu gỡ.
+- Email và số điện thoại cá nhân vẫn chưa đưa lên.

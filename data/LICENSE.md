@@ -19,3 +19,5 @@ thuộc website bên ngoài mà dữ liệu dẫn tới vẫn thuộc chủ sở
 ## Nội dung của bên thứ ba
 
 Trường `description_source` chứa phần tự giới thiệu nguyên văn của tổ chức, cá nhân lấy từ nguồn công khai (ví dụ nền tảng HOIP của TP.HCM), giữ lại để tra cứu và lọc, có ghi nguồn. Nội dung này thuộc tác giả hoặc nguồn gốc của nó và **không** thuộc phạm vi giấy phép CC BY 4.0. Logo cũng vậy (xem `logos/README.md`).
+
+Ảnh chân dung trong thư mục `photos/` thuộc quyền của người trong ảnh, chỉ dùng để nhận diện hồ sơ, không thuộc CC BY 4.0 (xem `photos/README.md`).

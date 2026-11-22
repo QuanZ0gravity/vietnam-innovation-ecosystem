@@ -68,7 +68,7 @@
   }
   function score(a) { return (a.logo ? 4 : 0) + (a.description && a.description.vi ? 3 : 0) + (a.website ? 2 : 0) + (a.linkedin ? 1 : 0) + (3 - VERS.indexOf(a.verification.level)) * 0.5 + (a.status === "inactive" ? -5 : 0); }
   function logo(a, cls) {
-    if (a.logo) { var i = document.createElement("img"); i.className = cls; i.src = VIE.root + a.logo; i.alt = ""; i.loading = "lazy"; i.width = 44; i.height = 44; return i; }
+    if (a.logo) { var i = document.createElement("img"); i.className = cls + (a.logo.indexOf("photos/") === 0 ? " person" : ""); i.src = VIE.root + a.logo; i.alt = ""; i.loading = "lazy"; i.width = 44; i.height = 44; return i; }
     var s = VIE.el("span", cls + " ini", (VIE.name(a).replace(/[^\p{L}\p{N}\s]/gu, " ").trim().split(/\s+/).slice(0, 2).map(function (w) { return w[0]; }).join("") || "?").toUpperCase());
     s.setAttribute("aria-hidden", "true"); return s;
   }

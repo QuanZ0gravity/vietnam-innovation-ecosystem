@@ -211,6 +211,8 @@ for a in actors:
     a["sectors"] = a.get("sectors") or []
     if os.path.exists(os.path.join(LOGO_DIR, a["id"] + ".webp")):
         a["logo"] = f"logos/{a['id']}.webp"
+    elif a["type"] == "expert" and os.path.exists(os.path.join(ROOT, "photos", a["id"] + ".webp")):
+        a["logo"] = f"photos/{a['id']}.webp"
 
 
 def icon_svg(k, size=18):
@@ -243,7 +245,7 @@ def apath(i): return PATH.get(i, f"to-chuc/{i}/")
 
 def logo_img(a, size=40, cls="lg"):
     if a.get("logo"):
-        return f'<img class="{cls}" src="{SITE_ROOT}{a["logo"]}" alt="" width="{size}" height="{size}" loading="lazy">'
+        return f'<img class="{cls}{" person" if a["logo"].startswith("photos/") else ""}" src="{SITE_ROOT}{a["logo"]}" alt="" width="{size}" height="{size}" loading="lazy">'
     ini = "".join(w[0] for w in _re.sub(r"[^\w\s]", " ", a["name"]["vi"]).split()[:2]).upper() or "?"
     return f'<span class="{cls} ini" aria-hidden="true" style="width:{size}px;height:{size}px">{e(ini)}</span>'
 
@@ -253,6 +255,8 @@ if os.path.isdir(OUT):
 shutil.copytree(os.path.join(WEB, "assets"), os.path.join(OUT, "assets"))
 if os.path.isdir(LOGO_DIR):
     shutil.copytree(LOGO_DIR, os.path.join(OUT, "logos"), ignore=shutil.ignore_patterns("*.md"))
+if os.path.isdir(os.path.join(ROOT, "photos")):
+    shutil.copytree(os.path.join(ROOT, "photos"), os.path.join(OUT, "photos"), ignore=shutil.ignore_patterns("*.md"))
 os.makedirs(os.path.join(OUT, "data"), exist_ok=True)
 
 # ---------- dữ liệu xuất bản ----------
@@ -1427,7 +1431,7 @@ dump("events.json", [{k: (str(v) if k in ("start", "end") else v) for k, v in ev
 info_page("gioi-thieu/quyen-rieng-tu/index.html", "Quyền riêng tư và dữ liệu cá nhân", "Privacy and personal data", f"""
 <p class="lead">Trang này giải thích bản đồ thu thập, công bố và xử lý dữ liệu cá nhân như thế nào, và bạn có những quyền gì.</p>
 <h2>Bản đồ có dữ liệu cá nhân nào</h2>
-<ul><li><b>Hồ sơ chuyên gia và nhà đầu tư cá nhân</b>: họ tên, lĩnh vực, phần tự giới thiệu nguyên văn và đường dẫn tới hồ sơ gốc. Nguồn: nền tảng HOIP của TP.HCM, nơi chính người đó tự đăng ký công khai.</li>
+<ul><li><b>Hồ sơ chuyên gia và nhà đầu tư cá nhân</b>: họ tên, ảnh đại diện, lĩnh vực, phần tự giới thiệu và thành tựu nguyên văn, đường dẫn tới hồ sơ gốc. Nguồn: nền tảng HOIP của TP.HCM, nơi chính người đó tự đăng ký và đồng ý công khai hồ sơ. Ảnh không thuộc giấy phép CC BY.</li>
 <li><b>Hồ sơ tổ chức</b>: thông tin của tổ chức, chỉ dùng kênh liên hệ chung (email info@, contact@, email cơ quan). Không công bố tên người đại diện, số điện thoại hay email cá nhân lấy từ tài liệu.</li>
 <li><b>Người đóng góp</b>: tên tài khoản GitHub hiện trong lịch sử thay đổi của kho dữ liệu.</li></ul>
 <h2>Vì sao không công bố email, số điện thoại cá nhân</h2>
