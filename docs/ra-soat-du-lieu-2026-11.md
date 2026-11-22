@@ -269,3 +269,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Đọc 4 báo cáo: VPCA (Vietnam Innovation & Private Capital, trình bày tại VIPC), TVS (VC & PE Vietnam Outlook 2026), DealStreetAsia (SE Asia Startup Funding FY2025), Endeavor Insight (Founder Pathways).
 - Trang mới `/von-dau-tu/`: số liệu Việt Nam và Đông Nam Á 2025 (ghi nguồn từng số), 8 nhận định tổng hợp, con đường hình thành unicorn 6 bước, gợi ý cho hệ sinh thái (ghi rõ là nhận định của bản đồ), quỹ trong danh bạ. Dữ liệu ở `data/benchmarks/vc-2026.yaml`.
 - Lưu ý: VPCA (Do Ventures, NIC) ghi VC Việt Nam 2025 là 509 triệu USD, 103 thương vụ; DealStreetAsia và TVS ghi khoảng 356 triệu USD trong 11 tháng, 34–36 thương vụ. Khác phạm vi và phương pháp; trang nêu cả hai.
+
+## Biểu đồ đầu tư mạo hiểm (22/11/2026)
+
+- Vẽ lại 18 biểu đồ từ số liệu trong 4 báo cáo (đọc trực tiếp từ trang biểu đồ của PDF): VC và PE Việt Nam 2013–2025, AI, startup hoạt động toàn cầu, số nhà đầu tư, VC theo lĩnh vực 2024–2025, PE theo ngành 2025, vốn startup Việt Nam theo nửa năm (DealStreetAsia), M&A 2021–10T/2025 (TVS), vốn cổ phần và vay nợ Đông Nam Á 2019–2025, vốn theo giai đoạn, theo nước, vốn AI theo nước, unicorn theo năm, nước, lĩnh vực, đặc điểm nhà sáng lập (Endeavor); thêm bảng chuỗi vốn VC → PE → IPO.
+- Biểu đồ là bản vẽ lại của bản đồ, ghi nguồn từng biểu đồ; không chép ảnh từ báo cáo.

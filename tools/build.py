@@ -1667,6 +1667,65 @@ if os.path.exists(_vcp):
             f'<div class="kpi"><p class="kv">{e(x["value"])}</p><p class="kl">{e(x["label"])}</p><p class="kn small muted">{e(x.get("note",""))}</p>{_src(x["src"])}</div>' for x in items) + "</div>"
     ins = "".join(f'<li><span>{e(x["text"])}</span> {_src(x["src"])}</li>' for x in VC["insights"])
     steps = "".join(f'<li class="up-step"><span class="up-n">{k}</span><h3>{e(x["step"])}</h3><p>{e(x["text"])}</p>{_src(x["src"])}</li>' for k, x in enumerate(VC["unicorn_path"], 1))
+    # ---- biểu đồ vẽ lại từ báo cáo ----
+    C1, C2 = "var(--sea)", "#E9A800"
+    def _fmt(v, unit=""):
+        if unit == "ty" and v >= 1000: return (f"{v/1000:.2f}".rstrip("0").rstrip(".") + " tỷ").replace(".", ",")
+        if v >= 1000: return f"{v:,.0f}".replace(",", ".")
+        return (f"{v:g}").replace(".", ",")
+    def svg_combo(c):
+        L, B, Ln = c["labels"], c["bars"], c.get("line")
+        W, H, pl, pr, pt, pb = (760 if not c.get("half") else 420), (300 if not c.get("half") else 280), 16, 16, 18, 40
+        n = len(L); slot = (W - pl - pr) / n; bw = min(44, slot * 0.6)
+        mb = max(B) or 1; ml = max(Ln) if Ln else 1
+        top = pt + ((H - pt - pb) * 0.36 if Ln else 0)
+        y = lambda v, m: top + (H - pb - top) * (1 - v / m)
+        yl = lambda v: pt + 14 + ((H - pt - pb) * 0.36 - 26) * (1 - v / ml)
+        g = ""
+        for i, (lab, v) in enumerate(zip(L, B)):
+            x = pl + slot * i + (slot - bw) / 2
+            g += f'<rect x="{x:.1f}" y="{y(v, mb):.1f}" width="{bw:.1f}" height="{(H - pb) - y(v, mb):.1f}" rx="3" fill="{C1}" opacity=".9"/>'
+            g += f'<text x="{x + bw/2:.1f}" y="{H - pb + 16}" class="ax" text-anchor="middle">{e(lab)}</text>'
+            if n <= 14: g += f'<text x="{x + bw/2:.1f}" y="{y(v, mb) - 5:.1f}" class="ax vb" text-anchor="middle">{e(_fmt(v, c.get("unit","")))}</text>'
+        if Ln:
+            pts = [(pl + slot * i + slot / 2, yl(v)) for i, v in enumerate(Ln)]
+            g += f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="none" stroke="{C2}" stroke-width="2.4"/>'
+            g += "".join(f'<circle cx="{a:.1f}" cy="{b:.1f}" r="3.5" fill="{C2}"/><text x="{a:.1f}" y="{b - 8:.1f}" class="ax lb2" text-anchor="middle">{v}</text>' for (a, b), v in zip(pts, Ln))
+        leg = (f'<span class="lg-i"><i style="background:{C1}"></i>{e(c.get("bar_name",""))}</span>' if c.get("bar_name") else "") + (f'<span class="lg-i"><i style="background:{C2}"></i>{e(c.get("line_name",""))}</span>' if Ln else "")
+        return (f'<div class="legend">{leg}</div>' if leg else "") + f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def svg_hbar(c):
+        items = c["items"]; W = 760 if not c.get("half") else 420; rh = 28; lw = 230 if not c.get("half") else 170
+        H = len(items) * rh + 8; m = max(v for _, v in items) or 1
+        g = ""
+        for k, (lab, v) in enumerate(items):
+            wv = (W - lw - 60) * v / m
+            g += f'<text x="0" y="{k*rh + 19}" class="ax">{e(lab if len(lab) < 40 else lab[:38] + "…")}</text><rect x="{lw}" y="{k*rh + 6}" width="{max(2, wv):.1f}" height="17" rx="3" fill="{C1}"/>'
+            g += f'<text x="{lw + wv + 6:.1f}" y="{k*rh + 19}" class="ax vb">{e(_fmt(v))}{"%" if c.get("pct") else ""}</text>'
+        return f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def svg_pair(c):
+        items = c["items"]; W = 760 if not c.get("half") else 420; rh = 38; lw = 200 if not c.get("half") else 70
+        H = len(items) * rh + 8; m = max(max(a, b) for _, a, b in items) or 1
+        g = ""
+        for k, (lab, a, b) in enumerate(items):
+            y0 = k * rh + 4
+            g += f'<text x="0" y="{y0 + 20}" class="ax">{e(lab)}</text>'
+            for j, (v, col) in enumerate(((a, "#9FB7B5"), (b, C1))):
+                wv = (W - lw - 60) * v / m
+                g += f'<rect x="{lw}" y="{y0 + j*15}" width="{max(2, wv):.1f}" height="13" rx="2" fill="{col}"/><text x="{lw + wv + 5:.1f}" y="{y0 + j*15 + 11}" class="ax vb">{e(_fmt(v))}</text>'
+        leg = f'<span class="lg-i"><i style="background:#9FB7B5"></i>{e(c["names"][0])}</span><span class="lg-i"><i style="background:{C1}"></i>{e(c["names"][1])}</span>'
+        return f'<div class="legend">{leg}</div><svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def chart_fig(c):
+        t = c["type"]
+        body = svg_combo(c) if t in ("combo", "bars") else svg_hbar(c) if t == "hbar" else svg_pair(c)
+        return (f'<figure class="vc-fig{" half" if c.get("half") else ""}" id="bd-{c["id"]}"><figcaption>{e(c["title"])}</figcaption>{body}'
+                + (f'<p class="small muted">{e(c["note"])}</p>' if c.get("note") else "") + f'<p class="vc-src">Nguồn: {e(S[c["src"]]["by"])}</p></figure>')
+    def charts_for(sec):
+        xs = [c for c in VC.get("charts", []) if c["section"] == sec]
+        return ('<div class="vc-charts">' + "".join(chart_fig(c) for c in xs) + "</div>") if xs else ""
+    pipe = VC.get("pipeline") or []
+    pipe_html = ('<div class="tbl-wrap"><table class="tbl vc-pipe"><thead><tr><th>Mắt xích</th><th>2025</th><th>Thay đổi</th><th>Hoạt động</th><th>Tín hiệu</th><th>Đánh giá</th></tr></thead><tbody>'
+                 + "".join(f'<tr><td><b>{e(p["stage"])}</b></td><td>{e(p["value"])}</td><td>{e(p["change"])}</td><td>{e(p["deals"])}</td><td>{e(p["signal"])}</td><td><span class="ev-badge {"up" if p["status"] == "Đúng hướng" else "live"}">{e(p["status"])}</span></td></tr>' for p in pipe)
+                 + '</tbody></table></div><p class="vc-src">Nguồn: VPCA, NIC, Do Ventures, BCG</p>') if pipe else ""
     funds = [a for a in actors if a["type"] == "fund" and a.get("status") != "inactive"]
     vn_funds = sorted([a for a in funds if a["region"] not in ("quoc-te",)], key=lambda a: (-richness(a), a["name"]["vi"].lower()))[:12]
     srcs = "".join(f'<li><b>{e(v["title"])}</b> · {e(v["by"])}, {e(v["date"])}</li>' for v in S.values())
@@ -1674,14 +1733,15 @@ if os.path.exists(_vcp):
 <div class="wrap page-head"><h1 data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</h1>
 <p class="lead" data-vi="Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn." data-en="A synthesis of four venture capital reports on Vietnam and Southeast Asia, plus the pathway to unicorns.">Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn.</p></div>
 <div class="wrap" style="padding-bottom:72px">
-<nav class="onpage small"><a href="#viet-nam">Việt Nam</a><a href="#khu-vuc">Đông Nam Á</a><a href="#nhan-dinh">Nhận định</a><a href="#unicorn">Con đường unicorn</a><a href="#nguon">Nguồn</a></nav>
-<section id="viet-nam" class="sec"><h2>Việt Nam 2025</h2>{_grid(VC["vietnam"])}</section>
-<section id="khu-vuc" class="sec"><h2>Đông Nam Á 2025</h2>{_grid(VC["region"])}</section>
+<nav class="onpage small"><a href="#viet-nam">Việt Nam</a><a href="#bd-vn-vc">Biểu đồ</a><a href="#khu-vuc">Đông Nam Á</a><a href="#nhan-dinh">Nhận định</a><a href="#unicorn">Con đường unicorn</a><a href="#nguon">Nguồn</a></nav>
+<section id="viet-nam" class="sec"><h2>Việt Nam 2025</h2>{_grid(VC["vietnam"])}<h3 style="margin-top:26px">Chuỗi vốn VC → PE → IPO</h3>{pipe_html}{charts_for("viet-nam")}</section>
+<section id="khu-vuc" class="sec"><h2>Đông Nam Á 2025</h2>{_grid(VC["region"])}{charts_for("khu-vuc")}</section>
 <section id="nhan-dinh" class="sec"><h2 data-vi="8 nhận định" data-en="8 insights">8 nhận định</h2><ol class="vc-ins">{ins}</ol>
 <p class="small muted">Nhận định do bản đồ tổng hợp từ các báo cáo; số liệu giữ nguyên theo từng nguồn. Các nguồn dùng phương pháp và phạm vi khác nhau nên con số có thể chênh nhau.</p></section>
 <section id="unicorn" class="sec"><h2 data-vi="Con đường hình thành unicorn" data-en="The pathway to unicorns">Con đường hình thành unicorn</h2>
 <p class="lead" style="font-size:1.05rem">Ghép nghiên cứu hành trình 200 nhà sáng lập unicorn của Endeavor Insight với bối cảnh vốn 2025–2026 ở Việt Nam và Đông Nam Á.</p>
 <ol class="vcp">{steps}</ol>
+<h3 style="margin-top:26px">Unicorn ở Đông Nam Á và hồ sơ nhà sáng lập</h3>{charts_for("unicorn")}
 <div class="up-note"><h3>Gợi ý cho hệ sinh thái</h3>
 <ul><li><b>Vườn ươm, chương trình hỗ trợ:</b> đo đầu ra bằng bằng chứng thị trường (thí điểm, doanh thu), kết nối startup với doanh nghiệp lớn để có hợp đồng đầu tiên.</li>
 <li><b>Chính sách:</b> vốn mồi và quỹ đồng đầu tư cho giai đoạn đầu, nơi thiếu vốn nhất; mở đường niêm yết cho công ty công nghệ.</li>
