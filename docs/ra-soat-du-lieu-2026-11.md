@@ -216,3 +216,11 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 
 - Theo hồ sơ tổ chức trên ybadanang.com và tin startupdanang.vn (02/11/2026): đổi tên hồ sơ thành "Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC)", bổ sung tên tiếng Anh, chức năng nhiệm vụ, địa chỉ, email chung, website startupdanang.vn (chuyển từ DISSC), lãnh đạo theo quyết định bổ nhiệm (trường mới `leadership`), dòng thời gian (trường mới `history`), quan hệ `merged_into` từ DISSC, DBC, DSAC và `part_of` Sở KH&CN. DISSC, DBC, DSAC chuyển tình trạng "đã ngừng hoạt động".
 - Thêm sự kiện Hội thảo Kết nối Đổi mới sáng tạo xanh Nhật Bản – Đà Nẵng (01/12/2026).
+
+## Cổng dịch vụ dữ liệu Đà Nẵng – congdulieu.vn (22/11/2026)
+
+Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính cấp xã, phường (trường học, chợ, cấp phép xây dựng…). Chọn lọc các bộ liên quan:
+- **Quỹ đầu tư và dự án, doanh nghiệp khởi nghiệp sáng tạo tham dự DAVAS 2026** (Sở KH&CN, 26/06/2026; 76 dòng, đọc được 64): đối chiếu 63 hồ sơ đã có, bổ sung website còn thiếu, ghi thêm nguồn, nâng mức xác minh "Đã đối chiếu nguồn" cho hồ sơ chưa xác minh; thêm 2080 Ventures.
+- **Số lượng trung tâm, không gian, vườn ươm ĐMST trên địa bàn thành phố** (Sở KH&CN, 13/08/2025): đưa vào mục "Tình hình" Đà Nẵng.
+- **Dữ liệu các chính sách hỗ trợ doanh nghiệp** (Sở Tài chính, 30/07/2026; 20 chính sách): thêm trường `results` (kết quả thực hiện 6 tháng đầu năm 2026) cho NQ 19, 20, 24, 26, 33/2026/NQ-HĐND; thêm NQ 270/2019/NQ-HĐND; tóm tắt vào mục "Tình hình".
+- Xem nhưng không dùng: Lịch sự kiện, lễ hội 2026 (sự kiện văn hóa, không có sự kiện khởi nghiệp); danh sách học viên khóa đào tạo (dữ liệu cá nhân); dữ liệu thống kê doanh nghiệp chung, công nghiệp hỗ trợ, game online (chưa phù hợp phạm vi bản đồ, có thể dùng sau).

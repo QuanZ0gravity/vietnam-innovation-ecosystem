@@ -7,14 +7,15 @@ categories:
 - Quỹ, nhà đầu tư
 website: https://swinno.com.vn/
 linkedin: https://www.linkedin.com/company/sunwah-inno-hcmc
+description:
+  vi: Trung tâm đổi mới sáng tạo của Tập đoàn Sunwah (Hồng Kông).
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://startupdanang.vn/sunwah-innovation-center
 legacy_id: d53
-description:
-  vi: Trung tâm đổi mới sáng tạo của Tập đoàn Sunwah (Hồng Kông).

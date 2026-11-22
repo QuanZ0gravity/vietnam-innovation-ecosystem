@@ -1,18 +1,19 @@
 id: startup-koki-o
 name:
   vi: Koki'o
+alt_names:
+- KOKI'O
 type: startup
 sectors:
 - fintech
 - web3
 website: https://kokio.app
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
-alt_names:
-- KOKI'O
 description:
   vi: Ứng dụng eSIM chú trọng quyền riêng tư, dùng ở hơn 200 quốc gia, thanh toán bằng tiền pháp định hoặc crypto.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

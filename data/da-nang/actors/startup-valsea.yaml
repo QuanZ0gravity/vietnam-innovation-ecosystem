@@ -5,6 +5,8 @@ type: startup
 founded: 2025
 status: active
 website: https://valsea.ai
+description:
+  vi: Nền tảng hiểu giọng nói cho các ngôn ngữ châu Á, gồm tiếng Việt, Bahasa, Singlish và hơn 150 ngôn ngữ khác.
 region: da-nang
 verification:
   level: partner_verified
@@ -13,5 +15,4 @@ verification:
 sources:
 - Danh mục ươm tạo của Ecomdy (11/2026)
 - indanang.vn
-description:
-  vi: Nền tảng hiểu giọng nói cho các ngôn ngữ châu Á, gồm tiếng Việt, Bahasa, Singlish và hơn 150 ngôn ngữ khác.
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)

@@ -9,14 +9,15 @@ sectors:
 - ai
 website: https://genaifund.ai/
 linkedin: https://www.linkedin.com/company/genai-fund
+description:
+  vi: Quỹ và nền tảng đổi mới giai đoạn sớm, thúc đẩy ứng dụng AI ở Đông Nam Á.
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://startupdanang.vn/genai-fund
 legacy_id: d38
-description:
-  vi: Quỹ và nền tảng đổi mới giai đoạn sớm, thúc đẩy ứng dụng AI ở Đông Nam Á.

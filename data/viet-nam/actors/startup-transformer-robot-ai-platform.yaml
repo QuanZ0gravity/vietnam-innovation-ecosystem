@@ -6,11 +6,12 @@ sectors:
 - ai
 - edu
 - tourism
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 description:
   vi: Robot cho thuê dạng dịch vụ kèm nền tảng phần mềm AI, bắt đầu từ giáo dục và khách sạn, nhà hàng.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

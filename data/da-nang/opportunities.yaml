@@ -1,6 +1,3 @@
-# Cơ hội tạo deal flow: kêu gọi hồ sơ, cuộc thi, demo day, kết nối nhà đầu tư, kết nối khách hàng, thử nghiệm.
-# Quy tắc: apply_url và primary_source phải là trang của đơn vị tổ chức; trang tổng hợp chỉ ghi ở secondary_sources.
-# Trường để trống = chưa có nguồn đáng tin. Không điền phỏng đoán.
 - id: opp-suci-x-lisk-final-demo-2026
   title: SUCI x Lisk Final Demo Day 2026
   type: demo_day
@@ -155,6 +152,7 @@
   - fund-animoca-brands
   - fund-stellar-foundation
   - fund-tron-dao-ventures
+  - fund-2080-ventures
   secondary_sources:
   - https://indanang.vn/ecosystem-activities/davas-2026
   legacy_id: v12

@@ -11,11 +11,12 @@ description:
   vi: Quỹ đầu tư mạo hiểm tại châu Á, danh mục hơn 150 công ty.
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://startupdanang.vn/quest-ventures
 legacy_id: d60

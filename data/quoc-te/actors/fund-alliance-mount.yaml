@@ -3,13 +3,14 @@ name:
   vi: Alliance Mount
 type: fund
 website: https://alliancemount.com
-region: quoc-te
-verification:
-  level: unverified
-sources:
-- indanang.vn
-- Website chính thức
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 linkedin: https://www.linkedin.com/company/105642013
 description:
   vi: Tư vấn M&A và đầu tư xuyên biên giới tập trung vào Việt Nam và châu Á.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Website chính thức
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -5,11 +5,13 @@ type: startup
 sectors:
 - agrifood
 - edu
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
+website: https://binks.vn/
 description:
   vi: Mực vẽ, màu nước và sản phẩm giáo dục làm từ phụ phẩm nông nghiệp và nguyên liệu thực vật.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

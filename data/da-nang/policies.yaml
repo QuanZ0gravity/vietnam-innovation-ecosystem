@@ -28,12 +28,22 @@
   issued: '2026-05-29'
   source: Sở KH&CN Đà Nẵng
   legacy_id: k4
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: Hỗ trợ 11 tổ chức, doanh nghiệp phát triển dự án khởi nghiệp sáng tạo, tổng kinh phí 4,898 tỷ đồng.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730
 - id: policy-nq-20-2026-nq-hdnd
   document: NQ 20/2026/NQ-HĐND
   summary: 'Cấp phép thử nghiệm có kiểm soát giải pháp công nghệ mới (sandbox); căn cứ trung ương: NĐ 353/2025/NĐ-CP, NQ 20/2026/NQ-CP'
   issued: '2026-05-29'
   source: Sở KH&CN Đà Nẵng
   legacy_id: k5
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: Tiếp nhận 33 hồ sơ thử nghiệm có kiểm soát; cấp phép cho 2 giải pháp công nghệ mới.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730
 - id: policy-nq-21-2026-nq-hdnd
   document: NQ 21/2026/NQ-HĐND
   summary: Nhân lực vi mạch bán dẫn, AI; thay NQ 57/2024
@@ -58,6 +68,11 @@
   issued: '2026-05-29'
   source: Sở KH&CN Đà Nẵng
   legacy_id: k9
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: 20 doanh nghiệp, tổ chức hoạt động khởi nghiệp và hỗ trợ khởi nghiệp được hưởng ưu đãi thuế.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730
 - id: policy-nq-25-2026-nq-hdnd
   document: NQ 25/2026/NQ-HĐND
   summary: Mức chi quản lý hoạt động KH&CN, ĐMST; thay NQ 58/2023
@@ -70,6 +85,11 @@
   issued: '2026-05-29'
   source: Sở KH&CN Đà Nẵng
   legacy_id: k11
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: Chưa có số liệu doanh nghiệp nhận hỗ trợ đăng ký bảo hộ tài sản trí tuệ trong kỳ báo cáo.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730
 - id: policy-nq-27-2026-nq-hdnd
   document: NQ 27/2026/NQ-HĐND
   summary: Mức chi Chương trình năng suất, chất lượng 2026-2030; thay NQ 54/2021
@@ -106,6 +126,11 @@
   issued: '2026-05-29'
   source: Sở KH&CN Đà Nẵng
   legacy_id: k17
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: Hỗ trợ đổi mới công nghệ cho 1 doanh nghiệp, kinh phí 700 triệu đồng.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730
 - id: policy-nq-91-2026-nq-hdnd
   document: NQ 91/2026/NQ-HĐND
   summary: Mức chi chương trình, nhiệm vụ KH&CN, ĐMST
@@ -731,3 +756,13 @@
   summary: Chiến lược quốc gia về trí tuệ nhân tạo đến 2030, tầm nhìn 2045
   source: Tài liệu Hội thảo phổ biến pháp luật công nghiệp công nghệ số 17/11/2026
   legacy_id: k122
+- id: policy-nq-270-2019-nq-hdnd
+  document: NQ 270/2019/NQ-HĐND
+  summary: Chính sách hỗ trợ phát triển công nghệ thông tin trên địa bàn thành phố Đà Nẵng.
+  issued: '2019'
+  source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+  results:
+  - period: 6 tháng đầu năm 2026
+    text: Hỗ trợ 3 công ty, tổng 603,75 triệu đồng.
+    source: Cổng dịch vụ dữ liệu Đà Nẵng – Dữ liệu các chính sách hỗ trợ doanh nghiệp (Sở Tài chính, 30/07/2026)
+    url: https://congdulieu.vn/dulieuchitiet/1849730

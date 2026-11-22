@@ -1100,6 +1100,7 @@ for x in policies:
 <p class="desc">{e(x.get("summary") or "")}</p>
 <dl class="facts">{fh}</dl>
 {f'<p style="margin-top:18px"><a class="btn primary" href="{e(x["url"])}" rel="noopener" data-vi="Đọc toàn văn" data-en="Read the full text">Đọc toàn văn</a></p>' if x.get("url") else '<p class="small muted" style="margin-top:14px" data-vi="Chưa có đường dẫn toàn văn. Biết nguồn chính thức? Bổ sung vào dữ liệu." data-en="No link to the full text yet.">Chưa có đường dẫn toàn văn. Biết nguồn chính thức? Bổ sung vào dữ liệu.</p>'}
+{('<div class="section"><h2 data-vi="Kết quả thực hiện" data-en="Implementation results">Kết quả thực hiện</h2><ul class="list-plain">' + "".join(f'<li><b>{e(r.get("period",""))}:</b> {e(r["text"])} <span class="muted small">(<a href="{e(r.get("url",""))}" rel="noopener">{e(r.get("source",""))}</a>)</span></li>' for r in x.get("results") or []) + '</ul></div>') if x.get("results") else ""}
 {('<div class="section"><h2 data-vi="Cùng loại, cùng năm" data-en="Same type, same year">Cùng loại, cùng năm</h2><ul class="list-plain">' + "".join(f'<li><a href="{SITE_ROOT}chinh-sach/{y["id"].removeprefix("policy-")}/">{e(y["document"])}</a> <span class="muted small">{e(y.get("summary") or "")}</span></li>' for y in near) + '</ul></div>') if near else ""}
 </article>
 <aside class="side"><div class="box"><h2 data-vi="Thông tin chưa đúng?" data-en="Something wrong?">Thông tin chưa đúng?</h2>

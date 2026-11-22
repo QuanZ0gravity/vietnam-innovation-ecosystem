@@ -5,11 +5,12 @@ type: startup
 sectors:
 - web3
 website: https://polypay.pro/
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 description:
   vi: Trả lương bảo mật cho DAO và công ty crypto, dùng bằng chứng không tiết lộ (zero-knowledge).
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -6,14 +6,15 @@ categories:
 - Quỹ đầu tư
 - Quỹ, nhà đầu tư
 website: https://www.mexc.com/ventures
+description:
+  vi: Quỹ đầu tư của sàn MEXC vào hạ tầng và hệ sinh thái tài sản mã hóa.
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://startupdanang.vn/mexc-ventures
 legacy_id: d37
-description:
-  vi: Quỹ đầu tư của sàn MEXC vào hạ tầng và hệ sinh thái tài sản mã hóa.

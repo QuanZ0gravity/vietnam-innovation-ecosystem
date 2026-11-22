@@ -5,11 +5,12 @@ type: startup
 sectors:
 - ai
 website: https://www.alicorn-space.ai/
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 description:
   vi: Tác tử "AI vật lý" tự động hóa vận hành không gian thực, giải bài toán thiếu lao động.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

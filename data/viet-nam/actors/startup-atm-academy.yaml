@@ -6,11 +6,13 @@ sectors:
 - ai
 - web3
 - edu
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
+website: https://daotaonghedulich.com/
 description:
   vi: Nền tảng đào tạo nhân sự du lịch, khách sạn ứng dụng AI, giúp chuẩn hóa kỹ năng và chất lượng dịch vụ.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -1,21 +1,22 @@
 id: startup-biowraps
 name:
   vi: BioWraps
+alt_names:
+- Biowraps
+- Công ty Cổ Phần Giải Pháp Biowraps
+- CÔNG TY CỔ PHẦN GIẢI PHÁP BIOWRAPS BIOWRAPS SOLUTIONS JSC
 type: startup
 sectors:
 - agrifood
 - climate
 website: https://biowrapsvietnam.com/
+description:
+  vi: Nhựa sinh học từ phụ phẩm nông nghiệp, phân hủy hoàn toàn trong tự nhiên.
 region: viet-nam
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - indanang.vn
 - Website chính thức
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
-alt_names:
-- Biowraps
-- Công ty Cổ Phần Giải Pháp Biowraps
-- CÔNG TY CỔ PHẦN GIẢI PHÁP BIOWRAPS BIOWRAPS SOLUTIONS JSC
-description:
-  vi: Nhựa sinh học từ phụ phẩm nông nghiệp, phân hủy hoàn toàn trong tự nhiên.

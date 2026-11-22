@@ -6,12 +6,13 @@ sectors:
 - ai
 - property
 website: https://www.totm-labs.com/
-region: quoc-te
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
+linkedin: https://www.linkedin.com/company/totmlabs
 description:
   vi: Đơn vị xây dựng doanh nghiệp (venture builder) theo hướng AI, đặt tại Singapore.
-linkedin: https://www.linkedin.com/company/totmlabs
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

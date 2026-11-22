@@ -12,10 +12,11 @@ description:
   vi: Có trong danh sách quỹ của cổng startupdanang.vn.
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - Bản đồ hệ sinh thái
 - startupdanang.vn
 - indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://startupdanang.vn/onetreehillventures
 legacy_id: d39;f5

@@ -5,11 +5,13 @@ type: startup
 sectors:
 - ai
 - health
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
+website: https://elysiaai.net/
 description:
   vi: Bạn đồng hành AI hướng tới sức khỏe tinh thần và phát triển cá nhân.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

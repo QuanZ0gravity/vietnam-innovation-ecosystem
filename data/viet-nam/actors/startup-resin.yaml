@@ -5,7 +5,8 @@ type: startup
 website: http://rightchoice.vn
 region: viet-nam
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026

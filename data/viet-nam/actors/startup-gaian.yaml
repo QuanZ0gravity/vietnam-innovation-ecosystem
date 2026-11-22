@@ -5,12 +5,13 @@ type: startup
 sectors:
 - fintech
 website: http://Gaian.network
+description:
+  vi: 'Hạ tầng tài chính cho nhà sáng lập toàn cầu: thẻ, thanh toán QR, ứng trước tiền thanh toán.'
 region: viet-nam
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - indanang.vn
 - Website chính thức
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
-description:
-  vi: 'Hạ tầng tài chính cho nhà sáng lập toàn cầu: thẻ, thanh toán QR, ứng trước tiền thanh toán.'

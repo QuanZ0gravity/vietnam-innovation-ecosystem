@@ -5,11 +5,13 @@ type: startup
 sectors:
 - ai
 - climate
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
+website: https://ghgtrack.vn/
 description:
   vi: Phần mềm SaaS đo lường, quản lý và báo cáo phát thải khí nhà kính theo các chuẩn quốc tế như ISO 14064.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

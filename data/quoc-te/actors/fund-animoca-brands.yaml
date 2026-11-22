@@ -8,11 +8,12 @@ sectors:
 - property
 website: https://www.animocabrands.com/
 linkedin: https://www.linkedin.com/company/animoca-brands
-region: quoc-te
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 description:
   vi: Xây dựng, đầu tư và thúc đẩy các hệ sinh thái Web3.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

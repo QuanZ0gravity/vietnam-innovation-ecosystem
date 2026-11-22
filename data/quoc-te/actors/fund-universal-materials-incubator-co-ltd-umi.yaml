@@ -4,12 +4,14 @@ name:
 type: fund
 sectors:
 - deeptech
+website: https://umi.co.jp/en/
 description:
   vi: Quỹ đầu tư mạo hiểm Nhật Bản (Tokyo), tập trung vào vật liệu và hóa chất.
 region: quoc-te
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - indanang.vn
 - Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026

@@ -6,11 +6,12 @@ sectors:
 - ai
 website: https://jamit.app
 linkedin: https://www.linkedin.com/company/jamithq
-region: viet-nam
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/ecosystem-activities/davas-2026
 description:
   vi: Nền tảng AI giúp người sáng tạo chuyển ý tưởng thành truyện, podcast, kịch truyền thanh và sách nói.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/ecosystem-activities/davas-2026

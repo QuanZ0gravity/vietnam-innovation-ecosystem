@@ -5,11 +5,12 @@ type: support_org
 categories:
 - National innovation and proof-of-concept support
 website: https://nic.gov.vn/
-region: ha-noi
-verification:
-  level: unverified
-sources:
-- indanang.vn
-source_url: https://indanang.vn/
 description:
   vi: Chương trình phát triển mạng lưới nhà đầu tư thiên thần tại Việt Nam của NIC.
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+source_url: https://indanang.vn/

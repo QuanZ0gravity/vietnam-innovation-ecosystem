@@ -4,12 +4,13 @@ name:
 type: fund
 website: http://wavemaker.vc
 linkedin: https://www.linkedin.com/company/wavemakerpartners
+description:
+  vi: Quỹ đầu tư giai đoạn sớm Đông Nam Á vào doanh nghiệp, công nghệ sâu và phát triển bền vững.
 region: quoc-te
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - indanang.vn
 - Website chính thức
+- Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026
-description:
-  vi: Quỹ đầu tư giai đoạn sớm Đông Nam Á vào doanh nghiệp, công nghệ sâu và phát triển bền vững.
