@@ -1,25 +1,87 @@
 - id: ai-cross-border-2026
-  title: "Cross-Border AI Innovation Summit 2026"
+  title: Cross-Border AI Innovation Summit 2026
   start: '2026-08-21'
   end: '2026-08-22'
-  venue: "Forevermark Convention Center, Hà Nội"
+  venue: Forevermark Convention Center, Hà Nội
   category: ai
-  organizer: "Ecomdy Media"
-  organizer_ids: [incubator-ecomdy-ecombator]
+  organizer: Ecomdy Media
+  organizer_ids:
+  - incubator-ecomdy-ecombator
   url: https://ecomdymedia.com/blog/cross-border-ai-innovation-summit-2026
-  summary: "Chương trình 48 giờ xây dựng sản phẩm AI cho thương mại điện tử xuyên biên giới và thị trường toàn cầu."
+  summary: Chương trình 48 giờ xây dựng sản phẩm AI cho thương mại điện tử xuyên biên giới và thị trường toàn cầu.
   source: https://indanang.vn/ecosystem-activities/ai-cross-border-2026
 - id: vietnam-innovation-day-2026
-  title: "Ngày Đổi mới sáng tạo Việt Nam 2026"
+  title: Ngày Đổi mới sáng tạo Việt Nam 2026
   start: '2026-10-03'
   end: '2026-10-05'
-  venue: "Trung tâm Hội nghị Quốc gia, Hà Nội"
+  venue: Trung tâm Hội nghị Quốc gia, Hà Nội
   category: ecosystem
-  organizer: "Trung tâm Đổi mới sáng tạo Quốc gia (NIC)"
-  organizer_ids: [government-nic]
+  organizer: Trung tâm Đổi mới sáng tạo Quốc gia (NIC)
+  organizer_ids:
+  - government-nic
   url: https://innovation.gov.vn
   recurrence: annual
   month: 10
-  summary: "Sự kiện đổi mới sáng tạo quốc gia với các diễn đàn, 10 khu trưng bày công nghệ, triển lãm và kết nối doanh nghiệp."
+  summary: Sự kiện đổi mới sáng tạo quốc gia với các diễn đàn, 10 khu trưng bày công nghệ, triển lãm và kết nối doanh nghiệp.
   opportunity: vietnam-innovation-day-2026
   source: https://indanang.vn/ecosystem-activities/vietnam-innovation-day-2026
+- id: techfest-viet-nam-2026
+  title: TECHFEST Việt Nam 2026 – Ngày hội Khởi nghiệp đổi mới sáng tạo quốc gia
+  start: '2026-12-11'
+  end: '2026-12-13'
+  venue: Khu vực phố đi bộ Hồ Hoàn Kiếm, Hà Nội
+  category: ecosystem
+  organizer: Bộ Khoa học và Công nghệ
+  organizer_ids:
+  - government-ministry-of-science-and-technology
+  - government-nssc
+  url: https://techfest.vn/
+  recurrence: annual
+  month: 12
+  summary: 'Sự kiện khởi nghiệp đổi mới sáng tạo quốc gia thường niên: cuộc thi tìm kiếm tài năng khởi nghiệp, diễn đàn chính sách và hợp tác quốc tế về đầu tư khởi nghiệp, triển lãm công nghệ, các giải thưởng và hội thảo bên lề. Lịch khai mạc, bế mạc trên trang TechFest hiện vẫn ghi là bản ghi minh họa, chưa công bố chính thức.'
+  source: https://techfest.vn/events
+- id: techfest-2026-cuoc-thi-khoi-nghiep
+  title: Cuộc thi Tìm kiếm Tài năng Khởi nghiệp sáng tạo Quốc gia TECHFEST 2026
+  start: '2026-12-11'
+  end: '2026-12-11'
+  venue: Khu vực phố đi bộ Hồ Hoàn Kiếm, Hà Nội
+  category: founders
+  organizer: Bộ Khoa học và Công nghệ
+  organizer_ids:
+  - government-ministry-of-science-and-technology
+  url: https://techfest.vn/events/techfest-vietnam-2026-startup-competition-mu31yy6m
+  recurrence: annual
+  month: 12
+  summary: Cuộc thi khởi nghiệp sáng tạo cấp quốc gia trong khuôn khổ TECHFEST, dành cho startup và nhà đầu tư.
+  opportunity: opp-techfest-2026-cuoc-thi-khoi-nghiep
+  source: https://techfest.vn/events
+- id: gifpp-2026
+  title: Giải thưởng Đổi mới sáng tạo Toàn cầu vì Hòa bình và Thịnh vượng (GIFPP) 2026
+  start: '2026-12-11'
+  end: '2026-12-11'
+  venue: Trung tâm Hội nghị Quốc gia, Hà Nội
+  category: ecosystem
+  organizer: Báo Nhân Dân
+  url: https://techfest.vn/events/GIFPP_2026
+  summary: Giải thưởng cho các sáng kiến đổi mới vì hòa bình và thịnh vượng, gắn với 17 mục tiêu phát triển bền vững; dành cho doanh nhân xã hội và tổ chức phi chính phủ. Sự kiện trong chuỗi TECHFEST 2026.
+  source: https://techfest.vn/events
+- id: nibaa-2026
+  title: Giải thưởng Đại sứ Thương hiệu Đổi mới sáng tạo Quốc gia 2026
+  start: '2026-12-11'
+  end: '2026-12-11'
+  venue: Trung tâm Hội nghị Quốc gia, Hà Nội
+  category: founders
+  organizer: Ban Tổ chức Giải thưởng Đổi mới sáng tạo Quốc gia
+  url: https://techfest.vn/events/national-innovation-brand-ambassador-awards-2026-mu0b80b6
+  summary: Giải thưởng vinh danh lãnh đạo doanh nghiệp, nhà sáng lập và người Việt toàn cầu lan tỏa thương hiệu đổi mới sáng tạo Việt Nam. Sự kiện trong chuỗi TECHFEST 2026.
+  source: https://techfest.vn/events
+- id: v-innohealth-award-2026
+  title: V-INNOHEALTH Award 2026
+  start: '2026-12-11'
+  end: '2026-12-11'
+  venue: Trung tâm Hội nghị Quốc gia, Hà Nội
+  category: health
+  organizer: Hội Tư vấn và Chăm sóc sức khỏe Việt Nam
+  url: https://techfest.vn/events/v-innohealth-award-2026-mu0a1yu0
+  summary: Giải thưởng đổi mới sáng tạo trong y tế, kèm diễn đàn công nghệ y tế, hội nghị an toàn thực phẩm và phiên gọi vốn cho startup công nghệ y tế. Sự kiện trong chuỗi TECHFEST 2026.
+  source: https://techfest.vn/events

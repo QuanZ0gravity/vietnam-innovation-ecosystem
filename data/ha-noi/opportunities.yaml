@@ -1,4 +1,3 @@
-# Cơ hội tạo deal flow. Quy tắc giống data/da-nang/opportunities.yaml.
 - id: opp-vietnam-innovation-day-2026
   title: Ngày Đổi mới sáng tạo Việt Nam 2026
   type: buyer_matching
@@ -10,3 +9,14 @@
   - kết nối doanh nghiệp
   secondary_sources:
   - https://indanang.vn/ecosystem-activities/vietnam-innovation-day-2026
+- id: opp-techfest-2026-cuoc-thi-khoi-nghiep
+  title: Cuộc thi Tìm kiếm Tài năng Khởi nghiệp sáng tạo Quốc gia TECHFEST 2026
+  type: competition
+  organizer: Bộ Khoa học và Công nghệ
+  organizer_ids:
+  - government-ministry-of-science-and-technology
+  event_date: '2026-12-11'
+  focus:
+  - Khởi nghiệp sáng tạo
+  eligibility: Startup đổi mới sáng tạo; nhà đầu tư tham gia kết nối.
+  primary_source: https://techfest.vn/events/techfest-vietnam-2026-startup-competition-mu31yy6m

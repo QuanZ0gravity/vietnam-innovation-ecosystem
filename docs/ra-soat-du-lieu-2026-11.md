@@ -224,3 +224,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - **Số lượng trung tâm, không gian, vườn ươm ĐMST trên địa bàn thành phố** (Sở KH&CN, 13/08/2025): đưa vào mục "Tình hình" Đà Nẵng.
 - **Dữ liệu các chính sách hỗ trợ doanh nghiệp** (Sở Tài chính, 30/07/2026; 20 chính sách): thêm trường `results` (kết quả thực hiện 6 tháng đầu năm 2026) cho NQ 19, 20, 24, 26, 33/2026/NQ-HĐND; thêm NQ 270/2019/NQ-HĐND; tóm tắt vào mục "Tình hình".
 - Xem nhưng không dùng: Lịch sự kiện, lễ hội 2026 (sự kiện văn hóa, không có sự kiện khởi nghiệp); danh sách học viên khóa đào tạo (dữ liệu cá nhân); dữ liệu thống kê doanh nghiệp chung, công nghiệp hỗ trợ, game online (chưa phù hợp phạm vi bản đồ, có thể dùng sau).
+
+## TECHFEST 2026 – techfest.vn (22/11/2026)
+
+- Thêm 5 sự kiện tại Hà Nội: TECHFEST Việt Nam 2026 (11–13/12, khu vực phố đi bộ Hồ Hoàn Kiếm), Cuộc thi Tìm kiếm Tài năng Khởi nghiệp sáng tạo Quốc gia (11/12), Giải thưởng GIFPP (11/12), Giải thưởng Đại sứ Thương hiệu ĐMST Quốc gia (11/12), V-INNOHEALTH Award (11/12); thêm cơ hội "Cuộc thi TECHFEST 2026".
+- Chỉ lấy các mục trang ghi "Đã xác minh nguồn". Lễ khai mạc, bế mạc, diễn đàn chính sách, triển lãm, hội thảo bên lề hiện ghi "Bản ghi minh họa · chưa phải sự kiện công bố" nên không tách thành sự kiện riêng; chỉ nêu trong mô tả sự kiện tổng. Bỏ giải golf, pickleball và bản ghi thử nghiệm (EF P7 test).
