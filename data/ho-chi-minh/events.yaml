@@ -1,84 +1,477 @@
 - id: entrepreneurship-bootcamp-2026
-  title: "Entrepreneurship Bootcamp 2026"
+  title: Entrepreneurship Bootcamp 2026
   start: '2026-04-13'
   end: '2026-04-24'
-  venue: "SIHUB, 123 Trương Định, phường Xuân Hòa, TP.HCM"
+  venue: SIHUB, 123 Trương Định, phường Xuân Hòa, TP.HCM
   category: founders
-  organizer: "Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)"
-  organizer_ids: [government-sihub]
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
   recurrence: annual
   month: 4
-  summary: "Khóa huấn luyện tập trung 10 ngày bằng tiếng Anh với giảng viên Ivey Business School, từ học khởi nghiệp đến năng lực ra quyết định thực tế."
+  summary: Khóa huấn luyện tập trung 10 ngày bằng tiếng Anh với giảng viên Ivey Business School, từ học khởi nghiệp đến năng lực ra quyết định thực tế.
   source: https://hoip.sihub.gov.vn/
 - id: conviction-2026
-  title: "Conviction 2026 – Diễn đàn Kinh tế tài sản số và AI"
+  title: Conviction 2026 – Diễn đàn Kinh tế tài sản số và AI
   start: '2026-08-14'
   end: '2026-08-15'
-  venue: "Thiskyhall Sala, TP.HCM"
+  venue: Thiskyhall Sala, TP.HCM
   category: web3
-  organizer: "Conviction"
+  organizer: Conviction
   url: https://www.conviction.vn
-  summary: "Diễn đàn quốc gia về tài sản số, blockchain và AI, kèm các sự kiện bên lề như HSC Conference và Builders' Breakfast."
+  summary: Diễn đàn quốc gia về tài sản số, blockchain và AI, kèm các sự kiện bên lề như HSC Conference và Builders' Breakfast.
   source: https://indanang.vn/ecosystem-activities/conviction-2026
 - id: jdi-tfoai4-2026
-  title: "JDI TFOAI4 – The Future of AI, Chapter 4"
+  title: JDI TFOAI4 – The Future of AI, Chapter 4
   start: '2026-08-18'
   end: '2026-08-18'
-  venue: "TP.HCM"
+  venue: TP.HCM
   category: ai
-  organizer: "JDI"
-  organizer_ids: [international-jdi]
-  summary: "Hội thảo về AI ứng dụng, hạ tầng, quản trị AI và đầu tư, kèm gọi vốn startup và triển lãm."
+  organizer: JDI
+  organizer_ids:
+  - international-jdi
+  summary: Hội thảo về AI ứng dụng, hạ tầng, quản trị AI và đầu tư, kèm gọi vốn startup và triển lãm.
   opportunity: jdi-tfoai4-2026
   source: https://indanang.vn/ecosystem-activities/jdi-tfoai4
 - id: innoex-2026
-  title: "InnoEx 2026"
+  title: InnoEx 2026
   start: '2026-08-19'
   end: '2026-08-20'
-  venue: "Thiskyhall Sala, TP.HCM"
+  venue: Thiskyhall Sala, TP.HCM
   category: founders
-  organizer: "InnoEx"
-  organizer_ids: [support-org-innoex]
+  organizer: InnoEx
+  organizer_ids:
+  - support-org-innoex
   url: https://innoex.vn
   recurrence: annual
   month: 8
-  summary: "Diễn đàn đổi mới sáng tạo doanh nghiệp và khởi nghiệp lớn nhất Việt Nam, gồm chung kết Startup Wheel, QVIC và Green Innovation Fellowship."
+  summary: Diễn đàn đổi mới sáng tạo doanh nghiệp và khởi nghiệp lớn nhất Việt Nam, gồm chung kết Startup Wheel, QVIC và Green Innovation Fellowship.
   opportunity: innoex-2026
   source: https://indanang.vn/ecosystem-activities/innoex-2026
 - id: startup-wheel-2026
-  title: "Chung kết Startup Wheel 2026"
+  title: Chung kết Startup Wheel 2026
   start: '2026-08-19'
   end: '2026-08-20'
-  venue: "TP.HCM"
+  venue: TP.HCM
   category: founders
-  organizer: "Trung tâm Hỗ trợ Thanh niên Khởi nghiệp (BSSC)"
-  organizer_ids: [support-org-bssc]
+  organizer: Trung tâm Hỗ trợ Thanh niên Khởi nghiệp (BSSC)
+  organizer_ids:
+  - support-org-bssc
   url: https://startupwheel.vn
   recurrence: annual
   month: 8
-  summary: "Cuộc thi khởi nghiệp quốc tế thường niên do BSSC tổ chức, chung kết trong khuôn khổ InnoEx."
+  summary: Cuộc thi khởi nghiệp quốc tế thường niên do BSSC tổ chức, chung kết trong khuôn khổ InnoEx.
   opportunity: startup-wheel-2026
   source: https://indanang.vn/ecosystem-activities/startup-wheel-2026
 - id: techmart-2026-hcm
-  title: "Techmart 2026 – Công nghệ sản xuất thông minh và tự động hóa cho doanh nghiệp vừa và nhỏ"
+  title: Techmart 2026 – Công nghệ sản xuất thông minh và tự động hóa cho doanh nghiệp vừa và nhỏ
   start: '2026-10-29'
   end: '2026-10-30'
-  venue: "SIHUB, 28 Huỳnh Văn Nghệ, phường Phú Lợi, TP.HCM"
+  venue: SIHUB, 28 Huỳnh Văn Nghệ, phường Phú Lợi, TP.HCM
   category: deeptech
-  organizer: "Sở Khoa học và Công nghệ TP.HCM, SIHUB"
-  organizer_ids: [government-so-khcn-tp-hcm, government-sihub]
+  organizer: Sở Khoa học và Công nghệ TP.HCM, SIHUB
+  organizer_ids:
+  - government-so-khcn-tp-hcm
+  - government-sihub
   recurrence: annual
   month: 10
-  summary: "Chợ công nghệ và thiết bị với 50 gian hàng, hơn 100 công nghệ, 15 chuyên đề hội thảo và tư vấn chuyên gia cho doanh nghiệp vừa và nhỏ."
+  summary: Chợ công nghệ và thiết bị với 50 gian hàng, hơn 100 công nghệ, 15 chuyên đề hội thảo và tư vấn chuyên gia cho doanh nghiệp vừa và nhỏ.
   source: https://hoip.sihub.gov.vn/
 - id: robotics-toan-quoc-2026
-  title: "Chung kết Cuộc thi Sáng tạo Robotics toàn quốc lần thứ VI"
+  title: Chung kết Cuộc thi Sáng tạo Robotics toàn quốc lần thứ VI
   start: '2026-11-01'
   end: '2026-11-01'
-  venue: "Trường Đại học Tôn Đức Thắng, TP.HCM"
+  venue: Trường Đại học Tôn Đức Thắng, TP.HCM
   category: deeptech
-  organizer: "Trung ương Đoàn TNCS Hồ Chí Minh"
+  organizer: Trung ương Đoàn TNCS Hồ Chí Minh
   recurrence: annual
   month: 11
-  summary: "Vòng chung kết với 276 đội, 517 thí sinh từ 19 tỉnh, thành phố."
+  summary: Vòng chung kết với 276 đội, 517 thí sinh từ 19 tỉnh, thành phố.
   source: https://hoip.sihub.gov.vn/
+- id: sihub-49-hoi-nghi-ket-noi-he-sinh-thai-khoi-nghie
+  title: Hội nghị Kết nối hệ sinh thái khởi nghiệp sáng tạo TP.HCM 2025
+  start: '2025-08-23'
+  end: '2025-08-23'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/49
+  summary: 🤝 Trong bối cảnh hợp tác quốc tế ngày càng đóng vai trò chiến lược đối với sự phát triển của các hệ sinh thái khởi nghiệp, việc kết nối và chia sẻ kinh nghiệm với các mô hình thành công trên thế giới trở thành chìa khóa để thúc đẩy đổi mới sáng tạo, mở rộng th...
+  source: https://sihub.gov.vn/events/49
+  time: 09:30–12:00
+  price: free
+  recurrence: annual
+  month: 8
+- id: sihub-54-chuoi-su-kien-khanh-thanh-toa-nha-trung
+  title: Khánh thành tòa nhà Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  start: '2025-08-23'
+  end: '2025-08-24'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/54
+  summary: Vào lúc 8:00, ngày 23/8/2025, tại số 123 Trương Định, phường Xuân Hoà, Thành phố Hồ Chí Minh sẽ chính thức diễn ra Lễ Khánh thành Tòa nhà Trung tâm Khởi nghiệp sáng tạo TP.
+  source: https://sihub.gov.vn/events/54
+  time: 08:00
+  price: free
+- id: sihub-56-ho-chi-minh-city-fintech-summit-2025-reg
+  title: 'Ho Chi Minh City Fintech Summit 2025: Regulation, Innovation and Opportunities'
+  start: '2025-08-23'
+  end: '2025-08-23'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: capital
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/56
+  summary: 'Hội nghị thượng đỉnh công nghệ tài chính TPHCM: Quy định, đổi mới và cơ hội 🗓️ Thời gian và địa điểm: Từ 13h30 - 17h30, ngày 23 tháng 8 năm 2025.'
+  source: https://sihub.gov.vn/events/56
+  time: 01:30–05:00
+  price: free
+  recurrence: annual
+  month: 8
+- id: sihub-59-founder-summit-2025-rethinking-startup-s
+  title: 'Founder Summit 2025: Rethinking Startup Success with AI & Smart Capital'
+  start: '2025-08-28'
+  end: '2025-08-28'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: ai
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/59
+  summary: 'Register now: https://shorturl.at/GWyT6  Apply to pitch: https://shorturl.at/euMfI —------------------------------ [Vietnamese below] Southeast Asia''s startup scene is evolving - and it’s not just about funding anymore.'
+  source: https://sihub.gov.vn/events/59
+  time: 17:30–20:00
+  price: free
+  recurrence: annual
+  month: 8
+- id: sihub-64-phien-cho-khoi-nghiep
+  title: Phiên chợ khởi nghiệp 2025
+  start: '2025-08-23'
+  end: '2025-08-23'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/64
+  summary: VÌ SAO STARTUP THẾ HỆ MỚI KHÔNG THỂ BỎ QUA YẾU TỐ “XANH”?
+  source: https://sihub.gov.vn/events/64
+  time: 08:00–17:00
+  price: free
+  recurrence: annual
+  month: 8
+- id: sihub-76-hoi-nghi-ednovation-2025-cung-giao-duc-b
+  title: EdNovation 2025 – Cùng giáo dục bứt phá với công nghệ
+  start: '2025-05-16'
+  end: '2025-05-16'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/76
+  summary: 🗣️ Chia sẻ và tìm kiếm giải pháp cho các vấn đề, thách thức trong lĩnh vực Edtech.
+  source: https://sihub.gov.vn/events/76
+  time: 08:00–12:00
+  price: free
+  recurrence: annual
+  month: 5
+- id: sihub-79-mega-us-expo-2025-chinh-thuc-tro-lai-voi
+  title: Mega Us Expo 2025 – Ngày hội xúc tiến giao thương Hàn – Việt
+  start: '2025-08-14'
+  end: '2025-08-17'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: ecosystem
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/79
+  summary: Chương trình dự kiến thu hút hơn 250 doanh nghiệp Hàn Quốc với hàng ngàn sản phẩm tham gia trưng bày, giới thiệu.
+  source: https://sihub.gov.vn/events/79
+  price: free
+  recurrence: annual
+  month: 8
+- id: sihub-81-cho-phien-khoi-nghiep-2025-lan-3
+  title: Chợ phiên khởi nghiệp 2025 (lần 3)
+  start: '2025-09-07'
+  end: '2025-09-14'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/81
+  summary: 'Chủ đề: Khởi nghiệp xã hội – Phát triển xanh – Phát triển bền vững 📍 Địa điểm: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB) – 123 Trương Định, P.'
+  source: https://sihub.gov.vn/events/81
+  time: 08:00
+  price: free
+  recurrence: annual
+  month: 9
+- id: sihub-89-chuong-trinh-ket-xuc-tien-giao-thuong-ch
+  title: Chương trình xúc tiến giao thương, chuyển giao công nghệ đa quốc gia
+  start: '2026-01-20'
+  end: '2026-01-20'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/89
+  summary: Chương trình xúc tiến giao thương và chuyển giao công nghệ đa quốc gia sẽ diễn ra vào ngày 20/01/2026 tại TP.HCM.
+  source: https://sihub.gov.vn/events/89
+  time: 07:00–11:00
+  price: free
+- id: sihub-90-trung-bay-trien-lam-san-pham-tai-tang-1
+  title: Triển lãm sản phẩm tại không gian khởi nghiệp đổi mới sáng tạo SIHUB
+  start: '2026-01-19'
+  end: '2026-03-31'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/90
+  summary: Bạn là Startup, là Doanh nghiệp công nghệ, là Tổ chức hỗ trợ khởi nghiệp,..?
+  source: https://sihub.gov.vn/events/90
+  time: '17:00'
+  price: free
+- id: sihub-91-hoi-thao-ky-nguyen-tai-san-so-2026-hanh
+  title: Kỷ nguyên tài sản số 2026 – Hành lang pháp lý và an ninh mạng
+  start: '2026-02-08'
+  end: '2026-02-08'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: capital
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/91
+  summary: Luật Tài sản số chính thức có hiệu lực từ 01/01/2026, đánh dấu bước chuyển quan trọng trong việc quản lý, bảo vệ và phát triển thị trường tài sản số tại Việt Nam.
+  source: https://sihub.gov.vn/events/91
+  time: 09:00–12:00
+  price: free
+- id: sihub-92-the-rise-of-integrative-medicine
+  title: The Rise of Integrative Medicine
+  start: '2026-03-27'
+  end: '2026-03-27'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: health
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/92
+  summary: How Can Integrative Medicine Scale and Attract Investment?
+  source: https://sihub.gov.vn/events/92
+  time: 08:00–12:00
+  price: free
+- id: sihub-93-trien-lam-health-tech-khong-gian-trai-ng
+  title: Triển lãm Health Tech – Không gian trải nghiệm công nghệ y tế
+  start: '2026-04-08'
+  end: '2026-04-08'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/93
+  summary: Trong bối cảnh hệ thống y tế đang chuyển dịch từ “chữa bệnh” sang “chủ động phòng bệnh”, công nghệ - đặc biệt là AI, dữ liệu lớn và thiết bị thông minh đang mở ra một cách tiếp cận hoàn toàn mới trong quản lý sức khỏe cá nhân và cộng đồng.
+  source: https://sihub.gov.vn/events/93
+  time: 08:00–18:00
+  price: free
+- id: sihub-94-dinh-huong-nghien-cuu-khoa-hoc-phat-trie
+  title: Định hướng nghiên cứu khoa học, phát triển công nghệ và nâng cao tiềm lực khoa học
+  start: '2026-03-25'
+  end: '2026-03-25'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/94
+  summary: 📢 THƯ MỜI THAM DỰ PHIÊN TỔNG THỂ HỘI THẢO “ĐỊNH HƯỚNG NGHIÊN CỨU KHOA HỌC, PHÁT TRIỂN CÔNG NGHỆ VÀ NÂNG CAO TIỀM LỰC KHOA HỌC CÔNG NGHỆ TRÊN ĐỊA BÀN TP.HCM GIAI ĐOẠN 2026 - 2030” 🎯 Phiên tổng thể Hội thảo được tổ chức nhằm tổng hợp các kết quả thảo luận từ chu...
+  source: https://sihub.gov.vn/events/94
+  time: 08:30–11:30
+  price: free
+- id: sihub-95-hoi-thao-giai-phap-thuc-day-phong-trao-t
+  title: Hội thảo giải pháp thúc đẩy phong trào toàn dân chủ động chăm sóc sức khỏe
+  start: '2026-04-08'
+  end: '2026-04-08'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: health
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/95
+  summary: Chăm sóc sức khỏe không còn bắt đầu từ bệnh viện - mà bắt đầu từ mỗi người dân.
+  source: https://sihub.gov.vn/events/95
+  time: 09:00–11:00
+  price: free
+- id: sihub-96-doi-moi-sang-tao-kien-tao-tuong-lai-cham
+  title: Đổi mới sáng tạo – Kiến tạo tương lai chăm sóc sức khỏe chủ động
+  start: '2026-04-08'
+  end: '2026-04-08'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: health
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/96
+  summary: Y tế đang bước vào kỷ nguyên dữ liệu, nhưng không phải ai cũng sẵn sàng Nếu trước đây, công nghệ chỉ đóng vai trò hỗ trợ, thì hiện nay, dữ liệu và trí tuệ nhân tạo đang dần trở thành trung tâm của hệ thống y tế từ quản lý, chẩn đoán đến cá nhân hóa chăm sóc sứ...
+  source: https://sihub.gov.vn/events/96
+  time: 13:30–16:30
+  price: free
+- id: sihub-97-edtech-vietnam-2026-bat-mi-hanh-trinh-kh
+  title: 'EdTech Vietnam 2026: Hành trình khám phá hệ sinh thái công nghệ giáo dục'
+  start: '2026-04-10'
+  end: '2026-04-11'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/97
+  summary: '🚀 EDTECH VIETNAM 2026: BẬT MÍ HÀNH TRÌNH KHÁM PHÁ HỆ SINH THÁI CÔNG NGHỆ GIÁO DỤC🌐 📅 Ngày 10-11.04.2026 | Trung tâm Khởi nghiệp Sáng tạo Thành phố Hồ Chí Minh (SIHUB)  Đăng ký ngay: https://forms.gle/5ikQTxKdP5v3VctN9 Bạn đã sẵn sàng cho một chuyến khám p...'
+  source: https://sihub.gov.vn/events/97
+  time: 08:00
+  price: free
+  recurrence: annual
+  month: 4
+- id: sihub-98-inside-the-seed-fund-nhung-luat-ngam-tro
+  title: Inside the Seed Fund – Những "luật ngầm" trong cuộc chơi gọi vốn
+  start: '2026-04-18'
+  end: '2026-04-18'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: capital
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/98
+  summary: Trong mỗi đợt sóng công nghệ bùng nổ, thị trường luôn tràn ngập những câu chuyện về cơ hội và sự bứt phá.
+  source: https://sihub.gov.vn/events/98
+  time: 08:00–12:00
+  price: free
+- id: sihub-99-f-b-founders-fund-or-fade-lam-sao-de-chu
+  title: 'F&B Founders: Fund or Fade? Chuỗi F&B scale và gọi vốn hiệu quả'
+  start: '2026-04-24'
+  end: '2026-04-24'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: capital
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/99
+  summary: Trong ngành F&B, việc mở rộng chuỗi thường được xem là bước tiến tất yếu để tăng trưởng.
+  source: https://sihub.gov.vn/events/99
+  time: 08:00–12:00
+  price: free
+- id: sihub-100-le-cong-bo-quy-dau-tu-mao-hiem-thanh-pho
+  title: Lễ công bố Quỹ Đầu tư mạo hiểm TP.HCM
+  start: '2026-04-17'
+  end: '2026-04-17'
+  venue: SIHUB, 123 Trương Định, TP.HCM – Hội trường S2.01 (200 người)
+  category: capital
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/100
+  summary: Thành phố Hồ Chí Minh sẽ chính thức công bố Công ty Cổ phần Quỹ Đầu tư mạo hiểm Thành phố Hồ Chí Minh - một mô hình hoàn toàn mới, nơi Nhà nước không chỉ hỗ trợ, mà trực tiếp tham gia vào cuộc chơi đầu tư mạo hiểm.
+  source: https://sihub.gov.vn/events/100
+  time: 16:00–17:20
+  format: hybrid
+  price: free
+- id: sihub-101-hoi-nghi-huong-dan-cac-thu-tuc-cong-nhan
+  title: Hội nghị hướng dẫn thủ tục công nhận tổ chức, cá nhân đổi mới sáng tạo
+  start: '2026-04-28'
+  end: '2026-04-28'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/101
+  summary: 'Sở Khoa học và Công nghệ triển khai tổ chức Hội nghị hướng dẫn các thủ tục công nhận tổ chức, cá nhân đổi mới sáng tạo, hỗ trợ đổi mới sáng tạo, khởi nghiệp sáng tạo theo Nghị định số 268/2025/NĐ-CP trên địa bàn Thành phố Hồ Chí Minh với thông tin như sau: - C...'
+  source: https://sihub.gov.vn/events/101
+  time: 08:00–11:30
+  price: free
+- id: sihub-102-chuyen-doi-hay-bi-bo-lai-co-hoi-but-pha
+  title: Chuyển đổi hay bị bỏ lại? Cơ hội bứt phá doanh thu cho hộ kinh doanh
+  start: '2026-05-29'
+  end: '2026-05-29'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: ecosystem
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/102
+  summary: 🌐 CHUYỂN ĐỔI HAY BỊ BỎ LẠI?
+  source: https://sihub.gov.vn/events/102
+  time: 08:30–11:30
+  price: free
+- id: sihub-103-plug-and-play-be-phong-ky-lan-toan-cau-c
+  title: Plug and Play đồng hành cùng SIHUB
+  start: '2026-05-27'
+  end: '2026-05-27'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: founders
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/103
+  summary: Bạn có biết điều gì làm nên điểm chung giữa Google, PayPal, Logitech và Danger?
+  source: https://sihub.gov.vn/events/103
+  time: 08:30–11:30
+  price: free
+- id: sihub-104-smart-green-living-week-2026
+  title: Smart Green Living Week 2026
+  start: '2026-07-17'
+  end: '2026-07-19'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: ecosystem
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/104
+  summary: MỜI DOANH NGHIỆP – STARTUP ĐĂNG KÝ THAM GIA TRIỂN LÃM "SMART GREEN LIVING WEEK 2026” Bạn đang sở hữu một giải pháp xanh, một sản phẩm công nghệ thông minh, hay một ý tưởng góp phần thay đổi cách người Việt sống ở đô thị?
+  source: https://sihub.gov.vn/events/104
+  time: 08:00
+  price: free
+  recurrence: annual
+  month: 7
+- id: sihub-105-branding-performance-growth-summit-2026
+  title: Branding & Performance Growth Summit 2026
+  start: '2026-07-23'
+  end: '2026-07-23'
+  venue: SIHUB, 123 Trương Định, TP.HCM – Hội trường S2.01 (200 người)
+  category: ecosystem
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/105
+  summary: AI đang thay đổi cách doanh nghiệp vận hành.
+  source: https://sihub.gov.vn/events/105
+  time: 14:00–17:30
+  format: hybrid
+  price: free
+  recurrence: annual
+  month: 7
+- id: sihub-106-dien-dan-asia-r-d-connect-2026
+  title: Diễn đàn Asia R&D Connect 2026
+  start: '2026-07-22'
+  end: '2026-07-22'
+  venue: SIHUB, 123 Trương Định, TP.HCM
+  category: deeptech
+  organizer: Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB)
+  organizer_ids:
+  - government-sihub
+  url: https://sihub.gov.vn/events/106
+  summary: Xây dựng và bảo vệ thương hiệu Việt trong hội nhập kinh tế toàn cầu Trong bối cảnh hội nhập ngày càng sâu rộng, thương hiệu không chỉ là lợi thế cạnh tranh của mỗi doanh nghiệp mà còn góp phần khẳng định vị thế của Việt Nam trên thị trường quốc tế.
+  source: https://sihub.gov.vn/events/106
+  time: 13:00–17:30
+  price: free
+  recurrence: annual
+  month: 7

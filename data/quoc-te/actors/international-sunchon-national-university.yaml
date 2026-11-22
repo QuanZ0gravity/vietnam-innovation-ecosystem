@@ -1,0 +1,14 @@
+id: international-sunchon-national-university
+name:
+  vi: Sunchon National University
+type: international
+categories:
+- Đại học Hàn Quốc
+description:
+  vi: Trường đại học Hàn Quốc, đối tác của SIHUB.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- SIHUB – sihub.gov.vn (22/11/2026)
+source_url: https://sihub.gov.vn/

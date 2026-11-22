@@ -1,0 +1,14 @@
+id: government-natec
+name:
+  vi: Cục Phát triển thị trường và doanh nghiệp khoa học công nghệ (NATEC)
+alt_names:
+- NATEC
+type: government
+description:
+  vi: Cơ quan thuộc Bộ KH&CN về phát triển thị trường công nghệ và doanh nghiệp khoa học công nghệ; đối tác của SIHUB.
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- SIHUB – sihub.gov.vn (22/11/2026)
+source_url: https://sihub.gov.vn/

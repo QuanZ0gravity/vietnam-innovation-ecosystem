@@ -1,4 +1,3 @@
-# Cơ hội tạo deal flow. Quy tắc giống data/da-nang/opportunities.yaml.
 - id: opp-startup-wheel-2026
   title: Startup Wheel 2026
   type: competition
@@ -294,3 +293,17 @@
   - startup-blaze-ai
   secondary_sources:
   - https://indanang.vn/ecosystem-activities/jdi-tfoai4
+- id: opp-thuong-mai-hoa-ket-qua-nghien-cuu-hcm-dot-2
+  title: Đề án thí điểm thương mại hóa kết quả nghiên cứu, tài sản trí tuệ từ ngân sách nhà nước (đợt 2)
+  type: call_for_applications
+  organizer: Sở Khoa học và Công nghệ TP.HCM
+  organizer_ids:
+  - government-so-khcn-tp-hcm
+  opens: '2026-05-20'
+  focus:
+  - Công nghệ chiến lược
+  - Thương mại hóa kết quả nghiên cứu
+  - Sở hữu trí tuệ
+  eligibility: Cơ quan quản lý ngân sách KH&CN, tổ chức nghiên cứu, trường đại học, doanh nghiệp KH&CN, doanh nghiệp khởi nghiệp sáng tạo tại TP.HCM, với nhiệm vụ KH&CN và ĐMST mới thuộc danh mục công nghệ chiến lược (QĐ 21/2026/QĐ-TTg).
+  benefits: Tham gia cơ chế thí điểm rút ngắn thời gian chuyển giao, ứng dụng và thương mại hóa kết quả nghiên cứu.
+  primary_source: https://sihub.gov.vn/news/moi-dang-ky-tham-gia-de-an-thi-diem-chinh-sach-tao-dong-luc-thuong-mai-hoa-dua-nhanh-ket-qua-nghien-cuu-tai-san-tri-tue-duoc-tao-ra-tu-ngan-sach-nha-nuoc-vao-san-xuat-kinh-doanh-dot-2

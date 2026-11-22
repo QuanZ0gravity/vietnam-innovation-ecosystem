@@ -183,3 +183,13 @@ Sau đợt này: 916 hồ sơ, 337 có website, 514 có mô tả, 460 có logo.
 - Thêm 40 hồ sơ chuyên gia và 1 nhà đầu tư cá nhân từ HOIP (loại mới `expert`): tên, lĩnh vực, giới thiệu nguyên văn, đường dẫn hồ sơ HOIP. Không công bố email, số điện thoại, địa chỉ cá nhân; lý do ghi ở trang Quyền riêng tư.
 - Sự kiện: 17 sự kiện 2026 tại Đà Nẵng, TP.HCM, Hà Nội (từ indanang.vn/ecosystem-activities và tin trên HOIP), 9 sự kiện thường niên có tháng dự kiến năm sau. Trang `/su-kien/` theo kiểu Luma: dòng thời gian theo ngày, lọc theo nơi và chủ đề, trang chi tiết có nút "Thêm vào lịch" (.ics). Trang thành phố có mục Sự kiện.
 - Chân trang: thêm trang Quyền riêng tư và dữ liệu cá nhân, Điều khoản sử dụng, và một dòng về quyền xem, sửa, xoá thông tin.
+
+## SIHUB – sihub.gov.vn (22/11/2026)
+
+- Nguồn: https://sihub.gov.vn/ (robots.txt cho phép). Đọc trang chủ, giới thiệu, tin tức và 52 trang sự kiện, mỗi trang một lần.
+- Sự kiện: thêm 26 sự kiện tại SIHUB (19 sự kiện năm 2026 và 7 sự kiện tiêu biểu năm 2025 như Fintech Summit, Founder Summit, EdNovation, Mega Us Expo, Chợ phiên khởi nghiệp, Hội nghị kết nối hệ sinh thái), có giờ, hình thức (trực tiếp, kết hợp), miễn phí, link trang sự kiện. Bỏ các buổi tuyển chọn dự án nội bộ.
+- Tổ chức: cập nhật hồ sơ SIHUB (tên đầy đủ, địa chỉ, email chung, website, mô tả). Thêm Quỹ Đầu tư mạo hiểm TP.HCM (công bố 17/4/2026), Plug and Play, Chungbuk Technopark, Daejeon Technopark, NATEC và 12 trường đại học Hàn Quốc trong danh sách đối tác của SIHUB, kèm quan hệ "đối tác" với SIHUB.
+- Cơ hội: Đề án thí điểm thương mại hóa kết quả nghiên cứu, tài sản trí tuệ từ ngân sách nhà nước (đợt 2), mở từ 20/5/2026.
+- Mục "Tình hình" của TP.HCM: tỷ trọng của TP.HCM trong cả nước, giá trị hệ sinh thái, vốn mạo hiểm, Quỹ ĐTMH TP.HCM, kết quả Nghị quyết 20/2023 và dự thảo chính sách hỗ trợ mới.
+- Làm sạch phần giới thiệu nguyên văn của 2 hồ sơ nhà đầu tư, vườn ươm HOIP bị dính các trường dữ liệu.
+- Sau đợt này: 1233 hồ sơ, 42 sự kiện.
