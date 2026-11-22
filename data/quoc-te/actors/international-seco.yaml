@@ -1,16 +1,42 @@
 id: international-seco
 name:
-  vi: Cục Kinh tế Liên bang Thụy Sĩ (SECO)
+  vi: SECO – Hợp tác và Phát triển Kinh tế (Thụy Sĩ)
+  en: SECO Economic Cooperation and Development
 alt_names:
 - SECO
 - State Secretariat for Economic Affairs
+- Cục Kinh tế Liên bang Thụy Sĩ (SECO)
+- SECO Cooperation
 type: international
-website: https://www.seco.admin.ch/
+categories:
+- Cơ quan chính phủ Thụy Sĩ
+- Hợp tác phát triển kinh tế
+- Nhà tài trợ chương trình
+sectors:
+- climate
+- fintech
+status: active
+website: https://www.seco-cooperation.admin.ch/en
+linkedin: https://www.linkedin.com/company/seco-cooperation
 description:
-  vi: Cơ quan Chính phủ Thụy Sĩ phụ trách kinh tế; bộ phận Hợp tác và Phát triển Kinh tế tài trợ Swiss EP.
+  vi: Bộ phận Hợp tác và Phát triển Kinh tế của Cục Kinh tế Liên bang Thụy Sĩ (SECO). Thúc đẩy tăng trưởng kinh tế bền vững, thân thiện môi trường, khí hậu, tạo việc làm tốt hơn ở các nước đang phát triển. Việt Nam là nước ưu tiên; SECO tài trợ Swiss Entrepreneurship Program.
+history:
+- date: '2015'
+  text: Tài trợ Swiss Entrepreneurship Program (Swiss EP), giao Swisscontact và J.E. Austin Associates thực hiện, trong đó có Việt Nam.
+  source: https://swissep.org/about-us/behind-swiss-ep
+- date: 2025-01
+  text: 'Công bố Chương trình hợp tác Việt Nam 2025–2028 với ba trọng tâm: thương mại bền vững và đổi mới sáng tạo (trong đó có củng cố môi trường đổi mới sáng tạo, khởi nghiệp); tài chính công và tư bền vững; phát triển công nghiệp, đô thị thông minh với khí hậu.'
+  source: https://www.seco-cooperation.admin.ch/en/vietnam
+- date: 2026-02
+  text: 'Các dự án tiêu biểu tại Việt Nam: SwissTrade+ (phát triển thương mại, xuất khẩu), ST4SD (du lịch bền vững), GQSP giai đoạn II (chất lượng và tiêu chuẩn), Swiss Entrepreneurship Program.'
+  source: https://www.seco-cooperation.admin.ch/en/vietnam
+- date: '2026-10-17'
+  text: Chuyến thăm Hà Nội của Tổng thống Thụy Sĩ Guy Parmelin, tăng cường hợp tác thương mại, đầu tư, đổi mới sáng tạo; ngày 18/10 ký Hiệp định thương mại tự do EFTA – Việt Nam.
+  source: https://www.seco-cooperation.admin.ch/en
 region: quoc-te
 verification:
   level: source_checked
 sources:
 - swissep.org (22/11/2026)
-source_url: https://swissep.org/about-us/behind-swiss-ep
+- seco-cooperation.admin.ch (22/11/2026)
+source_url: https://www.seco-cooperation.admin.ch/en/vietnam
