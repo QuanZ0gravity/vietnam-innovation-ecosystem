@@ -191,6 +191,7 @@
     finalists: 20
     note: Số liệu từ bản thử nghiệm, chưa đối chiếu nguồn gốc.
   legacy_id: v25
+  deadline: '2026-07-27'
 - id: opp-startup-runway-2026
   title: Startup Runway 2026 và Tuần lễ Khởi nghiệp học sinh, sinh viên
   type: competition
@@ -296,3 +297,163 @@
   - company-studio-noah
   secondary_sources:
   - https://indanang.vn/ecosystem-activities/tecx-2026-danang
+- id: opp-siec-2026
+  title: SIEC 2026 – Khởi nghiệp đổi mới sáng tạo trong sinh viên
+  type: competition
+  organizer: Đại học Đà Nẵng, Sở KH&CN TP Đà Nẵng
+  organizer_ids:
+  - university-dai-hoc-da-nang
+  - government-so-khoa-hoc-va-cong-nghe
+  - university-truong-dai-hoc-su-pham
+  eligibility: Sinh viên các trường thành viên Đại học Đà Nẵng
+  benefits: Cuộc thi thường niên cấp Đại học Đà Nẵng; năm 2026 do Trường ĐH Sư phạm đăng cai.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026-09-27'
+- id: opp-pisi-2026
+  title: PISI 2026 – Program Incubation of Start-ups and Innovative Ideas
+  type: competition
+  organizer: Trường ĐH CNTT và Truyền thông Việt – Hàn (VKU), ĐHĐN
+  organizer_ids:
+  - university-truong-dai-hoc-cong-nghe-thong-tin-va-truyen-thong-viet-han
+  eligibility: Sinh viên
+  benefits: Chương trình ươm tạo ý tưởng, dự án khởi nghiệp; chung kết 24/6/2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026-06-24'
+- id: opp-uda-startup-innovation-2026
+  title: UDA Startup & Innovation lần VII 2026
+  type: competition
+  organizer: Trường Đại học Đông Á
+  organizer_ids:
+  - university-truong-dai-hoc-dong-a
+  eligibility: Sinh viên
+  benefits: Mùa thứ 7; bán kết 2–3/4/2026, chung kết sau tháng 4.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: 2026-04
+- id: opp-dtu-startup-2026
+  title: DTU Startup 2026 – Innovation for Impact
+  type: competition
+  organizer: Đại học Duy Tân, Trung tâm Khởi nghiệp DTU
+  organizer_ids:
+  - university-truong-dai-hoc-duy-tan
+  - support-org-trung-tam-khoi-nghiep-dtu
+  eligibility: Sinh viên Đại học Duy Tân
+  benefits: Mở nhận hồ sơ từ 9/9/2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  opens: '2026-09-09'
+- id: opp-influx-2026
+  title: InFLUX 2026
+  type: competition
+  organizer: Trường Đại học Ngoại ngữ, ĐHĐN
+  organizer_ids:
+  - university-truong-dai-hoc-ngoai-ngu
+  eligibility: Sinh viên
+  benefits: Cuộc thi khởi nghiệp và đổi mới sáng tạo trong sinh viên, mùa 2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026'
+- id: opp-vnuk-sv-startup-2026
+  title: VNUK SV.STARTUP 2026
+  type: competition
+  organizer: Viện Nghiên cứu và Đào tạo Việt – Anh (VNUK), ĐHĐN
+  organizer_ids:
+  - university-vien-nghien-cuu-va-dao-tao-viet-anh
+  eligibility: Học sinh, sinh viên
+  benefits: Hạng mục khởi nghiệp thuộc VNUK Innovation Challenge 2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026'
+- id: opp-u-invent-8
+  title: U-Invent 8
+  type: competition
+  organizer: Viện Nghiên cứu và Đào tạo Việt – Anh (VNUK), ĐHĐN
+  organizer_ids:
+  - university-vien-nghien-cuu-va-dao-tao-viet-anh
+  eligibility: Học sinh THPT, sinh viên
+  benefits: Cuộc thi sáng tạo khoa học, công nghệ, nguồn dự án cho khởi nghiệp; tổng kết 1/3/2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026-03-01'
+- id: opp-design-thinking-human-challenges-2026
+  title: Design Thinking for Human Challenges (InTE-VNUK từ mùa 2026–2027)
+  type: competition
+  organizer: Viện Nghiên cứu và Đào tạo Việt – Anh (VNUK), ĐHĐN
+  organizer_ids:
+  - university-vien-nghien-cuu-va-dao-tao-viet-anh
+  eligibility: Sinh viên
+  benefits: Cuộc thi giải quyết vấn đề bằng tư duy thiết kế; tổng kết 1/3/2026; mùa 2026–2027 đổi tên thành InTE-VNUK.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026-03-01'
+- id: opp-light-up-your-creativity-2026
+  title: Light Up Your Creativity 2026 – Ý tưởng khởi nghiệp ĐMST
+  type: competition
+  organizer: Thành đoàn – Hội Sinh viên TP Đà Nẵng
+  organizer_ids:
+  - government-thanh-doan-da-nang
+  eligibility: Thanh niên, học sinh, sinh viên
+  benefits: Cuộc thi ý tưởng thường niên; phát động 28/7/2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  opens: '2026-07-28'
+- id: opp-danang-green-future-solutions-2026
+  title: Danang Green Future Solutions 2026
+  type: competition
+  organizer: Thành đoàn Đà Nẵng, Trường ĐH Swinburne Đà Nẵng
+  organizer_ids:
+  - government-thanh-doan-da-nang
+  - university-truong-dai-hoc-swinburne-da-nang
+  eligibility: Đoàn viên, thanh niên, học sinh
+  benefits: Thử thách giải pháp xanh; chung kết 5/4/2026.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026-04-05'
+- id: opp-fptu-biz-talent-2026
+  title: FPTU Biz Talent 2026
+  type: competition
+  organizer: Trường Đại học FPT
+  organizer_ids:
+  - university-truong-dai-hoc-fpt-da-nang
+  eligibility: Học sinh, sinh viên
+  benefits: Cuộc thi kinh doanh, khởi nghiệp toàn hệ thống Trường ĐH FPT; Đà Nẵng tham gia qua vòng khu vực.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026'
+- id: opp-fptu-da-nang-ai-challenges-2026
+  title: Các thử thách AI, công nghệ của FPT University Đà Nẵng
+  type: competition
+  organizer: Trường Đại học FPT Đà Nẵng
+  organizer_ids:
+  - university-truong-dai-hoc-fpt-da-nang
+  eligibility: Học sinh, sinh viên, lập trình viên
+  benefits: Các cuộc thi đổi mới sáng tạo AI, công nghệ theo từng chương trình; không phải cuộc thi khởi nghiệp thuần túy.
+  focus:
+  - Khởi nghiệp sáng tạo
+  - Sinh viên
+  primary_source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+  event_date: '2026'

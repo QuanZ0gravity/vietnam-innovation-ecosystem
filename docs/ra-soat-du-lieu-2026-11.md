@@ -280,3 +280,10 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Theo swissep.org (trang chủ, Behind Swiss EP, Working principles, Tailored support, Swiss EP experts, Decade of Swiss EP, Countries, Vietnam): cập nhật mô tả, năm 2015, phân loại, dòng thời gian 2014–2025, đội ngũ Việt Nam công bố trên website, phần "Cách Swiss EP làm việc" (nguyên tắc, dịch vụ, chỉ số công khai: 7 nước, 628 chuyên gia trong 10 năm, mạng lưới 700+).
 - Thêm SECO, Swisscontact, J.E. Austin Associates (quan hệ tài trợ, thực hiện) và TOVchain; quan hệ "đối tác" với 13 đơn vị có trên trang Vietnam của swissep.org. Trang hồ sơ có thêm mục "Đối tác" và "Là đối tác của".
 - Chỉ dùng thông tin công khai trên website; không đưa số liệu nội bộ của chương trình.
+
+## Cuộc thi khởi nghiệp ĐMST tại Đà Nẵng 2026 (22/11/2026)
+
+- Theo bảng tổng hợp do người điều phối cung cấp (Google Sheet): thêm 14 cuộc thi vào mục Cơ hội (SIEC, Startup Runway, BK SHARK, PISI, UDA Startup & Innovation, DTU Startup, InFLUX, VNUK SV.STARTUP, U-Invent 8, Design Thinking for Human Challenges, Light Up Your Creativity, Danang Green Future Solutions, FPTU Biz Talent, các thử thách AI của FPT University Đà Nẵng), gắn đơn vị tổ chức; cập nhật hạn hồ sơ SURF 2026 (27/7).
+- 5 vòng chung kết, tổng kết có ngày cụ thể thêm vào trang Sự kiện, đánh dấu thường niên.
+- Thêm hồ sơ Thành đoàn Đà Nẵng, Trường ĐH Swinburne Đà Nẵng, Trung tâm Khởi nghiệp DTU (mức "chưa xác minh").
+- Nguồn từng cuộc thi đang trỏ về bảng tổng hợp; nên bổ sung link trang chính thức của từng cuộc thi khi có.
