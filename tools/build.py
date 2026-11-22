@@ -1254,7 +1254,7 @@ def ev_timeline(evs, newest_first=False):
         key = ev["_start"]
         if key != cur:
             if cur is not None: out += "</div></div>"
-            out += (f'<div class="ev-day"><div class="ev-date"><b>{key.day} thg {key.month}</b><span>{WD[key.weekday()]}</span><span class="muted small">{key.year}</span></div>'
+            out += (f'<div class="ev-day" id="d-{key.isoformat()}" data-date="{key.isoformat()}"><div class="ev-date"><b>{key.day} thg {key.month}</b><span>{WD[key.weekday()]}</span><span class="muted small">{key.year}</span></div>'
                     f'<div class="ev-items">')
             cur = key
         out += ev_card(ev)
@@ -1282,12 +1282,21 @@ for mth in range(1, 13):
     xs = [x for x in annual if (x.get("month") or x["_start"].month) == mth]
     if not xs: continue
     ann_html += f'<div class="ev-day"><div class="ev-date"><b>{MONTHS[mth]}</b><span class="muted small" data-vi="hằng năm" data-en="every year">hằng năm</span></div><div class="ev-items">' + "".join(ev_card(x) for x in xs) + "</div></div>"
+_evdays = {}
+for _x in sorted(events, key=lambda z: z["_start"]):
+    _d = _x["_start"]
+    while _d <= _x["_end"]:
+        k = _d.isoformat()
+        if k in _evdays: _evdays[k]["t"] += " · " + _x["title"]
+        else: _evdays[k] = {"t": _x["title"], "s": _x["_start"].isoformat()}
+        _d += datetime.timedelta(days=1)
+ev_days_json = json.dumps(_evdays, ensure_ascii=False).replace("</", "<\\/")
 chips = "".join(f'<button type="button" class="chip" data-f="reg" data-v="{r}">{e(n)}</button>' for r, n in REG_NAME.items() if any(x["_region"] == r for x in events))
 chips2 = "".join(f'<button type="button" class="chip sm" data-f="cat" data-v="{k}">{e(v[0])}</button>' for k, v in EV_CAT.items() if any(x.get("category") == k for x in events))
 ev_body = f"""
 <div class="wrap page-head ev-head"><h1 data-vi="Sự kiện" data-en="Events">Sự kiện</h1>
 <p class="lead" data-vi="Sự kiện khởi nghiệp, đổi mới sáng tạo diễn ra thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội. Mỗi sự kiện có thể thêm vào lịch của bạn." data-en="Annual and upcoming startup and innovation events in Da Nang, Ho Chi Minh City and Hanoi. Add any event to your calendar.">Sự kiện khởi nghiệp, đổi mới sáng tạo diễn ra thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội.</p></div>
-<div class="wrap" style="padding-bottom:72px">
+<div class="wrap ev-layout" style="padding-bottom:72px"><div class="ev-main">
 <div class="ev-tabs" role="tablist"><button role="tab" class="on" data-tab="up" data-vi="Sắp tới ({len(up)})" data-en="Upcoming ({len(up)})">Sắp tới ({len(up)})</button><button role="tab" data-tab="annual" data-vi="Lịch thường niên ({len(annual)})" data-en="Annual calendar ({len(annual)})">Lịch thường niên ({len(annual)})</button><button role="tab" data-tab="past" data-vi="Đã qua ({len(past)})" data-en="Past ({len(past)})">Đã qua ({len(past)})</button></div>
 <div class="chiprow ev-filter"><button type="button" class="chip on" data-f="reg" data-v="" data-vi="Tất cả nơi" data-en="All places">Tất cả nơi</button>{chips}</div>
 <div class="chiprow sm ev-filter"><button type="button" class="chip sm on" data-f="cat" data-v="" data-vi="Mọi chủ đề" data-en="All topics">Mọi chủ đề</button>{chips2}</div>
@@ -1296,6 +1305,9 @@ ev_body = f"""
 <section class="ev-pane" data-pane="past" hidden>{ev_timeline(past, newest_first=True)}</section>
 <p class="small" style="margin-top:28px"><a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi một sự kiện" data-en="Submit an event">Gửi một sự kiện</a></p>
 </div>
+<aside class="ev-aside"><div class="evcal" id="evcal" aria-label="Lịch sự kiện"></div>
+<p class="small muted" style="margin-top:10px" data-vi="Chọn ngày có chấm để xem sự kiện." data-en="Pick a dotted day to see its events.">Chọn ngày có chấm để xem sự kiện.</p>
+<p class="small"><a href="{SITE_ROOT}data/events.json" data-vi="Dữ liệu sự kiện (JSON)" data-en="Event data (JSON)">Dữ liệu sự kiện (JSON)</a></p></aside></div>
 <script>
 (function(){{var tabs=document.querySelectorAll('.ev-tabs [data-tab]'),panes=document.querySelectorAll('.ev-pane'),st={{reg:'',cat:''}};
 function apply(){{document.querySelectorAll('.ev-card').forEach(function(c){{c.hidden=(st.reg&&c.dataset.reg!==st.reg)||(st.cat&&c.dataset.cat!==st.cat);}});
@@ -1303,6 +1315,46 @@ document.querySelectorAll('.ev-day').forEach(function(d){{d.hidden=!d.querySelec
 tabs.forEach(function(t){{t.onclick=function(){{tabs.forEach(function(x){{x.classList.toggle('on',x===t)}});panes.forEach(function(p){{p.hidden=p.dataset.pane!==t.dataset.tab}});history.replaceState(null,'','#'+t.dataset.tab);}};}});
 document.querySelectorAll('.ev-filter .chip').forEach(function(b){{b.onclick=function(){{st[b.dataset.f]=b.dataset.v;b.parentNode.querySelectorAll('.chip').forEach(function(x){{x.classList.toggle('on',x===b)}});apply();}};}});
 var h=location.hash.slice(1);if(h){{var t=document.querySelector('.ev-tabs [data-tab="'+h+'"]');if(t)t.click();}}else if(!{len(up)}){{document.querySelector('.ev-tabs [data-tab="annual"]').click();}}}})();
+</script>
+<script>(function(){{
+var EV={ev_days_json}, TODAY="{TODAY}";
+var box=document.getElementById('evcal'); if(!box) return;
+var M=["Tháng 1","Tháng 2","Tháng 3","Tháng 4","Tháng 5","Tháng 6","Tháng 7","Tháng 8","Tháng 9","Tháng 10","Tháng 11","Tháng 12"];
+var ME=["January","February","March","April","May","June","July","August","September","October","November","December"];
+var WDV=["T2","T3","T4","T5","T6","T7","CN"], WDE=["Mo","Tu","We","Th","Fr","Sa","Su"];
+var en=function(){{return document.documentElement.lang==='en'||(window.VIE&&VIE.lang&&VIE.lang()==='en');}};
+var cur=new Date(TODAY+'T00:00:00'); cur.setDate(1);
+function pad(n){{return (n<10?'0':'')+n;}}
+function draw(){{
+  var y=cur.getFullYear(), m=cur.getMonth(), first=(new Date(y,m,1).getDay()+6)%7, days=new Date(y,m+1,0).getDate();
+  var h='<div class="evcal-h"><button type="button" class="evcal-nav" data-d="-1" aria-label="Tháng trước">‹</button><b>'+(en()?ME[m]:M[m])+' '+y+'</b><button type="button" class="evcal-nav" data-d="1" aria-label="Tháng sau">›</button></div><div class="evcal-g">';
+  (en()?WDE:WDV).forEach(function(w){{h+='<span class="evcal-w">'+w+'</span>';}});
+  for(var i=0;i<first;i++) h+='<span></span>';
+  for(var d=1;d<=days;d++){{
+    var k=y+'-'+pad(m+1)+'-'+pad(d), info=EV[k], cls='evcal-d'+(k===TODAY?' today':'')+(info?' has':'');
+    h+= info ? '<button type="button" class="'+cls+'" data-k="'+k+'" title="'+info.t.replace(/"/g,'&quot;')+'">'+d+'<i></i></button>' : '<span class="'+cls+'">'+d+'</span>';
+  }}
+  h+='</div>';
+  var cnt=Object.keys(EV).filter(function(k){{return k.slice(0,7)===y+'-'+pad(m+1);}}).length;
+  h+='<p class="evcal-c small muted">'+(cnt? (en()? cnt+' day(s) with events':cnt+' ngày có sự kiện') : (en()?'No events this month':'Không có sự kiện trong tháng'))+'</p>';
+  box.innerHTML=h;
+  box.querySelectorAll('.evcal-nav').forEach(function(b){{b.onclick=function(){{cur.setMonth(cur.getMonth()+(+b.dataset.d));draw();}};}});
+  box.querySelectorAll('.evcal-d.has').forEach(function(b){{b.onclick=function(){{go(b.dataset.k);}};}});
+}}
+function go(k){{
+  var info=EV[k]; if(!info) return;
+  var target=document.getElementById('d-'+info.s);
+  var tab=target?target.closest('.ev-pane').dataset.pane:(info.s>=TODAY?'up':'past');
+  var t=document.querySelector('.ev-tabs [data-tab="'+tab+'"]'); if(t) t.click();
+  document.querySelectorAll('.ev-filter .chip[data-v=""]').forEach(function(c){{c.click();}});
+  target=document.querySelector('.ev-pane[data-pane="'+tab+'"] #d-'+info.s) || document.getElementById('d-'+info.s);
+  if(target){{target.scrollIntoView({{behavior:'smooth',block:'start'}}); target.classList.add('flash'); setTimeout(function(){{target.classList.remove('flash');}},1600);}}
+}}
+// start on the month of the nearest upcoming event, else the latest past one
+var keys=Object.keys(EV).sort(), next=keys.filter(function(k){{return k>=TODAY;}})[0]||keys[keys.length-1];
+if(next){{cur=new Date(next+'T00:00:00'); cur.setDate(1);}}
+draw(); document.addEventListener('vie:lang',draw);
+}})();
 </script>"""
 b_ld = []
 write("su-kien/index.html", page("Sự kiện", ev_body, "events", desc=f"Lịch {len(events)} sự kiện khởi nghiệp, đổi mới sáng tạo thường niên và sắp tới tại Đà Nẵng, TP.HCM, Hà Nội: DAVAS, SURF, InnoEx, Startup Wheel, Techmart, Ngày ĐMST Việt Nam."))
