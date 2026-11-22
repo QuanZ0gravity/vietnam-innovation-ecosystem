@@ -368,28 +368,49 @@ cities:
     2024: 2
     2025: 3
   insights:
-  - text: Tăng 212 bậc lên hạng 554, tăng trưởng 153,8%, nhanh nhất trong các thành phố Việt Nam.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Lần đầu vào top 1.000 thế giới năm 2024 (hạng 896).
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Hạng 5/63 tỉnh, thành về Chỉ số đổi mới sáng tạo địa phương (PII) 2024.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Bốn lần nhận danh hiệu "Thành phố khởi nghiệp sáng tạo hấp dẫn" (2020, 2022, 2023, 2024); năm 2023 được VCCI vinh danh "Địa phương điển hình xây dựng hệ sinh thái khởi nghiệp" và lọt top 15 địa phương đóng góp nhiều nhất cho hệ sinh thái quốc gia.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: 'Mạng lưới năm 2025: 10 vườn ươm, 6 tổ chức hỗ trợ, 9 không gian làm việc chung, 3 không gian sáng tạo maker, 15 quỹ đầu tư, hơn 20 chính sách và hơn 200 startup.'
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Tổ điều phối mạng lưới khởi nghiệp thành phố có 27 thành viên, Sở KH&CN là cơ quan thường trực.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Ngày 1/11/2026, DISSC, DSAC và Trung tâm Công nghệ sinh học hợp nhất thành Trung tâm Đổi mới sáng tạo Đà Nẵng.
+  - theme: Xếp hạng
+    text: Hạng 554 thế giới, tăng 212 bậc, tốc độ tăng trưởng 153,8%, nhanh nhất trong các thành phố Việt Nam; lần đầu vào top 1.000 năm 2024 (hạng 896).
+    sources:
+    - StartupBlink 2026
+    - Sở KH&CN Đà Nẵng 2025
+    source: StartupBlink 2026
+  - theme: Xếp hạng
+    text: Hạng 5/63 về Chỉ số đổi mới sáng tạo cấp tỉnh (PII) 2024; bốn lần là "Thành phố khởi nghiệp sáng tạo hấp dẫn" (2020, 2022–2024); VCCI vinh danh "Địa phương điển hình xây dựng hệ sinh thái khởi nghiệp" (2023).
+    sources:
+    - Sở KH&CN Đà Nẵng 2025
+    source: Sở KH&CN Đà Nẵng 2025
+  - theme: Mạng lưới hỗ trợ
+    text: 'Sau hợp nhất với Quảng Nam: 5 trung tâm khởi nghiệp và ĐMST, 12 vườn ươm, 14 không gian làm việc chung, 3 không gian sáng tạo, 24 câu lạc bộ; khoảng 15 quỹ đầu tư và hơn 200 startup.'
+    sources:
+    - congdulieu.vn
+    - Sở KH&CN Đà Nẵng 2025
+    source: congdulieu.vn
+  - theme: Mạng lưới hỗ trợ
+    text: Từ 1/11/2026, DISSC, DSAC và Trung tâm Công nghệ sinh học hợp nhất thành Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC), đầu mối ĐMST của thành phố; Tổ điều phối mạng lưới khởi nghiệp có 27 thành viên, Sở KH&CN thường trực.
+    sources:
+    - QĐ 4640/QĐ-UBND
+    - Sở KH&CN Đà Nẵng 2025
     source: QĐ 4640/QĐ-UBND
-  - text: 'Mạng lưới hỗ trợ khởi nghiệp sau hợp nhất với Quảng Nam (số liệu Sở KH&CN, 8/2025): 5 trung tâm khởi nghiệp và ĐMST, 12 vườn ươm doanh nghiệp, 3 không gian sáng tạo, 14 không gian làm việc chung, 24 câu lạc bộ khởi nghiệp và ĐMST (riêng khu vực Quảng Nam cũ có 2 trung tâm, 6 không gian làm việc chung, 14 câu lạc bộ).'
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
-  - text: 'Kết quả chính sách 6 tháng đầu năm 2026: hỗ trợ 11 tổ chức, doanh nghiệp khởi nghiệp sáng tạo với 4,898 tỷ đồng (NQ 19/2026); 20 đơn vị được ưu đãi thuế (NQ 24/2026); 33 hồ sơ thử nghiệm có kiểm soát, 2 giải pháp được cấp phép (NQ 20/2026); hỗ trợ đổi mới công nghệ 700 triệu đồng (NQ 33/2026); hỗ trợ CNTT 603,75 triệu đồng cho 3 công ty (NQ 270/2019).'
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
-  - text: Danh sách 76 quỹ đầu tư và dự án, doanh nghiệp khởi nghiệp tham dự DAVAS 2026 được công bố dạng dữ liệu mở.
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
-  - text: 'Đà Nẵng đang xây "lớp tin cậy số" toàn thành phố: chuỗi khối dùng chung DNC-Chain (Layer-1 có cấp quyền, tương thích EVM) với ngân sách dự án 10,5 triệu USD giai đoạn 2026–2030 theo Quyết định 2728/QĐ-UBND (23/6/2026), gắn với Trung tâm tài chính quốc tế Đà Nẵng và lộ trình thử nghiệm tài sản số theo Nghị định 323/2025/NĐ-CP.'
-    source: Da Nang Blockchain Hub – Insights (danangblockchainhub.com, 22/11/2026)
+  - theme: Vốn đầu tư
+    text: Vốn vào startup 2017–2025 khoảng 55 triệu USD; năm 2025 đạt 22 triệu USD qua 3 thương vụ, mức cao nhất từ trước tới nay. DAVAS 2026 quy tụ 76 quỹ và startup, danh sách công bố dạng dữ liệu mở.
+    sources:
+    - StartupBlink 2026
+    - congdulieu.vn
+    source: StartupBlink 2026
+  - theme: Chính sách
+    text: '6 tháng đầu năm 2026: 4,9 tỷ đồng hỗ trợ 11 tổ chức, doanh nghiệp khởi nghiệp sáng tạo (NQ 19/2026); 20 đơn vị được ưu đãi thuế (NQ 24/2026); 33 hồ sơ thử nghiệm có kiểm soát, 2 giải pháp được cấp phép (NQ 20/2026).'
+    sources:
+    - congdulieu.vn
+    source: congdulieu.vn
+  - theme: Chính sách
+    text: Chuỗi khối dùng chung DNC-Chain, ngân sách 10,5 triệu USD giai đoạn 2026–2030 (QĐ 2728/QĐ-UBND), gắn với Trung tâm tài chính quốc tế và thử nghiệm tài sản số.
+    sources:
+    - Da Nang Blockchain Hub
+    source: Da Nang Blockchain Hub
+  official_network:
+    incubators: 12
+    coworking: 14
+    source: Sở KH&CN, 8/2025
 - id: hai-phong
   name: Hải Phòng
   url: https://www.startupblink.com/startup-ecosystem/hai-phong-vn

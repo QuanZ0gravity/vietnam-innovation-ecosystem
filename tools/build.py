@@ -709,6 +709,15 @@ def kpi(label_vi, label_en, value, note=""):
 def insights_html(xs):
     """Gom các dòng theo nguồn: mỗi nguồn ghi một lần ở đầu nhóm."""
     if not xs: return ""
+    if all(x.get("theme") for x in xs):
+        th = collections.OrderedDict()
+        for x in xs: th.setdefault(x["theme"], []).append(x)
+        out = '<div class="ins-themes">'
+        for t, items in th.items():
+            out += (f'<div class="ins-th"><h4>{e(t)}</h4><ul class="insights">'
+                    + "".join(f'<li>{e(x["text"])} ' + "".join(f'<span class="ins-tag">{e(s)}</span>' for s in (x.get("sources") or [x["source"]])) + "</li>" for x in items)
+                    + "</ul></div>")
+        return out + "</div>"
     groups = collections.OrderedDict()
     for x in xs:
         groups.setdefault(x["source"], []).append(x["text"])
@@ -847,7 +856,10 @@ if BENCH:
               kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(c.get("funding_2017_2025_usd")))]
         if c.get("funding_2025_usd") is not None:
             kp.append(kpi("Vốn năm 2025", "Funding 2025", money(c["funding_2025_usd"]), f'{c.get("deals_2025", 0)} thương vụ'))
-        if c.get("coworking_spaces") or c.get("accelerators"):
+        if c.get("official_network"):
+            on = c["official_network"]
+            kp.append(kpi("Vườn ươm / không gian làm việc chung", "Incubators / coworking", f'{on["incubators"]} / {on["coworking"]}', on.get("source", "")))
+        elif c.get("coworking_spaces") or c.get("accelerators"):
             kp.append(kpi("Không gian làm việc chung, tăng tốc", "Coworking, accelerators", f'{c.get("coworking_spaces","–")} / {c.get("accelerators","–")}'))
         ours = [kpi("Tác nhân trong danh bạ", "Actors here", str(len(acts))), kpi("Startup", "Startups", str(tc["startup"])),
                 kpi("Quỹ, nhà đầu tư", "Funds, investors", str(tc["fund"])),

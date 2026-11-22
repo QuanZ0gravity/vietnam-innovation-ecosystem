@@ -287,3 +287,10 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - 5 vòng chung kết, tổng kết có ngày cụ thể thêm vào trang Sự kiện, đánh dấu thường niên.
 - Thêm hồ sơ Thành đoàn Đà Nẵng, Trường ĐH Swinburne Đà Nẵng, Trung tâm Khởi nghiệp DTU (mức "chưa xác minh").
 - Nguồn từng cuộc thi đang trỏ về bảng tổng hợp; nên bổ sung link trang chính thức của từng cuộc thi khi có.
+
+## Gộp mục "Tình hình" Đà Nẵng (22/11/2026)
+
+- Từ 11 dòng theo 5 nguồn rút còn 7 dòng theo 4 chủ đề (Xếp hạng, Mạng lưới hỗ trợ, Vốn đầu tư, Chính sách); mỗi dòng gắn nhãn nguồn.
+- Bỏ số liệu trùng, cũ: mạng lưới 2025 trước hợp nhất (10 vườn ươm, 9 không gian làm việc chung) thay bằng số liệu sau hợp nhất (12 vườn ươm, 14 không gian làm việc chung, 8/2025); gộp hạng 2024 vào dòng hạng 2026; gộp DAVAS vào dòng vốn; rút gọn kết quả chính sách còn ba nghị quyết chính.
+- Thẻ chỉ số "Không gian làm việc chung, tăng tốc" (12/9 theo StartupBlink) đổi thành "Vườn ươm / không gian làm việc chung" 12/14 theo Sở KH&CN.
+- Các thành phố khác giữ cách trình bày theo nguồn; trường `theme` trong benchmarks bật cách trình bày theo chủ đề.
