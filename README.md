@@ -23,6 +23,157 @@ Danh bạ mở về startup, quỹ, vườn ươm, không gian sáng tạo, trư
 
 Phần lớn hồ sơ đang ở mức **chưa xác minh** hoặc **đã đối chiếu nguồn**. Cộng đồng giúp được nhiều nhất ở việc bổ sung, xác nhận hồ sơ: xem [Cách đóng góp](CONTRIBUTING.md).
 
+## Sơ đồ bộ dữ liệu
+
+Các sơ đồ dưới đây vẽ bằng Mermaid; GitHub hiển thị trực tiếp.
+
+### 1. Từ nguồn đến website
+
+```mermaid
+flowchart LR
+  subgraph N["Nguồn"]
+    N1["Cơ quan nhà nước<br/>Sở KH&CN, cổng dữ liệu mở"]
+    N2["Nền tảng hệ sinh thái<br/>HOIP, SIHUB, startupdanang.vn"]
+    N3["Vườn ươm, quỹ<br/>danh mục ươm tạo, đầu tư"]
+    N4["Website tổ chức<br/>mô tả, logo, LinkedIn"]
+    N5["Cộng đồng<br/>biểu mẫu, Pull Request"]
+    N6["Tham chiếu<br/>StartupBlink, bản đồ AI toàn cầu"]
+  end
+  subgraph K["Kho GitHub"]
+    D["data/ YAML, CSV<br/>hồ sơ, quan hệ, sự kiện,<br/>cơ hội, chính sách"]
+    L["logos/, photos/"]
+    S["schema/"]
+  end
+  V{"tools/validate.py<br/>schema, trùng lặp, tham chiếu"}
+  B[["tools/build.py"]]
+  subgraph W["Website innovation.invietnam.vn"]
+    W1["Trang HTML<br/>danh bạ, hồ sơ, địa phương,<br/>sự kiện, bản đồ AI"]
+    W2["Dữ liệu mở<br/>JSON, CSV, GeoJSON"]
+    W3["SEO<br/>sitemap, schema.org, ảnh chia sẻ"]
+  end
+  N1 & N2 & N3 & N4 & N6 --> D
+  N5 --> D
+  D --> V
+  S --> V
+  V -->|"đạt"| B
+  L --> B
+  B --> W1 & W2 & W3
+```
+
+### 2. Mô hình dữ liệu
+
+```mermaid
+erDiagram
+  ACTOR ||--o{ RELATION : "from / to"
+  ACTOR }o--o{ OPPORTUNITY : "tổ chức, tham gia"
+  ACTOR }o--o{ EVENT : "tổ chức"
+  ACTOR }o--o{ SECTOR : "tối đa 3"
+  ACTOR }o--|| REGION : "thuộc"
+  POLICY }o--|| REGION : "áp dụng"
+  BENCHMARK }o--|| REGION : "số liệu tham chiếu"
+  ACTOR {
+    string id
+    string name
+    string type
+    string region
+    list sectors
+    string website
+    object verification
+    list sources
+    list history
+    list funding_rounds
+  }
+  RELATION {
+    string from
+    string type
+    string to
+    string since
+    string source
+  }
+  OPPORTUNITY {
+    string id
+    string type
+    date deadline
+    list participants
+    string primary_source
+  }
+  EVENT {
+    string id
+    date start
+    date end
+    string venue
+    string recurrence
+  }
+  POLICY {
+    string document
+    date issued
+    list results
+  }
+```
+
+### 3. Loại tác nhân và quan hệ
+
+```mermaid
+flowchart TB
+  GOV["Cơ quan nhà nước<br/>Sở KH&CN, NIC, NSSC"]
+  CTR["Trung tâm ĐMST<br/>DNIC, SIHUB"]
+  INC["Vườn ươm, tăng tốc,<br/>không gian ĐMST"]
+  UNI["Trường, viện,<br/>tổ chức KH&CN"]
+  FUND["Quỹ đầu tư,<br/>nhà đầu tư"]
+  ST["Startup"]
+  CO["Doanh nghiệp"]
+  EXP["Chuyên gia"]
+  INT["Đối tác quốc tế"]
+  CTR -->|"part_of"| GOV
+  OLD["Đơn vị cũ<br/>DISSC, DBC, DSAC"] -->|"merged_into"| CTR
+  ST -->|"incubated_by"| INC
+  FUND -->|"invested_in"| ST
+  INC -->|"part_of"| UNI
+  INT -->|"partner"| CTR
+  EXP -.->|"tư vấn"| ST
+  CO -.->|"related"| ST
+```
+
+Số quan hệ hiện có: `incubated_by` 201, `partner` 22, `part_of` 16, `invested_in` 13, `related` 5, `merged_into` 3.
+
+### 4. Quy trình đóng góp và xác minh
+
+```mermaid
+flowchart LR
+  A["Người đóng góp"] -->|"không dùng Git"| I["Issue:<br/>Thêm hoặc sửa hồ sơ"]
+  A -->|"dùng Git"| P["Pull Request<br/>sửa tệp trong data/"]
+  I --> R["Người duyệt<br/>chuyển thành tệp dữ liệu"]
+  R --> P
+  P --> C{"Kiểm tra tự động"}
+  C -->|"lỗi"| F["Sửa lại"] --> P
+  C -->|"đạt"| M["Duyệt và gộp"]
+  M --> D["Cloudflare dựng lại trang"]
+  subgraph X["Mức xác minh của hồ sơ"]
+    direction TB
+    U["unverified<br/>chưa đối chiếu"] --> SC["source_checked<br/>khớp nguồn công khai"] --> OC["org_confirmed<br/>tổ chức xác nhận"] --> PV["partner_verified<br/>đơn vị hỗ trợ xác nhận"]
+  end
+```
+
+### 5. Cơ cấu hồ sơ theo loại
+
+```mermaid
+pie showData
+  title 1,873 hồ sơ theo loại (22/11/2026)
+    "Startup" : 678
+    "Viện, tổ chức KH&CN" : 449
+    "Doanh nghiệp" : 309
+    "Dự án sáng tạo" : 103
+    "Quỹ đầu tư" : 76
+    "Đối tác quốc tế" : 61
+    "Tổ chức hỗ trợ" : 59
+    "Chuyên gia" : 41
+    "Trường" : 37
+    "Cơ quan nhà nước" : 29
+    "Không gian ĐMST" : 17
+    "Vườn ươm" : 10
+    "Tăng tốc" : 4
+```
+
 ## Website có gì
 
 - **Danh bạ:** tìm kiếm tức thì, lọc theo loại, 13 lĩnh vực, địa phương, mức xác minh; xem dạng thẻ, danh sách hoặc bản đồ; tải CSV theo bộ lọc.
