@@ -142,7 +142,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}ban-do-he-sinh-thai/" data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</a><a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
 <p class="foot-legal small"><span data-vi="Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích." data-en="Personal data on this site is processed under Vietnamese personal data protection law. You may view, correct, hide or delete information about yourself. No tracking cookies or analytics.">Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích.</span> <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi yêu cầu" data-en="Send a request">Gửi yêu cầu</a></p></div></footer>
 </body>
 </html>
@@ -828,7 +828,8 @@ if BENCH:
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}
-<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
+<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}ban-do-he-sinh-thai/"><b>Bản đồ hệ sinh thái 2026</b><span>Việt Nam, TP.HCM, Hà Nội, Đà Nẵng: startup ở trung tâm, hỗ trợ, vốn, nhân tài, sự kiện, chính quyền →</span></a>
+<a class="mm-promo" style="margin-top:10px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
 {('<h3 style="margin-top:28px" data-vi="Bảy trụ cột GII 2025 (hạng trên 139)" data-en="GII 2025 pillars (rank of 139)">Bảy trụ cột GII 2025 (hạng trên 139)</h3>' + dist_rows_rank(co["gii_2025"]["pillars"])) if co.get("gii_2025") else ""}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
@@ -1799,6 +1800,256 @@ if os.path.exists(_vcp):
 </div>"""
     write("von-dau-tu/index.html", page("Đầu tư mạo hiểm 2026", vc_body, "cities",
           desc="Tổng hợp báo cáo đầu tư mạo hiểm Việt Nam và Đông Nam Á 2026 (VPCA, TVS, DealStreetAsia, Endeavor): số liệu, 8 nhận định và con đường hình thành unicorn."))
+
+
+# ================= BẢN ĐỒ HỆ SINH THÁI DẠNG VÒNG =================
+import math as _m
+WHEEL_SECTORS = [
+    ("support", "HỖ TRỢ", "SUPPORT", ["incubator", "accelerator", "space", "support_org"], "#0B6E69"),
+    ("capital", "VỐN", "CAPITAL", ["fund"], "#B7791F"),
+    ("talent", "NHÂN TÀI", "TALENT", ["university", "research"], "#1D4ED8"),
+    ("network", "SỰ KIỆN, CUỘC THI", "EVENTS", ["__events__"], "#7C3AED"),
+    ("policy", "CHÍNH QUYỀN", "GOVERNMENT", ["government", "international", "community", "media"], "#BE185D"),
+]
+def _wheel_pick(pool, types, n):
+    xs = [a for a in pool if a["type"] in types and a.get("status") != "inactive"]
+    xs.sort(key=lambda a: (not a.get("logo"), a["type"] == "research", -(richness(a) + (4 if a.get("verification", {}).get("level") in ("partner_verified", "org_confirmed", "source_checked") else 0)), a["name"]["vi"].lower()))
+    return xs[:n]
+def _ini(name):
+    w = [x for x in _re.split(r"[\s\-–(),.]+", name) if x and x[0].isalnum() and x.lower() not in ("của", "và", "the", "of", "công", "ty", "tnhh", "cổ", "phần")]
+    caps = [x for x in w if x.isupper() and 2 <= len(x) <= 6]
+    return (caps[0] if caps else "".join(x[0] for x in w[:3])).upper()[:5]
+def wheel_svg(pool, title, subtitle, absolute=False):
+    W = 1000; C = W / 2; R0, R1 = 215, 488; L = 38; GAP = 44
+    root = (SITE_URL + "/") if absolute else SITE_ROOT
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {W + 70}" role="img" aria-label="{e(title)}" font-family="Be Vietnam Pro, Arial, sans-serif">',
+           f'<rect x="0" y="0" width="{W}" height="{W + 70}" fill="#F3F1EC"/>']
+    def logo(a, x, y, s=L, col="#0B6E69"):
+        href = f'{root}{apath(a["id"])}'
+        if not a.get("logo"):
+            t = _ini(a["name"]["vi"]); fs = 13 if len(t) <= 3 else 10
+            return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x - s/2:.1f}" y="{y - s/2:.1f}" width="{s}" height="{s}" rx="7" fill="{col}" opacity=".12" stroke="{col}"/>'
+                    f'<text x="{x:.1f}" y="{y + fs/3:.1f}" text-anchor="middle" font-size="{fs}" font-weight="800" fill="{col}">{e(t)}</text></a>')
+        return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x - s/2:.1f}" y="{y - s/2:.1f}" width="{s}" height="{s}" rx="7" fill="#fff" stroke="#E4E1DA"/>'
+                f'<image href="{root}{a["logo"]}" x="{x - s/2 + 3:.1f}" y="{y - s/2 + 3:.1f}" width="{s - 6}" height="{s - 6}" preserveAspectRatio="xMidYMid meet"/></a>')
+    n = len(WHEEL_SECTORS); seg = 360 / n; pad = 2.2
+    counts = {}
+    for k, (sid, vi, en, types, col) in enumerate(WHEEL_SECTORS):
+        a0 = -90 + k * seg + pad; a1 = -90 + (k + 1) * seg - pad
+        def P(r, a): return C + r * _m.cos(_m.radians(a)), C + r * _m.sin(_m.radians(a))
+        x0, y0 = P(R1, a0); x1, y1 = P(R1, a1); x2, y2 = P(R0, a1); x3, y3 = P(R0, a0)
+        out.append(f'<path d="M{x0:.1f},{y0:.1f} A{R1},{R1} 0 0 1 {x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f} A{R0},{R0} 0 0 0 {x3:.1f},{y3:.1f} Z" fill="#fff" stroke="{col}" stroke-width="2.5"/>')
+        # label band
+        rl = R0 + 22
+        lx0, ly0 = P(rl, a0 + 3); lx1, ly1 = P(rl, a1 - 3)
+        mid = (a0 + a1) / 2; flip = 0 < ((mid + 360) % 360) < 180
+        if flip:
+            out.append(f'<path id="lb-{sid}-{abs(hash(title)) % 9999}" d="M{lx1:.1f},{ly1:.1f} A{rl},{rl} 0 0 0 {lx0:.1f},{ly0:.1f}" fill="none"/>')
+        else:
+            out.append(f'<path id="lb-{sid}-{abs(hash(title)) % 9999}" d="M{lx0:.1f},{ly0:.1f} A{rl},{rl} 0 0 1 {lx1:.1f},{ly1:.1f}" fill="none"/>')
+        # xếp các ô (logo hoặc nhãn chữ) theo hàng ngang bên trong hình quạt
+        def inside(x, y):
+            dx, dy = x - C, y - C; rr = _m.hypot(dx, dy)
+            if rr < R0 + 44 or rr > R1 - 6: return False
+            ang = _m.degrees(_m.atan2(dy, dx))
+            lo, hi = a0 + 1.2, a1 - 1.2
+            for cand in (ang, ang + 360, ang - 360):
+                if lo <= cand <= hi: return True
+            return False
+        def fits(x, y, w, h):
+            return all(inside(px, py) for px, py in ((x, y), (x + w, y), (x, y + h), (x + w, y + h), (x + w / 2, y), (x + w / 2, y + h)))
+        def short(a):
+            for al in (a.get("alt_names") or []):
+                if 2 <= len(al) <= 10 and al.replace("-", "").replace(" ", "").isupper(): return al
+            n = a["name"]["vi"]
+            m = _re.search(r"\(([A-Z][A-Za-z0-9&\-]{1,9})\)", n)
+            if m: return m.group(1)
+            n = _re.sub(r"^(Trường Đại học|Trường Cao đẳng|Đại học|Trung tâm|Viện|Sở|Cục|Ban quản lý|Công ty (Cổ phần|TNHH)?)\s+", "", n).strip()
+            return n if len(n) <= 20 else n[:19] + "…"
+        if types == ["__events__"]:
+            regs_here = {a["region"] for a in pool}
+            seen, items = set(), []
+            for ev in sorted([x for x in events if x["_region"] in regs_here and not x.get("_projected")], key=lambda x: (x.get("recurrence") != "annual", -x["_start"].toordinal())):
+                lab = _re.sub(r"\s*(19|20)\d{2}.*$", "", _re.split(r"\s[–:]\s|:", ev["title"])[0]).strip()
+                lab = _re.sub(r"^(Chung kết|Tổng kết|Lễ công bố)\s+", "", lab)
+                if len(lab) > 20: lab = lab[:19] + "…"
+                if lab.lower() in seen or len(lab) < 3: continue
+                seen.add(lab.lower()); items.append(("pill", lab, f'{root}su-kien/{ev["id"]}/', lab))
+            for o in sorted([o for o in opps if o["_region"] in regs_here and o.get("type") == "competition"], key=lambda o: o["title"]):
+                lab = _re.sub(r"\s*(19|20)\d{2}.*$", "", _re.split(r"\s[–:]\s|:", o["title"])[0]).strip()
+                if len(lab) > 20: lab = lab[:19] + "…"
+                if lab.lower() in seen or len(lab) < 3: continue
+                seen.add(lab.lower()); items.append(("pill", lab, f'{root}co-hoi/{o["id"].removeprefix("opp-")}/', o["title"]))
+            total = len(items)
+        else:
+            cand = _wheel_pick(pool, types, 400)
+            items = [("logo", a) if a.get("logo") else ("pill", short(a), f'{root}{apath(a["id"])}', a["name"]["vi"]) for a in cand]
+            total = sum(1 for a in pool if a["type"] in types and a.get("status") != "inactive")
+        counts[sid] = total
+        out.append(f'<text font-size="16" font-weight="800" letter-spacing="1.5" fill="{col}"><textPath href="#lb-{sid}-{abs(hash(title)) % 9999}" startOffset="50%" text-anchor="middle">{e(vi)} · {total}</textPath></text>')
+        xs_ = [P(rr, aa)[0] for rr in (R0, R1) for aa in (a0, a1, (a0 + a1) / 2)] + [P(R1, aa)[0] for aa in range(int(a0), int(a1) + 1, 3)]
+        ys_ = [P(rr, aa)[1] for rr in (R0, R1) for aa in (a0, a1, (a0 + a1) / 2)] + [P(R1, aa)[1] for aa in range(int(a0), int(a1) + 1, 3)]
+        bx0, bx1, by0, by1 = min(xs_), max(xs_), min(ys_), max(ys_)
+        k_i = 0; y = by0 + 4
+        while y < by1 and k_i < len(items):
+            x = bx0 + 2
+            while x < bx1 and k_i < len(items):
+                it = items[k_i]
+                w = L if it[0] == "logo" else 16 + len(it[1]) * 6.9
+                h = L if it[0] == "logo" else 26
+                yy = y + (L - h) / 2
+                if fits(x, yy, w, h):
+                    if it[0] == "logo":
+                        out.append(logo(it[1], x + w / 2, y + L / 2, L, col))
+                    else:
+                        out.append(f'<a href="{it[2]}" target="_top"><title>{e(it[3])}</title><rect x="{x:.1f}" y="{yy:.1f}" width="{w:.1f}" height="{h}" rx="13" fill="{col}" fill-opacity=".09" stroke="{col}" stroke-opacity=".45"/>'
+                                   f'<text x="{x + w/2:.1f}" y="{yy + 17:.1f}" text-anchor="middle" font-size="12" font-weight="700" fill="{col}">{e(it[1])}</text></a>')
+                    x += w + 6; k_i += 1
+                else:
+                    x += 8
+            y += L + 6
+    # center: startups
+    out.append(f'<circle cx="{C}" cy="{C}" r="{R0 - 12}" fill="#102A2C"/>')
+    sts = _wheel_pick(pool, ["startup"], 60)
+    pts = []
+    for gy in range(-4, 5):
+        for gx in range(-4, 5):
+            x, y = C + gx * 44, C + gy * 44 + 18
+            if _m.hypot(x - C, y - C) <= R0 - 40 and not (abs(y - C + 0) < 40 and abs(x - C) < 110): pts.append((x, y))
+    pts.sort(key=lambda p: _m.hypot(p[0] - C, p[1] - C))
+    for a, (x, y) in zip(sts, pts): out.append(logo(a, x, y, 36))
+    nst = sum(1 for a in pool if a["type"] == "startup" and a.get("status") != "inactive")
+    out.append(f'<rect x="{C - 104}" y="{C - 24}" width="208" height="48" rx="24" fill="#E9A800"/><text x="{C}" y="{C + 7}" text-anchor="middle" font-size="20" font-weight="800" fill="#102A2C">STARTUP · {nst}</text>')
+    out.append(f'<text x="{C}" y="{W + 28}" text-anchor="middle" font-size="26" font-weight="800" fill="#102A2C">{e(title)}</text>'
+               f'<text x="{C}" y="{W + 56}" text-anchor="middle" font-size="15" fill="#4A5F61">{e(subtitle)}</text>')
+    out.append("</svg>")
+    return "\n".join(out), counts, nst
+WHEELS = [("viet-nam", "Việt Nam", None), ("ho-chi-minh", "TP. Hồ Chí Minh", ["ho-chi-minh"]), ("ha-noi", "Hà Nội", ["ha-noi"]), ("da-nang", "Đà Nẵng", ["da-nang", "former-quang-nam"])]
+wh_tabs, wh_panes = "", ""
+os.makedirs(os.path.join(OUT, "ban-do-he-sinh-thai"), exist_ok=True)
+for k, (wid, wname, regs) in enumerate(WHEELS):
+    pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
+    sub = f"Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo · innovation.invietnam.vn · {fmt_date(TODAY)}"
+    svg, counts, nst = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub)
+    svg_abs, _, _ = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub, absolute=True)
+    open(os.path.join(OUT, "ban-do-he-sinh-thai", f"{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + svg_abs)
+    wh_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="w-{wid}">{e(wname)}<b>{len(pool)}</b></button>'
+    wstats = " · ".join(f'{vi.split(",")[0].title()} {counts[sid]}' for sid, vi, en, t, c in WHEEL_SECTORS)
+    wh_panes += (f'<div class="dpane wheel" data-p="w-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
+                 f'<p class="small muted">Startup {nst} · {wstats}. Mỗi nhóm hiện các hồ sơ có logo, đầy đủ thông tin nhất; bấm vào logo để mở hồ sơ.</p>'
+                 f'<p><a class="btn ghost" href="{SITE_ROOT}ban-do-he-sinh-thai/{wid}.svg" download>Tải bản đồ (SVG)</a> '
+                 + (f'<a class="btn ghost" href="{dir_link(region=",".join(regs))}">Xem danh bạ {e(wname)}</a>' if regs else f'<a class="btn ghost" href="{SITE_ROOT}danh-ba/">Xem danh bạ</a>') + '</p></div>')
+
+# ================= MÔ HÌNH TRIPLE HELIX =================
+TH_COL = {"G": "#BE185D", "U": "#1D4ED8", "I": "#B7791F", "C": "#0B6E69"}
+_PUBFUND = r"quỹ đầu tư mạo hiểm tp|quỹ phát triển khoa học|quỹ đổi mới công nghệ|natif|nic go|goventures|ddif|quỹ phát triển|nafosted|vcam|tư nhân quốc gia|vietnam private capital"
+def _th_region(a, univ_ids):
+    t = a["type"]; n = _fold(a["name"]["vi"] + " " + " ".join(a.get("alt_names") or []))
+    if t == "government": return "G"
+    if t == "university": return "U"
+    if t == "research": return "GU"
+    if t == "fund": return "GI" if _re.search(_fold(_PUBFUND), n) else "I"
+    if t in ("company",): return "I"
+    if t in ("incubator", "accelerator", "space", "support_org"):
+        if a["id"] in univ_ids or _re.search(r"dai hoc|university|truong|vnuk|dtu|\\bbk\\b|ueh|ftu|hcmut|nttu|ptit|vku", n): return "UI"
+        return "GUI"
+    return None
+def helix_svg(pool, title, sub, absolute=False):
+    root = (SITE_URL + "/") if absolute else SITE_ROOT
+    W, H = 1000, 1000; R = 300
+    cg, cu, ci = (500, 340), (335, 625), (665, 625)
+    pool_ids = {a["id"] for a in pool}
+    univ_ids = {r["from"] for r in relations if r.get("type") == "part_of" and r["to"] in by_id and by_id[r["to"]]["type"] == "university"}
+    groups = collections.defaultdict(list)
+    for a in pool:
+        if a.get("status") == "inactive" or a["type"] == "startup": continue
+        g = _th_region(a, univ_ids)
+        if g: groups[g].append(a)
+    def _acr(a):
+        for al in (a.get("alt_names") or []):
+            if 2 <= len(al) <= 6 and al.replace("-", "").isupper(): return al
+        m = _re.search(r"\(([A-Z][A-Za-z0-9&\-]{1,6})\)", a["name"]["vi"])
+        return m.group(1) if m else None
+    counts_g = {g: len(v) for g, v in groups.items()}
+    for g in list(groups):
+        groups[g] = [a for a in groups[g] if a.get("logo") or _acr(a)]
+    for g in groups:
+        groups[g].sort(key=lambda a: (not a.get("logo"), a["type"] == "research", -richness(a), a["name"]["vi"].lower()))
+    def region_of(x, y):
+        s = ""
+        if _m.hypot(x - cg[0], y - cg[1]) < R - 6: s += "G"
+        if _m.hypot(x - cu[0], y - cu[1]) < R - 6: s += "U"
+        if _m.hypot(x - ci[0], y - ci[1]) < R - 6: s += "I"
+        return s
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H + 70}" role="img" aria-label="{e(title)}" font-family="Be Vietnam Pro, Arial, sans-serif">',
+           f'<rect width="{W}" height="{H + 70}" fill="#F3F1EC"/>']
+    for (cx, cy), k in ((cg, "G"), (cu, "U"), (ci, "I")):
+        out.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="{TH_COL[k]}" fill-opacity=".07" stroke="{TH_COL[k]}" stroke-width="3"/>')
+    lab = {"G": ("CHÍNH QUYỀN", 500, 22), "U": ("TRƯỜNG, VIỆN", 190, 952), "I": ("DOANH NGHIỆP, VỐN", 800, 952)}
+    lab_after = []
+    for k, (t, x, y) in lab.items():
+        lab_after.append(f'<text x="{x}" y="{y}" text-anchor="middle" font-size="20" font-weight="800" letter-spacing="1.5" fill="{TH_COL[k]}">{t} · {{cnt_{k}}}</text>')
+    zone_lab = {"GU": "Nghiên cứu công", "GI": "Quỹ, vốn nhà nước", "UI": "Vườn ươm đại học", "GUI": "Trung tâm ĐMST, hỗ trợ"}
+    # positions
+    cells = collections.defaultdict(list); step = 44
+    for gy in range(40, H - 20, step):
+        for gx in range(30, W - 30, step):
+            r = region_of(gx, gy)
+            if r: cells[r].append((gx, gy))
+    # keep the very centre free for the startup badge
+    C0 = ((cg[0] + cu[0] + ci[0]) / 3, (cg[1] + cu[1] + ci[1]) / 3)
+    cells["GUI"] = [p for p in cells["GUI"] if not (abs(p[0] - C0[0]) < 120 and abs(p[1] - C0[1]) < 40)]
+    def tile(a, x, y, col):
+        href = f'{root}{apath(a["id"])}'
+        if a.get("logo"):
+            return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x-19}" y="{y-19}" width="38" height="38" rx="7" fill="#fff" stroke="#E4E1DA"/>'
+                    f'<image href="{root}{a["logo"]}" x="{x-16}" y="{y-16}" width="32" height="32" preserveAspectRatio="xMidYMid meet"/></a>')
+        t = _acr(a) or _ini(a["name"]["vi"])
+        return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x-19}" y="{y-19}" width="38" height="38" rx="7" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".5"/>'
+                f'<text x="{x}" y="{y+4}" text-anchor="middle" font-size="{11 if len(t) <= 3 else 8.5}" font-weight="800" fill="{col}">{e(t)}</text></a>')
+    for k, pts in cells.items():
+        col = TH_COL["C"] if k == "GUI" else TH_COL[k] if len(k) == 1 else {"GU": "#6D28D9", "GI": "#C2410C", "UI": "#0E7490"}[k]
+        cx = sum(p[0] for p in pts) / max(1, len(pts)); cy = sum(p[1] for p in pts) / max(1, len(pts))
+        pts.sort(key=lambda p: _m.hypot(p[0] - cx, p[1] - cy))
+        items = groups.get(k, [])
+        for a, (x, y) in zip(items, pts): out.append(tile(a, x, y, col))
+    nst = sum(1 for a in pool if a["type"] == "startup" and a.get("status") != "inactive")
+    out.append(f'<rect x="{C0[0]-92:.0f}" y="{C0[1]-22:.0f}" width="184" height="44" rx="22" fill="#E9A800"/><text x="{C0[0]:.0f}" y="{C0[1]+7:.0f}" text-anchor="middle" font-size="18" font-weight="800" fill="#102A2C">STARTUP · {nst}</text>')
+    for t_ in lab_after:
+        for k_ in "GUI": t_ = t_.replace("{cnt_" + k_ + "}", str(counts_g.get(k_, 0)))
+        out.append(t_)
+    lx = 40
+    for k_, nm in (("GU", "Nghiên cứu công"), ("GI", "Quỹ, vốn nhà nước"), ("UI", "Vườn ươm đại học"), ("GUI", "Trung tâm ĐMST, hỗ trợ")):
+        colz = TH_COL["C"] if k_ == "GUI" else {"GU": "#6D28D9", "GI": "#C2410C", "UI": "#0E7490"}[k_]
+        txt = f"{nm} · {counts_g.get(k_, 0)}"
+        out.append(f'<rect x="{lx}" y="972" width="14" height="14" rx="3" fill="{colz}"/><text x="{lx + 20}" y="984" font-size="13" font-weight="700" fill="{colz}">{e(txt)}</text>')
+        lx += 40 + len(txt) * 7.6
+    out.append(f'<text x="500" y="{H + 40}" text-anchor="middle" font-size="24" font-weight="800" fill="#102A2C">{e(title)}</text><text x="500" y="{H + 62}" text-anchor="middle" font-size="14" fill="#4A5F61">{e(sub)}</text></svg>')
+    return "\n".join(out)
+th_tabs, th_panes = "", ""
+for k, (wid, wname, regs) in enumerate(WHEELS):
+    pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
+    t = f"MÔ HÌNH TRIPLE HELIX · {wname.upper()} 2026"; sub = "Chính quyền – Trường, viện – Doanh nghiệp · innovation.invietnam.vn"
+    svg = helix_svg(pool, t, sub)
+    open(os.path.join(OUT, "ban-do-he-sinh-thai", f"triple-helix-{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + helix_svg(pool, t, sub, absolute=True))
+    th_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="th-{wid}">{e(wname)}</button>'
+    th_panes += (f'<div class="dpane th" data-p="th-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
+                 f'<p><a class="btn ghost" href="{SITE_ROOT}ban-do-he-sinh-thai/triple-helix-{wid}.svg" download>Tải mô hình (SVG)</a></p></div>')
+TRIPLE_HELIX_HTML = f"""<section class="sec" id="triple-helix"><h2>Mô hình Triple Helix</h2>
+<p class="lead" style="font-size:1.02rem">Ba vòng tròn là ba khu vực của đổi mới sáng tạo theo mô hình Triple Helix (Etzkowitz, Leydesdorff): chính quyền, trường và viện, doanh nghiệp và vốn. Phần giao nhau là các tổ chức lai: nghiên cứu công (chính quyền và trường viện), quỹ vốn nhà nước (chính quyền và doanh nghiệp), vườn ươm đại học (trường và doanh nghiệp); ở giữa là trung tâm đổi mới sáng tạo, tổ chức hỗ trợ nơi cả ba gặp nhau, cùng startup.</p>
+<div class="dtabs th-tabs" role="tablist">{th_tabs}</div>{th_panes}
+<p class="small muted">Xếp vùng tự động theo loại tổ chức và quan hệ trong dữ liệu (ví dụ vườn ươm thuộc trường đại học vào vùng trường và doanh nghiệp); sửa loại, quan hệ trong hồ sơ để điều chỉnh.</p></section>"""
+
+wh_body = f"""
+<div class="wrap page-head"><h1 data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</h1>
+<p class="lead">Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo của Việt Nam và ba thành phố, vẽ tự động từ dữ liệu mở: startup ở trung tâm, năm nhóm xung quanh là hỗ trợ, vốn, nhân tài, mạng lưới, chính sách và đối tác.</p></div>
+<div class="wrap" style="padding-bottom:72px"><nav class="onpage small"><a href="#vong">Bản đồ dạng vòng</a><a href="#triple-helix">Mô hình Triple Helix</a></nav>
+<section class="sec" id="vong"><h2>Bản đồ dạng vòng</h2><div class="dtabs wh-tabs" role="tablist">{wh_tabs}</div>{wh_panes}</section>
+{TRIPLE_HELIX_HTML}
+<p class="small muted" style="margin-top:16px">Bản đồ cập nhật mỗi khi dữ liệu thay đổi. Logo là nhãn hiệu của chủ sở hữu. Tổ chức chưa có trên bản đồ? <a href="{SITE_ROOT}gioi-thieu/dong-gop/">Đóng góp hồ sơ</a>.</p></div>
+<script>document.addEventListener("DOMContentLoaded",function(){{document.querySelectorAll(".dtabs").forEach(function(g){{var ts=g.querySelectorAll(".dt"),sec=g.closest("section");var ps=sec.querySelectorAll(".dpane");ts.forEach(function(t){{t.onclick=function(){{ts.forEach(function(x){{x.classList.toggle("on",x===t)}});ps.forEach(function(p){{p.hidden=p.dataset.p!==t.dataset.p}});}};}});}});}});</script>"""
+write("ban-do-he-sinh-thai/index.html", page("Bản đồ hệ sinh thái", wh_body, "cities",
+      desc="Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, TP.HCM, Hà Nội, Đà Nẵng 2026: startup, vườn ươm, quỹ, trường viện, cộng đồng, cơ quan nhà nước."))
 
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
 def _days_for(evs):

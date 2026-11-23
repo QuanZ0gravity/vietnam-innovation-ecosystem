@@ -7,6 +7,7 @@ type: university
 categories:
 - Viện, trường
 - Đại học
+website: https://duytan.edu.vn/
 address: 254 Nguyễn Văn Linh, Đà Nẵng
 description:
   vi: Microsoft Duy Tân Innovation Center; STEM&FAB.
@@ -16,4 +17,5 @@ verification:
 sources:
 - startupdanang.vn
 - Bản đồ hệ sinh thái
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: u4;d66

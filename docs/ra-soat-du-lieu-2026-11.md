@@ -300,3 +300,20 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Việt Nam: 13 dòng (2 nguồn) còn 7 dòng, 5 chủ đề (Xếp hạng, Thế mạnh và điểm yếu, Cấu trúc hệ sinh thái, Vốn đầu tư, Chính sách); thêm số liệu vốn 2025 của VPCA; bỏ các chỉ số phụ (thương hiệu hệ sinh thái, hoạt động cộng đồng, xe điện).
 - TP.HCM: 15 dòng (4 nguồn) còn 6 dòng, 6 chủ đề; cập nhật số HOIP theo lần rà soát 2 (240 startup, 60 vườn ươm và tổ chức hỗ trợ); gộp các dòng HOIP, SIHUB, dữ liệu mở; bỏ phân bố lĩnh vực trên HOIP và cột lĩnh vực nhiệm vụ KH&CN (gán chưa chuẩn).
 - Hà Nội: 3 dòng còn 2; thêm TECHFEST, Ngày ĐMST Việt Nam. Hải Phòng: 3 dòng còn 2.
+
+## Bản đồ hệ sinh thái dạng vòng (22/11/2026)
+
+- Trang mới `/ban-do-he-sinh-thai/` với 4 bản đồ (Việt Nam, TP.HCM, Hà Nội, Đà Nẵng) theo phong cách các bản đồ hệ sinh thái ISEV, NSSC 2019–2021: startup ở trung tâm; 5 nhóm quanh vòng: Hỗ trợ, Vốn, Nhân tài, Sự kiện và cuộc thi, Chính quyền. Vẽ tự động khi dựng trang từ dữ liệu; ưu tiên hồ sơ có logo, đầy đủ, đã xác minh; hồ sơ chưa có logo hiện bằng nhãn tên ngắn; mỗi logo bấm được sang hồ sơ.
+- Mỗi bản đồ tải được dạng SVG (`/ban-do-he-sinh-thai/<id>.svg`, liên kết tuyệt đối tới logo).
+
+## Mô hình Triple Helix (22/11/2026)
+
+- Thêm vào trang `/ban-do-he-sinh-thai/` sơ đồ Triple Helix cho Việt Nam và 3 thành phố: ba vòng Chính quyền, Trường và viện, Doanh nghiệp và vốn; vùng giao: nghiên cứu công (viện, tổ chức KH&CN), quỹ và vốn nhà nước (NATIF, DDIF, NIC GoVentures, Quỹ ĐTMH TP.HCM…), vườn ươm đại học (theo quan hệ thuộc trường hoặc tên), trung tâm ĐMST và tổ chức hỗ trợ ở giữa cùng startup.
+- Chỉ hiện ô có logo hoặc tên viết tắt rõ ràng; số lượng đầy đủ ghi ở nhãn và chú giải. Tải được SVG (`triple-helix-<id>.svg`).
+
+## Bổ sung logo Đà Nẵng, đợt 1 (23/11/2026)
+
+- Nguồn: website chính thức (ảnh logo trong trang, biểu tượng trang), ấn phẩm "Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng" của Sở KH&CN (trang bản đồ hệ sinh thái, 121 logo nhúng), Wikipedia khi tên trang trùng khớp cao.
+- Thêm website cho 18 trường, cơ quan (theo mục "Trường đại học, cao đẳng" của ấn phẩm và kiểm tra tiêu đề trang). Bỏ website trùng ở các đơn vị trực thuộc trường (dùng chung website của trường).
+- Logo Đà Nẵng: các tổ chức (trường, cơ quan, quỹ, vườn ươm, không gian, tổ chức hỗ trợ) từ 41/115 lên 72/115; toàn bộ trường đại học chính đã có logo.
+- Thêm `tools/add_logo.py` (thêm logo từ tệp hoặc URL) và `docs/logo-sourcing.csv` (danh sách đơn vị còn thiếu logo: Đà Nẵng 43, TP.HCM 455 (phần lớn viện, tổ chức KH&CN), Hà Nội 5).

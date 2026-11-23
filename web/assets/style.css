@@ -489,3 +489,6 @@ img.person{border-radius:50%!important;object-fit:cover!important;padding:0!impo
 .ins-th .insights{margin:0;padding-left:18px}.ins-th li{margin:6px 0;line-height:1.55}
 .ins-tag{display:inline-block;margin:2px 4px 0 0;padding:0 7px;border-radius:999px;font-size:.7rem;font-weight:600;background:var(--paper);border:1px solid var(--line);color:var(--ink-2);white-space:nowrap}
 @media (max-width:860px){.ins-themes{grid-template-columns:1fr}}
+.wheel-box{max-width:920px;margin:6px auto 10px;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px -18px rgba(16,42,44,.5)}
+.wheel-box svg{display:block;width:100%;height:auto}
+.wheel-box a:hover rect{stroke:#102A2C;stroke-width:2}

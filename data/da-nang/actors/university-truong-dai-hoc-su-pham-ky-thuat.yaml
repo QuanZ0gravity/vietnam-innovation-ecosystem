@@ -6,6 +6,7 @@ alt_names:
 type: university
 categories:
 - Viện, trường
+website: https://ute.udn.vn/
 address: 48 Cao Thắng, Thanh Bình, Hải Châu
 coordinates:
 - 108.213211
@@ -16,4 +17,5 @@ verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: u5
