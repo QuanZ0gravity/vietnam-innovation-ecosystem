@@ -1,0 +1,15 @@
+id: support-org-cei-dai-hoc-hue
+name:
+  vi: Trung tâm Khởi nghiệp và Đổi mới sáng tạo – Đại học Huế (CEI-HueUni)
+alt_names:
+- CEI-HueUni
+- CEI Huế
+type: support_org
+description:
+  vi: Đơn vị hỗ trợ khởi nghiệp, đổi mới sáng tạo của Đại học Huế.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- NSSC – Mạng lưới đối tác (nssc.gov.vn, 11/2026)
+source_url: https://nssc.gov.vn/ve-chung-toi/mang-luoi-doi-tac

@@ -317,3 +317,21 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Thêm website cho 18 trường, cơ quan (theo mục "Trường đại học, cao đẳng" của ấn phẩm và kiểm tra tiêu đề trang). Bỏ website trùng ở các đơn vị trực thuộc trường (dùng chung website của trường).
 - Logo Đà Nẵng: các tổ chức (trường, cơ quan, quỹ, vườn ươm, không gian, tổ chức hỗ trợ) từ 41/115 lên 72/115; toàn bộ trường đại học chính đã có logo.
 - Thêm `tools/add_logo.py` (thêm logo từ tệp hoặc URL) và `docs/logo-sourcing.csv` (danh sách đơn vị còn thiếu logo: Đà Nẵng 43, TP.HCM 455 (phần lớn viện, tổ chức KH&CN), Hà Nội 5).
+
+## Bổ sung logo, đợt 2 (23/11/2026)
+
+- NSSC (nssc.gov.vn, trang Mạng lưới đối tác): tải 36 logo đối tác, đối chiếu bằng mắt; gắn logo cho BK Holdings Duy Tân, Trung tâm Khởi nghiệp ĐMST ĐHQG-HCM (IEC), VSV; thêm 13 hồ sơ mới trong mạng lưới NSSC kèm logo và quan hệ đối tác (RMIT Việt Nam, UNDP Accelerator Lab, Topica Founder Institute, CSIE – ĐH Kinh tế Quốc dân, CEI – Đại học Huế, CSIP, Monk's Hill Ventures, CyberAgent Capital, Altara Ventures, Ninja Accelerator, ripple2wave, NextTech, K-Startup Center); logo NSSC.
+- NACENTECH: logo đã có; trang không có danh sách đối tác dạng logo.
+- Tìm kiếm tự động qua công cụ tìm kiếm bị chặn (DuckDuckGo, Bing yêu cầu xác minh); nhiều website cơ quan (danang.gov.vn), trường dùng Cloudflare chặn truy cập từ máy chủ. Không thu thập dữ liệu Facebook tự động.
+- `docs/logo-sourcing.csv` cập nhật danh sách còn thiếu.
+
+## Bổ sung logo, đợt 3 qua trình duyệt (23/11/2026)
+
+- Dùng Chrome của người điều phối để tìm website chính thức qua Google; tải biểu tượng trang qua dịch vụ favicon của Google khi website chặn truy cập từ máy chủ. Thêm website, logo cho Swinburne Đà Nẵng, CĐ Miền Trung (Tâm Trí), CĐ Y tế Quảng Nam, CĐ Công nghệ – Kinh tế và Thủy lợi Miền Trung, Trung cấp ASEAN, Trung cấp Kinh tế – Kỹ thuật và Đào tạo cán bộ HTX Miền Trung – Tây Nguyên; logo Tiktak, STD Office, DAVAS từ ấn phẩm của Sở KH&CN; website Sở KH&CN (dost.danang.gov.vn), Ban QL Khu CNC và các KCN (dseza.danang.gov.vn), CĐ Điện lực Miền Trung, CĐ Quảng Nam, CĐ Thaco.
+- Ảnh không chuyển được từ trình duyệt sang máy chủ (công cụ chặn dữ liệu nhị phân); website chặn máy chủ chỉ lấy được logo khi có biểu tượng trang đủ lớn.
+
+## Bổ sung logo, đợt 3 qua trình duyệt (23/11/2026)
+
+- Dùng trình duyệt của người điều phối để tìm website chính thức (Google) và đọc đường dẫn logo trên các trang chặn truy cập từ máy chủ; tải ảnh về khi máy chủ ảnh cho phép, nếu không thì dùng bản logo trên Wikimedia Commons.
+- Thêm logo: CĐ Điện lực Miền Trung (cdmt.vn), CĐ Kinh tế Công nghệ và Thủy lợi Miền Trung (ctew.edu.vn, logo trắng đặt trên nền tối), Swinburne Việt Nam (Commons), CĐ THACO (logo THACO, Commons), Sở KH&CN Đà Nẵng và Sở KH&CN TP.HCM (biểu trưng Bộ KH&CN, Commons), DAVAS (davas.vc), Ecomdy Accelerator Fund I (logo Ecomdy). Thêm website: cdmt.vn, thacocollege.edu.vn, ctew.edu.vn, dost.danang.gov.vn, dseza.danang.gov.vn, davas.vc.
+- Ban QL Khu CNC và các KCN (DSEZA): tìm được logo trên website nhưng máy chủ ảnh chặn tải tự động. Enouvo Space: tên miền đã ngừng hoạt động.

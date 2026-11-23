@@ -1,0 +1,13 @@
+id: fund-monks-hill-ventures
+name:
+  vi: Monk's Hill Ventures
+type: fund
+website: https://www.monkshill.com/
+description:
+  vi: Quỹ đầu tư mạo hiểm giai đoạn đầu tại Đông Nam Á (Singapore).
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- NSSC – Mạng lưới đối tác (nssc.gov.vn, 11/2026)
+source_url: https://nssc.gov.vn/ve-chung-toi/mang-luoi-doi-tac

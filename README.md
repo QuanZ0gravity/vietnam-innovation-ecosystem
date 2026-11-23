@@ -7,6 +7,38 @@ Danh bạ mở về startup, quỹ, vườn ươm, không gian sáng tạo, trư
 - **Website:** https://innovation.invietnam.vn
 - **Tải dữ liệu:** https://innovation.invietnam.vn/du-lieu/ (CSV, JSON, GeoJSON), hoặc lọc trong Danh bạ rồi bấm **Tải CSV**.
 
+## Vì sao cần bản đồ này
+
+Việt Nam đã có một hệ sinh thái khởi nghiệp đáng kể: hạng 50 thế giới theo StartupBlink 2026, hạng 44/139 về Chỉ số Đổi mới sáng tạo toàn cầu (GII 2025), hơn 500 triệu USD vốn đầu tư mạo hiểm năm 2025. Nhưng thông tin về hệ sinh thái lại nằm rải rác: danh sách ươm tạo trong file Excel của từng vườn ươm, hồ sơ startup trên nhiều nền tảng của từng thành phố, sự kiện trên fanpage, chính sách trong các văn bản riêng lẻ, số liệu trong báo cáo PDF mỗi năm một lần. Không ai nhìn thấy toàn cảnh, và không ai cập nhật được toàn cảnh.
+
+### 5 câu hỏi "vì sao"
+
+1. **Vì sao startup, nhà đầu tư, đối tác khó tìm thấy nhau?** Vì không có một nơi chung, đầy đủ và tin cậy để tra cứu ai đang làm gì, ở đâu, đã được hỗ trợ bởi ai.
+2. **Vì sao chưa có nơi chung đó?** Vì dữ liệu do nhiều đơn vị giữ riêng (sở, trung tâm, vườn ươm, trường, quỹ), mỗi nơi một định dạng, phục vụ báo cáo của chính mình.
+3. **Vì sao mỗi nơi giữ riêng?** Vì các bản đồ hệ sinh thái trước đây là sản phẩm một lần: một ấn phẩm, một hình ảnh, làm theo dự án rồi dừng; không có cơ chế cho các bên cùng đóng góp và cập nhật.
+4. **Vì sao thiếu cơ chế cùng đóng góp?** Vì dữ liệu chưa được coi là hạ tầng công: chưa mở, chưa có chuẩn chung, chưa có quy trình kiểm tra, xác minh và ghi nguồn để các bên tin dùng.
+5. **Vì sao điều đó quan trọng?** Vì không có dữ liệu chung thì không đo được hệ sinh thái: chính sách khó nhắm đúng chỗ thiếu (vốn giai đoạn đầu, vườn ươm đại học, quỹ có vốn nhà nước), nhà đầu tư khó tìm cơ hội ngoài Hà Nội và TP.HCM, và thành phố khó chứng minh tiến bộ của mình.
+
+**Gốc của vấn đề** là thiếu một hạ tầng dữ liệu mở, sống, có nguồn gốc rõ ràng cho hệ sinh thái. Bản đồ này được xây để lấp đúng chỗ đó: dữ liệu mở (CC BY 4.0), lưu dạng tệp trên GitHub, ai cũng đề xuất sửa được, mọi thay đổi được kiểm tra tự động, mỗi hồ sơ ghi nguồn và mức xác minh.
+
+### Vì sao quan trọng với địa phương
+
+- **Nhìn thấy mình:** chính quyền, trung tâm đổi mới sáng tạo biết hệ sinh thái có bao nhiêu startup, vườn ươm, quỹ, trường viện; mạnh ở đâu, thiếu ở đâu, thay vì tổng hợp lại từ đầu mỗi kỳ báo cáo.
+- **Đo được tiến bộ:** số liệu theo thời gian (xếp hạng, vốn, số thương vụ, kết quả thực hiện chính sách) giúp đánh giá chương trình hỗ trợ và giải trình với cấp trên, nhà tài trợ.
+- **Thu hút nguồn lực:** nhà đầu tư, tập đoàn, đối tác quốc tế tìm thấy startup và tổ chức của địa phương mà không phải qua trung gian; các thành phố như Đà Nẵng, Hải Phòng có cơ hội được nhìn thấy cạnh Hà Nội, TP.HCM.
+- **Kết nối nội bộ:** trường, vườn ươm, doanh nghiệp, cơ quan nhà nước biết nhau đang làm gì, tránh trùng lặp chương trình, phối hợp sự kiện, chia sẻ chuyên gia.
+
+### Vì sao quan trọng với quốc gia
+
+- **Một bức tranh chung:** gộp dữ liệu nhiều tỉnh, thành theo cùng một chuẩn, so sánh được giữa các địa phương và với quốc tế.
+- **Chính sách dựa trên bằng chứng:** chỉ ra các mắt xích còn yếu mà báo cáo quốc tế cũng nêu (nhân lực và nghiên cứu, vốn giai đoạn đầu, đường thoái vốn qua IPO) để ưu tiên nguồn lực.
+- **Hình ảnh quốc gia:** một cổng dữ liệu mở, song ngữ, cập nhật liên tục giúp nhà đầu tư và đối tác nước ngoài hiểu nhanh hệ sinh thái Việt Nam.
+- **Tài sản công tích lũy:** dữ liệu mở, mã nguồn mở nên không phụ thuộc một đơn vị hay một dự án; bất kỳ tổ chức nào cũng có thể dùng lại, mở rộng sang tỉnh mới, hoặc xây công cụ riêng trên nền dữ liệu này.
+
+### Vì sao đáng để làm
+
+Chi phí thấp, lợi ích tích lũy: mỗi đóng góp nhỏ (một hồ sơ, một logo, một sự kiện) làm toàn bộ bản đồ có giá trị hơn cho mọi người dùng. Cách làm mở và có kiểm tra giúp bản đồ sống lâu hơn các ấn phẩm một lần, và trở thành nền dữ liệu chung cho chính quyền, vườn ươm, nhà đầu tư, nhà nghiên cứu và báo chí.
+
 ## Hiện có gì (cập nhật 22/11/2026)
 
 **1,873 hồ sơ**: 678 startup, 449 viện, tổ chức KH&CN, 309 doanh nghiệp, 103 dự án sáng tạo, 76 quỹ đầu tư, 61 đối tác quốc tế, 59 tổ chức hỗ trợ, 41 chuyên gia, 37 trường, 29 cơ quan nhà nước, 17 không gian ĐMST, 10 vườn ươm, 4 chương trình tăng tốc. Kèm 48 sự kiện, 26 cơ hội, 124 văn bản chính sách, 725 logo và 40 ảnh chuyên gia.
@@ -268,6 +300,8 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md) và [GOVERNANCE.md](GOVERNANCE.md).
 ---
 
 ## English
+
+**Why this map:** ecosystem information in Vietnam is scattered across incubator spreadsheets, city platforms, fan pages, policy documents and annual PDF reports, and past ecosystem maps were one-off publications. This project treats ecosystem data as open public infrastructure: a shared, sourced, continuously updated dataset that helps cities see and measure their ecosystems, helps investors and partners find startups beyond Hanoi and Ho Chi Minh City, and gives national policy makers comparable, evidence-based data.
 
 An open, community-maintained directory of Vietnam's startup and innovation ecosystem: 1,873 profiles of startups, funds, incubators, research institutes, universities, government bodies and experts across Ho Chi Minh City, Da Nang, Hanoi and Hai Phong, plus innovation events (annual calendar), open calls, policies with implementation results, city growth benchmarks and a Vietnam AI market map. Website: https://innovation.invietnam.vn.
 

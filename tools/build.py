@@ -9,6 +9,9 @@ import yaml
 import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from og import make_card
+# Bản đồ hệ sinh thái dạng vòng và Triple Helix: tạm ẩn (12/2026) trong khi tìm cách làm khả dụng hơn.
+# Đặt ECOSYSTEM_MAPS=1 khi dựng để bật lại.
+ENABLE_ECOSYSTEM_MAPS = os.environ.get("ECOSYSTEM_MAPS") == "1"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site")
@@ -142,7 +145,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}ban-do-he-sinh-thai/" data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</a><a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a>{('<a href="' + SITE_ROOT + 'ban-do-he-sinh-thai/" data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</a>') if ENABLE_ECOSYSTEM_MAPS else ""}<a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
 <p class="foot-legal small"><span data-vi="Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích." data-en="Personal data on this site is processed under Vietnamese personal data protection law. You may view, correct, hide or delete information about yourself. No tracking cookies or analytics.">Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích.</span> <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi yêu cầu" data-en="Send a request">Gửi yêu cầu</a></p></div></footer>
 </body>
 </html>
@@ -828,8 +831,8 @@ if BENCH:
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}
-<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}ban-do-he-sinh-thai/"><b>Bản đồ hệ sinh thái 2026</b><span>Việt Nam, TP.HCM, Hà Nội, Đà Nẵng: startup ở trung tâm, hỗ trợ, vốn, nhân tài, sự kiện, chính quyền →</span></a>
-<a class="mm-promo" style="margin-top:10px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
+{('<a class="mm-promo" style="margin-top:18px" href="' + SITE_ROOT + 'ban-do-he-sinh-thai/"><b>Bản đồ hệ sinh thái 2026</b><span>Việt Nam, TP.HCM, Hà Nội, Đà Nẵng: startup ở trung tâm, hỗ trợ, vốn, nhân tài, sự kiện, chính quyền →</span></a>') if ENABLE_ECOSYSTEM_MAPS else ""}
+<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
 {('<h3 style="margin-top:28px" data-vi="Bảy trụ cột GII 2025 (hạng trên 139)" data-en="GII 2025 pillars (rank of 139)">Bảy trụ cột GII 2025 (hạng trên 139)</h3>' + dist_rows_rank(co["gii_2025"]["pillars"])) if co.get("gii_2025") else ""}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
@@ -1548,7 +1551,7 @@ for _a in actors:
             f'<meta http-equiv="refresh" content="0; url={new}"></head><body><a href="{new}">{e(_a["name"]["vi"])}</a></body></html>')
     os.makedirs(os.path.join(OUT, "a", _a["id"]), exist_ok=True)
     open(os.path.join(OUT, "a", _a["id"], "index.html"), "w", encoding="utf-8").write(stub)
-_redir += ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
+_redir += ([] if ENABLE_ECOSYSTEM_MAPS else ["/ban-do-he-sinh-thai/* /thanh-pho/ 302"]) + ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
 open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
 
 
@@ -1926,13 +1929,13 @@ def wheel_svg(pool, title, subtitle, absolute=False):
     return "\n".join(out), counts, nst
 WHEELS = [("viet-nam", "Việt Nam", None), ("ho-chi-minh", "TP. Hồ Chí Minh", ["ho-chi-minh"]), ("ha-noi", "Hà Nội", ["ha-noi"]), ("da-nang", "Đà Nẵng", ["da-nang", "former-quang-nam"])]
 wh_tabs, wh_panes = "", ""
-os.makedirs(os.path.join(OUT, "ban-do-he-sinh-thai"), exist_ok=True)
+if ENABLE_ECOSYSTEM_MAPS: os.makedirs(os.path.join(OUT, "ban-do-he-sinh-thai"), exist_ok=True)
 for k, (wid, wname, regs) in enumerate(WHEELS):
     pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
     sub = f"Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo · innovation.invietnam.vn · {fmt_date(TODAY)}"
     svg, counts, nst = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub)
     svg_abs, _, _ = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub, absolute=True)
-    open(os.path.join(OUT, "ban-do-he-sinh-thai", f"{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + svg_abs)
+    if ENABLE_ECOSYSTEM_MAPS: open(os.path.join(OUT, "ban-do-he-sinh-thai", f"{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + svg_abs)
     wh_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="w-{wid}">{e(wname)}<b>{len(pool)}</b></button>'
     wstats = " · ".join(f'{vi.split(",")[0].title()} {counts[sid]}' for sid, vi, en, t, c in WHEEL_SECTORS)
     wh_panes += (f'<div class="dpane wheel" data-p="w-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
@@ -2031,7 +2034,7 @@ for k, (wid, wname, regs) in enumerate(WHEELS):
     pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
     t = f"MÔ HÌNH TRIPLE HELIX · {wname.upper()} 2026"; sub = "Chính quyền – Trường, viện – Doanh nghiệp · innovation.invietnam.vn"
     svg = helix_svg(pool, t, sub)
-    open(os.path.join(OUT, "ban-do-he-sinh-thai", f"triple-helix-{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + helix_svg(pool, t, sub, absolute=True))
+    if ENABLE_ECOSYSTEM_MAPS: open(os.path.join(OUT, "ban-do-he-sinh-thai", f"triple-helix-{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + helix_svg(pool, t, sub, absolute=True))
     th_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="th-{wid}">{e(wname)}</button>'
     th_panes += (f'<div class="dpane th" data-p="th-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
                  f'<p><a class="btn ghost" href="{SITE_ROOT}ban-do-he-sinh-thai/triple-helix-{wid}.svg" download>Tải mô hình (SVG)</a></p></div>')
@@ -2048,7 +2051,7 @@ wh_body = f"""
 {TRIPLE_HELIX_HTML}
 <p class="small muted" style="margin-top:16px">Bản đồ cập nhật mỗi khi dữ liệu thay đổi. Logo là nhãn hiệu của chủ sở hữu. Tổ chức chưa có trên bản đồ? <a href="{SITE_ROOT}gioi-thieu/dong-gop/">Đóng góp hồ sơ</a>.</p></div>
 <script>document.addEventListener("DOMContentLoaded",function(){{document.querySelectorAll(".dtabs").forEach(function(g){{var ts=g.querySelectorAll(".dt"),sec=g.closest("section");var ps=sec.querySelectorAll(".dpane");ts.forEach(function(t){{t.onclick=function(){{ts.forEach(function(x){{x.classList.toggle("on",x===t)}});ps.forEach(function(p){{p.hidden=p.dataset.p!==t.dataset.p}});}};}});}});}});</script>"""
-write("ban-do-he-sinh-thai/index.html", page("Bản đồ hệ sinh thái", wh_body, "cities",
+if ENABLE_ECOSYSTEM_MAPS: write("ban-do-he-sinh-thai/index.html", page("Bản đồ hệ sinh thái", wh_body, "cities",
       desc="Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, TP.HCM, Hà Nội, Đà Nẵng 2026: startup, vườn ươm, quỹ, trường viện, cộng đồng, cơ quan nhà nước."))
 
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------

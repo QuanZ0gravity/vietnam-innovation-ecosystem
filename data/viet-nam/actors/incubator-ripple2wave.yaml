@@ -1,0 +1,14 @@
+id: incubator-ripple2wave
+name:
+  vi: ripple2wave Incubator
+alt_names:
+- ripple2wave
+type: incubator
+description:
+  vi: Vườn ươm khởi nghiệp, đối tác mạng lưới NSSC.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- NSSC – Mạng lưới đối tác (nssc.gov.vn, 11/2026)
+source_url: https://nssc.gov.vn/ve-chung-toi/mang-luoi-doi-tac

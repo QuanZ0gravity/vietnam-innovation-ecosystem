@@ -1,0 +1,16 @@
+id: university-dai-hoc-rmit-viet-nam
+name:
+  vi: Đại học RMIT Việt Nam
+alt_names:
+- RMIT Vietnam
+- RMIT University Vietnam
+type: university
+website: https://www.rmit.edu.vn/
+description:
+  vi: Cơ sở tại Việt Nam của Đại học RMIT (Úc), có cơ sở tại TP.HCM, Hà Nội, Đà Nẵng.
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- NSSC – Mạng lưới đối tác (nssc.gov.vn, 11/2026)
+source_url: https://nssc.gov.vn/ve-chung-toi/mang-luoi-doi-tac
