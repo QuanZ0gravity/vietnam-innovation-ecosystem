@@ -2,6 +2,9 @@ id: startup-micway
 name:
   vi: Micway
 type: startup
+sectors:
+- agrifood
+- climate
 status: inactive
 region: da-nang
 verification:

@@ -2,6 +2,8 @@ id: startup-xbmi-fit
 name:
   vi: xbmi.fit
 type: startup
+sectors:
+- health
 founded: 2020
 status: active
 region: da-nang

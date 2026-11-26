@@ -2,6 +2,8 @@ id: startup-teeomega
 name:
   vi: Teeomega
 type: startup
+sectors:
+- commerce
 founded: 2023
 status: active
 region: da-nang

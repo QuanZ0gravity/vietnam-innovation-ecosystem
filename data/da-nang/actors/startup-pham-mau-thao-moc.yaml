@@ -2,6 +2,8 @@ id: startup-pham-mau-thao-moc
 name:
   vi: Pham Mau Thao Moc
 type: startup
+sectors:
+- agrifood
 status: unknown
 region: da-nang
 verification:
