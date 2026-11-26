@@ -2,6 +2,8 @@ id: startup-sumica
 name:
   vi: Sumica
 type: startup
+sectors:
+- property
 status: active
 website: https://sumica.ai
 region: da-nang

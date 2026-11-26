@@ -2,6 +2,8 @@ id: startup-impactus
 name:
   vi: Impactus
 type: startup
+sectors:
+- edu
 status: active
 website: https://impactus.com.vn
 region: da-nang

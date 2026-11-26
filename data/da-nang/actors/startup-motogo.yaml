@@ -2,6 +2,9 @@ id: startup-motogo
 name:
   vi: Motogo
 type: startup
+sectors:
+- mobility
+- tourism
 status: active
 website: https://motogo.vn
 region: da-nang

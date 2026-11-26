@@ -2,6 +2,8 @@ id: startup-mark-deler
 name:
   vi: Mark Deler
 type: startup
+sectors:
+- commerce
 website: https://markdealer.vn
 region: da-nang
 website_status: Hoạt động
