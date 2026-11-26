@@ -4,6 +4,8 @@ name:
 type: fund
 categories:
 - Quỹ gắn với vườn ươm
+sectors:
+- commerce
 description:
   vi: Mục tiêu 2 triệu USD.
 region: da-nang

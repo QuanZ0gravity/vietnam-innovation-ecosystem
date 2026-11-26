@@ -2,6 +2,8 @@ id: startup-indanang
 name:
   vi: IndaNang
 type: startup
+sectors:
+- tourism
 status: inactive
 region: da-nang
 verification:

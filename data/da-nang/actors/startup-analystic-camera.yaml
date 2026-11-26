@@ -2,6 +2,8 @@ id: startup-analystic-camera
 name:
   vi: Analystic Camera
 type: startup
+sectors:
+- ai
 status: unknown
 region: da-nang
 verification:
