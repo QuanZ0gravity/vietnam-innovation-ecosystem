@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Doanh nghiệp khoa học và công nghệ
+sectors:
+- deeptech
 address: Road 8, Hoa Cam Industrial Park, Đà Nẵng
 description:
   vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.

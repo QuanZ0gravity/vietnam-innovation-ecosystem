@@ -2,6 +2,8 @@ id: startup-instalent
 name:
   vi: Instalent
 type: startup
+sectors:
+- ai
 status: active
 website: https://instalent.io
 region: da-nang

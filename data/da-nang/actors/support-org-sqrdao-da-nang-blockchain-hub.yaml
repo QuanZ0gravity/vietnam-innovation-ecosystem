@@ -15,9 +15,39 @@ coordinates: [108.2296289, 16.0665458]
 coordinates_source: Ghim địa điểm của Hub trên Google Maps, đối chiếu với địa điểm trên Luma
 description:
   vi: Da Nang Blockchain Hub là không gian làm việc chung và tổ chức sự kiện do sqrDAO vận hành tại Đà Nẵng. Hub kết nối cộng đồng Web3, AI và fintech qua các buổi gặp gỡ, hội thảo và hoạt động dành cho nhà phát triển.
+  vi: sqrDAO
+alt_names:
+- sqrDAO / Da Nang Blockchain Hub
+- sqrDAO Vietnam
+type: community
+categories:
+- Cộng đồng builder Web3
+- Chương trình tăng tốc (sqrBUIDL)
+- Đầu tư giai đoạn sớm
+- Hạ tầng node xác thực (sqrNODE)
+- AI agent (sqrAI)
+sectors:
+- web3
+- ai
+status: active
+website: https://www.sqrdao.com/
+linkedin: https://www.linkedin.com/company/sqrdao
+description:
+  vi: Cộng đồng riêng của founder, nhà đầu tư và builder Web3 tại Việt Nam và Đông Nam Á. Vận hành Da Nang Blockchain Hub, Web3 Builders' Summit, chuỗi Web3 Builders' Voice; chương trình tăng tốc sqrBUIDL (BUIDL-athon trên Solana, Lisk), hạ tầng node sqrNODE, mảng AI agent sqrAI; đầu tư pre-seed, seed vào dự án của thành viên.
+leadership:
+- role: Founder
+  name: Castelian
+  source: https://www.sqrdao.com/
+history:
+- date: 2026-11
+  text: 'Quy mô cộng đồng (sqrDAO và Web3 Builders'' Summit): hơn 100 thành viên hoạt động, hơn 4.400 builder tham dự, hơn 300 sự kiện địa phương, hơn 40 đơn vị đồng tổ chức và đối tác, hơn 50 diễn giả và mentor. Thành viên mới được kết nạp qua gặp trực tiếp tại sự kiện.'
+  source: https://www.sqrdao.com/
+- date: 2026-05
+  text: EMpower Founders Residency.
+  source: indanang.vn
 region: da-nang
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - https://www.danangblockchainhub.com/#location
 - https://www.danangblockchainhub.com/#leadership
@@ -25,4 +55,8 @@ sources:
 - https://luma.com/da-nang-blockchain-hub
 - https://luma.com/6ywz8kn2
 - https://luma.com/tzpalhs3
+- Bản đồ hệ sinh thái
+- indanang.vn
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/
 legacy_id: d14

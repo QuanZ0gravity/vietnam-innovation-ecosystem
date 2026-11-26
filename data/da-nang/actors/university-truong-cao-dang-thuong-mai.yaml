@@ -4,6 +4,7 @@ name:
 type: university
 categories:
 - Viện, trường
+website: https://cdtm.edu.vn/
 address: 45 Dũng Sĩ Thanh Khê, Thanh Khê Tây, Đà Nẵng
 coordinates:
 - 108.169924
@@ -14,4 +15,5 @@ verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: u15

@@ -1,0 +1,13 @@
+id: company-tovchain
+name:
+  vi: TOVchain
+type: company
+website: https://tovchain.vn/
+description:
+  vi: Đối tác của Swiss EP Việt Nam.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- swissep.org (22/11/2026)
+source_url: https://swissep.org/countries/vietnam

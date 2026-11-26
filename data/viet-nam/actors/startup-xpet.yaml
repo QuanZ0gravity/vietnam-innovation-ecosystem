@@ -1,0 +1,15 @@
+id: startup-xpet
+name:
+  vi: xPet
+type: startup
+sectors:
+- web3
+status: inactive
+description:
+  vi: Game SocialFi nuôi thú ảo kết hợp mạng xã hội và blockchain. sqrDAO đã thoái vốn.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

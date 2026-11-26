@@ -64,3 +64,17 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - `/du-lieu/`: tải CSV toàn bộ (`data/actors.csv`), JSON, GeoJSON; bảng chất lượng dữ liệu theo địa phương (tỷ lệ có logo, mô tả, website, LinkedIn, lĩnh vực, vị trí, đã xác minh); đường dẫn mô hình dữ liệu, schema, giấy phép, lịch sử thay đổi.
 - `/gioi-thieu/`, `/gioi-thieu/phuong-phap/`, `/gioi-thieu/dong-gop/`.
 - Sitemap thêm các tệp `sitemap-linh-vuc.xml`, `sitemap-co-hoi.xml`, `sitemap-chinh-sach.xml`.
+
+## Trang địa phương – sắp xếp lại (22/11/2026)
+
+- Mục Danh bạ: thay các cột danh sách chữ dài bằng thẻ phân nhóm (Startup, Quỹ, Vườn ươm và hỗ trợ, Trường và viện, Doanh nghiệp, Chuyên gia, Cơ quan và đối tác) kèm số lượng; mỗi nhóm hiện 12 hồ sơ dạng thẻ đồng cỡ (logo, tên tối đa 2 dòng, lĩnh vực), ưu tiên hồ sơ đầy đủ, có case study, vòng vốn; nút "Xem tất cả N trong danh bạ" mở danh bạ đã lọc sẵn.
+- Khối "Trong danh bạ mở này" đếm theo đúng các nhóm trên (trước đây thiếu viện, tổ chức KH&CN).
+- Mục Sự kiện: chỉ hiện tối đa 6 sự kiện sắp tới và 4 sự kiện gần đây (trước đây hiện toàn bộ, trang dài gần 10.000 px); lịch tháng vẫn đánh dấu đủ mọi sự kiện.
+
+## Tạm ẩn bản đồ hệ sinh thái dạng vòng và Triple Helix (23/11/2026)
+
+- Hai sơ đồ chưa dùng được vì nhiều trường, viện, cơ quan còn thiếu logo. Tạm ẩn trang `/ban-do-he-sinh-thai/` và các liên kết tới trang (chân trang, trang Địa phương); đường dẫn cũ chuyển tạm (302) về `/thanh-pho/`.
+- Mã vẽ sơ đồ giữ nguyên trong `tools/build.py`; bật lại bằng biến môi trường `ECOSYSTEM_MAPS=1` khi dựng.
+- Logo đã thu thập trong các đợt 1–3 vẫn dùng cho danh bạ, hồ sơ, ảnh chia sẻ.
+
+- Định hướng khi vẽ lại bản đồ hệ sinh thái: theo cách trình bày của trang Bản đồ thị trường AI (`/ban-do-ai/`): mỗi nhóm một khung, bên trong là các ô logo và tên, có số lượng, lọc theo địa phương, bấm sang hồ sơ (người điều phối đề xuất, 23/11/2026).

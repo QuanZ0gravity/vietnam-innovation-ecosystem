@@ -2,6 +2,8 @@ id: startup-miss-na-banana
 name:
   vi: Miss Na Banana
 type: startup
+sectors:
+- agrifood
 status: active
 region: da-nang
 verification:

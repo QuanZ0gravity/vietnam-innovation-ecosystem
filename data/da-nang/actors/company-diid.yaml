@@ -1,0 +1,14 @@
+id: company-diid
+name:
+  vi: DiiD
+type: company
+sectors:
+- ai
+description:
+  vi: Công ty trí tuệ dữ liệu tại Đà Nẵng, giúp tổ chức khai thác dữ liệu kinh doanh thành quyết định; đơn vị phát triển DiFlow.
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- danangblockchainhub.com (22/11/2026)
+source_url: https://www.danangblockchainhub.com/

@@ -241,3 +241,38 @@ government-dsac,merged_into,government-trung-tam-doi-moi-sang-tao-da-nang,2026,Q
 government-trung-tam-doi-moi-sang-tao-da-nang,part_of,government-so-khoa-hoc-va-cong-nghe,2026,QĐ 4640/QĐ-UBND
 startup-smartos,related,startup-enosta,,"enosta.com, smartos.space (cùng địa chỉ 280 Trần Hưng Đạo; Enosta giới thiệu Smartos trên website)"
 community-sqrdao,related,support-org-sqrdao-da-nang-blockchain-hub,,https://www.danangblockchainhub.com/#leadership
+space-da-nang-blockchain-hub,part_of,support-org-sqrdao-da-nang-blockchain-hub,,https://www.danangblockchainhub.com/ (sqrDAO vận hành)
+international-napa-global,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+government-trung-tam-doi-moi-sang-tao-da-nang,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-pharos-network,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-superteam-vn,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-avalanche-team1,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+company-diid,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+international-swiss-ep,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+company-9am-games,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+startup-punkga-me,partner,space-da-nang-blockchain-hub,2026,https://www.danangblockchainhub.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-harmonix-finance,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-xitadel,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-paradise-tycoon,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-berally,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-xpet,,https://www.sqrdao.com/
+support-org-sqrdao-da-nang-blockchain-hub,invested_in,startup-midas-trade,,https://www.sqrdao.com/
+company-diflow,part_of,company-diid,,https://www.danangblockchainhub.com/
+international-seco,related,international-swiss-ep,2015,https://swissep.org/about-us/behind-swiss-ep (tài trợ)
+international-swisscontact,related,international-swiss-ep,2015,https://swissep.org/about-us/behind-swiss-ep (thực hiện)
+international-j-e-austin-associates,related,international-swiss-ep,2015,https://swissep.org/about-us/behind-swiss-ep (thực hiện)
+company-tovchain,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-bizcare,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-bk-holdings,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+fund-bk-fund,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-bssc,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+government-trung-tam-cong-nghe-sinh-hoc-dbc,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-decentralab,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+incubator-ecomdy-ecombator,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-emakase,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+space-ftu-innovation-and-incubation-space-fiis,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+support-org-shtp-innovation-center,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+fund-thinkzone-ventures,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+accelerator-zone-startup,partner,international-swiss-ep,,https://swissep.org/countries/vietnam
+fund-ecomdy-accelerator-fund-i,part_of,incubator-ecomdy-ecombator,,https://ecomdymedia.com/company-about-us
+startup-vsap-lab,partner,company-fpt-corporation,2026,https://vsaplab.com/vsap-lab-and-fpt-group-a-strategic-partnership-advancing-rd-talent-development-and-business-growth-in-advanced-semiconductor-packaging/

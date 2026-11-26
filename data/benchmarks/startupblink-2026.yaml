@@ -3,6 +3,7 @@
 # Một số trang hiện hai con số khác nhau cho cùng chỉ số (ví dụ số startup); ở đây ghi số trong phần mô tả cơ sở dữ liệu.
 # Chuỗi theo năm (global_rank_by_year, funding_by_year_usd, deals_by_year) đọc từ dữ liệu của biểu đồ trên trang công khai, 22/11/2026. Năm 2018 không có xếp hạng.
 # insights: tóm tắt (viết lại) từ báo cáo GSEI 2026 và ấn phẩm Sở KH&CN Đà Nẵng 2025, ghi nguồn từng dòng.
+# gii_2025: Global Innovation Index 2025 (WIPO), báo cáo PDF.
 source: StartupBlink, Global Startup Ecosystem Index 2026
 accessed: '2026-11-21'
 country:
@@ -77,20 +78,42 @@ country:
     2024: 44
     2025: 25
   insights:
-  - text: Tăng 5 bậc lên hạng 50 thế giới, vị trí cao nhất từ khi có bảng xếp hạng; giữ hạng 5 Đông Nam Á và hạng 10 châu Á.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hệ sinh thái tăng trưởng 67,9% trong năm, cao nhất Đông Nam Á và cao hơn nhiều mức trung bình thế giới 17,5%.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 52/125 về môi trường kinh doanh, sát với hạng hệ sinh thái; cải thiện môi trường kinh doanh có thể mở thêm dư địa tăng trưởng.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 2 Đông Nam Á về giá trị thương hiệu hệ sinh thái và hạng 6 châu Á – Thái Bình Dương về hoạt động cộng đồng khởi nghiệp, cao hơn vị trí chung.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Cấu trúc hai trung tâm: điểm của TP.HCM chỉ gấp 1,2 lần Hà Nội. Có 4 thành phố trong top 1.000, thêm Hải Phòng.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Ngành mạnh nhất là Fintech: hạng 39 thế giới, hạng 9 châu Á – Thái Bình Dương.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: 'Mốc chính sách: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), NIC (2019), Nghị định 264 (2025) lần đầu tạo khung pháp lý cho quỹ đầu tư mạo hiểm quốc gia và địa phương.'
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - theme: Xếp hạng
+    text: Hạng 50 thế giới về hệ sinh thái khởi nghiệp (tăng 5 bậc, cao nhất từ trước tới nay), hạng 5 Đông Nam Á; tăng trưởng 67,9% trong năm, nhanh nhất Đông Nam Á.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Xếp hạng
+    text: Hạng 44/139 về Chỉ số Đổi mới sáng tạo toàn cầu, hạng 2 nhóm thu nhập trung bình thấp; 15 năm liên tiếp (2011–2025) đạt kết quả vượt mức tương ứng với trình độ phát triển.
+    sources:
+    - WIPO GII 2025
+    source: WIPO GII 2025
+  - theme: Thế mạnh, điểm yếu
+    text: 'Đầu ra đổi mới sáng tạo (hạng 37) tốt hơn đầu vào (hạng 50): mạnh ở sản phẩm sáng tạo, tri thức và công nghệ, xuất khẩu công nghệ cao; yếu ở nguồn nhân lực và nghiên cứu (70), thể chế (59), hạ tầng (56). Môi trường kinh doanh hạng 52/125.'
+    sources:
+    - WIPO GII 2025
+    - StartupBlink 2026
+    source: WIPO GII 2025
+  - theme: Thế mạnh, điểm yếu
+    text: Năng suất lao động tăng 5,4%/năm (2014–2024), nhanh thứ hai thế giới; nhưng chưa có cụm khoa học và công nghệ nào trong top 100 thế giới.
+    sources:
+    - WIPO GII 2025
+    source: WIPO GII 2025
+  - theme: Cấu trúc hệ sinh thái
+    text: 'Hai trung tâm cân bằng: điểm của TP.HCM chỉ gấp 1,2 lần Hà Nội; 4 thành phố trong top 1.000 (thêm Đà Nẵng, Hải Phòng). Ngành mạnh nhất là Fintech, hạng 39 thế giới.'
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vốn đầu tư
+    text: 'Năm 2025: vốn đầu tư mạo hiểm 509 triệu USD (tăng 28%), vốn cổ phần tư nhân 3,96 tỷ USD (kỷ lục); mắt xích còn thiếu là IPO của công ty công nghệ được VC/PE hậu thuẫn.'
+    sources:
+    - VPCA 2026
+    source: VPCA 2026
+  - theme: Chính sách
+    text: 'Các mốc khung pháp lý: Luật Hỗ trợ doanh nghiệp nhỏ và vừa (2017), thành lập NIC (2019), Nghị định 264/2025 lần đầu cho phép quỹ đầu tư mạo hiểm có vốn nhà nước ở trung ương và địa phương.'
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
   report_metrics:
     ecosystem_value_usd: 75100000000
     unicorns: 3
@@ -98,6 +121,21 @@ country:
     community_activity_rank_apac: 6
     fintech_rank_global: 39
     fintech_rank_apac: 9
+  gii_2025:
+    rank: 44
+    of: 139
+    input_rank: 50
+    output_rank: 37
+    income_group: Thu nhập trung bình thấp (hạng 2, sau Ấn Độ)
+    pillars:
+      Thể chế: 59
+      Nguồn nhân lực và nghiên cứu: 70
+      Hạ tầng: 56
+      Trình độ thị trường: 43
+      Trình độ kinh doanh: 45
+      Sản phẩm tri thức và công nghệ: 39
+      Sản phẩm sáng tạo: 34
+    source: WIPO, Global Innovation Index 2025
 cities:
 - id: ho-chi-minh
   name: TP. Hồ Chí Minh
@@ -172,36 +210,38 @@ cities:
     2024: 31
     2025: 18
   insights:
-  - text: Tăng 12 bậc lên hạng 98, lần đầu vào top 100 thế giới; giữ hạng 5 Đông Nam Á.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Dẫn đầu Đông Nam Á về độ trưởng thành của hệ sinh thái (nhóm chỉ số Ecosystem Maturity), nhờ thành tích startup đã đạt được.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Fintech hạng 3 Đông Nam Á, hạng 60 thế giới; Blockchain hạng 5 Đông Nam Á, hạng 70 thế giới.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nơi có MoMo, Sky Mavis và Tiki. Sở KH&CN quản lý SIHUB, BSSC và đồng tổ chức InnoEx.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nền tảng HOIP của Trung tâm Khởi nghiệp sáng tạo TP.HCM (SIHUB) có 200 hồ sơ startup, khoảng 40 chuyên gia, 11 nhà đầu tư và 45 vườn ươm, tổ chức hỗ trợ.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: 82 trong 200 startup trên HOIP (41%) thành lập năm 2025, cho thấy nhiều hồ sơ còn ở giai đoạn ý tưởng hoặc mới thành lập.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: 'Lĩnh vực nhiều startup nhất trên HOIP: phần mềm, CNTT (68); dịch vụ (25); thực phẩm, nông lâm nghiệp (24); chế biến, chế tạo (19).'
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: Thành phố hỗ trợ startup theo cơ chế đặc thù của Nghị quyết 20/2024/NQ-HĐND, ví dụ chương trình Fintech 2025 với gói ươm tạo tới 400 triệu đồng mỗi dự án và chương trình ươm tạo qua cuộc thi Startup Wheel cùng BSSC.
-    source: HOIP – Nền tảng kết nối ĐMST TP.HCM do SIHUB vận hành (truy cập 22/11/2026)
-  - text: TP.HCM chiếm khoảng 50% số startup, 40% cơ sở ươm tạo và hỗ trợ khởi nghiệp, 44% vốn đầu tư và 60% số thương vụ của cả nước.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Giá trị hệ sinh thái khoảng 7,5 tỷ USD (Startup Genome 2024); vốn đầu tư mạo hiểm khoảng 260 triệu USD qua 77 thương vụ (Do Ventures tổng hợp); khoảng 100 quỹ đầu tư hoạt động (Báo cáo đầu tư sáng tạo Việt Nam 2025).
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Ngày 17/4/2026, thành phố công bố Quỹ Đầu tư mạo hiểm TP.HCM, quỹ có vốn nhà nước đóng vai trò vốn mồi để đồng đầu tư cùng quỹ tư nhân.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Giai đoạn 2024–2025, Nghị quyết 20/2023/NQ-HĐND hỗ trợ 179 dự án qua 35 nhiệm vụ, tổng kinh phí hơn 18,3 tỷ đồng. Dự thảo chính sách mới (7/2026) đề xuất hỗ trợ không hoàn lại tới 50 triệu đồng (tiền ươm tạo), 100 triệu đồng (ươm tạo) và 500 triệu đồng (tăng tốc) mỗi dự án, qua tổ chức trung gian.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Tòa nhà SIHUB tại 123 Trương Định khánh thành tháng 8/2025; SIHUB hợp tác với Plug and Play từ 5/2026 và có mạng lưới đối tác gồm 13 trường đại học, 2 khu công nghệ Hàn Quốc.
-    source: SIHUB – sihub.gov.vn (truy cập 22/11/2026)
-  - text: Dữ liệu mở của Sở KH&CN ghi nhận 139 doanh nghiệp khoa học và công nghệ và khoảng 460 tổ chức khoa học và công nghệ (viện, trung tâm nghiên cứu) tại TP.HCM.
-    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
-  - text: '732 nhiệm vụ, đề tài, đề án KH&CN của thành phố; nhiều nhất là khoa học xã hội và nhân văn (405) và công nghệ sinh học (152). Đơn vị chủ trì nhiều nhất: Trung tâm Công nghệ Sinh học Thành phố Hồ Chí Minh, Viện Nghiên cứu phát triển Thành phố Hồ Chí Minh, Trường Đại học Bách khoa Thành phố Hồ Chí Minh, Viện Sinh học Nhiệt đới.'
-    source: Cổng dữ liệu mở TP.HCM – Sở KH&CN TP.HCM (truy cập 22/11/2026)
+  - theme: Xếp hạng
+    text: Hạng 98 thế giới (tăng 12 bậc), lần đầu vào top 100; dẫn đầu Đông Nam Á về độ trưởng thành của hệ sinh thái. Fintech hạng 60 thế giới (hạng 3 Đông Nam Á), Blockchain hạng 70.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vị thế
+    text: Chiếm khoảng 50% số startup, 40% cơ sở ươm tạo và hỗ trợ, 44% vốn đầu tư và 60% số thương vụ của cả nước; nơi có MoMo, Sky Mavis, Tiki.
+    sources:
+    - SIHUB
+    - StartupBlink 2026
+    source: SIHUB
+  - theme: Vốn đầu tư
+    text: Giá trị hệ sinh thái khoảng 7,5 tỷ USD; vốn đầu tư mạo hiểm khoảng 260 triệu USD qua 77 thương vụ; khoảng 100 quỹ đang hoạt động. Ngày 17/4/2026 công bố Quỹ Đầu tư mạo hiểm TP.HCM có vốn nhà nước, làm vốn mồi đồng đầu tư cùng quỹ tư nhân.
+    sources:
+    - SIHUB
+    source: SIHUB
+  - theme: Mạng lưới hỗ trợ
+    text: SIHUB là đầu mối (tòa nhà mới 8/2025, hợp tác Plug and Play từ 5/2026), cùng BSSC và InnoEx. Nền tảng HOIP có 240 startup, 60 vườn ươm và tổ chức hỗ trợ, 40 chuyên gia; 41% startup trên HOIP mới thành lập năm 2025.
+    sources:
+    - SIHUB
+    - HOIP
+    source: SIHUB
+  - theme: Năng lực KH&CN
+    text: 139 doanh nghiệp khoa học và công nghệ, khoảng 460 tổ chức KH&CN; 732 nhiệm vụ KH&CN cấp thành phố, đơn vị chủ trì nhiều nhất là Trung tâm Công nghệ Sinh học, Viện Nghiên cứu phát triển, Trường ĐH Bách khoa.
+    sources:
+    - Dữ liệu mở TP.HCM
+    source: Dữ liệu mở TP.HCM
+  - theme: Chính sách
+    text: Nghị quyết 20/2023/NQ-HĐND hỗ trợ 179 dự án với hơn 18,3 tỷ đồng (2024–2025); dự thảo chính sách mới (7/2026) đề xuất hỗ trợ không hoàn lại tới 50, 100 và 500 triệu đồng mỗi dự án cho tiền ươm tạo, ươm tạo, tăng tốc.
+    sources:
+    - SIHUB
+    source: SIHUB
 - id: ha-noi
   name: Hà Nội
   url: https://www.startupblink.com/startup-ecosystem/hanoi-vn
@@ -278,12 +318,17 @@ cities:
     2024: 11
     2025: 4
   insights:
-  - text: Tăng 30 bậc lên hạng 118 thế giới, hạng 6 Đông Nam Á, tăng trưởng 48,6%.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Hạng 4 Đông Nam Á về hiệu quả đầu tư hệ sinh thái (Ecosystem Returns), cao hơn vị trí chung.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Nơi đặt NIC và NSSC, hai đầu mối quốc gia về đổi mới sáng tạo và khởi nghiệp.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - theme: Xếp hạng
+    text: Hạng 118 thế giới (tăng 30 bậc), hạng 6 Đông Nam Á, tăng trưởng 48,6%; hạng 4 Đông Nam Á về hiệu quả đầu tư của hệ sinh thái.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Vai trò quốc gia
+    text: Nơi đặt NIC và NSSC, hai đầu mối quốc gia về đổi mới sáng tạo và khởi nghiệp; tổ chức các sự kiện quốc gia thường niên như TECHFEST Việt Nam và Ngày Đổi mới sáng tạo Việt Nam.
+    sources:
+    - StartupBlink 2026
+    - Bản đồ hệ sinh thái
+    source: StartupBlink 2026
 - id: da-nang
   name: Đà Nẵng
   url: https://www.startupblink.com/startup-ecosystem/da-nang-vn
@@ -340,26 +385,49 @@ cities:
     2024: 2
     2025: 3
   insights:
-  - text: Tăng 212 bậc lên hạng 554, tăng trưởng 153,8%, nhanh nhất trong các thành phố Việt Nam.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Lần đầu vào top 1.000 thế giới năm 2024 (hạng 896).
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Hạng 5/63 tỉnh, thành về Chỉ số đổi mới sáng tạo địa phương (PII) 2024.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Bốn lần nhận danh hiệu "Thành phố khởi nghiệp sáng tạo hấp dẫn" (2020, 2022, 2023, 2024); năm 2023 được VCCI vinh danh "Địa phương điển hình xây dựng hệ sinh thái khởi nghiệp" và lọt top 15 địa phương đóng góp nhiều nhất cho hệ sinh thái quốc gia.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: 'Mạng lưới năm 2025: 10 vườn ươm, 6 tổ chức hỗ trợ, 9 không gian làm việc chung, 3 không gian sáng tạo maker, 15 quỹ đầu tư, hơn 20 chính sách và hơn 200 startup.'
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Tổ điều phối mạng lưới khởi nghiệp thành phố có 27 thành viên, Sở KH&CN là cơ quan thường trực.
-    source: Sở KH&CN Đà Nẵng, Hệ sinh thái khởi nghiệp đổi mới sáng tạo Đà Nẵng (2025)
-  - text: Ngày 1/11/2026, DISSC, DSAC và Trung tâm Công nghệ sinh học hợp nhất thành Trung tâm Đổi mới sáng tạo Đà Nẵng.
+  - theme: Xếp hạng
+    text: Hạng 554 thế giới, tăng 212 bậc, tốc độ tăng trưởng 153,8%, nhanh nhất trong các thành phố Việt Nam; lần đầu vào top 1.000 năm 2024 (hạng 896).
+    sources:
+    - StartupBlink 2026
+    - Sở KH&CN Đà Nẵng 2025
+    source: StartupBlink 2026
+  - theme: Xếp hạng
+    text: Hạng 5/63 về Chỉ số đổi mới sáng tạo cấp tỉnh (PII) 2024; bốn lần là "Thành phố khởi nghiệp sáng tạo hấp dẫn" (2020, 2022–2024); VCCI vinh danh "Địa phương điển hình xây dựng hệ sinh thái khởi nghiệp" (2023).
+    sources:
+    - Sở KH&CN Đà Nẵng 2025
+    source: Sở KH&CN Đà Nẵng 2025
+  - theme: Mạng lưới hỗ trợ
+    text: 'Sau hợp nhất với Quảng Nam: 5 trung tâm khởi nghiệp và ĐMST, 12 vườn ươm, 14 không gian làm việc chung, 3 không gian sáng tạo, 24 câu lạc bộ; khoảng 15 quỹ đầu tư và hơn 200 startup.'
+    sources:
+    - congdulieu.vn
+    - Sở KH&CN Đà Nẵng 2025
+    source: congdulieu.vn
+  - theme: Mạng lưới hỗ trợ
+    text: Từ 1/11/2026, DISSC, DSAC và Trung tâm Công nghệ sinh học hợp nhất thành Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC), đầu mối ĐMST của thành phố; Tổ điều phối mạng lưới khởi nghiệp có 27 thành viên, Sở KH&CN thường trực.
+    sources:
+    - QĐ 4640/QĐ-UBND
+    - Sở KH&CN Đà Nẵng 2025
     source: QĐ 4640/QĐ-UBND
-  - text: 'Mạng lưới hỗ trợ khởi nghiệp sau hợp nhất với Quảng Nam (số liệu Sở KH&CN, 8/2025): 5 trung tâm khởi nghiệp và ĐMST, 12 vườn ươm doanh nghiệp, 3 không gian sáng tạo, 14 không gian làm việc chung, 24 câu lạc bộ khởi nghiệp và ĐMST (riêng khu vực Quảng Nam cũ có 2 trung tâm, 6 không gian làm việc chung, 14 câu lạc bộ).'
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
-  - text: 'Kết quả chính sách 6 tháng đầu năm 2026: hỗ trợ 11 tổ chức, doanh nghiệp khởi nghiệp sáng tạo với 4,898 tỷ đồng (NQ 19/2026); 20 đơn vị được ưu đãi thuế (NQ 24/2026); 33 hồ sơ thử nghiệm có kiểm soát, 2 giải pháp được cấp phép (NQ 20/2026); hỗ trợ đổi mới công nghệ 700 triệu đồng (NQ 33/2026); hỗ trợ CNTT 603,75 triệu đồng cho 3 công ty (NQ 270/2019).'
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
-  - text: Danh sách 76 quỹ đầu tư và dự án, doanh nghiệp khởi nghiệp tham dự DAVAS 2026 được công bố dạng dữ liệu mở.
-    source: Cổng dịch vụ dữ liệu Đà Nẵng (congdulieu.vn, truy cập 22/11/2026)
+  - theme: Vốn đầu tư
+    text: Vốn vào startup 2017–2025 khoảng 55 triệu USD; năm 2025 đạt 22 triệu USD qua 3 thương vụ, mức cao nhất từ trước tới nay. DAVAS 2026 quy tụ 76 quỹ và startup, danh sách công bố dạng dữ liệu mở.
+    sources:
+    - StartupBlink 2026
+    - congdulieu.vn
+    source: StartupBlink 2026
+  - theme: Chính sách
+    text: '6 tháng đầu năm 2026: 4,9 tỷ đồng hỗ trợ 11 tổ chức, doanh nghiệp khởi nghiệp sáng tạo (NQ 19/2026); 20 đơn vị được ưu đãi thuế (NQ 24/2026); 33 hồ sơ thử nghiệm có kiểm soát, 2 giải pháp được cấp phép (NQ 20/2026).'
+    sources:
+    - congdulieu.vn
+    source: congdulieu.vn
+  - theme: Chính sách
+    text: Chuỗi khối dùng chung DNC-Chain, ngân sách 10,5 triệu USD giai đoạn 2026–2030 (QĐ 2728/QĐ-UBND), gắn với Trung tâm tài chính quốc tế và thử nghiệm tài sản số.
+    sources:
+    - Da Nang Blockchain Hub
+    source: Da Nang Blockchain Hub
+  official_network:
+    incubators: 12
+    coworking: 14
+    source: Sở KH&CN, 8/2025
 - id: hai-phong
   name: Hải Phòng
   url: https://www.startupblink.com/startup-ecosystem/hai-phong-vn
@@ -401,9 +469,13 @@ cities:
     2024: 0
     2025: 0
   insights:
-  - text: Lần đầu vào top 1.000 thế giới, hạng 765.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: Startup Haiphong là đầu mối điều phối khởi nghiệp, định vị thành phố là trung tâm bổ trợ cho Hà Nội và TP.HCM; thành phố đặt mục tiêu làm nơi thử nghiệm (sandbox) cho giải pháp công nghệ mới.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
-  - text: VinFast, đặt nhà máy tại Hải Phòng, là thương vụ thoái vốn trên 1 tỷ USD của thành phố.
-    source: StartupBlink, Global Startup Ecosystem Index 2026 (báo cáo, tr. 239–242)
+  - theme: Xếp hạng
+    text: Lần đầu vào top 1.000 thế giới, hạng 765.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026
+  - theme: Định vị
+    text: Startup Haiphong điều phối hệ sinh thái, định vị thành phố là trung tâm bổ trợ cho Hà Nội và TP.HCM, nơi thử nghiệm (sandbox) giải pháp công nghệ mới; VinFast (nhà máy tại Hải Phòng) là thương vụ thoái vốn trên 1 tỷ USD.
+    sources:
+    - StartupBlink 2026
+    source: StartupBlink 2026

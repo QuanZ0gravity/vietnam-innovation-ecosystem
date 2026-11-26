@@ -85,3 +85,15 @@
   url: https://techfest.vn/events/v-innohealth-award-2026-mu0a1yu0
   summary: Giải thưởng đổi mới sáng tạo trong y tế, kèm diễn đàn công nghệ y tế, hội nghị an toàn thực phẩm và phiên gọi vốn cho startup công nghệ y tế. Sự kiện trong chuỗi TECHFEST 2026.
   source: https://techfest.vn/events
+- id: svef-2026-ha-noi
+  title: Diễn đàn Kinh tế Thụy Sĩ – Việt Nam (SVEF) 2026 – Hà Nội
+  start: '2026-10-18'
+  end: '2026-10-20'
+  venue: Khách sạn Melia, 44B Lý Thường Kiệt, Hà Nội
+  category: capital
+  organizer: Swiss-Viet Economic Forum (SVEF)
+  organizer_ids:
+  - international-swiss-viet-economic-forum
+  url: https://hanoi2026.svef.ch/
+  summary: 'Chủ đề "Từ sức mạnh song phương đến tác động khu vực": khởi động thực thi Hiệp định EFTA – Việt Nam, kết nối tài chính, chuyển đổi công nghiệp, AI và kinh tế số; kết nối doanh nghiệp B2B; tham quan khu công nghiệp Hải Phòng, Bắc Ninh.'
+  source: https://hanoi2026.svef.ch/

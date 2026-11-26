@@ -22,17 +22,113 @@
   summary: Diễn đàn quốc gia về tài sản số, blockchain và AI, kèm các sự kiện bên lề như HSC Conference và Builders' Breakfast.
   source: https://indanang.vn/ecosystem-activities/conviction-2026
 - id: jdi-tfoai4-2026
-  title: JDI TFOAI4 – The Future of AI, Chapter 4
+  title: 'JDI – The Future of Artificial Intelligence: Chapter 4'
   start: '2026-08-18'
   end: '2026-08-18'
-  venue: TP.HCM
+  venue: Riverside Palace, TP.HCM
   category: ai
-  organizer: JDI
+  organizer: 'JDI Group (đồng hành: Alibaba Cloud)'
   organizer_ids:
   - international-jdi
-  summary: Hội thảo về AI ứng dụng, hạ tầng, quản trị AI và đầu tư, kèm gọi vốn startup và triển lãm.
+  summary: 'Hội nghị "Từ AI hype đến tác động kinh doanh": hơn 1.000 người tham dự, hơn 40 diễn giả, 20 đơn vị triển lãm; chủ đề ứng dụng AI, dữ liệu và mô hình nền, hạ tầng AI, quản trị AI; bàn tròn, kết nối nhà đầu tư 1-1, gọi vốn startup.'
   opportunity: jdi-tfoai4-2026
   source: https://indanang.vn/ecosystem-activities/jdi-tfoai4
+  url: https://the-future-of-artificial-intelligence.webflow.io/
+  recurrence: annual
+  month: 8
+  speakers:
+  - name: Nguyen Tuan Huy
+    title: Customer Solutions Consultant
+    org: Google Cloud
+  - name: Peter Dang
+    title: Senior Solution Architect
+    org: Alibaba Cloud
+  - name: Jeremy Foo
+    title: Founder & CEO
+    org: Alpha Story
+    org_id: startup-alpha-story
+  - name: Alan Kueh
+    title: Founder
+    org: BuildBob
+    org_id: startup-buildbob
+  - name: Quynh Pham
+    title: Country Manager
+    org: EPI
+  - name: Minh Nguyen Hoang
+    title: Founder and Managing Partner
+    org: Harley Miller Law Firm
+  - name: Le Thanh Son
+    title: OpenAI Codex Ambassador for Vietnam
+    org: ''
+  - name: Dr. Ng Aik Beng
+    title: Senior Regional Manager
+    org: NVIDIA AI Technology Center (NVAITC)
+    org_id: international-nvidia
+  - name: Ph.D Tony Tran
+    title: Head of Policy Vietnam
+    org: TOTM Labs
+    org_id: fund-totm-labs
+  - name: Antron Lim
+    title: Co-Head, Private Capital, APAC
+    org: Microsoft for Startups
+  - name: Gabe Hollombe
+    title: Director of Solution Engineering, Startups/Asia
+    org: Microsoft for Startups
+  - name: Vulcan Zhao
+    title: AI Technology Director
+    org: A1P
+  - name: Duy Doan
+    title: Founder & CEO
+    org: Magnitudeminds
+  - name: Rina Rudyanto
+    title: Associate Director of Data Science
+    org: Siloam Hospitals Group
+  - name: Prof. Shonali Krishnaswamy
+    title: Director of the Monash AI Institute and Academic Director Leading AI Innovation
+    org: Monash University
+  - name: Tammy Thi Phan
+    title: Founder & Managing Partner
+    org: Blue Valley Partners
+  - name: Phuc Le
+    title: Director of Public Relations & Business Development
+    org: VSAP Lab
+    org_id: startup-vsap-lab
+  - name: Prof. Ian McLoughlin
+    title: Professor, InfoComm Technology Cluster
+    org: Singapore Institute of Technology
+  - name: Dr. Trinh Quang Viet
+    title: Principal Lecturer, Faculty of Information Systems; Director, Institute of Applied Artificial Intelligence (IAAI)
+    org: University of Economics and Law (UEL, Vietnam National University HCMC)
+  - name: Prof. Dr. Peerapon Vateekul
+    title: Professor, Department of Computer Engineering, Faculty of Engineering
+    org: Chulalongkorn University
+  - name: Assoc. Prof. Le Hoanh Su
+    title: Dean, Faculty of Information Systems; Head of Business Analysis & AI Lab
+    org: University of Economics and Law (UEL, Vietnam National University HCMC)
+  - name: Assoc. Prof. Adams Kong
+    title: Associate Professor, College of Computing and Data Science
+    org: Nanyang Technological University (NTU)
+  - name: Luke Treloar
+    title: Partner, Head of Strategy Group | National Head of Infrastructure, Government & Healthcare (IGH)
+    org: KPMG Vietnam
+  - name: Seck Yee Chung
+    title: Partner
+    org: Baker & McKenzie (VN)
+  - name: Cam Van Bui
+    title: Chief Corporate Services Officer
+    org: Buymed
+    org_id: startup-buymed
+  - name: Nguyen Van Chuong
+    title: Program Manager · Vice Chairman
+    org: Swiss EP Vietnam · YBA Da Nang
+    org_id: international-swiss-ep
+  - name: Rebecca Joy
+    title: CEO/Founder
+    org: Saigon A.I.
+  - name: Dr. Mark Shmulevich
+    title: Managing Partner
+    org: Aloniq
+  speakers_source: https://the-future-of-artificial-intelligence.webflow.io/speakers
 - id: innoex-2026
   title: InnoEx 2026
   start: '2026-08-19'

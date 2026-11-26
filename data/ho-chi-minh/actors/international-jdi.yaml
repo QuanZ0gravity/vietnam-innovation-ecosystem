@@ -1,0 +1,73 @@
+id: international-jdi
+name:
+  vi: JDI Group
+alt_names:
+- JDI
+- Jumpstart Disruptive Innovations
+- Capital JDI
+- Venture JDI
+- Talent JDI
+type: international
+categories:
+- Venture catalyst, xây dựng doanh nghiệp mới
+- Tích hợp AI, phát triển phần mềm
+- Tuyển dụng nhân sự công nghệ, EOR tại Việt Nam
+- Hỗ trợ gọi vốn, mở rộng thị trường Đông Nam Á
+sectors:
+- ai
+- fintech
+- commerce
+founded: 2016
+status: active
+website: https://jdi.group/
+linkedin: https://www.linkedin.com/company/jdi-group
+address: Tầng 9, Maritime Building, 42 Tự Cường, phường Tân Sơn Nhất, TP.HCM (văn phòng Việt Nam; trụ sở Singapore)
+description:
+  vi: '"Venture catalyst" có trụ sở Singapore, chi nhánh Việt Nam: tích hợp AI, phát triển phần mềm, tuyển nhân sự công nghệ và dịch vụ tuyển dụng hộ (EOR) tại Việt Nam, mở rộng thị trường, tư vấn gọi vốn (Capital JDI), xây dựng doanh nghiệp mới và đổi mới sáng tạo doanh nghiệp (Venture JDI). Tổ chức chuỗi sự kiện The Future of AI tại TP.HCM.'
+leadership:
+- role: Managing Partner, Innovation & Ventures (Venture JDI)
+  name: Thomas Seet
+  source: https://jdi.group/venture-jdi/
+- role: Principal Consultant, Product & Technology (Venture JDI)
+  name: Karl Teoh
+  source: https://jdi.group/venture-jdi/
+- role: Venture Partner, Business Transformation (Venture JDI)
+  name: Nigel Tay
+  source: https://jdi.group/venture-jdi/
+history:
+- date: '2016'
+  text: Thành lập; hỗ trợ tăng trưởng cho công ty đổi mới sáng tạo trong fintech, F&B, thương mại điện tử, giáo dục.
+  source: https://jdi.group/about-us/
+- date: '2025'
+  text: Được ghi nhận trong danh sách "Singapore’s Fastest Growing Companies 2025".
+  source: https://jdi.group/about-us/
+- date: '2026-08-18'
+  text: 'Tổ chức The Future of Artificial Intelligence: Chapter 4 tại Riverside Palace, TP.HCM (đồng hành: Alibaba Cloud): hơn 1.000 người tham dự, hơn 40 diễn giả, triển lãm AI, bàn tròn, kết nối nhà đầu tư.'
+  source: https://the-future-of-artificial-intelligence.webflow.io/
+case_studies:
+- title: JDI Group qua các con số
+  url: https://jdi.group/about-us/
+  publisher: JDI Group
+  date: '2026'
+  summary: Số liệu do JDI công bố trên website.
+  points:
+  - 'Capital JDI: tư vấn gọi vốn, chương trình Next Wave Capital (kết nối nhà đầu tư, chuẩn bị thẩm định, mentor 1-1).'
+  - 'Venture JDI: xây dựng doanh nghiệp mới và đổi mới sáng tạo cho doanh nghiệp; đã mentor, ươm tạo hơn 100 dự án từ SiTF, SGTech, NUS, SMU, NTU, SUTD.'
+  - 'Talent JDI: mạng lưới hơn 30.000 ứng viên công nghệ, gửi danh sách rút gọn trong 72 giờ; dịch vụ EOR tại Việt Nam.'
+  metrics:
+  - label: Doanh nghiệp đã hỗ trợ tăng tốc
+    value: '300'
+  - label: Chuyên gia nội bộ
+    value: '500'
+  - label: Đối tác nhà đầu tư (Capital JDI)
+    value: 300+
+  - label: Giá trị danh mục startup
+    value: 70+ triệu USD
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- indanang.vn
+- Website chính thức
+- jdi.group, the-future-of-artificial-intelligence.webflow.io (22/11/2026)
+source_url: https://jdi.group/about-us/

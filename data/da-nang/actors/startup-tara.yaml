@@ -2,6 +2,8 @@ id: startup-tara
 name:
   vi: Tara
 type: startup
+sectors:
+- health
 status: active
 region: da-nang
 verification:

@@ -250,3 +250,88 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 
 - Theo xác nhận của người điều phối dự án rằng chuyên gia đã đồng ý công khai hồ sơ trên HOIP: tải ảnh đại diện của 40 chuyên gia và nhà đầu tư cá nhân (cắt vuông 160 × 160 px, thư mục `photos/`, không thuộc CC BY), bổ sung phần "Thành tựu, giải thưởng" nguyên văn cho 4 hồ sơ. Trang Quyền riêng tư nêu rõ dữ liệu này và cách yêu cầu gỡ.
 - Email và số điện thoại cá nhân vẫn chưa đưa lên.
+
+## sqrDAO và Da Nang Blockchain Hub (22/11/2026)
+
+- Tách thành hai hồ sơ: sqrDAO (cộng đồng, giữ đường dẫn cũ) và Da Nang Blockchain Hub (không gian, do sqrDAO vận hành), theo sqrdao.com và danangblockchainhub.com.
+- sqrDAO: mô tả các sáng kiến (Hub, Web3 Builders' Summit, Web3 Builders' Voice, sqrBUIDL, sqrNODE, sqrAI), quy mô cộng đồng, người sáng lập (bút danh công khai), danh mục đầu tư 6 dự án (Harmonix, Xitadel, Paradise Tycoon, Midas.trade đang hoạt động; Berally ngừng; xPet đã thoái vốn).
+- Hub: địa chỉ NAPA Riverside, giờ mở cửa, dịch vụ, mức tài trợ đối tác; quan hệ đối tác với NAPA Global, DNIC, Pharos Network, Superteam Vietnam, Avalanche Team1, DiiD, Swiss EP Vietnam, 9AM Games, Punkga.me.
+- Không đưa vào tên, tài khoản cá nhân của đội vận hành ngoài người sáng lập.
+- Mục "Tình hình" Đà Nẵng thêm dòng về DNC-Chain và ngân sách theo Quyết định 2728/QĐ-UBND, theo trang Insights của Hub.
+
+## Global Innovation Index 2025 – WIPO (22/11/2026)
+
+- Từ báo cáo GII 2025 (PDF, 295 trang): hạng 44/139, hạng 2 nhóm thu nhập trung bình thấp, hạng đầu vào 50, đầu ra 37; 15 năm liên tiếp là nền kinh tế vượt kỳ vọng; hạng 7 trụ cột; nhận định về xuất khẩu công nghệ cao, năng suất lao động, xe điện; không có cụm KH&CN Việt Nam trong top 100.
+- Lưu ở `data/benchmarks/startupblink-2026.yaml` (trường `gii_2025`); trang Địa phương thêm thẻ chỉ số GII, 6 dòng "Tình hình" và biểu đồ 7 trụ cột.
+
+## Báo cáo đầu tư mạo hiểm 2026 (22/11/2026)
+
+- Đọc 4 báo cáo: VPCA (Vietnam Innovation & Private Capital, trình bày tại VIPC), TVS (VC & PE Vietnam Outlook 2026), DealStreetAsia (SE Asia Startup Funding FY2025), Endeavor Insight (Founder Pathways).
+- Trang mới `/von-dau-tu/`: số liệu Việt Nam và Đông Nam Á 2025 (ghi nguồn từng số), 8 nhận định tổng hợp, con đường hình thành unicorn 6 bước, gợi ý cho hệ sinh thái (ghi rõ là nhận định của bản đồ), quỹ trong danh bạ. Dữ liệu ở `data/benchmarks/vc-2026.yaml`.
+- Lưu ý: VPCA (Do Ventures, NIC) ghi VC Việt Nam 2025 là 509 triệu USD, 103 thương vụ; DealStreetAsia và TVS ghi khoảng 356 triệu USD trong 11 tháng, 34–36 thương vụ. Khác phạm vi và phương pháp; trang nêu cả hai.
+
+## Biểu đồ đầu tư mạo hiểm (22/11/2026)
+
+- Vẽ lại 18 biểu đồ từ số liệu trong 4 báo cáo (đọc trực tiếp từ trang biểu đồ của PDF): VC và PE Việt Nam 2013–2025, AI, startup hoạt động toàn cầu, số nhà đầu tư, VC theo lĩnh vực 2024–2025, PE theo ngành 2025, vốn startup Việt Nam theo nửa năm (DealStreetAsia), M&A 2021–10T/2025 (TVS), vốn cổ phần và vay nợ Đông Nam Á 2019–2025, vốn theo giai đoạn, theo nước, vốn AI theo nước, unicorn theo năm, nước, lĩnh vực, đặc điểm nhà sáng lập (Endeavor); thêm bảng chuỗi vốn VC → PE → IPO.
+- Biểu đồ là bản vẽ lại của bản đồ, ghi nguồn từng biểu đồ; không chép ảnh từ báo cáo.
+
+## Swiss EP (22/11/2026)
+
+- Theo swissep.org (trang chủ, Behind Swiss EP, Working principles, Tailored support, Swiss EP experts, Decade of Swiss EP, Countries, Vietnam): cập nhật mô tả, năm 2015, phân loại, dòng thời gian 2014–2025, đội ngũ Việt Nam công bố trên website, phần "Cách Swiss EP làm việc" (nguyên tắc, dịch vụ, chỉ số công khai: 7 nước, 628 chuyên gia trong 10 năm, mạng lưới 700+).
+- Thêm SECO, Swisscontact, J.E. Austin Associates (quan hệ tài trợ, thực hiện) và TOVchain; quan hệ "đối tác" với 13 đơn vị có trên trang Vietnam của swissep.org. Trang hồ sơ có thêm mục "Đối tác" và "Là đối tác của".
+- Chỉ dùng thông tin công khai trên website; không đưa số liệu nội bộ của chương trình.
+
+## Cuộc thi khởi nghiệp ĐMST tại Đà Nẵng 2026 (22/11/2026)
+
+- Theo bảng tổng hợp do người điều phối cung cấp (Google Sheet): thêm 14 cuộc thi vào mục Cơ hội (SIEC, Startup Runway, BK SHARK, PISI, UDA Startup & Innovation, DTU Startup, InFLUX, VNUK SV.STARTUP, U-Invent 8, Design Thinking for Human Challenges, Light Up Your Creativity, Danang Green Future Solutions, FPTU Biz Talent, các thử thách AI của FPT University Đà Nẵng), gắn đơn vị tổ chức; cập nhật hạn hồ sơ SURF 2026 (27/7).
+- 5 vòng chung kết, tổng kết có ngày cụ thể thêm vào trang Sự kiện, đánh dấu thường niên.
+- Thêm hồ sơ Thành đoàn Đà Nẵng, Trường ĐH Swinburne Đà Nẵng, Trung tâm Khởi nghiệp DTU (mức "chưa xác minh").
+- Nguồn từng cuộc thi đang trỏ về bảng tổng hợp; nên bổ sung link trang chính thức của từng cuộc thi khi có.
+
+## Gộp mục "Tình hình" Đà Nẵng (22/11/2026)
+
+- Từ 11 dòng theo 5 nguồn rút còn 7 dòng theo 4 chủ đề (Xếp hạng, Mạng lưới hỗ trợ, Vốn đầu tư, Chính sách); mỗi dòng gắn nhãn nguồn.
+- Bỏ số liệu trùng, cũ: mạng lưới 2025 trước hợp nhất (10 vườn ươm, 9 không gian làm việc chung) thay bằng số liệu sau hợp nhất (12 vườn ươm, 14 không gian làm việc chung, 8/2025); gộp hạng 2024 vào dòng hạng 2026; gộp DAVAS vào dòng vốn; rút gọn kết quả chính sách còn ba nghị quyết chính.
+- Thẻ chỉ số "Không gian làm việc chung, tăng tốc" (12/9 theo StartupBlink) đổi thành "Vườn ươm / không gian làm việc chung" 12/14 theo Sở KH&CN.
+- Các thành phố khác giữ cách trình bày theo nguồn; trường `theme` trong benchmarks bật cách trình bày theo chủ đề.
+
+## Gộp mục "Tình hình" toàn quốc và các thành phố (22/11/2026)
+
+- Việt Nam: 13 dòng (2 nguồn) còn 7 dòng, 5 chủ đề (Xếp hạng, Thế mạnh và điểm yếu, Cấu trúc hệ sinh thái, Vốn đầu tư, Chính sách); thêm số liệu vốn 2025 của VPCA; bỏ các chỉ số phụ (thương hiệu hệ sinh thái, hoạt động cộng đồng, xe điện).
+- TP.HCM: 15 dòng (4 nguồn) còn 6 dòng, 6 chủ đề; cập nhật số HOIP theo lần rà soát 2 (240 startup, 60 vườn ươm và tổ chức hỗ trợ); gộp các dòng HOIP, SIHUB, dữ liệu mở; bỏ phân bố lĩnh vực trên HOIP và cột lĩnh vực nhiệm vụ KH&CN (gán chưa chuẩn).
+- Hà Nội: 3 dòng còn 2; thêm TECHFEST, Ngày ĐMST Việt Nam. Hải Phòng: 3 dòng còn 2.
+
+## Bản đồ hệ sinh thái dạng vòng (22/11/2026)
+
+- Trang mới `/ban-do-he-sinh-thai/` với 4 bản đồ (Việt Nam, TP.HCM, Hà Nội, Đà Nẵng) theo phong cách các bản đồ hệ sinh thái ISEV, NSSC 2019–2021: startup ở trung tâm; 5 nhóm quanh vòng: Hỗ trợ, Vốn, Nhân tài, Sự kiện và cuộc thi, Chính quyền. Vẽ tự động khi dựng trang từ dữ liệu; ưu tiên hồ sơ có logo, đầy đủ, đã xác minh; hồ sơ chưa có logo hiện bằng nhãn tên ngắn; mỗi logo bấm được sang hồ sơ.
+- Mỗi bản đồ tải được dạng SVG (`/ban-do-he-sinh-thai/<id>.svg`, liên kết tuyệt đối tới logo).
+
+## Mô hình Triple Helix (22/11/2026)
+
+- Thêm vào trang `/ban-do-he-sinh-thai/` sơ đồ Triple Helix cho Việt Nam và 3 thành phố: ba vòng Chính quyền, Trường và viện, Doanh nghiệp và vốn; vùng giao: nghiên cứu công (viện, tổ chức KH&CN), quỹ và vốn nhà nước (NATIF, DDIF, NIC GoVentures, Quỹ ĐTMH TP.HCM…), vườn ươm đại học (theo quan hệ thuộc trường hoặc tên), trung tâm ĐMST và tổ chức hỗ trợ ở giữa cùng startup.
+- Chỉ hiện ô có logo hoặc tên viết tắt rõ ràng; số lượng đầy đủ ghi ở nhãn và chú giải. Tải được SVG (`triple-helix-<id>.svg`).
+
+## Bổ sung logo Đà Nẵng, đợt 1 (23/11/2026)
+
+- Nguồn: website chính thức (ảnh logo trong trang, biểu tượng trang), ấn phẩm "Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng" của Sở KH&CN (trang bản đồ hệ sinh thái, 121 logo nhúng), Wikipedia khi tên trang trùng khớp cao.
+- Thêm website cho 18 trường, cơ quan (theo mục "Trường đại học, cao đẳng" của ấn phẩm và kiểm tra tiêu đề trang). Bỏ website trùng ở các đơn vị trực thuộc trường (dùng chung website của trường).
+- Logo Đà Nẵng: các tổ chức (trường, cơ quan, quỹ, vườn ươm, không gian, tổ chức hỗ trợ) từ 41/115 lên 72/115; toàn bộ trường đại học chính đã có logo.
+- Thêm `tools/add_logo.py` (thêm logo từ tệp hoặc URL) và `docs/logo-sourcing.csv` (danh sách đơn vị còn thiếu logo: Đà Nẵng 43, TP.HCM 455 (phần lớn viện, tổ chức KH&CN), Hà Nội 5).
+
+## Bổ sung logo, đợt 2 (23/11/2026)
+
+- NSSC (nssc.gov.vn, trang Mạng lưới đối tác): tải 36 logo đối tác, đối chiếu bằng mắt; gắn logo cho BK Holdings Duy Tân, Trung tâm Khởi nghiệp ĐMST ĐHQG-HCM (IEC), VSV; thêm 13 hồ sơ mới trong mạng lưới NSSC kèm logo và quan hệ đối tác (RMIT Việt Nam, UNDP Accelerator Lab, Topica Founder Institute, CSIE – ĐH Kinh tế Quốc dân, CEI – Đại học Huế, CSIP, Monk's Hill Ventures, CyberAgent Capital, Altara Ventures, Ninja Accelerator, ripple2wave, NextTech, K-Startup Center); logo NSSC.
+- NACENTECH: logo đã có; trang không có danh sách đối tác dạng logo.
+- Tìm kiếm tự động qua công cụ tìm kiếm bị chặn (DuckDuckGo, Bing yêu cầu xác minh); nhiều website cơ quan (danang.gov.vn), trường dùng Cloudflare chặn truy cập từ máy chủ. Không thu thập dữ liệu Facebook tự động.
+- `docs/logo-sourcing.csv` cập nhật danh sách còn thiếu.
+
+## Bổ sung logo, đợt 3 qua trình duyệt (23/11/2026)
+
+- Dùng Chrome của người điều phối để tìm website chính thức qua Google; tải biểu tượng trang qua dịch vụ favicon của Google khi website chặn truy cập từ máy chủ. Thêm website, logo cho Swinburne Đà Nẵng, CĐ Miền Trung (Tâm Trí), CĐ Y tế Quảng Nam, CĐ Công nghệ – Kinh tế và Thủy lợi Miền Trung, Trung cấp ASEAN, Trung cấp Kinh tế – Kỹ thuật và Đào tạo cán bộ HTX Miền Trung – Tây Nguyên; logo Tiktak, STD Office, DAVAS từ ấn phẩm của Sở KH&CN; website Sở KH&CN (dost.danang.gov.vn), Ban QL Khu CNC và các KCN (dseza.danang.gov.vn), CĐ Điện lực Miền Trung, CĐ Quảng Nam, CĐ Thaco.
+- Ảnh không chuyển được từ trình duyệt sang máy chủ (công cụ chặn dữ liệu nhị phân); website chặn máy chủ chỉ lấy được logo khi có biểu tượng trang đủ lớn.
+
+## Bổ sung logo, đợt 3 qua trình duyệt (23/11/2026)
+
+- Dùng trình duyệt của người điều phối để tìm website chính thức (Google) và đọc đường dẫn logo trên các trang chặn truy cập từ máy chủ; tải ảnh về khi máy chủ ảnh cho phép, nếu không thì dùng bản logo trên Wikimedia Commons.
+- Thêm logo: CĐ Điện lực Miền Trung (cdmt.vn), CĐ Kinh tế Công nghệ và Thủy lợi Miền Trung (ctew.edu.vn, logo trắng đặt trên nền tối), Swinburne Việt Nam (Commons), CĐ THACO (logo THACO, Commons), Sở KH&CN Đà Nẵng và Sở KH&CN TP.HCM (biểu trưng Bộ KH&CN, Commons), DAVAS (davas.vc), Ecomdy Accelerator Fund I (logo Ecomdy). Thêm website: cdmt.vn, thacocollege.edu.vn, ctew.edu.vn, dost.danang.gov.vn, dseza.danang.gov.vn, davas.vc.
+- Ban QL Khu CNC và các KCN (DSEZA): tìm được logo trên website nhưng máy chủ ảnh chặn tải tự động. Enouvo Space: tên miền đã ngừng hoạt động.

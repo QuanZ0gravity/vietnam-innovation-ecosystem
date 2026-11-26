@@ -4,6 +4,7 @@ name:
 type: university
 categories:
 - Viện, trường
+website: https://cep.edu.vn/
 address: 143 Nguyễn Lương Bằng, Hoà Khánh Bắc, Liên Chiểu, Đà Nẵng
 coordinates:
 - 108.146353
@@ -14,4 +15,5 @@ verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: u21

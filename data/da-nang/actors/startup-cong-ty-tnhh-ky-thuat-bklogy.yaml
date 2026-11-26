@@ -7,6 +7,8 @@ alt_names:
 type: startup
 categories:
 - Doanh nghiệp khoa học và công nghệ
+sectors:
+- deeptech
 address: 217 Nguyen Sinh Sac, Đà Nẵng
 description:
   vi: Giải pháp kiểm thử tự động cho sản phẩm điện tử, từ bo mạch đến thành phẩm.

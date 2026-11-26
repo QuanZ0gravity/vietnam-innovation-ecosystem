@@ -6,6 +6,7 @@ alt_names:
 type: university
 categories:
 - Viện, trường
+website: https://ufl.udn.vn/
 address: 131 Lương Nhữ Hộc, Đà Nẵng
 coordinates:
 - 108.21164
@@ -16,4 +17,5 @@ verification:
   level: unverified
 sources:
 - startupdanang.vn
+- Sở KH&CN Đà Nẵng – Hệ sinh thái khởi nghiệp ĐMST Đà Nẵng (2025)
 legacy_id: u9

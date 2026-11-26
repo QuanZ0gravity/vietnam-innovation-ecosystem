@@ -6,6 +6,12 @@ Biến môi trường:
 """
 import collections, csv, datetime, glob, html, json, os, re as _re, shutil, urllib.parse
 import yaml
+import sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from og import make_card
+# Bản đồ hệ sinh thái dạng vòng và Triple Helix: tạm ẩn (12/2026) trong khi tìm cách làm khả dụng hơn.
+# Đặt ECOSYSTEM_MAPS=1 khi dựng để bật lại.
+ENABLE_ECOSYSTEM_MAPS = os.environ.get("ECOSYSTEM_MAPS") == "1"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site")
@@ -60,7 +66,7 @@ by_id = {a["id"]: a for a in actors}
 place_by_id = {p["id"]: p for p in places}
 related = collections.defaultdict(set)
 for r in relations:
-    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in", "merged_into"):
+    if r["from"] in by_id and r["to"] in by_id and r.get("type") not in ("part_of", "incubated_by", "invested_in", "merged_into", "partner"):
         related[r["from"]].add(r["to"]); related[r["to"]].add(r["from"])
 mentioned = collections.defaultdict(list)
 for m in mentions:
@@ -139,7 +145,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 </div></div></header>
 <main id="main">{body}</main>
 <footer class="foot"><div class="wrap"><p data-i18n="foot_data">Dữ liệu mở theo CC BY 4.0, mã nguồn theo MIT.</p>
-<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
+<nav class="foot-nav" aria-label="Chân trang"><a href="{SITE_ROOT}gioi-thieu/" data-vi="Giới thiệu" data-en="About">Giới thiệu</a><a href="{SITE_ROOT}gioi-thieu/phuong-phap/" data-vi="Phương pháp" data-en="Methodology">Phương pháp</a><a href="{SITE_ROOT}gioi-thieu/dong-gop/" data-vi="Đóng góp" data-en="Contribute">Đóng góp</a><a href="{SITE_ROOT}du-lieu/" data-vi="Dữ liệu" data-en="Data">Dữ liệu</a>{('<a href="' + SITE_ROOT + 'ban-do-he-sinh-thai/" data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</a>') if ENABLE_ECOSYSTEM_MAPS else ""}<a href="{SITE_ROOT}von-dau-tu/" data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</a><a href="{SITE_ROOT}gioi-thieu/quyen-rieng-tu/" data-vi="Quyền riêng tư và dữ liệu cá nhân" data-en="Privacy and personal data">Quyền riêng tư và dữ liệu cá nhân</a><a href="{SITE_ROOT}gioi-thieu/dieu-khoan/" data-vi="Điều khoản sử dụng" data-en="Terms of use">Điều khoản sử dụng</a><a href="https://github.com/{REPO}" data-i18n="foot_src">Mã nguồn và dữ liệu trên GitHub</a></nav>
 <p class="foot-legal small"><span data-vi="Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích." data-en="Personal data on this site is processed under Vietnamese personal data protection law. You may view, correct, hide or delete information about yourself. No tracking cookies or analytics.">Dữ liệu cá nhân trên trang được xử lý theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân. Bạn có quyền xem, sửa, yêu cầu ẩn hoặc xoá thông tin về mình. Trang không dùng cookie theo dõi hay công cụ phân tích.</span> <a href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-vi="Gửi yêu cầu" data-en="Send a request">Gửi yêu cầu</a></p></div></footer>
 </body>
 </html>
@@ -515,9 +521,9 @@ for a in actors:
                                       "name": name, "website": a.get("website", ""), "region": REGION_VI.get(a["region"], "")})
     lead_html = ""
     if a.get("leadership"):
-        lead_html = ('<div class="section"><h2 data-vi="Lãnh đạo" data-en="Leadership">Lãnh đạo</h2><ul class="lead-list">'
+        lead_html = ('<div class="section"><h2 data-vi="Lãnh đạo, đội ngũ" data-en="Leadership, team">Lãnh đạo, đội ngũ</h2><ul class="lead-list">'
                      + "".join(f'<li><b>{e(x["name"])}</b><span class="muted">{e(x["role"])}' + (f' · từ {e(x["since"][5:7] + "/" + x["since"][:4]) if len(x.get("since","")) >= 7 else ""}' if x.get("since") else "") + "</span></li>" for x in a["leadership"])
-                     + '</ul><p class="small muted" data-vi="Theo công bố chính thức về bổ nhiệm." data-en="As officially announced.">Theo công bố chính thức về bổ nhiệm.</p></div>')
+                     + '</ul><p class="small muted" data-vi="Theo công bố chính thức của tổ chức." data-en="As published by the organisation.">Theo công bố chính thức của tổ chức.</p></div>')
     merged_from = [r["from"] for r in relations if r["to"] == aid and r.get("type") == "merged_into" and r["from"] in by_id]
     merged_to = [r["to"] for r in relations if r["from"] == aid and r.get("type") == "merged_into" and r["to"] in by_id]
     mg_html = ""
@@ -558,6 +564,10 @@ for a in actors:
                      + "</div></li>")
         fr_html = (f'<div class="section"><h2 data-vi="Các vòng gọi vốn" data-en="Funding rounds">Các vòng gọi vốn</h2>'
                    f'<p class="muted small" data-vi="Tổng các vòng được công bố: {e(_fmt_money(tot))}" data-en="Announced rounds total: {e(_fmt_money(tot))}">Tổng các vòng được công bố: {e(_fmt_money(tot))}</p><ol class="fr-list">{rows}</ol></div>')
+    partners_in = sorted({r["from"] for r in relations if r["to"] == aid and r.get("type") == "partner" and r["from"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    partner_of = sorted({r["to"] for r in relations if r["from"] == aid and r.get("type") == "partner" and r["to"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
+    pf_html_p = ((f'<div class="section"><h2 data-vi="Đối tác" data-en="Partners">Đối tác</h2>{mini_cards([by_id[x] for x in partners_in])}</div>') if partners_in else "") + \
+                ((f'<div class="section"><h2 data-vi="Là đối tác của" data-en="Partner of">Là đối tác của</h2>{mini_cards([by_id[x] for x in partner_of])}</div>') if partner_of else "")
     portfolio = sorted({r["to"] for r in relations if r["from"] == aid and r.get("type") == "invested_in" and r["to"] in by_id}, key=lambda x: by_id[x]["name"]["vi"].lower())
     pf_html = (f'<div class="section"><h2 data-vi="Danh mục đầu tư" data-en="Portfolio">Danh mục đầu tư</h2>{mini_cards([by_id[x] for x in portfolio])}</div>') if portfolio else ""
     ds = a.get("description_source") or {}
@@ -592,6 +602,13 @@ for a in actors:
     if a.get("sectors"): ld["knowsAbout"] = [SECT_VI[s] for s in a["sectors"] if s in SECT_VI]
     a_head = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False).replace("</", "<\\/") + "</script>"
     a_head += '<meta property="og:type" content="profile">'
+    if a.get("logo"):
+        _src = os.path.join(ROOT, a["logo"])
+        _out = os.path.join(OUT, "og", aid + ".jpg")
+        if make_card(_src, name, f'{VIE_TYPE.get(a["type"], a["type"])} · {REGION_VI.get(a["region"], "Việt Nam")}', _out, round_img=a["logo"].startswith("photos/")):
+            a_head += (f'<meta property="og:image" content="{SITE_URL}/og/{aid}.jpg"><meta property="og:image:width" content="1200">'
+                       f'<meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">'
+                       f'<meta property="og:image:alt" content="{e(name)}">')
     a_last = GIT_DATES.get(a["_file"], TODAY)
     body = f"""
 <div class="wrap crumbs"><a href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a> / <a href="{dir_link(type=a['type'])}" data-i18n="t_{a['type']}">{a['type']}</a></div>
@@ -602,7 +619,7 @@ for a in actors:
 {f'<p class="muted" style="margin-top:6px">{e(a["name"]["en"])}</p>' if a["name"].get("en") else ""}
 {desc_html}{mail_button(aid) if a["type"] == "expert" else ""}{src_html}
 <dl class="facts">{facts_html}</dl>
-{mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{rel_html}{opp_html}{sim_html}{men_html}
+{mg_html}{lead_html}{hist_html}{cs_html}{fr_html}{pf_html}{pf_html_p}{rel_html}{opp_html}{sim_html}{men_html}
 </article>
 <aside class="side">
 <div class="box"><h2 data-vi="Độ tin cậy" data-en="Reliability">Độ tin cậy</h2>
@@ -695,6 +712,15 @@ def kpi(label_vi, label_en, value, note=""):
 def insights_html(xs):
     """Gom các dòng theo nguồn: mỗi nguồn ghi một lần ở đầu nhóm."""
     if not xs: return ""
+    if all(x.get("theme") for x in xs):
+        th = collections.OrderedDict()
+        for x in xs: th.setdefault(x["theme"], []).append(x)
+        out = '<div class="ins-themes">'
+        for t, items in th.items():
+            out += (f'<div class="ins-th"><h4>{e(t)}</h4><ul class="insights">'
+                    + "".join(f'<li>{e(x["text"])} ' + "".join(f'<span class="ins-tag">{e(s)}</span>' for s in (x.get("sources") or [x["source"]])) + "</li>" for x in items)
+                    + "</ul></div>")
+        return out + "</div>"
     groups = collections.OrderedDict()
     for x in xs:
         groups.setdefault(x["source"], []).append(x["text"])
@@ -703,6 +729,10 @@ def insights_html(xs):
         out += (f'<p class="ins-src small muted">Theo {e(src)}:</p><ul class="insights">'
                 + "".join(f"<li>{e(t)}</li>" for t in texts) + "</ul>")
     return out
+
+def dist_rows_rank(d):
+    rows = "".join(f'<tr><td>{e(k)}</td><td>#{v}</td><td><span class="bar-in" style="width:{max(3, round(100 * (140 - v) / 139))}%"></span></td></tr>' for k, v in sorted(d.items(), key=lambda x: x[1]))
+    return f'<div class="tbl-wrap"><table class="tbl dist"><tbody>{rows}</tbody></table></div><p class="small muted">Thanh dài hơn là hạng tốt hơn.</p>'
 
 def city_table(active=None):
     rows = ""
@@ -790,6 +820,7 @@ if BENCH:
                   kpi("Giá trị hệ sinh thái", "Ecosystem value", money(co["ecosystem_value_usd"])),
                   kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(co["funding_2017_2025_usd"])),
                   kpi("Vốn năm 2025", "Funding 2025", money(co["funding_2025_usd"]), f'{co["deals_2025"]} thương vụ'),
+                  *([kpi("Chỉ số GII 2025 (WIPO)", "Global Innovation Index 2025", f'#{co["gii_2025"]["rank"]}', f'trên {co["gii_2025"]["of"]} nền kinh tế')] if co.get("gii_2025") else []),
                   kpi("Tác nhân trong danh bạ", "Actors in this directory", f'{len(actors)}'),
                   kpi("Cơ hội đang theo dõi", "Opportunities tracked", f'{len(opps)}')])
     write("thanh-pho/index.html", page("Thành phố", f"""
@@ -799,7 +830,10 @@ if BENCH:
 <div class="wrap" style="padding-bottom:72px">
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#thanh-pho" data-vi="Các thành phố" data-en="Cities">Các thành phố</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{kp}</div>
-<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}</section>
+<h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(co.get("insights"))}
+{('<a class="mm-promo" style="margin-top:18px" href="' + SITE_ROOT + 'ban-do-he-sinh-thai/"><b>Bản đồ hệ sinh thái 2026</b><span>Việt Nam, TP.HCM, Hà Nội, Đà Nẵng: startup ở trung tâm, hỗ trợ, vốn, nhân tài, sự kiện, chính quyền →</span></a>') if ENABLE_ECOSYSTEM_MAPS else ""}
+<a class="mm-promo" style="margin-top:18px" href="{SITE_ROOT}von-dau-tu/"><b>Đầu tư mạo hiểm 2026</b><span>Tổng hợp VPCA, TVS, DealStreetAsia, Endeavor: số liệu, 8 nhận định, con đường hình thành unicorn →</span></a>
+{('<h3 style="margin-top:28px" data-vi="Bảy trụ cột GII 2025 (hạng trên 139)" data-en="GII 2025 pillars (rank of 139)">Bảy trụ cột GII 2025 (hạng trên 139)</h3>' + dist_rows_rank(co["gii_2025"]["pillars"])) if co.get("gii_2025") else ""}</section>
 <section id="thanh-pho" class="sec"><h2 data-vi="Các thành phố khởi nghiệp hàng đầu" data-en="Top startup cities">Các thành phố khởi nghiệp hàng đầu</h2>{city_table()}</section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
 <h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>
@@ -826,7 +860,10 @@ if BENCH:
               kpi("Vốn đầu tư 2017–2025", "Funding 2017–2025", money(c.get("funding_2017_2025_usd")))]
         if c.get("funding_2025_usd") is not None:
             kp.append(kpi("Vốn năm 2025", "Funding 2025", money(c["funding_2025_usd"]), f'{c.get("deals_2025", 0)} thương vụ'))
-        if c.get("coworking_spaces") or c.get("accelerators"):
+        if c.get("official_network"):
+            on = c["official_network"]
+            kp.append(kpi("Vườn ươm / không gian làm việc chung", "Incubators / coworking", f'{on["incubators"]} / {on["coworking"]}', on.get("source", "")))
+        elif c.get("coworking_spaces") or c.get("accelerators"):
             kp.append(kpi("Không gian làm việc chung, tăng tốc", "Coworking, accelerators", f'{c.get("coworking_spaces","–")} / {c.get("accelerators","–")}'))
         ours = [kpi("Tác nhân trong danh bạ", "Actors here", str(len(acts))), kpi("Startup", "Startups", str(tc["startup"])),
                 kpi("Quỹ, nhà đầu tư", "Funds, investors", str(tc["fund"])),
@@ -838,6 +875,35 @@ if BENCH:
             items = "".join(f'<li><a href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 22)}{e(a["name"]["vi"])}</a></li>' for a in xs[:n])
             more = f'<p class="small"><a href="{dir_link(type=t, region=",".join(regs))}" data-vi="Xem tất cả {len(xs)}" data-en="See all {len(xs)}">Xem tất cả {len(xs)}</a></p>' if len(xs) > n else ""
             return f'<ul class="list-plain alumni">{items}</ul>{more}'
+        DIR_GROUPS = [("startup", "Startup", "Startups", ["startup"]),
+                      ("quy", "Quỹ, nhà đầu tư", "Funds, investors", ["fund"]),
+                      ("ho-tro", "Vườn ươm, hỗ trợ", "Incubators, support", ["incubator", "accelerator", "space", "support_org", "community"]),
+                      ("truong-vien", "Trường, viện", "Universities, research", ["university", "research"]),
+                      ("doanh-nghiep", "Doanh nghiệp", "Companies", ["company", "creator"]),
+                      ("chuyen-gia", "Chuyên gia", "Experts", ["expert"]),
+                      ("co-quan", "Cơ quan, đối tác", "Government, partners", ["government", "international", "media"])]
+        SEC_VI = {s[0]: s[1] for s in SECTORS}
+        def dcard(a):
+            sub = (SEC_VI.get((a.get("sectors") or [""])[0]) if a.get("sectors") else None) or ((a.get("categories") or [None])[0]) or VIE_TYPE.get(a["type"], "")
+            return (f'<a class="dc" href="{SITE_ROOT}{apath(a["id"])}">{logo_img(a, 44)}<span class="dc-t"><span class="dc-n">{e(a["name"]["vi"])}</span>'
+                    f'<span class="dc-s">{e(sub)}</span></span></a>')
+        tabs, panes = "", ""
+        first = True
+        for gid, gvi, gen, types in DIR_GROUPS:
+            xs = sorted([a for a in acts if a["type"] in types and a.get("status") != "inactive"],
+                        key=lambda a: (-(richness(a) + (3 if a.get("logo") else 0) + (5 if a.get("case_studies") or a.get("funding_rounds") else 0)), a["name"]["vi"].lower()))
+            if not xs: continue
+            tabs += (f'<button type="button" role="tab" class="dt{" on" if first else ""}" data-p="{gid}" aria-selected="{"true" if first else "false"}">'
+                     f'<span data-vi="{e(gvi)}" data-en="{e(gen)}">{e(gvi)}</span><b>{len(xs)}</b></button>')
+            more = (f'<a class="btn ghost" href="{dir_link(type=",".join(types), region=",".join(regs))}" data-vi="Xem tất cả {len(xs)} trong danh bạ →" data-en="See all {len(xs)} in the directory →">Xem tất cả {len(xs)} trong danh bạ →</a>')
+            panes += (f'<div class="dpane" data-p="{gid}"{"" if first else " hidden"}><div class="dgrid">{"".join(dcard(a) for a in xs[:12])}</div>'
+                      f'<p class="dmore">{more}</p></div>')
+            first = False
+        ours2 = [kpi("Tổng số hồ sơ", "Profiles", str(len(acts)))] + [kpi(gvi, gen, str(sum(1 for a in acts if a["type"] in types))) for gid, gvi, gen, types in DIR_GROUPS if any(a["type"] in types for a in acts)]
+        dir_html = (f'<div class="dtabs" role="tablist">{tabs}</div>{panes}'
+                    '<script>document.addEventListener("DOMContentLoaded",function(){var ts=document.querySelectorAll(".dtabs .dt"),ps=document.querySelectorAll(".dpane");'
+                    'ts.forEach(function(t){t.onclick=function(){ts.forEach(function(x){x.classList.toggle("on",x===t);x.setAttribute("aria-selected",x===t)});'
+                    'ps.forEach(function(p){p.hidden=p.dataset.p!==t.dataset.p});};});});</script>')
         copps = sorted([o for o in opps if o["_region"] in regs], key=lambda o: opp_key_date(o), reverse=True)
         opp_html = "".join(opp_card(o, compact=True) for o in copps[:6]) or '<p class="muted small" data-vi="Chưa có cơ hội nào." data-en="No opportunities yet.">Chưa có cơ hội nào.</p>'
         corp = ", ".join(e(x) for x in c.get("corporations") or []) or "–"
@@ -849,7 +915,7 @@ if BENCH:
 <nav class="onpage small"><a href="#tong-quan" data-vi="Tổng quan" data-en="Overview">Tổng quan</a><a href="#tang-truong" data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</a><a href="#nganh" data-vi="Ngành" data-en="Industries">Ngành</a><a href="#danh-ba" data-vi="Danh bạ" data-en="Directory">Danh bạ</a><a href="#ban-do" data-vi="Bản đồ" data-en="Map">Bản đồ</a><a href="#su-kien" data-vi="Sự kiện" data-en="Events">Sự kiện</a><a href="#co-hoi" data-vi="Cơ hội" data-en="Opportunities">Cơ hội</a><a href="#xep-hang" data-vi="Xếp hạng" data-en="Ranking">Xếp hạng</a></nav>
 <section id="tong-quan" class="sec"><h2 data-vi="Tổng quan" data-en="Overview">Tổng quan</h2><div class="kpis">{"".join(kp)}</div>
 <h3 style="margin-top:28px" data-vi="Tình hình" data-en="Situation">Tình hình</h3>{insights_html(c.get("insights"))}
-<h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours)}</div></section>
+<h3 style="margin-top:28px" data-vi="Trong danh bạ mở này" data-en="In this open directory">Trong danh bạ mở này</h3><div class="kpis">{"".join(ours2)}</div></section>
 <section id="tang-truong" class="sec"><h2 data-vi="Tăng trưởng" data-en="Growth">Tăng trưởng</h2>
 <h3 data-vi="Hạng thế giới theo năm (càng cao càng tốt)" data-en="Global rank by year (higher is better)">Hạng thế giới theo năm (càng cao càng tốt)</h3>
 {rank_chart([(c["name"], c.get("global_rank_by_year") or {})], title="Hạng thế giới theo năm")}
@@ -859,11 +925,7 @@ if BENCH:
 </section>
 <section id="nganh" class="sec"><h2 data-vi="Ngành nổi bật" data-en="Top industries">Ngành nổi bật</h2>{ind_table(c.get("industries"))}
 <p class="small" style="margin-top:12px"><span class="muted" data-vi="Doanh nghiệp lớn tích cực làm việc với startup:" data-en="Corporations active with startups:">Doanh nghiệp lớn tích cực làm việc với startup:</span> {corp}</p></section>
-<section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>
-<div class="cols2"><div><h3 data-vi="Startup" data-en="Startups">Startup</h3>{lst("startup")}</div>
-<div><h3 data-vi="Quỹ, nhà đầu tư" data-en="Funds, investors">Quỹ, nhà đầu tư</h3>{lst("fund", 12)}
-<h3 style="margin-top:20px" data-vi="Tổ chức hỗ trợ" data-en="Support organisations">Tổ chức hỗ trợ</h3>{lst("support_org", 12)}{lst("incubator", 12) if tc["incubator"] else ""}
-<h3 style="margin-top:20px" data-vi="Trường, viện" data-en="Universities">Trường, viện</h3>{lst("university", 12)}</div></div></section>
+<section id="danh-ba" class="sec"><h2 data-vi="Danh bạ" data-en="Directory">Danh bạ</h2>{dir_html}</section>
 <section id="ban-do" class="sec"><h2 data-vi="Bản đồ" data-en="Map">Bản đồ</h2><div class="mapbox" id="citymap" data-ids="{",".join(a["id"] for a in acts)}"></div><p class="small muted" id="citymapnote" style="margin-top:8px"></p>
 <p class="small"><a href="{dir_link(region=",".join(regs), view="map")}" data-vi="Mở bản đồ trong danh bạ để lọc thêm" data-en="Open the map in the directory to filter further">Mở bản đồ trong danh bạ để lọc thêm</a></p></section>
 <section id="su-kien" class="sec"><h2 data-vi="Sự kiện" data-en="Events">Sự kiện</h2>{city_events_html(regs)}</section>
@@ -1064,7 +1126,7 @@ unclassified = sum(1 for a in actors if a["type"] in ("startup", "company", "fun
 write("linh-vuc/index.html", page("Lĩnh vực", f"""
 <div class="wrap page-head"><h1 data-vi="Lĩnh vực" data-en="Sectors">Lĩnh vực</h1>
 <p class="lead" data-vi="13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ. Lĩnh vực do tổ chức tự chọn; một số hồ sơ đang mang gợi ý tự động chờ xác nhận." data-en="13 sectors across startups, companies and funds. Organisations choose their own sectors; some profiles still carry automatic suggestions awaiting confirmation.">13 lĩnh vực của startup, doanh nghiệp và quỹ trong danh bạ.</p></div>
-<div class="wrap" style="padding-bottom:72px"><a class="mm-promo" href="{SITE_ROOT}ban-do-ai/"><b data-vi="Mới: Bản đồ thị trường AI Việt Nam" data-en="New: Vietnam AI market map">Mới: Bản đồ thị trường AI Việt Nam</b><span data-vi="Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →" data-en="AI companies by layer and industry, with global trends →">Doanh nghiệp AI theo tầng công nghệ và ngành, đặt cạnh xu hướng toàn cầu →</span></a><div class="cities secgrid">{sec_cards}</div>
+<div class="wrap" style="padding-bottom:72px"><!--AI_PROMO--><div class="cities secgrid">{sec_cards}</div>
 <p class="small muted" style="margin-top:20px" data-vi="{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu." data-en="{unclassified} profiles have no sector yet.">{unclassified} hồ sơ chưa có lĩnh vực. Tổ chức của bạn chưa đúng lĩnh vực? Sửa hồ sơ hoặc gửi biểu mẫu.</p></div>""", "sectors",
       desc="Startup, doanh nghiệp và quỹ đầu tư Việt Nam theo 13 lĩnh vực: AI, tài chính số, Web3, nông nghiệp, y tế, giáo dục, du lịch, năng lượng, bán dẫn, logistics và hơn nữa."))
 
@@ -1432,6 +1494,9 @@ for ev in events:
 {"" if ev.get("_projected") else f'<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>'}{f'<a class="btn ghost" href="{e(ev["official_url"])}" rel="noopener" data-vi="Trang sự kiện (lần trước)" data-en="Previous edition website">Trang sự kiện (lần trước)</a>' if ev.get("_projected") and ev.get("official_url") else ""}
 {f'<a class="btn ghost" href="{SITE_ROOT}co-hoi/{opp["id"].removeprefix("opp-")}/" data-vi="Cơ hội, danh sách tham gia" data-en="Opportunity and participants">Cơ hội, danh sách tham gia</a>' if opp else ""}</p>
 <div class="section"><h2 data-vi="Giới thiệu" data-en="About">Giới thiệu</h2><p class="desc">{e(ev.get("summary",""))}</p></div>
+{('<div class="section"><h2 data-vi="Diễn giả" data-en="Speakers">Diễn giả</h2><p class="small muted">' + str(len(ev.get("speakers") or [])) + ' diễn giả theo công bố của ban tổ chức. <a href="' + e(ev.get("speakers_source", "")) + '" rel="noopener">Nguồn</a></p><div class="spk">' + "".join(
+    f'<div class="spk-c"><b>{e(s["name"])}</b><span>{e(s.get("title",""))}</span>' + ((f'<a href="{SITE_ROOT}{apath(s["org_id"])}">{e(s["org"])}</a>' if s.get("org_id") in by_id else f'<span class="muted">{e(s.get("org",""))}</span>') if s.get("org") else "") + '</div>'
+    for s in ev.get("speakers") or []) + '</div></div>') if ev.get("speakers") else ""}
 {('<div class="section"><h2 data-vi="Sự kiện liên quan" data-en="Related events">Sự kiện liên quan</h2><div class="ev-items">' + "".join(ev_card(x) for x in same) + '</div></div>') if same else ""}
 </article></div>"""
     ld = {"@context": "https://schema.org", "@type": "Event", "name": ev["title"], "startDate": str(ev["start"]), "endDate": str(ev.get("end") or ev["start"]),
@@ -1486,7 +1551,7 @@ for _a in actors:
             f'<meta http-equiv="refresh" content="0; url={new}"></head><body><a href="{new}">{e(_a["name"]["vi"])}</a></body></html>')
     os.makedirs(os.path.join(OUT, "a", _a["id"]), exist_ok=True)
     open(os.path.join(OUT, "a", _a["id"], "index.html"), "w", encoding="utf-8").write(stub)
-_redir += ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
+_redir += ([] if ENABLE_ECOSYSTEM_MAPS else ["/ban-do-he-sinh-thai/* /thanh-pho/ 302"]) + ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
 open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
 
 
@@ -1619,6 +1684,376 @@ draw();}})();
 write("ban-do-ai/index.html", page("Bản đồ thị trường AI Việt Nam", aimap_body, "sectors",
       desc=f"Bản đồ thị trường AI Việt Nam: {n_ai} startup, doanh nghiệp AI theo tầng hạ tầng, mô hình, AI Agent, robot, an ninh và ứng dụng theo ngành; xu hướng từ {len(MMI)} bản đồ AI toàn cầu."))
 
+
+# ---------- khối giới thiệu Bản đồ thị trường AI trên trang Lĩnh vực ----------
+_lv = os.path.join(OUT, "linh-vuc", "index.html")
+if os.path.exists(_lv):
+    _logos = [a for k in ("agents", "genai", "infra", "physical", "v-fintech", "v-health", "v-commerce", "data") for a in sorted(ai_companies.get(k, []), key=lambda a: -richness(a)) if a.get("logo")][:12]
+    _mos = "".join(f'<span class="aip-l"><img src="{SITE_ROOT}{a["logo"]}" alt="" loading="lazy"></span>' for a in _logos)
+    _layers = sum(1 for k, *_ in AI_LAYERS if ai_companies.get(k))
+    promo = f"""<a class="ai-promo" href="{SITE_ROOT}ban-do-ai/">
+<div class="aip-text"><span class="aip-badge" data-vi="Mới" data-en="New">Mới</span>
+<h2 data-vi="Bản đồ thị trường AI Việt Nam" data-en="Vietnam AI market map">Bản đồ thị trường AI Việt Nam</h2>
+<p data-vi="Ai đang làm AI ở Việt Nam, ở tầng nào, và thế giới đang đổ tiền vào đâu." data-en="Who builds AI in Vietnam, at which layer, and where the world is investing.">Ai đang làm AI ở Việt Nam, ở tầng nào, và thế giới đang đổ tiền vào đâu.</p>
+<div class="aip-stats"><span><b>{n_ai}</b><i data-vi="doanh nghiệp AI" data-en="AI companies">doanh nghiệp AI</i></span><span><b>{_layers}</b><i data-vi="tầng công nghệ, ngành" data-en="layers and industries">tầng công nghệ, ngành</i></span><span><b>{len(MMI)}</b><i data-vi="bản đồ AI toàn cầu" data-en="global AI maps">bản đồ AI toàn cầu</i></span></div>
+<span class="aip-cta" data-vi="Khám phá bản đồ →" data-en="Explore the map →">Khám phá bản đồ →</span></div>
+<div class="aip-mosaic" aria-hidden="true">{_mos}</div></a>"""
+    _h = open(_lv, encoding="utf-8").read()
+    open(_lv, "w", encoding="utf-8").write(_h.replace("<!--AI_PROMO-->", promo))
+
+
+# ================= ĐẦU TƯ MẠO HIỂM 2026 =================
+_vcp = os.path.join(ROOT, "data", "benchmarks", "vc-2026.yaml")
+if os.path.exists(_vcp):
+    VC = yaml.safe_load(open(_vcp, encoding="utf-8"))
+    S = VC["sources"]
+    def _src(keys):
+        keys = keys if isinstance(keys, list) else [keys]
+        return '<span class="vc-src">' + ", ".join(e(S[k]["by"]) for k in keys if k in S) + "</span>"
+    def _grid(items):
+        return '<div class="kpis vc-kpis">' + "".join(
+            f'<div class="kpi"><p class="kv">{e(x["value"])}</p><p class="kl">{e(x["label"])}</p><p class="kn small muted">{e(x.get("note",""))}</p>{_src(x["src"])}</div>' for x in items) + "</div>"
+    ins = "".join(f'<li><span>{e(x["text"])}</span> {_src(x["src"])}</li>' for x in VC["insights"])
+    steps = "".join(f'<li class="up-step"><span class="up-n">{k}</span><h3>{e(x["step"])}</h3><p>{e(x["text"])}</p>{_src(x["src"])}</li>' for k, x in enumerate(VC["unicorn_path"], 1))
+    # ---- biểu đồ vẽ lại từ báo cáo ----
+    C1, C2 = "var(--sea)", "#E9A800"
+    def _fmt(v, unit=""):
+        if unit == "ty" and v >= 1000: return (f"{v/1000:.2f}".rstrip("0").rstrip(".") + " tỷ").replace(".", ",")
+        if v >= 1000: return f"{v:,.0f}".replace(",", ".")
+        return (f"{v:g}").replace(".", ",")
+    def svg_combo(c):
+        L, B, Ln = c["labels"], c["bars"], c.get("line")
+        W, H, pl, pr, pt, pb = (760 if not c.get("half") else 420), (300 if not c.get("half") else 280), 16, 16, 18, 40
+        n = len(L); slot = (W - pl - pr) / n; bw = min(44, slot * 0.6)
+        mb = max(B) or 1; ml = max(Ln) if Ln else 1
+        top = pt + ((H - pt - pb) * 0.36 if Ln else 0)
+        y = lambda v, m: top + (H - pb - top) * (1 - v / m)
+        yl = lambda v: pt + 14 + ((H - pt - pb) * 0.36 - 26) * (1 - v / ml)
+        g = ""
+        for i, (lab, v) in enumerate(zip(L, B)):
+            x = pl + slot * i + (slot - bw) / 2
+            g += f'<rect x="{x:.1f}" y="{y(v, mb):.1f}" width="{bw:.1f}" height="{(H - pb) - y(v, mb):.1f}" rx="3" fill="{C1}" opacity=".9"/>'
+            g += f'<text x="{x + bw/2:.1f}" y="{H - pb + 16}" class="ax" text-anchor="middle">{e(lab)}</text>'
+            if n <= 14: g += f'<text x="{x + bw/2:.1f}" y="{y(v, mb) - 5:.1f}" class="ax vb" text-anchor="middle">{e(_fmt(v, c.get("unit","")))}</text>'
+        if Ln:
+            pts = [(pl + slot * i + slot / 2, yl(v)) for i, v in enumerate(Ln)]
+            g += f'<polyline points="{" ".join(f"{a:.1f},{b:.1f}" for a, b in pts)}" fill="none" stroke="{C2}" stroke-width="2.4"/>'
+            g += "".join(f'<circle cx="{a:.1f}" cy="{b:.1f}" r="3.5" fill="{C2}"/><text x="{a:.1f}" y="{b - 8:.1f}" class="ax lb2" text-anchor="middle">{v}</text>' for (a, b), v in zip(pts, Ln))
+        leg = (f'<span class="lg-i"><i style="background:{C1}"></i>{e(c.get("bar_name",""))}</span>' if c.get("bar_name") else "") + (f'<span class="lg-i"><i style="background:{C2}"></i>{e(c.get("line_name",""))}</span>' if Ln else "")
+        return (f'<div class="legend">{leg}</div>' if leg else "") + f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def svg_hbar(c):
+        items = c["items"]; W = 760 if not c.get("half") else 420; rh = 28; lw = 230 if not c.get("half") else 170
+        H = len(items) * rh + 8; m = max(v for _, v in items) or 1
+        g = ""
+        for k, (lab, v) in enumerate(items):
+            wv = (W - lw - 60) * v / m
+            g += f'<text x="0" y="{k*rh + 19}" class="ax">{e(lab if len(lab) < 40 else lab[:38] + "…")}</text><rect x="{lw}" y="{k*rh + 6}" width="{max(2, wv):.1f}" height="17" rx="3" fill="{C1}"/>'
+            g += f'<text x="{lw + wv + 6:.1f}" y="{k*rh + 19}" class="ax vb">{e(_fmt(v))}{"%" if c.get("pct") else ""}</text>'
+        return f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def svg_pair(c):
+        items = c["items"]; W = 760 if not c.get("half") else 420; rh = 38; lw = 200 if not c.get("half") else 70
+        H = len(items) * rh + 8; m = max(max(a, b) for _, a, b in items) or 1
+        g = ""
+        for k, (lab, a, b) in enumerate(items):
+            y0 = k * rh + 4
+            g += f'<text x="0" y="{y0 + 20}" class="ax">{e(lab)}</text>'
+            for j, (v, col) in enumerate(((a, "#9FB7B5"), (b, C1))):
+                wv = (W - lw - 60) * v / m
+                g += f'<rect x="{lw}" y="{y0 + j*15}" width="{max(2, wv):.1f}" height="13" rx="2" fill="{col}"/><text x="{lw + wv + 5:.1f}" y="{y0 + j*15 + 11}" class="ax vb">{e(_fmt(v))}</text>'
+        leg = f'<span class="lg-i"><i style="background:#9FB7B5"></i>{e(c["names"][0])}</span><span class="lg-i"><i style="background:{C1}"></i>{e(c["names"][1])}</span>'
+        return f'<div class="legend">{leg}</div><svg viewBox="0 0 {W} {H}" role="img" aria-label="{e(c["title"])}">{g}</svg>'
+    def chart_fig(c):
+        t = c["type"]
+        body = svg_combo(c) if t in ("combo", "bars") else svg_hbar(c) if t == "hbar" else svg_pair(c)
+        return (f'<figure class="vc-fig{" half" if c.get("half") else ""}" id="bd-{c["id"]}"><figcaption>{e(c["title"])}</figcaption>{body}'
+                + (f'<p class="small muted">{e(c["note"])}</p>' if c.get("note") else "") + f'<p class="vc-src">Nguồn: {e(S[c["src"]]["by"])}</p></figure>')
+    def charts_for(sec):
+        xs = [c for c in VC.get("charts", []) if c["section"] == sec]
+        return ('<div class="vc-charts">' + "".join(chart_fig(c) for c in xs) + "</div>") if xs else ""
+    pipe = VC.get("pipeline") or []
+    pipe_html = ('<div class="tbl-wrap"><table class="tbl vc-pipe"><thead><tr><th>Mắt xích</th><th>2025</th><th>Thay đổi</th><th>Hoạt động</th><th>Tín hiệu</th><th>Đánh giá</th></tr></thead><tbody>'
+                 + "".join(f'<tr><td><b>{e(p["stage"])}</b></td><td>{e(p["value"])}</td><td>{e(p["change"])}</td><td>{e(p["deals"])}</td><td>{e(p["signal"])}</td><td><span class="ev-badge {"up" if p["status"] == "Đúng hướng" else "live"}">{e(p["status"])}</span></td></tr>' for p in pipe)
+                 + '</tbody></table></div><p class="vc-src">Nguồn: VPCA, NIC, Do Ventures, BCG</p>') if pipe else ""
+    funds = [a for a in actors if a["type"] == "fund" and a.get("status") != "inactive"]
+    vn_funds = sorted([a for a in funds if a["region"] not in ("quoc-te",)], key=lambda a: (-richness(a), a["name"]["vi"].lower()))[:12]
+    srcs = "".join(f'<li><b>{e(v["title"])}</b> · {e(v["by"])}, {e(v["date"])}</li>' for v in S.values())
+    vc_body = f"""
+<div class="wrap page-head"><h1 data-vi="Đầu tư mạo hiểm 2026" data-en="Venture capital 2026">Đầu tư mạo hiểm 2026</h1>
+<p class="lead" data-vi="Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn." data-en="A synthesis of four venture capital reports on Vietnam and Southeast Asia, plus the pathway to unicorns.">Tổng hợp bốn báo cáo về vốn đầu tư mạo hiểm Việt Nam và Đông Nam Á, kèm con đường hình thành unicorn.</p></div>
+<div class="wrap" style="padding-bottom:72px">
+<nav class="onpage small"><a href="#viet-nam">Việt Nam</a><a href="#bd-vn-vc">Biểu đồ</a><a href="#khu-vuc">Đông Nam Á</a><a href="#nhan-dinh">Nhận định</a><a href="#unicorn">Con đường unicorn</a><a href="#nguon">Nguồn</a></nav>
+<section id="viet-nam" class="sec"><h2>Việt Nam 2025</h2>{_grid(VC["vietnam"])}<h3 style="margin-top:26px">Chuỗi vốn VC → PE → IPO</h3>{pipe_html}{charts_for("viet-nam")}</section>
+<section id="khu-vuc" class="sec"><h2>Đông Nam Á 2025</h2>{_grid(VC["region"])}{charts_for("khu-vuc")}</section>
+<section id="nhan-dinh" class="sec"><h2 data-vi="8 nhận định" data-en="8 insights">8 nhận định</h2><ol class="vc-ins">{ins}</ol>
+<p class="small muted">Nhận định do bản đồ tổng hợp từ các báo cáo; số liệu giữ nguyên theo từng nguồn. Các nguồn dùng phương pháp và phạm vi khác nhau nên con số có thể chênh nhau.</p></section>
+<section id="unicorn" class="sec"><h2 data-vi="Con đường hình thành unicorn" data-en="The pathway to unicorns">Con đường hình thành unicorn</h2>
+<p class="lead" style="font-size:1.05rem">Ghép nghiên cứu hành trình 200 nhà sáng lập unicorn của Endeavor Insight với bối cảnh vốn 2025–2026 ở Việt Nam và Đông Nam Á.</p>
+<ol class="vcp">{steps}</ol>
+<h3 style="margin-top:26px">Unicorn ở Đông Nam Á và hồ sơ nhà sáng lập</h3>{charts_for("unicorn")}
+<div class="up-note"><h3>Gợi ý cho hệ sinh thái</h3>
+<ul><li><b>Vườn ươm, chương trình hỗ trợ:</b> đo đầu ra bằng bằng chứng thị trường (thí điểm, doanh thu), kết nối startup với doanh nghiệp lớn để có hợp đồng đầu tiên.</li>
+<li><b>Chính sách:</b> vốn mồi và quỹ đồng đầu tư cho giai đoạn đầu, nơi thiếu vốn nhất; mở đường niêm yết cho công ty công nghệ.</li>
+<li><b>Nhà sáng lập:</b> tích lũy kinh nghiệm ở startup đang tăng trưởng, làm việc với thị trường nước ngoài, nhắm Series A với đơn vị kinh tế dương.</li>
+<li><b>Cộng đồng:</b> kéo nhà sáng lập đã thành công trở lại làm nhà đầu tư thiên thần, mentor (hiệu ứng nhân).</li></ul>
+<p class="small muted">Phần gợi ý là nhận định của bản đồ, không trích từ báo cáo.</p></div></section>
+<section class="sec"><h2 data-vi="Quỹ trong danh bạ" data-en="Funds in the directory">Quỹ trong danh bạ</h2>{mini_cards(vn_funds)}
+<p class="small" style="margin-top:10px"><a href="{SITE_ROOT}danh-ba/quy-dau-tu/">Tất cả {len(funds)} quỹ, nhà đầu tư</a> · <a href="{SITE_ROOT}co-hoi/">Cơ hội gọi vốn đang mở</a></p></section>
+<section id="nguon" class="sec"><h2 data-vi="Nguồn" data-en="Sources">Nguồn</h2><ul class="list-plain">{srcs}</ul>
+<p class="small muted">Báo cáo thuộc bản quyền của đơn vị phát hành; trang này chỉ trích số liệu và tóm tắt.</p></section>
+</div>"""
+    write("von-dau-tu/index.html", page("Đầu tư mạo hiểm 2026", vc_body, "cities",
+          desc="Tổng hợp báo cáo đầu tư mạo hiểm Việt Nam và Đông Nam Á 2026 (VPCA, TVS, DealStreetAsia, Endeavor): số liệu, 8 nhận định và con đường hình thành unicorn."))
+
+
+# ================= BẢN ĐỒ HỆ SINH THÁI DẠNG VÒNG =================
+import math as _m
+WHEEL_SECTORS = [
+    ("support", "HỖ TRỢ", "SUPPORT", ["incubator", "accelerator", "space", "support_org"], "#0B6E69"),
+    ("capital", "VỐN", "CAPITAL", ["fund"], "#B7791F"),
+    ("talent", "NHÂN TÀI", "TALENT", ["university", "research"], "#1D4ED8"),
+    ("network", "SỰ KIỆN, CUỘC THI", "EVENTS", ["__events__"], "#7C3AED"),
+    ("policy", "CHÍNH QUYỀN", "GOVERNMENT", ["government", "international", "community", "media"], "#BE185D"),
+]
+def _wheel_pick(pool, types, n):
+    xs = [a for a in pool if a["type"] in types and a.get("status") != "inactive"]
+    xs.sort(key=lambda a: (not a.get("logo"), a["type"] == "research", -(richness(a) + (4 if a.get("verification", {}).get("level") in ("partner_verified", "org_confirmed", "source_checked") else 0)), a["name"]["vi"].lower()))
+    return xs[:n]
+def _ini(name):
+    w = [x for x in _re.split(r"[\s\-–(),.]+", name) if x and x[0].isalnum() and x.lower() not in ("của", "và", "the", "of", "công", "ty", "tnhh", "cổ", "phần")]
+    caps = [x for x in w if x.isupper() and 2 <= len(x) <= 6]
+    return (caps[0] if caps else "".join(x[0] for x in w[:3])).upper()[:5]
+def wheel_svg(pool, title, subtitle, absolute=False):
+    W = 1000; C = W / 2; R0, R1 = 215, 488; L = 38; GAP = 44
+    root = (SITE_URL + "/") if absolute else SITE_ROOT
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {W} {W + 70}" role="img" aria-label="{e(title)}" font-family="Be Vietnam Pro, Arial, sans-serif">',
+           f'<rect x="0" y="0" width="{W}" height="{W + 70}" fill="#F3F1EC"/>']
+    def logo(a, x, y, s=L, col="#0B6E69"):
+        href = f'{root}{apath(a["id"])}'
+        if not a.get("logo"):
+            t = _ini(a["name"]["vi"]); fs = 13 if len(t) <= 3 else 10
+            return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x - s/2:.1f}" y="{y - s/2:.1f}" width="{s}" height="{s}" rx="7" fill="{col}" opacity=".12" stroke="{col}"/>'
+                    f'<text x="{x:.1f}" y="{y + fs/3:.1f}" text-anchor="middle" font-size="{fs}" font-weight="800" fill="{col}">{e(t)}</text></a>')
+        return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x - s/2:.1f}" y="{y - s/2:.1f}" width="{s}" height="{s}" rx="7" fill="#fff" stroke="#E4E1DA"/>'
+                f'<image href="{root}{a["logo"]}" x="{x - s/2 + 3:.1f}" y="{y - s/2 + 3:.1f}" width="{s - 6}" height="{s - 6}" preserveAspectRatio="xMidYMid meet"/></a>')
+    n = len(WHEEL_SECTORS); seg = 360 / n; pad = 2.2
+    counts = {}
+    for k, (sid, vi, en, types, col) in enumerate(WHEEL_SECTORS):
+        a0 = -90 + k * seg + pad; a1 = -90 + (k + 1) * seg - pad
+        def P(r, a): return C + r * _m.cos(_m.radians(a)), C + r * _m.sin(_m.radians(a))
+        x0, y0 = P(R1, a0); x1, y1 = P(R1, a1); x2, y2 = P(R0, a1); x3, y3 = P(R0, a0)
+        out.append(f'<path d="M{x0:.1f},{y0:.1f} A{R1},{R1} 0 0 1 {x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f} A{R0},{R0} 0 0 0 {x3:.1f},{y3:.1f} Z" fill="#fff" stroke="{col}" stroke-width="2.5"/>')
+        # label band
+        rl = R0 + 22
+        lx0, ly0 = P(rl, a0 + 3); lx1, ly1 = P(rl, a1 - 3)
+        mid = (a0 + a1) / 2; flip = 0 < ((mid + 360) % 360) < 180
+        if flip:
+            out.append(f'<path id="lb-{sid}-{abs(hash(title)) % 9999}" d="M{lx1:.1f},{ly1:.1f} A{rl},{rl} 0 0 0 {lx0:.1f},{ly0:.1f}" fill="none"/>')
+        else:
+            out.append(f'<path id="lb-{sid}-{abs(hash(title)) % 9999}" d="M{lx0:.1f},{ly0:.1f} A{rl},{rl} 0 0 1 {lx1:.1f},{ly1:.1f}" fill="none"/>')
+        # xếp các ô (logo hoặc nhãn chữ) theo hàng ngang bên trong hình quạt
+        def inside(x, y):
+            dx, dy = x - C, y - C; rr = _m.hypot(dx, dy)
+            if rr < R0 + 44 or rr > R1 - 6: return False
+            ang = _m.degrees(_m.atan2(dy, dx))
+            lo, hi = a0 + 1.2, a1 - 1.2
+            for cand in (ang, ang + 360, ang - 360):
+                if lo <= cand <= hi: return True
+            return False
+        def fits(x, y, w, h):
+            return all(inside(px, py) for px, py in ((x, y), (x + w, y), (x, y + h), (x + w, y + h), (x + w / 2, y), (x + w / 2, y + h)))
+        def short(a):
+            for al in (a.get("alt_names") or []):
+                if 2 <= len(al) <= 10 and al.replace("-", "").replace(" ", "").isupper(): return al
+            n = a["name"]["vi"]
+            m = _re.search(r"\(([A-Z][A-Za-z0-9&\-]{1,9})\)", n)
+            if m: return m.group(1)
+            n = _re.sub(r"^(Trường Đại học|Trường Cao đẳng|Đại học|Trung tâm|Viện|Sở|Cục|Ban quản lý|Công ty (Cổ phần|TNHH)?)\s+", "", n).strip()
+            return n if len(n) <= 20 else n[:19] + "…"
+        if types == ["__events__"]:
+            regs_here = {a["region"] for a in pool}
+            seen, items = set(), []
+            for ev in sorted([x for x in events if x["_region"] in regs_here and not x.get("_projected")], key=lambda x: (x.get("recurrence") != "annual", -x["_start"].toordinal())):
+                lab = _re.sub(r"\s*(19|20)\d{2}.*$", "", _re.split(r"\s[–:]\s|:", ev["title"])[0]).strip()
+                lab = _re.sub(r"^(Chung kết|Tổng kết|Lễ công bố)\s+", "", lab)
+                if len(lab) > 20: lab = lab[:19] + "…"
+                if lab.lower() in seen or len(lab) < 3: continue
+                seen.add(lab.lower()); items.append(("pill", lab, f'{root}su-kien/{ev["id"]}/', lab))
+            for o in sorted([o for o in opps if o["_region"] in regs_here and o.get("type") == "competition"], key=lambda o: o["title"]):
+                lab = _re.sub(r"\s*(19|20)\d{2}.*$", "", _re.split(r"\s[–:]\s|:", o["title"])[0]).strip()
+                if len(lab) > 20: lab = lab[:19] + "…"
+                if lab.lower() in seen or len(lab) < 3: continue
+                seen.add(lab.lower()); items.append(("pill", lab, f'{root}co-hoi/{o["id"].removeprefix("opp-")}/', o["title"]))
+            total = len(items)
+        else:
+            cand = _wheel_pick(pool, types, 400)
+            items = [("logo", a) if a.get("logo") else ("pill", short(a), f'{root}{apath(a["id"])}', a["name"]["vi"]) for a in cand]
+            total = sum(1 for a in pool if a["type"] in types and a.get("status") != "inactive")
+        counts[sid] = total
+        out.append(f'<text font-size="16" font-weight="800" letter-spacing="1.5" fill="{col}"><textPath href="#lb-{sid}-{abs(hash(title)) % 9999}" startOffset="50%" text-anchor="middle">{e(vi)} · {total}</textPath></text>')
+        xs_ = [P(rr, aa)[0] for rr in (R0, R1) for aa in (a0, a1, (a0 + a1) / 2)] + [P(R1, aa)[0] for aa in range(int(a0), int(a1) + 1, 3)]
+        ys_ = [P(rr, aa)[1] for rr in (R0, R1) for aa in (a0, a1, (a0 + a1) / 2)] + [P(R1, aa)[1] for aa in range(int(a0), int(a1) + 1, 3)]
+        bx0, bx1, by0, by1 = min(xs_), max(xs_), min(ys_), max(ys_)
+        k_i = 0; y = by0 + 4
+        while y < by1 and k_i < len(items):
+            x = bx0 + 2
+            while x < bx1 and k_i < len(items):
+                it = items[k_i]
+                w = L if it[0] == "logo" else 16 + len(it[1]) * 6.9
+                h = L if it[0] == "logo" else 26
+                yy = y + (L - h) / 2
+                if fits(x, yy, w, h):
+                    if it[0] == "logo":
+                        out.append(logo(it[1], x + w / 2, y + L / 2, L, col))
+                    else:
+                        out.append(f'<a href="{it[2]}" target="_top"><title>{e(it[3])}</title><rect x="{x:.1f}" y="{yy:.1f}" width="{w:.1f}" height="{h}" rx="13" fill="{col}" fill-opacity=".09" stroke="{col}" stroke-opacity=".45"/>'
+                                   f'<text x="{x + w/2:.1f}" y="{yy + 17:.1f}" text-anchor="middle" font-size="12" font-weight="700" fill="{col}">{e(it[1])}</text></a>')
+                    x += w + 6; k_i += 1
+                else:
+                    x += 8
+            y += L + 6
+    # center: startups
+    out.append(f'<circle cx="{C}" cy="{C}" r="{R0 - 12}" fill="#102A2C"/>')
+    sts = _wheel_pick(pool, ["startup"], 60)
+    pts = []
+    for gy in range(-4, 5):
+        for gx in range(-4, 5):
+            x, y = C + gx * 44, C + gy * 44 + 18
+            if _m.hypot(x - C, y - C) <= R0 - 40 and not (abs(y - C + 0) < 40 and abs(x - C) < 110): pts.append((x, y))
+    pts.sort(key=lambda p: _m.hypot(p[0] - C, p[1] - C))
+    for a, (x, y) in zip(sts, pts): out.append(logo(a, x, y, 36))
+    nst = sum(1 for a in pool if a["type"] == "startup" and a.get("status") != "inactive")
+    out.append(f'<rect x="{C - 104}" y="{C - 24}" width="208" height="48" rx="24" fill="#E9A800"/><text x="{C}" y="{C + 7}" text-anchor="middle" font-size="20" font-weight="800" fill="#102A2C">STARTUP · {nst}</text>')
+    out.append(f'<text x="{C}" y="{W + 28}" text-anchor="middle" font-size="26" font-weight="800" fill="#102A2C">{e(title)}</text>'
+               f'<text x="{C}" y="{W + 56}" text-anchor="middle" font-size="15" fill="#4A5F61">{e(subtitle)}</text>')
+    out.append("</svg>")
+    return "\n".join(out), counts, nst
+WHEELS = [("viet-nam", "Việt Nam", None), ("ho-chi-minh", "TP. Hồ Chí Minh", ["ho-chi-minh"]), ("ha-noi", "Hà Nội", ["ha-noi"]), ("da-nang", "Đà Nẵng", ["da-nang", "former-quang-nam"])]
+wh_tabs, wh_panes = "", ""
+if ENABLE_ECOSYSTEM_MAPS: os.makedirs(os.path.join(OUT, "ban-do-he-sinh-thai"), exist_ok=True)
+for k, (wid, wname, regs) in enumerate(WHEELS):
+    pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
+    sub = f"Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo · innovation.invietnam.vn · {fmt_date(TODAY)}"
+    svg, counts, nst = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub)
+    svg_abs, _, _ = wheel_svg(pool, f"HỆ SINH THÁI KHỞI NGHIỆP ĐMST {wname.upper()} 2026", sub, absolute=True)
+    if ENABLE_ECOSYSTEM_MAPS: open(os.path.join(OUT, "ban-do-he-sinh-thai", f"{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + svg_abs)
+    wh_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="w-{wid}">{e(wname)}<b>{len(pool)}</b></button>'
+    wstats = " · ".join(f'{vi.split(",")[0].title()} {counts[sid]}' for sid, vi, en, t, c in WHEEL_SECTORS)
+    wh_panes += (f'<div class="dpane wheel" data-p="w-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
+                 f'<p class="small muted">Startup {nst} · {wstats}. Mỗi nhóm hiện các hồ sơ có logo, đầy đủ thông tin nhất; bấm vào logo để mở hồ sơ.</p>'
+                 f'<p><a class="btn ghost" href="{SITE_ROOT}ban-do-he-sinh-thai/{wid}.svg" download>Tải bản đồ (SVG)</a> '
+                 + (f'<a class="btn ghost" href="{dir_link(region=",".join(regs))}">Xem danh bạ {e(wname)}</a>' if regs else f'<a class="btn ghost" href="{SITE_ROOT}danh-ba/">Xem danh bạ</a>') + '</p></div>')
+
+# ================= MÔ HÌNH TRIPLE HELIX =================
+TH_COL = {"G": "#BE185D", "U": "#1D4ED8", "I": "#B7791F", "C": "#0B6E69"}
+_PUBFUND = r"quỹ đầu tư mạo hiểm tp|quỹ phát triển khoa học|quỹ đổi mới công nghệ|natif|nic go|goventures|ddif|quỹ phát triển|nafosted|vcam|tư nhân quốc gia|vietnam private capital"
+def _th_region(a, univ_ids):
+    t = a["type"]; n = _fold(a["name"]["vi"] + " " + " ".join(a.get("alt_names") or []))
+    if t == "government": return "G"
+    if t == "university": return "U"
+    if t == "research": return "GU"
+    if t == "fund": return "GI" if _re.search(_fold(_PUBFUND), n) else "I"
+    if t in ("company",): return "I"
+    if t in ("incubator", "accelerator", "space", "support_org"):
+        if a["id"] in univ_ids or _re.search(r"dai hoc|university|truong|vnuk|dtu|\\bbk\\b|ueh|ftu|hcmut|nttu|ptit|vku", n): return "UI"
+        return "GUI"
+    return None
+def helix_svg(pool, title, sub, absolute=False):
+    root = (SITE_URL + "/") if absolute else SITE_ROOT
+    W, H = 1000, 1000; R = 300
+    cg, cu, ci = (500, 340), (335, 625), (665, 625)
+    pool_ids = {a["id"] for a in pool}
+    univ_ids = {r["from"] for r in relations if r.get("type") == "part_of" and r["to"] in by_id and by_id[r["to"]]["type"] == "university"}
+    groups = collections.defaultdict(list)
+    for a in pool:
+        if a.get("status") == "inactive" or a["type"] == "startup": continue
+        g = _th_region(a, univ_ids)
+        if g: groups[g].append(a)
+    def _acr(a):
+        for al in (a.get("alt_names") or []):
+            if 2 <= len(al) <= 6 and al.replace("-", "").isupper(): return al
+        m = _re.search(r"\(([A-Z][A-Za-z0-9&\-]{1,6})\)", a["name"]["vi"])
+        return m.group(1) if m else None
+    counts_g = {g: len(v) for g, v in groups.items()}
+    for g in list(groups):
+        groups[g] = [a for a in groups[g] if a.get("logo") or _acr(a)]
+    for g in groups:
+        groups[g].sort(key=lambda a: (not a.get("logo"), a["type"] == "research", -richness(a), a["name"]["vi"].lower()))
+    def region_of(x, y):
+        s = ""
+        if _m.hypot(x - cg[0], y - cg[1]) < R - 6: s += "G"
+        if _m.hypot(x - cu[0], y - cu[1]) < R - 6: s += "U"
+        if _m.hypot(x - ci[0], y - ci[1]) < R - 6: s += "I"
+        return s
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H + 70}" role="img" aria-label="{e(title)}" font-family="Be Vietnam Pro, Arial, sans-serif">',
+           f'<rect width="{W}" height="{H + 70}" fill="#F3F1EC"/>']
+    for (cx, cy), k in ((cg, "G"), (cu, "U"), (ci, "I")):
+        out.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="{TH_COL[k]}" fill-opacity=".07" stroke="{TH_COL[k]}" stroke-width="3"/>')
+    lab = {"G": ("CHÍNH QUYỀN", 500, 22), "U": ("TRƯỜNG, VIỆN", 190, 952), "I": ("DOANH NGHIỆP, VỐN", 800, 952)}
+    lab_after = []
+    for k, (t, x, y) in lab.items():
+        lab_after.append(f'<text x="{x}" y="{y}" text-anchor="middle" font-size="20" font-weight="800" letter-spacing="1.5" fill="{TH_COL[k]}">{t} · {{cnt_{k}}}</text>')
+    zone_lab = {"GU": "Nghiên cứu công", "GI": "Quỹ, vốn nhà nước", "UI": "Vườn ươm đại học", "GUI": "Trung tâm ĐMST, hỗ trợ"}
+    # positions
+    cells = collections.defaultdict(list); step = 44
+    for gy in range(40, H - 20, step):
+        for gx in range(30, W - 30, step):
+            r = region_of(gx, gy)
+            if r: cells[r].append((gx, gy))
+    # keep the very centre free for the startup badge
+    C0 = ((cg[0] + cu[0] + ci[0]) / 3, (cg[1] + cu[1] + ci[1]) / 3)
+    cells["GUI"] = [p for p in cells["GUI"] if not (abs(p[0] - C0[0]) < 120 and abs(p[1] - C0[1]) < 40)]
+    def tile(a, x, y, col):
+        href = f'{root}{apath(a["id"])}'
+        if a.get("logo"):
+            return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x-19}" y="{y-19}" width="38" height="38" rx="7" fill="#fff" stroke="#E4E1DA"/>'
+                    f'<image href="{root}{a["logo"]}" x="{x-16}" y="{y-16}" width="32" height="32" preserveAspectRatio="xMidYMid meet"/></a>')
+        t = _acr(a) or _ini(a["name"]["vi"])
+        return (f'<a href="{href}" target="_top"><title>{e(a["name"]["vi"])}</title><rect x="{x-19}" y="{y-19}" width="38" height="38" rx="7" fill="{col}" fill-opacity=".12" stroke="{col}" stroke-opacity=".5"/>'
+                f'<text x="{x}" y="{y+4}" text-anchor="middle" font-size="{11 if len(t) <= 3 else 8.5}" font-weight="800" fill="{col}">{e(t)}</text></a>')
+    for k, pts in cells.items():
+        col = TH_COL["C"] if k == "GUI" else TH_COL[k] if len(k) == 1 else {"GU": "#6D28D9", "GI": "#C2410C", "UI": "#0E7490"}[k]
+        cx = sum(p[0] for p in pts) / max(1, len(pts)); cy = sum(p[1] for p in pts) / max(1, len(pts))
+        pts.sort(key=lambda p: _m.hypot(p[0] - cx, p[1] - cy))
+        items = groups.get(k, [])
+        for a, (x, y) in zip(items, pts): out.append(tile(a, x, y, col))
+    nst = sum(1 for a in pool if a["type"] == "startup" and a.get("status") != "inactive")
+    out.append(f'<rect x="{C0[0]-92:.0f}" y="{C0[1]-22:.0f}" width="184" height="44" rx="22" fill="#E9A800"/><text x="{C0[0]:.0f}" y="{C0[1]+7:.0f}" text-anchor="middle" font-size="18" font-weight="800" fill="#102A2C">STARTUP · {nst}</text>')
+    for t_ in lab_after:
+        for k_ in "GUI": t_ = t_.replace("{cnt_" + k_ + "}", str(counts_g.get(k_, 0)))
+        out.append(t_)
+    lx = 40
+    for k_, nm in (("GU", "Nghiên cứu công"), ("GI", "Quỹ, vốn nhà nước"), ("UI", "Vườn ươm đại học"), ("GUI", "Trung tâm ĐMST, hỗ trợ")):
+        colz = TH_COL["C"] if k_ == "GUI" else {"GU": "#6D28D9", "GI": "#C2410C", "UI": "#0E7490"}[k_]
+        txt = f"{nm} · {counts_g.get(k_, 0)}"
+        out.append(f'<rect x="{lx}" y="972" width="14" height="14" rx="3" fill="{colz}"/><text x="{lx + 20}" y="984" font-size="13" font-weight="700" fill="{colz}">{e(txt)}</text>')
+        lx += 40 + len(txt) * 7.6
+    out.append(f'<text x="500" y="{H + 40}" text-anchor="middle" font-size="24" font-weight="800" fill="#102A2C">{e(title)}</text><text x="500" y="{H + 62}" text-anchor="middle" font-size="14" fill="#4A5F61">{e(sub)}</text></svg>')
+    return "\n".join(out)
+th_tabs, th_panes = "", ""
+for k, (wid, wname, regs) in enumerate(WHEELS):
+    pool = [a for a in actors if (regs is None and a["region"] != "quoc-te") or (regs and a["region"] in regs)]
+    t = f"MÔ HÌNH TRIPLE HELIX · {wname.upper()} 2026"; sub = "Chính quyền – Trường, viện – Doanh nghiệp · innovation.invietnam.vn"
+    svg = helix_svg(pool, t, sub)
+    if ENABLE_ECOSYSTEM_MAPS: open(os.path.join(OUT, "ban-do-he-sinh-thai", f"triple-helix-{wid}.svg"), "w", encoding="utf-8").write('<?xml version="1.0" encoding="UTF-8"?>\n' + helix_svg(pool, t, sub, absolute=True))
+    th_tabs += f'<button type="button" class="dt{" on" if k == 0 else ""}" data-p="th-{wid}">{e(wname)}</button>'
+    th_panes += (f'<div class="dpane th" data-p="th-{wid}"{"" if k == 0 else " hidden"}><div class="wheel-box">{svg}</div>'
+                 f'<p><a class="btn ghost" href="{SITE_ROOT}ban-do-he-sinh-thai/triple-helix-{wid}.svg" download>Tải mô hình (SVG)</a></p></div>')
+TRIPLE_HELIX_HTML = f"""<section class="sec" id="triple-helix"><h2>Mô hình Triple Helix</h2>
+<p class="lead" style="font-size:1.02rem">Ba vòng tròn là ba khu vực của đổi mới sáng tạo theo mô hình Triple Helix (Etzkowitz, Leydesdorff): chính quyền, trường và viện, doanh nghiệp và vốn. Phần giao nhau là các tổ chức lai: nghiên cứu công (chính quyền và trường viện), quỹ vốn nhà nước (chính quyền và doanh nghiệp), vườn ươm đại học (trường và doanh nghiệp); ở giữa là trung tâm đổi mới sáng tạo, tổ chức hỗ trợ nơi cả ba gặp nhau, cùng startup.</p>
+<div class="dtabs th-tabs" role="tablist">{th_tabs}</div>{th_panes}
+<p class="small muted">Xếp vùng tự động theo loại tổ chức và quan hệ trong dữ liệu (ví dụ vườn ươm thuộc trường đại học vào vùng trường và doanh nghiệp); sửa loại, quan hệ trong hồ sơ để điều chỉnh.</p></section>"""
+
+wh_body = f"""
+<div class="wrap page-head"><h1 data-vi="Bản đồ hệ sinh thái" data-en="Ecosystem maps">Bản đồ hệ sinh thái</h1>
+<p class="lead">Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo của Việt Nam và ba thành phố, vẽ tự động từ dữ liệu mở: startup ở trung tâm, năm nhóm xung quanh là hỗ trợ, vốn, nhân tài, mạng lưới, chính sách và đối tác.</p></div>
+<div class="wrap" style="padding-bottom:72px"><nav class="onpage small"><a href="#vong">Bản đồ dạng vòng</a><a href="#triple-helix">Mô hình Triple Helix</a></nav>
+<section class="sec" id="vong"><h2>Bản đồ dạng vòng</h2><div class="dtabs wh-tabs" role="tablist">{wh_tabs}</div>{wh_panes}</section>
+{TRIPLE_HELIX_HTML}
+<p class="small muted" style="margin-top:16px">Bản đồ cập nhật mỗi khi dữ liệu thay đổi. Logo là nhãn hiệu của chủ sở hữu. Tổ chức chưa có trên bản đồ? <a href="{SITE_ROOT}gioi-thieu/dong-gop/">Đóng góp hồ sơ</a>.</p></div>
+<script>document.addEventListener("DOMContentLoaded",function(){{document.querySelectorAll(".dtabs").forEach(function(g){{var ts=g.querySelectorAll(".dt"),sec=g.closest("section");var ps=sec.querySelectorAll(".dpane");ts.forEach(function(t){{t.onclick=function(){{ts.forEach(function(x){{x.classList.toggle("on",x===t)}});ps.forEach(function(p){{p.hidden=p.dataset.p!==t.dataset.p}});}};}});}});}});</script>"""
+if ENABLE_ECOSYSTEM_MAPS: write("ban-do-he-sinh-thai/index.html", page("Bản đồ hệ sinh thái", wh_body, "cities",
+      desc="Bản đồ hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, TP.HCM, Hà Nội, Đà Nẵng 2026: startup, vườn ươm, quỹ, trường viện, cộng đồng, cơ quan nhà nước."))
+
 # ---------- sự kiện trên trang thành phố (mới nhất lên trên, kèm lịch) ----------
 def _days_for(evs):
     out = {}
@@ -1636,14 +2071,20 @@ for _f in glob.glob(os.path.join(OUT, "thanh-pho", "*", "index.html")):
     _m = _re.search(r"<!--CITY_EVENTS:([^>]*)-->", _h)
     if not _m: continue
     _regs = _m.group(1).split(",")
-    _evs = [x for x in events if x["_region"] in _regs]
+    _all = [x for x in events if x["_region"] in _regs]
+    _up = sorted([x for x in _all if x["_state"] in ("upcoming", "live")], key=lambda z: z["_start"])[:6]
+    _past = sorted([x for x in _all if x["_state"] == "past"], key=lambda z: z["_start"], reverse=True)[:4]
+    _evs = _up + _past
     if not _evs:
         _rep = '<p class="muted small" data-vi="Chưa có sự kiện." data-en="No events yet.">Chưa có sự kiện.</p>'
     else:
-        _rep = (f'<div class="ev-layout city-ev"><div class="ev-main">{ev_timeline(_evs, newest_first=True)}'
-                f'<p class="small" style="margin-top:14px"><a href="{SITE_ROOT}su-kien/" data-vi="Tất cả sự kiện" data-en="All events">Tất cả sự kiện</a></p></div>'
+        _rep = (f'<div class="ev-layout city-ev"><div class="ev-main">'
+                + (f'<h3 class="ev-sub">Sắp tới</h3>{ev_timeline(_up)}' if _up else "")
+                + (f'<h3 class="ev-sub">Gần đây</h3>{ev_timeline(_past, newest_first=True)}' if _past else "")
+                + f'<p class="small muted">{len(_all)} sự kiện của địa phương trên bản đồ.</p>'
+                f'<p class="small" style="margin-top:6px"><a class="btn ghost" href="{SITE_ROOT}su-kien/" data-vi="Xem tất cả sự kiện →" data-en="All events →">Xem tất cả sự kiện →</a></p></div>'
                 f'<aside class="ev-aside"><div class="evcal" id="evcal"></div><p class="small muted" style="margin-top:10px" data-vi="Chọn ngày có chấm để xem sự kiện." data-en="Pick a dotted day.">Chọn ngày có chấm để xem sự kiện.</p></aside></div>'
-                f'<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{_days_for(_evs)},"{TODAY}");}});</script>')
+                f'<script>document.addEventListener("DOMContentLoaded",function(){{EVCAL(document.getElementById("evcal"),{_days_for(_all)},"{TODAY}");}});</script>')
     open(_f, "w", encoding="utf-8").write(_h.replace(_m.group(0), _rep))
 
 # ---------- 404, sitemap, robots ----------

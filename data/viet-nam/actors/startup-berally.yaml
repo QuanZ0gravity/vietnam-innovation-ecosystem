@@ -1,0 +1,15 @@
+id: startup-berally
+name:
+  vi: Berally
+type: startup
+sectors:
+- web3
+status: inactive
+description:
+  vi: Mạng xã hội phi tập trung kết nối người dùng Web3 theo sở thích. Đã ngừng do điều kiện thị trường (theo sqrDAO).
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

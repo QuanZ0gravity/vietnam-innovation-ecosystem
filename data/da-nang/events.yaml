@@ -91,3 +91,86 @@
   - government-trung-tam-doi-moi-sang-tao-da-nang
   summary: Hội thảo kết nối doanh nghiệp, startup và tổ chức đổi mới sáng tạo xanh giữa Nhật Bản (Yokohama) và Đà Nẵng.
   source: https://www.ybadanang.com/to-chuc/dnic/
+- id: svef-2025-da-nang
+  title: Diễn đàn Kinh tế Thụy Sĩ – Việt Nam (SVEF) 2025 – Đà Nẵng
+  start: '2025-11-03'
+  end: '2025-11-05'
+  venue: Furama Resort, Đà Nẵng
+  category: capital
+  organizer: UBND TP. Đà Nẵng, Đại sứ quán Thụy Sĩ tại Việt Nam, SVEF
+  organizer_ids:
+  - international-swiss-viet-economic-forum
+  url: https://hanoi2026.svef.ch/svef2025-danang
+  summary: 'Chủ đề "Đối tác đổi mới vì tăng trưởng bền vững": đầu tư, đổi mới sáng tạo, dịch vụ tài chính, hợp tác với các tỉnh; hơn 300 đại biểu.'
+  source: https://hanoi2026.svef.ch/svef2025-danang
+- id: siec-2026-chung-ket
+  title: Chung kết SIEC 2026 – Khởi nghiệp ĐMST trong sinh viên
+  start: '2026-09-27'
+  end: '2026-09-27'
+  venue: Đại học Đà Nẵng
+  category: founders
+  organizer: Đại học Đà Nẵng, Sở KH&CN TP Đà Nẵng
+  organizer_ids:
+  - university-dai-hoc-da-nang
+  recurrence: annual
+  month: 9
+  summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
+  opportunity: opp-siec-2026
+  source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+- id: bk-shark-2026-chung-ket
+  title: Chung kết BK SHARK 2026
+  start: '2026-05-16'
+  end: '2026-05-16'
+  venue: Trường Đại học Bách khoa, ĐHĐN
+  category: founders
+  organizer: Trường Đại học Bách khoa, ĐHĐN
+  organizer_ids:
+  - university-truong-dai-hoc-bach-khoa
+  recurrence: annual
+  month: 5
+  summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
+  opportunity: opp-bk-shark-2026
+  source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+- id: pisi-2026-chung-ket
+  title: Chung kết PISI 2026
+  start: '2026-06-24'
+  end: '2026-06-24'
+  venue: Trường ĐH CNTT và Truyền thông Việt – Hàn (VKU)
+  category: founders
+  organizer: VKU, Đại học Đà Nẵng
+  organizer_ids:
+  - university-truong-dai-hoc-cong-nghe-thong-tin-va-truyen-thong-viet-han
+  recurrence: annual
+  month: 6
+  summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
+  opportunity: opp-pisi-2026
+  source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+- id: u-invent-8-tong-ket
+  title: Tổng kết U-Invent 8 và Design Thinking for Human Challenges
+  start: '2026-03-01'
+  end: '2026-03-01'
+  venue: VNUK, Đại học Đà Nẵng
+  category: founders
+  organizer: Viện Nghiên cứu và Đào tạo Việt – Anh (VNUK)
+  organizer_ids:
+  - university-vien-nghien-cuu-va-dao-tao-viet-anh
+  recurrence: annual
+  month: 3
+  summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
+  opportunity: opp-u-invent-8
+  source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+- id: danang-green-future-solutions-2026-chung-ket
+  title: Chung kết Danang Green Future Solutions 2026
+  start: '2026-04-05'
+  end: '2026-04-05'
+  venue: Đà Nẵng
+  category: founders
+  organizer: Thành đoàn Đà Nẵng, Trường ĐH Swinburne Đà Nẵng
+  organizer_ids:
+  - government-thanh-doan-da-nang
+  - university-truong-dai-hoc-swinburne-da-nang
+  recurrence: annual
+  month: 4
+  summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
+  opportunity: opp-danang-green-future-solutions-2026
+  source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA

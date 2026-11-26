@@ -1,0 +1,14 @@
+id: support-org-csip
+name:
+  vi: Trung tâm Hỗ trợ Sáng kiến Phát triển Cộng đồng (CSIP)
+alt_names:
+- CSIP
+type: support_org
+description:
+  vi: Tổ chức hỗ trợ doanh nghiệp xã hội, khởi nghiệp tạo tác động.
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- NSSC – Mạng lưới đối tác (nssc.gov.vn, 11/2026)
+source_url: https://nssc.gov.vn/ve-chung-toi/mang-luoi-doi-tac

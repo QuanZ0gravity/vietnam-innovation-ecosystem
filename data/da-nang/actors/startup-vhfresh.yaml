@@ -2,6 +2,8 @@ id: startup-vhfresh
 name:
   vi: VHFresh
 type: startup
+sectors:
+- agrifood
 founded: 2026
 status: active
 website: https://vhfresh.vn

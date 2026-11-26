@@ -1,0 +1,16 @@
+id: startup-harmonix-finance
+name:
+  vi: Harmonix Finance
+type: startup
+sectors:
+- web3
+- fintech
+website: https://harmonix.fi/
+description:
+  vi: Nền tảng đưa chiến lược quỹ phòng hộ lên chuỗi, tạo lợi suất cho nhà đầu tư (DeFi). sqrDAO đầu tư vòng seed.
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- sqrdao.com (22/11/2026)
+source_url: https://www.sqrdao.com/

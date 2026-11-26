@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Doanh nghiệp khoa học và công nghệ
+sectors:
+- climate
 address: Lot Q, Road 6B-7A Hoa Khanh Industrial Park, Đà Nẵng
 description:
   vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.

@@ -1,0 +1,16 @@
+id: international-j-e-austin-associates
+name:
+  vi: J.E. Austin Associates (JAA)
+alt_names:
+- JAA
+- J.E. Austin Associates, Inc.
+type: international
+website: http://www.jeaustin.com/
+description:
+  vi: Công ty tư vấn phát triển kinh tế, năng lực cạnh tranh (Mỹ); cùng thực hiện Swiss EP.
+region: quoc-te
+verification:
+  level: source_checked
+sources:
+- swissep.org (22/11/2026)
+source_url: https://swissep.org/about-us/behind-swiss-ep

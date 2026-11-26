@@ -1,0 +1,54 @@
+id: startup-vsap-lab
+name:
+  vi: VSAP Lab
+  en: Vietnam Semiconductor Advanced Packaging Lab-Fab
+alt_names:
+- VSAP LAB
+- Công ty Cổ phần VSAP LAB
+- VSAP LAB Joint Stock Company
+- Vietnam Semiconductor Advanced Packaging Lab-Fab
+type: startup
+categories:
+- Đóng gói bán dẫn tiên tiến
+- Lab-Fab nghiên cứu và sản xuất thử
+- Thiết kế, tạo mẫu, kiểm thử chip
+- Đào tạo nhân lực bán dẫn
+sectors:
+- deeptech
+status: active
+website: https://vsaplab.com/
+linkedin: https://vn.linkedin.com/company/vsap-lab-company
+contact_email: info@vsaplab.com
+contact_phone: +84 937 670 546
+address: Tầng 1, Khu Công viên phần mềm Đà Nẵng số 2, đường Như Nguyệt, Đà Nẵng
+description:
+  vi: 'Startup bán dẫn của Việt Nam, xây Lab-Fab đóng gói chip tiên tiến trọn gói: thiết kế, kỹ thuật quy trình, sản xuất thử quy mô pilot, kiểm thử và chứng nhận. Mục tiêu hoàn thiện hệ sinh thái bán dẫn trong nước và đào tạo nhân lực.'
+history:
+- date: '2025-07-28'
+  text: Đoàn công tác Bộ KH&CN dự lễ khởi động dự án Phòng thí nghiệm công nghệ đóng gói tiên tiến tại Khu Công viên phần mềm Đà Nẵng số 2.
+  source: https://vsaplab.com/doan-cong-tac-bo-khoa-hoc-va-cong-nghe-lam-viec-tai-da-nang-va-du-le-khoi-dong-du-an-phong-thi-nghiem-cong-nghe-dong-goi-tien-tien-tai-khu-cong-vien-phan-mem-da-nang-so-2/
+- date: '2025-08-30'
+  text: Tham gia Ngày vi mạch bán dẫn Đà Nẵng 2025 trong Tuần lễ Tài chính và Công nghệ Đà Nẵng.
+  source: https://vsaplab.com/tong-ket-ngay-vi-mach-ban-dan-da-nang-2025/
+- date: 2025-11
+  text: Trình bày tại SEMIEXPO Vietnam 2025 (7–8/11); tham dự Diễn đàn doanh nghiệp Jordan – Việt Nam 2025.
+  source: https://vsaplab.com/semiexpo-vietnam-2025/
+- date: '2026-01-22'
+  text: Cất nóc tòa nhà Lab-Fab tại Đà Nẵng; mục tiêu đưa vào vận hành trong năm 2026.
+  source: https://vsaplab.com/vsap-lab-celebrates-the-topping-out-ceremony-of-its-lab-fab-building-a-key-milestone-in-vietnams-semiconductor-journey/
+- date: '2026-01-28'
+  text: Ký biên bản ghi nhớ với FPT Semiconductor về R&D, đào tạo nhân lực và phát triển kinh doanh đóng gói, kiểm thử bán dẫn tiên tiến, tại lễ công bố nhà máy đóng gói của FPT.
+  source: https://vsaplab.com/vsap-lab-and-fpt-group-a-strategic-partnership-advancing-rd-talent-development-and-business-growth-in-advanced-semiconductor-packaging/
+- date: '2026-03-31'
+  text: Sở Nông nghiệp và Môi trường Đà Nẵng phê duyệt báo cáo đánh giá tác động môi trường dự án "Phòng thí nghiệm sản xuất công nghệ đóng gói tiên tiến cho chip bán dẫn tại Đà Nẵng" (QĐ 298/QĐ-SNNMT).
+  source: https://vsaplab.com/notice-of-approval-for-the-environmental-impact-assessment-report-of-the-vsap-lab-project/
+- date: '2026'
+  text: 'Tuyển dụng nhiều vị trí: kỹ sư thiết kế vật lý, kỹ sư quy trình và thiết bị đóng gói, kỹ sư cơ sở hạ tầng, giám sát kho, kế toán, hành chính văn phòng.'
+  source: https://www.vsaplab.com/wp-content/uploads/2025/10/JD-General-Office-Administration-Staff-20251016.pdf
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- vsaplab.com (22/11/2026)
+- 'Facebook: facebook.com/Vsaplabcompany'
+source_url: https://vsaplab.com/
