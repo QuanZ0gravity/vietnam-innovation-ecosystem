@@ -4,6 +4,9 @@ name:
 alt_names:
 - Multi Vietnam Joint Stock Company
 type: startup
+sectors:
+- health
+- deeptech
 website: https://multivietnam.com/
 address: K19/18 Dien Bien Phu, Đà Nẵng
 description:

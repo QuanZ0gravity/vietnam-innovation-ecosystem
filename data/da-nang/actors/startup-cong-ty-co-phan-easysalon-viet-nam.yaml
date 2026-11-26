@@ -5,6 +5,9 @@ alt_names:
 - Easy Salon
 - EasySalon Vietnam Joint Stock Company
 type: startup
+sectors:
+- ai
+- health
 status: active
 website: https://easysalon.vn/
 address: Lot 15 - B3, Floating Island Area, Đà Nẵng

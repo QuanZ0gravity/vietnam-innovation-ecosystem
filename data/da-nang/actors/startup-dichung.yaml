@@ -2,6 +2,8 @@ id: startup-dichung
 name:
   vi: DICHUNG
 type: startup
+sectors:
+- mobility
 status: active
 website: https://dichung.vn
 region: da-nang

@@ -2,6 +2,8 @@ id: startup-beaudy
 name:
   vi: Beaudy
 type: startup
+sectors:
+- health
 status: active
 website: https://beaudy.vn
 region: da-nang
