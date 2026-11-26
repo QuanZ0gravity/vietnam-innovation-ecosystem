@@ -4,6 +4,9 @@ name:
 type: company
 categories:
 - Công nghệ
+sectors:
+- commerce
+- ai
 description:
   vi: Gọi vốn 300.000 USD từ Summit Capital tại DAVAS 2026.
 region: da-nang

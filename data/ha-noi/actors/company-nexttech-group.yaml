@@ -4,6 +4,9 @@ name:
 alt_names:
 - NEXTTECH
 type: company
+sectors:
+- fintech
+- commerce
 description:
   vi: Tập đoàn công nghệ, thương mại điện tử và fintech; nhà đầu tư cho startup.
 region: ha-noi

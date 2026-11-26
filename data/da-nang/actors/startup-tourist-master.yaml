@@ -2,6 +2,8 @@ id: startup-tourist-master
 name:
   vi: Tourist Master
 type: startup
+sectors:
+- tourism
 status: active
 region: da-nang
 verification:

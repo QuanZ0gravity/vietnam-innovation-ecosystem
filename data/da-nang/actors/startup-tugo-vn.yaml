@@ -2,6 +2,8 @@ id: startup-tugo-vn
 name:
   vi: Tugo.vn
 type: startup
+sectors:
+- tourism
 status: active
 region: da-nang
 verification:

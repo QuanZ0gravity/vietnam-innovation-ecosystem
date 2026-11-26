@@ -4,6 +4,8 @@ name:
 type: company
 categories:
 - Doanh nghiệp khoa học và công nghệ
+sectors:
+- agrifood
 address: Road 3, Hoa Cam Industrial Park, Đà Nẵng
 description:
   vi: Doanh nghiệp khoa học và công nghệ tại Đà Nẵng.

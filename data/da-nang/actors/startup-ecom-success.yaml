@@ -2,6 +2,8 @@ id: startup-ecom-success
 name:
   vi: Ecom Success
 type: startup
+sectors:
+- commerce
 founded: 2021
 status: active
 region: da-nang

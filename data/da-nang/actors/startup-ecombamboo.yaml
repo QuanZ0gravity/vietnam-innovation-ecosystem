@@ -2,6 +2,9 @@ id: startup-ecombamboo
 name:
   vi: eComBamboo
 type: startup
+sectors:
+- commerce
+- tourism
 status: active
 region: da-nang
 verification:

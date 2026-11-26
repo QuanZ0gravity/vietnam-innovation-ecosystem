@@ -2,6 +2,8 @@ id: startup-jobsv
 name:
   vi: JobSV
 type: startup
+sectors:
+- ai
 status: inactive
 region: da-nang
 verification:

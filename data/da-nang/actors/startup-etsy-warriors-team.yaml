@@ -2,6 +2,8 @@ id: startup-etsy-warriors-team
 name:
   vi: Etsy Warriors Team
 type: startup
+sectors:
+- commerce
 founded: 2024
 status: active
 region: da-nang

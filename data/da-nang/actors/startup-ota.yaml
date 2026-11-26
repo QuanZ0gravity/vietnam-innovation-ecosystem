@@ -2,6 +2,8 @@ id: startup-ota
 name:
   vi: OTA
 type: startup
+sectors:
+- tourism
 status: unknown
 region: da-nang
 verification:

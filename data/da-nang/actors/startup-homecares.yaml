@@ -2,6 +2,8 @@ id: startup-homecares
 name:
   vi: Homecares
 type: startup
+sectors:
+- health
 status: inactive
 region: da-nang
 verification:
