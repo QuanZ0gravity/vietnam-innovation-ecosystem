@@ -1,5 +1,20 @@
 id: support-org-sqrdao-da-nang-blockchain-hub
 name:
+  vi: Da Nang Blockchain Hub
+type: space
+categories:
+- Không gian làm việc chung
+- Không gian sự kiện
+sectors:
+- web3
+- ai
+- fintech
+website: https://www.danangblockchainhub.com/
+address: Tầng 10, tòa nhà NAPA Riverside, 381 Trần Hưng Đạo, phường An Hải, Đà Nẵng
+coordinates: [108.2296289, 16.0665458]
+coordinates_source: Ghim địa điểm của Hub trên Google Maps, đối chiếu với địa điểm trên Luma
+description:
+  vi: Da Nang Blockchain Hub là không gian làm việc chung và tổ chức sự kiện do sqrDAO vận hành tại Đà Nẵng. Hub kết nối cộng đồng Web3, AI và fintech qua các buổi gặp gỡ, hội thảo và hoạt động dành cho nhà phát triển.
   vi: sqrDAO
 alt_names:
 - sqrDAO / Da Nang Blockchain Hub
@@ -34,6 +49,12 @@ region: da-nang
 verification:
   level: source_checked
 sources:
+- https://www.danangblockchainhub.com/#location
+- https://www.danangblockchainhub.com/#leadership
+- https://maps.app.goo.gl/AA1gp69SCtFEWZQH9
+- https://luma.com/da-nang-blockchain-hub
+- https://luma.com/6ywz8kn2
+- https://luma.com/tzpalhs3
 - Bản đồ hệ sinh thái
 - indanang.vn
 - sqrdao.com (22/11/2026)
