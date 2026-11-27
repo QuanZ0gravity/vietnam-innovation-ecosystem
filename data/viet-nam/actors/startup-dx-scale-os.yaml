@@ -1,0 +1,19 @@
+id: startup-dx-scale-os
+name:
+  vi: DX Scale OS
+type: startup
+sectors:
+- deeptech
+status: active
+description:
+  vi: 'Phần mềm quản lý trạm cân: tự động lấy số cân, khóa dữ liệu chống sửa, tích hợp phần cứng sẵn có, dữ liệu thuộc về khách hàng.'
+history:
+- date: '2026-11-27'
+  text: Top 10 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF), thuyết trình gọi vốn tại buổi tổng kết ở Đà Nẵng.
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

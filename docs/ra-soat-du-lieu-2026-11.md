@@ -342,3 +342,9 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - 94 thành viên có tên: gắn 18 hồ sơ đã có (FIIS, BK Holdings, IEC, CEI Huế, CSIE, Greenwich, NIIC, IUH, HCMUT-TBI, Viện Sáng tạo ĐH SPKT, FPT Polytechnic, ĐH Đông Á, CĐ Nghề, CĐ Thương mại, CĐ Quảng Nam, ĐH Duy Tân, DHV, ĐH FPT); tạo mới 132 hồ sơ (trường, trung tâm khởi nghiệp, ĐMST trong trường); quan hệ "thuộc" (trung tâm → trường) và "đối tác" (thành viên → VNEI).
 - Trung tâm Công Thương TP.HCM trùng với hồ sơ HOIP đã có: dùng hồ sơ cũ. Các cặp tên gần giống nhưng khác đơn vị ghi vào `data/ha-noi/not-duplicates.csv`.
 - Logo thành viên nằm trên máy chủ ảnh chặn tải tự động; chưa lấy.
+
+## Logo VNEI, cập nhật sự kiện Co4Growth (27/11/2026)
+
+- Logo 94 thành viên VNEI: đọc đường dẫn ảnh qua trình duyệt, tải từ máy chủ ảnh (cần header như trình duyệt); 74 logo gắn cho đơn vị thành viên, 23 logo trường lấy từ thẻ thành viên khi logo là của trường, 4 logo trường từ Wikipedia (loại 6 ảnh là ảnh khuôn viên, không phải logo).
+- Sự kiện Co4Growth Khóa 4: cập nhật theo bài tường thuật của YBA Đà Nẵng (Top 10, Top 5 nhận vốn mồi 98 triệu đồng mỗi đơn vị, Hội đồng Đánh giá 7 người, liên kết SVF, co4growth.com, đăng ký Khóa 5). Thêm 8 hồ sơ doanh nghiệp, cập nhật 5RTECH và VeeVox; thêm Standard Chartered Foundation, Youth Business International; cập nhật Co4Growth. Trang sự kiện có thêm mục "Doanh nghiệp tham gia" (nhận vốn mồi, các đội khác) và "Nguồn, liên kết".
+- Bổ sung: website chính thức cho 28 trường thành viên VNEI (kiểm tra tiêu đề trang), logo lấy từ chính website trường; dùng logo trường chủ quản cho phân hiệu Lào Cai và viện của TUEBA; thêm tên mới của HCMUTE và ĐH SPKT Vĩnh Long (nay là ĐH Công nghệ Kỹ thuật). Logo VNEI chưa tải được (máy chủ VNEI chặn truy cập từ máy chủ dựng trang).

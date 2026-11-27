@@ -1,0 +1,20 @@
+id: startup-unique-niche-group
+name:
+  vi: Unique&Niche Group
+type: startup
+sectors:
+- agrifood
+- commerce
+status: active
+description:
+  vi: 'Chủ thương hiệu sữa Ụm Bò Milk: sữa bò nhiều vị bán như đồ uống giải khát qua bốn cửa hàng tại TP.HCM, có nhà máy riêng.'
+history:
+- date: '2026-11-27'
+  text: Top 10 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF), thuyết trình gọi vốn tại buổi tổng kết ở Đà Nẵng.
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+region: ho-chi-minh
+verification:
+  level: source_checked
+sources:
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

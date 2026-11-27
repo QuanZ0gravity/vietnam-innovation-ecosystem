@@ -2,6 +2,7 @@ id: university-truong-dai-hoc-su-pham-ky-thuat-tp-ho-chi-minh
 name:
   vi: Trường Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh
 type: university
+website: https://hcmute.edu.vn/
 description:
   vi: Thành viên Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI).
 region: ho-chi-minh
@@ -10,3 +11,6 @@ verification:
 sources:
 - VNEI – Danh sách thành viên Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam (11/2026)
 source_url: https://vnei.edu.vn/danh-sach-thanh-vien
+alt_names:
+- Trường Đại học Công nghệ Kỹ thuật TP.HCM
+- HCMUTE

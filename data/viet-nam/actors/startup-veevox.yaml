@@ -12,10 +12,15 @@ sectors:
 website: http://VEEVOX.IO
 description:
   vi: Dùng AIoT giúp kho lạnh tiết kiệm năng lượng, giảm phát thải và tối ưu vận hành.
+history:
+- date: '2026-11-27'
+  text: Top 10 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF), thuyết trình gọi vốn tại buổi tổng kết ở Đà Nẵng.
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
 region: viet-nam
 verification:
   level: source_checked
 sources:
 - indanang.vn
 - Cổng dịch vụ dữ liệu Đà Nẵng – DAVAS 2026 (Sở KH&CN, 26/06/2026)
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
 source_url: https://indanang.vn/ecosystem-activities/davas-2026

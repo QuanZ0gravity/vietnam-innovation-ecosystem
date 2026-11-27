@@ -1,0 +1,20 @@
+id: startup-banh-mi-khoi
+name:
+  vi: Bánh Mì Khói
+type: startup
+sectors:
+- agrifood
+status: active
+website: https://banhmikhoi.com/
+description:
+  vi: Chuỗi bánh mì xuất phát từ Đà Nẵng, sản phẩm chủ lực bánh mì chả cá, nguyên liệu từ ngư dân địa phương; đang chuẩn hóa quy trình chọn đối tác, mặt bằng và vận hành để nhượng quyền.
+history:
+- date: '2026-11-27'
+  text: Top 10 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF), thuyết trình gọi vốn tại buổi tổng kết ở Đà Nẵng.
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+region: da-nang
+verification:
+  level: source_checked
+sources:
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

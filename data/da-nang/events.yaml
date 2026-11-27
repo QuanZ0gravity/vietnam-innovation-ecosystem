@@ -182,17 +182,61 @@
   venue: Phòng lab Khu E, tầng 4, tòa ICT 1, Khu Công viên phần mềm số 2 Đà Nẵng (đường Như Nguyệt)
   category: capital
   format: hybrid
-  organizer: Quỹ Khởi nghiệp Doanh nghiệp KH&CN Việt Nam (SVF), Co4Growth
+  organizer: 'Quỹ Khởi nghiệp Doanh nghiệp KH&CN Việt Nam (SVF), dự án Co4Growth; đồng hành: DNIC, YBA Đà Nẵng'
   organizer_ids:
   - fund-svf
   - support-org-co4growth
+  - government-trung-tam-doi-moi-sang-tao-da-nang
   - support-org-yba-da-nang
-  url: https://forms.gle/3oLLoXa2eeh41ena6
-  summary: 'Khép lại Khóa 4 Chương trình Tăng tốc "Vững Tài chính – Sáng Niềm tin" sau 6 tháng: TOP 10 doanh nghiệp thuyết trình gọi vốn, tranh 5 suất vốn mồi không hoàn lại tổng 98 triệu đồng từ Standard Chartered Foundation; công bố TOP 5; kết nối chuyên gia, nhà đầu tư. Hình thức trực tiếp kết hợp trực tuyến.'
+  url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+  summary: 'Chặng cuối Khóa 4 Chương trình Tăng tốc "Vững Tài chính – Sáng Niềm tin" (dự án Co4Growth do SVF thực hiện, Standard Chartered Foundation và YBI hỗ trợ, DNIC đồng hành) cho doanh nghiệp do người trẻ 18–35 tuổi điều hành. Top 10 thuyết trình gọi vốn trước Hội đồng Đánh giá 7 thành viên. Năm đơn vị nhận vốn mồi không hoàn lại 98 triệu đồng mỗi đơn vị: VinaHealth Center, HTX Thanh niên Bình Phục, 5RTech, HTX Po Mỷ, Vụn Art. Khóa 5 nhận hồ sơ đến 31/12/2026.'
   speakers:
   - name: Nguyễn Văn Chương
-    title: Phó Chủ tịch YBA Đà Nẵng phụ trách Khởi nghiệp – Đổi mới sáng tạo; thành viên Hội đồng đánh giá
+    title: Phó Chủ tịch phụ trách Khởi nghiệp – Đổi mới sáng tạo; thành viên Hội đồng Đánh giá
     org: YBA Đà Nẵng
     org_id: support-org-yba-da-nang
+  - name: Đào Thị Thanh Thảo
+    title: Thành viên Hội đồng Đánh giá
+    org: Trung tâm Đổi mới sáng tạo Đà Nẵng (DNIC)
+    org_id: government-trung-tam-doi-moi-sang-tao-da-nang
+  - name: Trịnh Như Quỳnh
+    title: Thành viên Hội đồng Đánh giá
+  - name: Phạm Đức Linh
+    title: Thành viên Hội đồng Đánh giá
+  - name: Phạm Nguyễn Bách
+    title: Thành viên Hội đồng Đánh giá
+  - name: Bùi Hải Nam
+    title: Thành viên Hội đồng Đánh giá
+  - name: Nguyễn Văn Bền
+    title: Thành viên Hội đồng Đánh giá
   speakers_source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
   source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+  participant_ids:
+  - startup-vinahealth-center
+  - company-htx-thanh-nien-binh-phuc
+  - startup-cong-ty-co-phan-5rtech
+  - company-htx-po-my
+  - startup-vun-art
+  - startup-banh-mi-khoi
+  - startup-veevox
+  - startup-unique-niche-group
+  - startup-dx-scale-os
+  - startup-dailyviet
+  links:
+  - label: Bài tường thuật – YBA Đà Nẵng
+    url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+  - label: Top 05 nhận vốn mồi – Startup Vietnam Foundation
+    url: https://www.facebook.com/startupvietnamfoundation/posts/1576555184502728
+  - label: Tin sự kiện – SVF
+    url: https://svf.org.vn/vi/news?id=6aed3c3ec79fe4b49084721b
+  - label: Bài sự kiện – co4growth.com
+    url: https://co4growth.com/su-kien-tong-ket-va-pitching-goi-von-tu-vung-noi-luc-den-hieu-qua-dau-tu-vung-tai-chinh-sang-niem-tin-khoa-4/
+  - label: Đăng ký Khóa 5 (đến 31/12/2026)
+    url: https://forms.gle/Q4vAnGmRCm6j58Z5A
+  speakers_label: Hội đồng Đánh giá
+  winner_ids:
+  - startup-vinahealth-center
+  - company-htx-thanh-nien-binh-phuc
+  - startup-cong-ty-co-phan-5rtech
+  - company-htx-po-my
+  - startup-vun-art

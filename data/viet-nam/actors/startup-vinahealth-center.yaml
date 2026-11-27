@@ -1,0 +1,24 @@
+id: startup-vinahealth-center
+name:
+  vi: VinaHealth Center
+type: startup
+sectors:
+- health
+status: active
+website: https://www.trungtamphuchoichucnang.com/
+description:
+  vi: Hệ thống can thiệp 1:1 và huấn luyện phụ huynh cho trẻ bại não, tự kỷ, chậm phát triển, hoạt động khoảng 10 năm; dự án tác động xã hội.
+leadership:
+- role: Đại diện
+  name: Đặng Thị Phương Thảo
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+history:
+- date: '2026-11-27'
+  text: Top 5 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF); nhận vốn mồi không hoàn lại 98 triệu đồng từ Standard Chartered Foundation.
+  source: https://www.facebook.com/startupvietnamfoundation/posts/1576555184502728
+region: viet-nam
+verification:
+  level: source_checked
+sources:
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

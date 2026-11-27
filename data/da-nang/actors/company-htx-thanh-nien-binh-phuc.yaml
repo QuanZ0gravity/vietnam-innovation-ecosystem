@@ -1,0 +1,23 @@
+id: company-htx-thanh-nien-binh-phuc
+name:
+  vi: HTX Thanh niên Bình Phục
+type: company
+sectors:
+- agrifood
+status: active
+description:
+  vi: 'Hợp tác xã thanh niên ở Thăng Bình: trứng gà thả vườn Điệp Oanh đạt chuẩn Certified Humane, cung cấp cho khách sạn cao cấp ở Đà Nẵng và Hội An.'
+leadership:
+- role: Đại diện
+  name: Lâm Phụng Điệp
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+history:
+- date: '2026-11-27'
+  text: Top 5 Khóa 4 Chương trình Tăng tốc Co4Growth "Vững Tài chính – Sáng Niềm tin" (SVF); nhận vốn mồi không hoàn lại 98 triệu đồng từ Standard Chartered Foundation.
+  source: https://www.facebook.com/startupvietnamfoundation/posts/1576555184502728
+region: former-quang-nam
+verification:
+  level: source_checked
+sources:
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

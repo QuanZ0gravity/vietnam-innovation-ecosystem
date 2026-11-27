@@ -1577,7 +1577,12 @@ for ev in events:
 {"" if ev.get("_projected") else f'<a class="btn ghost" href="{SITE_ROOT}su-kien/{ev["id"]}/su-kien.ics" download data-vi="Thêm vào lịch" data-en="Add to calendar">Thêm vào lịch</a>'}{f'<a class="btn ghost" href="{e(ev["official_url"])}" rel="noopener" data-vi="Trang sự kiện (lần trước)" data-en="Previous edition website">Trang sự kiện (lần trước)</a>' if ev.get("_projected") and ev.get("official_url") else ""}
 {f'<a class="btn ghost" href="{SITE_ROOT}co-hoi/{opp["id"].removeprefix("opp-")}/" data-vi="Cơ hội, danh sách tham gia" data-en="Opportunity and participants">Cơ hội, danh sách tham gia</a>' if opp else ""}</p>
 <div class="section"><h2 data-vi="Giới thiệu" data-en="About">Giới thiệu</h2><p class="desc">{e(ev.get("summary",""))}</p></div>
-{('<div class="section"><h2 data-vi="Diễn giả" data-en="Speakers">Diễn giả</h2><p class="small muted">' + str(len(ev.get("speakers") or [])) + ' diễn giả theo công bố của ban tổ chức. <a href="' + e(ev.get("speakers_source", "")) + '" rel="noopener">Nguồn</a></p><div class="spk">' + "".join(
+{('<div class="section"><h2>Doanh nghiệp tham gia</h2>' + ''.join(
+    (f'<h3 style="margin:10px 0 8px">Nhận vốn mồi</h3>' + mini_cards([by_id[x] for x in ev.get("winner_ids", []) if x in by_id])) if ev.get("winner_ids") else "")
+    + (('<h3 style="margin:14px 0 8px">Các đội khác</h3>' if ev.get("winner_ids") else "") + mini_cards([by_id[x] for x in ev.get("participant_ids", []) if x in by_id and x not in (ev.get("winner_ids") or [])]))
+    + '</div>') if ev.get("participant_ids") else ""}
+{('<div class="section"><h2>Nguồn, liên kết</h2><ul class="list-plain">' + "".join(f'<li><a href="{e(l["url"])}" rel="noopener">{e(l["label"])}</a></li>' for l in ev.get("links", [])) + '</ul></div>') if ev.get("links") else ""}
+{('<div class="section"><h2>' + e(ev.get("speakers_label", "Diễn giả")) + '</h2><p class="small muted">' + str(len(ev.get("speakers") or [])) + ' người theo công bố của ban tổ chức. <a href="' + e(ev.get("speakers_source", "")) + '" rel="noopener">Nguồn</a></p><div class="spk">' + "".join(
     f'<div class="spk-c"><b>{e(s["name"])}</b><span>{e(s.get("title",""))}</span>' + ((f'<a href="{SITE_ROOT}{apath(s["org_id"])}">{e(s["org"])}</a>' if s.get("org_id") in by_id else f'<span class="muted">{e(s.get("org",""))}</span>') if s.get("org") else "") + '</div>'
     for s in ev.get("speakers") or []) + '</div></div>') if ev.get("speakers") else ""}
 {('<div class="section"><h2 data-vi="Sự kiện liên quan" data-en="Related events">Sự kiện liên quan</h2><div class="ev-items">' + "".join(ev_card(x) for x in same) + '</div></div>') if same else ""}
@@ -1625,16 +1630,19 @@ info_page("gioi-thieu/dieu-khoan/index.html", "Điều khoản sử dụng", "Te
 
 
 # ---------- chuyển hướng đường dẫn cũ /a/<id>/ ----------
-_redir = ["# Đường dẫn hồ sơ cũ /a/<id>/ chuyển sang /startup/, /to-chuc/, /chuyen-gia/ (11/2026)"]
+# Cloudflare Pages giới hạn 2.000 quy tắc tĩnh trong _redirects; danh bạ đã vượt mức này.
+# Vì vậy mỗi đường dẫn cũ /a/<id>/ là một trang chuyển tiếp (canonical + refresh 0 giây),
+# còn _redirects chỉ giữ vài quy tắc chung.
+_redir = ["# Đường dẫn hồ sơ cũ /a/<id>/: trang chuyển tiếp trong /a/ (không dùng quy tắc tĩnh, giới hạn 2.000 dòng của Cloudflare)"]
 for _a in actors:
     new = f"{SITE_ROOT}{apath(_a['id'])}"
-    _redir.append(f"/a/{_a['id']}/ {new} 301")
     stub = (f'<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>{e(_a["name"]["vi"])}</title>'
             f'<meta name="robots" content="noindex"><link rel="canonical" href="{SITE_URL}/{apath(_a["id"])}">'
             f'<meta http-equiv="refresh" content="0; url={new}"></head><body><a href="{new}">{e(_a["name"]["vi"])}</a></body></html>')
     os.makedirs(os.path.join(OUT, "a", _a["id"]), exist_ok=True)
     open(os.path.join(OUT, "a", _a["id"], "index.html"), "w", encoding="utf-8").write(stub)
 _redir += ([] if ENABLE_ECOSYSTEM_MAPS else ["/ban-do-he-sinh-thai/* /thanh-pho/ 302"]) + ["/a/:id /a/:id/ 301", "/startup/ /danh-ba/startup/ 302", "/to-chuc/ /danh-ba/ 302", "/chuyen-gia/ /danh-ba/chuyen-gia/ 302"]
+assert sum(1 for r in _redir if r and not r.startswith("#")) < 100, "_redirects quá nhiều quy tắc"
 open(os.path.join(OUT, "_redirects"), "w", encoding="utf-8").write("\n".join(_redir) + "\n")
 
 

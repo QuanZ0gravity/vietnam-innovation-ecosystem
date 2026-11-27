@@ -3,12 +3,21 @@ name:
   vi: Co4Growth
 type: support_org
 categories:
-- Chương trình tăng tốc doanh nghiệp
+- Chương trình tăng tốc doanh nghiệp trẻ
+- Vốn mồi không hoàn lại
+status: active
+website: https://co4growth.com/
 description:
-  vi: Đơn vị cùng Quỹ Khởi nghiệp Doanh nghiệp KH&CN Việt Nam (SVF) tổ chức Chương trình Tăng tốc "Vững Tài chính – Sáng Niềm tin" cho doanh nghiệp nhỏ, khởi nghiệp.
+  vi: 'Dự án do SVF thực hiện với sự hỗ trợ của Standard Chartered Foundation và Youth Business International (YBI): Chương trình Tăng tốc "Vững Tài chính – Sáng Niềm tin" cho doanh nghiệp do người trẻ 18–35 tuổi điều hành, gồm huấn luyện tài chính, mô hình kinh doanh, gọi vốn, cố vấn 1:1 và vốn mồi.'
+history:
+- date: '2026-11-27'
+  text: 'Tổng kết Khóa 4 tại Đà Nẵng: Top 10 thuyết trình gọi vốn; 5 doanh nghiệp nhận vốn mồi 98 triệu đồng mỗi đơn vị (VinaHealth Center, HTX Thanh niên Bình Phục, 5RTech, HTX Po Mỷ, Vụn Art). Khóa 5 nhận hồ sơ đến 31/12/2026.'
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
 region: viet-nam
 verification:
-  level: unverified
+  level: source_checked
 sources:
 - YBA Đà Nẵng – trang sự kiện (11/2026)
+- YBA Đà Nẵng – Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 (27/11/2026)
+- co4growth.com
 source_url: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
