@@ -493,3 +493,7 @@ img.person{border-radius:50%!important;object-fit:cover!important;padding:0!impo
 .wheel-box svg{display:block;width:100%;height:auto}
 .wheel-box a:hover rect{stroke:#102A2C;stroke-width:2}
 .hero .eyebrow{font-weight:700;color:var(--sea);margin:0 0 6px;letter-spacing:.02em}
+.faq{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:12px 16px;margin:8px 0}
+.faq summary{cursor:pointer;list-style:none}.faq summary::-webkit-details-marker{display:none}
+.faq summary h3{display:inline;font-size:1rem;margin:0}.faq summary::before{content:"+";font-weight:800;color:var(--sea);margin-right:10px}
+.faq[open] summary::before{content:"–"}.faq p{margin:10px 0 2px;line-height:1.6}

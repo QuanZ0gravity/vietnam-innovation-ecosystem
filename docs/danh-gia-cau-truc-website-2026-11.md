@@ -90,3 +90,14 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - `llms.txt`, `llms-full.txt` (tóm tắt, trang chính, dữ liệu tải về, cách trích dẫn, tình hình có nguồn, sự kiện sắp tới).
 - `robots.txt` cho phép rõ các trình thu thập AI; `_headers` thêm các header bảo mật (nosniff, Referrer-Policy, X-Frame-Options, Permissions-Policy, HSTS, COOP).
 - Bảo mật email: cần thêm bản ghi DNS (SPF, DMARC) trên Cloudflare, xem hướng dẫn trong trao đổi.
+
+## Sửa theo báo cáo SEO & GEO Audit (geo.sald.io, 27/11/2026: 70%, hạng C)
+
+- Thực thể và thương hiệu: Organization có `description` trùng mô tả trang chủ, địa chỉ (Đà Nẵng, VN), `contactPoint` (biểu mẫu GitHub), Person riêng cho người khởi xướng; cấu hình trong `data/site.yaml` (thêm Wikidata, LinkedIn của dự án vào `same_as` khi có).
+- Nội dung trả lời trực tiếp: trang chủ thêm "Số liệu nổi bật" có dẫn nguồn ngoài (StartupBlink, WIPO, HOIP, NSSC, cổng dữ liệu mở), "Câu hỏi thường gặp" kèm schema FAQPage, ngày cập nhật hiển thị bằng `<time>`.
+- Cho trợ lý AI: `/index.md` (liên kết `rel="alternate" type="text/markdown"`), `/ai/summary.json`, `/.well-known/ai.txt`, `/.well-known/api-catalog`, `llms.txt` mở rộng trên 800 từ; `robots.txt` nêu rõ Googlebot, Applebot, các bot trích dẫn và dòng `Content-Signal`.
+- Nguồn cập nhật: `/feed.xml` (RSS sự kiện, cơ hội) liên kết trong `<head>`; `lastmod` lấy theo lịch sử git thật (tự `git fetch --unshallow` khi Cloudflare clone nông).
+- Head: `robots` có `max-image-preview:large`, `theme-color`, `manifest.json`, `apple-touch-icon`, `og:image:alt`; script `defer`.
+- Ảnh: logo có `alt` theo tên tổ chức; ảnh đầu tiên mỗi trang tải ngay với `fetchpriority="high"`.
+- Header: thêm Content-Security-Policy và Cache-Control cho tài nguyên tĩnh; `security.txt`, `humans.txt`.
+- Việc của chủ trang: tạo hồ sơ Wikidata và trang LinkedIn cho dự án rồi thêm vào `data/site.yaml`; DMARC, MTA-STS là bản ghi DNS.

@@ -1,0 +1,10 @@
+# Cấu hình nhận diện của trang (dùng cho schema Organization, llms.txt, security.txt).
+description: "Danh bạ mở, do cộng đồng cập nhật, về startup, quỹ, vườn ươm, trường, viện, cơ quan, sự kiện và chính sách khởi nghiệp đổi mới sáng tạo Việt Nam."
+# Hồ sơ của DỰ ÁN trên các nền tảng tri thức. Thêm Wikidata, LinkedIn (trang của dự án) khi đã tạo.
+same_as:
+  - https://github.com/chuongnv/vietnam-innovation-ecosystem
+# Hồ sơ công khai của người khởi xướng (Person schema).
+founder_same_as:
+  - https://github.com/chuongnv
+# Email liên hệ chung của dự án (để trống nếu chưa có hộp thư riêng).
+contact_email: ""

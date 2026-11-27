@@ -115,9 +115,17 @@ LOGO = ('<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><cir
 
 BRAND = "Bản đồ hệ sinh thái khởi nghiệp ĐMST Việt Nam"
 AUTHOR = {"@type": "Person", "name": "Nguyễn Văn Chương (Chuong Nguyen)", "url": "https://github.com/chuongnv", "jobTitle": "Người khởi xướng, điều phối dự án"}
+SITE_CFG = yaml.safe_load(open(os.path.join(ROOT, "data", "site.yaml"), encoding="utf-8")) if os.path.exists(os.path.join(ROOT, "data", "site.yaml")) else {}
+SITE_DESC = SITE_CFG.get("description", "Danh bạ mở về startup, quỹ, vườn ươm, trường, cơ quan và cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam.")
+AUTHOR["@id"] = "https://innovation.invietnam.vn/#founder"
+AUTHOR["sameAs"] = SITE_CFG.get("founder_same_as", ["https://github.com/chuongnv"])
 PUBLISHER = {"@type": "Organization", "@id": "https://innovation.invietnam.vn/#org", "name": BRAND, "alternateName": ["Vietnam Startup & Innovation Ecosystem Map", "Hệ sinh thái ĐMST"],
-             "url": "https://innovation.invietnam.vn/", "logo": "https://innovation.invietnam.vn/assets/og-default.png",
-             "sameAs": ["https://github.com/chuongnv/vietnam-innovation-ecosystem"], "founder": AUTHOR}
+             "description": SITE_DESC, "url": "https://innovation.invietnam.vn/", "logo": "https://innovation.invietnam.vn/assets/og-default.png",
+             "sameAs": SITE_CFG.get("same_as", ["https://github.com/chuongnv/vietnam-innovation-ecosystem"]),
+             "address": {"@type": "PostalAddress", "addressLocality": "Đà Nẵng", "addressCountry": "VN"},
+             "contactPoint": {"@type": "ContactPoint", "contactType": "data corrections and contributions", "url": "https://github.com/chuongnv/vietnam-innovation-ecosystem/issues/new/choose",
+                              **({"email": SITE_CFG["contact_email"]} if SITE_CFG.get("contact_email") else {}), "availableLanguage": ["vi", "en"]},
+             "founder": {"@id": "https://innovation.invietnam.vn/#founder"}}
 
 def page(title, body, active="", desc="", scripts=(), head=""):
     nav = "".join(
@@ -138,8 +146,13 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap">
 <link rel="stylesheet" href="{SITE_ROOT}assets/style.css">
 <link rel="icon" href="{SITE_ROOT}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{SITE_ROOT}assets/apple-touch-icon.png">
+<link rel="manifest" href="{SITE_ROOT}manifest.json">
+<meta name="theme-color" content="#0B6E69">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="alternate" type="application/rss+xml" title="Cập nhật – {BRAND}" href="{SITE_ROOT}feed.xml">
 {head}
-<script src="{SITE_ROOT}assets/icons.js"></script><script src="{SITE_ROOT}assets/app.js"></script>{sc}
+<script src="{SITE_ROOT}assets/icons.js" defer></script><script src="{SITE_ROOT}assets/app.js" defer></script>{sc}
 </head>
 <body>
 <a class="sr" href="#main">Bỏ qua thanh điều hướng</a>
@@ -163,6 +176,12 @@ PAGES = []   # (đường dẫn, lastmod) của các trang được lập chỉ 
 def _git_dates():
     """Ngày sửa gần nhất của từng tệp dữ liệu theo git; không có git thì trả về rỗng."""
     import subprocess
+    try:
+        sh = subprocess.run(["git", "-C", ROOT, "rev-parse", "--is-shallow-repository"], capture_output=True, text=True, timeout=20).stdout.strip()
+        if sh == "true":   # Cloudflare Pages clones shallow: fetch history so each page gets its real last-change date
+            subprocess.run(["git", "-C", ROOT, "fetch", "--unshallow", "--quiet"], capture_output=True, timeout=120)
+    except Exception:
+        pass
     try:
         out = subprocess.run(["git", "-C", ROOT, "log", "--format=@%cs", "--name-only", "--", "data"],
                              capture_output=True, text=True, timeout=60).stdout
@@ -206,12 +225,15 @@ def write(rel, content, lastmod=None):
                      '<meta property="og:image:height" content="630">', '<meta name="twitter:card" content="summary_large_image">']
         if t:
             tags.append(f'<meta name="twitter:title" content="{t.group(1).strip()}">')
+        if 'property="og:image:alt"' not in content:
+            tags.append(f'<meta property="og:image:alt" content="{e(BRAND)}: {html.unescape(t.group(1)).split(" | ")[0].strip() if t else ""}">')
         if redirect or rel == "404.html":
+            content = content.replace('<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">\n', "", 1)
             tags = ['<meta name="robots" content="noindex">'] + tags[1:]
         else:
             lm = lastmod or TODAY
             PAGES.append((url_path, min(str(lm)[:10], TODAY)))
-            ld = [PUBLISHER]
+            ld = [PUBLISHER, {k: v for k, v in AUTHOR.items()}]
             segs = [s for s in url_path.strip("/").split("/") if s]
             if segs:
                 SEC = {"danh-ba": "Danh bạ", "thanh-pho": "Địa phương", "linh-vuc": "Lĩnh vực", "co-hoi": "Cơ hội", "su-kien": "Sự kiện", "chinh-sach": "Chính sách",
@@ -224,6 +246,10 @@ def write(rel, content, lastmod=None):
                 ld.append({"@type": "BreadcrumbList", "itemListElement": items})
             tags.append('<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": ld}, ensure_ascii=False) + "</script>")
         content = content.replace("</head>", "\n".join(tags) + "\n</head>", 1)
+        _bi = content.find("<body")
+        _li = content.find('loading="lazy"', _bi)
+        if _li > 0:   # ảnh đầu tiên trong trang: tải ngay, ưu tiên cao (LCP)
+            content = content[:_li] + 'fetchpriority="high"' + content[_li + len('loading="lazy"'):]
     open(path, "w", encoding="utf-8").write(content)
 
 def ver_badge(level):
@@ -299,7 +325,7 @@ def apath(i): return PATH.get(i, f"to-chuc/{i}/")
 
 def logo_img(a, size=40, cls="lg"):
     if a.get("logo"):
-        return f'<img class="{cls}{" person" if a["logo"].startswith("photos/") else ""}" src="{SITE_ROOT}{a["logo"]}" alt="" width="{size}" height="{size}" loading="lazy">'
+        return f'<img class="{cls}{" person" if a["logo"].startswith("photos/") else ""}" src="{SITE_ROOT}{a["logo"]}" alt="{e(("Ảnh " if a["logo"].startswith("photos/") else "Logo ") + a["name"]["vi"])}" width="{size}" height="{size}" loading="lazy">'
     ini = "".join(w[0] for w in _re.sub(r"[^\w\s]", " ", a["name"]["vi"]).split()[:2]).upper() or "?"
     return f'<span class="{cls} ini" aria-hidden="true" style="width:{size}px;height:{size}px">{e(ini)}</span>'
 
@@ -1034,10 +1060,30 @@ home = f"""
 <p style="margin-top:16px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-vi="Mở danh bạ" data-en="Open the directory">Mở danh bạ</a> <a class="btn ghost" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-i18n="add_missing">Thêm hồ sơ còn thiếu</a></p></div>
 </div></section>
 """
-home_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": BRAND, "url": f"{SITE_URL}/", "inLanguage": ["vi", "en"], "publisher": {"@id": "https://innovation.invietnam.vn/#org"}, "author": AUTHOR,
+_n_st = sum(1 for a in actors if a["type"] == "startup")
+_n_fund = sum(1 for a in actors if a["type"] == "fund")
+_n_sup = sum(1 for a in actors if a["type"] in ("incubator", "accelerator", "space", "support_org"))
+_n_uni = sum(1 for a in actors if a["type"] in ("university", "research"))
+_n_ev = len([x for x in events if not x.get("_projected")])
+HOME_FAQ = [
+ ("Bản đồ hệ sinh thái khởi nghiệp ĐMST Việt Nam là gì?", f"Đây là danh bạ mở, do cộng đồng cập nhật, về hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: {len(actors):,} hồ sơ gồm {_n_st} startup, {_n_fund} quỹ và nhà đầu tư, {_n_sup} vườn ươm và tổ chức hỗ trợ, {_n_uni} trường, viện. Mỗi hồ sơ ghi nguồn và mức xác minh.".replace(",", ".")),
+ ("Dữ liệu lấy từ đâu và tin cậy đến mức nào?", "Dữ liệu tổng hợp từ nguồn công khai: Sở KH&CN các địa phương, cổng dữ liệu mở, nền tảng HOIP và SIHUB của TP.HCM, NSSC, danh mục ươm tạo của các vườn ươm, website chính thức của từng tổ chức. Mỗi hồ sơ có một trong bốn mức xác minh, từ chưa đối chiếu đến được tổ chức hoặc đơn vị hỗ trợ xác nhận."),
+ ("Bản đồ phủ những địa phương nào?", "Hiện có dữ liệu chi tiết cho TP. Hồ Chí Minh, Hà Nội, Đà Nẵng (gồm khu vực Quảng Nam cũ) và Hải Phòng, cùng các tổ chức cấp quốc gia và quốc tế hoạt động tại Việt Nam. Các tỉnh, thành khác được bổ sung dần qua đóng góp."),
+ ("Tôi có thể dùng dữ liệu cho báo cáo, nghiên cứu không?", "Có. Dữ liệu theo giấy phép CC BY 4.0: được dùng, chỉnh sửa, kể cả cho mục đích thương mại, miễn ghi nguồn. Tải CSV, JSON tại trang Dữ liệu; logo, ảnh và phần giới thiệu nguyên văn của bên thứ ba không thuộc giấy phép này."),
+ ("Làm sao để thêm hoặc sửa hồ sơ tổ chức của tôi?", "Gửi biểu mẫu \"Thêm hoặc sửa một hồ sơ\" trên GitHub, hoặc sửa trực tiếp tệp dữ liệu và mở Pull Request. Mọi thay đổi được kiểm tra tự động và duyệt trước khi lên trang."),
+]
+home_faq_html = ('<section class="sec wrap" id="hoi-dap"><h2>Câu hỏi thường gặp</h2>' + "".join(f'<details class="faq"><summary><h3>{e(q)}</h3></summary><p>{e(a)}</p></details>' for q, a in HOME_FAQ) + "</section>")
+home_facts_html = (f'<section class="sec wrap" id="so-lieu"><h2>Số liệu nổi bật</h2><p>Theo <a href="https://www.startupblink.com/startupecosystem/vietnam" rel="noopener">StartupBlink</a>, hệ sinh thái khởi nghiệp Việt Nam xếp hạng 50 thế giới năm 2026; theo <a href="https://www.wipo.int/global_innovation_index/en/" rel="noopener">Chỉ số Đổi mới sáng tạo toàn cầu của WIPO</a>, Việt Nam xếp hạng 44 trên 139 nền kinh tế năm 2025. '
+                   f'Vốn đầu tư mạo hiểm vào Việt Nam năm 2025 đạt 509 triệu USD qua 103 thương vụ (VPCA, NIC, Do Ventures). Danh bạ hiện có {len(actors)} hồ sơ, {_n_st} startup, {_n_fund} quỹ, {_n_sup} tổ chức hỗ trợ và {_n_ev} sự kiện; nguồn gồm <a href="https://hoip.sihub.gov.vn/" rel="noopener">HOIP</a>, <a href="https://nssc.gov.vn/" rel="noopener">NSSC</a>, <a href="https://opendata.hochiminhcity.gov.vn/" rel="noopener">Cổng dữ liệu mở TP.HCM</a>, <a href="https://congdulieu.vn/" rel="noopener">Cổng dữ liệu Đà Nẵng</a>.</p>'
+                   f'<p class="small muted">Cập nhật lần cuối: <time datetime="{TODAY}">{fmt_date(TODAY)}</time>. Biên soạn: Nguyễn Văn Chương và cộng đồng đóng góp.</p></section>')
+home = home.replace('</div></section>\n', '</div></section>\n', 1) + home_facts_html + home_faq_html
+home_faq_ld = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in HOME_FAQ]}
+home_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": BRAND, "description": SITE_DESC, "url": f"{SITE_URL}/", "inLanguage": ["vi", "en"], "dateModified": TODAY, "publisher": {"@id": "https://innovation.invietnam.vn/#org"}, "author": AUTHOR,
            "potentialAction": {"@type": "SearchAction", "target": f"{SITE_URL}/danh-ba/?q={{search_term_string}}", "query-input": "required name=search_term_string"}}
-write("index.html", page("", home, "home", desc=f"Danh bạ mở về {len(actors)} startup, quỹ, vườn ươm, trường, cơ quan và {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng.",
-      head='<script type="application/ld+json">' + json.dumps(home_ld, ensure_ascii=False) + "</script>"))
+write("index.html", page("", home, "home", desc=SITE_DESC,
+      head='<script type="application/ld+json">' + json.dumps(home_ld, ensure_ascii=False) + "</script>"
+           + '<script type="application/ld+json">' + json.dumps(home_faq_ld, ensure_ascii=False) + "</script>"
+           + f'<link rel="alternate" type="text/markdown" href="{SITE_ROOT}index.md"><meta property="article:modified_time" content="{TODAY}">'))
 
 # ---------- chính sách ----------
 by_year = collections.OrderedDict()
@@ -2149,7 +2195,8 @@ open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
     + "".join(f"<sitemap><loc>{SITE_URL}/{n}</loc><lastmod>{d}</lastmod></sitemap>\n" for n, d in files) + "</sitemapindex>\n")
 open(os.path.join(OUT, "robots.txt"), "w").write(
     "# Dữ liệu mở CC BY 4.0: cho phép mọi công cụ tìm kiếm và trợ lý AI đọc, trích dẫn.\n"
-    + "".join(f"User-agent: {ua}\nAllow: /\n\n" for ua in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Google-Extended", "Applebot-Extended", "CCBot"))
+    + "".join(f"User-agent: {ua}\nAllow: /\n\n" for ua in ("Googlebot", "Bingbot", "Applebot", "OAI-SearchBot", "ChatGPT-User", "GPTBot", "Claude-SearchBot", "Claude-User", "ClaudeBot", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "CCBot"))
+    + "# Dữ liệu mở CC BY 4.0: cho phép tìm kiếm, trích dẫn trong câu trả lời AI và huấn luyện.\nContent-Signal: search=yes, ai-input=yes, ai-train=yes\n\n"
     + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n# Tóm tắt cho mô hình ngôn ngữ: {SITE_URL}/llms.txt\n")
 open(os.path.join(OUT, "_headers"), "w").write("""/*
   X-Content-Type-Options: nosniff
@@ -2158,6 +2205,15 @@ open(os.path.join(OUT, "_headers"), "w").write("""/*
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://github.com
+/assets/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/logos/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+/photos/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+/og/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 /llms.txt
   Content-Type: text/plain; charset=utf-8
 /llms-full.txt
@@ -2203,6 +2259,95 @@ if BENCH:
         _full.append(f"\n## Tình hình {c['name']}\n" + "".join(f"- {x['text']} (Nguồn: {', '.join(x.get('sources') or [x['source']])})\n" for x in c.get("insights", [])))
 _full.append("\n## Sự kiện sắp tới\n" + "".join(f"- {fmt_date(x['start'])}: {x['title']}, {x.get('venue','')} ({SITE_URL}/su-kien/{x['id']}/)\n" for x in sorted([x for x in events if x['_state'] in ('upcoming','live') and not x.get('_projected')], key=lambda z: z['_start'])))
 open(os.path.join(OUT, "llms-full.txt"), "w", encoding="utf-8").write("".join(_full))
+
+# ---------- tài liệu cho trợ lý AI, công cụ, con người ----------
+_desc_pages = [
+ ("Danh bạ", "danh-ba/", f"Tìm kiếm tức thì {len(actors)} hồ sơ; lọc theo loại tổ chức, 13 lĩnh vực, địa phương và mức xác minh; xem dạng thẻ, danh sách hoặc bản đồ; tải CSV đúng phần đã lọc."),
+ ("Địa phương", "thanh-pho/", "Tổng quan Việt Nam và từng thành phố: xếp hạng StartupBlink, Chỉ số Đổi mới sáng tạo toàn cầu, vốn đầu tư theo năm, mục Tình hình theo chủ đề có ghi nguồn, danh bạ theo nhóm, sự kiện và cơ hội."),
+ ("Lĩnh vực", "linh-vuc/", "13 lĩnh vực (AI, fintech, Web3, thương mại, nông nghiệp và thực phẩm, y tế, giáo dục, du lịch, khí hậu, công nghệ sâu, di chuyển, marketing, bất động sản) với số tổ chức và hồ sơ tiêu biểu."),
+ ("Bản đồ thị trường AI Việt Nam", "ban-do-ai/", "Doanh nghiệp AI xếp theo tầng công nghệ và ngành ứng dụng, đặt cạnh xu hướng từ 618 bản đồ thị trường AI toàn cầu, kèm thư viện tra cứu."),
+ ("Sự kiện", "su-kien/", "Sự kiện khởi nghiệp, đổi mới sáng tạo sắp tới, đang diễn ra và thường niên tại Đà Nẵng, TP.HCM, Hà Nội; lịch tháng; tệp lịch .ics cho từng sự kiện."),
+ ("Cơ hội", "co-hoi/", "Kêu gọi hồ sơ, cuộc thi khởi nghiệp, demo day, chương trình tăng tốc, kết nối đầu tư; hạn nộp và đơn vị tham gia."),
+ ("Chính sách", "chinh-sach/", "Văn bản chính sách hỗ trợ khởi nghiệp, đổi mới sáng tạo theo địa phương và năm, kèm kết quả thực hiện khi có số liệu."),
+ ("Đầu tư mạo hiểm 2026", "von-dau-tu/", "Tổng hợp báo cáo VPCA, TVS, DealStreetAsia, Endeavor: số liệu vốn VC, PE, M&A Việt Nam và Đông Nam Á, 18 biểu đồ, 8 nhận định, con đường hình thành unicorn."),
+ ("Dữ liệu", "du-lieu/", "Tải dữ liệu mở CSV, JSON, GeoJSON theo giấy phép CC BY 4.0, cùng số liệu chất lượng dữ liệu."),
+ ("Phương pháp", "gioi-thieu/phuong-phap/", "Nguồn dữ liệu, quy trình đối chiếu, bốn mức xác minh, quy tắc về dữ liệu cá nhân và cách ghi nguồn."),
+]
+_llms_more = "\n## Mô tả các trang\n" + "".join(f"- [{n}]({SITE_URL}/{u}): {d}\n" for n, u, d in _desc_pages)
+_llms_more += f"""
+## Mô hình dữ liệu
+Mỗi hồ sơ là một tệp YAML gồm: tên, loại (startup, quỹ, vườn ươm, tăng tốc, không gian, tổ chức hỗ trợ, trường, viện, cơ quan, doanh nghiệp, đối tác quốc tế, cộng đồng, chuyên gia), lĩnh vực, năm thành lập, tình trạng, website, địa chỉ, mô tả, dòng thời gian, các vòng gọi vốn, case study, mức xác minh và danh sách nguồn. Quan hệ giữa các tổ chức (ươm tạo, đầu tư, trực thuộc, hợp nhất, đối tác) nằm trong tệp CSV riêng. Sự kiện, cơ hội, chính sách và số liệu tham chiếu có tệp riêng.
+
+## Mức xác minh
+- unverified: chưa đối chiếu với nguồn.
+- source_checked: khớp với website hoặc văn bản chính thức.
+- org_confirmed: chính tổ chức xác nhận.
+- partner_verified: một đơn vị hỗ trợ đã làm việc trực tiếp xác nhận.
+
+## Quyền riêng tư
+Hồ sơ tổ chức chỉ dùng kênh liên hệ chung. Hồ sơ chuyên gia chỉ lấy từ nền tảng mà chính người đó đăng ký công khai; email không có trong dữ liệu tải về. Mọi người có quyền yêu cầu xem, sửa, ẩn, xoá thông tin về mình.
+"""
+open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8").write(_llms + _llms_more)
+open(os.path.join(OUT, "llms-full.txt"), "a", encoding="utf-8").write(_llms_more)
+# Markdown version of home
+_md = f"""# {BRAND}
+
+{SITE_DESC}
+
+Cập nhật: {TODAY}. Biên soạn: Nguyễn Văn Chương và cộng đồng đóng góp. Giấy phép dữ liệu: CC BY 4.0.
+
+## Số liệu
+- Hồ sơ: {len(actors)} (startup {_n_st}, quỹ {_n_fund}, tổ chức hỗ trợ {_n_sup}, trường và viện {_n_uni})
+- Sự kiện: {_n_ev}; cơ hội: {len(opps)}
+- Việt Nam: hạng 50 thế giới (StartupBlink 2026), hạng 44/139 (WIPO GII 2025), vốn mạo hiểm 2025: 509 triệu USD (VPCA)
+
+## Câu hỏi thường gặp
+""" + "".join(f"### {q}\n{a}\n\n" for q, a in HOME_FAQ) + _llms_more
+open(os.path.join(OUT, "index.md"), "w", encoding="utf-8").write(_md)
+# RSS feed: sự kiện, cơ hội gần nhất
+import email.utils as _eu
+def _rfc(d):
+    dd = datetime.datetime.combine(datetime.date.fromisoformat(str(d)[:10]), datetime.time(8, 0), tzinfo=datetime.timezone.utc)
+    return _eu.format_datetime(dd)
+_items = []
+for x in sorted([x for x in events if not x.get("_projected")], key=lambda z: z["_start"], reverse=True)[:30]:
+    _items.append((str(x["start"]), x["title"], f"{SITE_URL}/su-kien/{x['id']}/", x.get("summary", "")))
+for o in opps[:30]:
+    d = opp_key_date(o) if "opp_key_date" in globals() else TODAY
+    _items.append((str(d)[:10] if d else TODAY, o["title"], f"{SITE_URL}/co-hoi/{o['id'].removeprefix('opp-')}/", o.get("benefits") or o.get("eligibility") or ""))
+_items = sorted(_items, key=lambda z: z[0], reverse=True)[:40]
+_rss = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
+        f'<title>{e(BRAND)}: sự kiện và cơ hội</title><link>{SITE_URL}/</link><description>{e(SITE_DESC)}</description><language>vi</language>'
+        f'<atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml"/><lastBuildDate>{_rfc(TODAY)}</lastBuildDate>'
+        + "".join(f'<item><title>{e(t)}</title><link>{u}</link><guid>{u}</guid><pubDate>{_rfc(min(d, TODAY))}</pubDate><description>{e(s)}</description></item>' for d, t, u, s in _items)
+        + "</channel></rss>\n")
+open(os.path.join(OUT, "feed.xml"), "w", encoding="utf-8").write(_rss)
+# manifest
+json.dump({"name": BRAND, "short_name": "Hệ sinh thái ĐMST", "start_url": "/", "display": "standalone", "background_color": "#F3F1EC", "theme_color": "#0B6E69", "lang": "vi",
+           "icons": [{"src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml"}]},
+          open(os.path.join(OUT, "manifest.json"), "w", encoding="utf-8"), ensure_ascii=False)
+# agent discovery
+os.makedirs(os.path.join(OUT, ".well-known"), exist_ok=True); os.makedirs(os.path.join(OUT, "ai"), exist_ok=True)
+_summary = {"name": BRAND, "description": SITE_DESC, "url": f"{SITE_URL}/", "language": ["vi", "en"], "license": "https://creativecommons.org/licenses/by/4.0/",
+            "updated": TODAY, "publisher": BRAND, "founder": "Nguyễn Văn Chương (Chuong Nguyen)", "source_code": f"https://github.com/{REPO}",
+            "counts": {"profiles": len(actors), "startups": _n_st, "funds": _n_fund, "support_orgs": _n_sup, "universities_research": _n_uni, "events": _n_ev, "opportunities": len(opps)},
+            "llms_txt": f"{SITE_URL}/llms.txt", "llms_full_txt": f"{SITE_URL}/llms-full.txt", "markdown": f"{SITE_URL}/index.md", "feed": f"{SITE_URL}/feed.xml",
+            "data": {"actors_json": f"{SITE_URL}/data/actors.json", "actors_csv": f"{SITE_URL}/du-lieu/actors.csv", "events_json": f"{SITE_URL}/data/events.json", "stats_json": f"{SITE_URL}/data/stats.json"}}
+json.dump(_summary, open(os.path.join(OUT, "ai", "summary.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+open(os.path.join(OUT, ".well-known", "ai.txt"), "w", encoding="utf-8").write(
+    f"# {BRAND}\n# {SITE_DESC}\nSummary: {SITE_URL}/ai/summary.json\nLLMs: {SITE_URL}/llms.txt\nLLMs-Full: {SITE_URL}/llms-full.txt\nData-License: CC-BY-4.0\nAllow: /\n")
+json.dump({"linkset": [{"anchor": f"{SITE_URL}/data/",
+                        "service-desc": [{"href": f"{SITE_URL}/data/actors.json", "type": "application/json"}, {"href": f"{SITE_URL}/data/events.json", "type": "application/json"}],
+                        "service-doc": [{"href": f"{SITE_URL}/du-lieu/", "type": "text/html"}, {"href": f"{SITE_URL}/llms.txt", "type": "text/plain"}]}]},
+          open(os.path.join(OUT, ".well-known", "api-catalog"), "w", encoding="utf-8"), indent=1)
+_exp = (datetime.date.fromisoformat(TODAY) + datetime.timedelta(days=330)).isoformat()
+_sec = (f"Contact: https://github.com/{REPO}/security/advisories/new\nContact: https://github.com/{REPO}/issues/new/choose\n"
+        + (f"Contact: mailto:{SITE_CFG['contact_email']}\n" if SITE_CFG.get("contact_email") else "")
+        + f"Expires: {_exp}T00:00:00.000Z\nPreferred-Languages: vi, en\nCanonical: {SITE_URL}/.well-known/security.txt\nPolicy: {SITE_URL}/gioi-thieu/quyen-rieng-tu/\n")
+open(os.path.join(OUT, ".well-known", "security.txt"), "w", encoding="utf-8").write(_sec)
+open(os.path.join(OUT, "humans.txt"), "w", encoding="utf-8").write(
+    f"/* TEAM */\nKhởi xướng, điều phối: Nguyễn Văn Chương (Chuong Nguyen)\nĐịa điểm: Đà Nẵng, Việt Nam\nGitHub: https://github.com/chuongnv\n\n/* THANKS */\nCộng đồng đóng góp dữ liệu: https://github.com/{REPO}/graphs/contributors\n\n/* SITE */\nCập nhật: {TODAY}\nNgôn ngữ: Tiếng Việt, English\nCông nghệ: Python, HTML, CSS, JavaScript, Leaflet, Cloudflare Pages\nGiấy phép: mã nguồn MIT, dữ liệu CC BY 4.0\n")
+
 cname = os.path.join(ROOT, "CNAME")
 if os.path.exists(cname):
     shutil.copy(cname, os.path.join(OUT, "CNAME"))
