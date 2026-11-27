@@ -22,11 +22,20 @@ def fold(s):
     s = re.sub(STOP, " ", s)
     return " ".join(re.sub(r"[^a-z0-9 ]+", " ", s).split())
 
-def similar(a, b):
+def similar(a, b, ta=None, tb=None):
+    """Hai tên gần giống: giống nhau trên 85% theo ký tự, hoặc trùng từ 75% trở lên.
+    Lọc nhanh bằng độ dài và các giới hạn trên của difflib trước khi tính đầy đủ."""
     if not a or not b:
         return False
-    ta, tb = set(a.split()), set(b.split())
-    return difflib.SequenceMatcher(None, a, b).ratio() > 0.85 or len(ta & tb) / len(ta | tb) >= 0.75
+    ta = ta if ta is not None else set(a.split())
+    tb = tb if tb is not None else set(b.split())
+    if ta and tb and len(ta & tb) / len(ta | tb) >= 0.75:
+        return True
+    la, lb = len(a), len(b)
+    if 2 * min(la, lb) / (la + lb) <= 0.85:
+        return False
+    sm = difflib.SequenceMatcher(None, a, b)
+    return sm.real_quick_ratio() > 0.85 and sm.quick_ratio() > 0.85 and sm.ratio() > 0.85
 
 ids, names, sites, places = {}, {}, {}, set()
 for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
@@ -69,12 +78,13 @@ folded = []
 for rid, rel in ids.items():
     rec = yaml.safe_load(open(os.path.join(ROOT, rel), encoding="utf-8"))
     names = [rec.get("name", {}).get("vi")] + (rec.get("alt_names") or [])
-    folded.append((rid, rel, [fold(n) for n in names if n]))
+    fn = [fold(n) for n in names if n]
+    folded.append((rid, rel, [(x, set(x.split())) for x in fn]))
 for i, (ia, ra, na) in enumerate(folded):
     for ib, rb, nb in folded[i + 1:]:
         if frozenset((ia, ib)) in allowed:
             continue
-        if any(similar(x, y) for x in na for y in nb):
+        if any(similar(x, y, tx, ty) for x, tx in na for y, ty in nb):
             errors.append(f"{ra}: có thể trùng với {rb}. Nếu là một, hãy gộp hồ sơ; nếu khác nhau, thêm cặp id vào not-duplicates.csv")
 
 for region_dir in sorted(glob.glob(os.path.join(ROOT, "data", "*"))):
