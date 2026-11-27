@@ -349,3 +349,8 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Sự kiện Co4Growth Khóa 4: cập nhật theo bài tường thuật của YBA Đà Nẵng (Top 10, Top 5 nhận vốn mồi 98 triệu đồng mỗi đơn vị, Hội đồng Đánh giá 7 người, liên kết SVF, co4growth.com, đăng ký Khóa 5). Thêm 8 hồ sơ doanh nghiệp, cập nhật 5RTECH và VeeVox; thêm Standard Chartered Foundation, Youth Business International; cập nhật Co4Growth. Trang sự kiện có thêm mục "Doanh nghiệp tham gia" (nhận vốn mồi, các đội khác) và "Nguồn, liên kết".
 - Bổ sung: website chính thức cho 28 trường thành viên VNEI (kiểm tra tiêu đề trang), logo lấy từ chính website trường; dùng logo trường chủ quản cho phân hiệu Lào Cai và viện của TUEBA; thêm tên mới của HCMUTE và ĐH SPKT Vĩnh Long (nay là ĐH Công nghệ Kỹ thuật). Logo VNEI chưa tải được (máy chủ VNEI chặn truy cập từ máy chủ dựng trang).
 - Logo còn thiếu (27/11/2026): VNEI (tệp logo_vnei.png trên vnei.edu.vn, tải qua proxy ảnh công khai vì máy chủ VNEI chặn), ĐH Công nghệ và Quản lý Hữu Nghị (utm.edu.vn), CĐ Công thương miền Trung (mitc.edu.vn), ĐH Tây Nguyên (thư viện logo haitrieu.com), ĐH Nông Lâm Thái Nguyên (cắt từ ảnh đầu trang tuaf.edu.vn). Website tìm qua Google trên trình duyệt. Không thu thập tự động từ Facebook.
+
+## Logo trường từ haitrieu.com (27/11/2026)
+
+- Đọc sitemap bài viết của haitrieu.com: 390 bài logo trường đại học, học viện, cao đẳng, viện. Ghép với danh bạ theo tên chính xác hoặc tên viết tắt; tên gần giống chỉ dùng để tránh tạo trùng, không dùng để gắn logo.
+- Thêm 78 trường đại học, học viện chưa có trên bản đồ (kèm logo, tên viết tắt, mức "chưa xác minh"; địa phương suy từ tên trường, không rõ thì ghi "Việt Nam"); gộp 3 trường bị tạo trùng vào hồ sơ cũ (HUS, UEF, Swinburne).
