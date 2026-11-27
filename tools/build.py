@@ -6,6 +6,7 @@ Biến môi trường:
 """
 import collections, csv, datetime, glob, html, json, os, re as _re, shutil, urllib.parse
 import yaml
+import html
 import sys as _sys
 _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from og import make_card
@@ -112,12 +113,18 @@ LOGO = ('<svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><cir
         '<circle cx="22" cy="8" r="3" fill="var(--ink)"/><circle cx="15" cy="22" r="5" fill="var(--sun)"/>'
         '<path d="M8 9 22 8M8 9l7 13M22 8l-7 14" stroke="var(--ink)" stroke-width="1.5" fill="none"/></svg>')
 
+BRAND = "Bản đồ hệ sinh thái khởi nghiệp ĐMST Việt Nam"
+AUTHOR = {"@type": "Person", "name": "Nguyễn Văn Chương (Chuong Nguyen)", "url": "https://github.com/chuongnv", "jobTitle": "Người khởi xướng, điều phối dự án"}
+PUBLISHER = {"@type": "Organization", "@id": "https://innovation.invietnam.vn/#org", "name": BRAND, "alternateName": ["Vietnam Startup & Innovation Ecosystem Map", "Hệ sinh thái ĐMST"],
+             "url": "https://innovation.invietnam.vn/", "logo": "https://innovation.invietnam.vn/assets/og-default.png",
+             "sameAs": ["https://github.com/chuongnv/vietnam-innovation-ecosystem"], "founder": AUTHOR}
+
 def page(title, body, active="", desc="", scripts=(), head=""):
     nav = "".join(
         f'<a href="{SITE_ROOT}{href}" data-i18n="{key}"{CUR if k == active else ""}>{key}</a>'
         for k, href, key in NAV)
     sc = "".join(f'<script src="{SITE_ROOT}assets/{s}" defer></script>' for s in scripts)
-    full_title = f"{title} | Bản đồ hệ sinh thái ĐMST Việt Nam" if title else "Bản đồ hệ sinh thái khởi nghiệp ĐMST Việt Nam"
+    full_title = f"{title} | {BRAND}" if title else BRAND
     return f"""<!doctype html>
 <html lang="vi" data-root="{SITE_ROOT}">
 <head>
@@ -126,6 +133,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 <title>{e(full_title)}</title>
 <meta name="description" content="{e(desc or 'Danh bạ mở về startup, vườn ươm, quỹ, không gian sáng tạo và chính sách khởi nghiệp đổi mới sáng tạo Việt Nam.')}">
 <meta property="og:title" content="{e(full_title)}">
+<meta name="author" content="Nguyễn Văn Chương (Chuong Nguyen) và cộng đồng đóng góp">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap">
 <link rel="stylesheet" href="{SITE_ROOT}assets/style.css">
@@ -136,7 +144,7 @@ def page(title, body, active="", desc="", scripts=(), head=""):
 <body>
 <a class="sr" href="#main">Bỏ qua thanh điều hướng</a>
 <header class="top"><div class="wrap">
-<a class="brand" href="{SITE_ROOT}">{LOGO}<span>Hệ sinh thái ĐMST</span></a>
+<a class="brand" href="{SITE_ROOT}" title="{BRAND}">{LOGO}<span>Hệ sinh thái ĐMST</span></a>
 <nav class="nav" aria-label="Chính">{nav}</nav>
 <div class="tools">
 <a class="btn ghost contrib" href="https://github.com/{REPO}/blob/main/CONTRIBUTING.md" data-i18n="nav_contribute">Đóng góp</a>
@@ -178,9 +186,18 @@ def write(rel, content, lastmod=None):
         redirect = 'http-equiv="refresh"' in content or 'name="robots" content="noindex"' in content
         m = _re.search(r'<meta name="description" content="([^"]*)"', content)
         d = m.group(1) if m else ""
+        if d:
+            nd = d
+            if len(html.unescape(nd)) > 160:
+                cut = html.unescape(nd)[:157].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+                nd = html.escape(cut, quote=True)
+            elif len(html.unescape(nd)) < 70:
+                nd = html.escape(html.unescape(nd).rstrip(".") + ". " + BRAND + ".", quote=True)
+            if nd != d:
+                content = content.replace(f'<meta name="description" content="{d}"', f'<meta name="description" content="{nd}"', 1); d = nd
         t = _re.search(r"<title>(.*?)</title>", content, _re.S)
         tags = [f'<link rel="canonical" href="{full}">', f'<meta property="og:url" content="{full}">',
-                '<meta property="og:site_name" content="Hệ sinh thái khởi nghiệp ĐMST Việt Nam">', '<meta property="og:locale" content="vi_VN">',
+                f'<meta property="og:site_name" content="{BRAND}">', '<meta property="og:locale" content="vi_VN">',
                 f'<meta property="og:description" content="{d}">']
         if 'property="og:type"' not in content:
             tags.append('<meta property="og:type" content="website">')
@@ -192,7 +209,20 @@ def write(rel, content, lastmod=None):
         if redirect or rel == "404.html":
             tags = ['<meta name="robots" content="noindex">'] + tags[1:]
         else:
-            PAGES.append((url_path, lastmod or TODAY))
+            lm = lastmod or TODAY
+            PAGES.append((url_path, min(str(lm)[:10], TODAY)))
+            ld = [PUBLISHER]
+            segs = [s for s in url_path.strip("/").split("/") if s]
+            if segs:
+                SEC = {"danh-ba": "Danh bạ", "thanh-pho": "Địa phương", "linh-vuc": "Lĩnh vực", "co-hoi": "Cơ hội", "su-kien": "Sự kiện", "chinh-sach": "Chính sách",
+                       "du-lieu": "Dữ liệu", "gioi-thieu": "Giới thiệu", "startup": "Startup", "to-chuc": "Tổ chức", "chuyen-gia": "Chuyên gia", "ban-do-ai": "Bản đồ thị trường AI", "von-dau-tu": "Đầu tư mạo hiểm 2026"}
+                items = [{"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": f"{SITE_URL}/"}]
+                if len(segs) >= 1:
+                    items.append({"@type": "ListItem", "position": 2, "name": SEC.get(segs[0], segs[0]), "item": f"{SITE_URL}/{segs[0]}/"})
+                if len(segs) >= 2 and t:
+                    items.append({"@type": "ListItem", "position": 3, "name": html.unescape(t.group(1)).split(" | ")[0].strip(), "item": full})
+                ld.append({"@type": "BreadcrumbList", "itemListElement": items})
+            tags.append('<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@graph": ld}, ensure_ascii=False) + "</script>")
         content = content.replace("</head>", "\n".join(tags) + "\n</head>", 1)
     open(path, "w", encoding="utf-8").write(content)
 
@@ -973,7 +1003,8 @@ po_html = "".join(f'<li><b>{e(x["document"])}</b><br><span class="muted">{e(x.ge
 verified = sum(1 for a in actors if a["verification"]["level"] != "unverified")
 home = f"""
 <section class="hero"><div class="wrap">
-<h1 data-vi="Ai đang làm gì cho khởi nghiệp Việt Nam?" data-en="Who is doing what for startups in Vietnam?">Ai đang làm gì cho khởi nghiệp Việt Nam?</h1>
+<p class="eyebrow" data-vi="Ai đang làm gì cho khởi nghiệp Việt Nam?" data-en="Who is doing what for startups in Vietnam?">Ai đang làm gì cho khởi nghiệp Việt Nam?</p>
+<h1 data-vi="{BRAND}" data-en="Vietnam Startup &amp; Innovation Ecosystem Map">{BRAND}</h1>
 <p class="lead" data-vi="Danh bạ mở về startup, quỹ, vườn ươm, trường, cơ quan và cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật." data-en="An open, community-maintained directory of startups, funds, incubators, universities, agencies and opportunities in Vietnam's innovation ecosystem.">Danh bạ mở về startup, quỹ, vườn ươm, trường, cơ quan và cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam, do cộng đồng cùng cập nhật.</p>
 <form class="search" action="{SITE_ROOT}danh-ba/" role="search">
 <label class="sr" for="hq" data-i18n="search_ph">Tìm</label>
@@ -1003,7 +1034,7 @@ home = f"""
 <p style="margin-top:16px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-vi="Mở danh bạ" data-en="Open the directory">Mở danh bạ</a> <a class="btn ghost" href="https://github.com/{REPO}/issues/new?template=them-hoac-sua-ho-so.yml" data-i18n="add_missing">Thêm hồ sơ còn thiếu</a></p></div>
 </div></section>
 """
-home_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": "Hệ sinh thái khởi nghiệp ĐMST Việt Nam", "url": f"{SITE_URL}/", "inLanguage": "vi",
+home_ld = {"@context": "https://schema.org", "@type": "WebSite", "name": BRAND, "url": f"{SITE_URL}/", "inLanguage": ["vi", "en"], "publisher": {"@id": "https://innovation.invietnam.vn/#org"}, "author": AUTHOR,
            "potentialAction": {"@type": "SearchAction", "target": f"{SITE_URL}/danh-ba/?q={{search_term_string}}", "query-input": "required name=search_term_string"}}
 write("index.html", page("", home, "home", desc=f"Danh bạ mở về {len(actors)} startup, quỹ, vườn ươm, trường, cơ quan và {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng.",
       head='<script type="application/ld+json">' + json.dumps(home_ld, ensure_ascii=False) + "</script>"))
@@ -1239,7 +1270,13 @@ write("du-lieu/index.html", page("Dữ liệu", f"""
 <li><a href="https://github.com/{REPO}/blob/main/data/LICENSE.md" data-vi="Giấy phép dữ liệu CC BY 4.0 và cách ghi nguồn" data-en="CC BY 4.0 data licence and attribution">Giấy phép dữ liệu CC BY 4.0 và cách ghi nguồn</a></li>
 <li><a href="https://github.com/{REPO}/blob/main/logos/README.md" data-vi="Logo là nhãn hiệu của tổ chức, không thuộc CC BY" data-en="Logos are trademarks, not CC BY">Logo là nhãn hiệu của tổ chức, không thuộc CC BY</a></li>
 <li><a href="https://github.com/{REPO}/commits/main/data" data-vi="Lịch sử thay đổi dữ liệu" data-en="Data change history">Lịch sử thay đổi dữ liệu</a></li></ul></section>
-</div>""", "data", desc=f"Tải miễn phí dữ liệu {len(actors)} tác nhân, {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp Việt Nam: CSV, JSON, GeoJSON, giấy phép CC BY 4.0, kèm số liệu chất lượng dữ liệu."))
+</div>""", "data", desc=f"Tải miễn phí dữ liệu {len(actors)} tác nhân, {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp Việt Nam: CSV, JSON, GeoJSON, giấy phép CC BY 4.0, kèm số liệu chất lượng dữ liệu.",
+      head='<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "Dataset", "name": BRAND + " – dữ liệu mở",
+            "description": f"{len(actors)} hồ sơ startup, quỹ, vườn ươm, trường, viện, cơ quan và {len(opps)} cơ hội trong hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam; mỗi hồ sơ ghi nguồn và mức xác minh.",
+            "url": f"{SITE_URL}/du-lieu/", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": True, "creator": PUBLISHER, "author": AUTHOR,
+            "dateModified": TODAY, "inLanguage": "vi", "spatialCoverage": {"@type": "Place", "name": "Việt Nam"}, "keywords": ["khởi nghiệp", "đổi mới sáng tạo", "startup", "Việt Nam", "vườn ươm", "quỹ đầu tư"],
+            "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{SITE_URL}/du-lieu/actors.csv"},
+                             {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{SITE_URL}/data/actors.json"}]}, ensure_ascii=False) + "</script>"))
 
 # ---- giới thiệu ----
 def info_page(path, title, title_en, html_body, desc):
@@ -2090,7 +2127,7 @@ for _f in glob.glob(os.path.join(OUT, "thanh-pho", "*", "index.html")):
 # ---------- 404, sitemap, robots ----------
 write("404.html", page("Không tìm thấy", f"""<div class="wrap page-head"><h1 data-vi="Không có trang này" data-en="This page does not exist">Không có trang này</h1>
 <p class="lead" data-vi="Đường dẫn có thể đã đổi. Tìm trong danh bạ, hoặc quay về trang chủ." data-en="The link may have changed. Search the directory, or go back home.">Đường dẫn có thể đã đổi.</p>
-<p style="margin-top:20px"><a class="btn primary" href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a></p></div>"""))
+<p style="margin-top:20px"><a class="btn primary" href="{SITE_ROOT}" data-vi="Về trang chủ" data-en="Back to home">Về trang chủ</a> <a class="btn ghost" href="{SITE_ROOT}danh-ba/" data-i18n="nav_dir">Danh bạ</a> <a class="btn ghost" href="{SITE_ROOT}su-kien/">Sự kiện</a> <a class="btn ghost" href="{SITE_ROOT}thanh-pho/">Địa phương</a></p></div>"""))
 urls = [""] + [p for _, p, _ in NAV[1:]] + [f"thanh-pho/{c['id']}/" for c in (BENCH.get("cities", []) if "BENCH" in globals() else [])] + [f"a/{a['id']}/" for a in actors]
 def _urlset(items):
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -2110,7 +2147,62 @@ for g, items in groups.items():
 open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8").write(
     '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"<sitemap><loc>{SITE_URL}/{n}</loc><lastmod>{d}</lastmod></sitemap>\n" for n, d in files) + "</sitemapindex>\n")
-open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
+open(os.path.join(OUT, "robots.txt"), "w").write(
+    "# Dữ liệu mở CC BY 4.0: cho phép mọi công cụ tìm kiếm và trợ lý AI đọc, trích dẫn.\n"
+    + "".join(f"User-agent: {ua}\nAllow: /\n\n" for ua in ("GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Google-Extended", "Applebot-Extended", "CCBot"))
+    + f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n# Tóm tắt cho mô hình ngôn ngữ: {SITE_URL}/llms.txt\n")
+open(os.path.join(OUT, "_headers"), "w").write("""/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Cross-Origin-Opener-Policy: same-origin
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+""")
+# ---------- llms.txt, llms-full.txt ----------
+_tc = collections.Counter(a["type"] for a in actors)
+_reg = collections.Counter(a["region"] for a in actors)
+_llms = f"""# {BRAND}
+
+> Danh bạ mở, do cộng đồng cập nhật, về hệ sinh thái khởi nghiệp đổi mới sáng tạo Việt Nam: {len(actors):,} hồ sơ (startup, quỹ, vườn ươm, trường, viện, cơ quan nhà nước, chuyên gia), sự kiện, cơ hội gọi vốn, cuộc thi và chính sách tại TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng. Dữ liệu theo giấy phép CC BY 4.0, mỗi hồ sơ ghi nguồn và mức xác minh. Cập nhật {fmt_date(TODAY)}.
+
+Người khởi xướng, điều phối: Nguyễn Văn Chương (Chuong Nguyen), Đà Nẵng. Mã nguồn và dữ liệu: https://github.com/{REPO}
+
+## Trang chính
+- [Danh bạ]({SITE_URL}/danh-ba/): tìm, lọc theo loại, lĩnh vực, địa phương; tải CSV
+- [Địa phương]({SITE_URL}/thanh-pho/): tổng quan Việt Nam và từng thành phố, xếp hạng, vốn đầu tư, tình hình có nguồn
+- [Sự kiện]({SITE_URL}/su-kien/): sự kiện khởi nghiệp, đổi mới sáng tạo sắp tới và thường niên
+- [Cơ hội]({SITE_URL}/co-hoi/): kêu gọi hồ sơ, cuộc thi, demo day, kết nối đầu tư
+- [Chính sách]({SITE_URL}/chinh-sach/): văn bản chính sách và kết quả thực hiện
+- [Bản đồ thị trường AI Việt Nam]({SITE_URL}/ban-do-ai/)
+- [Đầu tư mạo hiểm 2026]({SITE_URL}/von-dau-tu/): số liệu và nhận định từ VPCA, TVS, DealStreetAsia, Endeavor
+- [Phương pháp]({SITE_URL}/gioi-thieu/phuong-phap/), [Quyền riêng tư]({SITE_URL}/gioi-thieu/quyen-rieng-tu/)
+
+## Dữ liệu tải về
+- [Tất cả hồ sơ (JSON)]({SITE_URL}/data/actors.json)
+- [Tất cả hồ sơ (CSV)]({SITE_URL}/du-lieu/actors.csv)
+- [Sự kiện (JSON)]({SITE_URL}/data/events.json)
+- [Thống kê (JSON)]({SITE_URL}/data/stats.json)
+
+## Cách trích dẫn
+Dữ liệu: {BRAND} và những người đóng góp, innovation.invietnam.vn, CC BY 4.0 (truy cập ngày …).
+
+## Optional
+- [Bản đầy đủ cho mô hình ngôn ngữ]({SITE_URL}/llms-full.txt)
+"""
+open(os.path.join(OUT, "llms.txt"), "w", encoding="utf-8").write(_llms)
+_full = [_llms, "\n## Số liệu danh bạ\n", "".join(f"- {VIE_TYPE.get(t, t)}: {n}\n" for t, n in _tc.most_common()),
+         "".join(f"- Khu vực {k}: {n} hồ sơ\n" for k, n in _reg.most_common())]
+if BENCH:
+    _full.append("\n## Tình hình Việt Nam\n" + "".join(f"- {x['text']} (Nguồn: {', '.join(x.get('sources') or [x['source']])})\n" for x in BENCH["country"].get("insights", [])))
+    for c in BENCH.get("cities", []):
+        _full.append(f"\n## Tình hình {c['name']}\n" + "".join(f"- {x['text']} (Nguồn: {', '.join(x.get('sources') or [x['source']])})\n" for x in c.get("insights", [])))
+_full.append("\n## Sự kiện sắp tới\n" + "".join(f"- {fmt_date(x['start'])}: {x['title']}, {x.get('venue','')} ({SITE_URL}/su-kien/{x['id']}/)\n" for x in sorted([x for x in events if x['_state'] in ('upcoming','live') and not x.get('_projected')], key=lambda z: z['_start'])))
+open(os.path.join(OUT, "llms-full.txt"), "w", encoding="utf-8").write("".join(_full))
 cname = os.path.join(ROOT, "CNAME")
 if os.path.exists(cname):
     shutil.copy(cname, os.path.join(OUT, "CNAME"))

@@ -78,3 +78,15 @@ Tham chiếu: StartupBlink (trang quốc gia và thành phố), Algeria Ecosyste
 - Logo đã thu thập trong các đợt 1–3 vẫn dùng cho danh bạ, hồ sơ, ảnh chia sẻ.
 
 - Định hướng khi vẽ lại bản đồ hệ sinh thái: theo cách trình bày của trang Bản đồ thị trường AI (`/ban-do-ai/`): mỗi nhóm một khung, bên trong là các ô logo và tên, có số lượng, lọc theo địa phương, bấm sang hồ sơ (người điều phối đề xuất, 23/11/2026).
+
+## Cải thiện SEO, GEO theo GEO Check (27/11/2026)
+
+Điểm ban đầu: 52/100 (SEO và GEO), 36/100 (khả năng được AI trích dẫn), 0/100 (bảo mật email).
+- Thương hiệu thống nhất: tiêu đề, H1 trang chủ, schema dùng cùng tên "Bản đồ hệ sinh thái khởi nghiệp ĐMST Việt Nam".
+- Ghi tác giả: thẻ `author`, schema Organization (đơn vị xuất bản) và Person (người khởi xướng) trên mọi trang.
+- Schema: BreadcrumbList cho mọi trang con, Dataset cho trang Dữ liệu, WebSite có publisher và author.
+- Mô tả trang luôn dài 70–160 ký tự (tự cắt hoặc bổ sung khi dựng); `lastmod` trong sitemap không vượt ngày dựng.
+- Trang 404 có nút về trang chủ và các mục chính.
+- `llms.txt`, `llms-full.txt` (tóm tắt, trang chính, dữ liệu tải về, cách trích dẫn, tình hình có nguồn, sự kiện sắp tới).
+- `robots.txt` cho phép rõ các trình thu thập AI; `_headers` thêm các header bảo mật (nosniff, Referrer-Policy, X-Frame-Options, Permissions-Policy, HSTS, COOP).
+- Bảo mật email: cần thêm bản ghi DNS (SPF, DMARC) trên Cloudflare, xem hướng dẫn trong trao đổi.

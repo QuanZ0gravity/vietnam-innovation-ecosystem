@@ -492,3 +492,4 @@ img.person{border-radius:50%!important;object-fit:cover!important;padding:0!impo
 .wheel-box{max-width:920px;margin:6px auto 10px;border-radius:20px;overflow:hidden;box-shadow:0 10px 30px -18px rgba(16,42,44,.5)}
 .wheel-box svg{display:block;width:100%;height:auto}
 .wheel-box a:hover rect{stroke:#102A2C;stroke-width:2}
+.hero .eyebrow{font-weight:700;color:var(--sea);margin:0 0 6px;letter-spacing:.02em}
