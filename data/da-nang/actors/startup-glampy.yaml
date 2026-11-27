@@ -2,9 +2,6 @@ id: startup-glampy
 name:
   vi: Glampy
 type: startup
-sectors:
-- health
-- ai
 status: inactive
 region: da-nang
 verification:

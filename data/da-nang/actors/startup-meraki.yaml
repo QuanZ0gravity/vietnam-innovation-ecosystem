@@ -2,8 +2,6 @@ id: startup-meraki
 name:
   vi: Meraki
 type: startup
-sectors:
-- edu
 status: active
 region: da-nang
 verification:

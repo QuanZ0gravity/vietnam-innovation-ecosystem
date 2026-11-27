@@ -174,3 +174,25 @@
   summary: Cuộc thi khởi nghiệp, đổi mới sáng tạo thường niên dành cho học sinh, sinh viên tại Đà Nẵng.
   opportunity: opp-danang-green-future-solutions-2026
   source: https://docs.google.com/spreadsheets/d/1eFDIsjSwkr1y0I5S60WTzurd92pwsLGx_CH_4lm57JA
+- id: co4growth-khoa-4-pitching-2026
+  title: Tổng kết và Pitching gọi vốn Co4Growth Khóa 4 – Từ Vững Nội Lực Đến Hiệu Quả Đầu Tư
+  start: '2026-11-27'
+  end: '2026-11-27'
+  time: 08:30–12:00
+  venue: Phòng lab Khu E, tầng 4, tòa ICT 1, Khu Công viên phần mềm số 2 Đà Nẵng (đường Như Nguyệt)
+  category: capital
+  format: hybrid
+  organizer: Quỹ Khởi nghiệp Doanh nghiệp KH&CN Việt Nam (SVF), Co4Growth
+  organizer_ids:
+  - fund-svf
+  - support-org-co4growth
+  - support-org-yba-da-nang
+  url: https://forms.gle/3oLLoXa2eeh41ena6
+  summary: 'Khép lại Khóa 4 Chương trình Tăng tốc "Vững Tài chính – Sáng Niềm tin" sau 6 tháng: TOP 10 doanh nghiệp thuyết trình gọi vốn, tranh 5 suất vốn mồi không hoàn lại tổng 98 triệu đồng từ Standard Chartered Foundation; công bố TOP 5; kết nối chuyên gia, nhà đầu tư. Hình thức trực tiếp kết hợp trực tuyến.'
+  speakers:
+  - name: Nguyễn Văn Chương
+    title: Phó Chủ tịch YBA Đà Nẵng phụ trách Khởi nghiệp – Đổi mới sáng tạo; thành viên Hội đồng đánh giá
+    org: YBA Đà Nẵng
+    org_id: support-org-yba-da-nang
+  speakers_source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/
+  source: https://www.ybadanang.com/su-kien/2026-11-27-co4growth-pitching/

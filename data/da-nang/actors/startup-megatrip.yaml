@@ -2,8 +2,6 @@ id: startup-megatrip
 name:
   vi: Megatrip
 type: startup
-sectors:
-- tourism
 status: active
 website: https://megatrip.vn
 region: da-nang

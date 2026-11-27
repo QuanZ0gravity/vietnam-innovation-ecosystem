@@ -2,8 +2,6 @@ id: startup-h2o-farm
 name:
   vi: H2O Farm
 type: startup
-sectors:
-- agrifood
 founded: 2016
 status: active
 region: da-nang

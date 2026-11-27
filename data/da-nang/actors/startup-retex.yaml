@@ -2,8 +2,6 @@ id: startup-retex
 name:
   vi: Retex
 type: startup
-sectors:
-- ai
 status: active
 region: da-nang
 verification:

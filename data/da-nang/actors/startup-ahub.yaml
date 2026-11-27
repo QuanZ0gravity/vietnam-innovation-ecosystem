@@ -2,9 +2,6 @@ id: startup-ahub
 name:
   vi: Ahub
 type: startup
-sectors:
-- edu
-- ai
 status: active
 region: da-nang
 verification:

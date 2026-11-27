@@ -2,9 +2,6 @@ id: startup-chative
 name:
   vi: Chative
 type: startup
-sectors:
-- ai
-- marketing
 status: active
 website: https://chative.ai
 region: da-nang

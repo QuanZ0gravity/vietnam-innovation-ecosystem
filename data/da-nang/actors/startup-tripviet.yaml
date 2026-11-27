@@ -2,8 +2,6 @@ id: startup-tripviet
 name:
   vi: TripViet
 type: startup
-sectors:
-- tourism
 status: active
 website: https://tripviet.com
 region: da-nang

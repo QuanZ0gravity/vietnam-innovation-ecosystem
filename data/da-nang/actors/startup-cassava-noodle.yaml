@@ -2,8 +2,6 @@ id: startup-cassava-noodle
 name:
   vi: Cassava Noodle
 type: startup
-sectors:
-- agrifood
 status: active
 region: da-nang
 verification:

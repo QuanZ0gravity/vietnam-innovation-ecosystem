@@ -2,8 +2,6 @@ id: startup-anh-duong-fresco-village
 name:
   vi: Anh Duong Fresco Village
 type: startup
-sectors:
-- tourism
 status: active
 region: da-nang
 verification:

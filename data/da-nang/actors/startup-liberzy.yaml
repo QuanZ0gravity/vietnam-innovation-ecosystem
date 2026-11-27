@@ -2,8 +2,6 @@ id: startup-liberzy
 name:
   vi: Liberzy
 type: startup
-sectors:
-- tourism
 status: active
 region: da-nang
 verification:

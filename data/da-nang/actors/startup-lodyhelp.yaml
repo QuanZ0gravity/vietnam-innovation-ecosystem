@@ -2,8 +2,6 @@ id: startup-lodyhelp
 name:
   vi: LodyHelp
 type: startup
-sectors:
-- property
 status: active
 region: da-nang
 verification:

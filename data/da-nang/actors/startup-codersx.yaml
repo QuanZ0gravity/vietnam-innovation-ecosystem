@@ -2,8 +2,6 @@ id: startup-codersx
 name:
   vi: CodersX
 type: startup
-sectors:
-- edu
 status: active
 region: da-nang
 verification:

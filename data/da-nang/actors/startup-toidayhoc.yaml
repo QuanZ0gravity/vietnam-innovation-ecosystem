@@ -2,8 +2,6 @@ id: startup-toidayhoc
 name:
   vi: Toidayhoc
 type: startup
-sectors:
-- edu
 status: active
 website: https://toidayhoc.com/
 region: da-nang

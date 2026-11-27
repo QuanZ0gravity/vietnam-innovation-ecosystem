@@ -2,8 +2,6 @@ id: startup-shipway
 name:
   vi: Shipway
 type: startup
-sectors:
-- mobility
 status: active
 region: da-nang
 verification:

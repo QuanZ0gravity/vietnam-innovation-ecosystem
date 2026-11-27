@@ -2,8 +2,6 @@ id: startup-midas-ecomlab
 name:
   vi: Midas Ecomlab
 type: startup
-sectors:
-- commerce
 founded: 2024
 status: active
 region: da-nang

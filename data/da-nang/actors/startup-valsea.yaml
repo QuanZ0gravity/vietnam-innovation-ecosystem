@@ -2,8 +2,6 @@ id: startup-valsea
 name:
   vi: Valsea
 type: startup
-sectors:
-- ai
 founded: 2025
 status: active
 website: https://valsea.ai

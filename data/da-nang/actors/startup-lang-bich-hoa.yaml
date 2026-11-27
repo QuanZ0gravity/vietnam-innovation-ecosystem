@@ -2,8 +2,6 @@ id: startup-lang-bich-hoa
 name:
   vi: Lang Bich Hoa
 type: startup
-sectors:
-- tourism
 status: active
 region: da-nang
 verification:

@@ -2,9 +2,6 @@ id: startup-m-medic
 name:
   vi: M-Medic
 type: startup
-sectors:
-- health
-- ai
 status: active
 region: da-nang
 verification:

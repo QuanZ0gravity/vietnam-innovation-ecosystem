@@ -2,8 +2,6 @@ id: startup-bizverse
 name:
   vi: Bizverse
 type: startup
-sectors:
-- web3
 founded: 2022
 status: active
 website: https://bizverse.io

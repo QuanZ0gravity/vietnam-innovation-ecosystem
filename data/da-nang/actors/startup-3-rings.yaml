@@ -2,8 +2,6 @@ id: startup-3-rings
 name:
   vi: 3 Rings
 type: startup
-sectors:
-- commerce
 status: inactive
 region: da-nang
 verification:

@@ -2,8 +2,6 @@ id: startup-forest-protector
 name:
   vi: Forest Protector
 type: startup
-sectors:
-- climate
 status: active
 region: da-nang
 verification:

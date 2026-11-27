@@ -2,9 +2,6 @@ id: startup-just-order
 name:
   vi: Just Order
 type: startup
-sectors:
-- ai
-- commerce
 status: unknown
 region: da-nang
 verification:

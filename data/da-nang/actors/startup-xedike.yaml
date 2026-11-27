@@ -2,8 +2,6 @@ id: startup-xedike
 name:
   vi: XEDIKE
 type: startup
-sectors:
-- mobility
 status: inactive
 region: da-nang
 verification:

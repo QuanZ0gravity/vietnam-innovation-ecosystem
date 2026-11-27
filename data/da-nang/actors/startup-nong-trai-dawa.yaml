@@ -2,8 +2,6 @@ id: startup-nong-trai-dawa
 name:
   vi: Nong trai Dawa
 type: startup
-sectors:
-- agrifood
 status: inactive
 region: da-nang
 verification:

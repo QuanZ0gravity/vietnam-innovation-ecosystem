@@ -2,8 +2,6 @@ id: startup-tuan-thi
 name:
   vi: Tuan Thi
 type: startup
-sectors:
-- tourism
 status: active
 region: da-nang
 verification:

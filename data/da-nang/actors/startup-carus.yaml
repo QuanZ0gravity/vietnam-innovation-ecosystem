@@ -2,9 +2,6 @@ id: startup-carus
 name:
   vi: Carus
 type: startup
-sectors:
-- mobility
-- ai
 status: active
 region: da-nang
 verification:

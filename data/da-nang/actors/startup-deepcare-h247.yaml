@@ -2,9 +2,6 @@ id: startup-deepcare-h247
 name:
   vi: DeepCare (H247)
 type: startup
-sectors:
-- health
-- ai
 status: active
 website: https://deepcare.io
 region: da-nang

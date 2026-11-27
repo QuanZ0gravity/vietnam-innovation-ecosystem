@@ -2,8 +2,6 @@ id: startup-hue-lotus
 name:
   vi: Hue Lotus
 type: startup
-sectors:
-- tourism
 status: active
 region: da-nang
 verification:
