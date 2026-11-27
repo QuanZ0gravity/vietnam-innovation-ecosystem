@@ -97,3 +97,19 @@
   url: https://hanoi2026.svef.ch/
   summary: 'Chủ đề "Từ sức mạnh song phương đến tác động khu vực": khởi động thực thi Hiệp định EFTA – Việt Nam, kết nối tài chính, chuyển đổi công nghiệp, AI và kinh tế số; kết nối doanh nghiệp B2B; tham quan khu công nghiệp Hải Phòng, Bắc Ninh.'
   source: https://hanoi2026.svef.ch/
+- id: vnei-summit-2026
+  title: 'VNEI Summit 2026: Từ chính sách đến thực thi'
+  start: '2026-10-03'
+  end: '2026-10-03'
+  time: Buổi chiều
+  venue: Trung tâm Đổi mới sáng tạo Quốc gia (NIC), Hà Nội
+  category: ecosystem
+  organizer: Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam (VNEI), NIC
+  organizer_ids:
+  - support-org-vnei
+  - government-nic
+  url: https://vnei.edu.vn/
+  recurrence: annual
+  month: 10
+  summary: Diễn đàn thường niên của mạng lưới các trường đại học, cao đẳng về đổi mới sáng tạo và khởi nghiệp, quy tụ đại diện các trường, cơ quan quản lý, doanh nghiệp và quỹ đầu tư.
+  source: https://vnei.edu.vn/

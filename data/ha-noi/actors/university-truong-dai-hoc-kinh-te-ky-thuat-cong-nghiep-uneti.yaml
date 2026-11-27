@@ -1,0 +1,12 @@
+id: university-truong-dai-hoc-kinh-te-ky-thuat-cong-nghiep-uneti
+name:
+  vi: Trường Đại học Kinh tế – Kỹ thuật Công nghiệp (UNETI)
+type: university
+description:
+  vi: Thành viên Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI).
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- VNEI – Danh sách thành viên Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam (11/2026)
+source_url: https://vnei.edu.vn/danh-sach-thanh-vien

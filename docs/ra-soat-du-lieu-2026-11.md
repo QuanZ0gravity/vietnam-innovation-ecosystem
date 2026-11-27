@@ -335,3 +335,10 @@ Cổng có 3.523 bộ dữ liệu, phần lớn là dữ liệu hành chính c�
 - Dùng trình duyệt của người điều phối để tìm website chính thức (Google) và đọc đường dẫn logo trên các trang chặn truy cập từ máy chủ; tải ảnh về khi máy chủ ảnh cho phép, nếu không thì dùng bản logo trên Wikimedia Commons.
 - Thêm logo: CĐ Điện lực Miền Trung (cdmt.vn), CĐ Kinh tế Công nghệ và Thủy lợi Miền Trung (ctew.edu.vn, logo trắng đặt trên nền tối), Swinburne Việt Nam (Commons), CĐ THACO (logo THACO, Commons), Sở KH&CN Đà Nẵng và Sở KH&CN TP.HCM (biểu trưng Bộ KH&CN, Commons), DAVAS (davas.vc), Ecomdy Accelerator Fund I (logo Ecomdy). Thêm website: cdmt.vn, thacocollege.edu.vn, ctew.edu.vn, dost.danang.gov.vn, dseza.danang.gov.vn, davas.vc.
 - Ban QL Khu CNC và các KCN (DSEZA): tìm được logo trên website nhưng máy chủ ảnh chặn tải tự động. Enouvo Space: tên miền đã ngừng hoạt động.
+
+## VNEI – Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam (27/11/2026)
+
+- Đọc trang danh sách thành viên vnei.edu.vn (95 thành viên) qua trình duyệt (trang chặn truy cập từ máy chủ). Thêm hồ sơ VNEI (thuộc NIC, thành lập 2023, địa chỉ Tòa nhà NIC), sự kiện VNEI Summit 2026 (03/10/2026, thường niên).
+- 94 thành viên có tên: gắn 18 hồ sơ đã có (FIIS, BK Holdings, IEC, CEI Huế, CSIE, Greenwich, NIIC, IUH, HCMUT-TBI, Viện Sáng tạo ĐH SPKT, FPT Polytechnic, ĐH Đông Á, CĐ Nghề, CĐ Thương mại, CĐ Quảng Nam, ĐH Duy Tân, DHV, ĐH FPT); tạo mới 132 hồ sơ (trường, trung tâm khởi nghiệp, ĐMST trong trường); quan hệ "thuộc" (trung tâm → trường) và "đối tác" (thành viên → VNEI).
+- Trung tâm Công Thương TP.HCM trùng với hồ sơ HOIP đã có: dùng hồ sơ cũ. Các cặp tên gần giống nhưng khác đơn vị ghi vào `data/ha-noi/not-duplicates.csv`.
+- Logo thành viên nằm trên máy chủ ảnh chặn tải tự động; chưa lấy.

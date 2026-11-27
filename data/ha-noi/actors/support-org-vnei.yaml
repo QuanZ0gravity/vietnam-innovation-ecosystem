@@ -1,0 +1,30 @@
+id: support-org-vnei
+name:
+  vi: Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI)
+  en: Vietnam University and College Innovation & Entrepreneurship Network (VNEI)
+alt_names:
+- VNEI
+- Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam
+type: support_org
+categories:
+- Mạng lưới trường đại học, cao đẳng
+- Đổi mới sáng tạo, khởi nghiệp trong trường học
+founded: 2023
+status: active
+website: https://vnei.edu.vn/
+address: Tòa nhà NIC, ngõ 7 Tôn Thất Thuyết, Cầu Giấy, Hà Nội
+description:
+  vi: Mạng lưới các trường đại học, cao đẳng và trung tâm đổi mới sáng tạo, khởi nghiệp trong trường, ra đời dưới sự bảo trợ của Trung tâm Đổi mới sáng tạo Quốc gia (NIC), nhằm gắn kết và tăng cường hợp tác giữa các đơn vị cùng chức năng. Có 95 thành viên (11/2026); tổ chức VNEI Summit, Innovation Tour, khóa đào tạo, cuộc thi.
+history:
+- date: '2026-10-03'
+  text: VNEI Summit 2026 "Từ chính sách đến thực thi" tại Trung tâm Đổi mới sáng tạo Quốc gia (NIC), Hà Nội.
+  source: https://vnei.edu.vn/
+- date: 2026-08
+  text: 'Phối hợp Đại học Huế và NIC tổ chức hội thảo quốc gia về khởi nghiệp đổi mới sáng tạo trong trường đại học; chuỗi Innovation Tour thúc đẩy spin-off đại học (số 8: Lab2Market – Market2Lab).'
+  source: https://vnei.edu.vn/
+region: ha-noi
+verification:
+  level: source_checked
+sources:
+- VNEI – Danh sách thành viên Mạng lưới ĐMST & KN Đại học và Cao đẳng Việt Nam (11/2026)
+source_url: https://vnei.edu.vn/c/11628/Gioi-thieu
