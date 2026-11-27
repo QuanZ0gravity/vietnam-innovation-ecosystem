@@ -1,7 +1,10 @@
 id: university-truong-dai-hoc-cong-nghe-va-quan-ly-huu-nghi
 name:
   vi: Trường Đại học Công nghệ và Quản lý Hữu Nghị
+alt_names:
+- UTM
 type: university
+website: https://utm.edu.vn/
 description:
   vi: Thành viên Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI).
 region: ha-noi

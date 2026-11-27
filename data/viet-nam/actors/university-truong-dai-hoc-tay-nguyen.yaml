@@ -1,8 +1,10 @@
 id: university-truong-dai-hoc-tay-nguyen
 name:
   vi: Trường Đại học Tây Nguyên
+alt_names:
+- TNU Tây Nguyên
 type: university
-website: https://ttn.edu.vn/
+website: https://www.ttn.edu.vn/
 description:
   vi: Thành viên Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI).
 region: viet-nam

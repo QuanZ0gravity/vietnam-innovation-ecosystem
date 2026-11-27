@@ -1,7 +1,10 @@
 id: university-truong-cao-dang-cong-thuong-mien-trung
 name:
   vi: Trường Cao đẳng Công thương miền Trung
+alt_names:
+- MITC
 type: university
+website: https://mitc.edu.vn/
 description:
   vi: Thành viên Mạng lưới Đổi mới sáng tạo và Khởi nghiệp Đại học và Cao đẳng Việt Nam (VNEI).
 region: viet-nam
